@@ -321,25 +321,25 @@
 					9. The iterated logarithm function（迭代对数函数）（78）
 					10. Fibonacci numbers（斐波那契数列）（79）
 			4. Divide-and-Conquer（分而治之）（85）
-				2. Recurrences（复发）（86）
-				3. Technicalities in recurrences（重复的技术细节）（87）
-				4. The maximum-subarray problem（最大子数组问题）（88）
+				1. Recurrences（复发）（86）
+				2. Technicalities in recurrences（重复的技术细节）（87）
+				3. The maximum-subarray problem（最大子数组问题）（88）
 					1. A brute-force solution（暴力解决方案）（89）
 					2. A transformation（一次转变）（90）
 					3. A solution using divide-and-conquer（使用分而治之的解决方案）（91）
 					4. Analyzing the divide-and-conquer algorithm（分析分治算法）（94）
-				5. Strassen’s algorithm for matrix multiplication（Strassen 矩阵乘法算法）（96）
+				4. Strassen’s algorithm for matrix multiplication（Strassen 矩阵乘法算法）（96）
 					1. A simple divide-and-conquer algorithm（一个简单的分治算法）（97）
 					2. Strassen’s method（施特拉森法）（99）
-				6. The substitution method for solving recurrences（求解递推式的代入法）（103）
+				5. The substitution method for solving recurrences（求解递推式的代入法）（103）
 					1. Making a good guess（做出一个好的猜测）（105）
 					2. Subtleties（微妙之处）（105）
 					3. Avoiding pitfalls（避免陷阱）（106）
 					4. Changing variables（改变变量）（106）
-				7. The recursion-tree method for solving recurrences（求解递归的递归树方法）（108）
-				8. The master method for solving recurrences（求解递推式的主要方法）（94）
+				6. The recursion-tree method for solving recurrences（求解递归的递归树方法）（108）
+				7. The master method for solving recurrences（求解递推式的主要方法）（94）
 					1. Using the master method（使用主方法）（116）
-				9. Proof of the master theorem（主定理的证明）（118）
+				8. Proof of the master theorem（主定理的证明）（118）
 					1. The proof for exact powers（确切权力的证明）（118）
 					2. Floors and ceilings（地板和天花板）（123）
 			5. Probabilistic Analysis and Randomized Algorithms（概率分析和随机算法）（134）
