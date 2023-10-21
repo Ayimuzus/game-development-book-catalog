@@ -887,3 +887,296 @@
 					2. Basic matrix properties（基本矩阵属性）（1243）
 						1. Matrix inverses, ranks, and determinants（矩阵逆矩阵、秩和行列式）（1243）
 						2. Positive-definite matrices（正定矩阵）（1246）
+2. Programming Languages（编程语言）
+	1. Programming in Lua Fourth Edition（Lua程序设计第4版）
+		1. The Basics（基础）（15）
+			1. Getting Started（入门）（18）
+				1. Chunks（块）（18）
+				2. Some Lexical Conventions（一些词汇约定）（20）
+				3. Global Variables（全局变量）（21）
+				4. Types and Values（类型和值）（21）
+					1. Nil（空）（22）
+					2. Booleans（布尔值）（22）
+				5. The Stand-Alone Interpreter（独立的解释器）（23）
+			2. Interlude: The Eight-Queen Puzzle（插曲：八皇后谜题）（26）
+				1. The eight-queen program（八皇后计划）（27）
+			3. Numbers（数字）（29）
+				1. Numerals（数字）（29）
+				2. Arithmetic Operators（算术运算符）（30）
+				3. Relational Operators（关系运算符）（31）
+				4. The Mathematical Library（数学图书馆）（31）
+					1. Random-number generator（随机数生成器）（32）
+					2. Rounding functions（舍入函数）（32）
+				5. Representation Limits（代表限制）（33）
+				6. Conversions（转换）（35）
+				7. Precedence（优先级）（36）
+				8. Lua Before Integers（整数之前的 Lua）（36）
+			4. Strings（字符串）（38）
+				1. Literal strings（文字字符串）（38）
+				2. Long strings（长串）（40）
+				3. Coercions（强制）（40）
+				4. The String Library（字符串库）（41）
+				5. Unicode（统一码）（44）
+			5. Tables（表格）
+				1. Table Indices（表索引）（47）
+				2. Table Constructors（表构造函数）（49）
+				3. Arrays, Lists, and Sequences（数组、列表和序列）（50）
+				4. Table Traversal（表遍历）（52）
+				5. Safe Navigation（安全导航）（52）
+				6. The Table Library（表格库）（53）
+			6. Functions（函数）
+				1. Multiple Results（多个结果）（57）
+				2. Variadic Functions（可变参数函数）（59）
+				3. The function table.unpack（函数table.unpack）（61）
+				4. Proper Tail Calls（正确的尾部调用）（62）
+			7. The External World（外部世界）（64）
+				1. The Simple I/O Model（简单 I/O 模型）（64）
+					1. A program to sort a file（一个对文件进行排序的程序）（66）
+				2. The Complete I/O Model（完整的 I/O 模型）（67）
+				3. Other Operations on Files（对文件的其他操作）（68）
+				4. Other System Calls（其他系统调用）（69）
+					1. Running system commands（运行系统命令）（69）
+			8. Filling some Gaps（填补一些空白）（71）
+				1. Local Variables and Blocks（局部变量和块）（71）
+				2. Control Structures（控制结构）（72）
+					1. if then else（如果那么否则）（72）
+					2. while（尽管）（73）
+					3. repeat（重复）（73）
+					4. Numerical for（数值为）（74）
+					5. Generic for（泛型）（74）
+				3. break, return, and goto（中断、返回和转到）（75）
+					1. An example of a state machine with goto（带 goto 的状态机示例）（76）
+					2. A maze game（迷宫游戏）（77）
+				4. A strange (and invalid) use of a goto（goto 的奇怪（且无效）用法）（78）
+		2. Real Programming（真实编程）（78）
+			1. Closures（闭包）（82）
+				1. Functions as First-Class Values（功能是一流的价值）（82）
+				2. Non-Global Functions（非全局函数）（83）
+				3. Lexical Scoping（词汇范围）（85）
+				4. A Taste of Functional Programming（函数式编程的初体验）（88）
+					1. Union, intersection, and difference of regions（区域的并集、交集和差异）（89）
+					2. Drawing a region in a PBM fil（在 PBM 过滤器中绘制区域）（89）
+			2. Pattern Matching（模式匹配）（91）
+				1. The Pattern-Matching Functions（模式匹配函数）（91）
+					1. The function string.find（函数 string.find）（91）
+					2. The function string.match（函数 string.match）（92）
+					3. The function string.gsub（函数 string.gsub）（92）
+					4. The function string.gmatch（函数 string.gmatch）（92）
+				2. Patterns（图案）（92）
+				3. Captures（捕获）（95）
+				4. Replacements（替换品）（97）
+					1. URL encoding（URL编码）（98）
+					2. Tab expansion（选项卡扩展）（100）
+				5. Tricks of the Trade（交易技巧）（100）
+			3. Interlude: Most Frequent Words（插曲：最常用的单词（104）
+				1. Word-frequency program（词频程序）（104）
+			4. Date and Time（日期和时间）（105）
+				1. The Function os.time（函数 os.time）（106）
+				2. The Function os.date（函数 os.date）（107）
+					1. Directives for function os.date（os.date 函数的指令）（108）
+				3. Date–Time Manipulation（日期时间操作）（109）
+			5. Bits and Bytes（位和字节）（111）
+				1. Bitwise Operators（按位运算符）（111）
+				2. Unsigned Integers（无符号整数）（111）
+					1. Unsigned division（无符号除法）（112）
+				3. Packing and Unpacking Binary Data（打包和解包二进制数据）（113）
+				4. Binary files（二进制文件）（115）
+					1. Dumping the dump program（转储转储程序）（116）
+			6. Data Structures（数据结构）（118）
+				1. Arrays（数组）（118）
+				2. Matrices and Multi-Dimensional Arrays（矩阵和多维数组）（118）
+					1. Multiplication of sparse matrices（稀疏矩阵的乘法）（120）
+				3. Linked Lists（链表）（121）
+				4. Queues and Double-Ended Queues（队列和双端队列）（121）
+					1. A double-ended queue（双端队列）（122）
+				5. Reverse Tables（反转表）（122）
+				6. Sets and Bags（套装和包袋）（123）
+				7. String Buffers（字符串缓冲区）（124）
+				8. Graphs（图表）（125）
+					1. Reading a graph from a file（从文件中读取图表）（126）
+					2. Finding a path between two nodes（寻找两个节点之间的路径）（126）
+			7. Data Files and Serialization（数据文件和序列化）（128）
+				1. Data Files（数据文件）（128）
+				2. Serialization（序列化）（130）
+					1. Quoting arbitrary literal string（引用任意文字字符串）（131）
+					2. Saving tables without cycles（保存没有循环的表）（132）
+						1. Serializing tables without cycles（不带循环的序列化表）（132）
+					3. Saving tables with cycles（保存带有循环的表）（133）
+						1. Saving tables with cycles（保存带有循环的表）（133）
+			8. Compilation, Execution, and Errors（编译、执行和错误）（136）
+				1. Compilation（汇编）（136）
+				2. Precompiled Code（预编译代码）（139）
+					1. Example of output from luac -l（luac -l 的输出示例）（139）
+				3. Errors（错误）（140）
+				4. Error Handling and Exceptions（错误处理和异常）（141）
+				5. Error Messages and Tracebacks（错误消息和回溯）（142）
+				6. String repetition（字符串重复）（143）
+			9. Modules and Packages（模块和包）（145）
+				1. The Function require（该功能要求）（146）
+					1. Renaming a module（重命名模块）（147）
+					2. Path searching（路径搜索）（147）
+						1. A homemade package.searchpath（自制的package.searchpath）（148）
+					3. Searchers（搜索者）（149）
+				2. The Basic Approach for Writing Modules in Lua（Lua 编写模块的基本方法）（149）
+					1. A simple module for complex numbers（一个简单的复数模块）（150）
+					2. Module with export list（带有导出列表的模块）（151）
+				3. Submodules and Packages（子模块和包）（151）
+		3. Lua-isms（Lua主义）（153）
+			1. Iterators and the Generic for（迭代器和泛型）（156）
+				1. Iterators and Closures（迭代器和闭包）（156）
+					1. Iterator to traverse all words from the standard input（迭代器遍历标准输入中的所有单词）（157）
+				2. The Semantics of the Generic for（泛型的语义）（157）
+				3. Stateless Iterators（无状态迭代器）（159）
+				4. Traversing Tables in Order（按顺序遍历表）（160）
+				5. True Iterators（真正的迭代器）（161）
+			2. Interlude: Markov Chain Algorithm（插曲：马尔可夫链算法）（163）
+				1. Auxiliary definitions for the Markov program（马尔可夫程序的辅助定义）（164）
+				2. The Markov program（马尔可夫规划）（165）
+			3. Metatables and Metamethods（元表和元方法）（166）
+				1. Arithmetic Metamethods（算术元方法）（166）
+					1. A simple module for sets（一个简单的集合模块）（166）
+				2. Relational Metamethods（关系元方法）（169）
+				3. Library-Defined Metamethods（库定义的元方法）（169）
+				4. Table-Access Metamethods（表访问元方法）（170）
+					1. The __index metamethod（__index 元方法）（170）
+					2. The __newindex metamethod（__newindex 元方法）（171）
+					3. Tables with default values（具有默认值的表）（172）
+					4. Tracking table accesses（跟踪表访问）（173）
+						1. Tracking table accesses（跟踪表访问）（173）
+					5. Read-only tables（只读表）（174）
+			4. Object-Oriented Programming（面向对象编程）（176）
+				1. Classes（类）（177）
+				2. Inheritance（继承）（179）
+					1. the Account class（帐户类）（179）
+				3. Multiple Inheritance（多重继承）（180）
+					1. An implementation of multiple inheritance（多重继承的实现）（181）
+				4. Privacy（隐私）（182）
+				5. The Single-Method Approach（单一方法）（183）
+				6. Dual Representation（双重代表）（184）
+					1. Accounts using a dual representation（使用双重表示的账户）（185）
+			5. The Environment（环境）（187）
+				1. Global Variables with Dynamic Names（具有动态名称的全局变量）（187）
+					1. The function setfield（函数setfield）（188）
+				2. Global-Variable Declarations（全局变量声明）（188）
+					1. Checking global-variable declaration（检查全局变量声明）（190）
+				3. Non-Global Environments（非全局环境）（190）
+				4. Using _ENV（使用_ENV）（191）
+				5. Environments and Modules（环境和模块）（194）
+				6. _ENV and load（_ENV 和负载）（195）
+			6. Garbage（垃圾）（196）
+				1. Weak Tables（弱表）（197）
+				2. Memorize Functions（记住函数）（198）
+				3. Object Attributes（对象属性）（199）
+				4. Revisiting Tables with Default Values（重新访问具有默认值的表）（200）
+				5. Ephemeron Tables（星历表）（201）
+					1. Constant-function factory with memorization（带记忆功能的常量工厂）（201）
+				6. Finalizers（终结器）（202）
+					1. Running a function at every GC cycle（在每个 GC 周期运行一个函数）（204）
+				7. The Garbage Collector（垃圾收集器）（204）
+				8. Controlling the Pace of Collection（控制收集速度）（205）
+				9. Finalizers and memory（终结器和内存）（206）
+			7. Coroutines（协程）（208）
+				1. Coroutine Basics（协程基础知识）（208）
+				2. Who Is the Boss?（请问谁是老板？）（210）
+					1. Producer–consumer with filters（带过滤器的生产者-消费者）（212）
+				3. Coroutines as Iterators（协程作为迭代器）（212）
+					1. A function to generate permutations（生成排列的函数）（213）
+				4. Event-Driven Programming（事件驱动编程）（214）
+					1. An ugly implementation of the asynchronous I/O library（异步 I/O 库的丑陋实现）（215）
+					2. Reversing a file in event-driven fashion（以事件驱动的方式反转文件）（216）
+					3. Running synchronous code on top of the asynchronous library（在异步库之上运行同步代码）（217）
+			8. Reflection（反射）（219）
+				1. Introspective Facilities（内省设施）（219）
+					1. Accessing local variables（访问局部变量）（221）
+					2. Accessing non-local variables（访问非局部变量）（221）
+						1. Getting the value of a variable（获取变量的值）（222）
+					3. Accessing other coroutines（访问其他协程）（223）
+				2. Hooks（挂钩）（224）
+				3. Profiles（型材）（225）
+					1. Hook for counting number of calls（用于计算调用次数的钩子）（225）
+					2. Getting the name of a function（获取函数的名称）（226）
+				4. Sandboxing（沙盒）（226）
+					1. A naive sandbox with hooks（带钩子的天真沙箱）（227）
+					2. Controlling memory use（控制内存使用）（228）
+					3. Using hooks to bar calls to unauthorized functions（使用钩子来阻止对未经授权的函数的调用）（228）
+			9. Interlude: Multithreading with Coroutines（插曲：使用协程进行多线程处理）（231）
+				1. Function to download a Web page（下载网页功能）（232）
+				2. The dispatcher（调度员）（233）
+				3. Dispatcher using select（使用 select 的调度程序）（234）
+		4. The C API（C API）（235）
+			1. An Overview of the C API（C API 概述）（237）
+				1. A First Example（第一个例子）（238）
+					1. A bare-bones stand-alone Lua interpreter（一个简单的独立 Lua 解释器）（238）
+				2. The Stack（堆栈）（239）
+					1. Pushing elements（推动元素）（240）
+					2. Querying elements（查询元素）（241）
+						1. Dumping the stack（转储堆栈）（243）
+					3. Other stack operations（其他堆栈操作）（243）
+						1. Example of stack manipulation（堆栈操作示例）（245）
+				3. Error Handling with the C API（使用 C API 进行错误处理）（245）
+					1. Error handling in application code（应用程序代码中的错误处理）（246）
+					2. Error handling in library code（库代码中的错误处理）（246）
+				4. Memory Allocation（内存分配）（247）
+			2. Extending Your Application（扩展您的应用程序）（249）
+				1. The Basics（基础）（250）
+					1. Getting user information from a configuration file（250）
+				2. Table Manipulation（表操作）（251）
+					1. A particular getcolorfield implementation（特定的 getcolorfield 实现）（252）
+					2. Colors as strings or tables（颜色作为字符串或表格）（254）
+					3. Some short cuts（一些捷径）（254）
+				3. Calling Lua Functions（调用Lua函数）（255）
+					1. Calling a Lua function from C（从 C 调用 Lua 函数）（256）
+				4. A Generic Call Function（通用调用函数）（256）
+					1. A generic call function（通用调用函数）（257）
+					2. Pushing arguments for the generic call function（推送通用调用函数的参数）（258）
+					3. Retrieving results for the generic call function（检索通用调用函数的结果）（259）
+			3. Calling C from Lua（从 Lua 调用 C）（261）
+				1. C Functions（C 函数）（261）
+					1. A function to read a directory（读取目录的函数）（263）
+				2. Continuations（延续）（263）
+					1. Implementation of pcall with continuations（带有延续的 pcall 的实现）（265）
+				3. C Modules（C 语言模块）（265）
+			4. Techniques for Writing C Functions（编写 C 函数的技术）（268）
+				1. Array Manipulation（数组操作）（268）
+					1. The function map in C（C中的函数映射）（269）
+				2. String Manipulation（字符串操作）（269）
+					1. Splitting a string（分割字符串）（270）
+					2. The function string.upper（函数 string.upper）（271）
+					3. A simplified implementation for table.concat（table.concat 的简化实现）（272）
+				3. Storing State in C Functions（在 C 函数中存储状态）（272）
+					1. The registry（注册表）（272）
+					2. Upvalues（上调）（274）
+						1. An implementation of tuples（元组的实现）（276）
+					3. Shared upvalues（共享价值）（277）
+			5. User-Defined Types in C（C 中的用户定义类型）（279）
+				1. Userdata（用户数据）（279）
+					1. Manipulating a Boolean array（操作布尔数组）（280）
+					2. Extra code for the Boolean array library（布尔数组库的额外代码）（281）
+				2. Metatables（元表）（282）
+					1. New versions for setarray/getarray（setarray/getarray 的新版本）（283）
+				3. Object-Oriented Access（面向对象的访问）（284）
+				4. Array Access（数组访问）（285）
+					1. New initialization code for the Bit Array library（位数组库的新初始化代码）（286）
+				5. Light Userdata（轻用户数据）（286）
+			6. Managing Resources（管理资源）（288）
+				1. A Directory Iterator（目录迭代器）（288）
+					1. The dir.open factory function（dir.open 工厂函数）（289）
+					2. Other functions for the dir library（dir 库的其他函数）（290）
+				2. An XML Parser（XML 解析器）（290）
+					1. Function to create XML parser objects（创建 XML 解析器对象的函数）（294）
+					2. Function to parse an XML fragment（解析 XML 片段的函数）（295）
+					3. Handler for character data（字符数据处理程序）（296）
+					4. Handler for end elements（结束元素的处理程序）（296）
+					5. Handler for start elements（开始元素的处理程序）（297）
+					6. Method to close an XML parser（关闭 XML 解析器的方法）（297）
+					7. Initialization code for the lxp library（lxp库的初始化代码）（298）
+			7. Threads and States（线程和状态）（300）
+				1. Multiple Threads（多线程）（300）
+				2. Lua States（Lua 状态）（303）
+					1. Function to search for a process waiting for a channel（搜索等待通道的进程的函数）（305）
+					2. Function to add a process to a waiting list（将进程添加到等待列表的功能）（305）
+					3. Functions to send and receive messages（发送和接收消息的函数）（306）
+					4. Function to create new processes（创建新进程的函数）（307）
+					5. Body for new threads（新线程的主体）（308）
+					6. Extra functions for the lproc module（lproc 模块的额外功能）（309）
+					7. Registering libraries to be opened on demand（注册按需打开的库）（310）
