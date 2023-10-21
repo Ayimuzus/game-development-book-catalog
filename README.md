@@ -1180,3 +1180,352 @@
 					5. Body for new threads（新线程的主体）（308）
 					6. Extra functions for the lproc module（lproc 模块的额外功能）（309）
 					7. Registering libraries to be opened on demand（注册按需打开的库）（310）
+	2. Microsoft Visual C# Step by Step（Visual C#从入门到精通）
+		1. Introducing Microsoft Visual C# and Microsoft Visual Studio 2022（Microsoft Visual C# 和 Microsoft Visual Studio 2022 简介）（45）
+			1. Welcome to C#（欢迎使用 C#）（46）
+				1. Writing your first C# program（编写您的第一个 C# 程序）（46）
+				2. Beginning programming with the Visual Studio 2022 environment（开始使用 Visual Studio 2022 环境进行编程）（55）
+				3. Writing your first program using Visual Studio 2022（使用 Visual Studio 2022 编写您的第一个程序）（62）
+				4. Using namespaces（使用命名空间）（73）
+				5. Namespaces and assemblies（命名空间和程序集）（75）
+				6. Commenting code（评论代码）（76）
+				7. Creating a graphical application（创建图形应用程序）（76）
+					1. Examining the Universal Windows Platform app（检查通用 Windows 平台应用程序）（96）
+					2. Adding code to the graphical application（将代码添加到图形应用程序）（100）
+			2. Working with variables, operators, and expressions（使用变量、运算符和表达式）（107）
+				1. Understanding statements（理解陈述）（108）
+				2. Using identifiers（使用标识符）（109）
+				3. Identifying keywords（识别关键词）（109）
+				4. Using variables（使用变量）（111）
+					1. Naming variables（命名变量）（111）
+					2. Declaring variables（声明变量）（112）
+					3. Specifying numeric values（指定数值）（113）
+				5. Working with primitive data types（使用原始数据类型）（114）
+					1. Unassigned local variables（未分配的局部变量）（115）
+					2. Displaying primitive data type values（显示原始数据类型值）（116）
+				6. Using arithmetic operators（使用算术运算符）（126）
+					1. Operators and types（运算符和类型）（126）
+					2. Examining arithmetic operators（检查算术运算符）（129）
+					3. Controlling precedence（控制优先级）（137）
+					4. Using associativity to evaluate expressions（使用结合性计算表达式）（138）
+					5. Associativity and the assignment operator（结合性和赋值运算符）（139）
+				7. Incrementing and decrementing variables（递增和递减变量）（140）
+					1. Prefix and postfix（前缀和后缀）（141）
+				8. Declaring implicitly typed local variables（声明隐式类型局部变量）（142）
+			3. Writing methods and applying scope（书写方法及适用范围）（146）
+				1. Creating methods（创建方法）（146）
+					1. Declaring a method（声明一个方法）（147）
+					2. Returning data from a method（从方法返回数据）（149）
+					3. Using expression-bodied methods（使用表达体方法）（149）
+				2. Calling methods（调用方法）（152）
+					1. Specifying the method call syntax（指定方法调用语法）（152）
+					2. Returning multiple values from a method（从一个方法返回多个值）（156）
+				3. Applying scope（适用范围）（159）
+					1. Defining local scope（定义本地范围）（160）
+					2. Defining class scope（定义类范围）（161）
+					3. Overloading methods（重载方法）（161）
+					4. Writing methods（写作方法）（163）
+				4. Using the Visual Studio Debugger to step through methods（使用 Visual Studio 调试器逐步执行方法）（170）
+					1. Refactoring code（重构代码）（180）
+					2. Nesting methods（嵌套方法）（181）
+				5. Using optional parameters and named arguments（使用可选参数和命名参数）（185）
+					1. Defining optional parameters（187）
+					2. Passing named arguments（188）
+					3. Resolving ambiguities with optional parameters and named arguments（使用可选参数和命名参数解决歧义）（189）
+			4. Using decision statements（使用决策语句）（201）
+				1. Declaring Boolean variables（声明布尔变量）（201）
+				2. Using Boolean operators（使用布尔运算符）（202）
+					1. Understanding equality and relational operators（了解相等和关系运算符）（202）
+					2. Understanding conditional logical operators（了解条件逻辑运算符）（203）
+					3. Short-circuiting（短路）（204）
+					4. Summarizing operator precedence and associativity（总结运算符优先级和结合性）（205）
+					5. Pattern matching（模式匹配）（207）
+				3. Using if statements to make decisions（使用 if 语句做出决定）（208）
+					1. Understanding if statement syntax（了解 if 语句语法）（208）
+					2. Using blocks to group statements（使用块对语句进行分组）（210）
+					3. Cascading if statements（级联 if 语句）（211）
+				4. Using switch statements（使用 switch 语句）（219）
+					1. Understanding switch statement syntax（了解 switch 语句语法）（220）
+					2. Following the switch statement rules（遵循 switch 语句规则）（221）
+				5. Using switch expressions with pattern matching（使用带有模式匹配的 switch 表达式）（226）
+			5. Using compound assignment and iteration statements（使用复合赋值和迭代语句）（232）
+				1. Using compound assignment operators（使用复合赋值运算符）（232）
+				2. Writing while statements（编写 while 语句）（234）
+				3. Writing for statements（编写 for 语句）（242）
+				4. Writing do statements（编写 do 语句）（245）
+			6. Managing errors and exceptions（管理错误和异常）（259）
+				1. Trying code and catching exceptions（尝试代码并捕获异常）（260）
+					1. Unhandled exceptions（未处理的异常）（261）
+					2. Using multiple catch handlers（使用多个 catch 处理程序）（263）
+					3. Catching multiple exceptions（捕获多个异常）（264）
+					4. Filtering exceptions（过滤异常）（266）
+					5. Propagating exceptions（传播异常）（272）
+				2. Using checked and unchecked integer arithmetic（使用已检查和未检查的整数算术）（274）
+					1. Writing checked statements（编写检查语句）（275）
+					2. Writing checked expressions（编写检查表达式）（276）
+				3. Throwing exceptions（抛出异常）（280）
+					1. Using throw expressions（使用抛出表达式）（286）
+				4. Using a finally block（使用finally块）（287）
+		2. Understanding the C# object model（了解 C# 对象模型）（291）
+			1. Creating and managing classes and objects（创建和管理类和对象）（292）
+				1. Understanding classification（了解分类）（292）
+				2. The purpose of encapsulation（封装的目的）（293）
+				3. Defining and using a class（定义和使用类）（293）
+				4. Controlling accessibility（控制可访问性）（296）
+				5. Working with constructors（与构造函数一起工作）（298）
+					1. Overloading constructors（重载构造函数）（300）
+					2. Deconstructing an object（解构一个对象）（311）
+				6. Understanding static methods and data（了解静态方法和数据）（312）
+					1. Creating a shared field（创建共享字段）（314）
+					2. Creating a static field by using the const keyword（使用 const 关键字创建静态字段）（315）
+					3. Understanding static classes（了解静态类）（315）
+					4. Static using statements（静态using语句）（316）
+				7. Anonymous classes（匿名类）（319）
+			2. Understanding values and references（了解值和引用）（324）
+				1. Copying value type variables and classes（复制值类型变量和类）（324）
+				2. Understanding null values and nullable types（了解 null 值和可为 null 的类型）（333）
+					1. The null-conditional and null-coalescing operators（null 条件运算符和 null 合并运算符）（335）
+					2. Using nullable types（使用可空类型）（337）
+					3. Understanding the properties of nullable types（了解可为空类型的属性）（338）
+				3. Using ref and out parameters（使用 ref 和 out 参数）（339）
+					1. Creating ref parameters（创建参考参数）（340）
+					2. Creating out parameters（创建输出参数）（341）
+				4. How computer memory is organized（计算机内存是如何组织的）（345）
+					1. Using the stack and the heap（使用栈和堆）（347）
+					2. The System.Object class（System.Object 类）（348）
+					3. Boxing（装箱）（349）
+					4. Unboxing（拆箱）（350）
+				5. Casting data safely（安全地投射数据）（352）
+					1. The is operator（is 运算符）（353）
+					2. The as operator（as 运算符）（354）
+					3. The switch statement revisited（重新审视 switch 语句（354）
+			3. Creating value types with enumerations and structures（使用枚举和结构创建值类型）（363）
+				1. Working with enumerations（使用枚举）（363）
+					1. Declaring an enumeration（声明一个枚举）（364）
+					2. Using an enumeration（使用枚举）（364）
+					3. Choosing enumeration literal values（选择枚举文字值）（365）
+					4. Choosing an enumeration’s underlying type（选择枚举的基础类型）（367）
+				2. Working with structures（使用结构）（370）
+					1. Declaring a structure（声明一个结构体）（372）
+					2. Understanding differences between structures and classes（了解结构和类之间的差异）（374）
+					3. Declaring structure variables（声明结构变量）（377）
+					4. Understanding structure initialization（了解结构初始化）（378）
+					5. Copying structure variables（复制结构变量）（384）
+			4. Using arrays（使用数组）（392）
+				1. Declaring array variables（声明数组变量）（393）
+				2. Creating an array instance（创建数组实例）（394）
+				3. Populating and using an array（填充和使用数组）（395）
+					1. Creating an implicitly typed array（创建隐式类型数组）（396）
+					2. Accessing an individual array element（访问单个数组元素）（398）
+					3. Accessing a series of array elements（访问一系列数组元素）（399）
+					4. Iterating through an array（迭代数组）（399）
+					5. Passing arrays as parameters or return values for a method（将数组作为方法的参数或返回值传递）（401）
+				4. Copying arrays（复制数组）（404）
+				5. Using multidimensional arrays（使用多维数组）（406）
+					1. Creating jagged arrays（创建锯齿状数组）（407）
+				6. Accessing arrays that contain value types（访问包含值类型的数组）（421）
+			5. Understanding parameter arrays（了解参数数组）（429）
+				1. Overloading: a recap（重载：回顾）（429）
+				2. Using array arguments（使用数组参数）（431）
+					1. Declaring a params array（声明一个 params 数组）（433）
+					2. Using params object[ ]（使用参数对象[]）（436）
+					3. Using a params array（使用参数数组）（438）
+				3. Comparing parameter arrays and optional parameters（比较参数数组和可选参数）（442）
+			6. Working with inheritance（使用继承）（447）
+				1. What is inheritance?（什么是继承？）（447）
+				2. Using inheritance（使用继承）（448）
+					1. The System.Object class revisited（重新审视 System.Object 类）（451）
+					2. Calling base-class constructors（调用基类构造函数）（451）
+					3. Assigning classes（分配类）（453）
+					4. Declaring new methods（声明新方法）（455）
+					5. Declaring virtual methods（声明虚拟方法）（457）
+					6. Declaring override methods（声明覆盖方法）（458）
+					7. Understanding protected access（了解受保护的访问）（462）
+				3. Creating extension methods（创建扩展方法）（470）
+			7. Creating interfaces and defining abstract classes（创建接口并定义抽象类）（478）
+				1. Understanding interfaces（了解接口）（478）
+					1. Defining an interface（定义接口）（480）
+					2. Implementing an interface（实现接口）（480）
+					3. Referencing a class through its interface（通过类的接口引用类）（483）
+					4. Working with multiple interfaces（使用多个接口）（484）
+					5. Explicitly implementing an interface（显式实现接口）（484）
+					6. Handling versioning with interfaces（使用接口处理版本控制）（487）
+					7. Interface restrictions（接口限制）（490）
+					8. Defining and using interfaces（定义和使用接口）（490）
+				2. Abstract classes（抽象类）（502）
+					1. Abstract methods（抽象方法）（504）
+				3. Sealed classes（密封类）（505）
+					1. Sealed methods（密封方法）（506）
+					2. Implementing and using an abstract class（实现和使用抽象类）（506）
+			8. Using garbage collection and resource management（使用垃圾收集和资源管理）（517）
+				1. The life and times of an object（物体的生命和时间）（517）
+					1. Writing finalizers（编写终结器）（519）
+					2. Why use the garbage collector?（为什么要使用垃圾收集器？）（522）
+					3. How does the garbage collector work?（垃圾收集器如何工作？）（525）
+					4. Recommendations（建议）（526）
+				2. Resource management（资源管理）（526）
+					1. Disposal methods（处置方法）（527）
+					2. Exception-safe disposal（异常安全处置）（527）
+					3. The using statement and the IDisposable interface（using 语句和 IDisposable 接口）（528）
+					4. Calling the Dispose method from a finalizer（从终结器调用 Dispose 方法）（531）
+				3. Implementing exception-safe disposal（实施异常安全处置）（533）
+				4. Handling asynchronous disposal（处理异步处置）（545）
+		3. Understanding the C# object model（了解 C# 对象模型）（550）
+			1. Implementing properties to access fields（实现属性来访问字段）（552）
+				1. Implementing encapsulation by using methods（使用方法实现封装）（552）
+				2. What are properties?（什么是属性？）（555）
+					1. Using properties（使用属性）（558）
+					2. Read-only properties（只读属性）（559）
+					3. Write-only properties（只写属性）（560）
+					4. Property accessibility（物业无障碍）（561）
+				3. Understanding property restrictions（了解财产限制）（562）
+				4. Declaring interface properties（声明接口属性）（564）
+					1. Replacing methods with properties（用属性替换方法）（566）
+					2. Pattern-matching with properties（与属性进行模式匹配）（571）
+				5. Generating automatic properties（生成自动属性）（573）
+				6. Initializing objects by using properties（使用属性初始化对象）（576）
+					1. Automatic properties and immutability（自动属性和不变性）（579）
+				7. Using records with properties to implement ightweight structures（使用具有属性的记录来实现轻量级结构）（582）
+			2. Handling binary data and using indexers（处理二进制数据并使用索引器）（595）
+				1. What is an indexer?（什么是索引器？）（595）
+					1. Storing binary values（存储二进制值）（595）
+					2. Displaying binary values（显示二进制值）（597）
+					3. Manipulating binary values（操作二进制值）（597）
+					4. Solving the same problems using indexers（使用索引器解决相同的问题）（600）
+				2. Understanding indexer accessors（了解索引器访问器）（603）
+				3. Comparing indexers and arrays（比较索引器和数组）（604）
+				4. Indexers in interfaces（接口中的索引器）（607）
+				5. Using indexers in a Windows application（在 Windows 应用程序中使用索引器）（608）
+			3. Introducing generics（泛型介绍）（620）
+				1. The problem: Issues with the object type（问题：对象类型问题）（620）
+				2. The generics solution（泛型解决方案）（625）
+					1. Generics vs. generalized classes（泛型与泛化类）（628）
+					2. Generics and constraints（泛型和约束）（628）
+				3. Creating a generic class（创建泛型类）（629）
+					1. The theory of binary trees（二叉树理论）（629）
+					2. Building a binary tree class by using generics（使用泛型构建二叉树类）（634）
+				4. Creating a generic method（创建通用方法）（646）
+					1. Defining a generic method to build a binary tree（定义构建二叉树的通用方法）（648）
+				5. Variance and generic interfaces（变体和通用接口）（653）
+					1. Covariant interfaces（协变接口）（656）
+					2. Contravariant interfaces（逆变接口）（658）
+			4. Using collections（使用集合）（664）
+				1. What are collection classes?（什么是集合类？）（664）
+					1. The List< T> collection class（List< T> 集合类）（666）
+					2. The LinkedList< T> collection class（LinkedList< T> 集合类）（669）
+					3. The Queue< T> collection class（Queue< T> 集合类）（672）
+					4. The PriorityQueue<TElement, TPriority> collection class（PriorityQueue<TElement, TPriority> 集合类）（673）
+					5. The Stack< T> collection class（Stack< T> 集合类）（674）
+					6. The Dictionary<TKey, TValue> collection class（Dictionary<TKey, TValue> 集合类）（675）
+					7. The SortedList<TKey, TValue> collection class（SortedList<TKey, TValue> 集合类）（677）
+					8. The HashSet< T> collection class（HashSet< T> 集合类）（679）
+				2. Using collection initializers（使用集合初始值设定项）（681）
+				3. Find methods, predicates, and lambda expressions（查找方法、谓词和 lambda 表达式）（682）
+					1. The forms of lambda expressions（lambda 表达式的形式）（685）
+					2. Lambda expressions and anonymous methods（Lambda 表达式和匿名方法）（687）
+				4. Comparing arrays and collections（比较数组和集合）（687）
+			5. Enumerating collections（枚举集合）（697）
+				1. Enumerating the elements in a collection（枚举集合中的元素）（697）
+					1. Manually implementing an enumerator（手动实现枚举器）（699）
+					2. Implementing the IEnumerable interface（实现 IEnumerable 接口）（706）
+				2. Implementing an enumerator by using an iterator（使用迭代器实现枚举器）（710）
+					1. A simple iterator（一个简单的迭代器）（710）
+					2. Defining an enumerator for the Tree< TItem> class by using an iterator（使用迭代器为 Tree< TItem> 类定义枚举器）（713）
+			6. Decoupling application logic and handling events（解耦应用程序逻辑和处理事件）（719）
+				1. Understanding delegates（了解委托）（720）
+				2. Examples of delegates in the .NET class library（.NET 类库中的委托示例）（721）
+					1. The automated factory scenario（自动化工厂场景）（724）
+					2. Implementing the factory control system without using delegates（在不使用委托的情况下实施工厂控制系统）（724）
+					3. Implementing the factory by using a delegate（使用委托来实现工厂）（725）
+					4. Declaring and using delegates（声明和使用委托）（729）
+				3. Lambda expressions and delegates（Lambda 表达式和委托）（742）
+				4. Enabling notifications by using events（使用事件启用通知）（743）
+					1. Declaring an event（宣布一个事件）（744）
+					2. Subscribing to an event（订阅活动）（745）
+					3. Unsubscribing from an event（取消订阅活动）（746）
+					4. Raising an event（发起一个事件）（746）
+				5. Understanding user-interface events（了解用户界面事件）（747）
+				6. Using events（使用事件）（749）
+			7. Querying in-memory data by using query expressions（使用查询表达式查询内存数据）（763）
+				1. What is LINQ?（什么是 LINQ？）（763）
+				2. Using LINQ in a C# application（在 C# 应用程序中使用 LINQ）（764）
+					1. Selecting data（选择数据）（767）
+					2. Filtering data（过滤数据）（771）
+					3. Ordering, grouping, and aggregating data（对数据进行排序、分组和聚合）（772）
+					4. Joining data（加入数据）（776）
+					5. Using query operators（使用查询运算符）（778）
+					6. Querying data in Tree< TItem> objects（查询 Tree< TItem> 对象中的数据）（782）
+				3. LINQ and deferred evaluation（LINQ 和延迟评估）（791）
+			8. Operator overloading（运算符重载）（799）
+				1. Understanding operators（了解运算符）（799）
+					1. Operator constraints（操作员限制）（800）
+					2. Overloaded operators（重载运算符）（801）
+					3. Creating symmetric operators（创建对称运算符）（803）
+					4. Understanding compound assignment evaluation（了解复合作业评估）（805）
+				2. Declaring increment and decrement operators（声明自增和自减运算符）（805）
+				3. Comparing operators in structures and classes（比较结构和类中的运算符）（807）
+				4. Defining operator pairs（定义运算符对）（808）
+				5. Implementing operators（实施运算符）（809）
+				6. Overriding the equality operators（覆盖相等运算符）（814）
+				7. Understanding conversion operators（了解转换运算符）（819）
+					1. Providing built-in conversions（提供内置转换）（820）
+					2. Implementing user-defined conversion operators（实现用户定义的转换运算符）（821）
+					3. Creating symmetric operators, revisited（重新审视创建对称运算符）（822）
+					4. Writing conversion operators（编写转换运算符）（823）
+		4. Building Universal Windows Platform applications with C#（使用 C# 构建通用 Windows 平台应用程序）（829）
+			1. Improving throughput by using tasks（通过使用任务提高吞吐量）（831）
+				1. Why perform multitasking by using parallel processing?（为什么要使用并行处理来执行多任务处理？）（831）
+				2. The rise of the multicore processor（多核处理器的兴起）（832）
+				3. Implementing multitasking by using Microsoft .NET（使用 Microsoft .NET 实现多任务处理）（834）
+					1. Tasks, threads, and the ThreadPool（任务、线程和线程池）（835）
+					2. Creating, running, and controlling tasks（创建、运行和控制任务）（836）
+					3. Using the Task class to implement parallelism（使用Task类实现并行性）（840）
+					4. Abstracting tasks by using the Parallel class（使用 Parallel 类抽象任务）（842）
+					5. When not to use the Parallel class（何时不使用 Parallel 类）（860）
+				4. Canceling tasks and handling exceptions（取消任务和处理异常）（863）
+					1. The mechanics of cooperative cancellation（合作取消的机制）（863）
+					2. Handling task exceptions by using the AggregateException class（使用 AggregateException 类处理任务异常）（879）
+					3. Using continuations with canceled and faulted tasks（对已取消和有错误的任务使用延续）（881）
+			2. Improving response time by performing asynchronous operations（通过执行异步操作来缩短响应时间）（887）
+				1. Implementing asynchronous methods（实现异步方法）（889）
+					1. Defining asynchronous methods: the problem（定义异步方法：问题）（889）
+					2. Defining asynchronous methods: the solution（定义异步方法：解决方案）（894）
+					3. Defining asynchronous methods that return values（定义返回值的异步方法）（902）
+					4. Asynchronous method pitfalls（异步方法的陷阱）（904）
+					5. Asynchronous methods and the Windows Runtime APIs（异步方法和 Windows 运行时 API）（906）
+					6. Tasks, memory allocation, and efficiency（任务、内存分配和效率）（909）
+				2. Using PLINQ to parallelize declarative data access（使用 PLINQ 并行化声明性数据访问）（913）
+					1. Using PLINQ to improve performance while iterating through a collection（使用 PLINQ 提高迭代集合时的性能）（914）
+					2. Canceling a PLINQ query（取消 PLINQ 查询）（922）
+				3. Synchronizing concurrent access to data（同步并发访问数据）（922）
+					1. Locking data（锁定数据）（927）
+					2. Synchronization primitives for coordinating tasks（用于协调任务的同步原语）（927）
+					3. ManualResetEventSlim（928）
+					4. SemaphoreSlim（928）
+					5. CountdownEvent（929）
+					6. ReaderWriterLockSlim（929）
+					7. Barrier（障碍）（930）
+					8. Canceling synchronization（取消同步）（931）
+					9. The concurrent collection classes（并发集合类）（931）
+					10. Using a concurrent collection and a lock to implement thread-safe data access（使用并发集合和锁实现线程安全的数据访问）（933）
+			3. Implementing the user interface for a Universal Windows Platform app（实现通用 Windows 平台应用程序的用户界面）（953）
+				1. Features of a Universal Windows Platform app（通用 Windows 平台应用程序的功能）（955）
+				2. Using the Blank App template to build a Universal Windows Platform app（使用空白应用程序模板构建通用Windows平台应用程序）（959）
+				3. Implementing a scalable user interface（实现可扩展的用户界面）（963）
+					1. Implementing a tabular layout by using a Grid control（使用网格控件实现表格布局）（980）
+					2. Adapting the layout by using the Visual State Manager（使用视觉状态管理器调整布局）（992）
+				4. Applying styles to a UI（将样式应用到 UI）（1002）
+			4. Displaying and searching for data in a Universal Windows Platform app（在通用 Windows 平台应用程序中显示和搜索数据）（1019）
+				1. Implementing the Model-View-ViewModel pattern（实现模型-视图-视图模型模式）（1019）
+				2. Displaying data by using data binding（使用数据绑定显示数据）（1021）
+					1. Modifying data by using data binding（使用数据绑定修改数据）（1029）
+					2. Using data binding with a ComboBox control（将数据绑定与 ComboBox 控件一起使用）（1036）
+				3. Creating a ViewModel（创建视图模型）（1038）
+				4. Adding commands to a ViewModel（向 ViewModel 添加命令）（1043）
+			5. Accessing a remote database from a Universal Windows Platform app（从通用 Windows 平台应用程序访问远程数据库）（1059）
+				1. Retrieving data from a database（从数据库检索数据）（1059）
+					1. Creating an entity model（创建实体模型）（1075）
+					2. Creating and using a REST web service（创建和使用 REST Web 服务）（1084）
+				2. Updating the UWP application to use the web service（更新 UWP 应用程序以使用 Web 服务）（1107）
+				3. Searching for data in the Customers app（在客户应用程序中搜索数据）（1120）
+				4. Inserting, updating, and deleting data through a REST web service（通过 REST Web 服务插入、更新和删除数据）（1129）
