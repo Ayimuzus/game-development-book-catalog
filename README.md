@@ -1529,3 +1529,230 @@
 				2. Updating the UWP application to use the web service（更新 UWP 应用程序以使用 Web 服务）（1107）
 				3. Searching for data in the Customers app（在客户应用程序中搜索数据）（1120）
 				4. Inserting, updating, and deleting data through a REST web service（通过 REST Web 服务插入、更新和删除数据）（1129）
+3. Game Programming（游戏编程）
+	1. Unity in Action Multiplatform game development in C#（Unity 实践使用 C# 进行多平台游戏开发）
+		1. First steps（第一步）（31）
+			1. Getting to know Unity（了解 Unity）（33）
+				1. Why is Unity so great?（为什么Unity如此伟大？）（34）
+					1. Unity’s strengths and advantages（Unity的优势）（34）
+					2. Downsides to be aware of（需要注意的缺点）（36）
+					3. Example games built with Unity（使用 Unity 构建的示例游戏）（37）
+				2. How to use Unity（如何使用Unity）（40）
+					1. Scene view, Game view, and the Toolbar（场景视图、游戏视图和工具栏）（42）
+					2. The mouse and keyboard（鼠标和键盘）（44）
+					3. The Hierarchy view and the Inspector panel（层次结构视图和检查器面板）（45）
+					4. The Project and Console tabs（项目和控制台选项卡）（46）
+				3. Getting up and running with Unity programming（启动并运行 Unity 编程）（46）
+					1. Running code in Unity: Script components（在 Unity 中运行代码：脚本组件）（47）
+					2. Using Visual Studio, the included IDE（使用 Visual Studio（附带的 IDE））（48）
+					3. Printing to the console: Hello World!（打印到控制台：Hello World！）（49）
+			2. Building a demo that puts you in 3D space（构建一个让您置身于 3D 空间的演示）（53）
+				1. Before you start . . .（在你开始之前 。 。 。）（54）
+					1. Planning the project（规划项目）（54）
+					2. Understanding 3D coordinate space（了解 3D 坐标空间）（55）
+				2. Begin the project: Place objects in the scene（开始项目：将对象放置在场景中）（57）
+					1. The scenery: Floor, outer walls, and inner walls（风景：地板、外墙、内墙）（58）
+					2. Lights and cameras（灯光和相机）（60）
+					3. The player’s collider and viewpoint（玩家的碰撞器和视点）（62）
+				3. Make things move: A script that applies transforms（让事物动起来：应用变换的脚本）（63）
+					1. Visualizing how movement is programmed（可视化运动的编程方式）（63）
+					2. Writing code to implement the diagram（编写代码来实现该图）（64）
+					3. Understanding local vs. global coordinate space（了解局部坐标空间与全局坐标空间）（65）
+				4. Script component for looking around: MouseLook（用于四处查看的脚本组件：MouseLook）（67）
+					1. Horizontal rotation that tracks mouse movement（跟踪鼠标移动的水平旋转）（68）
+					2. Vertical rotation with limits（垂直旋转有限制）（69）
+					3. Horizontal and vertical rotation at the same time（水平和垂直同时旋转）（71）
+				5. Keyboard input component: First-person controls（键盘输入组件：第一人称控件）（74）
+					1. Responding to keypresses（响应按键）（74）
+					2. Setting a rate of movement independent of the computer’s speed（设置独立于计算机速度的移动速率）（75）
+					3. Moving the CharacterController for collision detection（移动CharacterController以进行碰撞检测）（76）
+					4. Adjusting components for walking instead of flying（调整组件以步行而不是飞行）（77）
+			3. Adding enemies and projectiles to the 3D game（将敌人和射弹添加到 3D 游戏中）（80）
+				1. Shooting via raycasts（通过光线投射进行拍摄）（81）
+					1. What is raycasting?（什么是光线投射？）（82）
+					2. Using the ScreenPointToRay command for shooting（使用ScreenPointToRay命令进行拍摄）（82）
+					3. Adding visual indicators for aiming and hits（添加瞄准和命中的视觉指示器）（84）
+				2. Scripting reactive targets（编写反应性目标脚本）（87）
+					1. Determining what was hit（确定被击中的对象）（87）
+					2. Alerting the target that it was hit（提醒目标已被击中）（88）
+				3. Basic wandering AI（基本的漫游AI）（90）
+					1. Diagramming how basic AI works（绘制基本人工智能的工作原理图）（90）
+					2. “Seeing” obstacles with a raycast（通过光线投射“看到”障碍物）（91）
+					3. Tracking the character’s state（追踪角色的状态）（92）
+				4. Spawning enemy prefabs（生成敌方预制件）（94）
+					1. What is a prefab?（什么是预制件？）（94）
+					2. Creating the enemy prefab（创建敌人预制件）（95）
+					3. Instantiating from an invisible SceneController（从不可见的 SceneController 实例化）（95）
+				5. Shooting by instantiating objects（通过实例化物体进行拍摄）（98）
+					1. Creating the projectile prefab（创建射弹预制件）（98）
+					2. Shooting the projectile and colliding with a target（发射弹丸并与目标碰撞）（100）
+					3. Damaging the player（对玩家造成伤害）（103）
+			4. Developing graphics for your game（为您的游戏开发图形）（105）
+				1. Understanding art assets（了解艺术资产）（106）
+				2. Building basic 3D scenery: Whiteboxing（构建基本 3D 场景：白盒化）（108）
+					1. Whiteboxing explained（白盒解释）（108）
+					2. Drawing a floor plan for the level（绘制该层的平面图）（109）
+					3. Laying out primitives according to the plan（根据计划布置图元）（110）
+				3. Texturing the scene with 2D images（使用 2D 图像对场景进行纹理化）（112）
+					1. Choosing a file format（选择文件格式）（112）
+					2. Importing an image file（导入图像文件）（114）
+					3. Applying the image（应用图像）（115）
+				4. Generating sky visuals by using texture images（使用纹理图像生成天空视觉效果）（418）
+					1. What is a skybox?（什么是天空盒？）（117）
+					2. Creating a new skybox material（创建新的天空盒材质）（118）
+				5. Working with custom 3D models（使用自定义 3D 模型）（120）
+					1. Which file format to choose?（选择哪种文件格式？）（121）
+					2. Exporting and importing the model（导出和导入模型）（122）
+				6. Creating effects by using particle systems（使用粒子系统创建效果）（125）
+					1. Adjusting parameters on the default effect（调整默认效果的参数）（126）
+					2. Applying a new texture for fire（应用新的火焰纹理）（128）
+					3. Attaching particle effects to 3D objects（129）
+		2. Getting comfortable（变得舒适）（131）
+			1. Building a Memory game using Unity’s 2D functionality（使用 Unity 的 2D 功能构建记忆游戏）（133）
+				1. Setting up everything for 2D graphics（设置 2D 图形的所有内容）（134）
+					1. Preparing the project（准备项目）（135）
+					2. Displaying 2D images (aka sprites)（显示 2D 图像（又名精灵））（137）
+					3. Switching the camera to 2D mode（将相机切换至 2D 模式）（138）
+				2. Building a card object and making it react to clicks（构建卡片对象并使其对点击做出反应）（140）
+					1. Building the object out of sprites（用精灵构建对象）（140）
+					2. Mouse input code（鼠标输入代码）（141）
+					3. Revealing the card on a click（单击即可显示卡片）（142）
+				3. Displaying the various card images（显示各种卡片图像）（143）
+					1. Loading images programmatically（以编程方式加载图像）（143）
+					2. Setting the image from an invisible SceneController（从不可见的 SceneController 设置图像）（144）
+					3. Instantiating a grid of cards（实例化卡片网格）（146）
+					4. Shuffling the cards（洗牌）（148）
+				4. Making and scoring matches（组织比赛并得分）（149）
+					1. Storing and comparing revealed cards（存储和比较翻出的牌）（150）
+					2. Hiding mismatched cards（隐藏不匹配的卡片）（150）
+					3. Text display for the score（分数的文本显示）（151）
+				5. Restart button（重启按钮）（153）
+					1. Programming a UIButton component by using SendMessage（使用 SendMessage 编写 UIButton 组件）（154）
+					2. Calling LoadScene from SceneController（从 SceneController 调用 LoadScene）（156）
+			2. Creating a basic 2D platformer（创建基本的 2D 平台游戏）（158）
+				1. Setting up the graphics（设置图形）（159）
+					1. Placing the scenery（放置风景）（159）
+					2. Importing sprite sheets（导入精灵表）（160）
+				2. Moving the player left and right（左右移动玩家）（162）
+					1. Writing keyboard controls（编写键盘控件）（163）
+					2. Colliding with the block（与方块碰撞）（164）
+				3. Playing the sprite’s animation（播放精灵的动画）（164）
+					1. Explaining the Mecanim animation system（解释 Mecanim 动画系统）（164）
+					2. Triggering animations from code（从代码触发动画）（166）
+				4. Adding the ability to jump（增加跳跃能力）（167）
+					1. Falling from gravity（因重力而坠落）（167）
+					2. Applying an upward impulse（施加向上的推动力）（168）
+					3. Detecting the ground（检测地面）（169）
+				5. Additional features for a platform game（平台游戏的附加功能）（170）
+					1. Unusual floors: Slopes and one-way platforms（不寻常的楼层：斜坡和单向平台）（170）
+					2. Implementing moving platforms（实施移动平台）（172）
+					3. Camera control（相机控制）（175）
+			3. Putting a GUI onto a game（将 GUI 放入游戏中）（177）
+				1. Before you start writing code . . .（在开始编写代码之前。 。 。）（179）
+					1. Immediate mode GUI or advanced 2D interface?（立即模式 GUI 还是高级 2D 界面？）（179）
+					2. Planning the layout（规划布局）（180）
+					3. Importing UI images（导入用户界面图像）（181）
+				2. Setting up the GUI display（设置 GUI 显示）（181）
+					1. Creating a canvas for the interface（为界面创建画布）（181）
+					2. Buttons, images, and text labels（按钮、图像和文本标签）（183）
+					3. Controlling the position of UI elements（控制 UI 元素的位置）（186）
+				3. Programming interactivity in the UI（UI 中的交互编程）（187）
+					1. Programming an invisible UIController（编写一个不可见的 UIController）（188）
+					2. Creating a pop-up window（创建弹出窗口）（190）
+					3. Setting values using sliders and input fields（使用滑块和输入字段设置值）（193）
+				4. Updating the game by responding to events（使用滑块和输入字段设置值）（196）
+					1. Integrating an event system（集成事件系统）（196）
+					2. Broadcasting and listening for events from the scene（广播和监听现场事件）（197）
+					3. Broadcasting and listening for events from the HUD（广播和监听来自 HUD 的事件）（198）
+			4. Creating a third-person 3D game: Player movement and animation（创建第三人称 3D 游戏：玩家运动和动画）（201）
+				1. Adjusting the camera view for third-person（调整第三人称视角）（203）
+					1. Importing a character to look at（导入一个角色来查看）（204）
+					2. Adding shadows to the scene（向场景添加阴影）（205）
+					3. Orbiting the camera around the player character（让摄像机围绕玩家角色旋转）（207）
+				2. Programming camera-relative movement controls（对摄像机相关的运动控制进行编程）（210）
+					1. Rotating the character to face movement direction（旋转角色以面向移动方向）（210）
+					2. Moving forward in that direction（朝着那个方向前进）（213）
+				3. Implementing the jump action（实现跳跃动作）（214）
+					1. Applying vertical speed and acceleration（应用垂直速度和加速度）（215）
+					2. Modifying the ground detection to handle edges and slopes（修改地面检测以处理边缘和斜坡）（216）
+				4. Setting up animations on the player character（在玩家角色上设置动画）（220）
+					1. Defining animation clips in the imported model（在导入的模型中定义动画剪辑）（222）
+					2. Creating the animator controller for these animations（为这些动画创建动画控制器）（224）
+					3. Writing code that operates the animator（编写操作动画器的代码）（227）
+			5. Adding interactive devices and items within the game（在游戏中添加互动设备和物品）（230）
+				1. Creating doors and other devices（创建门和其他设备）（231）
+					1. Doors that open and close on a keypress（通过按键打开和关闭的门）（231）
+					2. Checking distance and facing before opening the door（开门前检查距离和朝向）（233）
+					3. Operating a color-changing monitor（操作变色显示器）（235）
+				2. Interacting with objects by bumping into them（通过碰撞物体与物体进行交互）（236）
+					1. Colliding with physics-enabled obstacles（与物理支持的障碍物碰撞）（236）
+					2. Operating the door with a trigger object（使用触发对象操作门）（237）
+					3. Collecting items scattered around the level（收集散布在关卡各处的物品）（240）
+				3. Managing inventory data and game state（管理库存数据和游戏状态）（242）
+					1. Setting up player and inventory managers（设置玩家和库存管理器）（242）
+					2. Programming the game managers（游戏管理器编程）（244）
+					3. Storing inventory in a collection object: List vs. Dictionary（在集合对象中存储库存：列表与字典）（247）
+				4. Inventory UI for using and equipping items（用于使用和装备物品的库存 UI）（250）
+					1. Displaying inventory items in the UI（在 UI 中显示库存项目）（250）
+					2. Equipping a key to use on locked doors（配备钥匙以用于上锁的门）（253）
+					3. Restoring the player’s health by consuming health packs（通过消耗生命包来恢复玩家的生命值）（254）
+		3. Strong finish（坚固的表面处理）
+			1. Connecting your game to the internet（将您的游戏连接到互联网）（259）
+				1. Creating an outdoor scene（创建室外场景）（261）
+					1. Generating sky visuals by using a skybox（使用天空盒生成天空视觉效果）（261）
+					2. Setting up an atmosphere that’s controlled by code（营造一种由代码控制的氛围）（262）
+				2. Downloading weather data from an internet service（从互联网服务下载天气数据）（265）
+					1. Requesting HTTP data using coroutines（使用协程请求 HTTP 数据）（268）
+					2. Parsing XML（解析XML）（272）
+					3. Parsing JSON（解析 JSON）（273）
+					4. Affecting the scene based on weather data（根据天气数据影响场景）（276）
+				3. Adding a networked billboard（添加网络广告牌）（277）
+					1. Loading images from the internet（从互联网加载图像）（277）
+					2. Displaying images on the billboard（在广告牌上显示图像）（280）
+					3. Caching the downloaded image for reuse（缓存下载的图像以供重复使用）（281）
+				4. Posting data to a web server（将数据发布到网络服务器）（283）
+					1. Tracking current weather: Sending post requests（跟踪当前天气：发送帖子请求）（284）
+					2. Server-side code in PHP（PHP 中的服务器端代码）（285）
+			2. Playing audio: Sound effects and music（播放音频：音效和音乐）（287）
+				1. Importing sound effects（导入音效）（288）
+					1. Supported file formats（支持的文件格式）（288）
+					2. Importing audio files（导入音频文件）（290）
+				2. Playing sound effects（播放音效）（291）
+					1. Explaining what’s involved: Audio clip vs. source vs. listener（解释所涉及的内容：音频剪辑与源与听众）（291）
+					2. Assigning a looping sound（分配循环声音）（293）
+					3. Triggering sound effects from code（从代码触发音效）（294）
+				3. Using the audio control interface（使用音频控制接口）（295）
+					1. Setting up the central AudioManager（设置中央 AudioManager）（295）
+					2. Volume control UI（音量控制界面）（297）
+					3. Playing UI sounds（播放用户界面声音）（301）
+				4. Adding background music（添加背景音乐）（301）
+					1. Playing music loops（循环播放音乐）（302）
+					2. Controlling music volume separately（单独控制音乐音量）（306）
+					3. Fading between songs（歌曲之间的淡入淡出）（308）
+			3. Putting the parts together into a complete game（将各个部分组合成一个完整的游戏）（312）
+				1. Building an action RPG by repurposing projects（通过重新利用项目来构建动作角色扮演游戏）（313）
+					1. Assembling assets and code from multiple projects（组装多个项目的资产和代码）（314）
+					2. Programming point-and-click controls: Movement and devices（对点击式控件进行编程：移动和设备）（317）
+					3. Replacing the old GUI with a new interface（用新界面替换旧 GUI）（323）
+				2. Developing the overarching game structure（开发总体游戏结构）（329）
+					1. Controlling mission flow and multiple levels（控制任务流程和多个级别）（329）
+					2. Completing a level by reaching the exit（到达出口即可完成关卡）（333）
+					3. Losing the level when caught by enemies（被敌人抓住时失去等级）（335）
+				3. Handling the player’s progression through the game（处理玩家在游戏中的进展）（337）
+					1. Saving and loading the player’s progress（保存和加载玩家的进度）（337）
+					2. Beating the game by completing three levels（通过完成三个级别来击败游戏）（341）
+			4. Deploying your game to players’ devices（将您的游戏部署到玩家的设备上）（344）
+				1. Start by building for the desktop: Windows, Mac, and Linux（首先针对桌面进行构建：Windows、Mac 和 Linux）（347）
+					1. Building the application（构建应用程序）（347）
+					2. Adjusting player settings: Setting the game’s name and icon（调整玩家设置：设置游戏名称和图标）（348）
+					3. Platform-dependent compilation（平台相关编译）（349）
+				2. Building for the web（为网络构建）（351）
+					1. Building the game embedded in a web page（构建嵌入网页的游戏）（351）
+					2. Communicating with JavaScript in the browser（在浏览器中与 JavaScript 通信）（352）
+				3. Building for mobile: iOS and Android（为移动设备构建：iOS 和 Android）（355）
+					1. Setting up the build tools（设置构建工具）（356）
+					2. Texture compression（纹理压缩）（361）
+					3. Developing plugins（开发插件）（362）
+				4. Developing XR (both VR and AR)（开发 XR（VR 和 AR））（371）
+					1. Supporting virtual reality headsets（支持虚拟现实耳机）（371）
+					2. AR Foundation for mobile Augmented Reality（移动增强现实 AR 基金会）（372）
