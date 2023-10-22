@@ -1529,7 +1529,367 @@
 				2. Updating the UWP application to use the web service（更新 UWP 应用程序以使用 Web 服务）（1107）
 				3. Searching for data in the Customers app（在客户应用程序中搜索数据）（1120）
 				4. Inserting, updating, and deleting data through a REST web service（通过 REST Web 服务插入、更新和删除数据）（1129）
-3. Game Programming（游戏编程）
+3. Software Development（软件开发）
+	1. Head First Design Patterns（Head First设计模式）
+		1. intro to Design Patterns Welcome to Design Patterns（设计模式简介 欢迎来到设计模式）（39）
+			1. It started with a simple SimUDuck app（它从一个简单的 SimUDuck 应用程序开始）（40）
+			2. But now we need the ducks to FLY（但现在我们需要鸭子飞翔）（41）
+			3. But something went horribly wrong...（但发生了可怕的错误......）（42）
+			4. Joe thinks about inheritance（乔考虑继承问题）（43）
+			5. How about an interface?（接口怎么样？）（44）
+			6. What would you do if you were Joe?（如果你是乔你会怎么做？）（45）
+			7. The one constant in software development（软件开发中的一个常数）（46）
+			8. Zeroing in on the problem（聚焦问题）（47）
+			9. Separating what changes from what stays the same（将变化的内容与保持不变的内容分开）（48）
+			10. Designing the Duck Behaviors（设计鸭子的行为）（49）
+			11. Implementing the Duck Behaviors（实施鸭子行为）（51）
+			12. Integrating the Duck Behaviors（整合鸭子行为）（53）
+			13. More integration...（更多整合...）（54）
+			14. Testing the Duck code（测试鸭子代码）（56）
+			15. Setting behavior dynamically（动态设置行为）（58）
+			16. The Big Picture on encapsulated behaviors（封装行为的大局观）（60）
+			17. HAS-A can be better than IS-A（HAS-A 可能比 IS-A 更好）（61）
+			18. Speaking of Design Patterns...（说到设计模式...）（62）
+			19. Overheard at the local diner...（在当地的小餐馆里无意中听到的……）（64）
+			20. Overheard in the next cubicle...（隔壁小隔间里无意中听到的……）（65）
+			21. The power of a shared pattern vocabulary（共享模式词汇的力量）（66）
+			22. How do I use Design Patterns?（如何使用设计模式？）（67）
+			23. Skeptical Developer（持怀疑态度的开发者）（68）
+			24. Friendly Patterns Guru（友好模式大师）（68）
+			25. Tools for your Design Toolbox（设计工具箱中的工具）（70）
+		2. the Observer Pattern Keeping your Objects in the Know（观察者模式让你的对象了解情况）（75）
+			1. The Weather Monitoring application overview（天气监测应用概述）（77）
+			2. Unpacking the WeatherData class（解压 WeatherData 类）（78）
+			3. Our Goal（我们的目标）（79）
+			4. Taking a first, misguided implementation of the Weather Station（第一次错误地实施气象站）（80）
+			5. What’s wrong with our implementation anyway?（我们的实施到底出了什么问题？）（81）
+			6. Meet the Observer Pattern（认识观察者模式）（82）
+			7. Publishers + Subscribers = Observer Pattern（发布者 + 订阅者 = 观察者模式）（83）
+			8. A day in the life of the Observer Pattern（观察者模式生活中的一天）（84）
+			9. Five-minute drama: a subject for observation（五分钟戏剧：观察的主题）（86）
+			10. Two weeks later...（两个星期后...）（88）
+			11. The Observer Pattern defined（观察者模式的定义）（89）
+			12. The Observer Pattern: the Class Diagram（观察者模式：类图）（90）
+			13. The Power of Loose Coupling（松耦合的力量）（92）
+			14. Cubicle conversation（隔间谈话）（94）
+			15. Designing the Weather Station（设计气象站）（95）
+			16. Implementing the Weather Station（实施气象站）（96）
+			17. Implementing the Subject interface in WeatherData（在WeatherData中实现Subject接口）（97）
+			18. Now, let’s build those display elements（现在，让我们构建这些显示元素）（98）
+			19. Power up the Weather Station（启动气象站）（99）
+			20. Looking for the Observer Pattern in the Wild（在野外寻找观察者模式）（103）
+			21. Coding the life-changing application（编写改变生活的应用程序）（104）
+			22. Meanwhile, back at Weather-O-Rama（与此同时，回到Weather-O-Rama）（107）
+			23. Test Drive the new code（测试新代码）（109）
+			24. Tools for your Design Toolbox（设计工具箱中的工具）（110）
+		3. the Decorator Pattern Decorating Objects（装饰者模式装饰对象）（117）
+			1. Welcome to Starbuzz Coffee（欢迎来到星巴兹咖啡）（118）
+			2. The Open-Closed Principle（开闭原则）（124）
+			3. Meet the Decorator Pattern（认识装饰者模式）（126）
+			4. Constructing a drink order with Decorators（使用装饰器构建饮料订单）（127）
+			5. The Decorator Pattern defined（装饰模式的定义）（129）
+			6. Decorating our Beverages（装饰我们的饮料）（129）
+			7. Cubicle Conversation（隔间对话）（130）
+			8. New barista training（新咖啡师培训）（132）
+			9. Writing the Starbuzz code（编写 Starbuzz 代码）（133）
+			10. Coding beverages（饮料编码）（134）
+			11. Coding condiments（调味品编码）（135）
+			12. Serving some coffees（供应一些咖啡）（136）
+			13. Real-World Decorators: Java I/O（现实世界的装饰器：Java I/O）（138）
+			14. Decorating the java.io classes（装饰 java.io 类）（138）
+			15. Writing your own Java I/O Decorator（编写您自己的 Java I/O 装饰器）（140）
+			16. Test out your new Java I/O Decorator（测试您的新 Java I/O 装饰器）（141）
+			17. Tools for your Design Toolbox（设计工具箱中的工具）（143）
+		4. the Factory Pattern Baking with OO Goodness（工厂模式烘焙与 OO 的优点）（147）
+			1. Identifying the aspects that vary（识别不同的方面）（150）
+			2. But the pressure is on to add more pizza types（151）
+			3. Encapsulating object creation（封装对象创建）（152）
+			4. Building a simple pizza factory（建造一个简单的披萨工厂）（153）
+			5. Reworking the PizzaStore class（重新设计 PizzaStore 类）（154）
+			6. The Simple Factory defined（简单工厂定义）（155）
+			7. Franchising the pizza store（披萨店特许经营）（156）
+			8. We’ve seen one approach...（我们已经看到了一种方法......）（157）
+			9. But you’d like a little more quality control...（但您想要更多的质量控制......）（157）
+			10. A framework for the pizza store（披萨店的框架）（158）
+			11. Allowing the subclasses to decide（允许子类决定）（159）
+			12. Let’s make a Pizza Store（让我们开一家披萨店）（161）
+			13. Declaring a factory method（声明工厂方法）（163）
+			14. Let’s see how it works: ordering pizzas with the pizza factory method（让我们看看它是如何工作的：使用披萨工厂方法订购披萨）（164）
+			15. So how do they order?（那么他们如何订购呢？）（164）
+			16. Let’s check out how these pizzas are really made to order...（让我们看看这些披萨是如何真正按订单制作的......）（164）
+			17. We’re just missing one thing: Pizzas!（我们只是缺少一件事：披萨！）（166）
+			18. You’ve waited long enough. Time for some pizzas!（你已经等得够久了。 是时候吃一些披萨了！）（167）
+			19. It’s finally time to meet the Factory Method Pattern（终于到了工厂方法模式的时候了）（169）
+			20. View Creators and Products in Parallel（并行查看创作者和产品）（170）
+			21. Factory Method Pattern defined（工厂方法模式定义）（172）
+			22. Looking at object dependencies（查看对象依赖关系）（176）
+			23. The Dependency Inversion Principle（依赖倒置原则）（177）
+			24. Applying the Principle（应用原则）（178）
+			25. Inverting your thinking...（颠覆你的思维...）（180）
+			26. A few guidelines to help you follow the Principle...（一些指导方针可以帮助您遵循该原则...）（181）
+			27. Meanwhile, back at the Pizza Store...（与此同时，回到披萨店……）（182）
+			28. Ensuring consistency in your ingredients（确保成分的一致性）（182）
+			29. Families of ingredients...（成分家族...）（183）
+			30. Building the ingredient factories（建设原料工厂）（184）
+			31. Building the New York ingredient factory（建造纽约配料工厂）（185）
+			32. Reworking the pizzas...（重新加工披萨...）（187）
+			33. Revisiting our pizza stores（重访我们的披萨店）（189）
+			34. What have we done?（我们做了什么？）（191）
+			35. More pizza for Ethan and Joel...（给伊森和乔尔更多的披萨......）（192）
+			36. Abstract Factory Pattern defined（抽象工厂模式定义）（194）
+			37. Factory Method and Abstract Factory compared（工厂方法和抽象工厂的比较）（198）
+			38. Tools for your Design Toolbox（设计工具箱中的工具）（200）
+		5. the Singleton Pattern One-of-a-Kind Objects（单例模式独一无二的对象）（207）
+			1. The Little Singleton（小单身汉）（209）
+			2. Dissecting the classic Singleton Pattern implementation（剖析经典的单例模式实现）（211）
+			3. The Chocolate Factory（巧克力工厂）（213）
+			4. Singleton Pattern defined（单例模式定义）（215）
+			5. Hershey, PA, we have a problem...（宾夕法尼亚州赫尔希，我们有一个问题......）（216）
+			6. Dealing with multithreading（处理多线程）（218）
+			7. Can we improve multithreading?（我们可以改进多线程吗？）（219）
+			8. Meanwhile, back at the Chocolate Factory...（与此同时，回到巧克力工厂……）（221）
+			9. Congratulations!（恭喜！）（222）（设计工具箱中的工具）（224）
+			10. Tools for your Design Toolbox（设计工具箱中的工具）（224）
+		6. the Command Pattern Encapsulating Invocation（命令模式封装调用）（229）
+			1. Free hardware! Let’s check out the Remote Control...（免费硬件！ 我们来看看远程控制...）（231）
+			2. Taking a look at the vendor classes（查看供应商类别）（232）
+			3. Cubicle Conversation（隔间对话）（233）
+			4. Meanwhile, back at the Diner..., or, A brief introduction to the Command Pattern（与此同时，回到餐厅......，或者，命令模式的简要介绍）（235）
+			5. Let’s study the interaction in a little more detail...（让我们更详细地研究一下交互作用......）（235）
+			6. The Objectville Diner roles and responsibilities（Objectville Diner 的角色和职责）（237）
+			7. From the Diner to the Command Pattern（从餐厅到指挥模式）（239）
+			8. Our first command object（我们的第一个命令对象）（241）
+			9. Using the command object（使用命令对象）（242）
+			10. Creating a simple test to use the Remote Control（创建一个简单的测试来使用远程控制）（242）
+			11. The Command Pattern defined（命令模式定义）（244）
+			12. Assigning Commands to slots（将命令分配给插槽）（247）
+			13. Implementing the Remote Control（实施远程控制）（248）
+			14. Implementing the Commands（执行命令）（249）
+			15. Putting the Remote Control through its paces（检验遥控器的性能）（250）
+			16. Time to write that documentation...（是时候编写该文档了...）（253）
+			17. The updated code, using lambda expressions:（更新后的代码，使用 lambda 表达式：）（254）
+			18. What are we doing?（我们在做什么？）（255）
+			19. Time to QA that Undo button!（是时候对撤消按钮进行质量检查了！）（258）
+			20. Using state to implement Undo（使用状态来实现Undo）（259）
+			21. Adding Undo to the Ceiling Fan commands（将撤消添加到吊扇命令）（260）
+			22. Get ready to test the ceiling fan（准备好测试吊扇）（261）
+			23. Testing the ceiling fan...（测试吊扇...）（262）
+			24. Every remote needs a Party Mode!（每个遥控器都需要派对模式！）（263）
+			25. Using a macro command（使用宏命令）（264）
+			26. More uses of the Command Pattern: queuing requests（命令模式的更多用途：排队请求）（267）
+			27. More uses of the Command Pattern: logging requests（命令模式的更多用途：记录请求）（672）
+			28. Command Pattern in the Real World（现实世界中的命令模式）（269）
+			29. Tools for your Design Toolbox（设计工具箱中的工具）（271）
+		7. the Adapter and Facade Patterns Being Adaptive（适配器和外观模式是自适应的）（275）
+			1. Adapters all around us（我们身边的适配器）（275）
+			2. Object-oriented adapters（面向对象的适配器）（277）
+			3. If it walks like a duck and quacks like a duck, then it might be a turkey wrapped with a duck adapter...（如果它像鸭子一样行走并且像鸭子一样嘎嘎叫，那么它可能是一只用鸭子适配器包裹的火鸡......）（278）
+			4. Test drive the adapter（测试驱动适配器）（280）
+			5. The Adapter Pattern explained（适配器模式解释）（281）
+			6. Adapter Pattern defined（适配器模式定义）（283）
+			7. Object and class adapters（对象和类适配器）（284）
+			8. Real-world adapters（现实世界的适配器）（288）
+			9. Adapting an Enumeration to an Iterator（使枚举适应迭代器）（289）
+			10. Designing the Adapter（设计适配器）（289）
+			11. Dealing with the remove() method（处理remove()方法）（290）
+			12. Writing the EnumerationIterator adapter（编写枚举迭代器适配器）（290）
+			13. And now for something different...（现在换一些不同的东西......）（294）
+			14. Home Sweet Home Theater（甜蜜之家家庭影院）（295）
+			15. Watching a movie (the hard way)（看电影（艰难的方式））（296）
+			16. Lights, Camera, Facade!（灯光、相机、立面！）（297）
+			17. Constructing your home theater facade（建造您的家庭影院立面）（301）
+			18. Implementing the simplified interface（实现简化的接口）（302）
+			19. Time to watch a movie (the easy way)（是时候看电影了（最简单的方法））（303）
+			20. Facade Pattern defined（外观模式定义）（304）
+			21. The Principle of Least Knowledge（最少知识原则）（304）
+			22. How NOT to Win Friends and Influence Objects（如何不赢得朋友和影响对象）（306）
+			23. Keeping your method calls in bounds...（让你的方法调用保持在界限之内......）（307）
+			24. The Facade Pattern and the Principle of Least Knowledge（外观模式和最少知识原则）（309）
+			25. Tools for your Design Toolbox（设计工具箱中的工具）（310）
+		8. the Template Method Pattern Encapsulating Algorithms（模板方法模式封装算法）（315）
+			1. It’s time for some more caffeine（是时候补充一些咖啡因了）（316）
+			2. Whipping up some coffee and tea classes (in Java)（开设一些咖啡和茶课程（Java））（317）
+			3. And now the Tea...（现在茶...）（318）
+			4. Let’s abstract that Coffee and Tea（让我们抽象一下咖啡和茶）（320）
+			5. Taking the design further...（进一步深化设计...）（321）
+			6. Abstracting prepareRecipe()（抽象prepareRecipe()）（322）
+			7. What have we done?（我们做了什么？）（325）
+			8. Meet the Template Method（认识模板方法）（326）
+			9. Let’s make some tea...（我们来泡杯茶吧……）（327）
+			10. What did the Template Method get us?（模板方法给我们带来了什么？）（328）
+			11. Template Method Pattern defined（模板方法模式定义）（329）
+			12. Hooked on Template Method...（迷上了模板方法......）（332）
+			13. Using the hook（使用钩子）（333）
+			14. Let’s run the Test Drive（让我们运行试驾）（334）
+			15. The Hollywood Principle（好莱坞原则）（336）
+			16. The Hollywood Principle and Template Method（好莱坞原则和模板方法）（337）
+			17. Template Methods in the Wild（野外模板方法）（339）
+			18. Sorting with Template Method（使用模板方法排序）（340）
+			19. We’ve got some ducks to sort...（我们有一些鸭子要分类...）（341）
+			20. What is compareTo()?（什么是compareTo()？）（341）
+			21. Comparing Ducks and Ducks（鸭子和鸭子的比较）（342）
+			22. Let’s sort some Ducks（让我们对一些鸭子进行排序）（343）
+			23. The making of the sorting duck machine（分拣鸭机的制作）（344）
+			24. Swingin’ with Frames（与框架一起摇摆）（346）
+			25. Custom Lists with AbstractList（带有 AbstractList 的自定义列表）（347）
+			26. Tools for your Design Toolbox（设计工具箱中的工具）（351）
+		9. the Iterator and Composite Patterns Well-Managed Collections（迭代器和复合模式管理良好的集合）（355）
+			1. Breaking News: Objectville Diner and Objectville Pancake House Merge（突发新闻：Objectville Diner 和 Objectville Pancake House 合并）（356）
+			2. Check out the Menu Items（查看菜单项）（357）
+			3. Lou and Mel’s Menu implementations（Lou 和 Mel 的菜单实现）（358）
+			4. What’s the problem with having two different menu representations?（有两种不同的菜单表示有什么问题？）（360）
+			5. Implementing the spec: our first attempt（实施规范：我们的第一次尝试）（361）
+			6. What now?（现在怎么办？）（362）
+			7. Can we encapsulate the iteration?（我们可以封装迭代吗？）（363）
+			8. Meet the Iterator Pattern（认识迭代器模式）（365）
+			9. Adding an Iterator to DinerMenu（将迭代器添加到 DinerMenu）（366）
+			10. Reworking the DinerMenu with Iterator（使用 Iterator 重新设计 DinerMenu）（367）
+			11. Fixing up the Waitress code（修复 Waitress 代码）（368）
+			12. Testing our code（测试我们的代码）（369）
+			13. Here’s the test run...（这是测试运行...）（369）
+			14. What have we done so far?（到目前为止我们做了什么？）（370）
+			15. Reviewing our current design...（回顾我们当前的设计...）（371）
+			16. Making some improvements...（进行一些改进...）（372）
+			17. Cleaning things up with java.util.Iterator（使用 java.util.Iterator 进行清理）（373）
+			18. We are almost there...（我们就快到了...）（374）
+			19. What does this get us?（这给我们带来什么？）（375）
+			20. Iterator Pattern defined（迭代器模式定义）（376）
+			21. The Iterator Pattern Structure（迭代器模式结构）（377）
+			22. The Single Responsibility Principle（单一责任原则）（378）
+			23. Meet Java’s Iterable interface（认识 Java 的 Iterable 接口）（381）
+			24. Java’s enhanced for loop（Java 的增强 for 循环）（382）
+			25. Not so fast; Arrays are not Iterables（没那么快； 数组不是可迭代的）（383）
+			26. Taking a look at the Café Menu（看看咖啡馆的菜单）（385）
+			27. Reworking the Café Menu code（重新设计咖啡馆菜单代码）（386）
+			28. Adding the Cafe Menu to the Waitress（将咖啡馆菜单添加到女服务员）（387）
+			29. Breakfast, lunch, AND dinner（早餐午餐和晚餐）（388）
+			30. What did we do?（我们做了什么？）（389）
+			31. Code Magnets（代码磁铁）（392）
+			32. Is the Waitress ready for prime time?（女服务员准备好迎接黄金时段了吗？）（393）
+			33. Just when we thought it was safe...（就在我们以为安全了的时候……）（395）
+			34. What do we need?（我们需要什么？）（396）
+			35. The Composite Pattern defined（复合模式定义）（398）
+			36. Designing Menus with Composite（使用 Composite 设计菜单）（401）
+			37. Implementing MenuComponent（实现菜单组件）（402）
+			38. Implementing the MenuItem（实现菜单项）（403）
+			39. Implementing the Composite Menu（实现复合菜单）（404）
+			40. Fixing the print() method（修复 print() 方法）（405）
+			41. Getting ready for a test drive...（准备试驾...）（406）
+			42. Now for the test drive...（现在进行试驾...）（407）
+			43. Getting ready for a test drive...（准备试驾...）（408）
+			44. Tools for your Design Toolbox（设计工具箱中的工具）（414）
+		10. the State Pattern The State of Things（状态模式 事物的状态）（419）
+			1. Java Breakers（Java 破坏者）（420）
+			2. Cubicle Conversation（隔间对话）（421）
+			3. State machines 101（状态机101）（422）
+			4. Writing the code（编写代码）（424）
+			5. In-house testing（内部测试）（426）
+			6. You knew it was coming...a change request!（您知道它即将到来...变更请求！）（428）
+			7. The messy STATE of things...（事情的混乱状态......）（430）
+			8. The new design（新设计）（432）
+			9. Defining the State interfaces and classes（定义 State 接口和类）（433）
+			10. Implementing our State classes（实施我们的状态类）（435）
+			11. Reworking the Gumball Machine（改造口香糖机）（436）
+			12. Now, let’s look at the complete GumballMachine class...（现在，让我们看看完整的 GumballMachine 类......）（437）
+			13. Implementing more states（实施更多状态）（438）
+			14. Let’s take a look at what we’ve done so far...（让我们看看到目前为止我们做了什么......）（441）
+			15. The State Pattern defined（状态模式定义）（444）
+			16. We still need to finish the Gumball 1 in 10 game（我们还需要在十场比赛中完成冈布奥一役）（447）
+			17. Finishing the game（完成游戏）（448）
+			18. Demo for the CEO of Mighty Gumball, Inc.（为 Mighty Gumball, Inc. 的首席执行官进行演示）（449）
+			19. Sanity check...（完整性检查...）（451）
+			20. We almost forgot!（我们差点忘了！）（454）
+			21. Tools for your Design Toolbox（设计工具箱中的工具）（457）
+		11. the Proxy Pattern Controlling Object Access（控制对象访问的代理模式）（463）
+			1. Coding the Monitor（监视器编码）（465）
+			2. Testing the Monitor（测试显示器）（564）
+			3. The role of the ‘remote proxy’（“远程代理”的作用）（468）
+			4. Adding a remote proxy to the Gumball Machine monitoring code（添加远程代理到Gumball Machine监控代码）（470）
+			5. Remote methods 101（远程方法 101）（471）
+			6. Walking through the design（浏览设计）（471）
+			7. How the method call happens（方法调用是如何发生的）（472）
+			8. Java RMI, the Big Picture（Java RMI，大局观）（474）
+			9. Making the Remote service（制作远程服务）（475）
+			10. Step one: make a Remote interface（第一步：制作远程接口）（476）
+			11. Step two: make a Remote implementation（第二步：进行远程实施）（477）
+			12. Step three: run rmiregistry（第三步：运行rmiregistry）（478）
+			13. Step four: start the service（第四步：启动服务）（478）
+			14. Complete code for the server side（服务器端完整代码）（479）
+			15. Complete code for the client side（客户端完整代码）（482）
+			16. Back to our GumballMachine remote proxy（回到我们的 GumballMachine 远程代理）（483）
+			17. Getting the GumballMachine ready to be a remote service（让 GumballMachine 准备好成为远程服务）（484）
+			18. Registering with the RMI registry...（正在向 RMI 注册表注册...）（485）
+			19. Now for the GumballMonitor client...（现在对于 GumballMonitor 客户端...）（487）
+			20. Writing the Monitor test drive（编写监视器测试驱动）（488）
+			21. Another demo for the CEO of Mighty Gumball...（Mighty Gumball 首席执行官的另一个演示......）（489）
+			22. The Proxy Pattern defined（代理模式定义）（493）
+			23. Get ready for the Virtual Proxy（为虚拟代理做好准备）（495）
+			24. Displaying Album covers（显示专辑封面）（496）
+			25. Designing the Album Cover Virtual Proxy（设计专辑封面虚拟代理）（497）
+			26. Writing the Image Proxy（编写图像代理）（498）
+			27. Testing the Album Cover Viewer（测试专辑封面查看器）（502）
+			28. What did we do?（我们做了什么？）（503）
+			29. Using the Java API’s Proxy to create a protection proxy（使用Java API的Proxy创建保护代理）（507）
+			30. Geeky Matchmaking in Objectville（Objectville 的极客对接会）（508）
+			31. The Person implementation（人员实施）（509）
+			32. Five-minute drama: protecting subjects（五分钟戏剧：保护主体）（511）
+			33. Big Picture: creating a Dynamic Proxy for the Person（大局：为人员创建动态代理）（512）
+			34. Step one: creating Invocation Handlers（第一步：创建调用处理程序）（513）
+			35. Step two: creating the Proxy class and instantiating the Proxy object（第二步：创建Proxy类并实例化Proxy对象）（515）
+			36. Testing the matchmaking service（测试匹配服务）（517）
+			37. Running the code...（运行代码...）（518）
+			38. The Proxy Zoo（代理动物园）（520）
+			39. Tools for your Design Toolbox（设计工具箱中的工具）（523）
+			40. The code for the Album Cover Viewer（专辑封面查看器的代码）（527）
+		12. compound patterns Patterns of Patterns（复合模式 模式的模式）（531）
+			1. Working together（一起工作）（532）
+			2. Duck reunion（鸭子团圆）（533）
+			3. Safety versus transparency（安全与透明度）（547）
+			4. What did we do?（我们做了什么？）（555）
+			5. A duck’s-eye view: the class diagram（鸭眼视图：类图）（556）
+			6. The King of Compound Patterns（复合模式之王）（558）
+			7. Meet Model-View-Controller（认识模型-视图-控制器）（561）
+			8. A closer look...（仔细一看...）（562）
+			9. Understanding MVC as a set of Patterns（将 MVC 理解为一组模式）（564）
+			10. Using MVC to control the beat...（使用MVC来控制节拍...）（566）
+			11. Putting the pieces together（将各个部分组合在一起）（568）
+			12. Building the pieces（构建碎片）（569）
+			13. Now let’s have a look at the concrete BeatModel class（现在让我们看一下具体的 BeatModel 类）（570）
+			14. The View（风景）（571）
+			15. Implementing the View（实现视图）（572）
+			16. Now for the Controller（现在是控制器）（574）
+			17. And here’s the implementation of the controller:（这是控制器的实现：）（575）
+			18. Putting it all together...（把它们放在一起......）（576）
+			19. Exploring Strategy（探索策略）（577）
+			20. Adapting the Model（调整模型）（578）
+			21. And now for a test run...（现在进行测试运行...）（580）
+			22. Tools for your Design Toolbox（设计工具箱中的工具）（583）
+		13. better living with patterns Patterns in the Real World（现实世界中的模式）（601）
+			1. Design Pattern defined（设计模式定义）（603）
+			2. Looking more closely at the Design Pattern definition（更仔细地查看设计模式定义）（605）
+			3. May the force be with you（愿原力与你同在）（606）
+			4. So you wanna be a Design Patterns writer（所以你想成为一名设计模式作家）（611）
+			5. Organizing Design Patterns（组织设计模式）（613）
+			6. Thinking in Patterns（模式思考）（618）
+			7. Your Mind on Patterns（你对模式的看法）（621）
+			8. Don’t forget the power of the shared vocabulary（不要忘记共享词汇的力量）（522）
+			9. Cruisin’ Objectville with the Gang of Four（与四人帮一起巡游奥博维尔）（625）
+			10. Your journey has just begun...（你的旅程才刚刚开始……）（626）
+			11. The Patterns Zoo（图案动物园）（628）
+			12. Annihilating evil with Anti-Patterns（用反模式消灭邪恶）（630）
+			13. Tools for your Design Toolbox（设计工具箱中的工具）（632）
+			14. Leaving Objectville...（离开奥布塞维尔...）（633）
+		14. Appendix Leftover Patterns（附录 剩余模式）（635）
+			1. Bridge（桥接模式）（636）
+			2. Builder（建造者模式）（638）
+			3. Chain of Responsibility（责任链模式）（640）
+			4. Flyweight（享元模式）（642）
+			5. Interpreter（解释器模式）（644）
+			6. Mediator（中介者模式）（646）
+			7. Memento（备忘录模式）（648）
+			8. Prototype（原型模式）（650）
+			9. Visitor（访问者模式）（652）
+4. Game Programming（游戏编程）
 	1. Unity in Action Multiplatform game development in C#（Unity 实践使用 C# 进行多平台游戏开发）
 		1. First steps（第一步）（31）
 			1. Getting to know Unity（了解 Unity）（33）
