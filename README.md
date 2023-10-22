@@ -1756,3 +1756,259 @@
 				4. Developing XR (both VR and AR)（开发 XR（VR 和 AR））（371）
 					1. Supporting virtual reality headsets（支持虚拟现实耳机）（371）
 					2. AR Foundation for mobile Augmented Reality（移动增强现实 AR 基金会）（372）
+	2. Learning Unreal Engine Game Development（学习虚幻引擎游戏开发）
+		1. An Overview of Unreal Engine（虚幻引擎概述）（22）
+			1. What goes into a game?（游戏中有什么内容？）（22）
+			2. What is a game engine?（什么是游戏引擎？）（23）
+			3. The history of Unreal Engine（虚幻引擎的历史）（23）
+			4. Game development（游戏开发）（25）
+				1. Artists（艺术家）（25）
+				2. Cinematic creators（电影创作者）（25）
+				3. Sound designers（声音设计师）（25）
+				4. Game designers（游戏设计师）（26）
+				5. Programmers（程序员）（26）
+			5. The components of Unreal Engine 4（虚幻引擎 4 的组件）（26）
+				1. The sound engine（声音引擎）（26）
+				2. The physics engine（物理引擎）（27）
+				3. The graphics engine（图形引擎）（27）
+				4. Input and the Gameplay framework（输入和游戏框架）（27）
+				5. Light and shadow（光与阴影）（28）
+				6. Post-process effects（后期处理效果）（29）
+				7. Artificial intelligence（人工智能）（29）
+				8. Online and multiplatform capabilities（在线和多平台功能）（30）
+			6. Unreal Engine and its powerful editors（虚幻引擎及其强大的编辑器）（30）
+				1. Unreal Editor（虚幻编辑器）（30）
+				2. Material Editor（材质编辑器）（31）
+					1. The Cascade particle system（级联粒子系统）（31）
+					2. The Persona skeletal mesh animation（Persona 骨骼网格动画）（32）
+					3. Landscape – building large outdoor worlds and foliage（景观——建造大型户外世界和树叶）（33）
+				3. Sound Cue Editor（声音提示编辑器）（33）
+				4. Matinee Editor（日场编辑）（33）
+				5. The Blueprint visual scripting system（Blueprint 可视化脚本系统）（34）
+			7. Unreal programming（虚幻编程）（35）
+				1. Unreal objects（虚幻的物体）（36）
+			8. A beginner's guide to the Unreal Editor（虚幻编辑器初学者指南）（36）
+				1. The start menu（开始菜单）（36）
+				2. Project Browser（项目浏览器）（37）
+				3. Content Browser（内容浏览器）（37）
+				4. Toolbar（工具栏）（38）
+				5. Viewport（视口）（39）
+				6. Scene Outliner（场景大纲）（39）
+				7. Modes（模式）（40）
+		2. Creating Your First Level（创建你的第一个关卡）（42）
+			1. Exploring preconfigured levels（探索预先配置的级别）（42）
+			2. Creating a new project（创建一个新项目）（43）
+			3. Navigating the viewport（浏览视口）（45）
+				1. Views（意见）（45）
+				2. Control keys（控制键）（46）
+			4. Creating a level from a new blank map（从新的空白地图创建关卡）（48）
+			5. Creating the ground using the BSP Box brush（使用 BSP Box 笔刷创建地面）（50）
+				1. Useful tip – selecting an object easily（有用的提示 – 轻松选择对象）（54）
+				2. Useful tip – changing View Mode to aid visuals（有用的提示 - 更改视图模式以辅助视觉效果）（55）
+			6. Adding light to a level（向关卡添加光线）（55）
+				1. Useful tip – positioning objects in a level（有用的提示 - 在关卡中放置对象）（57）
+			7. Adding the sky to a level（将天空添加到关卡中）（57）
+			8. Adding Player Start（添加玩家开始）（57）
+				1. Useful tip – rotating objects in a level（有用的提示 - 在关卡中旋转对象）（60）
+			9. Viewing a level that's been created（查看已创建的关卡）（61）
+			10. Saving a level（保存一个关卡）（62）
+			11. Configuring a map as a start level（将地图配置为起始关卡）（63）
+			12. Adding material to the ground（向地面添加材料）（63）
+			13. Adding a wall（添加一堵墙）（64）
+			14. Duplicating a wall（复制一面墙）（65）
+			15. Creating an opening for a door（为门创建一个开口）（67）
+			16. Adding materials to the walls（向墙壁添加材料）（70）
+			17. Sealing a room（密封一个房间）（71）
+			18. Adding props or a static mesh to the room（向房间添加道具或静态网格物体）（72）
+			19. Adding Lightmass Importance Volume（添加光质量重要性体积）（74）
+			20. Applying finishing touches to a room（对房间进行最后的修饰）（76）
+				1. Useful tip – using the drag snap grid（有用的提示 – 使用拖动捕捉网格）（77）
+		3. Game Objects – More and Move（游戏对象 – 更多和移动）（80）
+			1. BSP Brush（BSP刷）（80）
+				1. Background（背景）（81）
+				2. Brush type（刷式）（81）
+				3. Brush solidity（刷子坚固度）（81）
+			2. Static Mesh（静态网格体）（82）
+			3. BSP Brush versus Static Mesh（BSP 画笔与静态网格物体）（82）
+			4. Making Static Mesh movable（使静态网格物体可移动）（83）
+			5. Materials（材料）（84）
+				1. Creating a Material in Unreal（在虚幻中创建材质）（85）
+				2. Materials versus Textures（材质与纹理）（86）
+				3. Texture/UV mapping（纹理/UV 映射）（87）
+					1. How to create and use a Texture Map（如何创建和使用纹理贴图）（87）
+					2. Multitexturing（多重纹理）（88）
+					3. A special form of texture maps – Normal Maps（纹理贴图的一种特殊形式——法线贴图）（55）
+			6. Level of detail（详细程度）（89）
+			7. Collisions（碰撞）（89）
+				1. Collision configuration properties（碰撞配置属性）（90）
+					1. Simulation Generates Hit Events（模拟生成命中事件）（91）
+					2. Generate Overlap Events（生成重叠事件）（91）
+					3. Collision Presets（碰撞预设）（91）
+					4. Collision Enabled（碰撞启用）（91）
+					5. Object Type（对象类型）（91）
+					6. Collision Responses（碰撞响应）（91）
+						1. Trace Responses（跟踪响应）（91）
+						2. Object Responses（对象响应）（91）
+					7. Collision hulls（碰撞船体）（92）
+				2. Interactions（互动）（93）
+			8. Static Mesh creation pipeline（静态网格体创建管道）（94）
+			9. Introducing volumes（介绍量）（94）
+				1. Blocking Volume（阻塞量）（94）
+				2. Camera Blocking Volume（相机遮挡量）（95）
+				3. Trigger Volume（触发量）（96）
+				4. Nav Mesh Bounds Volume（导航网格边界体积）（96）
+				5. Physics Volume（物理量）
+					1. Pain Causing Volume（引起疼痛的量）（97）
+					2. Kill Z Volume（杀死 Z 量）
+					3. Level Streaming Volume（级别 流媒体音量）（99）
+					4. Cull Distance Volume（剔除距离体积）（100）
+					5. Audio Volume（音频音量）（101）
+					6. PostProcess Volume（后处理体积）（101）
+					7. Lightmass Importance Volume（光质量 重要性 体积）（101）
+			10. Introducing Blueprint（介绍蓝图）（101）
+				1. Level Blueprint（关卡蓝图）（103）
+			11. Using the Trigger Volume to turn on/off light（使用触发音量打开/关闭灯）（103）
+			12. Using Trigger Volume to toggle light on/ off (optional)（使用触发音量来打开/关闭灯光（可选））（115）
+		4. Material and Light（材质与光线）（118）
+			1. Materials（材质）（118）
+			2. The Material Editor（材质编辑器）（119）
+				1. The rendering system（渲染系统）（119）
+				2. Physical Based Shading Model（基于物理的着色模型）（119）
+				3. High Level Shading Language（高级着色语言）（120）
+				4. Getting started（入门）（120）
+				5. Creating a simple custom material（创建简单的自定义材质）（120）
+				6. Creating custom material using simple textures（使用简单纹理创建自定义材质）（128）
+				7. Using custom materials to transform the level（使用自定义材质来变换关卡）（130）
+			3. Rendering pipeline（渲染管线）（131）
+			4. Shaders（着色器）（132）
+			5. APIs – DirectX and OpenGL（API – DirectX 和 OpenGL）（136）
+				1. DirectX（136）
+					1. DirectX12（136）
+						1. Pipeline state representation（管道状态表示）（137）
+						2. Work submission（工作提交）（139）
+						3. Resource access（资源获取）（139）
+			6. Lights（灯）（139）
+				1. Configuring a Point Light with more settings（使用更多设置配置点光源）（140）
+					1. Attenuation Radius（衰减半径）（141）
+					2. Intensity（强度）（142）
+						1. Use Inverse Squared Falloff（使用平方反比衰减）（142）
+					3. Color（颜色）（143）
+				2. Adding and configuring a Spot Light（添加和配置聚光灯）（143）
+					1. Inner cone and outer cone angle（内锥角和外锥角）（143）
+				3. Using the IES Profile（使用 IES 配置文件）（144）
+					1. Downloading IES Light Profiles（下载 IES 灯光配置文件）（145）
+					2. Importing IES Profiles into the Unreal Engine Editor（将 IES 配置文件导入虚幻引擎编辑器）（145）
+					3. Using IES Profiles（使用 IES 配置文件）（146）
+				4. Adding and configuring a Directional Light（添加和配置定向光）（147）
+					1. Example – adding and configuring a Sky light（示例 - 添加和配置天光）（148）
+				5. Static, stationary, or movable lights（静态、固定或可移动的灯）（149）
+					1. Common light/shadow definitions（常见的光/阴影定义）（150）
+					2. Static Light（静态光）（151）
+					3. Stationary Light（固定灯）（151）
+					4. Movable Light（移动灯）（151）
+				6. Exercise – extending your game level (optional)（练习 – 提高你的游戏水平（可选））（151）
+					1. Useful tips（有用的提示）（152）
+					2. Guidelines（指南）（152）
+						1. Area expansion（面积扩大）（152）
+						2. Creating windows and doors（创建门窗）（154）
+						3. Creating basic furniture（创建基本家具）（157）
+		5. Animation and AI（动画与人工智能）（160）
+			1. What is animation?（什么是动画？）（161）
+			2. Understanding how to animate a 3D model（了解如何制作 3D 模型动画）（161）
+				1. Preparing before animation（动画制作前的准备工作）（162）
+				2. How is animation created?（动画是如何创作的？）（163）
+			3. What Unreal Engine 4 offers for animation in games（虚幻引擎 4 为游戏动画提供了什么）（164）
+				1. Importing animation from Maya/3ds Max（从 Maya/3ds Max 导入动画）（164）
+					1. Tutorial – importing the animation pack from Marketplace（教程 - 从 Marketplace 导入动画包）（164）
+				2. What can you do with Persona?（你可以用角色做什么？）（166）
+					1. Tutorial – assigning existing animation to a Pawn（教程 - 将现有动画分配给 Pawn）（166）
+				3. Why do we need to blend animations?（为什么我们需要混合动画？）（168）
+					1. Tutorial – creating a Blend Animation（教程 – 创建混合动画）（169）
+					2. Tutorial – setting up the Animation Blueprint to use a Blend Animation（教程 - 设置动画蓝图以使用混合动画）（172）
+						1. AnimGraph（动画图）（175）
+						2. EventGraph（事件图）（179）
+			4. Artificial intelligence（人工智能）（183）
+				1. Understanding a Behavior Tree（理解行为树）（183）
+				2. Exercise – designing the logic of a Behavior Tree（练习——设计行为树的逻辑）（185）
+				3. Example – creating a simple Behavior Tree（示例 – 创建一个简单的行为树）（185）
+				4. How to implement a Behavior Tree in Unreal Engine 4（如何在虚幻引擎 4 中实现行为树）（188）
+				5. Navigation Mesh（导航网格）（188）
+					1. Tutorial – creating a Navigation Mesh（教程 – 创建导航网格）（189）
+				6. Tutorial – setting up AI logic（教程 – 设置 AI 逻辑）（190）
+					1. Creating the Blueprint AIController（创建蓝图 AIController）（191）
+					2. Creating the Blueprint character（创建蓝图角色）（192）
+					3. Adding and configuring Mesh to a Character Blueprint（向角色蓝图添加和配置网格）（192）
+					4. Linking AIController to the Character Blueprint（将 AIController 链接到角色蓝图）（195）
+					5. Adding basic animation（添加基本动画）（196）
+					6. Configuring AIController（配置AI控制器）（196）
+						1. Nodes to add in EventGraph（要在 EventGraph 中添加的节点）（196）
+					7. Adjusting movement speed（调整移动速度）（198）
+					8. Creating the BlackBoardData（创建 BlackBoardData）（199）
+						1. Adding a variable into BlackBoardData（将变量添加到 BlackBoardData 中）（200）
+					9. Creating a Behavior Tree（创建行为树）（200）
+					10. Creating a simple BT using a Wait task（使用等待任务创建简单的 BT）（201）
+					11. Using the Behavior Tree（使用行为树）（203）
+					12. Creating a custom task for the Behavior Tree（为行为树创建自定义任务）（203）
+					13. Using the PickTargetLocation custom task in BT（在 BT 中使用 PickTargetLocation 自定义任务）（206）
+					14. Replacing the Wait task with Move To（用“移至”替换“等待”任务）（207）
+				7. Implementing AI in games（在游戏中实施人工智能）（208）
+		6. A Particle System and Sound（粒子系统和声音）（210）
+			1. What is a particle system?（什么是粒子系统？）（210）
+			2. Exploring an existing particle system（探索现有的粒子系统）（211）
+			3. The main components of a particle system（粒子系统的主要组成部分）（212）
+				1. Modules（模块）（212）
+			4. The design principles of a particle system（粒子系统的设计原理）（213）
+				1. Research（研究）（213）
+				2. The iterative creative process（迭代的创作过程）（213）
+			5. Example – creating a fireplace particle system（示例 - 创建壁炉粒子系统）（214）
+				1. Crafting P_Fireplace（制作 P_Fireplace）（218）
+					1. Observing the solo emitters of the system（观察系统的单独发射器）（218）
+					2. Deleting non-essential emitters（删除非必要的发射器）（218）
+					3. Focusing on editing the Flame emitter（专注于编辑火焰发射器）（219）
+					4. Looking at the complete particle system（查看完整的粒子系统）（219）
+			6. Sound and music（声音和音乐）（219）
+			7. How do we produce sound and music for games?（我们如何为游戏制作声音和音乐？）（220）
+			8. Audio quality（音频质量）（221）
+			9. How are sounds recorded?（声音是如何录制的？）（221）
+			10. The Unreal audio system（虚幻音频系统）（222）
+			11. Getting audio into Unreal（将音频导入 Unreal）（222）
+				1. The audio format（音频格式）（222）
+				2. The sampling rate（采样率）（222）
+				3. Bit depth（位深度）（222）
+				4. Supported sound channels（支持的声道）（223）
+			12. Unreal sound formats and terminologies（虚幻的声音格式和术语）（225）
+			13. The Sound Cue Editor（声音提示编辑器）（225）
+				1. How to open the Sound Cue Editor（如何打开声音提示编辑器）（225）
+			14. Exercise – importing a sound into the Unreal Editor（练习 – 将声音导入虚幻编辑器）（227）
+			15. Exercise – adding custom sounds to a level（练习 – 将自定义声音添加到关卡中）（230）
+			16. Configuring the Sound Cue Editor（配置声音提示编辑器）（232）
+		7. Terrain and Cinematics（地形和电影）（236）
+			1. Introducing terrain manipulation（介绍地形操纵）（236）
+				1. Exercise – creating hills using the Landscape tool（练习 – 使用地形工具创建山丘）（237）
+				2. Landscape creation options（景观创建选项）（244）
+					1. Multiple landscapes（多重风景）（245）
+					2. Using custom material（245）
+					3. Importing height maps and layers（导入高度图和图层）（245）
+					4. Scale（缩放）（245）
+					5. The number of components（元件数量）（245）
+					6. Section Size（断面尺寸）（246）
+			2. Introducing cinematics（介绍动画）（246）
+			3. Why do we need cut scenes?（为什么我们需要过场动画？）（247）
+			4. Cinematic techniques（电影技巧）（248）
+				1. Adjusted camera functions（调整相机功能）（248）
+					1. Zoom（飞涨）（248）
+					2. Field of view（视野）（248）
+					3. Depth of field（景深）（249）
+				2. Camera movement（相机移动）（250）
+					1. Tilt（俯仰）（251）
+					2. Pan（偏航）（251）
+					3. Dolly/track/truck（移动车/轨道/卡车）（252）
+					4. Pedestal（253）
+				3. Capturing a scene（捕捉场景）（253）
+					1. Lighting（灯光）（253）
+					2. Framing（取景）（253）
+						1. Some framing rules（一些取景规则）（254）
+						2. Shot types（镜头类型）（254）
+					3. Shot plan（拍摄计划）（254）
+			5. Getting familiar with the Unreal Matinee Editor（熟悉 Unreal Matinee 编辑器）（255）
+			6. Exercise – creating a simple matinee sequence（练习 – 创建一个简单的日场序列）（255）
