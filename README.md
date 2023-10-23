@@ -2372,3 +2372,1211 @@
 					3. Shot plan（拍摄计划）（254）
 			5. Getting familiar with the Unreal Matinee Editor（熟悉 Unreal Matinee 编辑器）（255）
 			6. Exercise – creating a simple matinee sequence（练习 – 创建一个简单的日场序列）（255）
+5. Game Engine Development（游戏引擎开发）
+	1. Game Engine Architecture（游戏引擎架构）
+		1. Foundations（基础）（20）
+			1. Introduction（介绍）（22）
+				1. Structure of a Typical Game Team（典型游戏团队的结构）（24）
+					1. Engineers（工程师）（24）
+					2. Artists（艺术家）（25）
+					3. Game Designers（游戏设计师）（26）
+					4. Producers（制片人）（26）
+					5. Other Staff（其他员工）（27）
+					6. Publishers and Studios（出版商和工作室）（27）
+				2. What Is a Game?（什么是游戏？）（27）
+					1. Video Games as Soft Real-Time Simulations（作为软实时模拟的视频游戏）（28）
+				3. What Is a Game Engine?（什么是游戏引擎？）（30）
+				4. Engine Differences across Genres（不同类型的引擎差异）（32）
+					1. First-Person Shooters (FPS)（第一人称射击游戏 (FPS)）（33）
+					2. Platformers and Other Third-Person Games（平台游戏和其他第三人称游戏）（34）
+					3. Fighting Games（格斗游戏）（36）
+					4. Racing Games（赛车游戏）（38）
+					5. Strategy Games（策略游戏）（40）
+					6. Massively Multiplayer Online Games (MMOG)（大型多人在线游戏 (MMOG)）（42）
+					7. Player-Authored Content（玩家创作的内容）（44）
+					8. Virtual, Augmented and Mixed Reality（虚拟、增强和混合现实）（46）
+						1. Virtual Reality（虚拟现实）（46）
+						2. Augmented and Mixed Reality（增强现实和混合现实）（46）
+						3. VR/AR/MR Games（VR/AR/MR 游戏）（47）
+						4. VR Game Engines（VR游戏引擎）（48）
+						5. Location-Based Entertainment（基于位置的娱乐）（49）
+					9.  Other Genres（其他流派）（50）
+				5.  Game Engine Survey（游戏引擎调查）（50）
+					1. The Quake Family of Engines（Quake 系列引擎）（50）
+					2. Unreal Engine（虚幻引擎）（51）
+					3. The Half-Life Source Engine（半条命起源引擎）（52）
+					4. DICE’s Frostbite（DICE 的寒霜）（52）
+					5. Rockstar Advanced Game Engine (RAGE)（Rockstar 高级游戏引擎 (RAGE)）（52）
+					6. CRYENGINE（53）
+					7. Sony’s PhyreEngine（53）
+					8. Microsoft’s XNA Game Studio（微软的 XNA 游戏工作室）（53）
+					9. Unity（54）
+					10. Other Commercial Game Engines（其他商业游戏引擎）（54）
+					11. Proprietary In-House Engines（专有的内部引擎）（54）
+					12. Open Source Engines（开源引擎）（55）
+					13. 2D Game Engines for Non-programmers（适合非程序员的 2D 游戏引擎）（56）
+				6. Runtime Engine Architecture（运行时引擎架构）（57）
+					1. Target Hardware（目标硬件）（57）
+					2. Device Drivers（设备驱动程序）（57）
+					3. Operating System（操作系统）（59）
+					4. Third-Party SDKs and Middleware（第三方 SDK 和中间件）（59）
+						1. Data Structures and Algorithms（数据结构和算法）（59）
+						2. Graphics（图形）（60）
+						3. Collision and Physics（碰撞和物理）（61）
+						4. Character Animation（角色动画）（61）
+						5. Biomechanical Character Models（生物力学角色模型）（62）
+					5. Platform Independence Layer（平台独立层）（62）
+					6. Core Systems（核心系统）（63）
+					7. Resource Manager（资源管理器）（64）
+					8. Rendering Engine（渲染引擎）（64）
+						1. Low-Level Renderer（低级渲染器）（65）
+						2. Scene Graph/Culling Optimizations（场景图/剔除优化）（66）
+						3. Visual Effects（视觉效果）（67）
+						4. Front End（前端）（68）
+					9. Profiling and Debugging Tools（分析和调试工具）（69）
+					10. Collision and Physics（碰撞和物理）（70）
+					11. Animation（动画片）（71）
+					12. Human Interface Devices (HID)（人机接口设备 (HID)）（72）
+					13. Audio（声音的）（73）
+					14. Online Multiplayer/Networking（在线多人游戏/网络）（74）
+					15. Gameplay Foundation Systems（游戏基础系统）（74）
+						1. Game Worlds and Object Models（游戏世界和对象模型）（75）
+						2. Event System（事件系统）（76）
+						3. Scripting System（脚本系统）（77）
+						4. Artificial Intelligence Foundations（人工智能基础）（77）
+					16. Game-Specific Subsystems（游戏特定子系统）（77）
+				7. Tools and the Asset Pipeline（工具和资产管道）（78）
+					1. Digital Content Creation Tools（数字内容创建工具）（78）
+					2. The Asset Conditioning Pipeline（资产调整管道）（80）
+						1. 3D Model/Mesh Data（3D模型/网格数据）（80）
+						2. Skeletal Animation Data（骨骼动画数据）（81）
+						3. Audio Data（音频数据）（82）
+						4. Particle Systems Data（粒子系统数据）（83）
+					3. The World Editor（世界编辑）（83）
+					4. The Resource Database（资源数据库）（83）
+					5. Some Approaches to Tool Architecture（工具架构的一些方法）（84）
+						1. Web-Based User Interfaces（基于网络的用户界面）（86）
+			2. Tools of the Trade（贸易工具）（88）
+				1. Version Control（版本控制）（88）
+					1. Why Use Version Control?（为什么要使用版本控制？）（89）
+					2. Common Version Control Systems（89）
+					3. Overview of Subversion and TortoiseSVN（Subversion 和 TortoiseSVN 概述）（91）
+					4. Setting up a Code Repository（设置代码存储库）（91）
+					5. Installing TortoiseSVN（安装 TortoiseSVN）（92）
+					6. File Versions, Updating and Committing（文件版本、更新和提交）（93）
+					7. Multiple Check-Out, Branching and Merging（多重检出、分支和合并）（95）
+					8. Deleting Files（删除文件）（97）
+				2. Compilers, Linkers and IDEs（编译器、链接器和 IDE）（97）
+					1. Source Files, Headers and Translation Units（源文件、标题和翻译单元）（98）
+					2. Libraries, Executables and Dynamic Link Libraries（库、可执行文件和动态链接库）（98）
+					3. Projects and Solutions（项目与解决方案）（99）
+					4. Build Configurations（构建配置）（100）
+						1. Common Build Options（通用构建选项）（101）
+						2. Local and Global Optimizations（局部和全局优化）（103）
+						3. Typical Build Configurations（典型的构建配置）（105）
+						4. Project Configuration Tutorial（项目配置教程）（107）
+					5. Debugging Your Code（调试你的代码）（110）
+						1. The Start-Up Project（启动项目）（111）
+						2. Breakpoints（断点）（111）
+						3. Stepping through Your Code（单步执行您的代码）（111）
+						4. The Call Stack（调用堆栈）（112）
+						5. The Watch Window（观察窗）（112）
+						6. Data Breakpoints（数据断点）（114）
+						7. Conditional Breakpoints（条件断点）（115）
+						8. Debugging Optimized Builds（调试优化构建）（116）
+				3. Profiling Tools（分析工具）（118）
+					1. List of Profilers（分析器列表）（120）
+				4. Memory Leak and Corruption Detection（内存泄漏和损坏检测）（120）
+				5. Other Tools（其他工具）（121）
+			3. Fundamentals of Software Engineering for Games（游戏软件工程基础知识）（124）
+				1. C++ Review and Best Practices（C++ 回顾和最佳实践）（124）
+					1. Brief Review of Object-Oriented Programming（面向对象编程简述）（125）
+						1. Classes and Objects（类和对象）（125）
+						2. Encapsulation（封装）（125）
+						3. Inheritance（继承）（125）
+						4. Polymorphism（多态性）（128）
+						5. Composition and Aggregation（组合和聚合）（130）
+						6. Design Patterns（设计模式）（130）
+					2. C++ Language Standardization（C++ 语言标准化）（132）
+						1. Further Reading（进一步阅读）（134）
+						2. Which Language Features to Use?（使用哪些语言功能？）（135）
+						3. Coding Standards: Why and How Much?（编码标准：为什么以及多少？）（137）
+				2. Catching and Handling Errors（捕获和处理错误）（138）
+					1. Types of Errors（错误类型）（138）
+					2. Handling Errors（处理错误）（139）
+						1. Handling Player Errors（处理玩家错误）（139）
+						2. Handling Developer Errors（处理开发者错误）（140）
+						3. Handling Programmer Errors（处理程序员错误）（141）
+					3. Implementation of Error Detection and Handling（错误检测和处理的实现）（141）
+						1. Error Return Codes（错误返回码）（141）
+						2. Exceptions（例外情况）（142）
+						3. Assertions（断言）（144）
+				3. Data, Code and Memory Layout（数据、代码和内存布局）（150）
+					1. Numeric Representations（数字表示）（150）
+						1. Numeric Bases（数字基数）（150）
+						2. Signed and Unsigned Integers（有符号和无符号整数）（151）
+						3. Fixed-Point Notation（定点表示法）（152）
+						4. Floating-Point Notation（浮点表示法）（152）
+					2. Primitive Data Types（原始数据类型）（156）
+						1. Multibyte Values and Endianness（多字节值和字节顺序）（159）
+					3. Kilobytes versus Kibibytes（162）
+					4. Declarations, Definitions and Linkage（声明、定义和链接）（163）
+						1. Translation Units Revisited（重新审视翻译单元）（163）
+						2. Declaration versus Definition（声明与定义）（165）
+						3. Linkage（连锁）（168）
+					5. Memory Layout of a C/C++ Program（C/C++ 程序的内存布局）（170）
+						1. Executable Image（可执行映像）（170）
+						2. Program Stack（程序栈）（172）
+						3. Dynamic Allocation Heap（动态分配堆）（174）
+					6. Member Variables（成员变量）（175）
+						1. Class-Static Members（类静态成员）（176）
+					7. Object Layout in Memory（内存中的对象布局）（177）
+						1. Alignment and Packing（对齐和包装）（178）
+						2. Memory Layout of C++ Classes（C++ 类的内存布局）（180）
+				4. Computer Hardware Fundamentals（计算机硬件基础知识）（183）
+					1. Learning from the Simpler Computers of Yesteryear（向过去的简单计算机学习）（184）
+					2. Anatomy of a Computer（计算机剖析）（185）
+					3. CPU（185）
+						1. ALU（186）
+						2. VPU（187）
+						3. Registers（寄存器）（187）
+						4. Control Unit（控制单元）（190）
+					4. Clock（时钟）（190）
+						1. Clock Speed versus Processing Power（时钟速度与处理能力）（191）
+					5. Memory（内存）（191）
+					6. Buses（巴士）（192）
+						1. Bus Widths（总线宽度）（193）
+						2. Words（字）（194）
+						3. n-Bit Computers（n 位计算机）（194）
+					7. Machine and Assembly Language（机器和汇编语言）（194）
+						1. Instruction Set Architecture (ISA)（指令集架构 (ISA)）（195）
+						2. Machine Language（机器语言）（196）
+						3. Assembly Language（汇编语言）（198）
+						4. Addressing Modes（寻址模式）（190）
+						5. Further Reading on Assembly Language（汇编语言进一步阅读）（200）
+				5. Memory Architectures（内存架构）（200）
+					1. Memory Mapping（内存映射）（201）
+						1. Memory-Mapped I/O（内存映射 I/O）（201）
+						2. Video RAM（视频内存）（202）
+						3. Case Study: The Apple II Memory Map（案例研究：Apple II 内存映射）（202）
+					2. Virtual Memory（虚拟内存）（203）
+						1. Virtual Memory Pages（虚拟内存页）（203）
+						2. Virtual to Physical Address Translation（虚拟地址到物理地址的转换）（204）
+						3. Handling Page Faults（处理页面错误）（205）
+						4. The Translation Lookaside Buffer (TLB)（转换后备缓冲区 (TLB)）（206）
+						5. Further Reading on Virtual Memory（进一步阅读虚拟内存）（206）
+					3. Memory Architectures for Latency Reduction（用于减少延迟的内存架构）（207）
+						1. The Memory Gap（内存差距）（208）
+						2. Register Files（注册文件）（209）
+					4. Memory Cache Hierarchies（内存缓存层次结构）（210）
+						1. Cache Lines（缓存行）（210）
+						2. Mapping Cache Lines to Main RAM Addresses（将缓存行映射到主 RAM 地址）（211）
+						3. Addressing the Cache（寻址缓存）（211）
+						4. Set Associativity and Replacement Policy（设置关联性和替换策略）（213）
+						5. Multilevel Caches（多级缓存）（214）
+						6. Instruction Cache and Data Cache（指令缓存和数据缓存）（215）
+						7. Write Policy（写政策）（215）
+						8. Cache Coherency: MESI, MOESI and MESIF（缓存一致性：MESI、MOESI 和 MESIF）（215）
+						9. Avoiding Cache Misses（避免缓存未命中）（216）
+					5. Nonuniform Memory Access (NUMA)（非一致内存访问 (NUMA)）（217）
+						1. SPU Local Stores on the PS3（PS3 上的 SPU 本地商店）（218）
+						2. PS2 Scratchpad (SPR)（PS2 便签本 (SPR)）（218）
+			4. Parallelism and Concurrent Programming（并行性和并发编程）（222）
+				1. Defining Concurrency and Parallelism（定义并发和并行性）（223）
+					1. Concurrency（并发性）（223）
+					2. Parallelism（并行性）（224）
+						1. Implicit versus Explicit Parallelism（隐式并行与显式并行）（225）
+					3. Task versus Data Parallelism（任务并行与数据并行）（226）
+					4. Flynn’s Taxonomy（弗林的分类法）（226）
+						1. Single versus Multiple Data（单个数据与多个数据）（227）
+						2. GPU Parallelism: SIMT（GPU 并行性：SIMT）（228）
+					5. Orthogonality of Concurrency and Parallelism（并发和并行的正交性）（230）
+					6. Roadmap of the Chapter（本章路线图）（230）
+				2. Implicit Parallelism（隐式并行性）（230）
+					1. Pipelining（流水线）（231）
+					2. Latency versus Throughput（延迟与吞吐量）（233）
+					3. Pipeline Depths（管道深度）（233）
+					4. Stalls（摊位）（234）
+					5. Data Dependencies（数据依赖性）（234）
+						1. Instruction Reordering（指令重新排序）（235）
+						2. Out-of-Order Execution（乱序执行）（236）
+					6. Branch Dependencies（分支依赖关系）（236）
+						1. Speculative Execution（推测执行）（237）
+						2. Predication（预测）（238）
+					7. Superscalar CPUs（超标量 CPU）（240）
+						1. Complexity of Superscalar Designs（超标量设计的复杂性）（241）
+						2. Superscalar and RISC（超标量和 RISC）（242）
+					8. Very Long Instruction Word (VLIW)（超长指令字 (VLIW)）（242）
+				3. Explicit Parallelism（显式并行性）（244）
+					1. Hyperthreading（超线程）（244）
+					2. Multicore CPUs（多核CPU）（245）
+					3. Symmetric versus Asymmetric Multiprocessing（对称与非对称多处理）（246）
+					4. Distributed Computing（分布式计算）（248）
+				4. Operating System Fundamentals（操作系统基础知识）（249）
+					1. The Kernel（内核）（249）
+						1. Kernel Mode versus User Mode（内核模式与用户模式）（249）
+						2. Kernel Mode Privileges（内核模式权限）（250）
+					2. Interrupts（中断）（251）
+					3. Kernel Calls（内核调用）（252）
+					4. Preemptive Multitasking（抢占式多任务处理）（252）
+					5. Processes（流程）（254）
+						1. Anatomy of a Process（流程剖析）（254）
+						2. Virtual Memory Map of a Process（进程的虚拟内存映射）（255）
+					6. Threads（线程数）（260）
+						1. Thread Libraries（线程库）（260）
+						2. Thread Creation and Termination（线程的创建和终止）（261）
+						3. Joining Threads（加入线程）（262）
+						4. Polling, Blocking and Yielding（轮询、阻止和让步）（263）
+						5. Context Switching（上下文切换）（266）
+						6. Thread Priorities and Affinity（线程优先级和关联性）（267）
+						7. Thread Local Storage（线程本地存储）（268）
+						8. Thread Debugging（线程调试）（269）
+					7. Fibers（纤维）（269）
+						1. Fiber Creation and Destruction（纤维的产生和破坏）（270）
+						2. Fiber States（纤维状态）（270）
+						3. Fiber Migration（纤维迁移）（271）
+						4. Debugging with Fibers（使用光纤进行调试）（271）
+						5. Further Reading on Fibers（关于纤维的进一步阅读）（271）
+					8. User-Level Threads and Coroutines（用户级线程和协程）（272）
+						1. Coroutines（协程）（272）
+						2. Kernel Threads versus User Threads（内核线程与用户线程）（274）
+					9. Further Reading on Processes and Threads（关于进程和线程的进一步阅读）（274）
+				5. Introduction to Concurrent Programming（并发编程简介）（275）
+					1. Why Write Concurrent Software?（为什么要编写并发软件？）（276）
+					2. Concurrent Programming Models（并发编程模型）（276）
+					3. Race Conditions（竞赛条件）（277）
+						1. Critical Races（关键比赛）（277）
+						2. Data Races（数据竞争）（278）
+					4. Critical Operations and Atomicity（关键操作和原子性）（280）
+						1. Invocation and Response（调用和响应）（281）
+						2. Atomicity Defined（原子性定义）（283）
+						3. Making an Operation Atomic（使操作原子化）（283）
+						4. Atomicity as Serialization（作为序列化的原子性）（284）
+						5. Data-Centric Consistency Models（以数据为中心的一致性模型）（285）
+				6. Thread Synchronization Primitives（线程同步原语）（286）
+					1. Mutexes（互斥体）（286）
+						1. POSIX（287）
+						2. C++ Standard Library（C++ 标准库）（288）
+						3. Windows（288）
+					2. Critical Sections（关键部分）（289）
+					3. Condition Variables（条件变量）（290）
+					4. Semaphores（信号量）（294）
+						1. Mutex versus Binary Semaphore（互斥量与二进制信号量）（295）
+						2. Implementing a Semaphore（实现信号量）（297）
+					5. Windows Events（窗口事件）（298）
+				7. Problems with Lock-Based Concurrency（基于锁的并发问题）（300）
+					1. Deadlock（死锁）（300）
+					2. Livelock（活锁）（302）
+					3. Starvation（饥饿）（303）
+					4. Priority Inversion（优先级反转）（303）
+					5. The Dining Philosophers（用餐哲学家）（304）
+				8. Some Rules of Thumb for Concurrency（并发的一些经验规则）（305）
+					1. Global Ordering Rules（全球订购规则）（305）
+					2. Transaction-Based Algorithms（基于交易的算法）（306）
+					3. Minimizing Contention（最小化争用）（306）
+					4. Thread Safety（线程安全）（307）
+				9. Lock-Free Concurrency（无锁并发）（308）
+					1. Causes of Data Race Bugs（数据竞争错误的原因）（310）
+					2. Implementing Atomicity（实现原子性）（311）
+						1. Atomicity by Disabling Interrupts（通过禁用中断实现原子性）（311）
+						2. Atomic Instructions（原子指令）（311）
+						3. Atomic Reads and Writes（原子读写）（312）
+						4. Atomic Read-Modify-Write（原子读-修改-写）（312）
+						5. Test and Set（测试和设置）（313）
+						6. Exchange（交换）（314）
+						7. Compare and Swap（比较和交换）（314）
+						8. ABA Problem（应用行为分析问题）（316）
+						9. Load Linked/Store Conditional（加载链接/条件存储）（317）
+						10. Advantages of LL/SC over CAS（LL/SC 相对于 CAS 的优势）（318）
+						11. Strong and Weak Compare-Exchange（强弱比较交换）（318）
+						12. Relative Strength of Atomic RMW Instructions（原子 RMW 指令的相对强度）（319）
+					3. Barriers（障碍）（319）
+						1. How Instruction Reordering Causes Concurrency Bugs（指令重新排序如何导致并发错误）（320）
+						2. Volatile in C/C++ (and Why It Doesn’t Help Us)（C/C++ 中的易失性（以及为什么它对我们没有帮助））（321）
+						3. Compiler Barriers（编译器障碍）（322）
+					4. Memory Ordering Semantics（内存排序语义）（323）
+						1. Memory Caching Revisited（重新审视内存缓存）（324）
+						2. Multicore Cache Coherency Protocols（多核缓存一致性协议）（325）
+						3. The MESI Protocol（MESI协议）（327）
+						4. How MESI Can Go Wrong（MESI 为何会出错）（328）
+						5. Memory Fences（内存栅栏）（329）
+						6. Acquire and Release Semantics（获取和释放语义）（330）
+						7. When to Use Acquire and Release Semantics（何时使用获取和释放语义）（331）
+						8. CPU Memory Models（CPU 内存型号）（332）
+						9. Fence Instructions on Real CPUs（真实 CPU 上的围栏指令）（332）
+					5. Atomic Variables（原子变量）（333）
+						1. C++ Memory Order（C++ 内存顺序）（334）
+					6. Concurrency in Interpreted Programming Languages（解释性编程语言中的并发）（336）
+					7. Spin Locks（自旋锁）（337）
+						1. Basic Spin Lock（基本自旋锁）（338）
+						2. Scoped Locks（作用域锁）（339）
+						3. Reentrant Locks（可重入锁）（340）
+						4. Readers-Writer Locks（读写锁）（343）
+						5. Lock-Not-Needed Assertions（不需要锁的断言）（344）
+					8. Lock-Free Transactions（无锁交易）（346）
+					9. A Lock-Free Linked List（无锁链表）（347）
+					10. Further Reading on Lock-Free Programming（关于无锁编程的进一步阅读）（349）
+				10. SIMD/Vector Processing（SIMD/矢量处理）（350）
+					1. The SSE Instruction Set and Its Registers（SSE指令集及其寄存器）（351）
+						1. The __m128 Data Type（__m128 数据类型）（351）
+						2. Alignment of SSE Data（上交所数据对齐）（352）
+						3. SSE Compiler Intrinsics（SSE 编译器内部函数）（352）
+						4. Some Useful SSE Intrinsics（一些有用的 SSE 内在函数）（353）
+					2. AltiVec vector Types（AltiVec 向量类型）（355）
+					3. Using SSE to Vectorize a Loop（使用 SSE 向量化循环）（355）
+						1. A First Attempt (That’s Slow)（第一次尝试（很慢））（357）
+						2. A Better Approach（更好的方法）（358）
+						3. Transpose as We Go（随走随移）（359）
+						4. Shuffle and Transpose（随机播放和移调）（360）
+					4. Vector-Matrix Multiplication with SSE（使用 SSE 进行向量矩阵乘法）（361）
+					5. Matrix-Matrix Multiplication with SSE（使用 SSE 进行矩阵-矩阵乘法）（362）
+					6. Generalized Vectorizaton（广义矢量化）（362）
+					7. Vector Predication（向量预测）（363）
+				11. Introduction to GPGPU Programming（GPGPU编程简介）（367）
+					1. Data-Parallel Computations（数据并行计算）（367）
+					2. Compute Kernels（计算内核）（369）
+					3. Executing a Kernel（执行内核）（371）
+					4. GPU Threads and Thread Groups（GPU 线程和线程组）（372）
+						1. From SIMD to SIMT（从SIMD到SIMT）（374）
+					5. Further Reading（进一步阅读）（376）
+			5. 3D Math for Games（游戏 3D 数学）（378）
+				1. Solving 3D Problems in 2D（在 2D 中解决 3D 问题）（378）
+				2. Points and Vectors（点和向量）（379）
+					1. Points and Cartesian Coordinates（点和笛卡尔坐标）（379）
+					2. Left-Handed versus Right-Handed Coordinate Systems（左手坐标系与右手坐标系）（380）
+					3. Vectors（向量）（381）
+						1. Cartesian Basis Vectors（笛卡尔基向量）（382）
+					4. Vector Operations（向量运算）（382）
+						1. Multiplication by a Scalar（乘以标量）（383）
+						2. Addition and Subtraction（加减）（383）
+						3. Magnitude（震级）（384）
+						4. Vector Operations in Action（向量运算的实际应用）（385）
+						5. Normalization and Unit Vectors（归一化和单位向量）（386）
+						6. Normal Vectors（法向量）（386）
+						7. Dot Product and Projection（点积和投影）（386）
+						8. Cross Product（叉积）（389）
+						9. Pseudovectors and Exterior Algebra（伪向量和外代数）（392）
+					5. Linear Interpolation of Points and Vectors（点和向量的线性插值）（394）
+				3. Matrices（矩阵）（395）
+					1. Matrix Multiplication（矩阵乘法）（395）
+					2. Representing Points and Vectors as Matrices（将点和向量表示为矩阵）（396）
+					3. The Identity Matrix（单位矩阵）（397）
+					4. Matrix Inversion（矩阵求逆）（397）
+					5. Transposition（换位）（398）
+					6. Homogeneous Coordinates（齐次坐标）（398）
+						1. Transforming Direction Vectors（变换方向向量）（400）
+					7. Atomic Transformation Matrices（原子变换矩阵）（400）
+						1. Translation（平移）（401）
+						2. Rotation（旋转）（401）
+						3. Scale（缩放）（402）
+					8. 4 × 3 Matrices（4 × 3 矩阵）（403）
+					9. Coordinate Spaces（坐标空间）（403）
+						1. Model Space（模型空间）（404）
+						2. World Space（世界空间）（405）
+						3. View Space（视图空间）（406）
+					10. Change of Basis（基础变更）（407）
+						1. Coordinate Space Hierarchies（坐标空间层次结构）（407）
+						2. Building a Change of Basis Matrix（构建基矩阵的变化）（407）
+						3. Extracting Unit Basis Vectors from a Matrix（从矩阵中提取单位基向量）（409）
+						4. Transforming Coordinate Systems versus Vectors（变换坐标系与向量）（409）
+					11. Transforming Normal Vectors（变换法线向量）（411）
+					12. Storing Matrices in Memory（在内存中存储矩阵）（411）
+				4. Quaternions（四元数）（413）
+					1. Unit Quaternions as 3D Rotations（单位四元数作为 3D 旋转）（414）
+					2. Quaternion Operations（四元数运算）（415）
+						1. Quaternion Multiplication（四元数乘法）（415）
+						2. Conjugate and Inverse（共轭和逆）（415）
+					3. Rotating Vectors with Quaternions（用四元数旋转向量）（416）
+						1. Quaternion Concatenation（四元数串联）（417）
+					4. Quaternion-Matrix Equivalence（四元数矩阵等价）（418）
+					5. Rotational Linear Interpolation（旋转线性插补）（419）
+						1. Spherical Linear Interpolation（球面线性插值）（420）
+						2. To SLERP or Not to SLERP (That’s Still the Question)（SLERP 还是不 SLERP（这仍然是个问题））（421）
+				5. Comparison of Rotational Representations（旋转表示的比较）（422）
+					1. Euler Angles（欧拉角）（422）
+					2. 3 × 3 Matrices（3 × 3 矩阵）（423）
+					3. Axis + Angle（轴+角度）（423）
+					4. Quaternions（四元数）（424）
+					5. SRT Transformations（SRT 转换）（424）
+					6. Dual Quaternions（对偶四元数）（425）
+					7. Rotations and Degrees of Freedom（旋转和自由度）（425）
+				6. Other Useful Mathematical Objects（其他有用的数学对象）（426）
+					1. Lines, Rays and Line Segments（直线、射线和线段）（427）
+					2. Spheres（球体）（427）
+					3. Planes（平面）（427）
+					4. Axis-Aligned Bounding Boxes (AABB)（轴对齐边界框 (AABB)）（430）
+					5. Oriented Bounding Boxes (OBB)（定向边界框 (OBB)）（430）
+					6. Frusta（430）
+					7. Convex Polyhedral Regions（凸多面体区域）（430）
+				7. Random Number Generation（随机数生成）（731）
+					1. Linear Congruential Generators（线性同余发生器）（431）
+					2. Mersenne Twister（432）
+					3. Mother-of-All, Xorshift and KISS99（万物之母、Xorshift 和 KISS99）（432）
+					4. PCG
+		2. Low-Level Engine Systems（低级引擎系统）（434）
+			1. Engine Support Systems（引擎支持系统）（436）
+				1. Subsystem Start-Up and Shut-Down（ 子系统启动和关闭）（436）
+					1. C++ Static Initialization Order (or Lack Thereof)（ C++  静态初始化顺序（或缺乏）)（437）
+						1. Construct On Demand（按需构建）（438）
+					2. A Simple Approach That Works（ 一种有效的简单方法）（439）
+					3. Some Examples from Real Engines（真实引擎的一些例子）（441）
+						1. OGRE（441）
+						2. Naughty Dog’s Uncharted and The Last of Us Series（ 顽皮狗《神秘海域》和《最后生还者》系列）（443）
+				2.  Memory Management（ 内存管理）（445）
+					1. Optimizing Dynamic Memory Allocation（优化动态内存分配）（445）
+						1. Stack-Based Allocators（基于堆栈的分配器）（446）
+						2. Pool Allocators（池分配器）（449）
+						3. Aligned Allocations（对齐分配）（450）
+						4. Single-Frame and Double-Buffered Memory Allocators（单帧和双缓冲内存分配器）（453）
+					2. Memory Fragmentation（内存碎片）（456）
+						1. Avoiding Fragmentation with Stack and Pool Allocators（使用堆栈和池分配器避免碎片）（457）
+						2. Defragmentation and Relocation（碎片整理和重定位）（458）
+				3. Containers（容器）（460）
+					1. Container Operations（容器操作）（462）
+					2. Iterators（迭代器）（463）
+						1. Preincrement versus Postincrement（前增量与后增量）（464）
+					3. Algorithmic Complexity（算法复杂度）（464）
+					4. Building Custom Container Classes（构建自定义容器类）（466）
+					5. Dynamic Arrays and Chunky Allocation（动态数组和块分配）（470）
+					6. Dictionaries and Hash Tables（字典和哈希表）（471）
+						1. Collisions: Open and Closed Hash Tables（冲突：开放哈希表和封闭哈希表）（471）
+						2. Hashing（ 散列）（472）
+						3. Implementing a Closed Hash Table（ 实现封闭哈希表）（474）
+						4. Robin Hood Hashing（ 罗宾汉哈希）（475）
+				4. Strings（字符串）（475）
+					1. The Problem with Strings（字符串问题）（475）
+					2. String Classes（ 字符串类）（476）
+					3. Unique Identifiers（唯一标识符）（477）
+						1. Hashed String Ids（散列字符串  ID）（478）
+						2. Some Implementation Ideas（ 一些实现思路）（478）
+					4. Localization（ 本地化）（481）
+						1. Unicode（统一码）（481）
+						2. char versus wchar_t（char  与  wchar_t）（483）
+						3. Unicode under Windows（Windows  下的  Unicode）（484）
+						4. Unicode on Consoles（控制台上的  Unicode）（485）
+						5. Other Localization Concerns（其他本地化问题）（485）
+						6. Case Study: Naughty Dog’s Localization Tool（ 案例分析：顽皮狗的本地化工具）（487）
+				5.  Engine Configuration（引擎配置）（489）
+					1. Loading and Saving Options（加载和保存选项）（490）
+					2. Per-User Options（每个用户选项）（493）
+					3. Configuration Management in Some Real Engines（ 部分实机中的配置管理）（493）
+						1. Example: Quake’s Cvars（示例：Quake  的  Cvar）（493）
+						2. Example: OGRE（  示例：OGRE）（494）
+						3. Example: The Uncharted and The Last of Us Series（示例：《神秘海域》和《最后生还者》系列）（494）
+			2. Resources and the File System（资源和文件系统）（500）
+				1. File System（文件系统）（501）
+					1. File Names and Paths（文件名和路径）（501）
+						1. Differences across Operating Systems（操作系统之间的差异）（502）
+						2. Absolute and Relative Paths（绝对路径和相对路径）（503）
+						3. Search Paths（ 搜索路径）（504）
+						4. Path APIs（路径  API）（505）
+					2. Basic File I/O（  基本文件  I/O）（505）
+						1. To Wrap or Not to Wrap（ 缠绕或不缠绕）（506）
+						2. Synchronous File I/O（同步文件  I/O）（507）
+					3. Asynchronous File I/O（异步文件I/O）（508）
+						1. Priorities（  优先级）（511）
+						2. How Asynchronous File I/O Works（ 异步文件  I/O  的工作原理）（511）
+				2. The Resource Manager（资源管理器）（512）
+					1. Offline Resource Management and the Tool Chain（离线资源管理及工具链）（512）
+						1. Revision Control for Assets（ 资产的修订控制）（512）
+						2. The Resource Database（资源数据库）（513）
+						3. Some Successful Resource Database Designs（ 一些成功的资源数据库设计）（515）
+						4. The Asset Conditioning Pipeline（ 资产调节管道）（520）
+					2. Runtime Resource Management（ 运行时资源管理）（522）
+						1. Responsibilities of the Runtime Resource Manager（运行时资源管理器的职责）（522）
+						2. Resource File and Directory Organization（ 资源文件和目录组织）（523）
+						3. Resource File Formats（资源文件格式）（526）
+						4. Resource GUIDs（资源  GUID）（526）
+						5. The Resource Registry（ 资源注册表）（527）
+						6. Resource Lifetime（资源生命周期）（528）
+						7. Memory Management for Resources（资源的内存管理）（530）
+						8. Composite Resources and Referential Integrity（复合资源和引用完整性）（535）
+						9. Handling Cross-References between Resources（处理资源之间的交叉引用）（536）
+						10. Post-Load Initialization（ 加载后初始化）（540）
+			3. The Game Loop and Real-Time Simulation（游戏循环和实时模拟）（544）
+				1. The Rendering Loop（渲染循环）（544）
+				2. The Game Loop（游戏循环）（545）
+					1. A Simple Example: Pong（ 一个简单的例子：Pong）（546）
+				3. Game Loop Architectural Styles（游戏循环架构风格）（548）
+					1. Windows Message Pumps（  Windows  消息泵）（548）
+					2. Callback-Driven Frameworks（  回调驱动的框架）（548）
+					3. Event-Based Updating（ 基于事件的更新）（550）
+				4.  Abstract Timelines（抽象时间线）（551）
+					1. Real Time（  实时）（551）
+					2. Game Time（游戏时间）（551）
+					3. Local and Global Timelines（本地和全球时间表）（552）
+				5. Measuring and Dealing with Time（测量和处理时间）（553）
+					1. Frame Rate and Time Deltas（帧速率和时间增量）（553）
+					2. From Frame Rate to Speed（ 从帧率到速度）（554）
+						1. Old-School CPU-Dependent Games（ 老式的  CPU  相关游戏）（554）
+						2. Updating Based on Elapsed Time（ 根据经过的时间更新）（555）
+						3. Using a Running Average（使用移动平均值）（556）
+						4. Governing the Frame Rate（ 控制帧速率）（556）
+						5. Screen Tearing and V-Sync（屏幕撕裂和垂直同步）（557）
+					3. Measuring Real Time with a High-Resolution Timer（ 使用高分辨率计时器进行实时测量）（558）
+						1. High-Resolution Clock Drift（高分辨率时钟漂移）（559）
+					4. Time Units and Clock Variables（ 时间单位和时钟变量）（559）
+						1. 64-Bit Integer Clocks（ 64  位整数时钟）（559）
+						2. 32-Bit Integer Clocks（ 32  位整数时钟）（560）
+						3. 32-Bit Floating-Point Clocks（  32  位浮点时钟）（560）
+						4. Limitations of Floating-Point Clocks（浮点时钟的限制）（561）
+						5. Other Time Units（其他时间单位）（561）
+					5. Dealing with Breakpoints（ 处理断点）（562）
+				6.  Multiprocessor Game Loops（多处理器游戏循环）（563）
+					1. Task Decomposition（任务分解）（563）
+					2. One Thread per Subsystem（  每个子系统一个线程）（564）
+					3. Scatter/Gather（分散/聚集）（565）
+						1. Scatter/Gather in the Game Loop（游戏循环中的分散/聚集）（566）
+						2. SIMD for Scatter/Gather（用于分散/聚集的  SIMD）（567）
+						3. Making Scatter/Gather More Efficient（使分散/聚集更加高效）（567）
+					4. Job Systems（ 工作系统）（568）
+						1. Typical Job System Interface（典型作业系统界面）（568）
+						2. A Simple Job System Based on a Thread Pool（ 一个基于线程池的简单作业系统）（570）
+						3. A Limitation of Thread-Based Jobs（  基于线程的作业的限制）（571）
+						4. Jobs as Coroutines（ 作为协程的作业）（573）
+						5. Jobs as Fibers（作业作为纤维）（573）
+						6. Job Counters（作业计数器）（573）
+						7. Job Synchronization Primitives（作业同步原语）（574）
+						8. Job Visualization and Profiling Tools（  作业可视化和分析工具）（575）
+						9. The Naughty Dog Job System（ 顽皮狗工作系统）（576）
+			4.  Human Interface Devices（人机接口设备）（578）
+				1. Types of Human Interface Devices（人机接口设备的类型）（578）
+				2. Interfacing with a HID（与  HID  接口）（580）
+					1. Polling（轮询）（580）
+					2. Interrupts（  中断）（581）
+					3. Wireless Devices（无线设备）（581）
+				3. Types of Inputs（输入类型）（582）
+					1. Digital Buttons（数字按钮）（582）
+					2. Analog Axes and Buttons（模拟轴和按钮）（583）
+					3. Relative Axes（相对轴）（585）
+					4. Accelerometers（加速度计）（585）
+					5. 3D Orientation with the Wiimote or DualShock（使用  Wiimote  或  DualShock  进行  3D  定向）（585）
+					6. Cameras（  相机）（586）
+				4.   Types of Outputs（输出类型）（588）
+					1. Rumble（588）
+					2. Force-Feedback（力反馈）（589）
+					3. Audio（  音频）（589）
+					4. Other Inputs and Outputs（其他输入和输出）（589）
+				5. Game Engine HID Systems（游戏引擎HID系统）（589）
+					1. Typical Requirements（典型要求）（590）
+					2. Dead Zone（死区）（590）
+					3. Analog Signal Filtering（模拟信号滤波）（591）
+					4. Detecting Input Events（  检测输入事件）（593）
+						1. Button Up and Button Down（按钮向上和按钮向下）（593）
+						2. Chords（594）
+						3. Sequences and Gesture Detection（ 序列和手势检测）（596）
+					5. Managing Multiple HIDs for Multiple Players（管理多个玩家的多个  HID）（601）
+					6. Cross-Platform HID Systems（跨平台  HID  系统）（601）
+					7. Input Remapping（输入重新映射）（603）
+					8. Context-Sensitive Controls（上下文相关控件）（605）
+					9. Disabling Inputs（禁用输入）（605）
+				6. Human Interface Devices in Practice（实践中的人机接口设备）（606）
+			5. Tools for Debugging and Development（调试和开发工具）（608）
+				1. Logging and Tracing（ 记录和跟踪）（608）
+					1. Formatted Output with OutputDebugString()（ 使用  OutputDebugString()  格式化输出）（609）
+					2. Verbosity（冗长）（610）
+					3. Channels（通道）（611）
+						1. Using Redis to Manage TTY Channels（使用Redis管理TTY通道）（612）
+					4. Mirroring Output to a File（将输出镜像到文件）（612）
+					5. Crash Reports（ 崩溃报告）（613）
+				2.  Debug Drawing Facilities（调试绘图工具）（613）
+					1. Debug Drawing API（调试绘图API）（616）
+				3. In-Game Menus（  游戏内菜单）（620）
+				4. In-Game Console（游戏内控制台）（623）
+				5. Debug Cameras and Pausing the Game（调试相机和暂停游戏）（624）
+				6. Cheats（秘籍）（625）
+				7. Screenshots and Movie Capture（  屏幕截图和视频捕捉）（625）
+				8.  In-Game Profiling（ 游戏内分析）（627）
+					1. Hierarchical Profiling（分层分析）（628）
+					2. Exporting to Exce（导出到  Excel）（633）
+				9.  In-Game Memory Stats and Leak Detection（游戏内存统计和泄漏检测）（634）
+		3. Graphics, Motion and Sound（图形、动作和声音）（638）
+			1. The Rendering Engine（渲染引擎）（640）
+				1. Foundations of Depth-Buffered Triangle Rasterization（深度缓冲的基础三角形光栅化）（641）
+					1. Describing a Scene（描述场景）（642）
+						1. Representations Used by High-End Rendering Packages（高端渲染包使用的表示）（643）
+						2. Triangle Meshes（三角形网格）（644）
+						3. Constructing a Triangle Mesh（构建三角形网格）（646）
+						4. Model Space（模型空间）（649）
+						5. World Space and Mesh Instancing（ 世界空间和网格实例化）（650）
+					2. Describing the Visual Properties of a Surface（描述表面的视觉属性）（651）
+						1. Introduction to Light and Color（光和颜色简介）（652）
+						2. Vertex Attributes（顶点属性）（654）
+						3. Vertex Formats（ 顶点格式）（655）
+						4. Attribute Interpolation（属性插值）（656）
+						5. Textures（ 纹理）（658）
+						6. Materials（材料）（665）
+					3. Lighting Basics（照明基础知识）（666）
+						1. Local and Global Illumination Models（局部和全局照明模型）（666）
+						2. The Phong Lighting Mode（ Phong  光照模型）（668）
+						3. Modeling Light Sources（光源建模）（672）
+					4. The Virtual Camera（虚拟相机）（674）
+						1. View Space（视图空间）（675）
+						2. Projections（预测）（676）
+						3. The View Volume and the Frustum（视体积和视锥体）（677）
+						4. Projection and Homogeneous Clip Space（投影和均匀裁剪空间）（678）
+						5. Screen Space and Aspect Ratios（屏幕空间和长宽比）（682）
+						6. The Frame Buffer（帧缓冲区）（682）
+						7. Triangle Rasterization and Fragments（三角形光栅化和片段）（683）
+						8. Occlusion and the Depth Buffer（遮挡和深度缓冲区）（683）
+				2. The Rendering Pipeline（渲染管线）（686）
+					1. Overview of the Rendering Pipeline（渲染管线概述）（687）
+						1. How the Rendering Pipeline Transforms Data（渲染管线如何转换数据）（688）
+						2. Implementation of the Pipeline（管道的实施）（688）
+					2. The Tools Stage（工具阶段）（688）
+					3. The Asset Conditioning Stage（资产调整阶段）（690）
+					4. The GPU Pipeline（GPU  管线）（691）
+						1. Vertex Shader（ 顶点着色器）（692）
+						2. Geometry Shader（ 几何着色器）（693）
+						3. Stream Output（ 流输出）（693）
+						4. Clipping（剪裁）（693）
+						5. Screen Mapping（屏幕映射）（694）
+						6. Triangle Set-up（ 三角形设置）（694）
+						7. Triangle Traversal（ 三角形遍历）（694）
+						8. Early z-Test（ 早期  z  测试）（694）
+						9. Pixel Shader（像素着色器）（694）
+						10. Merging / Raster Operations Stage（合并/光栅操作阶段）（695）
+					5. Programmable Shaders（可编程着色器）（696）
+						1. Accessing Memory（访问内存）（697）
+						2. Introduction to High-Level Shader Language Syntax（高级着色器语言语法简介）（699）
+						3. Effect Files（效果文件）（701）
+						4. Further Reading（ 进一步阅读）（701）
+					6. Antialiasing（抗锯齿）（702）
+						1. Full-Screen Antialiasing (FSAA)（ 全屏抗锯齿  (FSAA)）（703）
+						2. Multisampled Antialiasing (MSAA)（多重采样抗锯齿  (MSAA)）（703）
+						3. Coverage Sample Antialiasing (CSAA)（ 覆盖样本抗锯齿  (CSAA)）（704）
+						4. Morphological Antialiasing (MLAA)（ 形态抗锯齿  (MLAA)）（704）
+						5. Subpixel Morphological Antialiasing (SMAA)（  子像素形态抗锯齿  (SMAA)）（706）
+					7. The Application Stage（ 申请阶段）（706）
+						1. Visibility Determination（ 能见度测定）（706）
+						2. Primitive Submission（原始提交）（710）
+						3. Geometry Sorting（几何排序）（711）
+						4. Scene Graphs（场景图）（712）
+						5. Choosing a Scene Graph（选择场景图）（716）
+				3. Advanced Lighting and Global Illumination（高级光照和全局照明）（716）
+					1. Image-Based Lighting（基于图像的照明）（716）
+						1. Normal Mapping（法线贴图）（717）
+						2. Heightmaps: Bump, Parallax and Displacement Mapping（高度图：凹凸、视差和位移贴图）（717）
+						3. Specular/Gloss Maps（镜面/光泽贴图）（718）
+						4. Environment Mapping（环境映射）（719）
+						5. Three-Dimensional Textures（三维纹理）（720）
+					2. High Dynamic Range Lighting（高动态范围照明）（721）
+					3. Global Illumination（全局照明）（721）
+						1. Shadow Rendering（阴影渲染）（722）
+						2. Ambient Occlusion（环境遮挡）（724）
+						3. Reflections（反射）（725）
+						4. Caustics（ 焦散）（725）
+						5. Subsurface Scattering（ 次表面散射）（726）
+						6. Precomputed Radiance Transfer (PRT)（ 预计算辐射传输  (PRT)）（727）
+					4. Deferred Rendering（ 延迟渲染）（728）
+					5. Physically Based Shading（ 基于物理的着色）（728）
+				4.  Visual Effects and Overlays（ 视觉效果和叠加）（729）
+					1. Particle Effects（粒子效应）（730）
+					2. Decals（贴花）（731）
+					3. Environmental Effects（环境影响）（732）
+						1. Skies（天空）（732）
+						2. Terrain（地形）（733）
+						3. Water（ 水）（734）
+					4. Overlays（ 叠加）（735）
+						1. Text and Fonts（文本和字体）（735）
+					5. Gamma Correction（伽马校正）（737）
+					6. Full-Screen Post Effects（全屏后期效果）（738）
+				5. Further Reading（进一步阅读）（738）
+			2. Animation Systems（动画系统）（740）
+				1. Types of Character Animation（角色动画的类型）（740）
+					1. Cel Animation（赛璐珞动画）（741）
+					2. Rigid Hierarchical Animation（ 刚性分层动画）（742）
+					3. Per-Vertex Animation and Morph Targets（每顶点动画和变形目标）（743）
+					4. Skinned Animation（蒙皮动画）（744）
+					5. Animation Methods as Data Compression Techniques（作为数据压缩技术的动画方法）（744）
+				2. Skeletons（骨架）（746）
+					1. The Skeleal Hierarchy（骨架层次结构）（747）
+					2. Representing a Skeleton in Memory（在内存中表示骨架）（747）
+				3. Poses（姿势）（748）
+					1. Bind Pose（绑定姿势）（748）
+					2. Local Poses（局部位姿）（749）
+						1. Joint Scale（ 关节尺度）（750）
+						2. Representing a Joint Pose in Memory（表示记忆中的关节姿势）（751）
+						3. The Joint Pose as a Change of Basis（关节姿势作为基础的改变）（751）
+					3. Global Poses（全局位姿）（752）
+						1. Representing a Global Pose in Memory（  在内存中表示全局位姿）（752）
+				4. Clips（剪辑）（753）
+					1. The Local Timeline（本地时间线）（754）
+						1. Pose Interpolation and Continuous Time（位姿插值和连续时间）（755）
+						2. Time Units（  时间单位）（756）
+						3. Frame versus Sample（ 框架与样本）（756）
+						4. Frames, Samples and Looping Clips（  帧、样本和循环剪辑）（757）
+						5. Normalized Time (Phase)（归一化时间（相位））（757）
+					2. The Global Timeline（ 全球时间线）（758）
+					3. Comparison of Local and Global Clocks（本地时钟和全局时钟的比较动画系统必须跟踪当）（760）
+						1. Synchronizing Animations with a Local Clock（将动画与本地时钟同步）（761）
+						2. Synchronizing Animations with a Global Clock（将动画与全局时钟同步）（762）
+					4. A Simple Animation Data Format（ 简单的动画数据格式）（763）
+					5. Continuous Channel Functions（连续通道功能）（764）
+					6. Metachannels（元通道）（765）
+					7. Relationship between Meshes, Skeletons and Clips（网格、骨架和剪辑之间的关系）（767）
+						1. Animation Retargeting（动画重定向）（767）
+				5. Skinning and Matrix Palette Generation（蒙皮和矩阵调色板生成）（769）
+					1. Per-Vertex Skinning Information（每顶点蒙皮信息）（769）
+					2. The Mathematics of Skinning（蒙皮的数学原理）（770）
+						1. Simple Example: One-Jointed Skeleton（简单示例：单关节骨骼）（770）
+						2. Extension to Multijointed Skeletons（扩展到多关节骨骼）（772）
+						3. Incorporating the Model-to-World Transform（合并模型到世界的变换）（773）
+						4. Skinning a Vertex to Multiple Joints（将顶点蒙皮到多个关节（773））
+				6. Animation Blending（ 动画混合）（774）
+					1. LERP Blending（ LERP  混合）（774）
+					2. Applications of LERP Blending（LERP混合的应用）（776）
+						1. Temporal Interpolation（时间插值）（776）
+						2. Motion Continuity: Cross-Fading（ 运动连续性：交叉淡入淡出）（777）
+						3. Directional Locomotion（  定向运动）（780）
+					3. Complex LERP Blends（复杂的  LERP  混合）（782）
+						1. Generalized One-Dimensional LERP Blending（广义一维  LERP  混合）（782）
+						2. Simple Two-Dimensional LERP Blending（简单的二维  LERP  混合）（782）
+						3. Triangular Two-Dimensional LERP Blending（三角形二维LERP混合）（784）
+						4. Generalized Two-Dimensional LERP Blending（广义二维  LERP  混合）（785）
+					4. Partial-Skeleton Blending（部分骨架混合）（786）
+					5. Additive Blending（添加剂混合）（788）
+						1. Mathematical Formulation（ 数学公式）（788）
+						2. Additive Blending versus Partial Blending（加法混合与部分混合）（790）
+						3. Limitations of Additive Blending（ 添加剂混合的局限性）（790）
+					6. Applications of Additive Blending（添加剂混合的应用）（791）
+						1. Stance Variation（ 姿态变化）（791）
+						2. Locomotion Noise（运动噪声）（792）
+						3. Aim and Look-At（瞄准和观察）（792）
+						4. Overloading the Time Axis（重载时间轴）（793）
+				7. Post-Processing（ 后处理）（793）
+					1. Procedural Animations（ 程序动画）（794）
+					2. Inverse Kinematics（逆运动学）（794）
+					3. Rag Dolls（布娃娃）（796）
+				8. Compression Techniques（压缩技术）（796）
+					1. Channel Omission（通道省略）（797）
+					2. Quantization（量化）（797）
+					3. Sampling Frequency and Key Omission（采样频率和关键省略）（801）
+					4. Curve-Based Compression（ 基于曲线的压缩）（802）
+					5. Wavelet Compression（  小波压缩）（802）
+					6. Selective Loading and Streaming（ 选择性加载和流式传输）（803）
+				9. The Animation Pipeline（ 动画管道）（803）
+				10. Action State Machines（ 动作状态机）（805）
+					1. The Flat Weighted Average Approach（统一加权平均法）（807）
+						1. Example: OGRE（ 示例：OGRE）（808）
+						2. Example: Granny（示例：Granny）（809）
+						3. Cross-Fades with a Flat Weighted Average（具有平坦加权平均值的交叉淡入淡出）（809）
+					2. Blend Trees（  混合树）（811）
+						1. Binary LERP Blend Trees（二元  LERP  混合树）（811）
+						2. Generalized One-Dimensional Blend Trees（ 广义一维混合树）（811）
+						3. Two-Dimensional LERP Blend Trees（二维  LERP  混合树）（812）
+						4. Additive Blend Trees（加法混合树）（812）
+						5. Layered Blend Trees（分层混合树）（813）
+						6. Cross-Fades with Blend Trees（使用混合树进行交叉淡入淡出）（814）
+					3. State and Blend Tree Specifications（状态和混合树规范）（815）
+						1. Example: The Naughty Dog Engine（示例：顽皮狗引擎）（816）
+						2. Example: Unreal Engine 4（  示例：虚幻引擎  4）（819）
+					4. Transitions（ 转换）（819）
+						1. Kinds of Transitions（ 转换类型）（820）
+						2. Transition Parameters（  转换参数）（820）
+						3. The Transition Matrix（转移矩阵）（821）
+						4. Implementing a Transition Matrix（实现转移矩阵）（821）
+					5. Control Parameters（ 控制参数）（824）
+				11. Constraints（约束）（825）
+					1. Attachments（附件）（826）
+					2. Interobject Registration（对象间注册）（827）
+						1. Reference Locators（  参考定位器）（828）
+						2. Finding the World-Space Reference Location（ 查找世界空间参考位置）（829）
+					3. Grabbing and Hand IK（抓取和手  IK）（830）
+					4. Motion Extraction and Foot IK（运动提取和足部  IK）（832）
+						1. Motion Extraction（运动提取）（832）
+						2. Foot IK（脚  IK）（834）
+					5. Other Kinds of Constraints（其他类型的约束）（835）
+			3. Collision and Rigid Body Dynamics（碰撞和刚性身体动力学）（836）
+				1. Do You Want Physics in Your Game?（你想在游戏中加入物理吗？）（837）
+					1. Things You Can Do with a Physics System（物理系统可以做的事情）（837）
+					2. Is Physics Fun?（物理有趣吗？）（838）
+						1. Simulations (Sims)（模拟  (Sims)）（838）
+						2. Physics Puzzle Games（ 物理益智游戏）（839）
+						3. Sandbox Games（沙盒游戏）（839）
+						4. Goal-Based and Story-Driven Games（基于目标和故事驱动的游戏）（839）
+					3. Impact of Physics on a Game（物理对游戏的影响）（840）
+						1. Design Impacts（设计影响）（840）
+						2. Engineering Impacts（工程影响）（840）
+						3. Art Impacts（艺术影响）（841）
+						4. Other Impacts（其他影响）（842）
+				2. Collision/Physics Middleware（碰撞/物理中间件）（842）
+					1. ODE（842）
+					2. Bullet（项目符号）（843）
+					3. TrueAxis（ 真轴）（843）
+					4. PhysX（物理X）（843）
+					5. Havok（ 冲击波）（843）
+					6. Physics Abstraction Layer (PAL)（物理抽象层（PAL））
+					7. Digital Molecular Matter (DMM)（数字分子物质（DMM））
+				3. The Collision Detection System（碰撞检测系统）（844）
+					1. Collidable Entities（可碰撞实体）（845）
+					2. The Collision/Physics World（  碰撞/物理世界）（847）
+						1. The Physics World（  物理世界）（847）
+					3. Shape Concepts（形状概念）（848）
+						1. Intersection（ 交叉点）（848）
+						2. Contact（ 联系方式）（849）
+						3. Convexity（凸性）（849）
+					4. Collision Primitives（ 碰撞原语）（849）
+						1. Spheres（球体）（849）
+						2. Capsules（ 胶囊）（850）
+						3. Axis-Aligned Bounding Boxes（轴对齐边界框）（850）
+						4. Oriented Bounding Boxes（定向边界框）（851）
+						5. Discrete Oriented Polytopes (DOP)（离散定向多面体  (DOP)（851）
+						6. Arbitrary Convex Volumes（任意凸体积）（852）
+						7. Poly Soup（聚汤）（853）
+						8. Compound Shapes（复合形状）（854）
+					5. Collision Testing and Analytical Geometry（ 碰撞测试和解析几何）（855）
+						1. Point versus Sphere（点与球体  我们可以通）（855）
+						2. Sphere versus Sphere（球体与球体  确定两个球体）（855）
+						3. The Separating Axis Theorem（分离轴定理）（856）
+						4. AABB versus AABB（ AABB  与  AABB）（857）
+						5. Detecting Convex Collisions: The GJK Algorithm（检测凸碰撞：GJK  算法）（858）
+						6. Other Shape-Shape Combinations（其他形状‑形状组合）（861）
+						7. Detecting Collisions between Moving Bodies（  检测移动体之间的碰撞）（862）
+					6. Performance Optimizations（性能优化）（864）
+						1. Temporal Coherency（时间一致性）（865）
+						2. Spatial Partitioning（空间分区）（865）
+						3. Broad Phase, Midphase and Narrow Phase（ 宽相、中相和窄相）（866）
+					7. Collision Queries（ 碰撞查询）（866）
+						1. Ray Casting（光线投射）（867）
+						2. Shape Casting（形状铸造）（868）
+						3. Phantoms（ 幻象）（871）
+						4. Other Types of Queries（其他类型的查询）（871）
+					8. Collision Filtering（冲突过滤）（871）
+						1. Collision Masking and Layers（碰撞掩蔽和层）（872）
+						2. Collision Callbacks（碰撞回调）（872）
+						3. Game-Specific Collision Materials（游戏特定的碰撞材质）（872）
+				4. Rigid Body Dynamics（刚体动力学）（873）
+					1. Some Foundations（ 一些基础）（875）
+						1. Units（单位）（875）
+						2. Separability of Linear and Angular Dynamics（线性和角动力学的可分离性）（875）
+						3. Center of Mass（质心）（876）
+					2. Linear Dynamics（线性动力学）（877）
+						1. Linear Velocity and Acceleration（线速度和加速度）（877）
+						2. Force and Momentum（ 力和动量）（878）
+					3. Solving the Equations of Motion（求解运动方程）（879）
+						1. Force as a Function（力作为函数）（879）
+						2. Ordinary Differential Equations（常微分方程）（879）
+						3. Analytical Solutions（分析解）（880）
+					4. Numerical Integration（  数值积分）（880）
+						1. Explicit Euler（显式欧拉）（881）
+						2. Properties of Numerical Methods（数值方法的性质）（882）
+						3. Alternatives to Explicit Euler（显式欧拉的替代方案）（883）
+						4. Verlet Integration（Verlet  集成）（884）
+						5. Velocity Verlet（ 速度韦尔莱）（885）
+					5. Angular Dynamics in Two Dimensions（ 二维角动力学）（885）
+						1. Orientation and Angular Speed（方向和角速度）（885）
+						2. Angular Speed and Acceleration（角速度和加速度）（886）
+						3. Moment of Inertia（转动惯量）（886）
+						4. Torque（扭矩）（886）
+						5. Solving the Angular Equations of Motion in Two Dimensions（  求解二维运动角方程）（888）
+					6. Angular Dynamics in Three Dimensions（三维角动力学）（889）
+						1. The Inertia Tensor（惯性张量）（889）
+						2. Orientation in Three Dimensions（三维方向）（890）
+						3. Angular Velocity and Momentum in Three Dimensions（三维角速度和动量）（890）
+						4. Torque in Three Dimensions（三维扭矩）（892）
+						5. Solving the Equations of Angular Motion in Three Dimensions（求解三维角运动方程）（892）
+					7. Collision Response（碰撞响应）（894）
+						1. Energy（能源）（894）
+						2. Impulsive Collision Response（ 脉冲碰撞响应）（895）
+						3. Penalty Forces（处罚力量）（898）
+						4. Using Constraints to Resolve Collisions（使用约束来解决冲突）（898）
+						5. Friction（摩擦力）（899）
+						6. Welding（焊接）（900）
+						7. Coming to Rest, Islands and Sleeping（休息、离岛和睡觉）（900）
+					8. Constraints（约束）（902）
+						1. Point-to-Point Constraints（ 点对点约束）（903）
+						2. Stiff Springs（硬弹簧）（903）
+						3. Hinge Constraints（ 铰链约束）（903）
+						4. Prismatic Constraints（棱柱约束）（904）
+						5. Other Common Constraint Types（  其他常见约束类型）（904）
+						6. Constraint Chains（约束链）（904）
+						7. Rag Dolls（布娃娃）（905）
+						8. Powered Constraints（动力约束）（906）
+					9. Controlling the Motions of Rigid Bodies（控制刚体运动）（907）
+						1. Gravity（重力）（907）
+						2. Applying Forces（施加力）（907）
+						3. Applying Torques（  施加扭矩）（908）
+						4. Applying Impulses（ 施加脉冲）（908）
+					10. The Collision/Physics Step（碰撞/物理步骤）（908）
+						1. The Constraint Solver（ 约束求解器）（909）
+						2. Variations between Engines（引擎之间的差异）（910）
+				5. Integrating a Physics Engine into Your Game（将物理引擎集成到游戏中）（911）
+					1. Linking Game Objects and Rigid Bodies（连接游戏对象和刚体）（911）
+						1. Physics-Driven Bodies（物理驱动体）（913）
+						2. Game-Driven Bodies（游戏驱动体）（914）
+						3. Fixed Bodies（ 固定体）（915）
+						4. Havok’s Motion Type（Havok  的运动类型）（915）
+					2. Updating the Simulation（更新模拟）（916）
+						1. Timing Collision Queries（ 时序冲突查询）（917）
+						2. Single-Threaded Updating（ 单线程更新）（918）
+					3. Example Uses of Collision and Physics in a Game（ 游戏中碰撞和物理的使用示例）（919）
+						1. Simple Rigid Body Game Objects（简单刚体游戏对象）（919）
+						2. Bullet Traces（ 子弹轨迹）（919）
+						3. Grenades（手榴弹）（921）
+						4. Explosions（爆炸）（921）
+						5. Destructible Objects（可破坏的物体）（922）
+						6. Character Mechanics（角色机制）（923）
+						7. Camera Collision（相机碰撞）（924）
+						8. Rag Doll Integration（布娃娃集成）（926）
+				6. Advanced Physics Features（高级物理特性）（928）
+			4. Aduio（声音的）（930）
+				1. The Physics of Sound（声音物理学）（931）
+					1. Properties of Sound Waves（声波的性质）（932）
+					2. Perceived Loudness and the Decibel（感知响度和分贝）（933）
+						1. Equal-Loudness Contours（ 等响度轮廓）（935）
+						2. The Audible Frequency Band（听觉频段）（936）
+					3. Sound Wave Propagation（声波传播）（936）
+						1. Fall-Off with Distance（随距离的衰减）（936）
+						2. Atmospheric Absorption（大气吸收）（937）
+						3. Phase Shift and Interference（相移和干扰）（938）
+						4. Reverb and Echo（混响和回声）（939）
+						5. Sound in Motion: The Doppler Effect（运动中的声音：多普勒效应）（941）
+					4. Perception of Position（位置感知）（942）
+				2. The Mathematics of Sound（ 声音的数学）（943）
+					1. Signals（ 信号）（943）
+						1. Be Discrete, Continuously（离散、连续）（944）
+					2. Manipulating Signals（操纵信号）（944）
+					3. Linear Time-Invariant (LTI) Systems（线性时不变（LTI）系统）（945）
+					4. Impulse Response of an LTI System（ LTI系统的脉冲响应）（947）
+						1. The Unit Impulse（单位冲量）（947）
+						2. Using an Impulse Train to Represent a Signal（使用脉冲序列表示信号）（948）
+						3. Convolution（卷积）（949）
+						4. Visualizing Convolution（可视化卷积）（951）
+						5. Some Properties of Convolution（卷积的一些性质）（952）
+					5. The Frequency Domain and the Fourier Transform（频域和傅立叶变换）（952）
+						1. The Sinusoidal Signal（正弦信号）（952）
+						2. The Complex Exponential Signal（复指数信号）（953）
+						3. The Fourier Series（ 傅立叶级数）（957）
+						4. The Fourier Transform（傅立叶变换）（957）
+						5. Bode Plots（波特图）（958）
+						6. The Fast Fourier Transform (FFT)（快速傅里叶变换（FFT））（958）
+						7. Fourier Transforms and Convolution（傅里叶变换和卷积）（959）
+						8. Filtering（过滤）（959）
+				3. The Technology of Sound（声音技术）（960）
+					1. Analog Audio Technology（模拟音频技术）（960）
+						1. Microphones（麦克风）（961）
+						2. Speakers（发言者）（962）
+						3. Speaker Layouts: Stereo（扬声器布局：立体声）（963）
+						4. Speaker Layouts: Surround Sound（扬声器布局：环绕声）（963）
+						5. Analog Signal Levels（ 模拟信号电平）（964）
+						6. Amplifiers（放大器）（965）
+						7. Volume/Gain Controls（ 音量/增益控制）（965）
+						8. Analog Wiring and Connectors（模拟接线和连接器）（966）
+					2. Digital Audio Technology（数字音频技术）（967）
+						1. Analog-to-Digital Conversion: Pulse-Code Modulation（模数转换：脉冲编码调制）（967）
+						2. Digital-to-Analog Conversion: Demodulation（ 数模转换：解调）（970）
+						3. Digital Audio Formats and Codecs（数字音频格式和编解码器）（970）
+						4. Parallel and Interleaved Audio Data（并行和交错音频数据）（972）
+						5. Digital Wiring and Connectors（ 数字接线和连接器）（973）
+				4.  Rendering Audio in 3D（以  3D  方式渲染音频）（974）
+					1. Overview of 3D Sound Rendering（3D声音渲染概述）（975）
+					2. Modeling the Audio World（音频世界建模）（975）
+					3. Distance-Based Attenuation（基于距离的衰减）（976）
+						1. Fall-Off Min and Max（ 衰减最小值和最大值）（976）
+						2. Blending to Zero（ 混合至零）（976）
+						3. Bending the Rules（违反规则）（977）
+						4. Atmospheric Attenuation（大气衰减）（977）
+					4. Pan（平移）（978）
+						1. Constant Gain Panning（恒定增益平移）（980）
+						2. The Constant Power Pan Law（恒功率平移定律）（980）
+						3. Headroom（净空）（981）
+						4. To Center or Not to Center?（居中还是不居中？）（981）
+						5. Focus（焦点）（982）
+						6. Dealing with Verticality（处理垂直度）（983）
+						7. Further Reading on Pan（关于  Pan  的进一步阅读）（984）
+					5. Propagation, Reverb and Acoustics（传播、混响和声学）（984）
+						1. Modeling Propagation Effects with an LTI System（使用  LTI  系统对传播效应进行建模）（985）
+						2. Reverb Regions（ 混响区域）（986）
+						3. Obstruction, Occlusion and Exclusion（阻碍、遮挡和排除）（987）
+						4. Sound Portals in The Last of Us（《最后生还者》中的声音入口）（991）
+						5. Further Reading on Environmental Acoustics（  环境声学进一步阅读）（992）
+						6. Doppler Shift（多普勒频移）（992）
+				5. Audio Engine Architecture（音频引擎架构）（993）
+					1. The Audio Processing Pipeline（音频处理管道）（994）
+					2. Concepts and Terminology（概念和术语）（996）
+						1. Voices（ 声音）（996）
+						2. Buses（ 总线）（997）
+					3. The Voice Bus（语音总线）（997）
+						1. Sound Synthesis: Codecs（ 声音合成：编解码器）（997）
+						2. Gain Control（增益控制）（998）
+						3. Aux Sends（辅助发送）（998）
+						4. Reverb （混响）（998）
+						5. Pre-Send Filter（预发送过滤器）（999）
+						6. Post-Send Filter（发送后过滤器）（999）
+						7. Pan Pots（999）
+					4. Master Mixer（ 主混音器）（999）
+						1. Analog Mixing（模拟混合）（1000）
+						2. Digital Mixing（数字混音）（1000）
+						3. Sample Depth Conversion（样本深度转换）（1000）
+						4. Sample Rate Conversion（ 采样率转换）（1000）
+					5. The Master Output Bus（主输出总线）（1001）
+					6. Implementing a Bus（实现总线）（1002）
+						1. Analog Buses（模拟总线）（1002）
+						2. Digital Buses（数字总线）（1002）
+						3. Bus Latency（总线延迟）（1003）
+					7. Asset Management（资产管理）（1004）
+						1. Audio Clips（ 音频剪辑）（1004）
+						2. Sound Cues（ 声音提示）（1005）
+						3. Sound Banks（声音库）（1006）
+						4. Streaming Sounds（流声音）（1007）
+					8. Mixing Your Game（混合你的游戏）（1007）
+						1. Groups（组）（1008）
+						2. Ducking（闪避）（1008）
+						3. Bus Presets and Mix Snapshots（1009）
+						4. Instance Limiting（实例限制）（1009）
+						5. Mixing In-Game Cinematics（混合游戏内动画）（1010）
+					9. Audio Engine Survey（音频引擎调查）（1011）
+						1. Windows: The Universal Audio Architecture（  Windows：通用音频架构）（1011）
+						2. XAudio2（1012）
+						3. Scream and BoomRangBuss（ Scream  和  BoomRangBuss）（1012）
+						4. Multiplatform 3D Audio Engines（多平台  3D  音频引擎）（1013）
+				6. Game-Specific Audio Features（游戏特定的音频特性）（1015）
+					1. Supporting Split-Screen（支持分屏）（1016）
+					2. Character Dialog（角色对话框）（1016）
+						1. Giving a Character a Voice（赋予角色声音）（1017）
+						2. Defining a Line of Dialog（定义一行对话）（1017）
+						3. Playing a Line of Dialog（播放一行对话）（1019）
+						4. Priority and Interruption（优先级和中断）（1020）
+						5. Conversations（ 对话）（1021）
+						6. Interrupting Conversations（中断对话）（1022）
+						7. Exclusivity（排他性）（1023）
+						8. Choices and Branching Conversations（选择和分支对话）（1023）
+						9. Context-Sensitive Dialog（ 上下文相关对话框）（1028）
+						10. Dialog Actions（对话框操作）（1028）
+					3. Music（音乐）（1029）
+		4. Gameplay（游戏玩法）（1032）
+			1. Introduction to Gameplay Systems（简介游戏系统）（1034）
+				1. Anatomy of a Game World（游戏世界剖析）（1035）
+					1. World Elements（ 世界元素）（1035）
+						1. Static Geometry（ 静态几何）（1037）
+					2. World Chunks（世界块）（1038）
+					3. High-Level Game Flow（高级游戏流程）（1038）
+				2. Implementing Dynamic Elements: Game Objects（实现动态元素：游戏对象）（1040）
+					1. Game Object Models（游戏对象模型）（1041）
+					2. Tool-Side Design versus Runtime Design（ 工具端设计与运行时设计）（1042）
+				3.  Data-Driven Game Engines（数据驱动的游戏引擎）（1043）
+				4. The Game World Editor（ 游戏世界编辑器）（1044）
+					1. Typical Features of a Game World Editor（游戏世界编辑器的典型特征）（1048）
+						1. World Chunk Creation and Management（世界块创建和管理）（1048）
+						2. Game World Visualization（游戏世界可视化）（1048）
+						3. Navigation（导航）（1049）
+						4. Selection（选择）（1049）
+						5. Layers（层）（1050）
+						6. Property Grid（属性网格）（1050）
+						7. Object Placement and Alignment Aids（对象放置和对齐辅助）（1052）
+						8. Special Object Types（特殊对象类型）（1052）
+						9. Saving and Loading World Chunks（保存和加载世界块）（1054）
+						10. Rapid Iteration（快速迭代）（1054）
+					2. Integrated Asset Management Tools（综合资产管理工具）（1054）
+						1. Data Processing Costs（数据处理成本）（1055）
+			2. Runtime Gameplay Foundation Systems（运行时游戏基础系统）（1058）
+				1. Components of the Gameplay Foundation System（游戏基础系统的组成）
+				2. Runtime Object Model Architectures（运行时对象模型架构）（1062）
+					1. Object-Centric Architectures（以对象为中心的架构）（1063）
+						1. A Simple Object-Based Model in C: Hydro Thunder（ C  语言中的简单的基于对象的模型：Hydro  Thunder）（1063）
+						2. Monolithic Class Hierarchies（整体类层次结构）（1065）
+						3. Problems with Deep, Wide Hierarchies（ 深、宽层次结构的问题）（1047）
+						4. Using Composition to Simplify the Hierarchy（使用组合来简化层次结构）（1070）
+						5. Generic Components（通用组件）（1074）
+						6. Pure Component Models（纯组件模型）（1075）
+					2. Property-Centric Architectures（以属性为中心的架构）（1076）
+						1. Implementing Behavior via Property Classes（通过属性类实现行为）（1078）
+						2. Implementing Behavior via Script（通过脚本实现行为）（1078）
+						3. Properties versus Components（属性与组件）（1078）
+						4. Pros and Cons of Property-Centric Designs（以属性为中心的设计的优缺点）（1079）
+						5. Further Reading（ 进一步阅读）（1080）
+				3. World Chunk Data Formats（世界块数据格式）（1081）
+					1. Binary Object Images（二进制对象图像）（1082）
+					2. Serialized Game Object Descriptions（序列化游戏对象描述）（1082）
+					3. Spawners and Type Schemas（生成器和类型模式）（1084）
+						1. Object Type Schemas（ 对象类型模式）（1085）
+						2. Default Attribute Values（默认属性值）（1087）
+						3. Some Beneifts of Spawners and Type Schemas（Spawners  和类型模式的一些好处）（1088）
+				4. Loading and Streaming Game Worlds（加载和流式传输游戏世界）（1088）
+					1. Simple Level Loading（简单关卡加载）（1089）
+					2. Toward Seamless Loading: Air Locks（实现无缝装载：气闸）（1089）
+					3. Game World Streaming（游戏世界流媒体）（1091）
+						1. Determining Which Resources to Load（确定要加载的资源）（1092）
+						2. PlayGo on the PlayStation 4（ PlayStation  4  上的  PlayGo）（1093）
+					4. Memory Management for Object Spawning（对象生成的内存管理）（1093）
+						1. OffLine Memory Allocation for Object Spawning（对象生成的离线内存分配）（1093）
+						2. Dynamic Memory Management for Object Spawning（ 对象生成的动态内存管理）（1094）
+					5. Saved Games（Saved Games）（1096）
+						1. Checkpoints（检查点）（1097）
+						2. Save Anywhere（ 保存在任何地方）（1097）
+				5.  Object References and World Queries（对象引用和世界查询）（1098）
+					1. Pointers（指针）（1098）
+					2. Smart Pointers（ 智能指针）（1099）
+					3. Handles（句柄）（1101）
+					4. Game Object Queries（游戏对象查询）（1104）
+				6. Updating Game Objects in Real Time（ 实时更新游戏对象）（1105）
+					1. A Simple Approach (That Doesn’t Work)（一个简单的方法（不起作用））（1107）
+						1. Maintaining a Collection of Active Game Objects（维护活动游戏对象的集合）（1108）
+						2. Responsibilities of the Update() Function（Update()函数的职责）（1108）
+					2. Performance Constraints and Batched Updates（性能约束和批量更新）（1109）
+					3. Object and Subsystem Interdependencies（对象和子系统的相互依赖性）（1112）
+						1. Phased Updates（分阶段更新）（1112）
+						2. Bucketed Updates（ 分桶更新）（1114）
+						3. Object State Inconsistencies and One-Frame-Off Lag（对象状态不一致和一帧关闭延迟）（1117）
+						4. Object State Caching（对象状态缓存）（1119）
+						5. Time-Stamping（时间戳）（1120）
+				7. Applying Concurrency to Game Object Updates()（将并发应用于游戏对象更新）（1120）
+					1. Concurrent Engine Subsystems（并发引擎子系统）（1120）
+					2. Asynchronous Program Design（异步程序设计）（1121）
+						1. When to Make Asynchronous Requests（何时发出异步请求）（1124）
+					3. Job Dependencies and Degree of Parallelism（ 作业依赖性和并行度）（1124）
+					4. Parallelizing the Game Object Model Itself（并行化游戏对象模型本身）（1126）
+						1. Game Object Updates as Jobs（游戏对象更新为作业）（1127）
+						2. Asynchronous Game Object Updates（异步游戏对象更新）（1129）
+						3. Locking During Game Object Updates（游戏对象更新期间的锁定）（1130）
+						4. Object Snapshots（对象快照）（1131）
+						5. Handling Inter-Object Mutation（处理对象间突变）（1132）
+						6. Future Improvements（未来的改进）（1132）
+				8. Events and Message-Passing（事件和消息传递）（1133）
+					1. The Problem with Statically Typed Function Binding（静态类型函数绑定的问题）（1133）
+					2. Encapsulating an Event in an Object（ 将事件封装在对象中）（1135）
+					3. Event Types（事件类型）（1136）
+					4. Event Arguments（事件参数）（1137）
+						1. Event Arguments as Key-Value Pairs（作为键值对的事件参数）（1138）
+					5. Event Handlers（事件处理程序）（1139）
+					6. Unpacking an Event’s Arguments（解压事件的参数）（1140）
+					7. Chains of Responsibility（责任链）（1140）
+					8. Registering Interest in Events（注册对事件的兴趣）（1142）
+					9. To Queue or Not to Queue（排队或不排队）（1143）
+						1. Some Benefits of Event Queuing（事件队列的一些好处）（1143）
+						2. Some Problems with Event Queuing（事件队列的一些问题）（1145）
+					10. Some Problems with Immediate Event Sending（立即事件发送的一些问题）（1149）
+					11. Data-Driven Event/Message-Passing Systems（数据驱动的事件/消息传递系统）（1150）
+						1. Data Pathway Communication Systems（数据通路通信系统）（1151）
+						2. Some Pros and Cons of GUI-Based Programming（基于  GUI  编程的一些优点和缺点）（1153）
+				9. Scripting（脚本编写）（1153）
+					1. Runtime versus Data Definition（运行时与数据定义）（1154）
+					2. Programming Language Characteristics（编程语言特性）（1154）
+						1. Typical Characteristics of Game Scripting Languages（ 游戏脚本语言的典型特征）（1156）
+					3. Some Common Game Scripting Languages（一些常见的游戏脚本语言）（1157）
+						1. QuakeC（1157）
+						2. UnrealScript（1157）
+						3. Lua（1158）
+						4. Python（1159）
+						5. Pawn/Small/Small-C（1160）
+					4. Architectures for Scripting（脚本架构）（1161）
+					5. Features of a Runtime Game Scripting Language（运行时游戏脚本语言的特性）（1162）
+						1. Interface with the Native Programming Language（与本机编程语言的接口）（1163）
+						2. Game Object References（游戏对象引用）（1169）
+						3. Receiving and Handling Events in Script（ 在脚本中接收和处理事件）（1170）
+						4. Sending Events（发送事件）（1171）
+						5. Object-Oriented Scripting Languages（面向对象的脚本语言）（1171）
+						6. Scripted Finite State Machines（脚本化有限状态机）（1173）
+						7. Multithreaded Scripts（多线程脚本）（1173）
+				10. High-Level Game Flow（高级游戏流程）（1176）
+		5. Conclusion（结论）（1178）
+			1. You Mean There’s More?（你的意思是还有更多？）（1180）
+				1. Some Engine Systems We Didn’t Cover（ 一些我们没有讨论的引擎系统）（1180）
+					1. Movie Player（电影播放器）（1180）
+					2. Multiplayer Networking（多人网络）（1181）
+				2. Gameplay Systems（游戏系统）（1181）
+					1. Player Mechanics（玩家机制）（1181）
+					2. Cameras（相机）（1182）
+					3. Artificial Intelligence（人工智能）（1183）
+					4. Other Gameplay Systems（其他游戏系统）（1183）
