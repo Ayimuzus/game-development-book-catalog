@@ -274,7 +274,2669 @@
 			6. Lexical Addressing（词法寻址）（537）
 			7. Interfacing Compiled Code to the Evaluator（将编译代码连接到评估器）（540）
 				1. Interpretation and compilation（解释与编译）（542）
-	2. Introduction to Algorithms Third Edition（算法导论第3版）
+	2. Computer Systems A Programmer’s Perspective（深入理解计算机系统）
+		1. 1
+			1. A Tour of Computer Systems（计算机系统之旅）（38）
+				1. Information Is Bits + Context（信息就是比特+上下文）（40）
+				2. Programs Are Translated by Other Programs into Different Forms（程序被其他程序翻译成不同的形式）（41）
+				3. It Pays to Understand How Compilation Systems Work（了解编译系统如何工作是值得的）（43）
+				4. Processors Read and Interpret Instructions Stored in Memory（处理器读取并解释存储在内存中的指令）（44）
+					1. Hardware Organization of a System（系统的硬件组织）（45）
+						1. Buses（总线）（45）
+						2. I/O Devices（输入/输出设备）（46）
+						3. Main Memory（主内存）（46）
+						4. Processor（处理器）（46）
+					2. Running the hello Program（运行hello程序）（47）
+				5. Caches Matter（缓存很重要）（48）
+				6. Storage Devices Form a Hierarchy（存储设备形成层次结构）（51）
+				7. The Operating System Manages the Hardware（操作系统管理硬件）（51）
+					1. Processes（流程）（52）
+					2. Threads（线程）（54）
+					3. Virtual Memory（虚拟内存）（55）
+					4. Files（文件）（56）
+				8. Systems Communicate with Other Systems Using Networks（系统使用网络与其他系统通信）（56）
+				9. Important Themes（重要主题）（59）
+					1. Amdahl’s Law（阿姆达尔定律）（59）
+					2. Concurrency and Parallelism（并发和并行）（61）
+						1. Thread-Level Concurrency（线程级并发）（61）
+						2. Instruction-Level Parallelism（指令级并行性）（63）
+						3. Single-Instruction, Multiple-Data (SIMD) Parallelism（单指令、多数据  (SIMD)  并行）（63）
+					3. The Importance of Abstractions in Computer Systems（计算机系统中抽象的重要性）（63）
+		2. Program Structure and Execution（程序结构和执行）（66）
+			1. Representing and Manipulating Information（表示和操纵信息）（68）
+				1. Information Storage（信息存储）（71）
+					1. Hexadecimal Notation（十六进制表示法）（73）
+					2. Data Sizes（数据大小）（76）
+					3. Addressing and Byte Ordering（寻址和字节顺序）（79）
+					4. Representing Strings（表示字符串）（86）
+					5. Representing Code（表示代码）（86）
+					6. Introduction to Boolean Algebra（布尔代数简介）（87）
+					7. Bit-Level Operations in C（C  中的位级操作）（91）
+					8. Logical Operations in C（C  中的逻辑运算）（93）
+					9. Shift Operations in C（C  中的移位运算）（94）
+				2. Integer Representations（整数表示）（96）
+					1. Integral Data Types（整数数据类型）（97）
+					2. Unsigned Encodings（无符号编码）（99）
+					3. Two’s-Complement Encodings（补码编码）（101）
+					4. Conversions between Signed and Unsigned（有符号和无符号之间的转换）（107）
+					5. Signed versus Unsigned in C（C  中的有符号与无符号）（111）
+					6. Expanding the Bit Representation of a Number（扩展数字的位表示）（113）
+					7. Truncating Numbers（截断数字）（118）
+					8. Advice on Signed versus Unsigned（关于签名与未签名的建议）（120）
+				3. Integer Arithmetic（整数运算）（121）
+					1. Unsigned Addition（无符号加法）（121）
+					2. Two’s-Complement Addition（补码加法）（127）
+					3. Two’s-Complement Negation（补码否定）（132）
+					4. Unsigned Multiplication（无符号乘法）（133）
+					5. Two’s-Complement Multiplication（补码乘法）（134）
+					6. Multiplying by Constants（乘以常数）（138）
+					7. Dividing by Powers of 2（除以  2  的幂）（140）
+					8. Final Thoughts on Integer Arithmetic（关于整数运算的最终思考）（144）
+				4. Floating Point（浮点）（145）
+					1. Fractional Binary Numbers（二进制小数）（146）
+					2. IEEE Floating-Point Representation（IEEE  浮点表示）（149）
+						1. Case 1: Normalized Values（案例  1：标准化值）（150）
+						2. Case 2: Denormalized Values（案例  2：非规范化值）（151）
+						3. Case 3: Special Values（案例  3：特殊值）（152）
+					3. Example Numbers（数字示例）（152）
+					4. Rounding（舍入）（157）
+					5. Floating-Point Operations（浮点运算）（159）
+					6. Floating Point in C（C  中的浮点）（161）
+			2. Machine-Level Representation of Programs（程序的机器级表示）（200）
+				1. A Historical Perspective（历史视角）（203）
+				2. Program Encodings（程序编码）（206）
+					1. Machine-Level Code（机器级代码）（207）
+					2. Code Examples（代码示例）（209）
+					3. Notes on Formatting（格式化注意事项）（212）
+				3. Data Formats（数据格式）（214）
+				4. Accessing Information（获取信息）（216）
+					1. Operand Specifiers（操作数说明符）（217）
+					2. Data Movement Instructions（数据移动指令）（219）
+					3. Data Movement Example（数据移动示例）（223）
+					4. Pushing and Popping Stack Data（堆栈数据的压入和弹出）（226）
+				5. Arithmetic and Logical Operations（算术和逻辑运算）（228）
+					1. Load Effective Address（加载有效地址）（228）
+					2. Unary and Binary Operations（一元和二元运算）（231）
+					3. Shift Operations（移位操作）（231）
+					4. Discussion（讨论）（233）
+					5. Special Arithmetic Operations（特殊算术运算）（234）
+				6. Control（控制）（237）
+					1. Condition Codes（条件代码）（238）
+					2. Accessing the Condition Codes（访问条件代码）（239）
+					3. Jump Instructions（跳转指令）（242）
+					4. Jump Instruction Encodings（跳转指令编码）（244）
+					5. Implementing Conditional Branches with Conditional Control（用条件控制实现条件分支）（246）
+					6. Implementing Conditional Branches with Conditional Moves（通过条件移动实现条件分支）（251）
+					7. Loops（循环）（257）
+						1. Do-While Loops（Do‑While  循环）（257）
+						2. While Loops（While  循环）（260）
+						3. For Loops（For  循环）（265）
+					8. Switch Statements（Switch语句）（269）
+				7. Procedures（程序）（275）
+					1. The Run-Time Stack（运行时堆栈）（276）
+					2. Control Transfer（控制转移）（278）
+					3. Data Transfer（数据传输）（282）
+					4. Local Storage on the Stack（堆栈本地存储）（285）
+					5. Local Storage in Registers（寄存器中的本地存储）（288）
+					6. Recursive Procedures（递归过程）（290）
+				8. Array Allocation and Access（数组分配和访问）（292）
+					1. Basic Principles（基本原理）（292）
+					2. Pointer Arithmetic（指针运算）（294）
+					3. Nested Arrays（嵌套数组）（295）
+					4. Fixed-Size Arrays（固定大小的数组）（297）
+					5. Variable-Size Arrays（可变大小数组）（299）
+				9. Heterogeneous Data Structures（异构数据结构）（302）
+					1. Structures（结构）（302）
+					2. Unions（工会）（306）
+					3. Data Alignment（数据对齐）（310）
+				10. Combining Control and Data in Machine-Level Programs（在机器级程序中结合控制和数据）（313）
+					1. Understanding Pointers（理解指针）（314）
+					2. Life in the Real World: Using the gdb Debugger（现实世界中的生活：使用gdb调试器）（316）
+					3. Out-of-Bounds Memory References and Buffer Overflow（越界内存引用和缓冲区溢出）（316）
+					4. Thwarting Buffer Overflow Attacks（阻止缓冲区溢出攻击）（321）
+						1. Stack Randomization（堆栈随机化）（321）
+						2. Stack Corruption Detection（堆栈损坏检测）（323）
+						3. Limiting Executable Code Regions（限制可执行代码区域）（326）
+					5. Supporting Variable-Size Stack Frames（支持可变大小的堆栈帧）（327）
+				11. Floating-Point Code（浮点代码）（330）
+					1. Floating-Point Movement and Conversion Operations（浮点移动和转换操作）（333）
+					2. Floating-Point Code in Procedures（过程中的浮点代码）（338）
+					3. Floating-Point Arithmetic Operations（浮点算术运算）（339）
+					4. Defining and Using Floating-Point Constants（定义和使用浮点常量）（341）
+					5. Using Bitwise Operations in Floating-Point Code（在浮点代码中使用按位运算）（342）
+					6. Floating-Point Comparison Operations（浮点比较运算）（343）
+					7. Observations about Floating-Point Code（关于浮点代码的观察）（346）
+			3. Processor Architecture（处理器架构）（388）
+				1. The Y86-64 Instruction Set Architecture（Y86‑64指令集架构）（392）
+					1. Programmer-Visible State（程序员可见的状态）（392）
+					2. Y86-64 Instructions（Y86‑64  使用说明）（393）
+					3. Instruction Encoding（指令编码）（395）
+					4. Y86-64 Exceptions（Y86‑64  例外情况）（400）
+					5. Y86-64 Programs（Y86‑64  程序）（401）
+					6. Some Y86-64 Instruction Details（一些Y86‑64指令细节）（407）
+				2. Logic Design and the Hardware Control Language HCL（逻辑设计和硬件控制语言HCL）（409）
+					1. Logic Gates（逻辑门）（410）
+					2. Combinational Circuits and HCL Boolean Expressions（组合电路和HCL布尔表达式）（411）
+					3. Word-Level Combinational Circuits and HCL Integer Expressions（字级组合电路和HCL整数表达式）（413）
+					4. Set Membership（设置成员资格）（417）
+					5. Memory and Clocking（内存和时钟）（418）
+				3. Sequential Y86-64 Implementations（顺序  Y86‑64  实现）（421）
+					1. Organizing Processing into Stages（将处理分为阶段）（421）
+					2. SEQ Hardware Structure（SEQ  硬件结构）（433）
+					3. SEQ Timing（SEQ  时序）（437）
+					4. SEQ Stage Implementations（SEQ  阶段实现）（441）
+						1. Fetch Stage（获取阶段）（442）
+						2. Decode and Write-Back Stages（解码和回写阶段）（443）
+						3. Execute Stage（执行阶段）（445）
+						4. Memory Stage（记忆阶段）（446）
+						5. PC Update Stage（PC  更新阶段）（448）
+						6. Surveying SEQ（测量序列）（448）
+				4. General Principles of Pipelining（流水线的一般原则）（449）
+					1. Computational Pipelines（计算管道）（449）
+					2. A Detailed Look at Pipeline Operation（管道操作的详细介绍）（451）
+					3. Limitations of Pipelining（流水线的局限性）（453）
+						1. Nonuniform Partitioning（非均匀划分）（453）
+						2. Diminishing Returns of Deep Pipelining（深度流水线的回报递减）（455）
+					4. Pipelining a System with Feedback（带反馈的流水线系统）（456）
+				5. Pipelined Y86-64 Implementations（流水线  Y86‑64  实现）（458）
+					1. SEQ+: Rearranging the Computation Stages（SEQ+：重新安排计算阶段）（458）
+					2. Inserting Pipeline Registers（插入流水线寄存器）（459）
+					3. Rearranging and Relabeling Signals（重新排列和重新标记信号）（463）
+					4. Next PC Prediction（下一台PC预测）（464）
+					5. Pipeline Hazards（管道危险）（466）
+						1. Avoiding Data Hazards by Stalling（通过停止来避免数据危险）（470）
+						2. Avoiding Data Hazards by Forwarding（通过转发避免数据危险）（473）
+						3. Load/Use Data Hazards（加载/使用数据危险）（476）
+						4. Avoiding Control Hazards（避免控制风险）（478）
+					6. Exception Handling（异常处理）（481）
+					7. PIPE Stage Implementations（PIPE  阶段实现）（484）
+						1. PC Selection and Fetch Stage（PC  选择和获取阶段）（484）
+						2. Decode and Write-Back Stages（解码和回写阶段）（486）
+						3. Execute Stage（执行阶段）（490）
+						4. Memory Stage（记忆阶段）（491）
+					8. Pipeline Control Logic（流水线控制逻辑）（492）
+						1. Desired Handling of Special Control Cases（特殊控制案例的期望处理）（492）
+						2. Detecting Special Control Conditions（检测特殊控制条件）（494）
+						3. Pipeline Control Mechanisms（管道控制机制）（496）
+						4. Combinations of Control Conditions（控制条件的组合）（497）
+						5. Control Logic Implementation（控制逻辑实现）（499）
+					9. Performance Analysis（性能分析）（501）
+					10. Unfinished Business（未完成的事情）（505）
+						1. Multicycle Instructions（多周期指令）（505）
+						2. Interfacing with the Memory System（与内存系统的接口）（506）
+			4. Optimizing Program Performance（优化程序性能）（532）
+				1. Capabilities and Limitations of Optimizing Compilers（优化编译器的功能和限制）（535）
+				2. Expressing Program Performance（表达程序性能）（539）
+				3. Program Example（程序示例）（541）
+				4. Eliminating Loop Inefficiencies（消除循环效率低下）（545）
+				5. Reducing Procedure Calls（减少过程调用）（549）
+				6. Eliminating Unneeded Memory References（消除不需要的内存引用）（551）
+				7. Understanding Modern Processors（理解现代处理器）（554）
+					1. Overall Operation（整体运行情况）（555）
+					2. Functional Unit Performance（功能单元性能）（560）
+					3. An Abstract Model of Processor Operation（处理器操作的抽象模型）（562）
+						1. From Machine-Level Code to Data-Flow Graphs（从机器级代码到数据流图）（562）
+						2. Other Performance Factors（其他性能因素）（566）
+				8. Loop Unrolling（循环展开）（568）
+				9. Enhancing Parallelis（增强并行性）（573）
+					1. Multiple Accumulators（多个累加器）（573）
+					2. Reassociation Transformation（重关联变换）（578）
+				10. Summary of Results for Optimizing Combining Code（优化组合代码结果总结）（584）
+				11. Some Limiting Factors（一些限制因素）（585）
+					1. Register Spilling（寄存器溢出）（585）
+					2. Branch Prediction and Misprediction Penalties（分支预测和错误预测惩罚）（586）
+						1. Do Not Be Overly Concerned about Predictable Branches（不要过度担心可预测的分支）（587）
+						2. Write Code Suitable for Implementation with Conditional Moves（编写适合通过条件移动实现的代码）（588）
+				12. Understanding Memory Performance（了解内存性能）（590）
+					1. Load Performance（负载性能）（591）
+					2. Store Performance（商店绩效）（592）
+				13. Life in the Real World: Performance Improvement Techniques（现实世界中的生活：绩效改进技巧）（598）
+				14. Identifying and Eliminating Performance Bottlenecks（识别和消除性能瓶颈）（599）
+					1. Program Profiling（程序分析）（599）
+					2. Using a Profiler to Guide Optimization（使用分析器指导优化）（602）
+			5. The Memory Hierarchy（内存层次结构）（616）
+				1. Storage Technologies（存储技术）（618）
+					1. Random Access Memory（随机存取存储器）（618）
+						1. Static RAM（静态内存）（618）
+						2. Dynamic RAM（动态内存）（619）
+						3. Conventional DRAMs（传统  DRAM）（619）
+						4. Memory Modules（内存模块）（621）
+						5. Enhanced DRAMs（增强型  DRAM）（622）
+						6. Nonvolatile Memory（非易失性存储器）（623）
+						7. Accessing Main Memory（访问主内存）（624）
+					2. Disk Storage（磁盘存储）（626）
+						1. Disk Geometry（磁盘几何结构）（627）
+						2. Disk Capacity（磁盘容量）（628）
+						3. Disk Operation（磁盘操作）（629）
+						4. Logical Disk Blocks（逻辑磁盘块）（632）
+						5. Connecting I/O Devices（连接  I/O  设备）（633）
+						6. Accessing Disks（访问磁盘）（634）
+					3. Solid State Disks（固态硬盘）（637）
+					4. Storage Technology Trends（存储技术趋势）（639）
+				2. Locality（局部性）（641）
+					1. Locality of References to Program Data（程序数据引用的位置）（643）
+					2. Locality of Instruction Fetches（指令获取的局部性）（644）
+					3. Summary of Locality（局部性总结）（645）
+				3. The Memory Hierarchy（内存层次结构）（646）
+					1. Caching in the Memory Hierarchy（内存层次结构中的缓存）（647）
+						1. Cache Hits（缓存命中）（649）
+						2. Cache Misses（缓存未命中）（649）
+						3. Kinds of Cache Misses（缓存未命中的类型）（649）
+						4. Cache Management（缓存管理）（650）
+					2. Summary of Memory Hierarchy Concepts（内存层次结构概念总结）（651）
+				4. Cache Memories（高速缓冲存储器）（651）
+					1. Generic Cache Memory Organization（通用高速缓冲存储器组织）（652）
+					2. Direct-Mapped Caches（直接映射缓存）（654）
+						1. Set Selection in Direct-Mapped Caches（在直接映射缓存中设置选择）（655）
+						2. Line Matching in Direct-Mapped Caches（直接映射缓存中的行匹配）（655）
+						3. Word Selection in Direct-Mapped Caches（直接映射缓存中的字选择）（656）
+						4. Line Replacement on Misses in Direct-Mapped Caches（直接映射缓存中未命中时的行替换）（656）
+						5. Putting It Together: A Direct-Mapped Cache in Action（放在一起：直接映射缓存的实际应用）（656）
+						6. Conflict Misses in Direct-Mapped Caches（直接映射缓存中的冲突未命中）（659）
+					3. Set Associative Caches（设置关联缓存）（661）
+						1. Set Selection in Set Associative Caches（集关联缓存中的集选择）（662）
+						2. Line Matching and Word Selection in Set Associative Caches（组关联高速缓存中的行匹配和字选择）（662）
+						3. Line Replacement on Misses in Set Associative Caches（组关联高速缓存中未命中时的行替换）（663）
+					4. Fully Associative Caches（全关联缓存）（663）
+						1. Set Selection in Fully Associative Caches（在全关联缓存中设置选择）（664）
+						2. Line Matching and Word Selection in Fully Associative Caches（全关联缓存中的行匹配和字选择）（664）
+					5. Issues with Writes（写入问题）（667）
+					6. Anatomy of a Real Cache Hierarchy（真实缓存层次结构剖析）（668）
+					7. Performance Impact of Cache Parameters（缓存参数的性能影响）（668）
+						1. Impact of Cache Size（缓存大小的影响）（669）
+						2. Impact of Block Size（区块大小的影响）（670）
+						3. Impact of Associativity（关联性的影响）（670）
+						4. Impact of Write Strategy（写入策略的影响）（670）
+				5. Writing Cache-Friendly Code（编写缓存友好的代码）（670）
+				6. Putting It Together: The Impact of Caches on Program Performance（综合起来：缓存对程序性能的影响）（676）
+					1. The Memory Mountain（记忆山）（676）
+					2. Rearranging Loops to Increase Spatial Locality（重新排列循环以增加空间局部性）（680）
+					3. Exploiting Locality in Your Programs（在程序中利用局部性）（684）
+		3. Running Programs on a System（在系统上运行程序）（924）
+			1. Linking（链接）（706）
+				1. Compiler Drivers（编译驱动程序）（708）
+				2. Static Linking（静态链接）（709）
+				3. Object Files（目标文件）（710）
+				4. Relocatable Object Files（可重定位目标文件）（711）
+				5. Symbols and Symbol Tables（符号和符号表）（712）
+				6. Symbol Resolution（符号解析）（716）
+					1. How Linkers Resolve Duplicate Symbol Names（链接器如何解决重复的符号名称）（717）
+					2. Linking with Static Libraries（与静态库链接）（721）
+					3. How Linkers Use Static Libraries to Resolve References（链接器如何使用静态库来解析引用）（725）
+				7. Relocation（搬迁）（726）
+					1. Relocation Entries（重定位条目）（727）
+					2. Relocating Symbol References（重新定位符号引用）（728）
+						1. Relocating PC-Relative References（重新定位  PC  相关参考）（729）
+						2. Relocating Absolute References（重新定位绝对引用）（730）
+				8. Executable Object Files（可执行目标文件）（732）
+				9. Loading Executable Object Files（加载可执行目标文件）（734）
+				10. Dynamic Linking with Shared Libraries（与共享库的动态链接）（735）
+				11. Loading and Linking Shared Libraries from Applications（从应用程序加载和链接共享库）（738）
+				12. Position-Independent Code (PIC)（位置无关代码（PIC））（741）
+					1. PIC Data References（PIC  数据参考）（741）
+					2. PIC Function Calls（PIC  函数调用）（742）
+				13. Library Interpositioning（库插入）（744）
+					1. Compile-Time Interpositioning（编译时插入）（745）
+					2. Link-Time Interpositioning（链接时插入）（745）
+					3. Run-Time Interpositioning（运行时插入）（747）
+				14. Tools for Manipulating Object Files（操作目标文件的工具）（750）
+			2. Exceptional Control Flow（卓越的控制流程）（758）
+				1. Exceptions（例外情况）（760）
+					1. Exception Handling（异常处理）（761）
+					2. Classes of Exceptions（异常类别）（763）
+						1. Interrupts（中断）（763）
+						2. Traps and System Calls（陷阱和系统调用）（764）
+						3. Faults（故障）（765）
+						4. Aborts（中止）（765）
+					3. Exceptions in Linux/x86-64 Systems（Linux/x86‑64  系统中的异常）（766）
+						1. Linux/x86-64 Faults and Aborts（Linux/x86‑64  故障和中止）（766）
+						2. Linux/x86-64 System Calls（Linux/x86‑64  系统调用）（766）
+				2. Processes（流程）（769）
+					1. Logical Control Flow（逻辑控制流程）（769）
+					2. Concurrent Flows（并发流）（770）
+					3. Private Address Space（私有地址空间）（771）
+					4. User and Kernel Modes（用户模式和内核模式）（771）
+					5. Context Switches（上下文切换）（773）
+				3. System Call Error Handling（系统调用错误处理）（774）
+				4. Process Control（过程控制）（775）
+					1. Obtaining Process IDs（获取进程ID）（776）
+					2. Creating and Terminating Processes（创建和终止进程）（776）
+					3. Reaping Child Processes（收割子进程）（780）
+						1. Determining the Members of the Wait Set（确定等待集的成员）（781）
+						2. Modifying the Default Behavior（修改默认行为）（781）
+						3. Checking the Exit Status of a Reaped Child（检查收割子进程的退出状态）（782）
+						4. Error Conditions（错误情况）（782）
+						5. The wait Function（等待函数）（783）
+						6. Examples of Using waitpid（使用waitpid）（783）
+					4. Putting Processes to Sleep（让进程进入睡眠状态）（786）
+					5. Loading and Running Programs（加载和运行程序）（787）
+					6. Using fork and execve to Run Programs（使用fork和execve运行程序）（790）
+				5. Signals（信号）（793）
+					1. Signal Terminology（信号术语）（795）
+					2. Sending Signals（发送信号）（796）
+						1. Process Groups（进程组）（796）
+						2. Sending Signals with the /bin/kill Program（使用/bin/kill程序）（797）
+						3. Sending Signals from the Keyboard（从键盘发送信号）（797）
+						4. Sending Signals with the kill Function（使用kill函数）（798）
+						5. Sending Signals with the alarm Function（发送信号并具有报警功能）（799）
+					3. Receiving Signals（接收信号）（799）
+					4. Blocking and Unblocking Signals（阻塞和解除阻塞信号）（801）
+					5. Writing Signal Handlers（编写信号处理程序）（803）
+						1. Safe Signal Handling（安全信号处理）（803）
+						2. Correct Signal Handling（正确的信号处理）（807）
+						3. Portable Signal Handling（便携式信号处理）（811）
+					6. Synchronizing Flows to Avoid Nasty Concurrency Bugs（同步流程以避免严重的并发错误）（813）
+					7. Explicitly Waiting for Signals（显式等待信号）（815）
+				6. Nonlocal Jumps（非局部跳转）（818）
+				7. Tools for Manipulating Processes（操作流程的工具）（823）
+			3. Virtual Memory（虚拟内存）（838）
+				1. Physical and Virtual Addressing（物理和虚拟寻址）（840）
+				2. Address Spaces（地址空间）（841）
+				3. VM as a Tool for Caching（VM作为缓存工具）（842）
+					1. DRAM Cache Organization（DRAM  缓存组织）（842）
+					2. Page Tables（页表）（843）
+					3. Page Hits（页面点击量）（845）
+					4. Page Faults（页面错误）（845）
+					5. Allocating Pages（分配页面）（847）
+					6. Locality to the Rescue Again（局部性再次发挥作用）（847）
+				4. VM as a Tool for Memory Management（VM作为内存管理工具）（849）
+				5. VM as a Tool for Memory Protection（VM作为内存保护工具）（849）
+				6. Address Translation（地址转换）（850）
+					1. Integrating Caches and VM（集成缓存和VM）（854）
+					2. Speeding Up Address Translation with a TLB（使用  TLB  加速地址转换）（854）
+					3. Multi-Level Page Tables（多级页表）（856）
+					4. Putting It Together: End-to-End Address Translation（综合起来：端到端地址转换）（858）
+				7. Case Study: The Intel Core i7/Linux Memory System（案例研究：Intel  Core  i7/Linux  内存系统）（862）
+					1. Core i7 Address Translation（酷睿  i7  地址转换）（863）
+					2. Linux Virtual Memory System（Linux  虚拟内存系统）（865）
+						1. Linux Virtual Memory Areas（Linux  虚拟内存区域）（867）
+						2. Linux Page Fault Exception Handling（Linux  页面错误异常处理）（869）
+				8. Memory Mapping（内存映射）（870）
+					1. Shared Objects Revisited（重新审视共享对象）（870）
+					2. The fork Function Revisited（回顾fork函数）（873）
+					3. The execve Function Revisited（重温execve函数）（873）
+					4. User-Level Memory Mapping with the mmap Function（使用mmap函数进行用户级内存映射）（874）
+				9. Dynamic Memory Allocation（动态内存分配）（876）
+					1. The malloc and free Functions（malloc和free函数）（877）
+					2. Why Dynamic Memory Allocation?（为什么要动态内存分配？）（880）
+					3. Allocator Requirements and Goals（分配器要求和目标）（881）
+					4. Fragmentation（碎片化）（883）
+					5. Implementation Issues（实施问题）（883）
+					6. Implicit Free Lists（隐式空闲列表）（884）
+					7. Placing Allocated Blocks（放置分配的块）（886）
+					8. Splitting Free Blocks（分割空闲块）（886）
+					9. Getting Additional Heap Memory（获取额外的堆内存）（887）
+					10. Coalescing Free Blocks（合并空闲块）（887）
+					11. Coalescing with Boundary Tags（与边界标签的合并）（888）
+					12. Putting It Together: Implementing a Simple Allocator（组合起来：实现一个简单的分配器）（891）
+						1. General Allocator Design（通用分配器设计）（891）
+						2. Basic Constants and Macros for Manipulating the Free List（用于操作空闲列表的基本常量和宏）（893）
+						3. Creating the Initial Free List（创建初始空闲列表）（894）
+						4. Freeing and Coalescing Blocks（释放和合并块）（896）
+						5. Allocating Blocks（分配块）（896）
+					13. Explicit Free Lists（显式空闲列表）（899）
+					14. Segregated Free Lists（隔离的空闲列表）（900）
+						1. Simple Segregated Storage（简单的隔离存储）（901）
+						2. Segregated Fits（隔离配合）（901）
+						3. Buddy Systems（好友系统）（902）
+				10. Garbage Collection（垃圾收集）（902）
+					1. Garbage Collector Basics（垃圾收集器基础知识）（903）
+					2. Mark&Sweep Garbage Collectors（标记和清除垃圾收集器）（904）
+					3. Conservative Mark&Sweep for C Programs（C  程序的保守标记和清除）（906）
+				11. Common Memory-Related Bugs in C Programs（C  程序中与内存相关的常见错误）（907）
+					1. Dereferencing Bad Pointers（取消引用坏指针）（907）
+					2. Reading Uninitialized Memory（读取未初始化的内存）（908）
+					3. Allowing Stack Buffer Overflows（允许堆栈缓冲区溢出）（908）
+					4. Assuming That Pointers and the Objects They Point to Are the Same Size（假设指针和它们指向的对象大小相同）（909）
+					5. Making Off-by-One Errors（犯差一错误）（909）
+					6. Referencing a Pointer Instead of the Object It Points To（引用指针而不是它指向的对象）（910）
+					7. Misunderstanding Pointer Arithmetic（误解指针运算）（910）
+					8. Referencing Nonexistent Variables（引用不存在的变量）（911）
+					9. Referencing Data in Free Heap Blocks（引用空闲堆块中的数据）（911）
+					10. Introducing Memory Leaks（引入内存泄漏）（912）
+		4. Interaction and Communication between Programs（程序之间的交互和通信）（924）
+			1. System-Level I/O（系统级  I/O）（926）
+				1. Unix I/O（Unix  输入/输出）（927）
+				2. Files（文件）（928）
+				3. Opening and Closing Files（打开和关闭文件）（930）
+				4. Reading and Writing Files（读写文件）（932）
+				5. Robust Reading and Writing with the Rio Package（使用 Rio 包实现强大的读写能力）（934）
+					1. Rio Unbuffered Input and Output Functions（Rio无缓冲输入和输出函数）（934）
+					2. Rio Buffered Input Functions（Rio缓冲输入函数）（935）
+				6. Reading File Metadata（读取文件元数据）（940）
+				7. Reading Directory Contents（读取目录内容）（942）
+				8. Sharing Files（共享文件）（943）
+				9. I/O Redirection（I/O  重定向）（946）
+				10. Standard I/O（标准输入/输出）（948）
+				11. Putting It Together: Which I/O Functions Should I Use?（综合起来：我应该使用哪些  I/O  函数？）（948）
+			2. Network Programming（网络编程）（954）
+				1. The Client-Server Programming Model（客户端‑服务器编程模型）（955）
+				2. Networks（网络）（956）
+				3. The Global IP Internet（全球IP互联网）（961）
+					1. IP Addresses（IP  地址）（962）
+					2. Internet Domain Names（互联网域名）（964）
+					3. Internet Connections（互联网连接）（966）
+				4. The Sockets Interface（套接字接口）（969）
+					1. Socket Address Structures（套接字地址结构）（970）
+					2. The socket Function（套接字功能）（971）
+					3. The connect Function（连接函数）（971）
+					4. The bind Function（绑定函数）（972）
+					5. The listen Function（监听函数）（972）
+					6. The accept Function（接受函数）（973）
+					7. Host and Service Conversion（主机和服务转换）（974）
+						1. The getaddrinfo Function（getaddrinfo函数）（974）
+						2. The getnameinfo Function（getnameinfo函数）（977）
+					8. Helper Functions for the Sockets Interface（套接字接口的辅助函数）（979）
+						1. The open_clientfd Function（open_clientfd函数）（979）
+						2. The open_listenfd Function（open_listenfd函数）（981）
+					9. Example Echo Client and Server（Echo  客户端和服务器示例）（981）
+				5. Web Servers（网络服务器）（985）
+					1. Web Basics（网络基础知识）（985）
+					2. Web Content（网页内容）（986）
+					3. HTTP Transactions（HTTP  事务）（987）
+						1. HTTP Requests（HTTP  请求）（988）
+						2. HTTP Responses（HTTP  响应）（989）
+					4. Serving Dynamic Content（提供动态内容）（990）
+						1. How Does the Client Pass Program Arguments to the Server?（客户端如何将程序参数传递给服务器？）（990）
+						2. How Does the Server Pass Arguments to the Child?（服务器如何将参数传递给子进程？）（990）
+						3. How Does the Server Pass Other Information to the Child?（服务器如何将其他信息传递给子进程？）（991）
+						4. Where Does the Child Send Its Output?（子进程将其输出发送到哪里？）（991）
+				6. Putting It Together: The Tiny Web Server（组合起来：微型Web  服务器）（993）
+					1. The Tiny main Routine（微小的主例程）（993）
+					2. The doit Function（doit函数）（993）
+					3. The clienterror Function（客户端错误函数）（996）
+					4. The read_requesthdrs Function（read_requesthdrs函数）（997）
+					5. The parse_uri Function（parse_uri函数）（997）
+					6. The serve_static Function（serve_static函数）（998）
+					7. The serve_dynamic Function（serve_dynamic函数）（1000）
+			3. Concurrent Programming（并发编程）（1008）
+				1. Concurrent Programming with Processes（进程的并发编程）（1010）
+					1. A Concurrent Server Based on Processes（基于进程的并发服务器）（1011）
+					2. Pros and Cons of Processes（流程的优缺点）（1012）
+				2. Concurrent Programming with I/O Multiplexing（使用  I/O  复用进行并发编程）（1014）
+					1. A Concurrent Event-Driven Server Based on I/O Multiplexing（基于I/O复用的并发事件驱动服务器）（1017）
+					2. Pros and Cons of I/O Multiplexing（I/O  复用的优点和缺点）（1022）
+				3. Concurrent Programming with Threads（线程并发编程）（1022）
+					1. Thread Execution Model（线程执行模型）（1023）
+					2. Posix Threads（Posix  线程）（1024）
+					3. Creating Threads（创建线程）（1025）
+					4. Terminating Threads（终止线程）（1025）
+					5. Reaping Terminated Threads（收获终止的线程）（1026）
+					6. Detaching Threads（分离线程）（1026）
+					7. Initializing Threads（初始化线程）（1027）
+					8. A Concurrent Server Based on Threads（基于线程的并发服务器）（1028）
+				4. Shared Variables in Threaded Programs（线程程序中的共享变量）（1029）
+					1. Threads Memory Model（线程内存模型）（1030）
+					2. Mapping Variables to Memory（将变量映射到内存）（1031）
+					3. Shared Variables（共享变量）（1032）
+				5. Synchronizing Threads with Semaphores（同步线程与信号量）（1032）
+					1. Progress Graphs（进度图）（1036）
+					2. Semaphores（信号量）（1038）
+					3. Using Semaphores for Mutual Exclusion（使用信号量进行互斥）（1039）
+					4. Using Semaphores to Schedule Shared Resources（使用信号量调度共享资源）（1041）
+						1. Producer-Consumer Problem（生产者‑消费者问题）（1042）
+						2. Readers-Writers Problem（读者‑作者问题）（1043）
+					5. Putting It Together: A Concurrent Server Based on Prethreading（综合起来：基于预线程的并发服务器）（1045）
+				6. Using Threads for Parallelism（使用线程实现并行性）（1050）
+					1. Characterizing the Performance of Parallel Programs（表征并行程序的性能）（1055）
+				7. Other Concurrency Issues（其他并发问题）（1057）
+					1. Thread Safety（线程安全）（1057）
+					2. Reentrancy（可重入）（1060）
+					3. Using Existing Library Functions in Threaded Programs（在线程程序中使用现有的库函数）（1061）
+					4. Races（比赛）（1062）
+					5. Deadlocks（死锁）（1064）
+	3. Algorithms Fourth Edition（算法第四版）
+		1. Fundamentals（基础知识）（15）
+			1. BASIC PROGRAMMING MODEL（基本编程模型）（21）
+				1. Basic structure of a Java program（Java  程序的基本结构）（23）
+				2. Primitive data types and expressions（原始数据类型和表达式）（24）
+					1. Expressions（表达式）（26）
+					2. Type conversion（类型转换）（26）
+					3. Comparisons（比较）（26）
+					4. Other primitive types（其他原始类型）（26）
+				3. Statements（语句）（27）
+					1. Declarations（声明）（27）
+					2. Assignments（作业）（27）
+					3. Conditionals（条件句）（28）
+					4. Loops（循环）（28）
+					5. Break and continue（打破并继续）（28）
+				4. Shortcut notations（快捷符号）（29）
+					1. Initializing declarations（初始化声明）（29）
+					2. Implicit assignments（隐式分配）（29）
+					3. Single-statement blocks（单语句块）（29）
+					4. For notation（用于记号）（29）
+				5. Arrays（数组）（31）
+					1. Creating and initializing an array（创建并初始化数组）（31）
+					2. Short form（简写）（31）
+					3. Using an array（使用数组）（32）
+					4. Aliasing（别名）（32）
+					5. Two-dimensional arrays（二维数组）（32）
+				6. Static methods（静态方法）（35）
+					1. Defining a static method（定义静态方法）（35）
+					2. Properties of methods（方法的属性）（37）
+					3. Recursion（递归）（38）
+					4. Basic programming model（基本编程模型）（39）
+					5. Modular programming（模块化编程）（39）
+					6. Unit testing（单元测试）（39）
+					7. External libraries（外部库）（40）
+				7. APIs（41）
+					1. Example（例子）（41）
+					2. Java libraries（Java  库）（42）
+					3. Our standard libraries（我们的标准库）（43）
+					4. Your own libraries（您自己的图书馆）（44）
+				8. Strings（字符串）（47）
+					1. Concatenation（级联）（47）
+					2. Conversion（转换）（47）
+					3. Automatic conversion（自动转换）（48）
+					4. Command-line arguments（命令行参数）（48）
+				9. Input and output（输入和输出）（49）
+					1. Commands and arguments（命令和参数）（49）
+					2. Standard output（标准输出）（50）
+					3. Formatted output（格式化输出）（50）
+					4. Standard input（标准输入）（52）
+					5. Redirection and piping（重定向和管道）（53）
+					6. Input and output from a file（文件的输入和输出）（54）
+					7. Standard drawing (basic methods)（标准绘图（基本方法））（55）
+					8. Standard drawing (control methods)（标准绘图（控制方法））（56）
+				10. Binary search（二分搜索）（59）
+					1. Binary search（二分查找）（59）
+					2. Development client（开发客户端）（59）
+					3. Whitelisting（白名单）（61）
+					4. Performance（表现）（61）
+				11. Perspective（观点）（63）
+			2. DATA ABSTRACTION（数据抽象）（77）
+				1. Using abstract data types（使用抽象数据类型）（78）
+					1. API for an abstract data type（抽象数据类型的  API）（78）
+					2. Inherited methods（继承的方法）（79）
+					3. Client code（客户端代码）（79）
+					4. Objects（对象）（80）
+					5. Creating objects（创建对象）（80）
+					6. Invoking instance method（调用实例方法）（81）
+					7. Using objects（使用对象）（82）
+					8. Assignment statements（赋值语句）（82）
+					9. Objects as arguments（对象作为参数）（84）
+					10. Objects as return values（对象作为返回值）（84）
+					11. Arrays are objects（数组是对象）（85）
+					12. Arrays of objects（对象数组）（85）
+				2. Examples of abstract data types（抽象数据类型示例）（87）
+					1. Geometric objects（几何对象）（89）
+					2. Information processing（信息处理）（91）
+					3. Strings（字符串）（93）
+					4. Input and output revisited（重新审视输入和输出）（95）
+				3. Implementing an abstract data type（实现抽象数据类型）（97）
+					1. Instance variables（实例变量）（97）
+					2. Constructors（构造函数）（97）
+					3. Instance methods（实例方法）（99）
+					4. Scope（范围）（100）
+					5. API, clients, and implementations（API、客户端和实现）（101）
+				4. More ADT implementations（更多  ADT  实现）（103）
+					1. Date（日期）（103）
+					2. Maintaining multiple implementations（维护多个实施）（103）
+					3. Accumulator（累加器）（105）
+					4. Visual accumulator（视觉累加器）（107）
+				5. Data-type design（数据类型设计）（109）
+					1. Encapsulation（封装）（109）
+					2. Designing APIs（设计  API）（110）
+					3. Algorithms and abstract data types（算法和抽象数据类型）（111）
+					4. Interface inheritance（接口继承）（113）
+					5. Implementation inheritance（实现继承）（114）
+					6. String conversion（字符串转换）（115）
+					7. Wrapper types（包装类型）（115）
+					8. Equality（平等）（115）
+					9. Memory management（内存管理）（117）
+					10. Immutability（不变性）（118）
+					11. Design by contract（按合同设计）（120）
+					12. Exceptions and errors（异常和错误）（120）
+					13. Assertions（断言）（120）
+					14. Summary（概括）（121）
+			3. BAGS, QUEUES, AND STACKS（包、队列和栈）（133）
+				1. APIs（134）
+					1. Generics（泛型）（135）
+					2. Autoboxing（自动装箱）（135）
+					3. Iterable collections（可迭代的集合）（136）
+					4. Bags（包）（137）
+					5. FIFO queues（先进先出队列）（139）
+					6. Pushdown stacks（下推堆栈）（140）
+					7. Arithmetic expression evaluation（算术表达式求值）（141）
+				2. Implementing collections（实现集合）（145）
+					1. Fixed-capacity stack（固定容量堆栈）（145）
+					2. Generics（泛型）（147）
+					3. Array resizing（数组大小调整）（149）
+					4. Loitering（闲逛）（150）
+					5. Iteration（迭代）（151）
+				3. Linked lists（链接列表）（155）
+					1. Node record（节点记录）（155）
+					2. Building a linked list（建立一个链接列表）（156）
+					3. Insert at the beginning（插入到开头）（157）
+					4. Remove from the beginning（从头开始删除）（158）
+					5. Insert at the end（插入到最后）（158）
+					6. Insert/remove at other positions（在其他位置插入/删除）（158）
+					7. Traversal（遍历）（159）
+					8. Stack implementation（堆栈实现）（160）
+					9. Queue implementation（队列实现）（163）
+					10. Bag implementation（袋实施）（167）
+				4. Overview（概述）（169）
+					1. Data structures（数据结构）（169）
+			4. ANALYSIS OF ALGORITHMS（算法分析）（185）
+				1. Scientific method（科学方法）（185）
+				2. Observations（观察）（186）
+					1. Example（例子）（186）
+					2. Stopwatch（跑表）（187）
+					3. Analysis of experimental data（实验数据分析）（189）
+				3. Mathematical models（数学模型）（191）
+					1. Tilde approximations（波形符近似值）（191）
+					2. Approximate running time（大约运行时间）（193）
+					3. Order-of-growth hypothesis（增长顺序假设）（193）
+					4. Analysis of algorithms（算法分析）（195）
+					5. Cost model（成本模型）（195）
+					6. Summary（概括）（197）
+				4. Order-of-growth classifications（增长顺序分类）（199）
+					1. Constant（持续的）（199）
+					2. Logarithmic（对数）（199）
+					3. Linear（线性）（199）
+					4. Linearithmic（线性算术）（199）
+					5. Quadratic（二次方）（199）
+					6. Cubic（立方体）（199）
+					7. Exponential（指数）（199）
+				5. Designing faster algorithms（设计更快的算法）（202）
+					1. Warmup: 2-sum（热身：2  总和）（202）
+					2. Fast algorithm for 3-sum（3‑sum  的快速算法）（203）
+					3. Lower bounds（下限）（203）
+				6. Doubling ratio experiments（倍增率实验）（205）
+					1. Estimating the feasibility of solving large problems（估计解决大问题的可行性）（206）
+					2. Estimating the value of using a faster computer（估计使用更快的计算机的价值）（207）
+				7. Caveats（注意事项）（208）
+					1. Large constants（大常数）（208）
+					2. Nondominant inner loop（非主导内循环）（208）
+					3. Instruction time（指导时间）（208）
+					4. System considerations（系统考虑）（208）
+					5. Too close to call（距离太近，无法通话）（208）
+					6. Strong dependence on inputs（对投入的依赖性强）（209）
+					7. Multiple problem parameters（多个问题参数）（209）
+				8. Coping with dependence on inputs（应对对输入的依赖）（210）
+					1. Input models（输入模型）（210）
+					2. Worst-case performance guarantees（最坏情况下的性能保证）（210）
+					3. Randomized algorithms（随机算法）（211）
+					4. Sequences of operations（操作顺序）（211）
+					5. Amortized analysis（摊销分析）（211）
+				9. Memory（内存）（213）
+					1. Objects（对象）（214）
+					2. Linked lists（链接列表）（214）
+					3. Arrays（数组）（215）
+					4. String objects（字符串对象）（215）
+					5. String values and substrings（字符串值和子字符串）（215）
+				10. Perspective（观点）（218）
+			5. CASE STUDY: UNION-FIND（案例研究：UNION‑FIND）（229）
+				1. Dynamic connectivity（动态连接）（229）
+					1. Networks（网络）（230）
+					2. Variable-name equivalence（变量名等效）（230）
+					3. Mathematical sets（数学集）（230）
+				2. Implementations（实现）（235）
+					1. Quick-find（快速查找）（235）
+					2. Quick-find analysis（快速查找分析）（236）
+					3. Quick-union（快速联合）（237）
+					4. Forest-of-trees representation（树森林表示）（238）
+					5. Quick-union analysis（快速联合分析）（239）
+					6. Weighted quick-union（加权快速接头）（240）
+					7. Weighted quick-union analysis（加权快速联合分析）（240）
+					8. Optimal algorithms（最优算法）（244）
+					9. Amortized cost plots（摊余成本图）（245）
+				3. Perspective（观点）（246）
+		2. Sorting（排序）（255）
+			1. ELEMENTARY SORTS（基本排序）（257）
+				1. Rules of the game（游戏规则）（257）
+					1. Certification（认证）（259）
+					2. Running time（运行时间）（259）
+					3. Extra memory（额外的内存）（259）
+					4. Types of data（数据类型）（259）
+				2. Selection sort（选择排序）（261）
+					1. Running time is insensitive to input（运行时间对输入不敏感）（261）
+					2. Data movement is minimal（数据移动最少）（261）
+				3. Insertion sort（插入排序）（263）
+				4. Visualizing sorting algorithms（可视化排序算法）（266）
+				5. Comparing two sorting algorithms（比较两种排序算法）（267）
+				6. Shellsort（希尔排序）（271）
+			2. MERGESORT（归并排序）（283）
+				1. Abstract in-place merge（抽象就地合并）（283）
+				2. Top-down mergesort（自顶向下合并排序）（285）
+					1. Use insertion sort for small subarrays（对于小子数组使用插入排序）（288）
+					2. Test whether the array is already in order（测试数组是否已经有序）（288）
+					3. Eliminate the copy to the auxiliary array（消除对辅助数组的复制）（288）
+				3. Bottom-up mergesort（自下而上的归并排序）（290）
+				4. The complexity of sorting（排序的复杂性）（292）
+			3. QUICKSORT（快速排序）（301）
+				1. The basic algorithm（基本算法）（301）
+					1. Partitioning in place（分区到位）（305）
+					2. Staying in bounds（保持在界限内）（305）
+					3. Preserving randomness（保持随机性）（305）
+					4. Terminating the loop（终止循环）（305）
+					5. Handling items with keys equal to the partitioning item’s key（处理键与分区项的键相同的项）（305）
+					6. Terminating the recursion（终止递归）（305）
+				2. Performance characteristics（性能特征）（306）
+				3. Algorithmic improvements（算法改进）（308）
+					1. Cutoff to insertion sort（插入排序的截止）（309）
+					2. Median-of-three partitioning（三中位数划分）（309）
+					3. Entropy-optimal sorting（309）
+			4. PRIORITY QUEUES（优先级队列）（321）
+				1. API（322）
+					1. A priority-queue client（优先队列客户端）（323）
+				2. Elementary implementations（基本实现）（323）
+					1. Array representation (unordered)（数组表示（无序））（323）
+					2. Array representation (ordered)（数组表示（有序））（325）
+					3. Linked-list representations（链表表示）（325）
+				3. Heap definitions（堆定义）（326）
+					1. Binary heap representation（二进制堆表示）（326）
+				4. Algorithms on heaps（堆上的算法）（328）
+					1. Bottom-up reheapify （swim)（自下而上重新堆放（游泳））（328）
+					2. Top-down reheapify (sink)（自上而下重新堆放（下沉））（329）
+						1. Insert（插入）（330）
+						2. Remove the maximum（去掉最大值）（330）
+					3. Multiway heaps（多路堆）（332）
+					4. Array resizing（数组大小调整）（333）
+					5. Immutability of keys（键的不变性）（333）
+					6. Index priority queue（索引优先队列）（333）
+					7. Index priority-queue client（索引优先级队列客户端）（334）
+				5. Heapsort（堆排序）（336）
+					1. Heap construction（堆构建）（336）
+					2. Sortdown（排序）（339）
+					3. Sink to the bottom, then swim（沉到水底，然后游泳）（340）
+			5. APPLICATIONS（应用）（349）
+				1. Sorting various types of data（对各种类型的数据进行排序）（350）
+					1. Transaction example（交易示例）（350）
+					2. Pointer sorting（指针排序）（351）
+					3. Keys are immutable（密钥是不可变的）（351）
+					4. Exchanges are inexpensive（交换很便宜）（351）
+					5. Alternate orderings（替代订单）（351）
+					6. Items with multiple keys（具有多个键的项目）（352）
+					7. Priority queues with comparators（带比较器的优先级队列）（353）
+					8. Stability（稳定）（354）
+				2. Which sorting algorithm should I use?（我应该使用哪种排序算法？）（355）
+					1. Sorting primitive types（对原始类型进行排序）（356）
+					2. Java system sort（Java系统排序）（356）
+				3. Reductions（归约）（357）
+					1. Duplicates（重复）（357）
+					2. Rankings（排名）（358）
+					3. Priority-queue reductions（优先级队列减少）（358）
+					4. Median and order statistics（中位数和顺序统计）（358）
+				4. A brief survey of sorting applications（排序应用程序的简要概述）（361）
+					1. Commercial computing（商业计算）（361）
+					2. Search for information（搜索信息）（361）
+					3. Operations research（行动调查）（362）
+					4. Event-driven simulation（事件驱动的模拟）（362）
+					5. Numerical computations（数值计算）（362）
+					6. Combinatorial search（组合搜索）（363）
+					7. Prim’s algorithm and Dijkstra’s algorithm（Prim  算法和  Dijkstra  算法）（363）
+					8. Kruskal’s algorithm（克鲁斯卡尔算法）（363）
+					9. Huffman compression（霍夫曼压缩）（363）
+					10. String-processing（字符串处理）（364）
+		3. Searching（搜寻中）（373）
+			1. SYMBOL TABLES（符号表）（374）
+				1. API（376）
+					1. Generics（泛型）（376）
+					2. Duplicate keys（重复的钥匙）（376）
+					3. Null keys（空键）（377）
+					4. Null values（空值）（377）
+					5. Deletion（删除）（377）
+					6. Shorthand methods（速记方法）（377）
+					7. Iteration（迭代）（378）
+					8. Key equality（关键平等）（378）
+				2. Ordered symbol tables（有序符号表）（379）
+					1. Minimum and maximum（最小值和最大值）（380）
+					2. Floor and ceiling（地板和天花板）（380）
+					3. Rank and selection（排名和选择）（380）
+					4. Range queries（范围查询）（381）
+					5. Exceptional cases（特殊情况）（381）
+					6. Shorthand methods（速记方法）（381）
+					7. Key equality (revisited)（关键平等（重新审视））（381）
+					8. Cost model（成本模型）（382）
+				3. Sample clients（示例客户端）（383）
+					1. Test client（测试客户端）（383）
+					2. Performance client（性能客户端）（384）
+				4. Sequential search in an unordered linked list（无序链表中的顺序搜索）（387）
+				5. Binary search in an ordered array（有序数组中的二分搜索）（391）
+					1. Binary search（二分查找）（393）
+					2. Other operations（其他操作）（393）
+				6. Analysis of binary search（二分搜索的分析）（396）
+				7. Preview（预览）（398）
+			2. BINARY SEARCH TREES（二叉搜索树）（409）
+				1. Basic implementation（基本实现）（410）
+					1. Representation（表示）（410）
+					2. Search（搜索）（410）
+					3. Insert（插入）（413）
+					4. Recursion（递归）（414）
+				2. Analysis（分析）（416）
+					1. Experiments（实验）（417）
+				3. Order-based methods and deletion（基于顺序的方法和删除）（419）
+					1. Minimum and maximum（最小值和最大值）（419）
+					2. Floor and ceiling（地板和天花板）（419）
+					3. Selection（选择）（419）
+					4. Rank（排名）（421）
+					5. Delete the minimum/maximum（删除最小值/最大值）（421）
+					6. Delete（删除）（423）
+					7. Range queries（范围查询）（425）
+					8. Analysis（分析）（425）
+			3. BALANCED SEARCH TREES（平衡搜索树）（437）
+				1. 2-3 search trees（2‑3  搜索树）（437）
+					1. Search（搜索）（438）
+					2. Insert into a 2-node（插入  2  节点）（438）
+					3. Insert into a tree consisting of a single 3-node（插入由单个  3  节点组成的树中）（439）
+					4. Insert into a 3-node whose parent is a 2-node（插入到父节点是  2  节点的  3  节点中）（439）
+					5. Insert into a 3-node whose parent is a 3-node（插入到父节点是  3  节点的  3  节点中）（440）
+					6. Splitting the root（分裂根部）（440）
+					7. Local transformations（局部改造）（440）
+					8. Global properties（全球属性）（441）
+				2. Red-black BSTs（红黑BSTs）（445）
+					1. Encoding 3-nodes（编码  3  节点）（445）
+					2. An equivalent definition（等效定义）（445）
+					3. A 1-1 correspondence（1-1对应）（445）
+					4. Color representation（颜色表示）（446）
+					5. Rotations（旋转）（446）
+					6. Resetting the link in the parent after a rotation（旋转后重置父级中的链接）（447）
+					7. Insert into a single 2-node（插入单个  2  节点）（448）
+					8. Insert into a 2-node at the bottom（插入底部的  2  节点）（448）
+					9. Insert into a tree with two keys (in a 3-node)（插入到具有两个键的树中（在  3  节点中））（448）
+					10. Flipping colors（翻转颜色）（449）
+					11. Keeping the root black（保持根部黑色）（450）
+					12. Insert into a 3-node at the bottom（插入底部的  3  节点）（450）
+					13. Passing a red link up the tree（将红色链接传递到树上）（450）
+				3. Implementation（实现）（451）
+				4. Deletion（删除）（454）
+					1. Top-down 2-3-4 trees（自上而下的  2‑3‑4  树）（454）
+					2. Delete the minimum（删除最小值）（455）
+					3. Delete（删除）（456）
+				5. Properties of red-black BSTs（红黑  BST  的性质）（457）
+					1. Analysis（分析）（457）
+					2. Ordered symbol-table API（有序符号表  API）（459）
+			4. HASH TABLES（哈希表）（471）
+				1. Hash functions（哈希函数）（472）
+					1. Typical example（典型例子）（472）
+					2. Positive integers（正整数）（472）
+					3. Floating-point numbers（浮点数字）（473）
+					4. Strings（字符串）（473）
+					5. Compound keys（复合键）（473）
+					6. Java conventions（Java  约定）（474）
+					7. Converting a hashCode() to an array index（将 hashCode() 转换为数组索引）（474）
+					8. User-defined hashCode()（用户定义的hashCode()）（474）
+					9. Software caching（软件缓存）（475）
+				2. Hashing with separate chaining（使用单独链接进行散列）（477）
+					1. Table size（表尺寸）（480）
+					2. Deletion（删除）（481）
+					3. Ordered operations（有序操作）（481）
+				3. Hashing with linear probing（使用线性探测）（482）
+					1. Deletion（删除）（484）
+					2. Clustering（聚类）（485）
+					3. Analysis of linear probing（线性探测分析）（486）
+				4. Array resizing（数组调整大小）（487）
+					1. Separate chaining（单独链接）（487）
+					2. Amortized analysis（摊销分析）（488）
+				5. Memory（内存）（489）
+			5. APPLICATIONS（应用）（499）
+				1. Which symbol-table implementation should I use?（我应该使用哪种符号表实现？）（500）
+					1. Primitive types（原始类型）（501）
+					2. Duplicate keys（重复的钥匙）（501）
+					3. Java libraries（Java  库）（502）
+				2. Set APIs（设置  API）（502）
+					1. Dedup（重复数据删除）（503）
+					2. Whitelist and blacklist（白名单和黑名单）（504）
+				3. Dictionary clients（字典客户端）（505）
+				4. Indexing clients（索引客户端）（509）
+					1. Inverted index（倒排索引）（511）
+				5. Sparse vectors（稀疏向量）（515）
+		4. Graphs（图表）（527）
+			1. UNDIRECTED GRAPHS（无向图）（531）
+				1. Glossary（术语表）（532）
+				2. Undirected graph data type（无向图数据类型）（535）
+					1. Representation alternatives（代表替代方案）（537）
+					2. Adjacency-lists data structure（邻接表数据结构）（538）
+					3. Design pattern for graph processing（图形处理的设计模式）（541）
+				3. Depth-first search（深度优先搜索）（543）
+					1. Searching in a maze（在迷宫中寻找）（543）
+					2. Warmup（暖身）（544）
+					3. One-way passages（单向通道）（545）
+					4. Tracing DFS（追踪DFS）（545）
+					5. Detailed trace of depth-first search（深度优先搜索的详细跟踪）（546）
+				4. Finding paths（寻找路径）（548）
+					1. Implementation（执行）（548）
+					2. Detailed trace（详细踪迹）（550）
+				5. Breadth-first search（广度优先搜索）（551）
+					1. Implementation（执行）（551）
+				6. Connected components（连接组件）（556）
+					1. Implementation（执行）（556）
+					2. Union-find（联合查找）（559）
+				7. Symbol graphs（符号图）（561）
+					1. API（561）
+					2. Test client（测试客户端）（563）
+					3. Implementation（执行）（564）
+					4. Degrees of separation（分离程度）（566）
+				8. Summary（总结）（569）
+			2. DIRECTED GRAPHS（有向图）（579）
+				1. Glossary（术语表）（579）
+				2. Digraph data type（有向图数据类型）（581）
+					1. Representation（表示）（581）
+					2. Input format（输入格式）（581）
+					3. Reversing a digraph（反转有向图）（581）
+					4. Symbolic names（象征性的名字）（581）
+				3. Reachability in digraphs（有向图中的可达性）（583）
+					1. Mark-and-sweep garbage collection（标记和清除垃圾收集）（586）
+					2. Finding paths in digraphs（在有向图中查找路径）（586）
+				4. Cycles and DAGs（循环和  DAG）（587）
+					1. Scheduling problems（调度问题）（587）
+					2. Cycles in digraphs（有向图中的循环）（589）
+					3. Depth-first orders and topological sort（深度优先顺序和拓扑排序）（591）
+				5. Strong connectivity in digraphs（有向图中的强连通性）（597）
+					1. Strong components（强大的组件）（597）
+					2. Examples of applications（应用示例）（598）
+					3. Kosaraju’s algorithm（Kosaraju  算法）（599）
+					4. Reachability revisited（重新审视可达性）（603）
+				6. Summary（小结）（607）
+			3. MINIMUM SPANNING TREES（最小生成树）（617）
+				1. Underlying principles（基本原则）（619）
+					1. Cut property（削减财产）（619）
+					2. Greedy algorithm（贪心算法）（620）
+				2. Edge-weighted graph data type（边加权图数据类型）（621）
+					1. Comparing edges by weight（按重量比较边缘）（625）
+					2. Parallel edges（平行边缘）（625）
+					3. Self-loops（自循环）（625）
+				3. MST API and test client（MST  API  和测试客户端）（626）
+					1. Test client（测试客户端）（626）
+					2. Test data（测试数据）（627）
+				4. Prim’s algorithm（Prim  算法）（629）
+					1. Data structures（数据结构）（629）
+					2. Maintaining the set of crossing edges（维护交叉边集）（629）
+					3. Implementation（执行）（631）
+					4. Running time（运行时间）（631）
+				5. Eager version of Prim’s algorithm（Prim算法的Eager版本）（633）
+				6. Kruskal’s algorithm（Kruskal  算法）（637）
+				7. Perspective（观点）（641）
+					1. Historical notes（历史笔记）（641）
+					2. A linear-time algorithm?（线性时间算法？）（642）
+			4. SHORTEST PATHS（最短路径）（651）
+				1. Properties of shortest paths（最短路径的属性）（652）
+					1. Shortest-paths tree（最短路径树）（653）
+				2. Edge-weighted digraph data types（边加权有向图数据类型）（654）
+					1. Shortest-paths API（最短路径  API）（657）
+					2. Test client（测试客户端）（658）
+					3. Data structures for shortest paths（最短路径的数据结构）（659）
+					4. Edge relaxation（边缘松弛）（659）
+					5. Vertex relaxation（顶点松弛）（661）
+					6. Client query methods（客户端查询方法）（662）
+				3. Theoretical basis for shortest-paths algorithms（最短路径算法的理论基础）（663）
+					1. Optimality conditions（最优条件）（663）
+					2. Certification（认证）（664）
+					3. Generic algorithm（通用算法）（664）
+				4. Dijkstra’s algorithm（Dijkstra  算法）（665）
+					1. Data structures（数据结构）（665）
+					2. Alternative viewpoint（另类观点）（665）
+					3. Variants（变体）（667）
+				5. Acyclic edge-weighted digraphs（非循环边加权有向图）（671）
+					1. Longest paths（最长的路径）（674）
+					2. Parallel job scheduling（并行作业调度）（676）
+					3. Parallel job scheduling with relative deadlines（具有相对期限的并行作业调度）（679）
+				6. Shortest paths in general edge-weighted digraphs（一般边加权有向图中的最短路径）（681）
+					1. Strawman I（681）
+					2. Strawman II（681）
+					3. Negative cycles（负循环）（681）
+					4. Strawman III（683）
+					5. Queue-based Bellman-Ford（基于队列的  Bellman‑Ford）（685）
+					6. Implementation（执行）（685）
+					7. Negative weights（负权重）（688）
+					8. Negative cycle detection（负循环检测）（690）
+					9. Arbitrage（套利）（692）
+				7. Perspective（观点）（695）
+					1. Historical notes（历史笔记）（695）
+		5. Strings（字符串）
+			1. STRING SORTS（字符串排序）（715）
+				1. Key-indexed counting（键索引计数）（716）
+					1. Compute frequency counts（计算频率计数）（716）
+					2. Transform counts to indices（将计数转换为索引）（717）
+					3. Distribute the data（分发数据）（717）
+					4. Copy back（抄回来）（718）
+				2. LSD string sort（LSD  字符串排序）（719）
+				3. MSD string sort（MSD  字符串排序）（723）
+					1. End-of-string convention（字符串结尾约定）（723）
+					2. Specified alphabet（指定字母表）（724）
+					3. Small subarrays（小子数组）（726）
+					4. Equal keys（相等的键）（728）
+					5. Extra space（额外的空间）（729）
+					6. Random string model（随机串模型）（729）
+					7. Performance（表现）（729）
+				4. Three-way string quicksort（三路字符串快速排序）（732）
+					1. Small subarrays（小子数组）（734）
+					2. Restricted alphabet（受限制的字母表）（734）
+					3. Randomization（随机化）（735）
+					4. Performance（表现）（735）
+					5. Example: web logs（示例：网络日志）（736）
+				5. Which string-sorting algorithm should I use?（我应该使用哪种字符串排序算法？）（737）
+			2. TRIES（尝试）（743）
+				1. Tries（尝试）（745）
+					1. Basic properties（基本属性）（745）
+					2. Search in a trie（在字典树中搜索）（745）
+					3. Insertion into a trie（插入到特里树中）（747）
+					4. Node representation（节点表示）（747）
+					5. Size（尺寸）（749）
+					6. Collecting keys（收集钥匙）（751）
+					7. Wildcard match（通配符匹配）（752）
+					8. Longest prefix（最长的前缀）（752）
+					9. Deletion（删除）（753）
+					10. Alphabet（字母）（754）
+				2. Properties of tries（尝试的属性）（755）
+					1. Worst-case time bound for search and insert（搜索和插入的最坏情况时间限制）（755）
+					2. Expected time bound for search miss（搜索失败的预期时间范围）（756）
+					3. Space（空间）（757）
+					4. One-way branching（单向分支）（757）
+				3. Ternary search tries (TSTs)（三元搜索尝试  (TST)）（759）
+					1. Search and insert（搜索并插入）（759）
+				4. Properties of TSTs（TST  的属性）（762）
+					1. Space（空间）（762）
+					2. Search cost（搜寻成本）（762）
+					3. Alphabet（字母）（763）
+					4. Prefix match, collecting keys, and wildcard match（前缀匹配、收集键和通配符匹配）（763）
+					5. Deletion（删除）（763）
+					6. Hybrid TSTs（混合  TST）（763）
+					7. One-way branching（单向分支）（764）
+				5. Which string symbol-table implementation should I use?（我应该使用哪种字符串符号表实现？）（765）
+			3. SUBSTRING SEARCH（子串搜索）（771）
+				1. A short history（简史）（772）
+				2. Brute-force substring search（暴力子字符串搜索）（773）
+				3. Knuth-Morris-Pratt substring search（Knuth‑Morris‑Pratt  子串搜索）（775）
+					1. Backing up the pattern pointer（备份模式指针）（776）
+					2. KMP search method（KMP搜索方法）（776）
+					3. DFA simulation（DFA  模拟）（777）
+					4. Constructing the DFA（构建  DFA）（778）
+				4. Boyer-Moore substring search（Boyer‑Moore  子字符串搜索）（783）
+					1. Mismatched character heuristic（不匹配的字符启发式）（783）
+					2. Starting point（初始点）（784）
+					3. Substring search（子串搜索）（784）
+				5. Rabin-Karp fingerprint search（Rabin‑Karp  指纹搜索）（787）
+					1. Basic plan（基本计划）（787）
+					2. Computing the hash function（计算哈希函数）（787）
+					3. Key idea（关键想法）（788）
+					4. Implementation（执行）（789）
+					5. A trick: Monte Carlo correctness（技巧：蒙特卡罗正确性）（789）
+				6. Summary（摘要）（792）
+			4. REGULAR EXPRESSIONS（正则表达式）（801）
+				1. Describing patterns with regular expressions（用正则表达式描述模式）（802）
+					1. Concatenation（级联）（802）
+					2. Or（或者）（802）
+					3. Closure（关闭）（802）
+					4. Parentheses（括号）（802）
+				2. Shortcuts（快捷方式）（804）
+					1. Set-of-characters descriptors（字符集描述符）（804）
+					2. Closure shortcuts（关闭快捷方式）（804）
+					3. Escape sequences（转义序列）（804）
+				3. REs in applications（应用中的  RE）（805）
+					1. Substring search（子串搜索）（805）
+					2. Validity checking（有效性检查）（805）
+					3. Programmer’s toolbox（程序员的工具箱）（806）
+					4. Genomics（基因组学）（806）
+					5. Search（搜索）（806）
+					6. Possibilities（可能性）（806）
+					7. Limitations（局限性）（806）
+				4. Nondeterministic finite-state automata（非确定性有限状态自动机）（807）
+				5. Simulating an NFA（模拟  NFA）（810）
+					1. Representation（表示）（810）
+					2. NFA simulation and reachability（NFA  模拟和可达性）（810）
+				6. Building an NFA corresponding to an RE（构建与  RE  相对应的  NFA）（813）
+					1. Concatenation（级联）（813）
+					2. Parentheses（括号）（813）
+					3. Closure（闭包）（813）
+					4. Or expression（或者表达）（813）
+			5. DATA COMPRESSION（数据压缩）（823）
+				1. Rules of the game（游戏规则）（824）
+					1. Basic model（基本模型）（824）
+				2. Reading and writing binary data（读取和写入二进制数据）（824）
+					1. Binary input and output（二进制输入和输出）（825）
+					2. Example（例子）（826）
+					3. Binary dumps（二进制转储）（826）
+					4. ASCII encoding（ASCII  编码）（828）
+				3. Limitations（限制）（829）
+					1. Universal data compression（通用数据压缩）（829）
+					2. Undecidability（不确定性）（830）
+				4. Warmup: genomics（热身：基因组学）（832）
+					1. Genomic data（基因组数据）（832）
+					2. 2-bit code compression（2  位代码压缩）（832）
+					3. 2-bit code expansion（2  位代码扩展）（832）
+				5. Run-length encoding（游程编码）（835）
+					1. Bitmaps（位图）（835）
+					2. Implementation（执行）（836）
+					3. Increasing resolution in bitmaps（提高位图的分辨率）（836）
+				6. Huffman compression（霍夫曼压缩）（839）
+					1. Variable-length prefix-free codes（可变长度无前缀代码）（839）
+					2. Trie representation for prefix-free codes（无前缀代码的  Trie  表示）（840）
+					3. Overview（概述）（840）
+					4. Trie nodes（特里树节点）（841）
+					5. Expansion for prefix-free codes（无前缀代码的扩展）（841）
+					6. Compression for prefix-free codes（无前缀代码的压缩）（842）
+					7. Trie construction（特里构造）（843）
+					8. Optimality（最优性）（845）
+					9. Writing and reading the trie（写入和读取  trie）（847）
+					10. Huffman compression implementation（霍夫曼压缩实现）（848）
+					11. LZW compression（LZW  压缩（852））
+					12. LZW compression example（LZW  压缩示例）（853）
+					13. LZW trie representation（LZW  trie  表示）（853）
+					14. LZW expansion（LZW  扩展）（854）
+					15. Tricky situation（情况很棘手）（856）
+					16. Implementation（执行）（856）
+	4. Computer Architecture（计算机体系结构）
+		1. Fundamentals of Quantitative Design and Analysis（定量设计和分析基础知识）（33）
+			1. Introduction（介绍）（34）
+			2. Classes of Computers（计算机类别）（38）
+				1. Internet of Things/Embedded Computers（物联网/嵌入式计算机）（38）
+				2. Personal Mobile Device（个人移动设备）（39）
+				3. Desktop Computing（桌面计算）（40）
+				4. Servers（服务器）（40）
+				5. Clusters/Warehouse-Scale Computers（集群/仓库规模计算机）（41）
+				6. Classes of Parallelism and Parallel Architectures（并行性和并行架构的类别）（42）
+			3. Defining Computer Architecture（定义计算机体系结构）（44）
+				1. Instruction Set Architecture: The Myopic View of Computer Architecture（指令集架构：计算机架构的短视观点）（44）
+				2. Genuine Computer Architecture: Designing the Organization and Hardware to Meet Goals and Functional Requirements（真正的计算机体系结构：设计组织和硬件以满足目标和功能要求）（49）
+			4. Trends in Technology（技术趋势）（50）
+				1. Performance Trends: Bandwidth Over Latency（性能趋势：带宽与延迟的关系）（52）
+				2. Scaling of Transistor Performance and Wires（晶体管性能和电线的扩展）（53）
+			5. Trends in Power and Energy in Integrated Circuits（集成电路功率和能量的趋势）（55）
+				1. Power and Energy: A Systems Perspective（电力和能源：系统视角）（55）
+				2. Energy and Power Within a Microprocessor（微处理器内的能量和功率）（57）
+				3. The Shift in Computer Architecture Because of Limits of Energy（由于能源限制而导致的计算机架构的转变）（60）
+			6. Trends in Cost（成本趋势）（61）
+				1. The Impact of Time, Volume, and Commoditization（时间、数量和商品化的影响）（62）
+				2. Cost of an Integrated Circuit（集成电路的成本）（63）
+				3. Cost Versus Price（成本与价格）（67）
+				4. Cost of Manufacturing Versus Cost of Operation（制造成本与运营成本）（68）
+			7. Dependability（可靠性）（68）
+			8. Measuring, Reporting, and Summarizing Performance（衡量、报告和总结绩效）（71）
+				1. Benchmarks（基准测试）（72）
+					1. Desktop Benchmarks（桌面基准测试）（73）
+					2. Server Benchmarks（服务器基准测试）（78）
+				2. Reporting Performance Results（报告绩效结果）（77）
+				3. Summarizing Performance Results（总结绩效结果）（77）
+			9. Quantitative Principles of Computer Design（计算机设计的定量原理）（80）
+				1. Take Advantage of Parallelism（利用并行性）（80）
+				2. Principle of Locality（局部性原理）（80）
+				3. Focus on the Common Case（关注常见案例）（81）
+				4. Amdahl’s Law（阿姆达尔定律）（81）
+				5. The Processor Performance Equation（处理器性能方程）（84）
+			10. Putting It All Together: Performance, Price, and Power（合起来：性能、价格和功耗）（87）
+			11. Fallacies and Pitfalls（谬误和陷阱）（90）
+			12. Concluding Remarks（结束语）（96）
+			13. Historical Perspectives and References（历史观点和参考）（99）
+			14. Case Studies and Exercises by Diana Franklin（戴安娜·富兰克林的案例研究和练习）（99）
+				1. Case Study 1: Chip Fabrication Cost（案例研究  1：芯片制造成本）（99）
+				2. Case Study 2: Power Consumption in Computer Systems（案例研究  2：计算机系统的功耗）（101）
+		2. Memory Hierarchy Design（内存层次结构设计）（109）
+			1. Introduction（介绍）（110）
+				1. Basics of Memory Hierarchies: A Quick Review（内存层次结构基础知识：快速回顾）（113）
+			2. Memory Technology and Optimizations（内存技术及优化）（116）
+				1. SRAM Technology（静态随机存储器技术）（117）
+				2. DRAM Technology（内存技术）（117）
+				3. Improving Memory Performance Inside a DRAM Chip: SDRAMs（提高 DRAM 芯片内部的内存性能：SDRAM）（119）
+					1. Reducing Power Consumption in SDRAMs（降低  SDRAM  的功耗）（121）
+				4. Graphics Data RAMs（图形数据  RAM）（122）
+				5. Packaging Innovation: Stacked or Embedded DRAMs（封装创新：堆叠式或嵌入式  DRAM）（123）
+				6. Flash Memory（闪存）（124）
+				7. Phase-Change Memory Technology（相变内存技术）（125）
+				8. Enhancing Dependability in Memory Systems（增强内存系统的可靠性）（125）
+			3. Ten Advanced Optimizations of Cache Performance（缓存性能的十大高级优化）（126）
+				1. First Optimization: Small and Simple First-Level Caches to Reduce Hit Time and Power（首次优化：小型且简单的一级缓存可减少命中时间和功耗）（127）
+				2. Second Optimization: Way Prediction to Reduce Hit Time（第二次优化：减少命中时间的方式预测）（130）
+				3. Third Optimization: Pipelined Access and Multibanked Caches to Increase Bandwidth（第三次优化：流水线访问和多组缓存以增加带宽）（131）
+				4. Fourth Optimization: Nonblocking Caches to Increase Cache Bandwidth（优化四：非阻塞缓存，提高缓存带宽）（132）
+					1. Implementing a Nonblocking Cache（实现非阻塞缓存）（135）
+				5. Fifth Optimization: Critical Word First and Early Restart to Reduce Miss Penalty（优化五：关键词优先，提前重启，减少漏判）（136）
+				6. Sixth Optimization: Merging Write Buffer to Reduce Miss Penalty（优化六：合并写入缓冲区，减少Miss Penalty）（137）
+				7. Seventh Optimization: Compiler Optimizations to Reduce Miss Rate（优化七：编译器优化，降低miss率）（139）
+					1. Loop Interchange（环路交汇处）（139）
+					2. Blocking（阻塞）（139）
+				8. Eighth Optimization: Hardware Prefetching of Instructions and Data to Reduce Miss Penalty or Miss Rate（优化八：指令和数据的硬件预取，减少丢失惩罚或丢失率）（141）
+				9. Ninth Optimization: Compiler-Controlled Prefetching to Reduce Miss Penalty or Miss Rate（第九个优化：编译器控制的预取以减少丢失惩罚或丢失率）（143）
+				10. Tenth Optimization: Using HBM to Extend the Memory Hierarchy（优化十：利用HBM扩展内存层次）（146）
+				11. Cache Optimization Summary（缓存优化总结）（149）
+			4. Virtual Memory and Virtual Machines（虚拟内存和虚拟机）（150）
+				1. Protection via Virtual Memory（通过虚拟内存进行保护）（151）
+				2. Protection via Virtual Machines（通过虚拟机进行保护）（152）
+				3. Requirements of a Virtual Machine Monitor（虚拟机监视器的要求）（154）
+				4. Instruction Set Architecture Support for Virtual Machines（虚拟机指令集架构支持）（154）
+				5. Impact of Virtual Machines on Virtual Memory and I/O（虚拟机对虚拟内存和  I/O  的影响）（155）
+				6. Extending the Instruction Set for Efficient Virtualization and Better Security（扩展指令集以实现高效虚拟化和更好的安全性）（156）
+				7. An Example VMM: The Xen Virtual Machine（VMM  示例：Xen  虚拟机）（158）
+			5. Cross-Cutting Issues: The Design of Memory Hierarchies（交叉问题：内存层次结构的设计）（158）
+				1. Protection, Virtualization, and Instruction Set Architecture（保护、虚拟化和指令集架构）（158）
+				2. Autonomous Instruction Fetch Units（自主取指令单元）（159）
+				3. Speculation and Memory Access（推测和内存访问）（159）
+				4. Special Instruction Caches（特殊指令缓存）（160）
+				5. Coherency of Cached Data（缓存数据的一致性）（160）
+			6. Putting It All Together: Memory Hierarchies in the ARM Cortex-A53 and Intel Core i7 6700（综合起来：ARM Cortex-A53 和 Intel Core i7 6700 中的内存层次结构）（161）
+				1. The ARM Cortex-A53（161）
+				2. Performance of the Cortex-A53 Memory Hierarchy（Cortex‑A53  内存层次结构的性能）（164）
+				3. The Intel Core i7 6700（英特尔酷睿  i7  6700）（165）
+					1. Performance of the i7 memory system（i7内存系统的性能）（170）
+			7. Fallacies and Pitfalls（谬误和陷阱）（174）
+			8. Concluding Remarks: Looking Ahead（结束语：展望未来）（178）
+			9. Historical Perspectives and References（历史观点和参考）（180）
+			10. Case Studies and Exercises by Norman P. Jouppi, Rajeev Balasubramonian, Naveen Muralimanohar, and Sheng Li（Norman P. Jouppi、Rajeev Balasubramonian、Naveen Muralimanohar 和 Shen Li 的案例研究和练习）（180）
+				1. Case Study 1: Optimizing Cache Performance via Advanced Techniques（案例研究 1：通过先进技术优化缓存性能）（180）
+				2. Case Study 2: Putting It All Together: Highly Parallel Memory Systems（案例研究 2：综合起来：高度并行内存系统）（182）
+				3. Case Study 3: Studying the Impact of Various Memory System Organizations（案例研究 3：研究各种内存系统组织的影响）（185）
+		3. Instruction-Level Parallelism and Its Exploitation（指令级并行性及其利用）（199）
+			1. Instruction-Level Parallelism: Concepts and Challenges（指令级并行性：概念和挑战）（200）
+				1. What Is Instruction-Level Parallelism?（什么是指令级并行性？）（201）
+				2. Data Dependences and Hazards（数据依赖性和危险）（202）
+					1. Data Dependences（数据依赖性）（202）
+					2. Name Dependences（名称依赖）（204）
+					3. Data Hazards（数据危害）（205）
+				3. Control Dependences（控制依赖）（206）
+			2. Basic Compiler Techniques for Exposing ILP（公开  ILP  的基本编译器技术）（208）
+				1. Basic Pipeline Scheduling and Loop Unrolling（基本管道调度和循环展开）（209）
+				2. Summary of the Loop Unrolling and Scheduling（循环展开和调度总结）（213）
+			3. Reducing Branch Costs With Advanced Branch Prediction（通过高级分支预测降低分支成本）（214）
+				1. Correlating Branch Predictors（关联分支预测器）（214）
+				2. Tournament Predictors: Adaptively Combining Local and Global Predictors（锦标赛预测器：自适应地结合本地和全局预测器）（216）
+				3. Tagged Hybrid Predictors（标记混合预测器）（220）
+				4. The Evolution of the Intel Core i7 Branch Predictor（英特尔酷睿  i7  分支预测器的演变）（222）
+			4. Overcoming Data Hazards With Dynamic Scheduling（通过动态调度克服数据危险）（223）
+				1. Dynamic Scheduling: The Idea（动态调度：想法）（225）
+				2. Dynamic Scheduling Using Tomasulo’s Approach（使用  Tomasulo  方法的动态调度）（227）
+			5. Dynamic Scheduling: Examples and the Algorithm（动态调度：例子和算法）（233）
+				1. Tomasulo’s Algorithm: The Details（Tomasulo  算法：细节）（235）
+				2. Tomasulo’s Algorithm: A Loop-Based Example（Tomasulo  算法：基于循环的示例）（236）
+			6. Hardware-Based Speculation（基于硬件的推测）（240）
+			7. Exploiting ILP Using Multiple Issue and Static Scheduling（使用多问题和静态调度来利用  ILP）（250）
+				1. The Basic VLIW Approach（基本  VLIW  方法）（250）
+			8. Exploiting ILP Using Dynamic Scheduling, Multiple Issue, and Speculation（使用动态调度、多重问题和推测来利用 ILP）（254）
+			9. Advanced Techniques for Instruction Delivery and Speculation（指令传递和推测的先进技术）（260）
+				1. Increasing Instruction Fetch Bandwidth（增加指令获取带宽）（260）
+					1. Branch-Target Buffers（分支目标缓冲区）（260）
+				2. Specialized Branch Predictors: Predicting Procedure Returns, Indirect Jumps, and Loop Branches（专用分支预测器：预测过程返回、间接跳转和循环分支）（264）
+					1. Integrated Instruction Fetch Units（集成指令获取单元）（265）
+				3. Speculation: Implementation Issues and Extensions（推测：实施问题和扩展）（266）
+					1. Speculation Support: Register Renaming Versus Reorder Buffers（推测支持：寄存器重命名与重新排序缓冲区）（266）
+					2. The Challenge of More Issues per Clock（每个时钟出现更多问题的挑战）（268）
+					3. How Much to Speculate（推测多少）（269）
+					4. Speculating Through Multiple Branches（通过多个分支进行推测）（270）
+					5. Speculation and the Challenge of Energy Efficiency（能源效率的投机与挑战）（270）
+					6. Address Aliasing Prediction（地址别名预测）（271）
+			10. Cross-Cutting Issues（跨领域问题）（272）
+				1. Hardware Versus Software Speculation（硬件与软件推测）（272）
+				2. Speculative Execution and the Memory System（推测执行和内存系统）（273）
+			11. Multithreading: Exploiting Thread-Level Parallelism to Improve Uniprocessor Throughput（多线程：利用线程级并行性提高单处理器吞吐量）（274）
+				1. Effectiveness of Simultaneous Multithreading on Superscalar Processors（超标量处理器上同步多线程的有效性）（277）
+			12. Putting It All Together: The Intel Core i7 6700 and ARM Cortex-A53（综合起来：Intel Core i7 6700 和 ARM Cortex-A53）（279）
+				1. The ARM Cortex-A53（280）
+					1. Performance of the A53 Pipeline（A53管道的性能）（282）
+				2. The Intel Core i7（284）
+					1. Performance of the i7（i7的性能）（287）
+			13. Fallacies and Pitfalls（谬误和陷阱）（290）
+			14. Concluding Remarks: What’s Ahead?（结束语：接下来会发生什么？）（296）
+			15. Historical Perspective and References（历史视角和参考文献）（298）
+			16. Case Studies and Exercises by Jason D. Bakos and Robert P. Colwell（Jason D. Bakos 和 Robert P. Colwell 的案例研究和练习）（298）
+				1. Case Study: Exploring the Impact of Microarchitectural Techniques（案例研究：探索微架构技术的影响）（298）
+		4. Data-Level Parallelism in Vector, SIMD, and GPU Architectures（矢量、SIMD 和 GPU 架构中的数据级并行性）（313）
+			1. Introduction（介绍）（314）
+			2. Vector Architecture（矢量架构）（315）
+				1. RV64V Extension（RV64V  扩展）（315）
+				2. How Vector Processors Work: An Example（矢量处理器如何工作：一个例子）（320）
+				3. Vector Execution Time（向量执行时间）（322）
+				4. Multiple Lanes: Beyond One Element per Clock Cycle（多通道：每个时钟周期超过一个元素）（325）
+				5. Vector-Length Registers: Handling Loops Not Equal to 32（矢量长度寄存器：处理不等于  32  的循环）（326）
+				6. Predicate Registers: Handling IF Statements in Vector Loops（谓词寄存器：处理向量循环中的  IF  语句）（328）
+				7. Memory Banks: Supplying Bandwidth for Vector Load/Store Units（存储器组：为矢量加载/存储单元提供带宽）（330）
+				8. Stride: Handling Multidimensional Arrays in Vector Architectures（Stride：处理向量架构中的多维数组）（331）
+				9. Gather-Scatter: Handling Sparse Matrices in Vector Architectures（聚集-分散：处理向量架构中的稀疏矩阵）（333）
+				10. Programming Vector Architectures（向量架构编程）（334）
+			3. SIMD Instruction Set Extensions for Multimedia（多媒体的  SIMD  指令集扩展）（336）
+				1. Programming Multimedia SIMD Architectures（多媒体  SIMD  架构编程）（339）
+				2. The Roofline Visual Performance Model（Roofline  视觉表现模型）（339）
+			4. Graphics Processing Units（图形处理单元）（342）
+				1. Programming the GPU（GPU  编程）（342）
+				2. NVIDIA GPU Computational Structures（NVIDIA  GPU  计算结构）（345）
+				3. NVIDA GPU Instruction Set Architecture（NVIDA  GPU  指令集架构）（352）
+				4. Conditional Branching in GPUs（GPU  中的条件分支）（355）
+				5. NVIDIA GPU Memory Structures（NVIDIA  GPU  内存结构）（358）
+				6. Innovations in the Pascal GPU Architecture（Pascal  GPU  架构的创新）（360）
+				7. Similarities and Differences Between Vector Architectures and GPUs（矢量架构和 GPU 之间的异同）（363）
+				8. Similarities and Differences Between Multimedia SIMD Computers and GPUs（多媒体 SIMD 计算机和 GPU 之间的异同）（367）
+				9. Summary（概括）（368）
+			5. Detecting and Enhancing Loop-Level Parallelism（检测和增强循环级并行性）（368）
+				1. Finding Dependences（寻找依赖关系）（373）
+				2. Eliminating Dependent Computations（消除相关计算）（376）
+			6. Cross-Cutting Issues（跨领域问题）（377）
+				1. Energy and DLP: Slow and Wide Versus Fast and Narrow（能源和  DLP：缓慢⽽宽广与快速且狭窄）（377）
+				2. Banked Memory and Graphics Memory（存储内存和图形内存）（378）
+				3. Strided Accesses and TLB Misses（跨步访问和  TLB  未命中）（378）
+			7. Putting It All Together: Embedded Versus Server GPUs and Tesla Versus Core i7（综合起来：嵌入式与服务器 GPU 以及 Tesla 与 Core i7）（378）
+			8. Comparison of a GPU and a MIMD With Multimedia SIMD（GPU  和  MIMD  与多媒体  SIMD  的比较）（379）
+			9. Comparison Update（比较更新）（385）
+			10. Fallacies and Pitfalls（谬误和陷阱）（385）
+			11. Concluding Remarks（结束语）（389）
+			12. Historical Perspective and References（历史视角和参考文献）（389）
+			13. Case Study and Exercises by Jason D. Bakos（Jason  D.  Bakos  的案例研究和练习）（389）
+				1. Case Study: Implementing a Vector Kernel on a Vector Processor and GPU（案例研究：在矢量处理器和 GPU 上实现矢量内核）（389）
+		5. Thread-Level Parallelism（线程级并行性）（399）
+			1. Introduction（介绍）（400）
+				1. Multiprocessor Architecture: Issues and Approach（多处理器架构：问题和方法）（402）
+				2. Challenges of Parallel Processing（并行处理的挑战）（405）
+			2. Centralized Shared-Memory Architectures（集中式共享内存架构）（409）
+				1. What Is Multiprocessor Cache Coherence?（什么是多处理器缓存一致性？）（409）
+				2. Basic Schemes for Enforcing Coherence（加强一致性的基本方案）（411）
+				3. Snooping Coherence Protocols（窥探一致性协议）（412）
+				4. Basic Implementation Techniques（基本实施技术）（414）
+				5. An Example Protocol（协议示例）（415）
+				6. Extensions to the Basic Coherence Protocol（基本一致性协议的扩展）（420）
+				7. Limitations in Symmetric Shared-Memory Multiprocessors and Snooping Protocols（对称共享内存多处理器和监听协议的限制）（421）
+				8. Implementing Snooping Cache Coherence（实现监听缓存一致性）（424）
+			3. Performance of Symmetric Shared-Memory Multiprocessors（对称共享内存多处理器的性能）（425）
+				1. A Commercial Workload（商业工作负载）（426）
+				2. A Multiprogramming and OS Workload（多道程序设计和操作系统工作负载）（431）
+				3. Performance of the Multiprogramming and OS Workload（多道程序设计和操作系统工作负载的性能）（433）
+			4. Distributed Shared-Memory and Directory-Based Coherence（分布式共享内存和基于目录的一致性）（436）
+				1. Directory-Based Cache Coherence Protocols: The Basics（基于目录的缓存一致性协议：基础知识）（438）
+				2. An Example Directory Protocol（目录协议示例）（440）
+			5. Synchronization: The Basics（同步：基础知识）（444）
+				1. Basic Hardware Primitives（基本硬件原语）（444）
+				2. Implementing Locks Using Coherence（使用一致性实现锁）（446）
+			6. Models of Memory Consistency: An Introduction（内存一致性模型：简介）（449）
+				1. The Programmer’s View（程序员的观点）（450）
+				2. Relaxed Consistency Models: The Basics and Release Consistency（宽松的一致性模型：基础知识和发布一致性）（451）
+			7. Cross-Cutting Issues（跨领域问题）（454）
+				1. Compiler Optimization and the Consistency Model（编译器优化和一致性模型）（454）
+					1. Using Speculation to Hide Latency in Strict Consistency Models（使用推测来隐藏严格一致性模型中的延迟）（454）
+					2. Inclusion and Its Implementation（包容性及其实施）（455）
+					3. Performance Gains From Multiprocessing and Multithreading（多处理和多线程带来的性能提升）（456）
+			8. Putting It All Together: Multicore Processors and Their Performance（综合起来：多核处理器及其性能）（458）
+				1. Performance of Multicore-Based Multiprocessors on a Multiprogrammed Workload（基于多核的多处理器在多道程序工作负载上的性能）（458）
+				2. Performance of Multicore-Based Multiprocessors on a Multiprogrammed Workload（基于多核的多处理器在多道程序工作负载上的性能）（461）
+				3. Scalability in an Xeon MP With Different Workloads（具有不同工作负载的  Xeon  MP  的可扩展性）（465）
+				4. Performance and Energy Efficiency of the Intel i7 920 Multicore（Intel i7 920 多核的性能和能效）（466）
+					1. Putting Multicore and SMT Together（将多核和  SMT  结合在一起）（468）
+			9. Fallacies and Pitfalls（谬误和陷阱）（470）
+			10. The Future of Multicore Scaling（多核扩展的未来）（474）
+			11. Concluding Remarks（结束语）（476）
+			12. Historical Perspectives and References（历史观点和参考）（477）
+			13. Case Studies and Exercises by Amr Zaky and David A. Wood（Amr Zaky 和 David A. Wood 的案例研究和练习）（478）
+				1. Case Study 1: Single Chip Multicore Multiprocessor（案例研究  1：单芯片多核多处理器）（478）
+				2. Case Study 2: Simple Directory-Based Coherence（案例研究  2：简单的基于目录的一致性）（483）
+				3. Read/Write Notation（读/写符号）（484）
+				4. Messages（留言）（485）
+				5. Case Study 3: Memory Consistency（案例研究  3：内存一致性）（488）
+		6. Warehouse-Scale Computers to Exploit Request-Level and Data-Level Parallelism（利用请求级和数据级并行性的仓库规模计算机）（497）
+			1. Introduction（介绍）（498）
+			2. Programming Models and Workloads for Warehouse-Scale Computers（仓库规模计算机的编程模型和工作负载）（503）
+			3. Computer Architecture of Warehouse-Scale Computers（仓库规模计算机的计算机体系结构）（509）
+				1. Storage（贮存）（510）
+				2. WSC Memory Hierarchy（WSC  内存层次结构）（511）
+			4. The Efficiency and Cost of Warehouse-Scale Computers（仓库规模计算机的效率和成本）（514）
+				1. Measuring Efficiency of a WSC（测量  WSC  的效率）（515）
+				2. Cost of a WSC（WSC  的费用）（518）
+			5. Cloud Computing: The Return of Utility Computing（云计算：效用计算的回归）（522）
+				1. Amazon Web Services（亚马逊网络服务）（523）
+				2. How Big Is the AWS Cloud?（AWS  云有多大？）（529）
+			6. Cross-Cutting Issues（跨领域问题）（533）
+				1. Preventing the WSC Network From Being a Bottleneck（防止WSC网络成为瓶颈）（533）
+				2. Using Energy Efficiently Inside the Server（在服务器内部有效利用能源）（535）
+			7. Putting It All Together: A Google Warehouse-Scale Computer（将它们放在一起：Google 仓库规模的计算机）（535）
+				1. Power Distribution in a Google WSC（Google  WSC  中的配电）（536）
+				2. Cooling in a Google WSC（Google  WSC  中的冷却）（538）
+				3. Racks of a Google WSC（Google  WSC  的机架）（541）
+				4. Networking in a Google WSC（Google  WSC  中的网络）（542）
+				5. Servers in a Google WSC（Google  WSC  中的服务器）（544）
+				6. Conclusion（结论）（545）
+			8. Fallacies and Pitfalls（谬误和陷阱）（546）
+			9. Concluding Remarks（结束语）（550）
+			10. Historical Perspectives and References（历史观点和参考）（551）
+			11. Case Studies and Exercises by Parthasarathy Ranganathan（Parthasarathy Ranganathan 的案例研究和练习）（551）
+				1. Case Study 1: Total Cost of Ownership Influencing Warehouse-Scale Computer Design Decisions（案例研究 1：影响仓库规模计算机设计决策的总拥有成本）（551）
+				2. Case Study 2: Resource Allocation in WSCs and TCO（案例研究  2：WSC  和  TCO  中的资源分配）（553）
+		7. Domain-Specific Architectures（特定领域的架构）（571）
+			1. Introduction（介绍）（572）
+			2. Guidelines for DSAs（DSA  指南）（575）
+			3. Example Domain: Deep Neural Networks（示例领域：深度神经网络）（576）
+				1. The Neurons of DNNs（DNN  的神经元）（578）
+				2. Training Versus Inference（训练与推理）（579）
+				3. Multilayer Perceptron（多层感知器）（581）
+				4. Convolutional Neural Network（卷积神经网络）（582）
+				5. Recurrent Neural Network（循环神经网络）（585）
+				6. Batches（批次）（588）
+				7. Quantization（量化）（588）
+				8. Summary of DNNs（DNN  总结）（588）
+			4. Google’s Tensor Processing Unit, an Inference Data Center Accelerator（谷歌的张量处理单元，推理数据中心加速器）（589）
+				1. TPU Origin（TPU产地）（589）
+				2. TPU Architecture（TPU架构）（589）
+				3. TPU Instruction Set Architecture（TPU指令集架构）（591）
+				4. TPU Microarchitecture（TPU微架构）（591）
+				5. TPU Implementation（TPU实施）（592）
+				6. TPU Software（TPU软件）（595）
+				7. Improving the TPU（改进TPU）（596）
+				8. Summary: How TPU Follows the Guidelines（摘要：TPU  如何遵循指南）（598）
+			5. Microsoft Catapult, a Flexible Data Center Accelerator（Microsoft  Catapult，灵活的数据中心加速器）（599）
+				1. Catapult Implementation and Architecture（弹射器实施和架构）（600）
+				2. Catapult Software（弹射器软件）（601）
+				3. CNNs on Catapult（Catapult  上的  CNN）（602）
+				4. Search Acceleration on Catapult（Catapult  上的搜索加速）（605）
+				5. Catapult Version 1 Deployment（弹射器版本  1  部署）（606）
+				6. Catapult Version 2（弹射器版本  2）（607）
+				7. Summary: How Catapult Follows the Guidelines（摘要：Catapult  如何遵循指南）（609）
+			6. Intel Crest, a Data Center Accelerator for Training（Intel  Crest，用于培训的数据中心加速器）（611）
+			7. Pixel Visual Core, a Personal Mobile Device Image Processing Unit（Pixel Visual Core，个人移动设备图像处理单元）（611）
+				1. ISPs, the Hardwired Predecessors of IPUs（ISP，IPU  的硬连线前身）（612）
+				2. Pixel Visual Core Software（Pixel  Visual  Core  软件）（614）
+				3. Pixel Visual Core Architecture Philosophy（Pixel视觉核心架构理念）（615）
+				4. The Pixel Visual Core Halo（像素视觉核心光环）（616）
+				5. A Processor of the Pixel Visual Core（像素视觉核心处理器）（617）
+				6. Pixel Visual Core Instruction Set Architecture（Pixel  Visual  Core指令集架构）（619）
+				7. Pixel Visual Core Example（像素视觉核心示例）（620）
+				8. Pixel Visual Core Processing Element（像素视觉核心处理元件）（620）
+				9. Two-Dimensional Line Buffers and Their Controller（二维行缓冲器及其控制器）（621）
+				10. Pixel Visual Core Implementation（像素视觉核心实现）（622）
+				11. Summary: How Pixel Visual Core Follows the Guidelines（摘要：Pixel  Visual  Core  如何遵循指南）（623）
+			8. Cross-Cutting Issues（跨领域问题）（624）
+				1. Heterogeneity and System on a Chip (SOC)（异构性和片上系统  (SOC)）（624）
+				2. An Open Instruction Set（开放指令集）（626）
+			9. Putting It All Together: CPUs Versus GPUs Versus DNN Accelerators（综合起来：CPU 与 GPU 与 DNN 加速器）（627）
+				1. Performance: Rooflines, Response Time, and Throughput（性能：屋顶线、响应时间和吞吐量）（628）
+				2. Cost-Performance, TCO, and Performance/Watt（性价比、TCO  和性能功耗比）（632）
+				3. Evaluating Catapult and Pixel Visual Core（评估弹射器和像素视觉核心）（633）
+			10. Fallacies and Pitfalls（谬论和陷阱）（634）
+			11. Concluding Remarks（结束语）（636）
+				1. An Architecture Renaissance（建筑文艺复兴）（637）
+			12. Historical Perspectives and References（历史观点和参考）（638）
+			13. Case Studies and Exercises by Cliff Young（Cliff  Young  的案例研究和练习）（638）
+				1. Case Study: Google’s Tensor Processing Unit and Acceleration of Deep Neural Networks（案例研究：谷歌的张量处理单元和深度神经网络加速）（638）
+		8. Instruction Set Principles（指令集原则）（651）
+			1. Introduction（介绍）（652）
+			2. Classifying Instruction Set Architectures（指令集架构分类）（653）
+				1. Summary: Classifying Instruction Set Architectures（摘要：指令集架构分类）（656）
+			3. Memory Addressing（内存寻址）（657）
+				1. Interpreting Memory Addresses（解释内存地址）（657）
+				2. Addressing Modes（寻址模式）（658）
+				3. Displacement Addressing Mode（位移寻址模式）（661）
+				4. Immediate or Literal Addressing Mode（立即或文字寻址模式）（662）
+				5. Summary: Memory Addressing（摘要：内存寻址）（662）
+			4. Type and Size of Operands（操作数的类型和大小）（663）
+			5. Operations in the Instruction Set（指令集中的操作）（665）
+			6. Instructions for Control Flow（控制流程说明）（666）
+				1. Addressing Modes for Control Flow Instructions（控制流指令的寻址模式）（667）
+				2. Conditional Branch Options（条件分支选项）（668）
+				3. Procedure Invocation Options（过程调用选项）（669）
+				4. Summary: Instructions for Control Flow（摘要：控制流说明）（670）
+			7. Encoding an Instruction Set（指令集编码）（671）
+				1. Reduced Code Size in RISCs（减少  RISC  中的代码大小）（673）
+				2. Summary: Encoding an Instruction Set（摘要：编码指令集）（674）
+			8. Cross-Cutting Issues: The Role of Compilers（交叉问题：编译器的作用）（674）
+				1. The Structure of Recent Compilers（最新编译器的结构）（675）
+				2. Register Allocation（寄存器分配）（677）
+				3. Impact of Optimizations on Performance（优化对性能的影响）（677）
+				4. The Impact of Compiler Technology on the Architect’s Decisions（编译器技术对架构师决策的影响）（677）
+				5. How the Architect Can Help the Compiler Writer（架构师如何帮助编译器编写者）（680）
+				6. Compiler Support (or Lack Thereof) for Multimedia Instructions（多媒体指令的编译器支持（或缺乏））（681）
+				7. Summary: The Role of Compilers（摘要：编译器的作用）（682）
+			9. Putting It All Together: The RISC-V Architecture（整合在一起：RISC‑V  架构）（683）
+				1. RISC-V Instruction Set Organization（RISC‑V指令集组织）（684）
+				2. Registers for RISC-V（RISC‑V  寄存器）（684）
+				3. Data Types for RISC-V（RISC‑V  的数据类型）（685）
+				4. Addressing Modes for RISC-V Data Transfers（RISC‑V  数据传输的寻址模式）（686）
+				5. RISC-V Instruction Format（RISC‑V指令格式）（686）
+				6. RISC-V Operations（RISC‑V  操作）（687）
+				7. RISC-V Control Flow Instructions（RISC‑V  控制流程指令）（689）
+				8. RISC-V Floating-Point Operations（RISC‑V  浮点运算）（690）
+				9. RISC-V Instruction Set Usage（RISC‑V指令集使用）（692）
+			10. Fallacies and Pitfalls（谬论和陷阱）（692）
+			11. Concluding Remarks（结束语）（696）
+			12. Historical Perspective and References（历史视角和参考文献）（697）
+			13. Exercises by Gregory D. Peterson（格雷戈里·D·彼得森的练习）（697）
+		9. Review of Memory Hierarchy（内存层次结构回顾）（707）
+			1. Introduction（介绍）（708）
+				1. Cache Performance Review（缓存性能审查）（709）
+				2. Four Memory Hierarchy Questions（四个内存层次结构问题）（712）
+					1. Q1: Where Can a Block be Placed in a Cache?（Q1：块可以放在缓存中的什么位置？）（712）
+					2. Q2: How Is a Block Found If It Is in the Cache?（Q2：如果一个块在缓存中，如何找到它？）（714）
+					3. Q3: Which Block Should be Replaced on a Cache Miss?（Q3：缓存未命中时应替换哪个块？）（715）
+					4. Q4: What Happens on a Write?（Q4：写⼊时会发生什么？）（716）
+				3. An Example: The Opteron Data Cache（示例：Opteron  数据缓存）（718）
+			2. Cache Performance（缓存性能）（721）
+				1. Average Memory Access Time and Processor Performance（平均内存访问时间和处理器性能）（723）
+				2. Miss Penalty and Out-of-Order Execution Processors（未命中处罚和乱序执行处理器）（726）
+			3. Six Basic Cache Optimizations（六种基本缓存优化）（728）
+				1. First Optimization: Larger Block Size to Reduce Miss Rate（第一个优化：更大的块大小以降低丢失率）（732）
+				2. Second Optimization: Larger Caches to Reduce Miss Rate（优化二：加大缓存，降低丢失率）（734）
+				3. Third Optimization: Higher Associativity to Reduce Miss Rate（第三次优化：更高的关联性，降低失误率）（734）
+				4. Fourth Optimization: Multilevel Caches to Reduce Miss Penalty（优化四：多级缓存，减少丢失惩罚）（736）
+				5. Fifth Optimization: Giving Priority to Read Misses over Writes to Reduce Miss Penalty（优化五：读缺失优先于写入，减少缺失惩罚）（741）
+				6. Sixth Optimization: Avoiding Address Translation During Indexing of the Cache to Reduce Hit Time（优化六：在缓存索引期间避免地址转换以减少命中时间）（742）
+				7. Summary of Basic Cache Optimization（基本缓存优化总结）（746）
+			4. Virtual Memory（虚拟内存）（746）
+				1. Four Memory Hierarchy Questions Revisited（重新审视四个内存层次结构问题）（750）
+					1. Q1: Where Can a Block be Placed in Main Memory?（Q1：块可以放置在主存中的什么位置？）（750）
+					2. Q2: How Is a Block Found If It Is in Main Memory?（Q2：如果块在主存中，如何找到它？）（750）
+					3. Q3: Which Block Should be Replaced on a Virtual Memory Miss?（Q3：虚拟内存丢失时应该替换哪个块？）（751）
+					4. Q4: What Happens on a Write?（Q4：写⼊时会发生什么？）（751）
+				2. Techniques for Fast Address Translation（快速地址转换技术）（752）
+				3. Selecting a Page Size（选择页面尺寸）（752）
+				4. Summary of Virtual Memory and Caches（虚拟内存和缓存总结）（754）
+			5. Protection and Examples of Virtual Memory（虚拟内存的保护和示例）（755）
+				1. Protecting Processes（保护进程）（756）
+				2. A Segmented Virtual Memory Example: Protection in the Intel Pentium（分段虚拟内存示例：Intel  Pentium  中的保护）（757）
+					1. Adding Bounds Checking and Memory Mapping（添加边界检查和内存映射）（758）
+					2. Adding Sharing and Protection（添加共享和保护）（758）
+					3. Adding Safe Calls from User to OS Gates and Inheriting Protection Level for Parameters（添加用户对操作系统门的安全调用并继承参数的保护级别）（760）
+				3. A Paged Virtual Memory Example: The 64-Bit Opteron Memory Management（分页虚拟内存示例：64 位 Opteron 内存管理）（760）
+				4. Summary: Protection on the 32-Bit Intel Pentium Versus the 64-Bit AMD Opteron（摘要：32 位 Intel Pentium 与 64 位 AMD Opteron 的保护）（763）
+			6. Fallacies and Pitfalls（谬误和陷阱）（763）
+			7. Concluding Remarks（结束语）（765）
+			8. Historical Perspective and References（历史视角和参考文献）（765）
+			9. Exercises by Amr Zaky（Amr  Zaky  的练习）（766）
+		10. Pipelining: Basic and Intermediate Concepts（管道：基本和中级概念）（775）
+			1. Introduction（介绍）（776）
+				1. What Is Pipelining?（什么是管道化？）（776）
+				2. The Basics of the RISC V Instruction Set（RISC  V  指令集的基础知识）（777）
+				3. A Simple Implementation of a RISC Instruction Set（RISC指令集的简单实现）（778）
+				4. The Classic Five-Stage Pipeline for a RISC Processor（RISC  处理器的经典五级流水线）（780）
+				5. Basic Performance Issues in Pipelining（流水线中的基本性能问题）（782）
+			2. The Major Hurdle of Pipelining—Pipeline Hazards（管道输送的主要障碍——管道危险）（784）
+				1. Performance of Pipelines With Stalls（带失速管道的性能）（785）
+				2. Data Hazards（数据危害）（786）
+					1. Minimizing Data Hazard Stalls by Forwarding（通过转发最大限度地减少数据危险停顿）（788）
+					2. Data Hazards Requiring Stalls（需要暂停的数据危险）（790）
+				3. Branch Hazards（分支危害）（792）
+					1. Reducing Pipeline Branch Penalties（减少管道分支处罚）（793）
+					2. Performance of Branch Schemes（分行计划的表现）（795）
+				4. Reducing the Cost of Branches Through Prediction（通过预测降低分支机构成本）（796）
+				5. Static Branch Prediction（静态分支预测）（796）
+				6. Dynamic Branch Prediction and Branch-Prediction Buffers（动态分支预测和分支预测缓冲区）（797）
+			3. How Is Pipelining Implemented?（流水线是如何实现的？）（800）
+				1. A Simple Implementation of RISC V（RISC  V  的简单实现）（800）
+				2. A Basic Pipeline for RISC V（RISC  V  的基本流程）（804）
+				3. Implementing the Control for the RISC V Pipeline（实现  RISC  V  流水线的控制）（807）
+				4. Dealing With Branches in the Pipeline（处理管道中的分支）（809）
+			4. What Makes Pipelining Hard to Implement?（是什么使得流水线难以实施？）（811）
+				1. Dealing With Exceptions（处理异常）（812）
+					1. Types of Exceptions and Requirements（例外情况和要求的类型）（812）
+					2. Stopping and Restarting Execution（停止和重新启动执行）（815）
+					3. Exceptions in RISC V（RISC  V  中的例外）（816）
+				2. Instruction Set Complications（指令集并发症）（817）
+			5. Extending the RISC V Integer Pipeline to Handle Multicycle Operations（扩展 RISC V 整数管道以处理多周期操作）（819）
+				1. Hazards and Forwarding in Longer Latency Pipelines（较长延迟管道中的危险和转发）（823）
+				2. Maintaining Precise Exceptions（维护精确的异常）（827）
+				3. Performance of a Simple RISC V FP Pipeline（简单  RISC  V  FP  流水线的性能）（829）
+			6. Putting It All Together: The MIPS R4000 Pipeline（综合起来：MIPS  R4000  管道）（829）
+				1. The Floating-Point Pipeline（浮点流水线）（834）
+				2. Performance of the R4000 Pipeline（R4000  管道的性能）（835）
+			7. Cross-Cutting Issues（跨领域问题）（839）
+				1. RISC Instruction Sets and Efficiency of Pipelining（RISC  指令集和流水线效率）（839）
+				2. Dynamically Scheduled Pipelines（动态调度管道）（839）
+					1. Dynamic Scheduling With a Scoreboard（使用记分板进行动态调度）（840）
+			8. Fallacies and Pitfalls（谬误和陷阱）（844）
+			9. Concluding Remarks（结束语）（845）
+			10. Historical Perspective and References（历史视角和参考文献）（845）
+			11. Updated Exercises by Diana Franklin（戴安娜·富兰克林更新的练习）（845）
+		11. Storage Systems（存储系统）（854）
+			1. Introduction（介绍）（855）
+			2. Advanced Topics in Disk Storage（磁盘存储的高级主题）（855）
+				1. Disk Power（磁盘电源）（858）
+				2. Advanced Topics in Disk Arrays（磁盘阵列的高级主题）（859）
+					1. RAID 10 versus 01 (or 1 +0 versus RAID 0+1)（RAID  10  与  01（或  1+0  与  RAID  0+1））（861）
+					2. RAID 6: Beyond a Single Disk Failure（RAID  6：超越单一磁盘故障）（861）
+			3. Definition and Examples of Real Faults and Failures（实际故障和故障的定义和示例）（863）
+				1. Berkeley’s Tertiary Disk（伯克利第三级磁盘）（865）
+				2. Tandem（串联）（866）
+				3. Other Studies of the Role of Operators in Dependability（关于操作员在可靠性中的作用的其他研究）（866）
+			4. I/O Performance, Reliability Measures, and Benchmarks（I/O  性能、可靠性测量和基准）（868）
+				1. Throughput versus Response Time（吞吐量与响应时间）（869）
+				2. Transaction-Processing Benchmarks（事务处理基准）（871）
+				3. SPEC System-Level File Server, Mail, and Web Benchmarks（SPEC  系统级文件服务器、邮件和  Web  基准测试）（873）
+				4. Examples of Benchmarks of Dependability（可靠性基准示例）（874）
+			5. A Little Queuing Theory（一点排队理论）（876）
+				1. Poisson Distribution of Random Variables（随机变量的泊松分布）（879）
+			6. Crosscutting Issues（横切问题）（887）
+				1. Point-to-Point Links and Switches Replacing Buses（点对点链路和交换机取代总线）（887）
+				2. Block Servers versus Filers（块服务器与文件管理器）（887）
+				3. Asynchronous I/O and Operating Systems（异步  I/O  和操作系统）（888）
+			7. Designing and Evaluating an I/O System—The Internet Archive Cluster（设计和评估 I/O 系统 - 互联网档案集群）（889）
+				1. The Internet Archive Cluster（互联网档案集群）（890）
+				2. Estimating Performance, Dependability, and Cost of the Internet Archive Cluster（估计 Internet Archive 集群的性能、可靠性和成本）（891）
+				3. Calculating MTTF of the TB-80 Cluster（计算  TB‑80  集群的  MTTF）（894）
+			8. Putting It All Together: NetApp FAS6000 Filer（综合起来：NetApp  FAS6000  文件管理器）（896）
+			9. Fallacies and Pitfalls（谬误和陷阱）（896）
+			10. Concluding Remarks（结束语）（900）
+			11. Historical Perspective and References（历史视角和参考文献）（901）
+			12. Case Studies with Exercises by Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau（Andrea C. Arpaci-Dusseau 和 Remzi H. Arpaci-Dusseau 的案例研究与练习）（901）
+				1. Case Study 1: Deconstructing a Disk（案例研究  1：解构磁盘）（901）
+				2. Case Study 2: Deconstructing a Disk Array（案例研究  2：解构磁盘阵列）（904）
+				3. Case Study 3: RAID Reconstruction（案例3：RAID重构）（908）
+				4. Case Study 4: Performance Prediction for RAIDs（案例研究  4：RAID  性能预测）（910）
+				5. Case Study 5: I/O Subsystem Design（案例研究 5：I/O 子系统设计）（912）
+				6. Case Study 6: Dirty Rotten Bits（案例研究  6：脏乱差）（914）
+				7. Case Study 7: Sorting Things Out（案例研究  7：整理事情）（917）
+		12. Embedded Systems（嵌入式系统）（922）
+			1. Introduction（介绍）（923）
+				1. Real-Time Processing（实时处理）（924）
+			2. Signal Processing and Embedded Applications: The Digital Signal Processor（信号处理和嵌入式应用：数字信号处理器）（926）
+				1. The TI 320C55（928）
+				2. The TI 320C6x（929）
+				3. Media Extensions（媒体扩展）（931）
+			3. Embedded Benchmarks（嵌入式基准测试）（933）
+				1. Power Consumption and Efficiency as the Metric（以功耗和效率为衡量标准）（934）
+			4. Embedded Multiprocessors（嵌入式多处理器）（935）
+			5. Case Study: The Emotion Engine of the Sony PlayStation 2（案例研究：Sony  PlayStation  2  的情感引擎）（936）
+			6. Case Study: Sanyo VPC-SX500 Digital Camera（案例研究：三洋  VPC‑SX500  数码相机）（940）
+			7. Case Study: Inside a Cell Phone（案例研究：手机内部）（941）
+				1. Background on Wireless Networks（无线网络背景）（942）
+				2. The Cell Phone（手机）（943）
+				3. Cell Phone Standards and Evolution（手机标准和演变）（946）
+			8. Concluding Remarks（结束语）（946）
+		13. Interconnection Networks（互连网络）（949）
+			1. Introduction（介绍）（950）
+				1. Interconnection Network Domains（互联网络域）（951）
+				2. Approach and Organization of This Appendix（本附录的方法和组织）（953）
+			2. Interconnecting Two Devices（连接两个设备）（954）
+				1. Network Interface Functions: Composing and Processing Messages（网络接口功能：编写和处理消息）（954）
+				2. Basic Network Structure and Functions: Media and Form Factor, Packet Transport, Flow Control, and Error Handling（基本网络结构和功能：媒体和外形尺寸、数据包传输、流量控制和错误处理）（957）
+				3. Characterizing Performance: Latency and Effective Bandwidth（表征性能：延迟和有效带宽）（961）
+			3. Connecting More than Two Devices（连接两个以上设备）（968）
+				1. Additional Network Structure and Functions: Topology, Routing, Arbitration, and Switching（附加网络结构和功能：拓扑、路由、仲裁和交换）（969）
+				2. Shared-Media Networks（共享媒体网络）（971）
+				3. Switched-Media Networks（交换媒体网络）（972）
+				4. Comparison of Shared- and Switched-Media Networks（共享媒体网络和交换媒体网络的比较）（973）
+				5. Characterizing Performance: Latency and Effective Bandwidth（表征性能：延迟和有效带宽）（973）
+			4. Network Topology（网络拓扑）（978）
+				1. Centralized Switched Networks（集中交换网络）（979）
+				2. Distributed Switched Networks（分布式交换网络）（983）
+				3. Effects of Topology on Network Performance（拓扑对网络性能的影响）（989）
+			5. Network Routing, Arbitration, and Switching（网络路由、仲裁和交换）（992）
+				1. Routing（路由）（993）
+				2. Arbitration（仲裁）（997）
+				3. Switching（交换）（999）
+				4. Impact on Network Performance（对网络性能的影响）（1000）
+			6. Switch Microarchitecture（开关微架构）（1004）
+				1. Basic Switch Microarchitecture（基本开关微架构）（1004）
+				2. Buffer Organizations（缓冲组织）（1007）
+				3. Routing Algorithm Implementation（路由算法实现）（1009）
+				4. Pipelining the Switch Microarchitecture（Switch  微架构的流水线化）（1012）
+				5. Other Switch Microarchitecture Enhancements（其他  Switch  微架构增强功能）（1014）
+			7. Practical Issues for Commercial Interconnection Networks（商业互联网络的实际问题）（1015）
+				1. Connectivity（连接性）（1015）
+				2. Standardization: Cross-Company Interoperability（标准化：跨公司互操作性）（1015）
+				3. Congestion Management（拥塞管理）（1016）
+				4. Fault Tolerance（容错能力）（1018）
+			8. Examples of Interconnection Networks（互连网络示例）（1021）
+				1. On-Chip Network: Intel Single-Chip Cloud Computer（片上网络：英特尔单芯片云计算机）（1022）
+				2. System Area Network: IBM Blue Gene/L 3D Torus Network（系统局域网：IBM  Blue  Gene/L  3D  Torus  网络）（1024）
+				3. System/Storage Area Network: InfiniBand（系统/存储区域网络：InfiniBand）（1025）
+				4. Ethernet: The Local Area Network（以太网：局域网）（1030）
+				5. Wide Area Network: ATM（广域网：ATM）（1032）
+			9. Internetworking（网络互联）（1033）
+			10. Crosscutting Issues for Interconnection Networks（互连网络的横切问题）（1037）
+				1. Density-Optimized Processors versus SPEC-Optimized Processors（密度优化处理器与规格优化处理器）（1037）
+				2. Smart Switches versus Smart Interface Cards（智能交换机与智能接口卡）（1038）
+				3. Protection and User Access to the Network（保护和用户对网络的访问）（1039）
+				4. Efficient Interface to the Memory Hierarchy versus the Network（内存层次结构与网络的高效接口）（1039）
+				5. Compute-Optimized Processors versus Receiver Overhead（计算优化处理器与接收器开销）（1040）
+			11. Fallacies and Pitfalls（谬误和陷阱）（1040）
+			12. Concluding Remarks（结束语）（1048）
+			13. Historical Perspective and References（历史视角和参考文献）（1049）
+				1. Wide Area Networks（广域网）（1050）
+				2. Local Area Networks（局域网）（1051）
+				3. System Area Networks（系统区域网络）（1052）
+				4. Storage Area Networks（存储区域网络）（1054）
+				5. On-Chip Networks（片上网络）（1056）
+		14. Vector Processors in More Depth（更深入的矢量处理器）（1068）
+			1. Introduction（介绍）（1069）
+			2. Vector Performance in More Depth（更深入的矢量性能）（1069）
+				1. Pipelined Instruction Start-Up and Multiple Lanes（流水线指令启动和多通道）（1074）
+			3. Vector Memory Systems in More Depth（更深入的向量存储系统）（1076）
+			4. Enhancing Vector Performance（增强矢量性能）（1078）
+				1. Chaining in More Depth（更深入的链接）（1078）
+				2. Sparse Matrices in More Depth（更深入的稀疏矩阵）（1079）
+			5. Effectiveness of Compiler Vectorization（编译器矢量化的有效性）（1081）
+			6. Putting It All Together: Performance of Vector Processors（综合起来：矢量处理器的性能）（1082）
+				1. Measures of Vector Performance（矢量性能的测量）（1082）
+				2. The Peak Performance of VMIPS on DAXPY（VMIPS  在  DAXPY  上的峰值性能）（1084）
+				3. Sustained Performance of VMIPS on the Linpack Benchmark（VMIPS  在  Linpack  基准测试中的持续性能）（1084）
+				4. DAXPY Performance on an Enhanced VMIPS（增强型  VMIPS  上的  DAXPY  性能）（1086）
+			7. A Modern Vector Supercomputer: The Cray X1（现代矢量超级计算机：Cray  X1）（1088）
+				1. Multi-Streaming Processors（多流处理器）（1090）
+				2. Cray X1E（1091）
+			8. Concluding Remarks（结束语）（1092）
+			9. Historical Perspective and References（历史视角和参考文献）（1093）
+		15. Hardware and Software for VLIW and EPIC（VLIW 和 EPIC 的硬件和软件）（1103）
+			1. Introduction: Exploiting Instruction-Level Parallelism Statically（简介：静态利用指令级并行性）（1104）
+			2. Detecting and Enhancing Loop-Level Parallelism（检测和增强循环级并行性）（1104）
+				1. Finding Dependences（寻找依赖关系）（1108）
+				2. Eliminating Dependent Computations（消除相关计算）（1112）
+			3. Scheduling and Structuring Code for Parallelism（并行性的调度和结构化代码）（1114）
+				1. Software Pipelining: Symbolic Loop Unrolling（软件流水线：符号循环展开）（1114）
+				2. Global Code Scheduling（全局代码调度）（1117）
+					1. Trace Scheduling: Focusing on the Critical Path（跟踪调度：关注关键路径）（1121）
+					2. Superblocks（超级街区）（1123）
+			4. Hardware Support for Exposing Parallelism: Predicated Instructions（公开并行性的硬件支持：谓词指令）（1125）
+			5. Hardware Support for Compiler Speculation（对编译器推测的硬件支持）（1129）
+				1. Hardware Support for Preserving Exception Behavior（保留异常行为的硬件支持）（1130）
+				2. Hardware Support for Memory Reference Speculation（对内存参考推测的硬件支持）（1134）
+			6. The Intel IA-64 Architecture and Itanium Processor（Intel  IA‑64  架构和  Itanium  处理器）（1134）
+				1. The Intel IA-64 Instruction Set Architecture（英特尔  IA‑64  指令集架构）（1134）
+					1. The IA-64 Register Model（IA‑64  寄存器模型）（1135）
+					2. Instruction Format and Support for Explicit Parallelism（指令格式和显式并行支持）（1136）
+					3. Instruction Set Basics（指令集基础知识）（1140）
+					4. Predication and Speculation Support（预测和推测支持）（1140）
+				2. The Itanium 2 Processor（安腾  2  处理器）（1142）
+					1. Functional Units and Instruction Issue（功能单元和指令问题）（1143）
+					2. Itanium 2 Performance（安腾  2  性能）（1145）
+			7. Concluding Remarks（结束语）（1145）
+		16. Large-Scale Multiprocessors and Scientific Applications（大规模多处理器和科学应用）（1148）
+			1. Introduction（介绍）（1149）
+			2. Interprocessor Communication: The Critical Performance Issue（处理器间通信：关键的性能问题）（1150）
+				1. Advantages of Different Communication Mechanisms（不同沟通机制的优点）（1151）
+			3. Characteristics of Scientific Applications（科学应用的特点）（1153）
+				1. Characteristics of Scientific Applications（科学应用的特点）（1153）
+					1. The FFT Kernel（FFT  内核）（1154）
+					2. The LU Kernel（LU  内核）（1155）
+					3. The Barnes Application（巴恩斯申请）（1155）
+					4. The Ocean Application（海洋应用）（1156）
+					5. Computation/Communication for the Parallel Programs（并行程序的计算/通信）（1157）
+			4. Synchronization: Scaling Up（同步：扩大规模）（1159）
+				1. Synchronization Performance Challenges（同步性能挑战）（1159）
+					1. Barrier Synchronization（屏障同步）（1160）
+				2. Synchronization Mechanisms for Larger-Scale Multiprocessors（大规模多处理器的同步机制）（1164）
+					1. Software Implementations（软件实施）（1164）
+					2. Hardware Primitives（硬件原语）（1165）
+			5. Performance of Scientific Applications on Shared-Memory Multiprocessors（共享内存多处理器上科学应用程序的性能）（1168）
+				1. Performance of a Scientific Workload on a Symmetric Shared-Memory Multiprocessor（对称共享内存多处理器上科学工作负载的性能）（1168）
+				2. Performance of a Scientific Workload on a Distributed-Memory Multiprocessor（分布式内存多处理器上科学工作负载的性能）（1173）
+			6. Performance Measurement of Parallel Processors with Scientific Applications（并行处理器性能测量与科学应用）（1180）
+			7. Implementing Cache Coherence（实现缓存一致性）（1181）
+				1. Implementing Cache Coherence in a DSM Multiprocessor（在  DSM  多处理器中实现缓存一致性）（1183）
+				2. Avoiding Deadlock from Limited Buffering（避免有限缓冲造成的死锁）（1185）
+				3. Implementing the Directory Controller（实现目录控制器）（1187）
+			8. The Custom Cluster Approach: Blue Gene/L（定制聚类方法：Blue  Gene/L）（1188）
+				1. The Blue Gene/L Computing Node（蓝色基因/L计算节点）（1189）
+			9. Concluding Remarks（结束语）（1191）
+		17. Computer Arithmetic（计算机算术）（1196）
+			1. Introduction（介绍）（1197）
+			2. Basic Techniques of Integer Arithmetic（整数运算的基本技巧）（1197）
+				1. Ripple-Carry Addition（纹波进位加法）（1197）
+				2. Radix-2 Multiplication and Division（Radix‑2  乘法和除法）（1199）
+				3. Signed Numbers（签名号码）（1202）
+				4. Systems Issues（系统问题）（1205）
+			3. Floating Point（浮点）（1208）
+				1. Special Values and Denormals（特殊值和非正规值）（1209）
+				2. .Representation of Floating-Point Numbers（浮点数的表示）（1210）
+			4. Floating-Point Multiplication（浮点乘法）（1212）
+				1. Denormals（非正规化）（1215）
+				2. Precision of Multiplication（乘法精度）（1216）
+			5. Floating-Point Addition（浮点加法）（1216）
+				1. Speeding Up Addition（加速添加）（1220）
+				2. Denormalized Numbers（非规范化数字）（1221）
+			6. Division and Remainder（除法和余数）（1222）
+				1. Iterative Division（迭代除法）（1222）
+				2. Floating-Point Remainder（浮点余数）（1226）
+			7. More on Floating-Point Arithmetic（有关浮点运算的更多信息）（1227）
+				1. Fused Multiply-Add（乘加融合）（1227）
+				2. Precisions（精度）（1228）
+				3. Exceptions（例外情况）（1229）
+				4. Underflow（下溢）（1231）
+			8. Speeding Up Integer Addition（加速整数加法）（1232）
+				1. Carry-Lookahead（先行进位）（1232）
+				2. Carry-Skip Adders（跳进位加法器）（1236）
+				3. Carry-Select Adder（进位选择加法器）（1238）
+			9. Speeding Up Integer Multiplication and Division（加速整数乘法和除法）（1239）
+				1. Shifting over Zeros（移过零）（1240）
+				2. SRT Division（SRT  除法）（1240）
+				3. Speeding Up Multiplication with a Single Adder（使用单个加法器加速乘法）（1242）
+				4. Faster Multiplication with Many Adders（使用多个加法器进行更快的乘法）（1244）
+				5. Faster Division with One Adder（使用一个加法器加快除法速度）（1249）
+			10. Putting It All Together（综合起来）（1252）
+			11. Fallacies and Pitfalls（谬误和陷阱）（1257）
+			12. Historical Perspective and References（历史视角和参考文献）（1258）
+		18. Survey of Instruction Set Architectures（指令集架构综述）（1270）
+			1. Introduction（介绍）（1271）
+			2. A Survey of RISC Architectures for Desktop, Server, and Embedded Computers（台式机、服务器和嵌入式计算机的 RISC 架构调查）（1272）
+				1. Introductio（介绍）（1272）
+				2. Addressing Modes and Instruction Formats（寻址模式和指令格式）（1275）
+				3. Instructions（指示）（1278）
+					1. RV64G Core Instructions（RV64G核心指令）（1280）
+					2. Compare and Conditional Branch（⽐较和条件分支）（1280）
+					3. RV64GC Core 16-bit Instructions（RV64GC  内核  16  位指令）（1285）
+				4. Instructions: Common Extensions beyond RV64G（说明：RV64G  之外的常见扩展）（1287）
+				5. Instructions Unique to MIPS64 R6（MIPS64  R6  特有的指令）（1288）
+				6. Instructions Unique to SPARC v.9（SPARC  v.9  特有的指令）（1289）
+					1. Register Windows（注册Windows）（1289）
+					2. Fast Traps（快速陷阱）（1289）
+					3. Support for LISP and Smalltalk（支持  LISP  和  Smalltalk）（1290）
+				7. Instructions Unique to ARM（ARM  独有的指令）（1291）
+				8. Instructions Unique to Power3（Power3  独有的指令）（1292）
+					1. Branch Registers: Link and Counter（分支寄存器：链接和计数器）（1294）
+				9. Instructions: Multimedia Extensions of the Desktop/Server RISCs（说明：桌面/服务器 RISC 的多媒体扩展）（1294）
+				10. Instructions: Digital Signal-Processing Extensions of the Embedded RISCs（指令：嵌入式 RISC 的数字信号处理扩展）（1297）
+				11. Concluding Remarks（结束语）（1298）
+			3. The Intel 80x86（英特尔  80x86）（1299）
+				1. Introduction（介绍）（1299）
+				2. 80x86 Registers and Data Addressing Modes（80x86  寄存器和数据寻址模式）（1301）
+				3. 80x86 Integer Operations（80x86  整数运算）（1304）
+				4. 80x86 Floating-Point Operations（80x86  浮点运算）（1307）
+				5. 80x86 Instruction Encoding（80x86指令编码）（1309）
+				6. Putting It All Together: Measurements of Instruction Set Usage（综合起来：指令集使用的测量）（1313）
+					1. Measurements of 80x86 Operand Addressing（80x86  操作数寻址的测量）（1313）
+					2. Comparative Operation Measurements（⽐较操作测量）（1315）
+				7. Concluding Remarks（结束语）（1318）
+					1. Beauty is in the eye of the beholder.（美在旁观者的眼中）（1318）
+			4. The VAX Architecture（VAX  架构）（1319）
+				1. Introduction（介绍）（1320）
+				2. VAX Operands and Addressing Modes（VAX  操作数和寻址模式）（1320）
+				3. Encoding VAX Instructions（编码  VAX  指令）（1323）
+				4. VAX Operations（VAX运营）（1324）
+					1. Number of Operations（操作次数）（1325）
+					2. Branches, Jumps, and Procedure Calls（分支、跳转和过程调用）（1326）
+				5. An Example to Put It All Together: swap（将所有内容放在一起的示例：交换）（1326）
+					1. Register Allocation for swap（登记交换分配）（1328）
+					2. Code for the Body of the Procedure swap（程序交换主体代码）（1328）
+					3. Preserving Registers across Procedure Invocation of swap（跨过程调用交换保留寄存器）（1329）
+					4. The Full Procedure swap（完整程序交换）（1330）
+				6. A Longer Example: sort（更长的例子：排序）（1331）
+					1. Register Allocation for sort（排序的寄存器分配）（1331）
+					2. Code for the Body of the sort Procedure（排序过程主体代码）（1331）
+						1. The Outer Loop（外环）（1331）
+						2. The Inner Loop（内循环）（1332）
+						3. The Procedure Call（过程调用）（1333）
+						4. Passing Parameters（传递参数）（1333）
+					3. Preserving Registers across Procedure Invocation of sort（跨过程调用保留寄存器）（1334）
+					4. The Full Procedure sort（完整程序排序）（1334）
+				7. Fallacies and Pitfalls（谬误和陷阱）（1334）
+				8. Concluding Remarks（结束语）（1336）
+			5. The IBM 360/370 Architecture for Mainframe Computers（大型计算机的  IBM  360/370  架构）（1338）
+				1. Introduction（介绍）（1338）
+				2. System/360 Instruction Set（System/360指令集）（1339）
+					1. Integer/Logical and Floating-Point R-R Instructions（整数/逻辑和浮点  RR  指令）（1339）
+					2. Branches and Status Setting R-R Instructions（分支和状态设置  RR  指令）（1340）
+					3. Branches/Logical and Floating-Point Instructions—RX Format（分支/逻辑和浮点指令  ‑  RX  格式）（1340）
+					4. Branches and Special Loads and Stores—RX Format（分支和特殊加载和存储  ‑  RX  格式）（1341）
+					5. RS and SI Format Instructions（RS  和  SI  格式指令）（1341）
+					6. SS Format Instructions（SS  格式说明）（1342）
+				3. 360 Detailed Measurements（360  度详细测量）（1342）
+			6. Historical Perspective and References（历史视角和参考文献）（1344）
+		19. Advanced Concepts on Address Translation（地址转换的高级概念）（1346）
+		20. Historical Perspectives and References（历史观点和参考）（1348）
+			1. Introduction（介绍）（1349）
+			2. The Early Development of Computers (Chapter 1)（计算机的早期发展（第一章））（1349）
+				1. The First General-Purpose Electronic Computers（第一台通用电子计算机）（1349）
+				2. Important Special-Purpose Machines（重要专用机）（1351）
+				3. Commercial Developments（商业发展）（1352）
+				4. Development of Quantitative Performance Measures: Successes and Failures（定量绩效衡量标准的制定：成功与失败）（1353）
+			3. The Development of Memory Hierarchy and Protection (Chapter 2 and Appendix B)（内存层次结构和保护的发展（第 2 章和附录 B））（1356）
+			4. The Evolution of Instruction Sets (Appendices A, J, and K)（指令集的演变（附录  A、J  和  K））（1364）
+				1. Stack Architectures（堆栈架构）（1364）
+				2. Computer Architecture Defined（计算机体系结构定义）（1365）
+				3. High-Level Language Computer Architecture（高级语言计算机体系结构）（1366）
+				4. Reduced Instruction Set Computers（精简指令集计算机）（1367）
+			5. The Development of Pipelining and Instruction-Level Parallelism (Chapter 3 and Appendices C and H)（流水线和指令级并行性的发展（第 3 章和附录 C 和 H））（1374）
+				1. Early Pipelined CPUs（早期的流水线CPU）（1374）
+				2. The Introduction of Dynamic Scheduling（动态调度简介）（1375）
+				3. The IBM 360 Model 91: A Landmark Computer（IBM  360  Model  91：具有里程碑意义的计算机）（1376）
+				4. Branch-Prediction Schemes（分支预测方案）（1376）
+				5. The Development of Multiple-Issue Processors（多问题处理器的发展）（1376）
+				6. Compiler Technology and Hardware Support for Scheduling（编译器技术和硬件对调度的支持）（1379）
+				7. EPIC and the IA-64 Development（EPIC  和  IA‑64  开发）（1380）
+				8. Studies of ILP and Ideas to Increase ILP（ILP研究及提高ILP的思路）（1380）
+				9. Going Beyond the Data Flow Limit（超越数据流限制）（1381）
+				10. Recent Advanced Microprocessors（最近的先进微处理器）（1382）
+				11. Multithreading and Simultaneous Multithreading（多线程和同时多线程）（1382）
+			6. The Development of SIMD Supercomputers, Vector Computers, Multimedia SIMD Instruction Extensions, and Graphical Processor Units (Chapter 4)（SIMD 超级计算机、矢量计算机、多媒体 SIMD 指令扩展和图形处理器单元的发展（第 4 章））（1392）
+				1. SIMD Supercomputers（SIMD超级计算机）（1392）
+				2. Vector Computers（矢量计算机）（1394）
+				3. Multimedia SIMD Instruction Extensions（多媒体  SIMD  指令扩展）（1396）
+				4. Graphical Processor Units（图形处理器单元）（1397）
+				5. Scalable GPUs（可扩展  GPU）（1398）
+				6. Graphics Pipelines（图形管道）（1398）
+				7. GPGPU: An Intermediate Step（GPGPU：中间步骤）（1399）
+				8. GPU Computing（GPU计算）（1399）
+			7. The History of Multiprocessors and Parallel Processing (Chapter 5 and Appendices F, G, and I)（多处理器和并行处理的历史（第 5 章和附录 F、G 和 I））（1402）
+				1. SIMD Computers: Attractive Idea, Many Attempts, No Lasting Successes（SIMD 计算机：有吸引力的想法，多次尝试，但没有持久的成功）（1402）
+				2. Other Early Experiments（其他早期实验）（1404）
+				3. Great Debates in Parallel Processing（并行处理中的大争论）（1404）
+				4. More Recent Advances and Developments（最近的进展和发展）（1406）
+					1. The Development of Bus-Based Coherent Multiprocessors（基于总线的相干多处理器的发展）（1406）
+				5. Toward Large-Scale Multiprocessors（迈向大规模多处理器）（1407）
+				6. Clusters（集群）（1409）
+					1. Recent Trends in Large-Scale Multiprocessors（大规模多处理器的最新趋势）（1410）
+					2. Developments in Synchronization and Consistency Models（同步和一致性模型的发展）（1411）
+				7. Other References（其他参考资料）（1412）
+			8. The Development of Clusters (Chapter 6)（集群的发展（第6  章））（1421）
+				1. Clusters, the Forerunner of WSCs（集群，WSC的先驱）（1421）
+				2. Utility Computing, the Forerunner of Cloud Computing（效用计算，云计算的先驱）（1422）
+				3. Containers（集装箱）（1423）
+			9. Historical Perspectives and References（历史观点和参考）（1426）
+			10. The History of Magnetic Storage, RAID, and I/O Buses (Appendix D)（磁性存储、RAID 和 I/O 总线的历史（附录 D））（1431）
+				1. Magnetic Storage（磁存储）（1432）
+				2. RAID（1433）
+				3. I/O Buses and Controllers（I/O  总线和控制器）（1435）
+	5. MODERN OPERATING SYSTEMS（现代操作系统）
+		1. INTRODUCTION（介绍）（33）
+			1. WHAT IS AN OPERATING SYSTEM?（什么是操作系统？）（35）
+				1. The Operating System as an Extended Machine（操作系统作为扩展机器）（36）
+				2. The Operating System as a Resource Manager（操作系统作为资源管理器）（37）
+			2. HISTORY OF OPERATING SYSTEMS（操作系统的历史）（38）
+				1. The First Generation (1945–55): Vacuum Tubes（第一代（1945‑55）：真空管）（39）
+				2. The Second Generation (1955–65): Transistors and Batch Systems（第二代（1955‑65）：晶体管和批处理系统）（40）
+				3. The Third Generation (1965–1980): ICs and Multiprogramming（第三代（1965‑1980）：IC  和多道程序设计）（41）
+				4. The Fourth Generation (1980–Present): Personal Computers（第四代（1980年至今）：个人计算机）（47）
+				5. The Fifth Generation (1990–Present): Mobile Computers（第五代（1990年至今）：移动数据终端）（51）
+			3. COMPUTER HARDWARE REVIEW（计算机硬件回顾）（52）
+				1. Processors（处理器）（53）
+					1. Multithreaded and Multicore Chips（多线程和多核芯片）（55）
+				2. Memory（内存）（56）
+				3. Disks（磁盘）（59）
+				4. I/O Devices（输入/输出设备）（60）
+				5. Buses（公交车）（64）
+				6. Booting the Computer（启动计算机）（66）
+			4. THE OPERATING SYSTEM ZOO（操作系统动物园）（67）
+				1. Mainframe Operating Systems（大型机操作系统）（67）
+				2. Server Operating Systems（服务器操作系统）（67）
+				3. Multiprocessor Operating Systems（多处理器操作系统）（68）
+				4. Personal Computer Operating Systems（个人计算机操作系统）（68）
+				5. Handheld Computer Operating Systems（手持计算机操作系统）（68）
+				6. Embedded Operating Systems（嵌入式操作系统）（69）
+				7. Sensor-Node Operating Systems（传感器节点操作系统）（69）
+				8. Real-Time Operating Systems（实时操作系统）（69）
+				9. Smart Card Operating Systems（智能卡操作系统）（70）
+			5. OPERATING SYSTEM CONCEPTS（操作系统概念）（70）
+				1. Processes（流程）（71）
+				2. Address Spaces（地址空间）（73）
+				3. Files（文件）（73）
+				4. Input/Output（输入/输出）（77）
+				5. Protection（保护）（77）
+				6. The Shell（外壳）（77）
+				7. Ontogeny Recapitulates Phylogeny（个体发育概括系统发育）（79）
+					1. Large Memories（丰富的回忆）（80）
+					2. Protection Hardware（保护硬件）（80）
+					3. Disks（磁盘）（81）
+					4. Virtual Memory（虚拟内存）（82）
+			6. SYSTEM CALLS（系统调用）（82）
+				1. System Calls for Process Management（进程管理的系统调用）（85）
+				2. System Calls for File Management（文件管理的系统调用）（88）
+				3. System Calls for Directory Management（目录管理的系统调用）（89）
+				4. Miscellaneous System Calls（各种系统调用）（91）
+				5. The Windows Win32 API（92）
+			7. OPERATING SYSTEM STRUCTURE（操作系统结构）（94）
+				1. Monolithic Systems（单体系统）（95）
+				2. Layered Systems（分层系统）（96）
+				3. Microkernels（微内核）（97）
+				4. Client-Server Model（客户端‑服务器模型）（100）
+				5. Virtual Machines（虚拟机）（101）
+					1. VM/370（101）
+					2. Virtual Machines Rediscovered（重新发现虚拟机）（102）
+					3. The Jav a Virtual Machine（Java  虚拟机）（104）
+				6. Exokernels（外核）（105）
+			8. THE WORLD ACCORDING TO C（C  的世界）（105）
+				1. The C Language（C语言）（105）
+				2. Header Files（头文件）（106）
+				3. Large Programming Projects（大型编程项目）（107）
+				4. The Model of Run Time（运行时模型）（108）
+			9. RESEARCH ON OPERATING SYSTEMS（操作系统研究）（109）
+			10. OUTLINE OF THE REST OF THIS BOOK（本书其余部分的概述）（110）
+			11. METRIC UNITS（公制单位）（111）
+			12. SUMMARY（总结）（112）
+		2. PROCESSES AND THREADS（进程和线程）（117）
+			1. PROCESSES（流程）（117）
+				1. The Process Model（过程模型）（118）
+				2. Process Creation（流程创建）（120）
+				3. Process Termination（进程终止）（122）
+				4. Process Hierarchies（流程层次结构）（123）
+				5. Process States（进程状态）（124）
+				6. Implementation of Processes（流程的实施）（126）
+				7. Modeling Multiprogramming（多道程序设计建模）（127）
+			2. THREADS（线程）（129）
+				1. Thread Usage（线程使用）（129）
+				2. The Classical Thread Model（经典线程模型）（134）
+				3. POSIX Threads（POSIX  线程）（138）
+				4. Implementing Threads in User Space（在用户空间实现线程）（140）
+				5. Implementing Threads in the Kernel（在内核中实现线程）（143）
+				6. Hybrid Implementations（混合实现）（144）
+				7. Scheduler Activations（调度程序激活）（145）
+				8. Pop-Up Threads（弹出线程）（146）
+				9. Making Single-Threaded Code Multithreaded（将单线程代码变成多线程）（148）
+			3. INTERPROCESS COMMUNICATION（进程间通信）（151）
+				1. Race Conditions（竞争条件）（151）
+				2. Critical Regions（关键区域）（153）
+				3. Mutual Exclusion with Busy Waiting（忙等待互斥）（154）
+					1. Disabling Interrupts（禁用中断）（154）
+					2. Lock Variables（锁定变量）（155）
+					3. Strict Alternation（严格交替）（155）
+					4. Peterson’s Solution（彼得森的解决方案）（156）
+					5. The TSL Instruction（TSL指令）（158）
+				4. Sleep and Wakeup（睡眠和唤醒）（159）
+					1. The Producer-Consumer Problem（生产者‑消费者问题）（160）
+				5. Semaphores（信号量）（162）
+					1. Solving the Producer-Consumer Problem Using Semaphores（使用信号量解决生产者‑消费者问题）（162）
+				6. Mutexes（互斥体）（164）
+					1. Futexes（166）
+					2. Mutexes in Pthreads（Pthread  中的互斥体）（167）
+				7. Monitors（监视器）（169）
+				8. Message Passing（消息传递）（176）
+					1. Design Issues for Message-Passing Systems（消息传递系统的设计问题）（176）
+					2. The Producer-Consumer Problem with Message Passing（消息传递的生产者‑消费者问题）（177）
+				9. Barriers（障碍）（178）
+				10. Avoiding Locks: Read-Copy-Update（避免锁：读‑复制‑更新）（180）
+			4. SCHEDULING（调度）（181）
+				1. Introduction to Scheduling（调度简介）（182）
+					1. Process Behavior（进程行为）（183）
+					2. When to Schedule（何时安排）（184）
+					3. Categories of Scheduling Algorithms（调度算法分类）（185）
+					4. Scheduling Algorithm Goals（调度算法目标）（186）
+				2. Scheduling in Batch Systems（批处理系统中的调度）（188）
+					1. First-Come, First-Served（先到先得）（188）
+					2. Shortest Job First（最短工作优先）（189）
+					3. Shortest Remaining Time Next（下一个剩余时间最短）（190）
+				3. Scheduling in Interactive Systems（交互式系统中的调度）（190）
+					1. Round-Robin Scheduling（循环调度）（190）
+					2. Priority Scheduling（优先级调度）（191）
+					3. Multiple Queues（多个队列）（193）
+					4. Shortest Process Next（最短流程  接下来）（194）
+					5. Guaranteed Scheduling（保证调度）（194）
+					6. Lottery Scheduling（彩票安排）（195）
+					7. Fair-Share Scheduling（公平份额调度）（195）
+				4. Scheduling in Real-Time Systems（实时系统中的调度）（196）
+				5. Policy Versus Mechanism（政策与机制）（197）
+				6. Thread Scheduling（线程调度）（198）
+			5. CLASSICAL IPC PROBLEMS（经典IPC问题）（199）
+				1. The Dining Philosophers Problem（哲学家就餐问题）（199）
+				2. The Readers and Writers Problem（读者和作者问题）（203）
+			6. RESEARCH ON PROCESSES AND THREADS（进程和线程的研究）（204）
+			7. SUMMARY（总结）（205）
+		3. MEMORY MANAGEMENT（内存管理）（213）
+			1. NO MEMORY ABSTRACTION（无内存抽象）（214）
+				1. Running Multiple Programs Without a Memory Abstraction（在没有内存抽象的情况下运行多个程序）（215）
+			2. A MEMORY ABSTRACTION: ADDRESS SPACES（存储器抽象：地址空间）（217）
+				1. The Notion of an Address Space（地址空间的概念）（218）
+					1. Base and Limit Registers（基址和限制寄存器）（218）
+				2. Swapping（交换）（219）
+				3. Managing Free Memory（管理空闲内存）（222）
+					1. Memory Management with Bitmaps（位图内存管理）（223）
+					2. Memory Management with Linked Lists（使用链表进行内存管理）（224）
+			3. VIRTUAL MEMORY（虚拟内存）（226）
+				1. Paging（分页）（227）
+				2. Page Tables（页表）（230）
+					1. Structure of a Page Table Entry（页表项的结构）（231）
+				3. Speeding Up Paging（加速分页）（233）
+					1. Translation Lookaside Buffers（翻译后备缓冲区）（234）
+					2. Software TLB Management（软件TLB管理）（235）
+				4. Page Tables for Large Memories（大内存的页表）（237）
+					1. Multilevel Page Tables（多级页表）（237）
+					2. Inverted Page Tables（倒排页表）（239）
+			4. PAGE REPLACEMENT ALGORITHMS（页面替换算法）（241）
+				1. The Optimal Page Replacement Algorithm（最优页面替换算法）（241）
+				2. The Not Recently Used Page Replacement Algorithm（最近未使用的页面替换算法）（242）
+				3. The First-In, First-Out (FIFO) Page Replacement Algorithm（先进先出（FIFO）页面替换算法）（243）
+				4. The Second-Chance Page Replacement Algorithm（第二次机会页面替换算法）（244）
+				5. The Clock Page Replacement Algorithm（时钟页面替换算法）（244）
+				6. The Least Recently Used (LRU) Page Replacement Algorithm（最近最少使用（LRU）页面替换算法）（245）
+				7. Simulating LRU in Software（用软件模拟LRU）（246）
+				8. The Working Set Page Replacement Algorithm（工作集页面替换算法）（247）
+				9. The WSClock Page Replacement Algorithm（WSClock页面替换算法）（251）
+				10. Summary of Page Replacement Algorithms（页面替换算法总结）（253）
+			5. DESIGN ISSUES FOR PAGING SYSTEMS（寻呼系统的设计问题）（254）
+				1. Local versus Global Allocation Policies（本地分配策略与全局分配策略）（254）
+				2. Load Control（负载控制）（257）
+				3. Page Size（页面大小）（257）
+				4. Separate Instruction and Data Spaces（独立的指令和数据空间）（259）
+				5. Shared Pages（共享页）（260）
+				6. Shared Libraries（共享库）（261）
+				7. Mapped Files（映射文件）（263）
+				8. Cleaning Policy（清洁政策）（264） 
+				9. Virtual Memory Interface（虚拟内存接口）（264）
+			6. IMPLEMENTATION ISSUES（实施问题）（265）
+				1. Operating System Involvement with Paging（操作系统与分页的关系）（265）
+				2. Page Fault Handling（页面错误处理）（266）
+				3. Instruction Backup（指令备份）（267）
+				4. Locking Pages in Memory（锁定内存中的页面）（269）
+				5. Backing Store（后备存储）（269）
+				6. Separation of Policy and Mechanism（政策与机制分离）（271）
+			7. SEGMENTATION（细分）（272）
+				1. Implementation of Pure Segmentation（纯分割的实现）（275）
+				2. Segmentation with Paging: MULTICS（分页分段：MULTICS）（275）
+				3. Segmentation with Paging: The Intel x86（分段与分页：Intel  x86）（279）
+			8. RESEARCH ON MEMORY MANAGEMENT（内存管理研究）（284）
+			9. SUMMARY（总结）（285）
+		4. FILE SYSTEMS（文件系统）（295）
+			1. FILES（文件）（297）
+				1. File Naming（文件命名）（297）
+				2. File Structure（文件结构）（299）
+				3. File Types（文件类型）（300）
+				4. File Access（文件访问）（302）
+				5. File Attributes（文件属性）（303）
+				6. File Operations（文件操作）（304）
+				7. An Example Program Using File-System Calls（使用文件系统调用的示例程序）（305）
+			2. DIRECTORIES（目录）（308）
+				1. Single-Level Directory Systems（单级目录系统）（308）
+				2. Hierarchical Directory Systems（分层目录系统）（308）
+				3. Path Names（路径名）（309）
+				4. Directory Operations（目录操作）（312）
+			3. FILE-SYSTEM IMPLEMENTATION（文件系统实现）（313）
+				1. File-System Layout（文件系统布局）（313）
+				2. Implementing Files（实现文件）（314）
+					1. Contiguous Allocation（连续分配）（314）
+					2. Linked-List Allocation（链表分配）（316）
+					3. Linked-List Allocation Using a Table in Memory（使用内存中的表进行链表分配）（317）
+					4. I-nodes（I节点）（318）
+				3. Implementing Directories（实施目录）（320）
+				4. Shared Files（共享文件）（322）
+				5. Log-Structured File Systems（日志结构文件系统）（325）
+				6. Journaling File Systems（日志文件系统）（327）
+				7. Virtual File Systems（虚拟文件系统）（328）
+			4. FILE-SYSTEM MANAGEMENT AND OPTIMIZATION（文件系统管理和优化）（331）
+				1. Disk-Space Management（磁盘空间管理）（332）
+					1. Block Size（块大小）（332）
+					2. Keeping Track of Free Blocks（跟踪空闲块）（335）
+					3. Disk Quotas（磁盘配额）（337）
+				2. File-System Backups（文件系统备份）（338）
+				3. File-System Consistency（文件系统一致性）（344）
+				4. File-System Performance（文件系统性能）（346）
+					1. Caching（缓存）（347）
+					2. Block Read Ahead（块预读）（349）
+					3. Reducing Disk-Arm Motion（减少磁盘臂运动）（350）
+				5. Defragmenting Disks（磁盘碎片整理）（351）
+			5. EXAMPLE FILE SYSTEMS（文件系统示例）（352）
+				1. The MS-DOS File System（MS‑DOS  文件系统）（352）
+				2. The UNIX V7 File System（UNIX  V7  文件系统）（355）
+				3. CD-ROM File Systems（CD‑ROM  文件系统）（357）
+					1. The ISO 9660 File System（ISO  9660  文件系统）（358）
+					2. Rock Ridge Extensions（岩脊延伸）（361）
+					3. Joliet Extensions（乔利埃特扩展）（362）
+			6. RESEARCH ON FILE SYSTEMS（文件系统研究）（363）
+			7. SUMMARY（总结）（364）
+		5. INPUT/OUTPUT（输入输出）（369）
+			1. PRINCIPLES OF I/O HARDWARE（I/O硬件原理）（369）
+				1. I/O Devices（I/O  设备）（370）
+				2. Device Controllers（设备控制器）（371）
+				3. Memory-Mapped I/O（内存映射  I/O）（372）
+				4. Direct Memory Access（直接内存访问）（376）
+				5. Interrupts Revisited（回顾中断）（379）
+					1. Precise and Imprecise Interrupts（精确和不精确中断）（381）
+			2. PRINCIPLES OF I/O SOFTWARE（I/O  软件原理）（383）
+				1. Goals of the I/O Software（I/O  软件的目标）（383）
+				2. Programmed I/O（编程  I/O）（384）
+				3. Interrupt-Driven I/O（中断驱动  I/O）（386）
+				4. I/O Using DMA（使用  DMA  的  I/O）（387）
+			3. I/O SOFTWARE LAYERS（I/O  软件层）（388）
+				1. Interrupt Handlers（中断处理程序）（388）
+				2. Device Drivers（设备驱动程序）（389）
+				3. Device-Independent I/O Software（设备无关的  I/O  软件）（393）
+					1. Uniform Interfacing for Device Drivers（设备驱动程序的统一接口）（394）
+					2. Buffering（缓冲）（395）
+					3. Error Reporting（错误报告）（398）
+					4. Allocating and Releasing Dedicated Devices（分配和释放专用设备）（398）
+					5. Device-Independent Block Size（与设备无关的块大小）（399）
+				4. User-Space I/O Software（用户空间  I/O  软件）（399）
+			4. DISKS（磁盘）（401）
+				1. Disk Hardware（磁盘硬件）（401）
+					1. Magnetic Disks（磁盘）（401）
+					2. RAID（403）
+				2. Disk Formatting（磁盘格式化）（407）
+				3. Disk Arm Scheduling Algorithms（磁盘臂调度算法）（411）
+				4. Error Handling（错误处理）（414）
+				5. Stable Storage（稳定存储）（417）
+			5. CLOCKS（时钟）（420）
+				1. Clock Hardware（时钟硬件）（420）
+				2. Clock Software（时钟软件）（422）
+				3. Soft Timers（软定时器）（424）
+			6. USER INTERFACES: KEYBOARD, MOUSE, MONITOR（用户界面：键盘、鼠标、显示器）（426）
+				1. Input Software（输入软件）（426）
+					1. Keyboard Software（键盘软件）（426）
+					2. Mouse Software（鼠标软件）（430）
+				2. Output Software（输出软件）（431）
+					1. Text Windows（文本窗口）（431）
+					2. The X Window System（X  窗口系统）（433）
+					3. Graphical User Interfaces（图形用户界面）（437）
+					4. Bitmaps（位图）（443）
+					5. Fonts（字体）（445）
+					6. Touch Screens（触摸屏）（446）
+			7. THIN CLIENTS（瘦客户端）（448）
+			8. POWER MANAGEMENT（电源管理）（449）
+				1. Hardware Issues（硬件问题）（450）
+				2. Operating System Issues（操作系统问题）（451）
+					1. The Display（显示器）（452）
+					2. The Hard Disk（硬盘）（452）
+					3. The CPU（中央处理器）（453）
+					4. The Memory（记忆）（455）
+					5. Wireless Communication（无线通信）（455）
+					6. Thermal Management（热管理）（456）
+					7. Battery Management（电池管理）（456）
+					8. Driver Interface（驱动接口）（457）
+				3. Application Program Issues（应用程序问题）（457）
+			9. RESEARCH ON INPUT/OUTPUT（输入/输出研究）（458）
+			10. SUMMARY（总结）（460）
+		6. DEADLOCKS（僵局）（467）
+			1. RESOURCES（资源）（468）
+				1. Preemptable and Nonpreemptable Resources（可抢占和不可抢占资源）（468）
+				2. Resource Acquisition（资源获取）（469）
+			2. INTRODUCTION TO DEADLOCKS（死锁简介）（471）
+				1. Conditions for Resource Deadlocks（资源死锁的条件）（472）
+				2. Deadlock Modeling（死锁建模）（472）
+			3. THE OSTRICH ALGORITHM（鸵鸟算法）（475）
+			4. DEADLOCK DETECTION AND RECOVERY（死锁检测和恢复）（475）
+				1. Deadlock Detection with One Resource of Each Type（每种类型一个资源的死锁检测）（476）
+				2. Deadlock Detection with Multiple Resources of Each Type（每种类型的多个资源的死锁检测）（478）
+				3. Recovery from Deadlock（死锁恢复）（481）
+					1. Recovery through Preemption（通过抢占恢复）（481）
+					2. Recovery through Rollback（通过回滚恢复）（481）
+					3. Recovery through Killing Processes（通过杀戮过程恢复）（482）
+			5. DEADLOCK AV OIDANCE（避免死锁）（482）
+				1. Resource Trajectories（资源轨迹）（482）
+				2. Safe and Unsafe States（安全和不安全状态）（484）
+				3. The Banker’s Algorithm for a Single Resource（单一资源的银行家算法）（485）
+				4. The Banker’s Algorithm for Multiple Resources（多种资源的银行家算法）（486）
+			6. DEADLOCK PREVENTION（死锁预防）（488）
+				1. Attacking the Mutual-Exclusion Condition（攻击互斥条件）（488）
+				2. Attacking the Hold-and-Wait Condition（攻击保持等待条件）（488）
+				3. Attacking the No-Preemption Condition（攻击无抢占条件）（489）
+				4. Attacking the Circular Wait Condition（攻击循环等待条件）（489）
+			7. OTHER ISSUES（其他问题）（490）
+				1. Two-Phase Locking（两相锁定）（491）
+				2. Communication Deadlocks（通信死锁）（491）
+				3. Livelock（活锁）（493）
+				4. Starvation（饥饿）（495）
+			8. RESEARCH ON DEADLOCKS（僵局研究）（496）
+			9. SUMMARY（总结）（496）
+		7. VIRTUALIZATION AND THE CLOUD（虚拟化和云）（503）
+			1. HISTORY（历史）（505）
+			2. REQUIREMENTS FOR VIRTUALIZATION（虚拟化要求）（506）
+			3. TYPE 1 AND TYPE 2 HYPERVISORS（类型  1  和类型  2  管理程序）（509）
+			4. TECHNIQUES FOR EFFICIENT VIRTUALIZATION（高效虚拟化技术）（510）
+				1. Virtualizing the Unvirtualizable（虚拟化不可虚拟化）（511）
+				2. The Cost of Virtualization（虚拟化的成本）（514）
+			5. ARE HYPERVISORS MICROKERNELS DONE RIGHT?（管理程序微内核做得正确吗？）（515）
+			6. MEMORY VIRTUALIZATION（内存虚拟化）（518）
+				1. Hardware Support for Nested Page Tables（嵌套页表的硬件支持）（520）
+				2. Reclaiming Memory（回收记忆）（520）
+			7. I/O VIRTUALIZATION（I/O  虚拟化）（522）
+				1. I/O MMUs（522）
+				2. Device Domains（设备域）（524）
+				3. Single Root I/O Virtualization（单根  I/O  虚拟化）（524）
+			8. VIRTUAL APPLIANCES（虚拟设备）（525）
+			9. VIRTUAL MACHINES ON MULTICORE CPUS（多核  CPU  上的虚拟机）（526）
+			10. LICENSING ISSUES（许可问题）（526）
+			11. CLOUDS（云）（527）
+				1. Clouds as a Service（云即服务）（528）
+				2. Virtual Machine Migration（虚拟机迁移）（528）
+				3. Checkpointing（检查点）（529）
+			12. CASE STUDY: VMWARE（案例研究：VMWARE）（530）
+				1. The Early History of VMware（VMware  的早期历史）（530）
+				2. VMware Workstation（VMware  工作站）（531）
+				3. Challenges in Bringing Virtualization to the x86（将虚拟化引入  x86  的挑战）（532）
+				4. VMware Workstation: Solution Overview（VMware  Workstation：解决方案概述）（534）
+					1. Virtualizing the x86 Architecture（虚拟化  x86  架构）（534）
+					2. A Guest Operating System Centric Strategy（以客户操作系统为中心的策略）（537）
+					3. The Virtual Hardware Platform（虚拟硬件平台）（538）
+					4. The Role of the Host Operating System（主机操作系统的作用）（540）
+				5. The Evolution of VMware Workstation（VMware  Workstation  的演变）（543）
+				6. ESX Server: VMware’s type 1 Hypervisor（ESX  Server：VMware  的  1  类虚拟机管理程序）（544）
+			13. RESEARCH ON VIRTUALIZATION AND THE CLOUD（虚拟化和云研究）（546）
+		8. MULTIPLE PROCESSOR SYSTEMS（多处理器系统）（549）
+			1. MULTIPROCESSORS（多处理器）（552）
+				1. Multiprocessor Hardware（多处理器硬件）（552）
+					1. UMA Multiprocessors with Bus-Based Architectures（具有基于总线架构的  UMA  多处理器）（552）
+					2. UMA Multiprocessors Using Crossbar Switches（使用交叉开关的  UMA  多处理器）（553）
+					3. UMA Multiprocessors Using Multistage Switching Networks（使用多级交换网络的  UMA  多处理器）（555）
+					4. NUMA Multiprocessors（NUMA  多处理器）（557）
+					5. Multicore Chips（多核芯片）（559）
+					6. Manycore Chips（众核芯片）（560）
+					7. Heterogeneous Multicores（异构多核）（561）
+					8. Programming with Multiple Cores（多核编程）（562）
+				2. Multiprocessor Operating System Types（多处理器操作系统类型）（563）
+					1. Each CPU Has Its Own Operating System（每个CPU都有自己的操作系统）（563）
+					2. Master-Slave Multiprocessors（主从多处理器）（564）
+					3. Symmetric Multiprocessors（对称多处理器）（565）
+				3. Multiprocessor Synchronization（多处理器同步）（566）
+					1. Spinning vs. Switching（旋转与切换）（569）
+				4. Multiprocessor Scheduling（多处理器调度）（571）
+					1. Time Sharing（分时）（572）
+					2. Space Sharing（空间共享）（574）
+					3. Gang Scheduling（帮派调度）（575）
+			2. MULTICOMPUTERS（多计算机）（577）
+				1. Multicomputer Hardware（多计算机硬件）（578）
+					1. Interconnection Technology（互连技术）（578）
+					2. Network Interfaces（网络接口）（580）
+				2. Low-Level Communication Software（底层通信软件）（582）
+					1. Node-to-Network Interface Communication（节点到网络接口通信）（583）
+					2. Remote Direct Memory Access（远程直接内存访问）（584）
+				3. User-Level Communication Software（用户级通信软件）（585）
+					1. Send and Receive（发送和接收）（585）
+					2. Blocking versus Nonblocking Calls（阻塞调用与非阻塞调用）（585）
+				4. Remote Procedure Call（远程过程调用）（588）
+					1. Implementation Issues（实施问题）（589）
+				5. Distributed Shared Memory（分布式共享内存）（590）
+					1. Replication（复制）（593）
+					2. False Sharing（虚假分享）（593）
+					3. Achieving Sequential Consistency（实现顺序一致性）（594）
+				6. Multicomputer Scheduling（多机调度）（595）
+				7. Load Balancing（负载均衡）（595）
+					1. A Graph-Theoretic Deterministic Algorithm（图论确定性算法）（596）
+					2. A Sender-Initiated Distributed Heuristic Algorithm（发送者发起的分布式启发式算法）（597）
+					3. A Receiver-Initiated Distributed Heuristic Algorithm（接收者发起的分布式启发式算法）（598）
+			3. DISTRIBUTED SYSTEMS（分布式系统）（598）
+				1. Network Hardware（网络硬件）（600）
+					1. Ethernet（以太网）（601）
+					2. The Internet（互联网）（603）
+				2. Network Services and Protocols（网络服务和协议）（604）
+					1. Network Services（网络服务）（604）
+					2. Network Protocols（网络协议）（606）
+				3. Document-Based Middleware（基于文档的中间件）（608）
+				4. File-System-Based Middleware（基于文件系统的中间件）（609）
+					1. Transfer Model（转移模型）（609）
+					2. The Directory Hierarchy（目录层次结构）（610）
+					3. Naming Transparency（命名透明度）（611）
+					4. Semantics of File Sharing（文件共享的语义）（612）
+				5. Object-Based Middleware（基于对象的中间件）（614）
+				6. Coordination-Based Middleware（基于协调的中间件）（616）
+					1. Publish/Subscribe（发布/订阅）（618）
+			4. RESEARCH ON MULTIPLE PROCESSOR SYSTEMS（多处理器系统的研究）（619）
+			5. SUMMARY（总结）（620）
+		9. SECURITY（安全）（625）
+			1. THE SECURITY ENVIRONMENT（安全环境）（627）
+				1. Threats（威胁）（628）
+				2. Attackers（攻击者）（631）
+			2. OPERATING SYSTEMS SECURITY（操作系统安全）（631）
+				1. Can We Build Secure Systems?（我们可以构建安全的系统吗？）（632）
+				2. Trusted Computing Base（可信计算库）（633）
+			3. CONTROLLING ACCESS TO RESOURCES（控制对资源的访问）（634）
+				1. Protection Domains（保护域）（635）
+				2. Access Control Lists（访问控制列表）（637）
+				3. Capabilities（能力）（640）
+			4. FORMAL MODELS OF SECURE SYSTEMS（安全系统的形式模型）（643）
+				1. Multilevel Security（多级安全）（644）
+					1. The Bell-LaPadula Model（贝尔‑拉帕杜拉模型）（645）
+					2. The Biba Model（比巴模型）（646）
+				2. Covert Channels（隐蔽通道）（647）
+					1. Steganography（隐写术）（649）
+			5. BASICS OF CRYPTOGRAPHY（密码学基础）（651）
+				1. Secret-Key Cryptography（秘密密钥密码术）（652）
+				2. Public-Key Cryptography（公钥密码术）（653）
+				3. One-Way Functions（单向函数）（654）
+				4. Digital Signatures（数字签名）（655）
+				5. Trusted Platform Modules（可信平台模块）（656）
+			6. AUTHENTICATION（认证）（658）
+				1. Weak Passwords（弱密码）（662）
+				2. UNIX Password Security（UNIX  密码安全）（662）
+				3. One-Time Passwords（一次性密码）（663）
+				4. Challenge-Response Authentication（质询‑响应认证）（664）
+				5. Authentication Using a Physical Object（使用物理对象进行身份验证）（665）
+				6. Authentication Using Biometrics（使用生物识别技术进行身份验证）（668）
+			7. EXPLOITING SOFTWARE（利用软件）（671）
+				1. Buffer Overflow Attacks（缓冲区溢出攻击）（672）
+					1. Stack Canaries（堆栈金丝雀）（674）
+					2. Av oiding Stack Canaries（避免堆栈金丝雀）（675）
+					3. Data Execution Prev ention（数据执行保护）（676）
+					4. Code Reuse Attacks（代码重用攻击）（677）
+					5. Address-Space Layout Randomization（地址空间布局随机化）（679）
+					6. Bypassing ASLR（绕过ASLR）（679）
+					7. Noncontrol-Flow Diverting Attacks（非控制流转移攻击）（680）
+					8. Buffer Overflows—The Not So Final Word（缓冲区溢出）（681）
+				2. Format String Attacks（格式化字符串攻击）（681）
+				3. Dangling Pointers（悬空指针）（684）
+				4. Null Pointer Dereference Attacks（空指针解引用攻击）（685）
+				5. Integer Overflow Attacks（整数溢出攻击）（686）
+				6. Command Injection Attacks（命令注入攻击）（687）
+				7. Time of Check to Time of Use Attacks（检查时间到使用时间攻击）（688）
+			8. INSIDER ATTA CKS（内部攻击）（689）
+				1. Logic Bombs（逻辑炸弹）（689）
+				2. Back Doors（后门）（690）
+				3. Login Spoofing（登录欺骗）（691）
+			9. MALWARE（恶意软件）（692）
+				1. Trojan Horses（特洛伊木马）（695）
+				2. Viruses（病毒）（696）
+					1. How Viruses Work（病毒如何工作）（697）
+					2. Companion Viruses（伴随病毒）（697）
+					3. Executable Program Viruses（可执行程序病毒）（698）
+					4. Memory-Resident Viruses（内存驻留病毒）（701）
+					5. Boot Sector Viruses（引导扇区病毒）（701）
+					6. Device Driver Viruses（设备驱动程序病毒）（703）
+					7. Macro Viruses（宏病毒）（703）
+					8. Source Code Viruses（源代码病毒）（704）
+					9. How Viruses Spread（病毒如何传播）（704）
+				3. Worms（蠕虫）（706）
+				4. Spyware（间谍软件）（708）
+					1. How Spyware Spreads（间谍软件如何传播）（709）
+					2. Actions Taken by Spyware（间谍软件采取的行动）（711）
+				5. Rootkits（712）
+					1. Types of Rootkits（Rootkit  的类型）（712）
+					2. Rootkit Detection（Rootkit检测）（713）
+					3. The Sony Rootkit（索尼  Rootkit）（715）
+			10. DEFENSES（防御）（716）
+				1. Firewalls（防火墙）（717）
+				2. Antivirus and Anti-Antivirus Techniques（防病毒和反防病毒技术）（719）
+					1. Virus Scanners（病毒扫描仪）（719）
+					2. Integrity Checkers（完整性检查器）（723）
+					3. Behavioral Checkers（行为检查器）（723）
+					4. Virus Avoidance（避免病毒）（724）
+				3. Code Signing（代码签名）（725）
+				4. Jailing（监禁）（726）
+				5. Model-Based Intrusion Detection（基于模型的入侵检测）（727）
+				6. Encapsulating Mobile Code（封装移动代码）（729）
+					1. Sandboxing（沙盒）（730）
+					2. Interpretation（解释）（732）
+				7. Jav a Security（Java  安全）（733）
+			11. RESEARCH ON SECURITY（安全研究）（735）
+			12. SUMMARY（小结）（736）
+		10. CASE STUDY 1: UNIX, LINUX, AND ANDROID（案例研究 1：UNIX、Linux 和 ANDROID）（745）
+			1. HISTORY OF UNIX AND LINUX（UNIX  和  Linux  的历史）（746）
+				1. UNICS（746）
+				2. PDP-11 UNIX（747）
+				3. Portable UNIX（便携式  UNIX）（748）
+				4. Berkeley UNIX（伯克利UNIX）（749）
+				5. Standard UNIX（标准  UNIX）（750）
+				6. MINIX（751）
+				7. Linux（752）
+			2. OVERVIEW OF LINUX（Linux  概述）（755）
+				1. Linux Goals（Linux  目标）（755）
+				2. Interfaces to Linux（Linux  接口）（756）
+				3. The Shell（外壳）（758）
+				4. Linux Utility Programs（Linux  实用程序）（761）
+				5. Kernel Structure（内核结构）（763）
+			3. PROCESSES IN LINUX（Linux  中的进程）（765）
+				1. Fundamental Concepts（基本概念）（765）
+				2. Process-Management System Calls in Linux（Linux  中的进程管理系统调用）（768）
+				3. Implementation of Processes and Threads in Linux（Linux中进程和线程的实现）（772）
+					1. Threads in Linux（Linux  中的线程）（775）
+				4. Scheduling in Linux（Linux  中的调度）（778）
+					1. Synchronization in Linux（Linux  中的同步）（782）
+				5. Booting Linux（引导  Linux）（783）
+			4. MEMORY MANAGEMENT IN LINUX（Linux  中的内存管理）（785）
+				1. Fundamental Concepts（基本概念）（786）
+				2. Memory Management System Calls in Linux（Linux  中的内存管理系统调用）（788）
+				3. Implementation of Memory Management in Linux（Linux内存管理的实现）（790）
+					1. Physical Memory Management（物理内存管理）（790）
+					2. Memory-Allocation Mechanisms（内存分配机制）（793）
+					3. Virtual Address-Space Representation（虚拟地址空间表示）（795）
+				4. Paging in Linux（Linux  中的分页）（796）
+					1. The Page Replacement Algorithm（页面替换算法）（797）
+			5. INPUT/OUTPUT IN LINUX（Linux  中的输入/输出）（799）
+				1. Fundamental Concepts（基本概念）（799）
+				2. Networking（网络）（801）
+				3. Input/Output System Calls in Linux（Linux  中的输入/输出系统调用）（802）
+				4. Implementation of Input/Output in Linux（Linux中输入/输出的实现）（803）
+				5. Modules in Linux（Linux  中的模块）（806）
+			6. THE LINUX FILE SYSTEM（Linux  文件系统）（807）
+				1. Fundamental Concepts（基本概念）（807）
+				2. File-System Calls in Linux（Linux  中的文件系统调用）（812）
+				3. Implementation of the Linux File System（Linux文件系统的实现）（816）
+					1. The Linux Virtual File System（Linux  虚拟文件系统）（816）
+					2. The Linux Ext2 File System（Linux  Ext2  文件系统）（817）
+					3. The Linux Ext4 File System（Linux  Ext4  文件系统）（822）
+					4. The /proc File System（/proc  文件系统）（824）
+				4. NFS: The Network File System（NFS：网络文件系统）（824）
+					1. NFS Architecture（NFS架构）（824）
+					2. NFS Protocols（NFS  协议）（826）
+					3. NFS Implementation（NFS  实施）（827）
+					4. NFS Version 4（NFS  版本  4）（830）
+			7. SECURITY IN LINUX（Linux  中的安全性）（830）
+				1. Fundamental Concepts（基本概念）（830）
+				2. Security System Calls in Linu（Linux  中的安全系统调用）（833）
+				3. Implementation of Security in Linux（Linux  中安全性的实现）（833）
+			8. ANDROID（安卓）（834）
+				1. Android and Google（Android  和谷歌）（835）
+				2. History of Android（Android  的历史）（836）
+					1. Early Development（早期发展）（836）
+					2. Android 1.0（837）
+					3. Continued Development（持续发展）（838）
+				3. Design Goals（设计目标）（839）
+				4. Android Architecture（Android  架构）（841）
+				5. Linux Extensions（Linux  扩展）（842）
+					1. Wake Locks（唤醒锁）（842）
+					2. Out-Of-Memory Killer（内存不足杀手）（845）
+				6. Dalvik（846）
+				7. Binder IPC（847）
+					1. Binder Kernel Module（Binder内核模块）（848）
+					2. Binder User-Space API（Binder  用户空间  API）（853）
+					3. Binder Interfaces and AIDL（Binder  接口和  AIDL）（854）
+				8. Android Applications（Android  应用程序）（856）
+					1. Activities（活动）（859）
+					2. Services（服务）（863）
+					3. Receivers（接收器）（865）
+					4. Content Providers（内容提供商）（866）
+				9. Intents（意图）（868）
+				10. Application Sandboxes（应用程序沙箱）（870）
+				11. Security（安全）（870）
+				12. Process Model（过程模型）（876）
+					1. Starting Processes（启动进程）（877）
+					2. Process Lifecycle（流程生命周期）（878）
+					3. Process Dependencies（流程依赖性）（879）
+			9. SUMMARY（总结）（881）
+		11. CASE STUDY 2: WINDOWS 8（案例研究  2：Windows  8）（889）
+			1. HISTORY OF WINDOWS THROUGH WINDOWS 8.1（WINDOWS  8.1  的历史）（889）
+				1. 1980s: MS-DOS（890）
+				2. 1990s: MS-DOS-based Windows（891）
+				3. 2000s: NT-based Windows（891）
+				4. Windows Vista（894）
+				5. 2010s: Modern Windows（2010年代：现代Windows）（895）
+			2. PROGRAMMING WINDOWS（编程窗口）（896）
+				1. The Native NT Application Programming Interface（本机  NT  应用程序编程接口）（900）
+				2. The Win32 Application Programming Interface（Win32应用程序编程接口）（903）
+				3. The Windows Registry（Windows  注册表）（907）
+			3. SYSTEM STRUCTURE（系统结构）（909）
+				1. Operating System Structure（操作系统结构）（909）
+					1. The Hardware Abstraction Layer（硬件抽象层）（912）
+					2. The Kernel Layer（内核层）（914）
+					3. Deferred Procedure Calls（延迟过程调用）（915）
+					4. Asynchronous Procedure Calls（异步过程调用）（917）
+					5. Dispatcher Objects（调度程序对象）（918）
+					6. The Executive Layer（执行层）（919）
+					7. The Device Drivers（设备驱动程序）（923）
+				2. Booting Windows（启动Windows）（925）
+				3. Implementation of the Object Manager（对象管理器的实现）（926）
+					1. Handles（手柄）（929）
+					2. The Object Namespace（对象命名空间）（930）
+				4. Subsystems, DLLs, and User-Mode Services（子系统、DLL  和用户模式服务）（937）
+			4. PROCESSES AND THREADS IN WINDOWS（Windows  中的进程和线程）（940）
+				1. Fundamental Concepts（基本概念）（940）
+					1. Processes（流程）（941）
+					2. Jobs and Fibers（工作和纤维）（941）
+					3. Thread Pools and User-Mode Scheduling（线程池和用户模式调度）（943）
+					4. Threads（线程数）（945）
+				2. Job, Process, Thread, and Fiber Management API Calls（作业、进程、线程和纤程管理  API  调用）（946）
+					1. Interprocess Communication（进程间通信）（948）
+					2. Synchronization（同步）（949）
+				3. Implementation of Processes and Threads（进程和线程的实现）（951）
+					1. Scheduling（调度）（954）
+			5. MEMORY MANAGEMENT（内存管理）（959）
+				1. Fundamental Concepts（基本概念）（960）
+					1. Virtual Address Allocation（虚拟地址分配）（961）
+					2. Pagefiles（页面文件）（962）
+				2. Memory-Management System Calls（内存管理系统调用）（963）
+				3. Implementation of Memory Management（内存管理的实现）（965）
+					1. Page-Fault Handling（页面错误处理）（966）
+					2. The Page Replacement Algorithm（页面替换算法）（969）
+					3. Physical Memory Management（物理内存管理）（971）
+			6. CACHING IN WINDOWS（Windows  中的缓存）（974）
+			7. INPUT/OUTPUT IN WINDOWS（窗口中的输入/输出）（975）
+				1. Fundamental Concepts（基本概念）（976）
+				2. Input/Output API Calls（输入/输出  API  调用）（977）
+				3. Implementation of I/O（I/O  的实现）（980）
+					1. Device Drivers（设备驱动程序）（980）
+					2. I/O Request Packets（I/O  请求数据包）（982）
+					3. Device Stacks（设备堆栈）（983）
+			8. THE WINDOWS NT FILE SYSTEM（Windows  NT  文件系统）（984）
+				1. Fundamental Concepts（基本概念）（985）
+				2. Implementation of the NT File System（NT文件系统的实现）（986）
+					1. File System Structure（文件系统结构）（986）
+					2. Storage Allocation（存储分配）（990）
+					3. File Compression（文件压缩）（994）
+					4. Journaling（写日记）（995）
+					5. File Encryption（文件加密）（995）
+			9. WINDOWS POWER MANAGEMENT（Windows  电源管理）（996）
+			10. SECURITY IN WINDOWS 8（Windows  8  中的安全性）（998）
+				1. Fundamental Concepts（基本概念）（999）
+				2. Security API Calls（安全  API  调用）（1001）
+				3. Implementation of Security（安全实施）（1002）
+				4. Security Mitigations（安全缓解措施）（1005）
+			11. SUMMARY（小结）（1007）
+		12. OPERATING SYSTEM DESIGN（操作系统设计）（1013）
+			1. THE NATURE OF THE DESIGN PROBLEM（设计问题的本质）（1014）
+				1. Goals（目标）（1014）
+				2. Why Is It Hard to Design an Operating System?（为什么设计一个操作系统很难？）（1015）
+			2. INTERFACE DESIGN（界面设计）（1017）
+				1. Guiding Principles（指导原则）（1017）
+					1. Principle 1: Simplicity（原则  1：简单性）（1017）
+					2. Principle 2: Completeness（原则  2：完整性）（1018）
+					3. Principle 3: Efficiency（原则  3：效率）（1019）
+				2. Paradigms（范式）（1019）
+					1. User-Interface Paradigms（用户界面范例）（1020）
+					2. Execution Paradigms（执行范式）（1021）
+					3. Data Paradigms（数据范式）（1021）
+				3. The System-Call Interface（系统调用接口）（1023）
+			3. IMPLEMENTATION（实施）（1025）
+				1. System Structure（系统结构）（1025）
+					1. Layered Systems（分层系统）（1025）
+					2. Exokernels（外核）（1027）
+					3. Microkernel-Based Client-Server Systems（基于微内核的客户端‑服务器系统）（1027）
+					4. Extensible Systems（可扩展系）（1029）
+					5. Kernel Threads（内核线程）（1029）
+				2. Mechanism vs. Policy（机制与政策）（1029）
+				3. Orthogonalit（正交性）（1030）
+				4. Naming（命名）（1031）
+				5. Binding Time（绑定时间）（1033）
+				6. Static vs. Dynamic Structures（静态结构与动态结构）（1034）
+				7. Top-Down vs. Bottom-Up Implementation（自上而下与自下而上的实施）（1035）
+				8. Synchronous vs. Asynchronous Communication（同步与异步通信）（1036）
+				9. Useful Techniques（有用的技术）（1037）
+					1. Hiding the Hardware（隐藏硬件）（1037）
+					2. Indirection（间接）（1039）
+					3. Reusability（可重复使用性）（1040）
+					4. Reentrancy（可重入性）（1041）
+					5. Brute Force（暴力破解）（1041）
+					6. Check for Errors First（首先检查错误）（1042）
+			4. PERFORMANCE（性能）（1042）
+				1. Why Are Operating Systems Slow?（为什么操作系统速度慢？）（1043）
+				2. What Should Be Optimized?（应该优化什么？）（1043）
+				3. Space-Time Trade-offs（时空权衡）（1044）
+				4. Caching（缓存）（1047）
+				5. Hints（提示）（1048）
+				6. Exploiting Locality（利用局部性）（1049）
+				7. Optimize the Common Case（优化常见案例）（1049）
+			5. PROJECT MANAGEMENT（项目管理）（1050）
+				1. The Mythical Man Month（人月神话）（1050）
+				2. Team Structure（团队结构）（1051）
+				3. The Role of Experience（经验的作用）（1053）
+				4. No Silver Bullet（没有灵丹妙药）（1054）
+			6. TRENDS IN OPERATING SYSTEM DESIGN（操作系统设计趋势）（1054）
+				1. Virtualization and the Cloud（虚拟化和云）（1055）
+				2. Manycore Chips（众核芯片）（1055）
+				3. Large-Address-Space Operating Systems（大地址空间操作系统）（1056）
+				4. Seamless Data Access（无缝数据访问）（1057）
+				5. Battery-Powered Computers（电池供电的计算机）（1057）
+				6. Embedded Systems（嵌入式系统）（1058）
+			7. SUMMARY（总结）（1059）
+		13. READING LIST AND BIBLIOGRAPHY（阅读清单和参考书目）（1063）
+			1. SUGGESTIONS FOR FURTHER READING（进一步阅读的建议）（1063）
+				1. Introduction（简介）（1064）
+				2. Processes and Threads（进程和线程）（1064）
+				3. Memory Management（内存管理）（1065）
+				4. File Systems（文件系统）（1065）
+				5. Input/Output（输入/输出）（1066）
+				6. Deadlocks（死锁）（1067）
+				7. Virtualization and the Cloud（虚拟化和云）（1067）
+				8. Multiple Processor Systems（多处理器系统）（1068）
+				9. Security（安全）（1069）
+				10. Case Study 1: UNIX, Linux, and Android（案例研究  1：UNIX、Linux  和  Android）（1071）
+				11. Case Study 2: Windows 8（案例研究  2：Windows  8）（1072）
+				12. Operating System Design（操作系统设计）（1072）
+			2. ALPHABETICAL BIBLIOGRAPHY（按字母顺序排列的参考书目）（1073）
+	6. Introduction to Algorithms Third Edition（算法导论第3版）
 		1. Foundations（基础）
 			1. The Role of Algorithms in Computing（算法在计算中的作用）（26）
 				1. Algorithms（算法）（26）
@@ -888,7 +3550,1278 @@
 						1. Matrix inverses, ranks, and determinants（矩阵逆矩阵、秩和行列式）（1243）
 						2. Positive-definite matrices（正定矩阵）（1246）
 2. Programming Languages（编程语言）
-	1. Programming in Lua Fourth Edition（Lua程序设计第4版）
+	1. The C Programming Language（C程序设计语言）
+		1. A Tutorial Introduction（教程简介）（9）
+			1. Getting Started（入门）（9）
+			2. Variables and Arithmetic Expressions（变量和算术表达式）（11）
+			3. The for statement（for语句）（16）
+			4. Symbolic Constants（符号常量）（17）
+			5. Character Input and Output（字符输入与输出）（18）
+				1. File Copying（文件复制）（18）
+				2. Character Counting（字符计数）（20）
+				3. Line Counting（行计数）（21）
+				4. Word Counting（字数统计）（22）
+			6. Arrays（数组）（23）
+			7. Functions（功能）（25）
+			8. Arguments - Call by Value（参数 - 按值调用）（28）
+			9. Character Arrays（字符数组）（29）
+			10. External Variables and Scope（外部变量和范围）（31）
+		2. Types, Operators and Expressions（类型、运算符和表达式）（35）
+			1. Variable Names（变量名称）（35）
+			2. Data Types and Sizes（数据类型和大小）（35）
+			3. Constants（常数）（36）
+			4. Declarations（声明）（39）
+			5. Arithmetic Operators（算术运算符）（40）
+			6. Relational and Logical Operators（关系运算符和逻辑运算符）（40）
+			7. Type Conversions（类型转换）（41）
+			8. Increment and Decrement Operators（自增和自减运算符）（44）
+			9. Bitwise Operators（位运算符）（46）
+			10. Assignment Operators and Expressions（赋值运算符和表达式）（47）
+			11. Conditional Expressions（条件表达式）（49）
+			12. Precedence and Order of Evaluation（求值的优先级和顺序）（49）
+		3. Control Flow（控制流）（52）
+			1. Statements and Blocks（语句和块）（52）
+			2. If-Else（52）
+			3. Else-If（53）
+			4. Switch（54）
+			5. Loops - While and For（循环 - While 和 For）（56）
+			6. Loops - Do-While（循环 - Do-While）（59）
+			7. Break and Continue（59）
+			8. Goto and labels（跳转和标签）（60）
+		4. Functions and Program Structure（功能和程序结构）（62）
+			1. Basics of Functions（功能和程序结构）（62）
+			2. Functions Returning Non-integers（返回非整数的函数）（65）
+			3. External Variables（外部变量）（67）
+			4. Scope Rules（范围规则）（72）
+			5. Header Files（头文件）（73）
+			6. Static Variables（静态变量）（75）
+			7. Register Variables（寄存器变量）（75）
+			8. Block Structure（块结构）（76）
+			9. Initialization（初始化）（76）
+			10. Recursion（递归）（78）
+			11. The C Preprocessor（C  预处理器）（79）
+				1. File Inclusion（文件包含）（79）
+				2. Macro Substitution（宏替换）（80）
+				3. Conditional Inclusion（有条件包含）（82）
+		5. Pointers and Arrays（指针和数组）（83）
+			1. Pointers and Addresses（指针和地址）（83）
+			2. Pointers and Function Arguments（指针和函数参数）（84）
+			3. Pointers and Arrays（指针和数组）（87）
+			4. Address Arithmetic（地址运算）（90）
+			5. Character Pointers and Functions（字符指针和函数）（93）
+			6. Pointer Arrays; Pointers to Pointers（指针数组；指针到指针）（96）
+			7. Multi-dimensional Arrays（多维数组）（99）
+			8. Initialization of Pointer Arrays（指针数组的初始化）（101）
+			9. Pointers vs. Multi-dimensional Arrays（指针与多维数组）（101）
+			10. Command-line Arguments（命令行参数）（102）
+			11. Pointers to Functions（函数指针）（106）
+			12. Complicated Declarations（复杂声明）（108）
+		6. Structures（结构）（114）
+			1. Basics of Structures（结构基础）（114）
+			2. Structures and Functions（结构与功能）（116）
+			3. Arrays of Structures（结构体数组）（118）
+			4. Pointers to Structures（结构体指针）（122）
+			5. Self-referential Structures（自指结构）（124）
+			6. Table Lookup（查表）（127）
+			7. Typedef（类型定义）（129）
+			8. Unions（工会）（131）
+			9. Bit-fields（位域）（132）
+		7. Input and Output（输入和输出）（135）
+			1. Standard Input and Output（标准输入输出）（135）
+			2. Formatted Output - printf（格式化输出 - printf）（137）
+			3. Variable-length Argument Lists（可变长度参数列表）（138）
+			4. Formatted Input - Scanf（格式化输入‑Scanf）（140）
+			5. File Access（文件访问）（142）
+			6. Error Handling - Stderr and Exit（错误处理‑Stderr  和退出）（145）
+			7. Line Input and Output（线路输入和输出）（146）
+			8. Miscellaneous Functions（杂项功能）（147）
+				1. String Operations（字符串操作）（147）
+				2. Character Class Testing and Conversion（字符类测试和转换）（148）
+				3. Ungetc（148）
+				4. Command Execution（命令执行）（148）
+				5. Storage Management（存储管理）（148）
+				6. Mathematical Functions（数学函数）（149）
+				7. Random Number generation（随机数生成）（149）
+		8. The UNIX System Interface（UNIX  系统接口）（151）
+			1. File Descriptors（文件描述符）（151）
+			2. Low Level I/O - Read and Write（低级  I/O  ‑  读和写）（152）
+			3. Open, Creat, Close, Unlink（打开、创建、关闭、取消链接）（153）
+			4. Random Access - Lseek（随机访问‑Lseek）（155）
+			5. Example - An implementation of Fopen and Getc（示例  ‑  Fopen  和  Getc  的实现）（156）
+			6. Example - Listing Directories（示例  ‑  列出目录）（159）
+			7. Example - A Storage Allocator（示例 - 存储分配器）（163）
+	2. C++ Primer（C++ 入门）
+		1. 0
+			1. Getting Started（入门）（30）
+				1. Writing a Simple C++ Program（编写一个简单的  C++  程序）（31）
+					1. Compiling and Executing Our Program（编译并执行我们的程序）（32）
+				2. A First Look at Input/Output（初步了解输入/输出）（34）
+				3. A Word about Comments（关于评论的一句话）（38）
+				4. Flow of Control（控制流程）（40）
+					1. The while Statement（while  语句）（40）
+					2. The for Statement（for  语句）（42）
+					3. Reading an Unknown Number of Inputs（读取未知数量的输入）（43）
+					4. The if Statement（if  语句）（46）
+				5. Introducing Classes（介绍课程）（48）
+					1. The Sales_item Class（Sales_item  类）（49）
+					2. A First Look at Member Functions（会员功能初探）（52）
+				6. The Bookstore Program（书店计划）（53）
+				7. Chapter Summary（章节总结）（55）
+				8. Defined Terms（术语定义）（55）
+		2. The Basics（基础知识）（58）
+			1. Variables and Basic Types（变量和基本类型）（60）
+				1. Primitive Built-in Types（原始内置类型）（61）
+					1. Arithmetic Types（算术类型）（61）
+					2. Type Conversions（类型转换）（64）
+					3. Literals（文字）（67）
+				2. Variables（变量）（70）
+					1. Variable Definitions（变量定义）（70）
+					2. Variable Declarations and Definitions（变量声明和定义）（73）
+					3. Identifiers（身份标识）（75）
+					4. Scope of a Name（名称的范围）（77）
+				3. Compound Types（复合类型）（79）
+					1. References（引用）（79）
+					2. Pointers（指针）（81）
+					3. Understanding Compound Type Declarations（了解复合类型声明）（86）
+				4. const Qualifier（常量限定符）（88）
+					1. References to const（对  const  的引用）（90）
+					2. Pointers and const（指针和常量）（91）
+					3. Top-Level const（顶级常量）（92）
+					4. constexpr and Constant Expressions（constexpr  和常量表达式）（94）
+				5. Dealing with Types（处理类型）（96）
+					1. Type Aliases（类型别名）（96）
+					2. The auto Type Specifier（自动类型说明符）（97）
+					3. The decltype Type Specifier（decltype  类型说明符）（99）
+				6. Defining Our Own Data Structures（定义我们自己的数据结构）（定义我们自己的数据结构）（101）
+					1. Defining the Sales_data Type（定义  Sales_data  类型）（101）
+					2. Using the Sales_data Class（使用  Sales_data  类）（103）
+					3. Writing Our Own Header Files（编写我们自己的头文件）（105）
+				7. Chapter Summary（章节总结）（107）
+				8. Defined Terms（术语定义）（107）
+			2. Strings, Vectors, and Arrays（字符串、向量和数组）（110）
+				1. Namespace using Declarations（使用声明的命名空间）（111）
+				2. Library string Type（库字符串类型）（113）
+					1. Defining and Initializing strings（定义和初始化字符串）（113）
+					2. Operations on strings（字符串操作）（114）
+					3. Dealing with the Characters in a string（处理字符串中的字符）（119）
+				3. Library vector Type（库向量类型）（125）
+					1. Defining and Initializing vectors（定义和初始化向量）（126）
+					2. Adding Elements to a vector（将元素添加到向量）（129）
+					3. Other vector Operations（其他向量运算）（131）
+				4. Introducing Iterators（迭代器简介）（135）
+					1. Using Iterators（使用迭代器）（135）
+					2. Iterator Arithmetic（迭代器算法）（140）
+				5. Arrays（数组）（142）
+					1. Defining and Initializing Built-in Arrays（定义和初始化内置数组）（142）
+					2. Accessing the Elements of an Array（访问数组的元素）（145）
+					3. Pointers and Arrays（指针和数组）（146）
+					4. C-Style Character Strings（C  风格字符串）（151）
+					5. Interfacing to Older Code（与旧代码的接口）（153）
+				6. Multidimensional Arrays（多维数组）（154）
+				7. Chapter Summary（章节总结）（160）
+				8. Defined Terms（术语定义）（160）
+			3. Expressions（表达式）（162）
+				1. Fundamentals（基础知识）（163）
+					1. Basic Concepts（基本概念）（163）
+					2. Precedence and Associativity（优先级和关联性）（165）
+					3. Order of Evaluation（评估顺序）（166）
+				2. Arithmetic Operators（算术运算符）（168）
+				3. Logical and Relational Operators（逻辑和关系运算符）（170）
+				4. Assignment Operators（赋值运算符）（173）
+				5. Increment and Decrement Operators（自增和自减运算符）（176）
+				6. The Member Access Operators（会员接入运营商）（179）
+				7. The Conditional Operator（条件运算符）（180）
+				8. The Bitwise Operators（按位运算符）（181）
+				9. The sizeof Operator（运算符的大小）（185）
+				10. Comma Operator（逗号运算符）（186）
+				11. Type Conversions（类型转换）（188）
+					1. The Arithmetic Conversions（算术转换）（188）
+					2. Other Implicit Conversions（其他隐式转换）（190）
+					3. Explicit Conversions（显式转换）（191）
+				12. Operator Precedence Table（运算符优先级表）（195）
+				13. Chapter Summary（章节总结）（197）
+				14. Defined Terms（术语定义）（197）
+			4. Statements（语句）（200）
+				1. Simple Statements（简单的陈述）（201）
+				2. Statement Scope（声明范围）（203）
+				3. Conditional Statements（条件语句）（203）
+					1. The if Statement（if  语句）（204）
+					2. The switch Statement（switch  语句）（207）
+				4. Iterative Statements（迭代语句）（212）
+					1. The while Statement（while  语句）（212）
+					2. Traditional for Statement（传统  for  语句）（214）
+					3. Range for Statement（范围for语句）（216）
+					4. The do while Statement（do  while  语句）（218）
+				5. Jump Statements（跳转语句）（219）
+					1. The break Statement（中断语句）（219）
+					2. The continue Statement（继续语句）（220）
+					3. The goto Statement（goto  语句）（221）
+				6. try Blocks and Exception Handling（try块和异常处理）（222）
+					1. A throw Expression（抛出表达式）（222）
+					2. The try Block（尝试块）（223）
+					3. Standard Exceptions（标准例外）（226）
+				7. Chapter Summary（章节总结）（228）
+				8. Defined Terms（术语定义）（228）
+			5. Functions（函数）（230）
+				1. Function Basics（函数基础知识）（231）
+					1. Local Objects（本地对象）（233）
+					2. Function Declarations（函数声明）（235）
+					3. Separate Compilation（单独编译）（236）
+				2. Argument Passing（参数传递）（237）
+					1. Passing Arguments by Value（按值传递参数）（238）
+					2. Passing Arguments by Reference（通过引用传递参数）（239）
+					3. const Parameters and Arguments（const  参数和参数）（241）
+					4. Array Parameters（数组参数）（243）
+					5. main: Handling Command-Line Options（main：处理命令行选项）（247）
+					6. Functions with Varying Parameters（具有不同参数的函数）（249）
+				3. Return Types and the return Statement（返回类型和返回语句）（251）
+					1. Functions with No Return Value（无返回值的函数）（252）
+					2. Functions That Return a Value（返回值的函数）（252）
+					3. Returning a Pointer to an Array（返回指向数组的指针）（257）
+				4. Overloaded Functions（重载函数）（259）
+					1. Overloading and Scope（重载和范围）（263）
+				5. Features for Specialized Uses（特殊用途的功能）（265）
+					1. Default Arguments（默认参数）（265）
+					2. Inline and constexpr Functions（内联函数和  constexpr  函数）（267）
+					3. Aids for Debugging（调试辅助工具）（269）
+				6. Function Matching（功能匹配）（271）
+					1. Argument Type Conversions（参数类型转换）（274）
+				7. Pointers to Functions（函数指针）（276）
+				8. Chapter Summary（章节总结）（280）
+				9. Defined Terms（术语定义）（280）
+			6. Classes（类）（282）
+				1. Defining Abstract Data Types（定义抽象数据类型）（283）
+					1. Designing the Sales_data Class（设计  Sales_data  类）（283）
+					2. Defining the Revised Sales_data Class（定义修订后的  Sales_data  类）（285）
+					3. Defining Nonmember Class-Related Functions（定义非成员类相关函数）（289）
+					4. Constructors（构造函数）（291）
+					5. Copy, Assignment, and Destruction（复制、分配和销毁）（296）
+				2. Access Control and Encapsulation（访问控制和封装）（297）
+					1. Friends（友元）（298）
+				3. Additional Class Features（附加课程功能）（300）
+					1. Class Members Revisited（重访班级成员）（300）
+					2. Functions That Return *this（返回  *this  的函数）（304）
+					3. Class Types（类类型）（306）
+					4. Friendship Revisited（重温友谊）（308）
+				4. Class Scope（类别范围）（311）
+					1. Name Lookup and Class Scope（名称查找和类范围）（312）
+				5. Constructors Revisited（重温构造函数）（317）
+					1. Constructor Initializer List（构造函数初始化列表）（317）
+					2. Delegating Constructors（委托构造函数）（320）
+					3. The Role of the Default Constructor（默认构造函数的作用）（322）
+					4. Implicit Class-Type Conversions（隐式类类型转换）（323）
+					5. Aggregate Classes（聚合类）（327）
+					6. Literal Classes（文字类）（328）
+				6. static Class Members（静态类成员）（329）
+				7. Chapter Summary（章节总结）（334）
+				8. Defined Terms（术语定义）（334）
+		3. The C++ Library（C++  库）（336）
+			1. The IO Library（IO  库）（338）
+				1. The IO Classes（IO  类）（339）
+					1. No Copy or Assign for IO Objects（禁止复制或分配  IO  对象）（340）
+					2. Condition States（条件状态）（341）
+					3. Managing the Output Buffer（管理输出缓冲区）（343）
+				2. File Input and Output（文件输入和输出）（345）
+					1. Using File Stream Objects（使用文件流对象）（346）
+					2. File Modes（文件模式）（348）
+				3. string Streams（字符串流）（350）
+					1. Using an istringstream（使用  istringstream）（350）
+					2. Using ostringstreams（使用  ostringstreams）（352）
+				4. Chapter Summary（章节总结）（353）
+				5. Defined Terms（术语定义）（353）
+			2. Sequential Containers（顺序容器）（354）
+				1. Overview of the Sequential Containers（顺序容器概述）（355）
+				2. Container Library Overview（容器库概述）（357）
+					1. Iterators（迭代器）（360）
+					2. Container Type Members（容器类型成员）（361）
+					3. begin and end Members（开始和结束成员）（362）
+					4. Defining and Initializing a Container（定义和初始化容器）（363）
+					5. Assignment and swap（分配和交换）（366）
+					6. Container Size Operations（集装箱尺寸操作）（369）
+					7. Relational Operators（关系运算符）（369）
+				3. Sequential Container Operations（顺序容器操作）（370）
+					1. Adding Elements to a Sequential Container（将元素添加到顺序容器）（370）
+					2. Accessing Elements（访问元素）（375）
+					3. Erasing Elements（擦除元素）（377）
+					4. Specialized forward_list Operations（专门的forward_list操作）（379）
+					5. Resizing a Container（调整容器大小）（381）
+					6. Container Operations May Invalidate Iterators（容器操作可能会使迭代器失效）（382）
+				4. How a vector Grows（向量如何增长）（384）
+				5. Additional string Operations（附加字符串操作）（389）
+					1. Other Ways to Construct strings（构造字符串的其他方法）（389）
+					2. Other Ways to Change a string（更改字符串的其他方法）（390）
+					3. string Search Operations（字符串搜索操作）（393）
+					4. The compare Functions（比较函数）（395）
+					5. Numeric Conversions（数字转换）（396）
+				6. Container Adapto（容器适配器）（397）
+				7. Chapter Summary（章节总结）（401）
+				8. Defined Terms（术语定义）（401）
+			3. Generic Algorithms（通用算法）（404）
+				1. Overview（概述）（405）
+				2. A First Look at the Algorithms（算法初探）（407）
+					1. Read-Only Algorithms（只读算法）（408）
+					2. Algorithms That Write Container Elements（写入容器元素的算法）（409）
+					3. Algorithms That Reorder Container Elements（重新排序容器元素的算法）（412）
+				3. Customizing Operations（定制操作）（414）
+					1. Passing a Function to an Algorithm（将函数传递给算法）（415）
+					2. Lambda Expressions（拉姆达表达式）（416）
+					3. Lambda Captures and Returns（Lambda  捕获并返回）（421）
+					4. Binding Arguments（具有约束力的论据）（426）
+				4. Revisiting Iterators（重温迭代器）（430）
+					1. Insert Iterators（插入迭代器）（431）
+					2. iostream Iterators（iostream  迭代器）（432）
+					3. Reverse Iterators（反向迭代器）（436）
+				5. Structure of Generic Algorithms（通用算法的结构）（439）
+					1. The Five Iterator Categories（迭代器的五种类别）（439）
+					2. Algorithm Parameter Patterns（算法参数模式）（441）
+					3. Algorithm Naming Conventions（算法命名约定）（442）
+				6. Container-Specific Algorithms（容器特定算法）（444）
+				7. Chapter Summary（章节总结）（446）
+				8. Defined Terms（术语定义）（446）
+			4. Associative Containers（关联容器）（448）
+				1. Using an Associative Container（使用关联容器）（449）
+				2. Overview of the Associative Containers（关联容器概述）（452）
+					1. Defining an Associative Container（定义关联容器）（452）
+					2. Requirements on Key Type（密钥类型要求）（453）
+					3. The pair Type（配对类型）（455）
+				3. Operations on Associative Containers（关联容器上的操作）（457）
+					1. Associative Container Iterators（关联容器迭代器）（458）
+					2. Adding Elements（添加元素）（460）
+					3. Erasing Elements（擦除元素）（463）
+					4. Subscripting a map（订阅地图）（464）
+					5. Accessing Elements（访问元素）（465）
+					6. A Word Transformation Map（单词转换图）（469）
+				4. The Unordered Containers（无序容器）（472）
+				5. Chapter Summary（章节总结）（476）
+				6. Defined Terms（术语定义）（476）
+			5. Dynamic Memory（动态内存）（478）
+				1. Dynamic Memory and Smart Pointers（动态内存和智能指针）（479）
+					1. The shared_ptr Class（Shared_ptr  类）（479）
+					2. Managing Memory Directly（直接管理内存）（487）
+					3. Using shared_ptrs with new（将shared_ptr与new一起使用）（493）
+					4. Smart Pointers and Exceptions（智能指针和异常）（496）
+					5. unique_ptr（唯一指针）（499）
+					6. weak_ptr（弱指针）（502）
+				2. Dynamic Arrays（动态数组）（505）
+					1. new and Arrays（新的和数组）（506）
+					2. The allocator Class（分配器类）（501）
+				3. Using the Library: A Text-Query Program（使用库：文本查询程序）（513）
+					1. Design of the Query Program（查询程序的设计）（514）
+					2. Defining the Query Program Classes（定义查询程序类）（516）
+				4. Chapter Summary（章节总结）（520）
+				5. Defined Terms（术语定义）（520）
+		4. Tools for Class Authors（课程作者的工具）（522）
+			1. Copy Control（复制控制）（524）
+				1. Copy, Assign, and Destroy（复制、分配和销毁）（525）
+					1. The Copy Constructo（复制构造函数）（525）
+					2. The Copy-Assignment Operator（复制赋值运算符）（529）
+					3. The Destructor（破坏者）（530）
+					4. The Rule of Three/Five（三/五法则）（532）
+					5. Using = default（535）
+					6. Preventing Copies（防止复制）（536）
+				2. Copy Control and Resource Management（复制控制和资源管理）（539）
+					1. Classes That Act Like Values（行为类似于值的类）（540）
+					2. Defining Classes That Act Like Pointers（定义行为类似于指针的类）（542）
+				3. Swap（交换）（545）
+				4. A Copy-Control Example（复制控制⽰例）（548）
+				5. Classes That Manage Dynamic Memory（管理动态内存的类）（553）
+				6. Moving Objects（移动物体）（560）
+					1. Rvalue References（右值引用）（561）
+					2. Move Constructor and Move Assignment（移动构造函数和移动赋值）（563）
+					3. Rvalue References and Member Functions（右值引用和成员函数）（573）
+				7. Chapter Summary（章节总结）（578）
+				8. Defined Terms（术语定义）（578）
+			2. Overloaded Operations and Conversions（重载操作和转换）（580）
+				1. Basic Concepts（重载操作和转换）（581）
+				2. Input and Output Operators（输入和输出运算符）（585）
+					1. Overloading the Output Operator <<（重载输出运算符  <<）（586）
+					2. Overloading the Input Operator >>（重载输入运算符>>）（587）
+				3. Arithmetic and Relational Operators（算术和关系运算符）（589）
+					1. Equality Operators（等式运算）（590）
+					2. Relational Operators（关系运算符）（591）
+				4. Assignment Operators（赋值运算符）（592）
+				5. Subscript Operator（下标运算符）（593）
+				6. Increment and Decrement Operators（自增和自减运算符）（595）
+				7. Member Access Operators（会员接入运营商）（598）
+				8. Function-Call Operator（函数调用运算符）（600）
+					1. Lambdas Are Function Objects（Lambda  是函数对象）（601）
+					2. Library-Defined Function Objects（库定义的函数对象）（603）
+					3. Callable Objects and function（可调用对象和函数）（605）
+				9. Overloading, Conversions, and Operators（重载、转换和运算符）（608）
+					1. Conversion Operators（转换运算符）（609）
+					2. Avoiding Ambiguous Conversions（避免不明确的转换）（612）
+					3. Function Matching and Overloaded Operators（函数匹配和重载运算符）（616）
+				10. Chapter Summary（章节总结）（619）
+				11. Defined Terms（术语定义）（619）
+			3. Object-Oriented Programming（面向对象编程）（620）
+				1. OOP: An Overview（面向对象编程：概述）（621）
+				2. Defining Base and Derived Classes（定义基类和派生类）（623）
+					1. Defining a Base Class（定义基类）（623）
+					2. Defining a Derived Class（定义派生类）（625）
+					3. Conversions and Inheritance（转换和继承）（630）
+				3. Virtual Functions（虚拟功能）（632）
+				4. Abstract Base Classes（抽象基类）（637）
+				5. Access Control and Inheritance（访问控制和继承）（640）
+				6. Class Scope under Inheritance（继承下的类范围）（646）
+				7. Constructors and Copy Control（构造函数和复制控制）（651）
+					1. Virtual Destructors（虚拟析构函数）（651）
+					2. Synthesized Copy Control and Inheritance（综合复制控制和继承）（652）
+					3. Derived-Class Copy-Control Members（派生类复制控制成员）（654）
+					4. Inherited Constructors（继承的构造函数）（657）
+				8. Containers and Inheritance（容器和继承）（659）
+					1. Writing a Basket Class（编写篮子类）（660）
+				9. Text Queries Revisited（重新审视文本查询）（663）
+					1. An Object-Oriented Solution（面向对象的解决方案）（665）
+					2. The Query_base and Query Classes（Query_base  和  Query  类）（668）
+					3. The Derived Classes（派生类）（671）
+					4. The eval Functions（eval  函数）（674）
+				10. Chapter Summary（章节总结）（678）
+				11. Defined Terms（术语定义）（678）
+			4. Templates and Generic Programming（模板和通用编程）（680）
+				1. Defining a Template（定义模板）（681）
+					1. Function Templates（函数模板）（681）
+					2. Class Templates（类模板）（687）
+					3. Template Parameters（模板参数）（697）
+					4. Member Templates（会员模板）（701）
+					5. Controlling Instantiations（控制实例化）（704）
+					6. Efficiency and Flexibility（效率和灵活性）（705）
+				2. Template Argument Deduction（模板参数推导）（707）
+					1. Conversions and Template Type Parameters（转换和模板类型参数）（708）
+					2. Function-Template Explicit Arguments（函数模板显式参数）（710）
+					3. Trailing Return Types and Type Transformation（尾随返回类型和类型转换）（712）
+					4. Function Pointers and Argument Deduction（函数指针和参数推导）（715）
+					5. Template Argument Deduction and References（模板参数推导和参考）（716）
+					6. Understanding std::move（理解  std::move）（719）
+					7. Forwarding（转发）（721）
+				3. Overloading and Templates（重载和模板）（723）
+				4. Variadic Templates（可变参数模板）（728）
+					1. Writing a Variadic Function Template（编写可变参数函数模板）（730）
+					2. Pack Exp（包扩展）（731）
+					3. Forwarding Parameter Packs（转发参数包）（733）
+				5. Template Specializations（模板专业化）（735）
+				6. Chapter Summary（章节总结）（742）
+				7. Defined Terms（术语定义）（742）
+		5. Advanced Topics（高级主题）（744）
+			1. Specialized Library Facilities（专业图书馆设施）（746）
+				1. The tuple Type（元组类型）（747）
+					1. Defining and Initializing tuples（定义和初始化元组）（747）
+					2. Using a tuple to Return Multiple Values（使用元组返回多个值）（750）
+				2. The bitset Type（位集类型）（752）
+					1. Defining and Initializing bitsets（定义和初始化位集）（752）
+					2. Operations on bitsets（位集上的操作）（754）
+				3. Regular Expressions（常用表达）（757）
+					1. Using the Regular Expression Library（使用正则表达式库）（758）
+					2. The Match and Regex Iterator Types（匹配和正则表达式迭代器类型）（763）
+					3. Using Subexpressions（使用子表达式）（767）
+					4. Using regex_replace（使用  regex_replace）（770）
+				4. Random Numbers（随机数）（774）
+					1. Random-Number Engines and Distribution（随机数引擎和分布）（774）
+					2. Other Kinds of Distributions（其他类型的发行版）（778）
+				5. The IO Library Revisited（IO  库重温）（781）
+					1. Formatted Input and Output（格式化输入和输出）（782）
+					2. Unformatted Input/Output Operations（未格式化的输入/输出操作）（790）
+					3. Random Access to a Stream（随机访问流）（792）
+				6. Chapter Summary（章节总结）（798）
+				7. Defined Terms（术语定义）（798）
+			2. Tools for Large Programs（大型程序的工具）（800）
+				1. Exception Handling（异常处理）（801）
+					1. Throwing an Exception（抛出异常）（801）
+					2. Catching an Exception（捕获异常）（804）
+					3. Function try Blocks and Constructors（函数  try  块和构造函数）（806）
+					4. The noexcept Exception Specification（noexcept  异常规范）（808）
+					5. Exception Class Hierarchies（异常类层次结构）（811）
+				2. Namespaces（命名空间）（814）
+					1. Namespace Definitions（命名空间定义）（814）
+					2. Using Namespace Members（使用命名空间成员）（821）
+					3. Classes, Namespaces, and Scope（类、命名空间和范围）（825）
+					4. Overloading and Namespaces（重载和命名空间）（829）
+				3. Multiple and Virtual Inheritance（多重继承和虚拟继承）（831）
+					1. Multiple Inheritance（多重继承）（832）
+					2. Conversions and Multiple Base Classes（转换和多个基类）（834）
+					3. Class Scope under Multiple Inheritance（多重继承下的类作用域）（836）
+					4. Virtual Inheritance（虚拟继承）（839）
+					5. Constructors and Virtual Inheritance（构造函数和虚拟继承）（842）
+				4. Chapter Summary（章节总结）（845）
+				5. Defined Terms（术语定义）（845）
+			3. Specialized Tools and Techniques（专业工具和技术）（848）
+				1. Controlling Memory Allocation（控制内存分配）（849）
+					1. Overloading new and delete（重载  new  和删除）（849）
+					2. Placement new Expressions（放置新表达式）（852）
+				2. Run-Time Type Identification（运行时类型识别）（854）
+					1. The dynamic_cast Operator（dynamic_cast  运算符）（854）
+					2. The typeid Operator（typeid  运算符）（855）
+					3. Using RTTI（使用RTTI）（857）
+					4. The type_info Class（type_info  类）（860）
+				3. Enumerations（枚举）（861）
+				4. Pointer to Class Member（指向类成员的指针）（864）
+					1. Pointers to Data Members（指向数据成员的指针）（865）
+					2. Pointers to Member Functions（指向成员函数的指针）（867）
+					3. Using Member Functions as Callable Objects（使用成员函数作为可调用对象）（870）
+				5. Nested Classes（嵌套类）（872）
+				6. union: A Space-Saving Class（union：节省空间的类别）（876）
+				7. Local Classes（本地类）（881）
+				8. Inherently Nonportable Features（固有的不可移植特性）（883）
+					1. Bit-fields（位域）（883）
+					2. volatile Qualifier（不稳定的限定符）（885）
+					3. Linkage Directives: extern "C"（链接指令：extern "C"）（886）
+				9. Chapter Summary（章节总结）（891）
+				10. Defined Terms（术语定义）（891）
+	3. Effective C++（高效  C++）
+		1. Accustoming Yourself to C++（习惯  C++）（36）
+			1. Item 1: View C++ as a federation of languages（第  1  项：将  C++  视为语言联盟）（36）
+			2. Item 2: Prefer consts, enums, and inlines to #defines（第 2 项：优先使用 const、枚举和内联而不是 #defines）（38）
+			3. Item 3: Use const whenever possible（第 3 条：尽可能使用 const）（43）
+				1. const Member Functions（const 成员函数）（46）
+				2. Avoiding Duplication in const and Non-const Member Functions（避免 const 和非常量成员函数中的重复）（50）
+			4. Item 4: Make sure that objects are initialized before they're used（第 4 项：确保对象在使用前已初始化）（53）
+		2. Constructors, Destructors, and Assignment Operators（构造函数、析构函数和赋值运算符）（63）
+			1. Item 5: Know what functions C++ silently writes and calls（第  5  项：了解  C++  默默编写和调用哪些函数）（63）
+			2. Item 6: Explicitly disallow the use of compiler-generated functions you do not want（第 6 项：明确禁止使用您不想要的编译器生成的函数）（67）
+			3. Item 7: Declare destructors virtual in polymorphic base classes（第  7  项：在多态基类中将析构函数声明为  virtual）（70）
+			4. Item 8: Prevent exceptions from leaving destructors（第  8  项：防止异常离开析构函数）（75）
+			5. Item 9: Never call virtual functions during construction or destruction（第  9  条：在构造或销毁期间切勿调用虚函数）（80）
+			6. Item 10: Have assignment operators return a reference to *this（第 10 项：让赋值运算符返回对 *this 的引用）（84）
+			7. Item 11: Handle assignment to self in operator=（第11 项：处理operator= 中对self 的赋值。）（86）
+			8. Item 12: Copy all parts of an object（第  12  项：复制对象的所有部分）（90）
+		3. Resource Management（资源管理）（95）
+			1. Item 13: Use objects to manage resources（第  13  项：使用对象来管理资源）（95）
+			2. Item 14: Think carefully about copying behavior in resource-managing classes（第 14 项：仔细考虑资源管理类中的复制行为）（101）
+			3. Item 15: Provide access to raw resources in resource-managing classes（第 15 项：提供对资源管理类中原始资源的访问）（104）
+			4. Item 16: Use the same form in corresponding uses of new and delete（第16条：在new和delete的相应使用中使用相同的形式）（109）
+			5. Item 17: Store newed objects in smart pointers in standalone statements（第 17 项：将新对象存储在独立语句中的智能指针中）（112）
+		4. Designs and Declarations（设计和声明）（115）
+			1. Item 18: Make interfaces easy to use correctly and hard to use incorrectly（第 18 条：使界面易于正确使用且难以错误使用）（115）
+			2. Item 19: Treat class design as type design（第  19  条：将类设计视为类型设计）（121）
+			3. Item 20: Prefer pass-by-reference-to-const to pass-by-value（第 20 项：更喜欢通过引用传递常量而不是通过值传递）（124）
+			4. Item 21: Don't try to return a reference when you must return an object（第 21 条：当必须返回对象时不要尝试返回引用）（129）
+			5. Item 22: Declare data members private（第 22 项：将数据成员声明为私有）（134）
+			6. Item 23: Prefer non-member non-friend functions to member functions（第 23 项：优先选择非成员非友元函数而不是成员函数）（138）
+			7. Item 24: Declare non-member functions when type conversions should apply to all parameters（第 24 项：当类型转换应应用于所有参数时声明非成员函数）（142）
+			8. Item 25: Consider support for a non-throwing swap（第 25 项：考虑支持非抛出交换）（147）
+		5. Implementations（实施）（156）
+			1. Item 26: Postpone variable definitions as long as possible（第  26  项：尽可能推迟变量定义）（156）
+			2. Item 27: Minimize casting（第  27  条：尽量减少铸造）（159）
+			3. Item 28: Avoid returning “handles” to object internals（第  28  条：避免将“句柄”返回到对象内部）（168）
+			4. Item 29: Strive for exception-safe code（第  29  条：争取异常安全的代码）（172）
+			5. Item 30: Understand the ins and outs of inlining（第  30  项：了解内联的来龙去脉）（180）
+			6. Item 31: Minimize compilation dependencies between files（第  31  项：最小化文件之间的编译依赖关系）（187）
+		6. Inheritance and Object-Oriented Design（继承和面向对象设计）（198）
+			1. Item 32: Make sure public inheritance models “is-a.”（第  32  项：确保公共继承模型“is‑a”）（198）
+			2. Item 33: Avoid hiding inherited names（第  33  项：避免隐藏继承的名称）（205）
+			3. Item 34: Differentiate between inheritance of interface and inheritance of implementation（第34条：接口继承和实现继承的区别）（213）
+			4. Item 35: Consider alternatives to virtual functions（第  35  项：考虑虚拟函数的替代方案）（222）
+				1. The Template Method Pattern via the Non-Virtual Interface Idiom（通过非虚拟接口惯用法的模板方法模式）（223）
+				2. The Strategy Pattern via Function Pointers（通过函数指针的策略模式）（225）
+				3. The Strategy Pattern via tr1::function（通过 tr1::function 的策略模式）（227）
+				4. The “Classic” Strategy Pattern（“经典”策略模式）（230）
+				5. Summary（概括）（231）
+			5. Item 36: Never redefine an inherited non-virtual function（第  36  条：永远不要重新定义继承的非虚函数）（232）
+			6. Item 37: Never redefine a function's inherited default parameter value（第 37 条：永远不要重新定义函数继承的默认参数值）（235）
+			7. Item 38: Model “has-a” or “is-implemented-in-terms-of” through composition（第 38 项：模型通过组合“has-a”或“is-implemented-in terms-of”）（239）
+			8. Item 39: Use private inheritance judiciously（第  39  条：明智地使用私有继承）（243）
+			9. Item 40: Use multiple inheritance judiciously（第 40 条：明智地使用多重继承）（249）
+		7. Templates and Generic Programming（模板和通用编程）（258）
+			1. Item 41: Understand implicit interfaces and compile-time polymorphism（第 41 项：理解隐式接口和编译时多态性）（258）
+			2. Item 42: Understand the two meanings of typename（第 42 条：理解 typename 的两种含义）（262）
+			3. Item 43: Know how to access names in templatized base classes（第 43 项：了解如何访问模板化基类中的名称）（267）
+			4. Item 44: Factor parameter-independent code out of templates（第 44 项：从模板中提取与参数无关的代码）（273）
+			5. Item 45: Use member function templates to accept “all compatible types.”（第 45 项：使用成员函数模板接受“所有兼容类型”。）（279）
+			6. Item 46: Define non-member functions inside templates when type conversions are desired（第 46 项：当需要类型转换时，在模板内定义非成员函数）（284）
+			7. Item 47: Use traits classes for information about types（第 47 项：使用特征类获取有关类型的信息）（289）
+			8. Item 48: Be aware of template metaprogramming（第  48  项：注意模板元编程）（297）
+		8. Customizing new and delete（自定义新建和删除）（304）
+			1. Item 49: Understand the behavior of the new-handler（第  49  项：了解新处理程序的行为）（304）
+			2. Item 50: Understand when it makes sense to replace new and delete（第 50 项：了解何时替换新的和删除有意义）（313）
+			3. Item 51: Adhere to convention when writing new and delete（第51条：写入new和delete时遵守约定）（318）
+			4. Item 52: Write placement delete if you write placement new（第 52 项：如果写入新的展示位置，则写入删除）（323）
+		9. Miscellany（杂项）（331）
+			1. Item 53: Pay attention to compiler warnings（第 53 条：注意编译器警告）（331）
+			2. Item 54: Familiarize yourself with the standard library, including TR1（第 54 项：熟悉标准库，包括 TR1）（332）
+			3. Item 55: Familiarize yourself with Boost（第 55 项：熟悉 Boost）（338）
+	4. C++ Coding Standards（C++编程规范）
+		1. Organizational and Policy Issues（组织和政策问题）（18）
+			1. Don’t sweat the small stuff. (Or: Know what not to standardize.)（不要为小事而烦恼。 （或者：知道什么不应该标准化。））（19）
+			2. Compile cleanly at high warning levels.（在高警告级别干净地编译。）（21）
+			3. Use an automated build system.（使用自动构建系统。）（24）
+			4. Use a version control system.（使用版本控制系统。）（25）
+			5. Invest in code reviews.（投资于代码审查。）（26）
+		2. Design Style（设计风格）（28）
+			1. Give one entity one cohesive responsibility.（赋予一个实体一项凝聚力责任。）（29）
+			2. Correctness, simplicity, and clarity come first.（正确、简单、清晰是第一位的。）（30）
+			3. Know when and how to code for scalability.（了解何时以及如何编码以实现可扩展性。）（31）
+			4. Don’t optimize prematurely.（不要过早优化。）（33）
+			5. Don’t pessimize prematurely（不要过早悲观。）（35）
+			6. Minimize global and shared data.（尽量减少全局和共享数据。）（36）
+			7. Hide information.（隐藏信息。）（37）
+			8. Know when and how to code for concurrency.（了解何时以及如何编写并发代码。）（38）
+			9. Ensure resources are owned by objects. Use explicit RAII and smart pointers（确保资源归对象所有。 使用显式 RAII 和智能指针）（41）
+		3. Coding Style（编码风格）（44）
+			1. Prefer compile- and link-time errors to run-time errors.（与运行时错误相比，更喜欢编译时和链接时错误。）（45）
+			2. Use const proactively.（主动使用const。）（47）
+			3. Avoid macros.（避免宏。）（49）
+			4. Avoid magic numbers.（避免使用幻数。）（51）
+			5. Declare variables as locally as possible.（尽可能在本地声明变量。）（52）
+			6. Always initialize variables.（始终初始化变量。）（53）
+			7. Avoid long functions. Avoid deep nesting.（避免长函数。避免深层嵌套。）（55）
+			8. Avoid initialization dependencies across compilation units.（避免跨编译单元的初始化依赖性。）（56）
+			9. Minimize definitional dependencies. Avoid cyclic dependencies（最小化定义依赖性。 避免循环依赖）（57）
+			10. Make header files self-sufficient.（使头文件自给自足。）（59）
+			11. Always write internal #include guards. Never write external #include guards（始终编写内部#include 防护。 切勿编写外部#include 防护）（60）
+		4. Functions and Operators（函数和运算符）（62）
+			1. Take parameters appropriately by value, (smart) pointer, or reference.（通过值、（智能）指针或引用适当地获取参数。）（63）
+			2. Preserve natural semantics for overloaded operators.（保留重载运算符的自然语义。）（64）
+			3. Prefer the canonical forms of arithmetic and assignment operators（更喜欢算术和赋值运算符的规范形式）（65）
+			4. Prefer the canonical form of ++ and --.Prefer calling the prefix forms.（更喜欢 ++ 和 -- 的规范形式。更喜欢调用前缀形式。）（67）
+			5. Consider overloading to avoid implicit type conversions（考虑重载以避免隐式类型转换）（68）
+			6. Avoid overloading &&, ||, or , (comma) .（避免重载  &&、||  或 ,（逗号）。）（69）
+			7. Don’t write code that depends on the order of evaluation of function arguments（不要编写依赖于函数参数求值顺序的代码）（71）
+		5. Class Design and Inheritance（类的设计与继承）（72）
+			1. Be clear what kind of class you’re writing.（明确你正在写什么样的课程。）（73）
+			2. Prefer minimal classes to monolithic classes.（优先选择最小类而不是整体类。）（74）
+			3. Prefer composition to inheritance.（更喜欢组合而不是继承。）（75）
+			4. Avoid inheriting from classes that were not designed to be base classes（避免从不是设计为基类的类继承）（77）
+			5. Prefer providing abstract interfaces.（更喜欢提供抽象接口。）（79）
+			6. Public inheritance is substitutability. Inherit, not to reuse, but to be reused.（公共继承是可替代性的。 继承，不是为了重用，而是为了被重用。）（81）
+			7. Practice safe overriding.（练习安全覆盖。）（83）
+			8. Consider making virtual functions nonpublic, and public functions nonvirtual.（考虑将虚拟函数设置为非公共函数，将公共函数设置为非虚拟函数。）（85）
+			9. Avoid providing implicit conversions.（避免提供隐式转换。）（87）
+			10. Make data members private, except in behaviorless aggregates (C-style structs)（将数据成员设置为私有，无行为聚合（C 风格结构）除外）（89）
+			11. Don’t give away your internals.（不要泄露你的内心。）（91）
+			12. Pimpl judiciously.（明智地粉刺。）（93）
+			13. Prefer writing nonmember nonfriend functions（更喜欢编写非成员非友元函数）（96）
+			14. Always provide new and delete together.（更喜欢编写非成员非友元函数。）（97）
+			15. If you provide any class-specific new, provide all of the standard forms (plain, in-place, and nothrow)（如果您提供任何特定于类的新内容，请提供所有标准形式（普通、就地和无抛出））（99）
+		6. Construction, Destruction, and Copying（构造、破坏和复制）（102）
+			1. Define and initialize member variables in the same order.（以相同的顺序定义和初始化成员变量。）（103）
+			2. Prefer initialization to assignment in constructors（在构造函数中优先进行初始化而不是赋值）（104）
+			3. Avoid calling virtual functions in constructors and destructors（避免在构造函数和析构函数中调用虚函数）（105）
+			4. Make base class destructors public and virtual, or protected and nonvirtual（使基类析构函数成为公共和虚拟的，或受保护的和非虚拟的）（107）
+			5. Destructors, deallocation, and swap never fail（析构函数、释放和交换永远不会失败）（109）
+			6. Copy and destroy consistently.（持续复制和销毁。）（111）
+			7. Explicitly enable or disable copying.（明确启用或禁用复制。）（112）
+			8. Avoid slicing. Consider Clone instead of copying in base classes.（避免切片。 考虑克隆而不是在基类中进行复制。）（113）
+			9. Prefer the canonical form of assignment.（更喜欢规范的赋值形式。）（116）
+			10. Whenever it makes sense, provide a no-fail swap (and provide it correctly).（只要有意义，就提供无失败交换（并正确提供）。）（117）
+		7. Namespaces and Modules（命名空间和模块）（120）
+			1. Keep a type and its nonmember function interface in the same namespace.（将类型及其非成员函数接口保留在同一命名空间中。）（121）
+			2. Keep types and functions in separate name-spaces unless they’re specifically intended to work together.（将类型和函数保留在单独的名称空间中，除非它们专门打算一起工作。）（123）
+			3. Don’t write namespace usings in a header file or before an #include（不要在头文件中或 #include 之前编写命名空间 using）（125）
+			4.  Avoid allocating and deallocating memory in different modules.（避免在不同模块中分配和释放内存。）（128）
+			5.  Don’t define entities with linkage in a header file（不要在头文件中定义具有链接的实体）（129）
+			6. Don’t allow exceptions to propagate across module boundaries（不允许异常跨模块边界传播）（131）
+			7. Use sufficiently portable types in a module’s interface（在模块的接口中使用足够可移植的类型）（133）
+		8. Templates and Genericity（模板和通用性）（136）
+			1. Blend static and dynamic polymorphism judiciously（明智地混合静态和动态多态性）（137）
+			2. Customize intentionally and explicitly.（有意且明确地定制。）（139）
+			3. Don’t specialize function templates.（不要专门化函数模板。）（143）
+			4. Don’t write unintentionally nongeneric code.（不要无意中编写非泛型代码。）（不要无意中编写非泛型代码。）（145）
+		9. Error Handling and Exceptions（错误处理和异常）（146）
+			1. Assert liberally to document internal assumptions and invariants（Assert liberally to document internal assumptions and invariants）（147）
+			2. Establish a rational error handling policy, and follow it strictly（建立合理的错误处理政策，并严格遵守）（149）
+			3. Distinguish between errors and non-errors.（区分错误和非错误。）（151）
+			4. Design and write error-safe code.（设计和编写防错代码。）（154）
+			5. Prefer to use exceptions to report errors.（喜欢使用异常来报告错误。）（157）
+			6. Throw by value, catch by reference.（按值抛出，按引用捕获。）（161）
+			7. Report, handle, and translate errors appropriately（适当地报告、处理和翻译错误）（162）
+			8. Avoid exception specifications.（避免异常规范。）（163）
+		10. STL: Containers（STL：容器）（166）
+			1. Use vector by default. Otherwise, choose an appropriate container.（默认使用矢量。 否则，请选择合适的容器。）（167）
+			2. Use vector and string instead of arrays.（使用向量和字符串代替数组。）（169）
+			3. Use vector (and string::c_str) to exchange data with non-C++ APIs.（使用向量（和 string::c_str）与非 C++ API 交换数据。）（170）
+			4.  Store only values and smart pointers in containers.（仅将值和智能指针存储在容器中。）（171）
+			5. Prefer push_back to other ways of expanding a sequence.（与其他扩展序列的方法相比，更喜欢使用 Push_back。）（172）
+			6. Prefer range operations to single-element operations（优先选择范围操作而不是单元素操作）（173）
+			7. Use the accepted idioms to really shrink capacity and really erase elements.（使用公认的习惯用法来真正缩小容量并真正删除元素。）（174）
+		11. STL: Algorithms（STL：算法）（176）
+			1. Use a checked STL implementation.（使用经过检查的  STL  实现。）（177）
+			2. Prefer algorithm calls to handwritten loops.（更喜欢算法调用而不是手写循环。）（179）
+			3. Use the right STL search algorithm.（使用正确的STL搜索算法。）（182）
+			4. Use the right STL sort algorithm.（使用正确的STL排序算法。）（183）
+			5. Make predicates pure functions.（将谓词设为纯函数。）（185）
+			6. Prefer function objects over functions as algorithm and comparer arguments.（与函数相比，更喜欢将函数对象作为算法和比较器参数。）（187）
+			7. Write function objects correctly.（正确编写函数对象。）（189）
+		12. Type Safety（类型安全）（190）
+			1. Avoid type switching; prefer polymorphism.（避免类型转换；更喜欢多态性。）（191）
+			2. Rely on types, not on representations.（依靠类型，而不是表征。）（193）
+			3. Avoid using reinterpret_cast.（避免使用reinterpret_cast。）（194）
+			4. Avoid using static_cast on pointers.（避免在指针上使用  static_cast。）（195）
+			5. Avoid casting away const.（避免抛弃  const。）（196）
+			6. Don’t use C-style casts.（不要使用C  风格的强制转换。）（196）
+			7. Don’t memcpy or memcmp non-PODs.（不要使用  memcpy  或  memcmp  非  POD。）（199）
+			8. Don’t use unions to reinterpret representation.（不要使用联合来重新解释表示。）（200）
+			9. Don’t use varargs (ellipsis).（不要使用可变参数（省略号）。）（201）
+			10. Don’t use invalid objects. Don’t use unsafe functions.（不要使用无效的对象。 不要使用不安全的函数。）（202）
+			11. Don’t treat arrays polymorphically.（不要以多态方式对待数组。）（203）
+	5. The C++ Standard Library（C++标准库）
+		1. About This Book（关于本书）（30）
+			1. Why This Book（为什么选择这本书）（30）
+			2. Before Reading This Book（阅读本书之前）（31）
+			3. Style and Structure of the Book（本书的风格和结构）（31）
+			4. How to Read This Book（如何阅读本书）（33）
+			5. State of the Art（最新技术）（34）
+			6. Example Code and Additional Information（示例代码和附加信息）（34）
+			7. Feedback（反馈）（34）
+		2. Introduction to C++ and the Standard Library（C++ 和标准库简介）（36）
+			1. History of the C++ Standards（C++  标准的历史）（36）
+				1. Common Questions about the C++11 Standard（有关  C++11  标准的常见问题）（37）
+				2. Compatibility between C++98 and C++11（C++98  和  C++11  之间的兼容性）（38）
+			2. Complexity and Big-O Notation（复杂性和大O表示法）（39）
+		3. New Language Features（新的语言特性）（42）
+			1. New C++11 Language Features（C++11  语言新特性）（42）
+				1. Important Minor Syntax Cleanups（重要的次要语法清理）（42）
+				2. Automatic Type Deduction with auto（使用  auto  进行自动类型推导）（43）
+				3. Uniform Initialization and Initializer Lists（统一初始化和初始化器列表）（44）
+				4. Range-Based for Loops（基于范围的  for  循环）（46）
+				5. Move Semantics and Rvalue References（移动语义和右值引用）（48）
+				6. New String Literals（新字符串文字）（52）
+				7. Keyword noexcept（关键字noexcept）（53）
+				8. Keyword constexpr（关键字  constexpr）（55）
+				9. New Template Features（新模板功能）（55）
+				10. Lambdas（Lambda  表达式）（57）
+				11. Keyword decltype（关键字  decltype）（61）
+				12. New Function Declaration Syntax（新函数声明语法）（61）
+				13. Scoped Enumerations（作用域枚举）（61）
+				14. New Fundamental Data Types（新的基本数据类型）（62）
+			2. Old “New” Language Features（旧的“新”语言特征）（62）
+				1. Explicit Initialization for Fundamental Types（基本类型的显式初始化）（66）
+				2. Definition of main()（main()的定义）（66）
+		4. General Concepts（一般概念）（68）
+			1. Namespace std（命名空间标准）（68）
+			2. Header Files（头文件）（69）
+			3. Error and Exception Handling（错误和异常处理）（70）
+				1. Standard Exception Classes（标准异常类）（70）
+				2. Members of Exception Classes（异常类的成员）（73）
+				3. Passing Exceptions with Class exception_ptr（使用类  exception_ptr  传递异常）（81）
+				4. Throwing Standard Exceptions（抛出标准异常）（82）
+				5. Deriving from Standard Exception Classes（从标准异常类派生）（83）
+			4. Callable Objects（可调用对象）（83）
+			5. Concurrency and Multithreading（并发和多线程）（84）
+			6. Allocators（分配器）（86）
+		5. Utilities（公用事业）（88）
+			1. Pairs and Tuples（对和元组）（89）
+				1. Pairs（配对）（89）
+				2. Tuples（元组）（97）
+				3. I/O for Tuples（元组的  I/O）（103）
+				4. Conversions between tuples and pairs（元组和对之间的转换）（104）
+			2. Smart Pointers（智能指针）（105）
+				1. Class shared_ptr（类shared_ptr）（105）
+				2. Class weak_ptr（类weak_ptr）（113）
+				3. Misusing Shared Pointers（滥用共享指针）（118）
+				4. Shared and Weak Pointers in Detail（共享指针和弱指针详细信息）（121）
+				5. Class unique_ptr（类  unique_ptr）（127）
+				6. Class unique_ptr in Detail（unique_ptr  类详细信息）（139）
+				7. Class auto_ptr（类  auto_ptr）（142）
+				8. Final Words on Smart Pointers（关于智能指针的最后一句话）（143）
+			3. Numeric Limits（数值限制）（144）
+			4. Type Traits and Type Utilities（类型特征和类型实用程序）（151）
+				1. Purpose of Type Traits（类型特征的目的）（151）
+				2. Type Traits in Detail（类型特征详细信息）（154）
+				3. Reference Wrappers（参考包装器）（161）
+				4. Function Type Wrappers（函数类型包装器）（162）
+			5. Auxiliary Functions（辅助功能）（163）
+				1. Processing the Minimum and Maximum（处理最小值和最大值）（163）
+				2. Swapping Two Values（交换两个值）（165）
+				3. Supplementary Comparison Operators（补充比较运算符）（167）
+			6. Compile-Time Fractional Arithmetic with Class ratio<>（具有类比<>的编译时小数算术）（169）
+			7. Clocks and Timers（时钟和定时器）（172）
+				1. Overview of the Chrono Library（Chrono  库概述）（172）
+				2. Durations（持续时间）（173）
+				3. Clocks and Timepoints（时钟和时间点）（178）
+				4. Date and Time Functions by C and POSIX（C  和  POSIX  的日期和时间函数）（186）
+				5. Blocking with Timers（用定时器阻塞）（189）
+			8. Header Files < cstddef>, < cstdlib>, and < cstring>（头文件 < cstddef>、< cstdlib> 和 < cstring>）（190）
+				1. Definitions in < cstddef>（< cstddef>中的定义）（190）
+				2. Definitions in < cstdlib>（< cstdlib>中的定义）（191）
+				3. Definitions in < cstring>（< cstring>中的定义）（192）
+		6. The Standard Template Library（标准模板库）（194）
+			1. STL Components（STL组件）（194）
+			2. Containers（容器）（196）
+				1. Sequence Containers（序列容器）（198）
+				2. Associative Containers（关联容器）（206）
+				3. Unordered Containers（无序容器）（209）
+				4. Associative Arrays（关联数组）（214）
+				5. Other Containers（其他容器）（216）
+				6. Container Adapters（容器适配器）（217）
+			3. Iterators（迭代器）（217）
+				1. Further Examples of Using Associative and Unordered Containers（使用关联和无序容器的更多示例）（222）
+				2. Iterator Categories（迭代器类别）（227）
+			4. Algorithms（算法）（228）
+				1. Ranges（范围）（232）
+				2. Handling Multiple Ranges（处理多个范围）（236）
+			5. Iterator Adapters（迭代器适配器）（239）
+				1. Insert Iterators（插入迭代器）（239）
+				2. Stream Iterators（流迭代器）（241）
+				3. Reverse Iterators（反向迭代器）（243）
+				4. Move Iterators（移动迭代器）（245）
+			6. User-Defined Generic Functions（用户定义的通用函数）（245）
+			7. Manipulating Algorithms（操纵算法）（246）
+				1. “Removing” Elements（“删除”元素）（247）
+				2. Manipulating Associative and Unordered Containers（操作关联和无序容器）（250）
+				3. Algorithms versus Member Functions（算法与成员函数）（252）
+			8. Functions as Algorithm Arguments（函数作为算法参数）（253）
+				1. Using Functions as Algorithm Arguments（使用函数作为算法参数）（253）
+				2. Predicates（谓词）（255）
+			9. Using Lambdas（使用  Lambda  表达式）（258）
+			10. Function Objects（函数对象）（262）
+				1. Definition of Function Objects（函数对象的定义）（262）
+				2. Predefined Function Objects（预定义函数对象）（268）
+				3. Binders（粘合剂）（270）
+				4. Function Objects and Binders versus Lambdas（函数对象和绑定器与  Lambda）（272）
+			11. Container Elements（容器元素）（273）
+				1. Requirements for Container Elements（容器元素的要求）（273）
+				2. Value Semantics or Reference Semantics（值语义或引用语义）（274）
+			12. Errors and Exceptions inside the STL（STL内部的错误和异常）（274）
+				1. Error Handling（错误处理）（275）
+				2. Exception Handling（异常处理）（277）
+			13. Extending the STL（扩展STL）（279）
+				1. Integrating Additional Types（集成附加类型）（279）
+				2. Deriving from STL Types（从  STL  类型派生）
+		7. STL Containers（STL容器）（282）
+			1. Common Container Abilities and Operations（常用容器能力及操作）（283）
+				1. Container Abilities（容器能力）（283）
+				2. Container Operations（容器操作）（283）
+				3. Container Types（容器类型）（289）
+			2. Arrays（数组）（290）
+				1. Abilities of Arrays（数组的能力）（290）
+				2. Array Operations（数组操作）（292）
+				3. Using arrays as C-Style Arrays（将数组用作  C  样式数组）（296）
+				4. Exception Handling（异常处理）（297）
+				5. Tuple Interface（元组接口）（297）
+				6. Examples of Using Arrays（使用数组的⽰例）（297）
+			3. Vectors（向量）（299）
+				1. Abilities of Vectors（向量的能力）（299）
+				2. Vector Operations（向量运算）（302）
+				3. Using Vectors as C-Style Arrays（将向量用作  C  样式数组）（307）
+				4. Exception Handling（异常处理）（307）
+				5. Examples of Using Vectors（使用向量的示例）（308）
+				6. Class vector< bool>（类向量< bool>）（310）
+			4. Deques（双端队列）（312）
+				1. Abilities of Deques（双端队列的能力）（313）
+				2. Deque Operations（双端队列操作）（314）
+				3. Exception Handling（异常处理）（317）
+				4. Examples of Using Deques（使用双端队列的示例）（317）
+			5. Lists（列表）（319）
+				1. Abilities of Lists（列表的能力）（319）
+				2. List Operations（列表操作）（320）
+				3. Exception Handling（异常处理）（325）
+				4. Examples of Using Lists（使用列表的示例）（327）
+			6. Forward Lists（转发列表）（329）
+				1. Abilities of Forward Lists（转发列表的功能）（329）
+				2. Forward List Operations（转发列表操作）（331）
+				3. Exception Handling（异常处理）（340）
+				4. Examples of Using Forward Lists（使用转发列表的示例）（341）
+			7. Sets and Multisets（集合和多重集合）（343）
+				1. Abilities of Sets and Multisets（集合和多重集合的能力）（344）
+				2. Set and Multiset Operations（集合和多重集合操作）（345）
+				3. Exception Handling（异常处理）（354）
+				4. Examples of Using Sets and Multisets（使用集合和多重集合的示例）（354）
+				5. Example of Specifying the Sorting Criterion at Runtime（在运行时指定排序标准的示例）（357）
+			8. Maps and Multimaps（映射和多重映射）（360）
+				1. Abilities of Maps and Multimaps（地图和多重地图的功能）（361）
+				2. Map and Multimap Operations（映射和多重映射操作）（362）
+				3. Using Maps as Associative Arrays（使用映射作为关联数组）（372）
+				4. Exception Handling（异常处理）（374）
+				5. Examples of Using Maps and Multimaps（使用映射和多重映射的示例）（374）
+				6. Example with Maps, Strings, and Sorting Criterion at Runtime（运行时的映射、字符串和排序标准示例）（380）
+			9. Unordered Containers（无序容器）（384）
+				1. Abilities of Unordered Containers（无序容器的能力）（386）
+				2. Creating and Controlling Unordered Containers（创建和控制无序容器）（388）
+				3. Other Operations for Unordered Containers（无序容器的其他操作）（396）
+				4. The Bucket Interface（桶接口）（403）
+				5. Using Unordered Maps as Associative Arrays（使用无序映射作为关联数组）（403）
+				6. Exception Handling（异常处理）（404）
+				7. Examples of Using Unordered Containers（使用无序容器的示例）（404）
+			10. Other STL Containers（其他STL容器）（414）
+				1. Strings as STL Containers（字符串作为  STL  容器）（414）
+				2. Ordinary C-Style Arrays as STL Containers（普通  C  风格数组作为  STL  容器）（415）
+			11. Implementing Reference Semantics（实现参考语义）（417）
+			12. When to Use Which Container（何时使用哪个容器）（421）
+		8. STL Container Members in Detail（STL容器成员详细信息）（426）
+			1. Type Definitions（类型定义）（426）
+			2. Create, Copy, and Destroy Operations（创建、复制和销毁操作）（429）
+			3. Nonmodifying Operations（⾮修改操作）（432）
+				1. Size Operations（尺寸操作）（432）
+				2. Comparison Operations（比较运算）（433）
+				3. Nonmodifying Operations for Associative and Unordered Containers（关联容器和无序容器的非修改操作）（433）
+			4. Assignments（作业）（435）
+			5. Direct Element Access（直接元素访问）（437）
+			6. Operations to Generate Iterators（生成迭代器的操作）（439）
+			7. Inserting and Removing Elements（插入和删除元素）（440）
+				1. Inserting Single Elements（插入单个元素）（440）
+				2. Inserting Multiple Elements（插入多个元素）（445）
+				3. Removing Elements（删除元素）（446）
+				4. Resizing（调整大小）（449）
+			8. Special Member Functions for Lists and Forward Lists（列表和转发列表的特殊成员函数）（449）
+				1. Special Member Functions for Lists (and Forward Lists)（列表（和转发列表）的特殊成员函数）（449）
+				2. Special Member Functions for Forward Lists Only（仅用于转发列表的特殊成员函数）（452）
+			9. Container Policy Interfaces（容器策略接口）（456）
+				1. Nonmodifying Policy Functions（不可修改的策略函数）（456）
+				2. Modifying Policy Functions（修改策略函数）（457）
+				3. Bucket Interface for Unordered Containers（无序容器的桶接口）（458）
+			10. Allocator Support（分配器支持）（459）
+				1. Fundamental Allocator Members（基本分配器成员）（459）
+				2. Constructors with Optional Allocator Parameters（具有可选分配器参数的构造函数）（459）
+		9. STL Iterators（STL迭代器）（462）
+			1. Header Files for Iterators（迭代器的头文件）（462）
+			2. Iterator Categories（迭代器类别）（462）
+				1. Output Iterators（输出迭代器）（462）
+				2. Input Iterators（输入迭代器）（464）
+				3. Forward Iterators（前向迭代器）（465）
+				4. Bidirectional Iterators（双向迭代器）（466）
+				5. Random-Access Iterators（随机访问迭代器）（467）
+				6. The Increment and Decrement Problem of Vector Iterators（向量迭代器的自增和自减问题）（469）
+			3. Auxiliary Iterator Functions（辅助迭代器函数）（470）
+				1. advance()（470）
+				2. next() and prev()（472）
+				3. distance()（474）
+				4. iter_swap()（475）
+			4. Iterator Adapters（迭代器适配器）（447）
+				1. Reverse Iterators（反向迭代器）（477）
+				2. Insert Iterators（插入迭代器）（483）
+				3. Stream Iterators（流迭代器）（489）
+				4. Move Iterators（移动迭代器）（495）
+			5. Iterator Traits（迭代器特征）（495）
+				1. Writing Generic Functions for Iterators（为迭代器编写泛型函数）（497）
+			6. Writing User-Defined Iterators（编写用户定义的迭代器）（500）
+		10. STL Function Objects and Using Lambdas（STL 函数对象和使用 Lambda）（504）
+			1. The Concept of Function Objects（函数对象的概念）（504）
+				1. Function Objects as Sorting Criteria（函数对象作为排序标准）（505）
+				2. Function Objects with Internal State（具有内部状态的函数对象）（507）
+				3. The Return Value of for_each()（for_each()的返回值）（511）
+				4. Predicates versus Function Objects（谓词与函数对象）（512）
+			2. Predefined Function Objects and Binders（预定义函数对象和绑定器）（515）
+				1. Predefined Function Objects（预定义函数对象）（515）
+				2. Function Adapters and Binders（函数适配器和绑定器）（516）
+				3. User-Defined Function Objects for Function Adapters（函数适配器的用户定义函数对象）（524）
+				4. Deprecated Function Adapters（已弃用的函数适配器）（526）
+			3. Using Lambdas（使用  Lambda  表达式）（528）
+				1. Lambdas versus Binders（Lambda  与  Binder）（528）
+				2. Lambdas versus Stateful Function Objects（Lambda  与有状态函数对象）（529）
+				3. Lambdas Calling Global and Member Functions（Lambda  调用全局函数和成员函数）（531）
+				4. Lambdas as Hash Function, Sorting, or Equivalence Criterion（Lambda 作为哈希函数、排序或等价标准）（533）
+		11. STL Algorithms（STL算法）（534）
+			1. Algorithm Header Files（算法头文件）（534）
+			2. Algorithm Overview（算法概述）（534）
+				1. A Brief Introduction（简介）（535）
+				2. Classification of Algorithms（算法分类）（535）
+			3. Auxiliary Functions（辅助功能）（546）
+			4. The for_each() Algorithm（for_each()算法）（548）
+			5. Nonmodifying Algorithms（不可修改算法）（553）
+				1. Counting Elements（计数元素）（553）
+				2. Minimum and Maximum（最小值和最大值）（554）
+				3. Searching Elements（搜索元素）（557）
+				4. Comparing Ranges（比较范围）（571）
+				5. Predicates for Ranges（范围谓词）（579）
+			6. Modifying Algorithms（修改算法）（586）
+				1. Copying Elements（复制元素）（586）
+				2. Moving Elements（移动元素）（590）
+				3. Transforming and Combining Elements（转换和组合元素）（592）
+				4. Swapping Elements（交换元素）（595）
+				5. Assigning New Values（分配新值）（597）
+				6. Replacing Elements（替换元件）（600）
+			7. Removing Algorithms（删除算法）（604）
+				1. Removing Certain Values（删除某些值）（604）
+				2. Removing Duplicates（删除重复项）（607）
+			8. Mutating Algorithms（变异算法）（612）
+				1. Reversing the Order of Elements（颠倒元素的顺序）（612）
+				2. Rotating Elements（旋转元件）（613）
+				3. Permuting Elements（排列元素）（616）
+				4. Shuffling Elements（打乱元素）（618）
+				5. Moving Elements to the Front（将元素移到前面）（621）
+				6. Partition into Two Subranges（划分为两个子范围）（623）
+			9. Sorting Algorithms（排序算法）（625）
+				1. Sorting All Elements（对所有元素进行排序）（625）
+				2. Partial Sorting（部分排序）（628）
+				3. Sorting According to the nth Element（根据第n个元素排序）（631）
+				4. Heap Algorithms（堆算法）（633）
+			10. Sorted-Range Algorithms（排序范围算法）（637）
+				1. Searching Elements（搜索元素）（637）
+				2. Merging Elements（合并元素）（643）
+			11. Numeric Algorithms（数值算法）（652）
+				1. Processing Results（处理结果）（652）
+				2. Converting Relative and Absolute Values（相对值和绝对值的转换）（656）
+		12. Special Containers（特种集装箱）（660）
+			1. Stacks（堆栈）（661）
+				1. The Core Interface（核心接口）（662）
+				2. Example of Using Stacks（使用堆栈的示例）（662）
+				3. A User-Defined Stack Class（用户定义的堆栈类）（664）
+				4. Class stack<> in Detail（类堆栈<>详细信息）（666）
+			2. Queues（队列）（667）
+				1. The Core Interface（核心接口）（668）
+				2. Example of Using Queues（使用队列的示例）（669）
+				3. A User-Defined Queue Class（用户定义的队列类）（670）
+				4. Class queue<> in Detail（类队列<>详细信息）（670）
+			3. Priority Queues（优先级队列）（670）
+				1. The Core Interface（核心接口）（672）
+				2. Example of Using Priority Queues（使用优先级队列的示例）（672）
+				3. Class priority_queue<> in Detail（类priority_queue<>详细信息）（673）
+			4. Container Adapters in Detail（容器适配器详细信息）（674）
+				1. Type Definitions（类型定义）（674）
+				2. Constructors（构造函数）（675）
+				3. Supplementary Constructors for Priority Queues（优先级队列的补充构造函数）（675）
+				4. Operations（操作）（676）
+			5. Bitsets（位集）（679）
+				1. Examples of Using Bitsets（使用位集的示例）（680）
+				2. Class bitset in Detail（类位集详细信息）（682）
+		13. Strings（弦乐）（684）
+			1. Purpose of the String Classes（字符串类的用途）（685）
+				1. A First Example: Extracting a Temporary Filename（第一个示例：提取临时文件名）（685）
+				2. A Second Example: Extracting Words and Printing Them Backward（第二个例子：提取单词并向后打印）（689）
+			2. Description of the String Classes（字符串类的描述）（692）
+				1. String Types（字符串类型）（692）
+				2. Operation Overview（操作概述）（695）
+				3. Constructors and Destructor（构造函数和析构函数）（696）
+				4. Strings and C-Strings（字符串和  C  字符串）（697）
+				5. Size and Capacity（尺寸和容量）（698）
+				6. Element Access（元素访问）（700）
+				7. Comparisons（比较）（701）
+				8. Modifiers（修饰符）（702）
+				9. Substrings and String Concatenation（子字符串和字符串连接）（705）
+				10. Input/Output Operators（输入/输出运算符）（706）
+				11. Searching and Finding（搜索与查找）（707）
+				12. The Value npos（价值非营利组织）（709）
+				13. Numeric Conversions（数字转换）（710）
+				14. Iterator Support for Strings（字符串的迭代器支持）（713）
+				15. Internationalization（国际化）（718）
+				16. Performance（性能）（721）
+				17. Strings and Vectors（字符串和向量）（721）
+			3. String Class in Detail（字符串类详细信息）（722）
+				1. Type Definitions and Static Values（类型定义和静态值）（722）
+				2. Create, Copy, and Destroy Operations（创建、复制和销毁操作）（723）
+				3. Operations for Size and Capacity（大小和容量的操作）（725）
+				4. Comparisons（比较）（726）
+				5. Character Access（字符访问）（728）
+				6. Generating C-Strings and Character Arrays（生成  C  字符串和字符数组）（729）
+				7. Modifying Operations（修改操作）（729）
+				8. Searching and Finding（搜索与查找）（737）
+				9. Substrings and String Concatenation（子字符串和字符串连接）（740）
+				10. Input/Output Functions（输入/输出功能）（741）
+				11. Numeric Conversions（数字转换）（742）
+				12. Generating Iterators（生成迭代器）（743）
+				13. Allocator Support（分配器支持）（744）
+		14. Regular Expressions（常用表达）（746）
+			1. The Regex Match and Search Interface（正则表达式匹配和搜索界面）（746）
+			2. Dealing with Subexpressions（处理子表达式）（749）
+			3. Regex Iterators（正则表达式迭代器）（755）
+			4. Regex Token Iterators（正则表达式令牌迭代器）（756）
+			5. Replacing Regular Expressions（替换正则表达式）（759）
+			6. Regex Flags（正则表达式标志）（761）
+			7. Regex Exceptions（正则表达式异常）（764）
+			8. The Regex ECMAScript Grammar（正则表达式  ECMAScript  语法）（767）
+			9. Other Grammars（其他语法）（768）
+			10. Basic Regex Signatures in Detail（基本正则表达式签名详细信息）（769）
+		15. Input/Output Using Stream Classes（使用流类的输入/输出）（722）
+			1. Common Background of I/O Streams（I/O流的常见背景）（773）
+				1. Stream Objects（流对象）（773）
+				2. Stream Classes（流类）（773）
+				3. Global Stream Objects（全局流对象）（774）
+				4. Stream Operators（流运算符）（774）
+				5. Manipulators（操纵器）（775）
+				6. A Simple Example（一个简单的例子）（775）
+			2. Fundamental Stream Classes and Objects（基本流类和对象）（777）
+				1. Classes and Class Hierarchy（类和类层次结构）（777）
+				2. Global Stream Objects（全局流对象）（780）
+				3. Header Files（头文件）（781）
+			3. Standard Stream Operators << and >>（标准流运算符<<和>>）（782）
+				1. Output Operator <<（输出运算符<<）（782）
+				2. Input Operator >>（输入运算符>>）（783）
+				3. Input/Output of Special Types（特殊类型的输入/输出）（784）
+			4. State of Streams（流的状态）（787）
+				1. Constants for the State of Streams（流状态常量）（787）
+				2. Member Functions Accessing the State of Streams（访问流状态的成员函数）（788）
+				3. Stream State and Boolean Conditions（流状态和布尔条件）（789）
+				4. Stream State and Exceptions（流状态和异常）（791）
+			5. Standard Input/Output Functions（标准输入/输出功能）（796）
+				1. Member Functions for Input（输入成员函数）（797）
+				2. Member Functions for Output（输出成员函数）（800）
+				3. Example Uses（示例用途）（801）
+				4. sentry Objects（哨兵对象）（801）
+			6. Manipulators（操纵器）（803）
+				1. Overview of All Manipulators（所有操纵器概述）（803）
+				2. How Manipulators Work（操纵器如何工作）（805）
+				3. User-Defined Manipulators（用户定义的操纵器）（806）
+			7. Formatting（格式化）（808）
+				1. Format Flags（格式标志）（808）
+				2. Input/Output Format of Boolean Values（布尔值的输入/输出格式）（810）
+				3. Field Width, Fill Character, and Adjustment（字段宽度、填充字符及调整）（810）
+				4. Positive Sign and Uppercase Letters（正号和大写字母）（813）
+				5. Numeric Base（数字基数）（814）
+				6. Floating-Point Notation（浮点表示法）（816）
+				7. General Formatting Definitions（通用格式定义）（818）
+			8. Internationalization（国际化）（819）
+			9. File Access（文件访问）（820）
+				1. File Stream Classes（文件流类）（820）
+				2. Rvalue and Move Semantics for File Streams（文件流的右值和移动语义）（824）
+				3. File Flags（文件标志）（825）
+				4. Random Access（随机访问）（828）
+				5. Using File Descriptors（使用文件描述符）（830）
+			10. Stream Classes for Strings（字符串的流类）（831）
+				1. String Stream Classes（字符串流类）（831）
+				2. Move Semantics for String Streams（字符串流的移动语义）（835）
+				3. char* Stream Classes（char*  流类）（836）
+			11. Input/Output Operators for User-Defined Types（用户定义类型的输入/输出运算符）（839）
+				1. Implementing Output Operators（实现输出运算符）（839）
+				2. Implementing Input Operators（实现输入运算符）（841）
+				3. Input/Output Using Auxiliary Functions（使用辅助功能的输入/输出）（843）
+				4. User-Defined Format Flags（用户定义的格式标志）（844）
+				5. Conventions for User-Defined Input/Output Operators（用户定义的输入/输出运算符的约定）（847）
+			12. Connecting Input and Output Streams（连接输入和输出流）（848）
+				1. Loose Coupling Using tie()（使用tie()的松耦合）（848）
+				2. Tight Coupling Using Stream Buffers（使用流缓冲区的紧耦合）（849）
+				3. Redirecting Standard Streams（重定向标准流）（851）
+				4. Streams for Reading and Writing（读写流）（853）
+			13. The Stream Buffer Classes（流缓冲区类）（855）
+				1. The Stream Buffer Interfaces（流缓冲区接口）（855）
+				2. Stream Buffer Iterators（流缓冲区迭代器）（857）
+				3. User-Defined Stream Buffers（用户定义的流缓冲区）（861）
+			14. Performance Issues（性能问题）（873）
+				1. Synchronization with C’s Standard Streams（与C标准流同步）（874）
+				2. Buffering in Stream Buffers（流缓冲区中的缓冲）（874）
+				3. Using Stream Buffers Directly（直接使用流缓冲区）（875）
+		16. Internationalization（国际化）（878）
+			1. Character Encodings and Character Sets（字符编码和字符集）（879）
+				1. Multibyte and Wide-Character Text（多字节和宽字符文本）（879）
+				2. Different Character Sets（不同的字符集）（880）
+				3. Dealing with Character Sets in C++（在  C++  中处理字符集）（881）
+				4. Character Traits（性格特征）（882）
+				5. Internationalization of Special Characters（特殊字符的国际化）（886）
+			2. The Concept of Locales（语言环境的概念）（886）
+				1. Using Locales（使用语言环境）（887）
+				2. Locale Facets（语言环境方面）（893）
+			3. Locales in Detail（语言环境详细信息）（895）
+			4. Facets in Detail（面详细信息）（898）
+				1. Numeric Formatting（数字格式）（899）
+				2. Monetary Formatting（货币格式）（903）
+				3. Time and Date Formatting（时间和日期格式）（913）
+				4. Character Classification and Conversion（字符分类与转换）（920）
+				5. String Collation（字符串排序规则）（933）
+				6. Internationalized Messages（国际化消息）（934）
+		17. Numerics（数值）（936）
+			1. Random Numbers and Distributions（随机数和分布）（936）
+				1. A First Example（第一个例子）（937）
+				2. Engines（引擎）（941）
+				3. Engines in Detail（引擎详细信息）（944）
+				4. Distributions（分布）（946）
+				5. Distributions in Detail（分布详细信息）（950）
+			2. Complex Numbers（复数）（954）
+				1. Class complex<> in General（类complex<>概述）（954）
+				2. Examples Using Class complex<>（使用类complex<>的示例）（955）
+				3. Operations for Complex Numbers（复数运算）（957）
+				4. Class complex<> in Detail（类complex<>详细信息）（964）
+			3. Global Numeric Functions（全局数值函数）（970）
+			4. Valarrays（972）
+		18. Concurrency（并发性）（974）
+			1. The High-Level Interface: async() and Futures（高级接口：async() 和 Futures）（975）
+				1. A First Example Using async() and Futures（使用  async()  和  Future  的第一个示例）（975）
+				2. An Example of Waiting for Two Tasks（等待两个任务的示例）（984）
+				3. Shared Futures（共享期货）（989）
+			2. The Low-LevelInterface: Threads and Promises（低级接口：线程和  Promise）（993）
+				1. Class std::thread（993）
+				2. Promises（承诺）（998）
+				3. Class packaged_task<>（1001）
+			3. Starting a Thread in Detail（启动线程的详细信息）（1002）
+				1. async() in Detail（async()  详细信息）（1003）
+				2. Futures in Detail（期货详细信息）（1004）
+				3. Shared Futures in Detail（共享期货详细信息）（1005）
+				4. Class std::promise in Detail（类  std::promise  详细信息）（1006）
+				5. Class std::packaged_task in Detail（类  std::packaged_task  详细信息）（1006）
+				6. Class std::thread in Detail（类  std::thread  详细信息）（1008）
+				7. Namespace this_thread（命名空间  this_thread）（1010）
+			4. Synchronizing Threads, or the Problem of Concurrency（同步线程，或者说并发问题）（1011）
+				1. Beware of Concurrency!（注意并发！）（1011）
+				2. The Reason for the Problem of Concurrent Data Access（并发数据访问问题的原因）（1012）
+				3. What Exactly Can Go Wrong (the Extent of the Problem)（究竟会出现什么问题（问题的程度））（1012）
+				4. The Features to Solve the Problems（解决问题的特点）（1016）
+			5. Mutexes and Locks（互斥锁和锁）（1018）
+				1. Using Mutexes and Locks（使用互斥锁和锁）（1018）
+				2. Mutexes and Locks in Detail（互斥体和锁的详细信息）（1027）
+				3. Calling Once for Multiple Threads（多线程调用一次）（1029）
+			6. Condition Variables（条件变量）（1032）
+				1. Purpose of Condition Variables（条件变量的用途）（1032）
+				2. A First Complete Example for Condition Variables（条件变量的第一个完整示例）（1033）
+				3. Using Condition Variables to Implement a Queue for Multiple Threads（使用条件变量实现多线程队列）（1035）
+				4. Condition Variables in Detail（条件变量详细信息）（1038）
+			7. Atomics（原子）（1041）
+				1. Example of Using Atomics（使用原子的示例）（1041）
+				2. Atomics and Their High-Level Interface in Detail（原子及其高级接口详细信息）（1045）
+				3. The C-Style Interface of Atomics（原子的  C  风格接口）（1048）
+				4. The Low-Level Interface of Atomics（原子的低级接口）（1048）
+		19. Allocators（分配器）（1052）
+			1. Using Allocators as an Application Programmer（作为应用程序程序员使用分配器）（1052）
+			2. A User-Defined Allocator（用户定义的分配器）（1053）
+			3. Using Allocators as a Library Programmer（使用分配器作为库程序员）（1055）
+	6. Effective Modern C++（有效的现代  C++）
+		1. Deducing Types（推导类型）（27）
+			1. Item 1: Understand template type deduction（第  1  项：了解模板类型推导）（27）
+				1. Case 1: ParamType is a Reference or Pointer, but not a Universal Reference（情况 1：ParamType 是引用或指针，但不是通用引用）（29）
+				2. Case 2: ParamType is a Universal Reference（情况  2：  ParamType是通用引用）（31）
+				3. Case 3: ParamType is Neither a Pointer nor a Reference（情况  3：  ParamType既不是指针也不是引用）（32）
+				4. Array Arguments（数组参数这几乎涵盖了）（33）
+				5. Function Arguments（函数参数）（35）
+			2. Item 2: Understand auto type deduction（第  2  项：了解自动类型推导）（36）
+			3. Item 3: Understand decltype（第  3  项：了解decltype）（41）
+			4. Item 4: Know how to view deduced types（第  4  项：了解如何查看推导类型）（48）
+				1. IDE Editors（IDE编辑器）（48）
+				2. Compiler Diagnostics（编译器诊断）（49）
+				3. Runtime Output（运行时输出）（49）
+		2. auto（自动）（55）
+			1. Item 5: Prefer auto to explicit type declarations（第  5  项：优先使用auto而不是显式类型声明）（55）
+			2. Item 6: Use the explicitly typed initializer idiom when auto deduces undesired types（第 6 项：当自动推导不需要的类型时，使用显式类型初始化惯用法）（61）
+		3. Moving to Modern C++（转向现代  C++）（67）
+			1. Item 7: Distinguish between () and {} when creating objects（第7条：创建对象时区分()和{}）（67）
+			2. Item 8: Prefer nullptr to 0 and NULL（第  8  项：优先使用nullptr ，而不是0和NULL）（76）
+			3. Item 9: Prefer alias declarations to typedefs（第  9  项：优先使用别名声明而不是typedef）（81）
+			4. Item 10: Prefer scoped enums to unscoped enums（第  10  项：与无作用域枚举相比，更喜欢有作用域枚举）（85）
+			5. Item 11: Prefer deleted functions to private undefined ones（第 11 项：优先选择已删除的函数而不是私有未定义的函数）（92）
+			6. Item 12: Declare overriding functions override（第  12  项：声明重写函数override）（97）
+			7. Item 13: Prefer const_iterators to iterators（第  13  项：与迭代器相比，更喜欢const_iterators）（104）
+			8. Item 14: Declare functions noexcept if they won’t emit exceptions（第 14 项：如果函数不会发出异常，则将其声明为 noexcept）（108）
+			9. Item 15: Use constexpr whenever possible（第  15  项：尽可能使用constexpr）（115）
+			10. Item 16: Make const member functions thread safe（第  16  项：使const成员函数成为线程安全的）（121）
+			11. Item 17: Understand special member function generation（第 17 项：理解特殊成员函数的生成）（127）
+		4. Smart Pointers（智能指针）（135）
+			1. Item 18: Use std::unique_ptr for exclusive-ownership resource management（第 18 项：使用 std::unique_ptr 进行独占所有权资源管理）（136）
+			2. Item 19: Use std::shared_ptr for shared-ownership resource management（第 19 项：使用 std::shared_ptr 进行共享所有权资源管理）（143）
+			3. Item 20: Use std::weak_ptr for std::shared_ptr-like pointers that can dangle（第 20 项：将 std::weak_ptr 用于类似 std::shared_ptr 的可以悬挂的指针）（152）
+			4. Item 21: Prefer std::make_unique and std::make_shared to direct use of new（第 21 项：优先使用 std::make_unique 和 std::make_shared 而不是直接使用 new）（157）
+			5. Item 22:When using the Pimpl Idiom, define special member functions in the implementation file（第22项：使用Pimpl Idiom时，在实现文件中定义特殊成员函数）（165）
+		5. Rvalue References, Move Semantics, and Perfect Forwarding（右值引用、移动语义和完美转发）（175）
+			1. Item 23: Understand std::move and std::forward（第  23  项：理解std::move和std::forward）（176）
+			2. Item 24: Distinguish universal references from rvalue references（第 24 项：区分通用引用和右值引用）（182）
+			3. Item 25: Use std::move on rvalue references, std::forward on universal references（第 25 项：在右值引用上使用 std::move，在通用引用上使用 std::forward）（186）
+			4. Item 26: Avoid overloading on universal references（第  26  条：避免通用引用重载）（195）
+			5. Item 27:Familiarize yourself with alternatives to overloading on universal references（第 27 项：熟悉通用引用重载的替代方案）（202）
+				1. Abandon overloading（放弃超载）（202）
+				2. Pass by const T&（通过 const T& 传递）（202）
+				3. Pass by value（按值传递）（202）
+				4. Use Tag dispatch（使用标签调度）（203）
+				5. Constraining templates that take universal references（约束采用通用引用的模板）（206）
+				6. Trade-offs（权衡）（212）
+			6. Item 28: Understand reference collapsing（第  28  项：了解引用折叠）（215）
+			7. Item 29: Assume that move operations are not present, not cheap, and not used（第 29 项：假设移动操作不存在、不便宜且未使用）（221）
+			8. Item 30:Familiarize yourself with perfect forwarding failure cases（第30条：熟悉完美转发失败案例）（225）
+				1. Braced initializers（带支撑的初始化器）（226）
+				2. 0 or NULL as null pointers（0 或 NULL 作为空指针）（227）
+				3. Declaration-only integral static const data members（仅声明整型静态常量数据成员）（228）
+				4. Overloaded function names and template names（重载的函数名称和模板名称）（229）
+				5. Bitfields（位域）（231）
+				6. Upshot（结果）（232）
+		6. Lambda Expressions（拉姆达表达式）（233）
+			1. Item 31: Avoid default capture modes（第  31  项：避免默认捕获模式）（234）
+			2. Item 32: Use init capture to move objects into closures（第  32  项：使用  init  capture  将对象移动到闭包中）（242）
+			3. Item 33: Use decltype on auto&& parameters to std::forward them（第 33 项：在 auto&& 参数上使用 decltype 来 std::forward 它们）（247）
+			4. Item 34: Prefer lambdas to std::bind（第  34  项：与std::bind  相比，更喜欢  lambda）（250）
+		7. The Concurrency API（并发  API）（259）
+			1. Item 35: Prefer task-based programming to thread-based（第 35 条：优先选择基于任务的编程而不是基于线程的编程）（259）
+			2. Item 36:Specify std::launch::async if asynchronicity is essential（第 36 项：如果异步性必不可少，请指定 std::launch::async）（263）
+			3. Item 37: Make std::threads unjoinable on all paths（第  37  项：使std::threads在所有路径上不可连接）（268）
+			4. Item 38: Be aware of varying thread handle destructor behavior（第 38 项：注意不同的线程句柄析构函数行为）（276）
+			5. Item 39:Consider void futures for one-shot event communication（第 39 条：考虑一次性事件通信的无效期货）（280）
+			6. Item 40: Use std::atomic for concurrency, volatile for special memory（第 40 项：使用 std::atomic 实现并发，使用 volatile 实现特殊内存）（289）
+		8. Tweaks（调整）（299）
+			1. Item 41:Consider pass by value for copyable parameters that are cheap to move and always copied（第 41 项：考虑按值传递可复制参数，这些参数移动成本低且始终复制）（299）
+			2. Item 42:Consider emplacement instead of insertion（第  42  条：考虑安放而不是插入）（310）
+	7. Programming in Lua Fourth Edition（Lua程序设计第4版）
 		1. The Basics（基础）（15）
 			1. Getting Started（入门）（18）
 				1. Chunks（块）（18）
@@ -1180,7 +5113,327 @@
 					5. Body for new threads（新线程的主体）（308）
 					6. Extra functions for the lproc module（lproc 模块的额外功能）（309）
 					7. Registering libraries to be opened on demand（注册按需打开的库）（310）
-	2. Microsoft Visual C# Step by Step（Visual C#从入门到精通）
+	8. Lua Programming Gems（Lua 编程精粹）
+		1. Programming Techniques（编程技巧）（14）
+			1. Lua Per-Thread Library Context（Lua  每线程库上下文）（15）
+				1. Implementation alternatives（实施方案）（17）
+				2. Using LUA ENVIRONINDEX for library private storage（使用LUA  ENVIRONINDEX进行库私有存储）（17）
+				3. Using library private storage to implement per-thread private storage（使用库私有存储实现每线程私有存储）（18）
+				4. Using per-thread private storage for per-thread library context（对每线程库上下文使用每线程私有存储）（19）
+				5. Caching per-thread library context（缓存每个线程库上下文）（21）
+				6. Testing and performance measurement（测试和性能测量）（25）
+				7. Conclusion（结论）（26）
+			2. Lua Performance Tips（Lua  性能技巧）（27）
+				1. Basic facts（基本事实）（29）
+				2. About tables（关于表格）（31）
+				3. About strings（关于字符串）（34）
+				4. Reduce, reuse, recycle（减少回收再利用）（35）
+				5. Final remarks（最后的评论）（39）
+			3. Vardump: The Power of Seeing What’s Behind（Var_dump：了解背后的力量）（41）
+				1. Implementation（执行）（42）
+				2. Conclusion（结论）（42）
+			4. Serialization with Pluto（与  Pluto  的序列化）（45）
+				1. The complexities of serialization（序列化的复杂性）（46）
+				2. Using Pluto（使用Pluto）（47）
+				3. Custom serialization routines（自定义序列化例程）（48）
+				4. Permanent objects（永久物体）（49）
+				5. Limitations of Pluto（Pluto的局限性）（50）
+				6. Other approaches to general-purpose serialization（通用序列化的其他方法）（50）
+				7. LuaPickle（52）
+				8. lper（52）
+				9. Conclusion（53）
+			5. Abstractions for LuaSQL（LuaSQL  的抽象）（54）
+				1. Common uses（常见用途）（54）
+				2. Defining a module（定义模块）（56）
+				3. Error handling（错误处理）（56）
+				4. Result set iterator（结果集迭代器）（57）
+				5. SQL statement constructors（SQL  语句构造函数）（59）
+				6. Infrastructure（基础设施）（59）
+				7. Insert（插入）（59）
+				8. Select revisited（选择重访）（61）
+				9. Delete（删除）（62）
+				10. Update（更新）（62）
+				11. Extensions（扩展）（63）
+				12. Complete result set（完整结果集）（63）
+				13. Logging SQL execution（记录  SQL  执行情况）（64）
+				14. Other ideas（其他想法）（64）
+				15. Discussion（讨论）（65）
+				16. Conclusion（结论）（66）
+			6. Boostrapping a Forth in 40 Lines of Lua Code（引导 40 行 Lua 代码中的第四行）（67）
+				1. Introduction（介绍）（68）
+				2. Forth via examples（通过示例进行说明）（68）
+				3. Bootstrapping miniforth（引导小型文件）（71）
+				4. Modes（模式）（73）
+				5. Virtual modes（虚拟模式）（74）
+				6. A bytecode for polynomials（多项式的字节码）（75）
+				7. A bytecode language for propositional calculus（用于命题演算的字节码语言）（76）
+				8. (Meta)Lua on miniforth（Miniforth  上的（元）Lua）（77）
+				9. Why Forth?（为什么是Forth）（78）
+				10. Conclusion（结论）（80）
+			7. Effecting Large-Scale Change (with little trauma) using Metatables（使用元表实现大规模变革（几乎没有创伤））（81）
+				1. Introduction（介绍）（81）
+				2. Metamethods and environments（元方法和环境）（82）
+				3. Our sample problem（我们的样本问题）（82）
+				4. Resolution through “Origins”（通过“起源”解决）（84）
+				5. Setup（设置）（86）
+				6. Quick setup（快速设置）（87）
+				7. Runtime（运行）（87）
+				8. Limitations（局限性）（88）
+				9. Further development（进一步的发展）（89）
+				10. Other uses for metatables（元表的其他用途）（89）
+				11. Conclusion（结论）（91）
+		2. Design Techniques（设计技巧）（92）
+			1. MVC Web Development with Kepler（使用  Kepler  进行  MVC  Web 开发）（93）
+				1. Introduction（介绍）（93）
+				2. Request dispatching（请求调度）（94）
+				3. Overview（概述）（94）
+				4. Kepler setup（Kepler设置）（96）
+				5. Example 1: mapping a sequence to a function and parameters（示例  1：将序列映射到函数和参数）（96）
+				6. Example 2: mapping through Lua pattern matching（示例2：通过Lua模式匹配进行映射）（98）
+				7. Example 3: delegating action selection to objects（示例  3：将操作选择委托给对象）（99）
+				8. Content generation（内容生成）（101）
+				9. Overview（概述）（101）
+				10. Scripting（脚本编写）（101）
+				11. Templating（模板化）（103）
+				12. Conclusion（结论）（104）
+			2. Filters, Sources, Sinks & Pumps or Functional programming for the rest of us（过滤器、源、水槽和泵或我们其他人的函数式编程）（105）
+				1. Introduction（介绍）（105）
+				2. A simple example（一个简单的例子）（106）
+				3. The Lua part of the filter（过滤器的Lua部分）（107）
+				4. The C part of the filter（过滤器C部分）（108）
+				5. Filter chains（过滤链）（109）
+				6. Sources, sinks, and pumps（源、汇和泵）（110）
+				7. Sources（来源）（110）
+				8. Filtered sources（过滤来源）（111）
+				9. Sinks（水槽）（111）
+				10. Pumps（泵）（112）
+				11. Exploding filters（爆炸过滤器）（113）
+				12. A complex example（一个复杂的例子）（114）
+				13. Conclusion（结论）（115）
+			3. Lua as a Protocol Language（Lua  作为协议语言）（116）
+				1. Background（背景）（116）
+				2. Choice of language（语言选择）（116）
+				3. Protocol（协议）（117）
+				4. Compression（压缩）（119）
+				5. Encryption（加密）（120）
+				6. Secured mode（安全模式）（120）
+				7. Benchmark（基准）（120）
+				8. Security（安全）（121）
+				9. Library functions（库函数）（121）
+				10. Buffer overrun（缓冲区溢出）（122）
+				11. Denial of service（拒绝服务）（122）
+				12. Conclusion（结论）（124）
+			4. Lua Script Packaging（Lua脚本打包）（125）
+				1. Why do we need to package script files together?（为什么我们需要将脚本文件打包在一起？）（125）
+				2. First try: luac -o（第一次尝试：  luac  ‑o）（125）
+				3. Mock require and dofile（模拟  require  和  dofile）（126）
+				4. How does the standard require work?（标准要求如何发挥作用？）（126）
+				5. Mock require（模拟需求）（126）
+				6. Mock dofile（模拟文件）（129）
+				7. From separate Lua files to packed .dat— How to organize?（从单独的  Lua  文件到打包的 .dat-如何组织？）（129）
+				8. When to mock?（什么时候嘲笑？）（131）
+				9. Choose a packaging algorithm/utility（选择打包算法/实用程序）（131）
+				10. .dat format（.dat  格式）（132）
+				11. Compiled vs plain .lua files（编译文件与普通 .lua  文件）（132）
+				12. Patching（打补丁）（133）
+				13. Conclusion（结论）（133）
+			5. Objects, Lua-style（对象，Lua  风格）（134）
+				1. The object model（对象模型）（134）
+				2. A judicious justification（明智的理由）（135）
+				3. A delightful detour（一次愉快的绕行）（136）
+				4. Implementation（执行）（137）
+				5. Weaknesses（弱点）（137）
+				6. Inconclusion（综上所述）（138）
+			6. Exceptions in Lua（Lua  中的异常）（139）
+				1. What is an error?（什么是错误？）（140）
+				2. A simple try–catch construct（一个简单的  try‑catch  结构）（141）
+				3. Custom error objects（自定义错误对象）（142）
+				4. Exception safety（异常安全）（145）
+				5. A simple scope manager（一个简单的范围管理器）（147）
+		3. Algorithms and Data Structures（算法和数据结构）（150）
+			1. Word Ladders（字梯）（151）
+				1. Undirected graphs（无向图）（151）
+				2. Word Ladder game（文字天梯游戏）（154）
+				3. Summary（概括）（154）
+			2. Building Data Structures and Iterators in Lua（在 Lua 中构建数据结构和迭代器）（157）
+				1. Introduction（介绍）（158）
+				2. Queues（队列）（158）
+				3. Heaps（堆）（159）
+				4. Heapsort（堆排序）（162）
+				5. Partition sets（分区集）（163）
+				6. Graphs（图表）（165）
+				7. Graph search（图搜索）（166）
+				8. Minimum spanning trees（最小生成树）（169）
+				9. Shortest paths（最短路径）（170）
+				10. Conclusions（结论）（173）
+			3. A Primer of Scientific Computing in Lua（Lua 科学计算入门）（174）
+				1. Introduction（介绍）（175）
+				2. Matrices（矩阵）（175）
+				3. Metamethods（元方法）（178）
+				4. Core methods（核心方法）（180）
+				5. Functional facilities（功能设施）（182）
+				6. External libraries（外部库）（184）
+				7. Library setup（库设置）（186）
+				8. Lua side（187）
+				9. Applications（应用领域）（189）
+				10. Basic operations（基本操作）（190）
+				11. Lagrangian interpolation（拉格朗日插值）（193）
+				12. Fast Fourier transforms（快速傅立叶变换）（196）
+				13. Clenshaw–Curtis quadrature（克伦肖‑柯蒂斯求积）（197）
+				14. Conclusions（结论）（201）
+			4. Complex Structured Data Input（复杂的结构化数据输入）（202）
+				1. The problem（问题）（202）
+				2. The solution（解决方案）（204）
+				3. Justification and explanation（理由和解释）（206）
+				4. How to use（如何使用）（208）
+				5. Weaknesses and suggested improvements（缺点和改进建议）（209）
+				6. Conclusions（结论）（210）
+			5. Lua Implementations of Common Data Structures（常用数据结构的Lua实现）（212）
+				1. Code examples（代码示例）（212）
+				2. Abstract data types and common functionality（抽象数据类型和通用功能）（213）
+				3. Lua tables（Lua表）（214）
+				4. Lua table implementation（Lua表实现）（214）
+				5. Lists（列表）（214）
+				6. Array lists（数组列表）（215）
+				7. Node lists（节点列表）（216）
+				8. Stacks, queues, and dequeues（栈、队列和出列）（218）
+				9. Stacks（堆栈）（218）
+				10. Queues and dequeues（队列和出队）（219）
+				11. Trees（树）（221）
+				12. Linked-node trees（链接节点树）（222）
+				13. Array-based trees（基于数组的树）（224）
+				14. Maps and dictionaries（地图和词典）（226）
+				15. Sets（集合）（227）
+				16. Multisets（多组）（230）
+				17. Partitions（分区）（232）
+				18. Graphs（图表）（233）
+				19. Text processing（文本处理）（235）
+				20. Augmented data structures（增强数据结构）（235）
+				21. Homogeneous data structures（同构数据结构）（237）
+				22. Working with Lua（使用  Lua）（238）
+				23. Resources（资源）（238）
+			6. Tic-Tac-Toe and the Minimax Decision Algorithm（井字游戏和极小极大决策算法）（240）
+				1. Introduction（介绍）（240）
+				2. Search problems（搜索问题）（241）
+				3. Games（游戏）（241）
+				4. The minimax algorithm（极小极大算法）（242）
+				5. Case study（案例分析）（244）
+				6. Conclusions（结论）（246）
+		4. Game Programming（游戏编程）（247）
+			1. Using Lua in Game and Tool Creation（在游戏和工具创建中使用 Lua）（248）
+				1. Programmable access via Lua（通过  Lua  进行可编程访问）（248）
+				2. IDE (debugger)（IDE（调试器））（249）
+				3. Excessive flexibility of Lua（Lua过于灵活）（250）
+				4. Performance issues（性能问题）（250）
+				5. Lua–C++ data transferring（Lua–C++数据传输）（251）
+				6. Lua and .NET（251）
+				7. Conclusion（252）
+			2. Leveraging Lua and C++ to Create a Dynamic and Flexible Event System for Script-Driven Games（利用 Lua 和 C++ 为脚本驱动游戏创建动态且灵活的事件系统）（258）
+				1. The subscriber（订阅者）（258）
+				2. Strategy（战略）（262）
+				3. Extra credit（额外学分）（263）
+				4. Closing（闭包）（266）
+			3. Lua for Game Programming（Lua  游戏编程）（267）
+				1. Example game（示例游戏）（268）
+				2. Data representation（数据表示）（268）
+				3. Dynamic challenges（动态挑战）（271）
+				4. AI and state machines（人工智能和状态机）（273）
+				5. Generic Lua function exposure（通用Lua函数暴露）（276）
+				6. Conclusion（结论）（277）
+			4. Designing an Efficient Lua Driven Game Scripting Engine（设计高效的 Lua 驱动的游戏脚本引擎）（278）
+				1. The problem — motivation and statement（问题-动机和陈述）（278）
+				2. The solution — description（解决方案——描述）（279）
+				3. Use an object local solution（使用对象本地解决方案）（279）
+				4. Use frame-by-frame execution（使用逐帧执行）（279）
+				5. Allow different update rate for the AIModel instances（允许  AIModel  实例有不同的更新速率）（280）
+				6. Use an automatic activation process（使用自动激活过程）（280）
+				7. Use an event based communication schema between AIModel instances（在 AIModel 实例之间使用基于事件的通信模式）（280）
+				8. Use high level function packages（使用高级函数包）（281）
+				9. Use handles to exchange data structures between Lua and C/C++ runtime（使用句柄在 Lua 和 C/C++ 运行时之间交换数据结构）（282）
+				10. Limit the use of complex types（限制复杂类型的使用）（283）
+				11. Encourage the use of local variables（鼓励使用局部变量）（283）
+				12. Use preallocated memory pools（使用预分配的内存池）（283）
+				13. Explanation and justification（解释和理由）（284）
+				14. Weaknesses and suggested improvements（缺点和改进建议）（284）
+				15. Conclusion（结论）（284）
+		5. Embedding and Extending（嵌入和扩展）（285）
+			1. Enhanced Coroutines in Lua（Lua  中的增强型协程）（286）
+				1. History（历史）（286）
+				2. Multithreading models（多线程模型）（287）
+				3. Lua collaborative threads with memory sharing（具有内存共享功能的  Lua  协作线程）（287）
+				4. Preemptive threads in separate Lua states, sharing no memory（抢占式线程处于单独的  Lua  状态，不共享内存）（287）
+				5. Preemptive threads associated with coroutines（与协程关联的抢占式线程）（287）
+				6. Implementation（执行）（287）
+				7. Coding（编码）（290）
+				8. Wget user function（wget用户函数）（291）
+				9. Error handling（错误处理）（292）
+				10. Example of Lua code（Lua代码示例）（292）
+				11. Scheduler（调度程序）（292）
+				12. Interpreter（口译员）（293）
+				13. Complete example（完整示例）（294）
+			2. Using Lua in Pascal（在  Pascal  中使用  Lua）（295）
+				1. Why Lua?（为什么是Lua）（295）
+				2. The basic needs（基本需求）（295）
+				3. The problem（问题）（296）
+				4. Project foundations (setting up the project)（项目基础（建立项目））（296）
+				5. Defining HAL 9000（定义  HAL  9000）（297）
+				6. Building HAL 9000（建筑  HAL  9000）（297）
+				7. Read and writing variables（读取和写入变量）（298）
+				8. Writing（写作）（298）
+				9. Reading（阅读）（299）
+				10. More on methods（更多关于方法的内容）（299）
+				11. Differences between Lua and Pascal（Lua  和  Pascal  之间的区别）（299）
+				12. Surfacing a method（呈现方法）（300）
+				13. Getting something back（拿回一些东西）（300）
+				14. Calling Lua methods（调用Lua方法）（301）
+				15. Using records and objects（使用记录和对象）（302）
+				16. Metatables（元表）（302）
+				17. Garbage collection and the Lua registry（垃圾收集和  Lua  注册表）（302）
+				18. Finally introducing objects（最后引入对象）（303）
+				19. Back to the registry（返回注册表）（303）
+				20. Object properties（对象属性）（303）
+				21. Object methods（对象方法）（304）
+				22. And the object（还有对象）（304）
+				23. Records（记录）（304）
+				24. Calling within a loop（循环内调用）（304）
+				25. Final words（最后的话）（305）
+			3. Porting Lua to a Microcontroller（将  Lua  移植到微控制器）（306）
+				1. The target processor – why use Lua to program LEGO?（目标处理器——为什么使用Lua来对乐高进行编程？）（306）
+				2. Think before you get started（开始之前请三思）（307）
+				3. Add the Lua kernel code to the build system（将Lua内核代码添加到构建系统）（308）
+				4. Building a better run-time library（构建更好的运行时库）（310）
+				5. Thread-safe considerations（线程安全注意事项）（310）
+				6. The ANSI C library（ANSI  C  库）（310）
+				7. Memory allocation library（内存分配库）（312）
+				8. Lua garbage collection and the heap（Lua  垃圾收集和堆）（312）
+				9. File IO routines for systems without files（无文件系统的文件  IO  例程）（313）
+				10. A new kind of math using “flongs”（使用“flongs”的新型数学）（314）
+				11. Trading speed for accuracy（交易速度换取准确性）（314）
+				12. Using flongs with the C math library（将  flongs  与  C  数学库结合使用）（315）
+				13. Choosing a single-precision float library（选择单精度浮点库）（316）
+				14. Conclusion（结论）（316）
+			4. Writing C/C++ Modules for Lua（为  Lua  编写  C/C++  模块）（318）
+				1. Generic module layout（通用模块布局）（319）
+				2. Objects（对象）（321）
+				3. Boxing and packing（装箱和包装）（322）
+				4. Packing modules into a single library（将模块打包到单个库中）（322）
+				5. A libevent module（libevent  模块）（323）
+				6. Example.lua（324）
+				7. Event.lua（324）
+				8. Event.c (compiled into C-Event.so)（Event.c（编译成C‑Event.so））（325）
+			5. Interpreted C Modules（解释型  C  模块）（330）
+				1. The Lua module system（Lua模块系统）（331）
+				2. require, searchers, and loaders（require、搜索器和加载器）（331）
+				3. TCC（332）
+				4. Tiny C Compiler（小  C  编译器）（332）
+				5. libtcc（332）
+				6. TCC binding（TCC结合）（333）
+				7. TCC searcher（TCC搜索器）（334）
+				8. The module header（模块头）（334）
+				9. The searcher function（搜索器功能）（335）
+				10. Installing the searcher（安装搜索器）（338）
+				11. Conclusion（结论）（338）
+	9. Microsoft Visual C# Step by Step（Visual C#从入门到精通）
 		1. Introducing Microsoft Visual C# and Microsoft Visual Studio 2022（Microsoft Visual C# 和 Microsoft Visual Studio 2022 简介）（45）
 			1. Welcome to C#（欢迎使用 C#）（46）
 				1. Writing your first C# program（编写您的第一个 C# 程序）（46）
@@ -1529,8 +5782,848 @@
 				2. Updating the UWP application to use the web service（更新 UWP 应用程序以使用 Web 服务）（1107）
 				3. Searching for data in the Customers app（在客户应用程序中搜索数据）（1120）
 				4. Inserting, updating, and deleting data through a REST web service（通过 REST Web 服务插入、更新和删除数据）（1129）
+	10. C# in Depth FOURTH EDITION（深入理解C#第四版）
+		1. C# in context（上下文中的  C#）（30）
+			1. Survival of the sharpest（最敏锐的人生存）（32）
+				1. An evolving language（不断发展的语言）（32）
+					1. A helpful type system at large and small scales（在大尺度和小尺度上都有帮助的类型系统）（33）
+					2. Ever more concise code（代码更加简洁）（35）
+						1. CONSTRUCTION AND INITIALIZATION（构造和初始化）（35）
+						2. METHOD AND PROPERTY DECLARATIONS（方法和属性声明）（37）
+						3. STRING HANDLING（字符串处理）（37）
+					3. Simple data access with LINQ（使用  LINQ  进行简单的数据访问）（38）
+					4. Asynchrony（异步）（39）
+					5. Balancing efficiency and complexity（平衡效率和复杂性）（40）
+					6. Evolution at speed: Using minor versions（快速演进：使用次要版本）（41）
+				2. An evolving platform（不断发展的平台）（42）
+				3. An evolving community（不断发展的社区）（43）
+				4. An evolving book（一本不断发展的书）（44）
+					1. Mixed-level coverage（混合层次覆盖）（45）
+					2. Examples using Noda Time（使用野田时间的示例）（45）
+					3. Terminology choices（术语选择）（46）
+		2. C# 2–5（48）
+			1. C# 2（50）
+				1. Generics（泛型）（51）
+					1. Introduction by example: Collections before generics（举例介绍：集合先于泛型）（51）
+					2. Generics save the day（泛型拯救世界）（54）
+						1. TYPE PARAMETERS AND TYPE ARGUMENTS（类型参数和类型自变量）（55）
+						2. ARITY OF GENERIC TYPES AND METHODS（通用类型和方法的数量）（57）
+					3. What can be generic?（什么可以是通用的？）（58）
+					4. Type inference for type arguments to methods（方法的类型参数的类型推断）（59）
+					5. Type constraints（类型约束）（61）
+					6. The default and typeof operators（默认和typeof运算符）（63）
+					7. Generic type initialization and state（泛型类型初始化和状态）（66）
+				2. Nullable value types（可空值类型）（67）
+					1. Aim: Expressing an absence of information（目的：表达信息缺失）（68）
+					2. CLR and framework support: The Nullable< T> struct（CLR  和框架支持：Nullable< T>  结构）（69）
+						1. BOXING BEHAVIOR（拳击行为）（71）
+					3. Language support（语言支持）（72）
+						1. THE ? TYPE SUFFIX（的？类型后缀）（72）
+						2. THE NULL LITERAL（空文字）（73）
+						3. CONVERSIONS（转换）（73）
+						4. LIFTED OPERATORS（提升运算符）（74）
+						5. NULLABLE LOGIC（可空逻辑）（75）
+						6. THE AS OPERATOR AND NULLABLE VALUE TYPES（AS  运算符和可空值类型）（77）
+						7. THE NULL-COALESCING ?? OPERATOR（空合并？操作员）（77）
+				3. Simplified delegate creation（简化委托创建）（78）
+					1. Method group conversions（方法组转换）（79）
+					2. Anonymous methods（匿名方法）（79）
+					3. Delegate compatibility（委托兼容性）（81）
+				4. Iterators（迭代器）（82）
+					1. Introduction to iterators（迭代器简介）（83）
+					2. Lazy execution（惰性执行）（84）
+					3. Evaluation of yield statements（收益率报表的评估）（85）
+					4. The importance of being lazy（懒惰的重要性）（86）
+					5. Evaluation of finally blocks（finally块的评估）（87）
+					6. The importance of finally handling（最终处理的重要性）（90）
+					7. Implementation sketch（实现示意图）（91）
+				5. Minor features（小特征）（95）
+					1. Partial types（部分类型）（96）
+						1. PARTIAL METHODS (C# 3)（部分方法(C#  3)）（97）
+					2. Static classes（静态类）（98）
+					3. Separate getter/setter access for properties（属性的单独  getter/setter  访问）（98）
+					4. Namespace aliases（命名空间别名）（99）
+						1. NAMESPACE ALIAS QUALIFIER SYNTAX（命名空间别名限定符语法）（99）
+						2. THE GLOBAL NAMESPACE ALIAS（全局命名空间别名）（100）
+						3. EXTERN ALIASES（外部别名）（100）
+					5. Pragma directives（杂注指令）（101）
+					6. Fixed-size buffers（固定大小缓冲区）（102）
+						1. IMPROVED ACCESS TO FIXED-SIZED BUFFERS IN FIELDS IN C# 7.3（改进了对C#  7.3中字段中固定大小缓冲区的访问）（102）
+					7. InternalsVisibleTo（内部可见）（102）
+			2. C# 3:LINQ and everything that comes with it（C# 3:LINQ 及其附带的所有内容）（104）
+				1. Automatically implemented properties（自动实现的属性）（105）
+				2. Implicit typing（隐式类型）（105）
+					1. Typing terminology（键入术语）（106）
+						1. STATIC AND DYNAMIC TYPING（静态和动态打字）（106）
+						2. EXPLICIT AND IMPLICIT TYPING（显式和隐式类型）（106）
+					2. Implicitly typed local variables (var)（隐式类型局部变量（var））（107）
+					3. Implicitly typed arrays（隐式类型数组）（108）
+				3. Object and collection initializers（对象和集合初始值设定项）（110）
+					1. Introduction to object and collection initializers（对象和集合初始值设定项简介）（110）
+					2. Object initializers（对象初始值设定项）（112）
+					3. Collection initializers（集合初始值设定项）（113）
+					4. The benefits of single expressions for initialization（单个表达式初始化的好处）（115）
+				4. Anonymous types（匿名类型）（115）
+					1. Syntax and basic behavior（语法和基本行为）（115）
+					2. The compiler-generated type（编译器生成的类型）（118）
+					3. Limitations（限制）（119）
+				5. Lambda expressions（Lambda表达式）（120）
+					1. Lambda expression syntax（Lambda  表达式语法）（121）
+					2. Capturing variables（捕获变量）（123）
+						1. IMPLEMENTING CAPTURED VARIABLES WITH A GENERATED CLASS（使用生成的类实现捕获的变量）（124）
+						2. MULTIPLE INSTANTIATIONS OF LOCAL VARIABLES（局部变量的多个实例化）（126）
+						3. CAPTURING VARIABLES FROM MULTIPLE SCOPES（从多个范围捕获变量）（128）
+					3. Expression trees（表达式树）（130）
+						1. LIMITATIONS OF CONVERSIONS TO EXPRESSION TREES（转换为表达式树的局限性）（131）
+						2. COMPILING EXPRESSION TREES TO DELEGATES（将表达式树编译为委托）（131）
+				6. Extension methods（扩展方法）（132）
+					1. Declaring an extension method（声明扩展方法）（132）
+					2. Invoking an extension method（调用扩展方法）（133）
+					3. Chaining method calls（链接方法调用）（135）
+				7. Query expressions（查询表达式）（136）
+					1. Query expressions translate from C# to C#（查询表达式从  C#  转换为  C#）（137）
+					2. Range variables and transparent identifiers（范围变量和透明标识符）（137）
+					3. Deciding when to use which syntax for LINQ（决定何时使用  LINQ  的语法）（139）
+				8. The end result: LINQ（最终结果：LINQ）（140）
+			3.  C# 4:Improving interoperability（C# 4:提高互操作性）（142）
+				1. Dynamic typing（动态类型）（143）
+					1. Introduction to dynamic typing（动态类型简介）（143）
+						1. WHAT IS THE DYNAMIC TYPE?（什么是动态类型？）（144）
+						2. APPLYING DYNAMIC BINDING IN A VARIETY OF CONTEXTS（在各种上下文中应用动态绑定）（145）
+						3. WHAT CAN THE COMPILER CHECK IN DYNAMICALLY BOUND CONTEXTS?（编译器可以在动态绑定上下文中检查什么？）（146）
+						4. WHAT OPERATIONS INVOLVING DYNAMIC VALUES AREN’T DYNAMICALLY BOUND?（哪些涉及动态值的操作不受动态约束？）（147）
+						5. WHAT OPERATIONS INVOLVING DYNAMIC VALUES STILL HAVE A STATIC TYPE?（哪些涉及动态值的操作仍然具有静态类型？）（147）
+					2. Dynamic behavior beyond reflection（超越反射的动态行为）（148）
+						1. IMAGINARY EXAMPLE OF DATABASE ACCESS（数据库访问的假想示例）（148）
+						2. EXPANDOOBJECT: A DYNAMIC BAG OF DATA AND METHODS（EXPANDOOBJECT：动态数据包和方法）（149）
+						3. THE DYNAMIC VIEW OF JSON.NET（JSON.NET的动态视图）（150）
+						4. IMPLEMENTING DYNAMIC BEHAVIOR IN YOUR OWN CODE（在您自己的代码中实现动态行为）（150）
+					3. A brief look behind the scenes（幕后简要介绍）（153）
+						1. WHO DOES WHAT?（谁做了什么？）（153）
+						2. THE IL GENERATED FOR DYNAMIC TYPING（为动态打字生成的IL）（154）
+					4. Limitations and surprises in dynamic typing（动态类型的限制和意外）（156）
+						1. THE DYNAMIC TYPE AND GENERICS（动态类型和泛型）（156）
+						2. EXTENSION METHODS（扩展方法）（157）
+						3. ANONYMOUS FUNCTIONS（匿名函数）（158）
+						4. ANONYMOUS TYPES（匿名类型）（159）
+						5. EXPLICIT INTERFACE IMPLEMENTATION（显式接口实现）（160）
+					5. Usage suggestions（使用建议）（160）
+						1. SIMPLER REFLECTION（更简单的反思）（161）
+						2. COMMON MEMBERS WITHOUT A COMMON INTERFACE（没有通用接口的通用成员）（162）
+						3. USING A LIBRARY BUILT FOR DYNAMIC TYPING（使用为动态打字而构建的库）（162）
+				2. Optional parameters and named arguments（可选参数和命名参数）（162）
+					1. Parameters with default values and arguments with names（带默认值的参数和带名称的参数）（163）
+					2. Determining the meaning of a method call（确定方法调用的含义）（164）
+					3. Impact on versioning（对版本控制的影响）（166）
+						1. PARAMETER NAME CHANGES ARE BREAKING（参数名称更改造成破坏）（166）
+						2. DEFAULT VALUE CHANGES ARE AT LEAST SURPRISING（默认值的变化至少令人惊讶）（166）
+						3. ADDING OVERLOADS IS FIDDLY（添加过载非常繁琐）（167）
+				3. COM interoperability improvements（COM  互操作性改进）（167）
+					1. Linking primary interop assemblies（链接主互操作程序集）（168）
+					2. Optional parameters in COM（COM  中的可选参数）（169）
+					3. Named indexers（命名索引器）（171）
+				4. Generic variance（通用方差）（172）
+					1. Simple examples of variance in action（行动差异的简单例子）（172）
+					2. Syntax for variance in interface and delegate declarations（接口和委托声明中差异的语法）（173）
+					3. Restrictions on using variance（使用方差的限制）（174）
+					4. Generic variance in practice（实践中的一般差异）（176）
+			4. Writing asynchronous code（编写异步代码）（179）
+				1. Introducing asynchronous functions（引入异步函数）（181）
+					1. First encounters of the asynchronous kind（第一次遇到异步类型）（181）
+					2. Breaking down the first example（分解第一个例子）（183）
+				2. Thinking about asynchrony（异步的思考）（184）
+					1. Fundamentals of asynchronous execution（异步执行的基础知识）（184）
+					2. Synchronization contexts（同步上下文）（186）
+					3. Modeling asynchronous methods（异步方法建模）（187）
+				3. Async method declarations（异步方法声明）（189）
+					1. Return types from async methods（异步方法的返回类型）（190）
+					2. Parameters in async methods（异步方法中的参数）（191）
+				4. Await expressions（Await  表达式）（191）
+					1. The awaitable pattern（可等待模式）（192）
+					2. Restrictions on await expressions（对await表达式的限制）（194）
+				5. Wrapping of return values（返回值的包装）（195）
+				6. Asynchronous method flow（异步方法流程）（197）
+					1. What is awaited and when?（等待什么以及何时？）（197）
+					2. Evaluation of await expressions（await表达式的求值）（198）
+					3. The use of awaitable pattern members（可等待模式成员的使用）（202）
+					4. Exception unwrapping（异常展开）（203）
+					5. Method completion（方法完成）（205）
+						1. RETURNING SUCCESSFULLY（顺利归来）（206）
+						2. LAZY EXCEPTIONS AND ARGUMENT VALIDATION（惰性异常和参数验证）（206）
+						3. HANDLING CANCELLATION（处理取消）（208）
+				7. Asynchronous anonymous functions（异步匿名函数）（209）
+				8. Custom task types in C# 7（C#  7  中的自定义任务类型）（211）
+					1. The 99.9% case: ValueTask< TResult>（99.9%的情况：ValueTask< TResult>）（211）
+					2. The 0.1% case: Building your own custom task type（0.1%  案例：构建您自己的自定义任务类型）（213）
+				9. Async main methods in C# 7.1（C#  7.1  中的异步主要方法）（215）
+				10. Usage tips（使用提示）（216）
+					1. Avoid context capture by using ConfigureAwait (where appropriate)（使用ConfigureAwait（在适当的情况下）避免上下文捕获）（216）
+					2. Enable parallelism by starting multiple independent tasks（通过启动多个独立任务来启用并行性）（218）
+					3. Avoid mixing synchronous and asynchronous code（避免混合同步和异步代码）（219）
+					4. Allow cancellation wherever possible（尽可能允许取消）（219）
+					5. Testing asynchrony（测试异步）（220）
+			5. Async implementation（异步实现）（222）
+				1. Structure of the generated code（生成代码的结构）（224）
+					1. The stub method: Preparation and taking the first step（存根方法：准备和采取第一步）（227）
+					2. Structure of the state machine（状态机结构）（228）
+					3. The MoveNext() method (high level)（MoveNext()  方法（高级））（231）
+					4. The SetStateMachine method and the state machine boxing dance（SetStateMachine方法和状态机拳击舞）（233）
+				2. A simple MoveNext() implementation（一个简单的  MoveNext()  实现）（234）
+					1. A full concrete example（一个完整的具体例子）（234）
+					2. MoveNext() method general structure（MoveNext()方法总体结构）（236）
+					3. Zooming into an await expression（放大await表达式）（238）
+				3. How control flow affects MoveNext()（控制流如何影响MoveNext()）（239）
+					1. Control flow between await expressions is simple（await表达式之间的控制流很简单）（240）
+					2. Awaiting within a loop（循环内等待）（241）
+					3. Awaiting within a try/finally block（在  try/finally  块内等待）（242）
+				4. Execution contexts and flow（执行上下文和流程）（245）
+				5. Custom task types revisited（重新审视自定义任务类型）（247）
+			6. C# 5 bonus features（C#  5  个额外功能）（249）
+				1. Capturing variables in foreach loops（在foreach循环中捕获变量）（249）
+				2. Caller information attributes（来电信息属性）（251）
+					1. Basic behavior（基本行为）（251）
+					2. Logging（日志记录）（253）
+					3. Simplifying INotifyPropertyChanged implementations（简化  INotifyPropertyChanged  实现）（253）
+					4. Corner cases of caller information attributes（呼叫者信息属性的极端情况）（255）
+						1. DYNAMICALLY INVOKED MEMBERS（动态调用成员）（255）
+						2. NON-OBVIOUS MEMBER NAMES（不明显的成员姓名）（257）
+						3. IMPLICIT CONSTRUCTOR INVOCATIONS（隐式构造函数调用）（257）
+						4. QUERY EXPRESSION INVOCATIONS（查询表达式调用）（258）
+						5. ATTRIBUTES WITH CALLER INFORMATION ATTRIBUTES（具有呼叫者信息属性的属性）（259）
+					5. Using caller information attributes with old versions of .NET（在旧版本的 .NET  中使用调用者信息属性）（261）
+		3. C# 6（262）
+			1. Super-sleek properties and expression-bodied members（超级时尚的属性和表情丰富的成员）（264）
+				1. A brief history of properties（属性简史）（265）
+				2. Upgrades to automatically implemented properties（升级到自动实现的属性）（267）
+					1. Read-only automatically implemented properties（只读自动实现的属性）（267）
+					2. Initializing automatically implemented properties（初始化自动实现的属性）（268）
+					3. Automatically implemented properties in structs（结构体中自动实现的属性）（269）
+				3. Expression-bodied members（表达式体成员）（271）
+					1. Even simpler read-only computed properties（更简单的只读计算属性）（271）
+						1. PASS-THROUGH OR DELEGATING PROPERTIES（传递或委托属性）（273）
+						2. PERFORMING SIMPLE LOGIC ON ANOTHER PIECE OF STATE（对另一个状态执行简单的逻辑）（274）
+					2. Expression-bodied methods, indexers, and operators（表达式体方法、索引器和运算符）（274）
+					3. Restrictions on expression-bodied members in C# 6（C#  6  中表达式主体成员的限制）（276）
+					4. Guidelines for using expression-bodied members（使用表达式主体成员的指南）（278）
+			2. Stringy features（字符串特性）（281）
+				1. A recap on string formatting in .NET（.NET  中字符串格式的回顾）（282）
+					1. Simple string formatting（简单的字符串格式化）（282）
+					2. Custom formatting with format strings（使用格式字符串自定义格式）（282）
+					3. Localization（本地化）（284）
+						1. FORMATTING WITH THE DEFAULT CULTURE（使用默认文化进行格式化）（286）
+						2. FORMATTING FOR MACHINES（机器格式化）（286）
+				2. Introducing interpolated string literals（引入内插字符串文字）（287）
+					1. Simple interpolation（简单插值）（287）
+					2. Format strings in interpolated string literals（格式化内插字符串文字中的字符串）（288）
+					3. Interpolated verbatim string literals（内插的逐字字符串文字）（288）
+					4. Compiler handling of interpolated string literals (part 1)（内插字符串文字的编译器处理（第  1  部分））（290）
+				3. Localization using FormattableString（使用  FormattableString  进行本地化）（290）
+					1. Compiler handling of interpolated string literals (part 2)（编译器处理内插字符串文字（第  2  部分））（291）
+					2. Formatting a FormattableString in a specific culture（在特定区域性中格式化  FormattableString）（292）
+						1. FORMATTING IN A NONINVARIANT CULTURE（非不变文化中的格式化）（294）
+					3. Other uses for FormattableString（FormattableString  的其他用途）（294）
+					4. Using FormattableString with older versions of .NET（在旧版本的 .NET  中使用  FormattableString）（297）
+				4. Uses, guidelines, and limitations（用途、指南和限制）（299）
+					1. Developers and machines, but maybe not end users（开发人员和机器，但可能不是最终用户）（299）
+						1. MACHINE-READABLE STRINGS（机器可读字符串）（299）
+						2. MESSAGES FOR OTHER DEVELOPERS（给其他开发者的信息）（300）
+						3. MESSAGES FOR END USERS（给最终用户的信息）（300）
+					2. Hard limitations of interpolated string literals（内插字符串文字的硬限制）（301）
+						1. NO DYNAMIC FORMATTING（无动态格式）（301）
+						2. NO EXPRESSION REEVALUATION（无需重新评估表达）（301）
+						3. NO BARE COLONS（没有裸冒号）（302）
+					3. When you can but really shouldn’t（当你可以但确实不应该时）（302）
+						1. DEFER FORMATTING FOR STRINGS THAT MAY NOT BE USED（推迟可能不使用的字符串的格式化）（302）
+						2. FORMAT FOR READABILITY（可读性格式）（303）
+				5. Accessing identifiers with nameof（使用  nameof  访问标识符）（304）
+					1. First examples of nameof（nameof  的第一个例子）（304）
+					2. Common uses of nameof（nameof的常见用法）（306）
+						1. ARGUMENT VALIDATION（参数验证）（306）
+						2. PROPERTY CHANGE NOTIFICATION FOR COMPUTED PROPERTIES（计算属性的属性更改通知）（306）
+						3. ATTRIBUTES（属性）（307）
+					3. Tricks and traps when using nameof（使用  nameof  时的技巧和陷阱）（309）
+						1. REFERRING TO MEMBERS OF OTHER TYPES（提及其他类型的成员）（309）
+						2. GENERICS（泛型）（310）
+						3. USING ALIASES（使用别名）（310）
+						4. PREDEFINED ALIASES, ARRAYS AND NULLABLE VALUE TYPES（预定义别名、数组和可为空值类型）（311）
+						5. THE NAME, THE SIMPLE NAME, AND ONLY THE NAME（名字，简单的名字，只有名字）（311）
+						6. NAMESPACES（命名空间）（311）
+			3. A smörgåsbord of features for concise code（简洁代码的一大堆功能）（313）
+				1. Using static directives（使用静态指令）（313）
+					1. Importing static members（导入静态成员）（314）
+					2. Extension methods and using static（扩展方法和使用静态）（317）
+				2. Object and collection initializer enhancements（对象和集合初始值设定项增强）（319）
+					1. Indexers in object initializers（对象初始值设定项中的索引器）（320）
+					2. Using extension methods in collection initializers（在集合初始值设定项中使用扩展方法）（323）
+						1. CREATING OTHER GENERAL-PURPOSE ADD SIGNATURES（创建其他通用添加签名）（325）
+						2. CREATING SPECIALIZED ADD SIGNATURES（创建专门的添加签名）（325）
+						3. REEXPOSING EXISTING METHODS “HIDDEN” BY EXPLICIT INTERFACE IMPLEMENTATION（重新暴露通过显式接口实现“隐藏”的现有）（326）
+					3. Test code vs. production code（测试代码与生产代码）（327）
+				3. The null conditional operator（空条件运算符）（328）
+					1. Simple and safe property dereferencing（简单安全的属性解除引用）（328）
+					2. The null conditional operator in more detail（更详细的  null  条件运算符）（329）
+					3. Handling Boolean comparisons（处理布尔比较）（330）
+					4. Indexers and the null conditional operator（索引器和空条件运算符）（331）
+					5. Working effectively with the null conditional operator（有效地使用空条件运算符）（332）
+						1. SAFE AND CONVENIENT EVENT RAISING（安全便捷的活动举办）（332）
+						2. MAKING THE MOST OF NULL-RETURNING APIS（充分利用返回  NULL的API）（333）
+					6. Limitations of the null conditional operator（null  条件运算符的限制）（334）
+				4. Exception filters（异常过滤器）（334）
+					1. Syntax and semantics of exception filters（异常过滤器的语法和语义）（335）
+						1. THE TWO-PASS EXCEPTION MODEL（两次异常模型）（336）
+						2. CATCHING THE SAME EXCEPTION TYPE MULTIPLE TIMES（多次捕获相同的异常类型）（339）
+					2. Retrying operations（重试操作）（340）
+					3. Logging as a side effect（日志记录作为副作用）（341）
+					4. Individual, case-specific exception filters（单独的、特定于案例的异常过滤器）（342）
+					5. Why not just throw?（为什么不直接抛出呢？）（343）
+		4. C# 7 and beyond（C#  7  及更高版本）（346）
+			1. Composition using tuples（使用元组组合）（348）
+				1. Introduction to tuples（元组简介）（349）
+				2. Tuple literals and tuple types（元组文字和元组类型）（350）
+					1. Syntax（语法）（350）
+					2. Inferred element names for tuple literals (C# 7.1)（元组文字的推断元素名称  (C#  7.1)）（352）
+					3. Tuples as bags of variables（元组作为变量袋）（353）
+						1. ACCESSING ELEMENTS BY NAME AND POSITION（按名称和位置访问元素）（354）
+						2. TREATING A TUPLE AS A SINGLE VALUE（将元组视为单个值）（355）
+				3. Tuple types and conversions（元组类型和转换）（358）
+					1. Types of tuple literals（元组文字的类型）（358）
+					2. Conversions from tuple literals to tuple types（从元组文字到元组类型的转换）（359）
+						1. IMPLICIT CONVERSIONS（隐式转换）（359）
+						2. EXPLICIT CONVERSIONS（显式转换）（361）
+						3. THE ROLE OF ELEMENT NAMES IN TUPLE LITERAL CONVERSIONS（元素名称在元组文字转换中的作用）（361）
+					3. Conversions between tuple types（元组类型之间的转换）（363）
+						1. TUPLE TYPE IDENTITY CONVERSIONS（元组类型身份转换）（364）
+						2. LACK OF GENERIC VARIANCE CONVERSIONS（缺乏通用方差转换）（365）
+					4. Uses of conversions（转换的使用）（365）
+					5. Element name checking in inheritance（继承中的元素名称检查）（365）
+					6. Equality and inequality operators (C# 7.3)（等式和不等式运算符  (C#  7.3)）（366）
+				4. Tuples in the CLR（CLR  中的元组）（367）
+					1. Introducing System.ValueTuple<. . .>（介绍System.ValueTuple<。 。 .>）（367）
+					2. Element name handling（元素名称处理）（368）
+						1. ELEMENT NAMES IN METADATA（元数据中的元素名称）（369）
+						2. NO ELEMENT NAMES AT EXECUTION TIME（执行时没有元素名称）（369）
+					3. Tuple conversion implementations（元组转换实现）（370）
+					4. String representations of tuples（元组的字符串表示）（370）
+					5. Regular equality and ordering comparisons（常规相等和排序比较）（371）
+					6. Structural equality and ordering comparisons（结构相等和顺序比较）（372）
+					7. Womples and large tuples（Womples和大元组）（374）
+					8. The nongeneric ValueTuple struct（非泛型  ValueTuple  结构）（375）
+					9. Extension methods（扩展方法）（375）
+				5. Alternatives to tuples（元组的替代方案）（375）
+					1. System.Tuple<. . .>（系统.元组<. 。 .>）（376）
+					2. Anonymous types（匿名类型）（376）
+					3. Named types（命名类型）（377）
+				6. Uses and recommendations（用途和建议）（377）
+					1. Nonpublic APIs and easily changed code（非公共  API  和易于更改的代码）（377）
+					2. Local variables（局部变量）（378）
+					3. Fields（字段）（379）
+					4. Tuples and dynamic don’t play together nicely（元组和动态不能很好地协同工作）（380）
+						1. THE DYNAMIC BINDER DOESN’T KNOW ABOUT ELEMENT NAMES（动态活页夹不知道元素名称）（380）
+						2. THE DYNAMIC BINDER DOESN’T (CURRENTLY) KNOW ABOUT HIGH ELEMENT NUMBERS（动态绑定器（当前）不知道高元素编号）（381）
+			2. Deconstruction and pattern matching（解构与模式匹配）（382）
+				1. Deconstruction of tuples（元组的解构）（383）
+					1. Deconstruction to new variables（解构为新变量）（384）
+						1. A SPECIAL IDENTIFIER: _ DISCARDS（特殊标识符：_ 丢弃）（386）
+					2. Deconstruction assignments to existing variables and properties（对现有变量和属性的解构赋值）（386）
+					3. Details of tuple literal deconstruction（元组文字解构细节）（390）
+				2. Deconstruction of nontuple types（非元组类型的解构）（390）
+					1. Instance deconstruction methods（实例解构方法）（391）
+					2. Extension deconstruction methods and overloading（扩展解构方法和重载）（392）
+					3. Compiler handling of Deconstruct calls（编译器对解构调用的处理）（393）
+				3. Introduction to pattern matching（模式匹配简介）（394）
+				4. Patterns available in C# 7.0（C#  7.0  中可用的模式）（396）
+					1. Constant patterns（恒定模式）（396）
+					2. Type patterns（类型模式）（397）
+					3. The var pattern（var  模式）（400）
+				5. Using patterns with the is operator（将模式与  is  运算符一起使用）（401）
+				6. Using patterns with switch statements（使用具有  switch  语句的模式）（403）
+					1. Guard clauses（保护条款）（404）
+					2. Pattern variable scope for case labels（case  标签的模式变量范围）（405）
+					3. Evaluation order of pattern-based switch statements（基于模式的  switch  语句的评估顺序）（406）
+				7. Thoughts on usage（使用思考）（408）
+					1. Spotting deconstruction opportunities（发现解构机会）（408）
+					2. Spotting pattern matching opportunities（发现模式匹配机会）（409）
+			3. Improving efficiency with more pass by reference（通过更多引用传递提高效率）（410）
+				1. Recap: What do you know about ref?（回顾：你对  ref  了解多少？）（411）
+				2. Ref locals and ref returns（引用局部变量和引用返回）（414）
+					1. Ref locals（引用局部变量）（414）
+						1. INITIALIZATION: ONCE, ONLY ONCE, AND AT DECLARATION (BEFORE C# 7.3)（初始化：一次，仅一次，且在声明时（C#  7.3  之前））（417）
+						2. NO REF FIELDS, OR LOCAL VARIABLES THAT WOULD LIVE BEYOND THE METHOD CALL（没有超出方法调用范围的引用字段或局部变量）（418）
+						3. NO REFERENCES TO READ-ONLY VARIABLES（没有对只读变量的引用）（418）
+						4. TYPES: ONLY IDENTITY CONVERSIONS ARE PERMITTED（类型：仅允许身份转换）（419）
+					2. Ref returns（参考返回）（419）
+					3. The conditional ?: operator and ref values (C# 7.2)（条件 ?:  运算符和  ref  值  (C#  7.2)）（421）
+					4. Ref readonly (C# 7.2)（引用只读  (C#  7.2)）（422）
+				3. in parameters (C# 7.2)（参数（C#  7.2））（424）
+					1. Compatibility considerations（兼容性考虑）（425）
+					2. The surprising mutability of in parameters: External changes（参数令人惊讶的可变性：外部变化）（426）
+					3. Overloading with in parameters（in  参数重载）（427）
+					4. Guidance for in parameters（in  参数指南）（428）
+				4. Declaring structs as readonly (C# 7.2)（将结构声明为只读  (C#  7.2)）（430）
+					1. Background: Implicit copying with read-only variables（背景：使用只读变量进行隐式复制）（430）
+					2. The readonly modifier for structs（结构体的  readonly  修饰符）（432）
+					3. XML serialization is implicitly read-write（XML序列化是隐式读写的）（433）
+				5. Extension methods with ref or in parameters (C# 7.2)（带  ref  或  in  参数的扩展方法  (C#  7.2)）（434）
+					1. Using ref/in parameters in extension methods to avoid copying（在扩展方法中使用  ref/in  参数以避免复制）（434）
+					2. Restrictions on ref and in extension methods（对  ref  和扩展方法的限制）（436）
+				6. Ref-like structs (C# 7.2)（类引用结构  (C#  7.2)）（437）
+					1. Rules for ref-like structs（类引用结构的规则）（438）
+					2. Span< T> and stackalloc（439）
+						1. STACKALLOC WITH INITIALIZERS (C# 7.3)（带初始化器的  STACKALLOC  (C#  7.3)）（442）
+						2. PATTERN-BASED FIXED STATEMENTS (C# 7.3)（基于模式的固定语句(C#  7.3)）（442）
+					3. IL representation of ref-like structs（类引用结构的  IL  表示）（443）
+			4. Concise code in C# 7（C#  7  中的简洁代码）（444）
+				1. Local methods（局部方法）（444）
+					1. Variable access within local methods（本地方法内的变量访问）（446）
+						1. A LOCAL METHOD CAN CAPTURE ONLY VARIABLES THAT ARE IN SCOPE（局部方法只能捕获作用域内的变量）（446）
+						2. A LOCAL METHOD MUST BE DECLARED AFTER THE DECLARATION OF ANY VARIABLES IT CAPTURES（必须在声明它捕获的任何变量之后声明本地方法）（446）
+						3. A LOCAL METHOD CAN’T CAPTURE REF PARAMETERS OF THE ENCLOSING METHOD（本地方法无法捕获封闭方法的引用参数）（447）
+						4. LOCAL METHODS INTERACT WITH DEFINITE ASSIGNMENT（本地方法与明确的分配交互）（448）
+						5. LOCAL METHODS CAN’T ASSIGN READ-ONLY FIELDS（本地方法无法分配只读字段）（448）
+					2. Local method implementations（本地方法实现）（449）
+						1. CAPTURING VARIABLES IN MULTIPLE SCOPES（捕获多个范围内的变量）（451）
+						2. PRISON BREAK! HOW LOCAL METHODS CAN ESCAPE THEIR CONTAINING CODE（越狱！本地方法如何转义其包含的代码）（452）
+					3. Usage guidelines（使用指南）（454）
+						1. ITERATOR/ASYNC ARGUMENT VALIDATION AND LOCAL METHOD OPTIMIZATION（迭代器/异步参数验证和本地方法优化）（455）
+						2. READABILITY SUGGESTIONS（可读性建议）（456）
+				2. Out variables（输出变量）（456）
+					1. Inline variable declarations for out parameters（输出参数的内联变量声明）（456）
+					2. Restrictions lifted in C# 7.3 for out variables and pattern variables（C#  7.3  中取消了对  out  变量和模式变量的限制）（457）
+				3. Improvements to numeric literals（对数字文字的改进）（458）
+					1. Binary integer literals（二进制整数字面量）（458）
+					2. Underscore separators（下划线分隔符）（459）
+				4. Throw expressions（抛出表达式）（460）
+				5. Default literals (C# 7.1)（默认文字  (C#  7.1)）（461）
+				6. Nontrailing named arguments (C# 7.2)（非尾随命名参数  (C#  7.2)）（462）
+				7. Private protected access (C# 7.2)（私有受保护访问  (C#  7.2)）（464）
+				8. Minor improvements in C# 7.3（C#  7.3  中的小改进）（464）
+					1. Generic type constraints（泛型类型约束）（464）
+					2. Overload resolution improvements（重载分辨率改进）（465）
+					3. Attributes for fields backing automatically implemented properties（支持自动实现的属性的字段属性）（466）
+			5. C# 8 and beyond（C#  8  及更高版本）（468）
+				1. Nullable reference types（可空引用类型）（469）
+					1. What problem do nullable reference types solve?（可空引用类型解决什么问题？）（469）
+					2. Changing the meaning when using reference types（使用引用类型时更改含义）（470）
+					3. Enter nullable reference types（输入可为空的引用类型）（471）
+					4. Nullable reference types at compile time and execution time（编译时和执行时的可为空引用类型）（472）
+					5. The damn it or bang operator（该死的  it  或  bang  运算符）（474）
+					6. Experiences of nullable reference type migration（可空引用类型迁移的经验）（476）
+						1. USING ATTRIBUTES TO EXPRESS NULLABLE INTENT BEFORE C# 8（C#  8之前使用属性表达可空意图）（476）
+						2. ITERATION IS NATURAL（迭代是自然的）（477）
+						3. BEST PRACTICES FOR USING THE BANG OPERATOR（使用  Bang  运算符的最佳实践）（477）
+						4. NULL-INCONSISTENT GENERICS（空不一致的泛型）（478）
+						5. THE END RESULT（最终结果）（478）
+					7. Future improvements（未来的改进）（478）
+						1. PROVIDING THE COMPILER WITH MORE SEMANTIC INFORMATION（为编译器提供更多语义信息）（479）
+						2. DEEPER THINKING ABOUT GENERICS（关于泛型的深入思考）（480）
+						3. OPT-IN PARAMETER VALIDATION（选择加入参数验证）（480）
+						4. ENABLING NULLABILITY CHECKING（启用可空性检查）（481）
+				2. Switch expressions（Switch  表达式）（482）
+				3. Recursive pattern matching（递归模式匹配）（484）
+					1. Matching properties in patterns（匹配模式中的属性）（484）
+					2. Deconstruction patterns（解构模式）（485）
+					3. Omitting types from patterns（从模式中省略类型）（486）
+				4. Indexes and ranges（索引和范围）（487）
+					1. Index and Range types and literals（索引和范围类型和文字）（487）
+					2. Applying indexes and ranges（应用索引和范围）（488）
+				5. More async integration（更多异步集成）（490）
+					1. Asynchronous resource disposal with using await（使用await  进行异步资源处置）（490）
+					2. Asynchronous iteration with foreach await（使用  foreach  wait  进行异步迭代）（491）
+					3. Asynchronous iterators（异步迭代器）（494）
+				6. Features not yet in preview（尚未预览的功能）（495）
+					1. Default interface methods（默认接口方法）（495）
+					2. Record types（记录类型）（497）
+					3. Even more features in brief（更多功能简介）（498）
+						1. TYPE CLASSES (AKA CONCEPTS, SHAPES, OR STRUCTURAL GENERIC CONSTRAINTS)（类型类（又名概念、形状或结构通用约束））（498）
+						2. EXTENSION EVERYTHING（扩展一切）（498）
+						3. TARGET-TYPED NEW（目标型新）（499）
+				7. Getting involved（参与）（499）
 3. Software Development（软件开发）
-	1. Head First Design Patterns（Head First设计模式）
+	1. The Mythical Man-Month（人月神话）
+		1. The Tar Pit（焦油坑）（17）
+			1. The Programming Systems Product（编程系统产品）（21）
+			2. The Joys of the Craft（工艺的乐趣）（23）
+			3. The Woes of the Craft（工艺的困境）（25）
+		2. The Mythical Man-Month（神话般的人月）（27）
+			1. Optimism（乐观）（31）
+			2. The Man-Month（人月）（33）
+			3. Systems Test（系统测试）（37）
+			4. Gutless Estimating（盲目估计）（39）
+			5. Regenerative Schedule Disaster（再生计划灾难）（40）
+		3. The Surgical Team（手术团队）（45）
+			1. The Problem（问题）（49）
+			2. Mills's Proposal（米尔斯的提议）（51）
+			3. How It Works（怎么运行的）（54）
+		4. Aristocracy, Democracy, and System Design（贵族制、民主制与制度设计）（55）
+			1. Conceptual Integrity（概念完整性）（58）
+			2. Achieving Conceptual Integrity（实现概念完整性）（60）
+			3. Aristocracy and Democracy（贵族制与民主制）（62）
+			4. What Does the Implementer Do While Waiting?（等待期间实施者会做什么？）（65）
+		5. The Second-System Effect（第二系统效应）（68）
+			1. Interactive Discipline for the Architect（建筑师的互动纪律）（72）
+			2. Self-Discipline—The Second-System Effect（自律——第二系统效应）（74）
+		6. Passing the Word（传递话语）（77）
+			1. Written Specifications—the Manual（书面规格——手册）（81）
+			2. Formal Definitions（正式定义）（83）
+			3. Direct Incorporation（直接合并）（86）
+			4. Conferences and Courts（会议和法院）（87）
+			5. Multiple Implementations（多种实施方式）（89）
+			6. The Telephone Log（电话记录）（90）
+			7. Product Test（产品测试）（91）
+		7. Why Did the Tower of Babel Fail?（巴别塔为何失败？）（92）
+			1. A Management Audit of the Babel Project（Babel  项目的管理审计）（95）
+			2. Communication in the Large Programming Project（大型编程项目中的沟通）（96）
+			3. The Project Workbook（项目工作手册）（97）
+			4. Organization in the Large Programming Project（大型编程项目中的组织）（100）
+		8. Calling the Shot（发号施令）（105）
+			1. Portman's Data（波特曼的数据）（110）
+			2. Aron's Data（阿伦的数据）（111）
+			3. Harr's Data（哈尔的数据）（112）
+			4. OS/360 Data（OS/360  数据）（114）
+			5. Corbato's Data（科巴托的数据）（115）
+		9. Ten Pounds in a Five-Pound Sack（五磅重的袋子里有十磅重）（116）
+			1. Program Space as Cost（项目空间成本）（119）
+			2. Size Control（尺寸控制）（120）
+			3. Space Techniques（空间技术）（122）
+			4. Representation Is the Essence of Programming（表示是编程的本质）（124）
+		10. The Documentary Hypothesis（纪录片假说）（125）
+			1. Documents for a Computer Product（计算机产品的文档）（129）
+			2. Documents for a University Department（大学部门的文件）（131）
+			3. Documents for a Software Project（软件项目的文档）（132）
+			4. Why Have Formal Documents?（为什么要有正式文件？）（133）
+		11. Plan to Throw One Away（计划扔掉一个）（134）
+			1. Pilot Plants and Scaling Up（试点工厂和扩大规模）（137）
+			2. The Only Constancy Is Change Itself（唯一不变的就是改变本身）（138）
+			3. Plan the System for Change（规划系统变革）（139）
+			4. Plan the Organization for Change（规划组织变革）（140）
+			5. One Step Forward and One Step Back（一进一退）（143）
+		12. Sharp Tools（锋利的工具）（144）
+			1. Target Machines（目标机器）（148）
+			2. Vehicle Machines and Data Services（车辆机器和数据服务）（151）
+		13. The Whole and the Parts（整体与部分）（156）
+			1. Designing the Bugs Out（设计消除错误）（160）
+			2. Component Debugging（组件调试）（163）
+			3. System Debugging（系统调试）（166）
+		14. Hatching a Catastrophe（酝酿一场灾难）（169）
+			1. Milestones or Millstones?（里程碑还是磨石？）（173）
+			2. "The Other Piece Is Late, Anyway"（“无论如何，另一首曲子迟到了”）（175）
+			3. Under the Rug（地毯下）（177）
+		15. The Other Face（另一张脸）（181）
+			1. What Documentation Is Required?（需要什么文件？）（185）
+			2. The Flow-Chart Curse（流程图诅咒）（188）
+			3. Self-Documenting Programs（自记录程序）（191）
+		16. No Silver Bullet-Essence and Accident in Software Engineering（软件工程中没有灵丹妙药——本质和意外）（198）
+			1. Abstract（抽象的）（201）
+			2. Introduction（介绍）（202）
+			3. Does It Have to Be Hard?—Essential Difficulties（它一定很困难吗？——本质上的困难）（203）
+			4. Past Breakthroughs Solved Accidental Difficulties（过去的突破解决了意外的困难）（207）
+			5. Hopes for the Silver（对银牌的希望）（209）
+			6. Promising Attacks on the Conceptual Essence（对概念本质的有希望的攻击）（217）
+		17. "No Silver Bullet" Refired（“没有银弹”重炮）（224）
+			1. On Werewolves and Other Legendary Terrors（关于狼人和其他传说中的恐怖分子）（227）
+			2. There is Too a Silver Bullet—AND HERE IT IS!（太有灵丹妙药了——它就在这里！）（228）
+			3. Obscure Writing Will Be Misunderstood（晦涩的文字会被误解）（229）
+			4. Harel's Analysis（哈雷尔的分析）（232）
+			5. Jones's Point—Productivity Follows Quality（琼斯的观点——生产力追随质量）（237）
+			6. So What Has Happened to Productivity?（那么生产力发生了什么变化？）（238）
+			7. Object-Oriented Programming—Will a Brass Bullet Do?（面向对象编程——黄铜子弹可以吗？）（240）
+			8. What About Reuse?（重用怎么样？）（243）
+			9. Learning Large Vocabularies—A Predictable but Unpredicted Problem for Software Reuse（学习大量词汇——软件重用的一个可预测但不可预测的问题）（246）
+			10. Net on Bullets—Position Unchanged（子弹网——位置不变）（248）
+		18. Propositions of Mythical Man-Month: True or False?（神话人月命题：对还是错？）（249）
+			1. Chapter 1. The Tar Pit（第一章  焦油坑）（253）
+			2. Chapter 2. The Mythical Man-Month（第  2  章  神话般的人月）（255）
+			3. Chapter 3. The Surgical Team（第  3  章  手术团队）（256）
+			4. Chapter 4. Aristocracy, Democracy, and System Design（第四章贵族制、民主制和制度设计）（257）
+			5. Chapter 5. The Second-System Effect（第  5  章第二系统效应）（258）
+			6. Chapter 6. Passing the Word（第  6  章  传递话语）（259）
+			7. Chapter 7. Why Did the Tower of Babel Fail?（第7章 巴别塔为何失败？）（260）
+			8. Chapter 8. Calling the Shot（第  8  章  发号施令）（262）
+			9. Chapter 9. Ten Pounds in a Five-Pound Sack（第9章五磅重的袋子里有十磅重）（263）
+			10. Chapter 10. The Documentary Hypothesis（第  10  章  文献假说）（265）
+			11. Chapter 11. Plan to Throw One Away（第11章  计划扔掉一个）（267）
+			12. Chapter 12. Sharp Tools（第12章  利器）（270）
+			13. Chapter 13. The Whole and the Parts（第13章整体与部分）（272）
+			14. Chapter 14. Hatching a Catastrophe（第14章  酝酿一场灾难）（274）
+			15. Chapter 15. The Other Face（第15章  另一张脸）（276）
+			16. Original Epilogue（原尾声）（278）
+		19. The Mythical Man-Month after 20 Years（20年后的神话人月）（279）
+			1. Why Is There a Twentieth Anniversary Edition?（为什么会有二十周年纪念版？）（282）
+			2. The Central Argument: Conceptual Integrity and the Architect（中心论点：概念完整性和架构师）（284）
+			3. The Second-System Effect: Featuritis and Frequency-Guessing（第二系统效应：功能炎和频率猜测）（286）
+			4. The Triumph of the WIMP Interface（WIMP  接口的胜利）（289）
+			5. Don't Build One to Throw Away—The Waterfall Model Is Wrong!（不要建造一个就扔掉——瀑布模型是错误的！）（293）
+			6. An Incremental-Build Model Is Better—Progressive Refinement（渐进式构建模型更好——渐进式细化）（296）
+			7. Parnas Was Right, and I Was Wrong about Information Hiding（关于信息隐藏，帕纳斯是对的，我错了）（301）
+			8. How Mythical Is the Man-Month? Boehm's Model and Data（人月有多神秘？ 伯姆的模型和数据）（303）
+			9. People Are Everything (Well, Almost Everything)（人就是一切（嗯，几乎一切））（306）
+			10. The Power of Giving Up Power（放弃权力的力量）（308）
+			11. What's the Biggest New Surprise? Millions of Computers（最大的新惊喜是什么？ 数百万台计算机）（311）
+			12. Whole New Software Industry Shrink Wrapped Software（全新软件行业收缩包装软件）（314）
+			13. Buy and Build—Shrink-Wrapped Packages As Components（购买并构建——收缩包装封装作为组件）（317）
+			14. The State and Future of Software Engineering（软件工程的现状和未来）（320）
+		20. Fifty Years of Wonder, Excitement, and Joy（五十年的奇迹、兴奋和欢乐）（322）
+	2. The Practice of Programming（程序设计实践）
+		1. Style（风格）（12）
+			1. Names（名称）（14）
+			2. Expressions and Statements（表达式和陈述）（17）
+			3. Consistency and Idioms（一致性和习语）（21）
+			4. Function Macros（函数宏）（28）
+			5. Magic Numbers（魔法数字）（30）
+			6. Comments（评论）（34）
+			7. Why Bother?（为什么要麻烦？）（38）
+		2. Algorithms and Data Structures（算法和数据结构）（40）
+			1. Searching（搜索）（41）
+			2. Sorting（排序）（43）
+			3. Libraries（库）（45）
+			4. A Java Quicksort（Java快速排序）（48）
+			5. O-Notation（O 表示法）（51）
+			6. Growing Arrays（增长数组）（52）
+			7. Lists（列表）（55）
+			8. Trees（树）（61）
+			9. Hash Tables（哈希表）（66）
+			10. Summary（总结）（69）
+		3. Design and Implementation（设计与实现）（71）
+			1. The Markov Chain Algorithm（马尔可夫链算法）（72）
+			2. Data Structure Alternatives（数据结构替代方案）（74）
+			3. Building the Data Structure in C（用C语言构建数据结构）（75）
+			4. Generating Output（生成输出）（79）
+			5. Java（81）
+			6. C++（86）
+			7. Awk and Perl（awk和Perl）（88）
+			8. Performance（性能）（90）
+			9. Lessons（教训）（92）
+		4. Interfaces（接口）（95）
+			1. Comma-Separated Values（逗号分隔值）（96）
+			2. A Prototype Library（原型库）（97）
+			3. A Library for Others（为他人而设的图书馆）（101）
+			4. A C++ Implementation（C  ++实现）（109）
+			5. Interface Principles（接口原理）（113）
+			6. Resource Management（资源管理）（116）
+			7. Abort, Retry, Fail?（中止、重试、失败？）（119）
+			8. User Interfaces（用户界面）（123）
+		5. Debugging（调试）（126）
+			1. Debuggers（调试器）（127）
+			2. Good Clues, Easy Bugs（好的线索，容易的错误）（128）
+			3. No Clues, Hard Bugs（没有线索，硬错误）（132）
+			4. Last Resorts（最后的手段）（136）
+			5. Non-reproducible Bugs（不可重现的错误）（139）
+			6. Debugging Tools（调试工具）（140）
+			7. Other People's Bugs（其他人的错误）（144）
+			8. Summary（总结）（145）
+		6. Testing（测试）（147）
+			1. Test as You Write the Code（在编写代码时进行测试）（148）
+			2. Systematic Testing（系统测试）（153）
+			3. Test Automation（测试自动化）（157）
+			4. Test Scaffolds（测试脚手架）（159）
+			5. Stress Tests（压力测试）（163）
+			6. Tips for Testing（测试技巧）（166）
+			7. Who Does the Testing?（谁进行测试？）（167）
+			8. Testing the Markov Program（测试马尔可夫程序）（168）
+			9. Summary（总结）（170）
+		7. Performance（表现）（172）
+			1. A Bottleneck（瓶颈）（173）
+			2. Timing and Profiling（计时和分析）（178）
+			3. Strategies for Speed（速度策略）（182）
+			4. Tuning the Code（调整代码）（185）
+			5. Space Efficiency（空间效率）（189）
+			6. Estimation（估计）（191）
+			7. Summary（总结）（194）
+		8. Portability（可移植性）（196）
+			1. Language（语言）（197）
+			2. Headers and Libraries（头文件和库）（203）
+			3. Program Organization（程序组织）（205）
+			4. Isolation（隔离）（209）
+			5. Data Exchange（数据交换）（210）
+			6. Byte Order（字节顺序）（211）
+			7. Portability and Upgrade（移植与升级）（214）
+			8. Internationalization（国际化）（216）
+			9. Summary（总结）（219）
+		9. Notation（符号）（221）
+			1. Formatting Data（格式化数据）（222）
+			2. Regular Expressions（正则表达式）（228）
+			3. Programmable Tools（可编程工具）（234）
+			4. Interpreters, Compilers, and Virtual Machines（解释器、编译器和虚拟机）（237）
+			5. Programs that Write Programs（编写程序的程序）（243）
+			6. Using Macros to Generate Code（使用宏生成代码）（246）
+			7. Compiling on the Fly（即时编译）（247）
+	3. Refactoring（重构）
+		1. Refactoring: A First Example（重构：第一个例子）（23）
+			1. The Starting Point（起点）（23）
+			2. Comments on the Starting Program（对启动计划的评论）（26）
+			3. The First Step in Refactoring（重构的第一步）（27）
+			4. Decomposing the statement Function（分解语句函数）（28）
+				1. Removing the play Variable（删除播放变量）（32）
+				2. Extracting Volume Credits（提取积分）（36）
+				3. Removing the format Variable（删除格式变量）（38）
+				4. Removing Total Volume Credits（删除总容量积分）（40）
+			5. Status: Lots of Nested Functions（状态：大量嵌套函数）（44）
+			6. Splitting the Phases of Calculation and Formatting（分割计算和格式化阶段）（46）
+			7. Status: Separated into Two Files (and Phases)（状态：分为两个文件（和阶段））（53）
+			8. Reorganizing the Calculations by Type（按类型重新组织计算）（56）
+				1. Creating a Performance Calculator（创建性能计算器）（58）
+				2. Moving Functions into the Calculator（将函数移入计算器）（59）
+				3. Making the Performance Calculator Polymorphic（使性能计算器具有多态性）（60）
+			9. Status: Creating the Data with the Polymorphic Calculator（状态：使用多态计算器创建数据）（63）
+			10. Final Thoughts（最后的想法）（65）
+		2. Principles in Refactoring（重构原则）（67）
+			1. Defining Refactoring（定义重构）（67）
+			2. The Two Hats（两顶帽子）（68）
+			3. Why Should We Refactor?（我们为什么要重构？）（69）
+				1. Refactoring Improves the Design of Software（重构改进软件设计）（69）
+				2. Refactoring Makes Software Easier to Understand（重构使软件更容易理解）（69）
+				3. Refactoring Helps Me Find Bugs（重构帮助我发现错误）（70）
+				4. Refactoring Helps Me Program Faster（重构帮助我更快地编程）（70）
+			4. When Should We Refactor?（我们什么时候应该重构？）（72）
+				1. Preparatory Refactoring—Making It Easier to Add a Feature（预备重构——让添加功能变得更容易）（72）
+				2. Comprehension Refactoring: Making Code Easier to Understand（理解式重构：让代码更容易理解）（73）
+				3. Litter-Pickup Refactoring（垃圾收集重构）（74）
+				4. Planned and Opportunistic Refactoring（有计划的和机会性的重构）（74）
+				5. Long-Term Refactoring（长期重构）（75）
+				6. Refactoring in a Code Review（代码审查中的重构）（76）
+				7. What Do I Tell My Manager?（我该告诉我的经理什么？）（76）
+				8. When Should I Not Refactor?（我什么时候不应该重构？）（77）
+			5. Problems with Refactoring（重构问题）（77）
+				1. Slowing Down New Features（放慢新功能的速度）（78）
+				2. Code Ownership（代码所有权）（79）
+				3. Branches（分支机构）（80）
+				4. Testing（测试）（81）
+				5. Legacy Code（遗留代码）（82）
+				6. Databases（数据库）（83）
+			6. Refactoring, Architecture, and Yagni（重构、架构和  Yagni）（84）
+			7. Refactoring and the Wider Software Development Process（重构和更广泛的软件开发过程）（85）
+			8. Refactoring and Performance（重构和性能）（86）
+			9. Where Did Refactoring Come From?（重构从何而来？）（89）
+			10. Automated Refactorings（自动重构）（90）
+			11. Going Further（更进一步）（92）
+		3. Bad Smells in Code（代码中的难闻气味）（93）
+			1. Mysterious Name（神秘的名字）（94）
+			2. Duplicated Code（重复的代码）（94）
+			3. Long Function（长函数）（95）
+			4. Long Parameter List（长参数列表）（96）
+			5. Global Data（全球数据）（96）
+			6. Mutable Data（可变数据）（97）
+			7. Divergent Change（发散性变化）（98）
+			8. Shotgun Surgery（霰弹枪手术）（98）
+			9. Feature Envy（功能羡慕）（99）
+			10. Data Clumps（数据块）（100）
+			11. Primitive Obsession（原始的痴迷）（100）
+			12. Repeated Switches（重复开关）（101）
+			13. Loops（循环）（101）
+			14. Lazy Element（惰性元素）（102）
+			15. Speculative Generality（推测的普遍性）（102）
+			16. Temporary Field（临时场地）（102）
+			17. Message Chains（消息链）（103）
+			18. Middle Man（中间人）（103）
+			19. Insider Trading（内幕交易）（104）
+			20. Large Class（大类）（104）
+			21. Alternative Classes with Different Interfaces（具有不同接口的替代类）（105）
+			22. Data Class（数据类）（105）
+			23. Refused Bequest（拒绝遗赠）（105）
+			24. Comments（评论）（106）
+		4. Building Tests（构建测试）（107）
+			1. The Value of Self-Testing Code（自测试代码的价值）（107）
+			2. Sample Code to Test（要测试的示例代码）（109）
+			3. A First Test（第一次测试）（112）
+			4. Add Another Test（添加另一个测试）（115）
+			5. Modifying the Fixture（修改夹具）（117）
+			6. Probing the Boundaries（探索边界）（118）
+			7. Much More Than This（远不止于此）（121）
+		5. Introducing the Catalog（目录介绍）（123）
+			1. Format of the Refactorings（重构的格式）（123）
+			2. The Choice of Refactorings（重构的选择）（124）
+		6. A First Set of Refactorings（第一组重构）（127）
+			1. Extract Function（提取功能）（128）
+				3. Example: No Variables Out of Scope（示例：没有超出范围的变量）（131）
+				4. Example: Using Local Variables（示例：使用局部变量）（132）
+				5. Example: Reassigning a Local Variable（示例：重新分配局部变量）（134）
+			2. Inline Function（内联函数）（137）
+			3. Extract Variable（提取变量）（141）
+				4. Example: With a Class（示例：有一个类）（143）
+			4. Inline Variable（内联变量）（145）
+			5. Change Function Declaration（更改函数声明）（146）
+				3. Example: Renaming a Function (Simple Mechanics)（示例：重命名函数（简单机制））（149）
+				4. Example: Renaming a Function (Migration Mechanics)（示例：重命名函数（迁移机制））（149）
+				5. Example: Adding a Parameter（示例：添加参数）（150）
+				6. Example: Changing a Parameter to One of Its Properties（示例：将参数更改为其属性之一）（151）
+			6. Encapsulate Variable（封装变量）（154）
+			7. Rename Variable（重命名变量）（159）
+			8. Introduce Parameter Object（引入参数对象）（162）
+			9. Combine Functions into Class（将函数合并到类中）（166）
+			10. Combine Functions into Transform（将函数组合成变换）（171）
+			11. Split Phase（分相）（176）
+		7. Encapsulation（封装）（183）
+			1. Encapsulate Record（封装记录）（184）
+			2. Encapsulate Collection（封装集合）（192）
+			3. Replace Primitive with Object（用对象替换原语）（196）
+			4. Replace Temp with Query（将  Temp  替换为查询）（200）
+			5. Extract Class（提取类）（204）
+			6. Inline Class（内联类）（208）
+			7. Hide Delegate（隐藏委托）（211）
+			8. Remove Middle Man（删除中间人）（214）
+			9. Substitute Algorithm（替代算法）（217）
+		8. Moving Features（移动功能）（220）
+			1. Move Function（移动功能）（220）
+				1. Example: Moving a Nested Function to Top Level（示例：将嵌套函数移动到顶层）（222）
+				2. Example: Moving between Classes（示例：在班级之间移动）（226）
+			2. Move Field（移动字段）（229）
+				1. Example: Moving to a Shared Object（示例：移动到共享对象）（233）
+			3. Move Statements into Function（将语句移至函数中）（235）
+			4. Move Statements to Callers（将语句移至调用者）（239）
+			5. Replace Inline Code with Function Call（用函数调用替换内联代码）（244）
+			6. Slide Statements（幻灯片陈述）（245）
+				1. Example: Sliding with Conditionals（示例：带条件滑动）（248）
+			7. Split Loop（分割循环）（248）
+			8. Replace Loop with Pipeline（用管道替换循环）（253）
+			9. Remove Dead Code（删除死代码）（259）
+		9. Organizing Data（组织数据）（261）
+			1. Split Variable（分割变量）（262）
+				1. Example: Assigning to an Input Parameter（示例：分配给输入参数）（264）
+			2. Rename Field（重命名字段）（266）
+				1. Example: Renaming a Field（示例：重命名字段）（267）
+			3. Replace Derived Variable with Query（用查询替换派生变量）（270）
+				1. Example: More Than One Source（示例：多个来源）（272）
+			4. Change Reference to Value（更改对值的引用）（274）
+			5. Change Value to Reference（将值更改为参考值）（278）
+		10. Simplifying Conditional Logic（简化条件逻辑）（281）
+			1. Decompose Conditional（条件分解）（282）
+			2. Consolidate Conditional Expression（巩固条件表达式）（285）
+				1. Example: Using ands（示例：使用and）（287）
+			3. Replace Nested Conditional with Guard Clauses（用保护子句替换嵌套条件）（288）
+				1. Example: Reversing the Conditions（示例：反转条件）（291）
+			4. Replace Conditional with Polymorphism（用多态性代替条件式）（294）
+				1. Example: Using Polymorphism for Variation（示例：使用多态性进行变异）（300）
+			5. Introduce Special Case（介绍特殊案例）（311）
+				1. Example: Using an Object Literal（示例：使用对象文字）（317）
+				2. Example: Using a Transform（示例：使用转换）（319）
+			6. Introduce Assertion（引入断言）（324）
+		11. Refactoring APIs（重构API）（327）
+			1. Separate Query from Modifier（将查询与修饰符分开）（328）
+			2. Parameterize Function（参数化函数）（332）
+			3. Remove Flag Argument（删除标志参数）（336）
+			4. Preserve Whole Object（保留整个对象）（341）
+				1. Example: A Variation to Create the New Function（示例：创建新函数的变体）（344）
+			5. Replace Parameter with Query（用查询替换参数）（346）
+			6. Replace Query with Parameter（用参数替换查询）（349）
+			7. Remove Setting Method（删除设置方法）（353）
+			8. Replace Constructor with Factory Function（用工厂函数替换构造函数）（356）
+			9. Replace Function with Command（用命令替换函数）（359）
+			10. Replace Command with Function（用函数替换命令）（366）
+		12. Dealing with Inheritance（处理继承）（371）
+			1. Pull Up Method（上拉法）（372）
+			2. Pull Up Field（拉起场）（375）
+			3. Pull Up Constructor Body（拉起构造函数主体）（377）
+			4. Push Down Method（下推法）（381）
+			5. Push Down Field（下推场）（383）
+			6. Replace Type Code with Subclasses（用子类替换类型代码）（384）
+				1. Example: Using Indirect Inheritance（示例：使用间接继承）（388）
+			7. Remove Subclass（删除子类）（391）
+			8. Extract Superclass（提取超类）（397）
+			9. Collapse Hierarchy（折叠层次结构）（402）
+			10. Replace Subclass with Delegate（用委托替换子类）（403）
+				1. Example: Replacing a Hierarchy（示例：替换层次结构）（411）
+			11. Replace Superclass with Delegate（用委托替换超类）（421）
+	4. Head First Design Patterns（Head First设计模式）
 		1. intro to Design Patterns Welcome to Design Patterns（设计模式简介 欢迎来到设计模式）（39）
 			1. It started with a simple SimUDuck app（它从一个简单的 SimUDuck 应用程序开始）（40）
 			2. But now we need the ducks to FLY（但现在我们需要鸭子飞翔）（41）
@@ -1889,7 +6982,819 @@
 			7. Memento（备忘录模式）（648）
 			8. Prototype（原型模式）（650）
 			9. Visitor（访问者模式）（652）
-	2. Clean Code（编码整洁之道）
+	5. Code Complete（代码大全）
+		1. Laying the Foundation（奠定基础）（46）
+			1. Welcome to Software Construction（欢迎来到软件构建）（47）
+				1. What Is Software Construction?（什么是软件构建？）（48）
+				2. Why Is Software Construction Important?（为什么软件建设很重要？）（52）
+				3. How to Read This Book（如何阅读本书）（54）
+			2. Metaphors for a Richer Understanding of Software Development（更丰富地理解软件开发的隐喻）（56）
+				1. The Importance of Metaphors（隐喻的重要性）（57）
+				2. How to Use Software Metaphors（如何使用软件隐喻）（60）
+				3. Common Software Metaphors（常见软件隐喻）（62）
+					1. Software Penmanship: Writing Code（软件书法：编写代码）（63）
+					2. Software Farming: Growing a System（软件耕种：种植系统）（65）
+					3. Software Oyster Farming: System Accretion（软件牡蛎养殖：系统增殖）（66）
+					4. Software Construction: Building Software（软件构建：构建软件）（69）
+					5. Applying Software Techniques: The Intellectual Toolbox（应用软件技术：智能工具箱）（74）
+					6. Combining Metaphors（结合隐喻）（75）
+			3. Measure Twice, Cut Once: Upstream Prerequisites（测量两次，切割一次：上游先决条件）（78）
+				1. Importance of Prerequisites（先决条件的重要性）（80）
+					1. Do Prerequisites Apply to Modern Software Projects?（先决条件适用于现代软件项目吗？）（82）
+					2. Causes of Incomplete Preparation（准备不充分的原因）（83）
+					3. Utterly Compelling and Foolproof Argument for Doing Prerequisites Before Construction（在施工前做好先决条件的完全令人信服且万无一失的论点）（86）
+				2. Determine the Kind of Software You're Working On（确定您正在开发的软件类型）（91）
+					1. Iterative Approaches' Effect on Prerequisites（迭代方法对先决条件的影响）（94）
+					2. Choosing Between Iterative and Sequential Approaches（在迭代方法和顺序方法之间进行选择）（97）
+				3. Problem-Definition Prerequisite（问题定义先决条件）（100）
+				4. Requirements Prerequisite（要求先决条件）（103）
+					1. Why Have Official Requirements?（为什么有官方要求？）（104）
+					2. The Myth of Stable Requirements（稳定需求的神话）（106）
+					3. Handling Requirements Changes During Construction（处理施工期间的需求变化）（108）
+				5. Architecture Prerequisite（架构先决条件）（112）
+					1. Typical Architectural Components（典型的架构组件）（114）
+				6. Amount of Time to Spend on Upstream Prerequisites（花在上游先决条件上的时间量）（129）
+			4. Key Construction Decisions（关键建设决策）（138）
+				1. Choice of Programming Language（编程语言的选择）（139）
+					1. Language Descriptions（语言描述）（142）
+				2. Programming Conventions（编程约定）（146）
+				3. Your Location on the Technology Wave（您在科技浪潮中的位置）（148）
+					1. Example of Programming into a Language（语言编程示例）（150）
+				4. Selection of Major Construction Practices（主要施工实践的选择）（152）
+		2. Creating High-Quality Code（创建高质量代码）（155）
+			1. Design in Construction（施工中的设计）（156）
+				1. Design Challenges（设计挑战）（158）
+					1. Design Is a Wicked Problem（设计是一个棘手的问题）（159）
+					2. Design Is a Sloppy Process (Even If it Produces a Tidy Result)（设计是一个马虎的过程（即使它产生了整洁的结果））（161）
+					3. Design Is About Tradeoffs and Priorities（设计是关于权衡和优先级的）（162）
+					4. Design Involves Restrictions（设计涉及限制）（163）
+					5. Design Is Nondeterministic（设计是不确定的）（164）
+					6. Design Is a Heuristic Process（设计是一个启发式的过程）（165）
+					7. Design Is Emergent（设计是自然而然的）（166）
+				2. Key Design Concepts（关键设计概念）（167）
+					1. Software's Primary Technical Imperative: Managing Complexity（软件的主要技术要求：管理复杂性）（168）
+					2. Desirable Characteristics of a Design（设计的理想特征）（173）
+					3. Levels of Design（设计水平）（176）
+				3. Design Building Blocks: Heuristics（设计构建模块：启发式）（184）
+					1. Find Real-World Objects（寻找现实世界的物体）（184）
+					2. Form Consistent Abstractions（形成一致的抽象）（188）
+					3. Encapsulate Implementation Details（封装实现细节）（190）
+					4. Inherit—When Inheritance Simplifies the Design（继承——当继承简化设计时）（191）
+					5. Hide Secrets (Information Hiding)（隐藏秘密（信息隐藏））（193）
+					6. Identify Areas Likely to Change（确定可能发生变化的领域）（202）
+					7. Keep Coupling Loose（保持联轴器松动）（206）
+					8. Look for Common Design Patterns（寻找常见的设计模式）（210）
+					9. Other Heuristics（其他启发法）（214）
+					10. Summary of Design Heuristics（设计启发法总结）（219）
+					11. Guidelines for Using Heuristics（使用启发法的指南）（220）
+				4. Design Practices（设计实践）（222）
+					1. Iterate（迭代）（223）
+					2. Divide and Conquer（分而治之）（225）
+					3. Top-Down and Bottom-Up Design Approaches（自上而下和自下而上的设计方法）（226）
+					4. Experimental Prototyping（实验原型制作）（230）
+					5. Collaborative Design（协同设计）（232）
+					6. How Much Design Is Enough?（多少设计就足够了？）（233）
+					7. Capturing Your Design Work（捕捉您的设计作品）（236）
+				5. Comments on Popular Methodologies（对流行方法论的评论）（239）
+			2. Working Classes（工人阶级）（250）
+				1. Class Foundations: Abstract Data Types (ADTs)（类基础：抽象数据类型  (ADT)）（252）
+					1. Example of the Need for an ADT（需要  ADT  的示例）（253）
+					2. Benefits of Using ADTs（使用  ADT  的好处）（255）
+					3. More Examples of ADTs（更多  ADT  示例）（258）
+					4. Handling Multiple Instances of Data with ADTs in Non-Object-Oriented Environments（在非面向对象环境中使用 ADT 处理多个数据实例）（262）
+					5. ADTs and Classes（ADT  和类）（264）
+				2. Good Class Interfaces（良好的类接口）（265）
+					1. Good Abstraction（良好的抽象）（266）
+					2. Good Encapsulation（良好的封装性）（274）
+				3. Design and Implementation Issues（设计和实施问题）（280）
+					1. Containment ("has a" Relationships)（遏制（“有”关系））（281）
+					2. Inheritance ("is a" Relationships)（继承（“是”关系））（282）
+					3. Member Functions and Data（会员功能及数据）（290）
+					4. Constructors（构造函数）（292）
+				4. Reasons to Create a Class（创建班级的原因）（294）
+					1. Classes to Avoid（要避免的课程）（299）
+					2. Summary of Reasons to Create a Class（创建班级的原因总结）（300）
+				5. Language-Specific Issues（特定于语言的问题）（301）
+				6. Beyond Classes: Packages（超越类：包）（302）
+			3. High-Quality Routines（高质量例程）（311）
+				1. Valid Reasons to Create a Routine（创建例程的正当理由）（315）
+					1. Operations That Seem Too Simple to Put Into Routines（看起来太简单而无法放入例程中的操作）（318）
+					2. Summary of Reasons to Create a Routine（创建例程的原因摘要）（320）
+				2. Design at the Routine Level（日常设计）（321）
+				3. Good Routine Names（好的例程名称）（326）
+				4. How Long Can a Routine Be?（例行公事可以持续多长时间？）（330）
+				5. How to Use Routine Parameters（如何使用常规参数）（332）
+				6. Special Considerations in the Use of Functions（使用函数时的特殊注意事项）（340）
+					1. When to Use a Function and When to Use a Procedure（何时使用函数以及何时使用过程）（341）
+					2. Setting the Function's Return Value（设置函数的返回值）（342）
+				7. Macro Routines and Inline Routines（宏例程和内联例程）（344）
+					1. Limitations on the Use of Macro Routines（宏例程的使用限制）（347）
+					2. Inline Routines（内联例程）（348）
+			4. Defensive Programming（防御性编程）（351）
+				1. Protecting Your Program from Invalid Inputs（保护您的程序免受无效输入的影响）（353）
+				2. Assertions（断言）（355）
+					1. Building Your Own Assertion Mechanism（构建您自己的断言机制）（357）
+					2. Guidelines for Using Assertions（使用断言的指南）（258）
+				3. Error-Handling Techniques（错误处理技术）（362）
+					1. Robustness vs. Correctness（稳健性与正确性）（366）
+					2. High-Level Design Implications of Error Processing（错误处理的高级设计含义）（367）
+				4. Exceptions（例外情况）（368）
+				5. Barricade Your Program to Contain the Damage Caused by Errors（阻止您的程序以遏制错误造成的损害）（376）
+					1. Relationship Between Barricades and Assertions（路障和断言之间的关系）（378）
+				6. Debugging Aids（调试辅助工具）（379）
+					1. Don't Automatically Apply Production Constraints to the Development Version（不要自动将生产约束应用于开发版本）（380）
+					2. Introduce Debugging Aids Early（尽早引入调试辅助工具）（381）
+					3. Use Offensive Programming（使用攻击性编程）（382）
+					4. Plan to Remove Debugging Aids（计划删除调试辅助工具）（384）
+				7. Determining How Much Defensive Programming to Leave in Production Code（确定在生产代码中保留多少防御性编程）（388）
+				8. Being Defensive About Defensive Programming（对防御性编程持防御态度）（390）
+			5. The Pseudocode Programming Process（伪代码编程过程）（397）
+				1. Summary of Steps in Building Classes and Routines（构建类和例程的步骤摘要）（398）
+					1. Steps in Creating a Class（创建类的步骤）（399）
+					2. Steps in Building a Routine（建立例程的步骤）（400）
+				2. Pseudocode for Pros（专业人士的伪代码）（402）
+				3. Constructing Routines by Using the PPP（使用PPP构建例程）（406）
+					1. Design the Routine（设计例程）（407）
+					2. Code the Routine（编写例程代码）（414）
+					3. Check the Code（检查代码）（420）
+					4. Clean Up Leftovers（清理剩菜）（424）
+					5. Repeat Steps as Needed（根据需要重复步骤）（425）
+				4. Alternatives to the PPP（PPP  的替代方案）（426）
+		3. Variables（变量）（429）
+			1. General Issues in Using Variables（使用变量的一般问题）（430）
+				1. Data Literacy（数据素养）（432）
+					1. The Data Literacy Test（数据素养测试）（433）
+					2. Additional Resources on Data Types（有关数据类型的其他资源）（435）
+				2. Making Variable Declarations Easy（使变量声明变得简单）（436）
+					1. Implicit Declarations（隐式声明）（437）
+				3. Guidelines for Initializing Variables（初始化变量的指南）（439）
+				4. Scope（范围）（445）
+					1. Localize References to Variables（本地化对变量的引用）（446）
+					2. Keep Variables "Live" for as Short a Time as Possible（保持变量“活动”的时间尽可能短）（448）
+					3. General Guidelines for Minimizing Scope（最小化范围的一般准则）（452）
+					4. Comments on Minimizing Scope（对最小化范围的评论）（455）
+				5. Persistence（坚持）（457）
+				6. Binding Time（结合时间）（459）
+				7. Relationship Between Data Types and Control Structures（数据类型和控制结构之间的关系）（461）
+				8. Using Each Variable for Exactly One Purpose（将每个变量仅用于一个目的）（464）
+			2. The Power of Variable Names（变量名称的力量）（469）
+				1. Considerations in Choosing Good Names（选择好名字的注意事项）（470）
+					1. The Most Important Naming Consideration（最重要的命名考虑因素）（472）
+					2. Problem Orientation（问题导向）（474）
+					3. Optimum Name Length（最佳名称长度）（474）
+					4. The Effect of Scope on Variable Names（范围对变量名的影响）（477）
+					5. Computed-Value Qualifiers in Variable Names（变量名称中的计算值限定符）(479)
+					6. Common Opposites in Variable Names（变量名称中常见的反义词）（480）
+				2. Naming Specific Types of Data（命名特定类型的数据）（481）
+					1. Naming Loop Indexes（命名循环索引）（482）
+					2. Naming Status Variables（命名状态变量）（484）
+					3. Naming Temporary Variables（命名临时变量）（486）
+					4. Naming Boolean Variables（命名布尔变量）（487）
+					5. Naming Enumerated Types（命名枚举类型）（489）
+					6. Naming Constants（命名常量）（491）
+				3. The Power of Naming Conventions（命名约定的力量）（491）
+					1. Why Have Conventions?（为什么要有约定？）（493）
+					2. When You Should Have a Naming Convention（什么时候应该有命名约定）（495）
+					3. Degrees of Formality（正式程度）（496）
+				4. Informal Naming Conventions（非正式命名约定）（497）
+					1. Guidelines for a Language-Independent Convention（独立于语言的约定指南）（498）
+					2. Guidelines for Language-Specific Conventions（特定语言约定指南）（502）
+					3. Mixed-Language Programming Considerations（混合语言编程注意事项）（504）
+					4. Sample Naming Conventions（示例命名约定）（506）
+				5. Standardized Prefixes（标准化前缀）（510）
+					1. User-Defined Type Abbreviations（用户定义类型缩写）（511）
+					2. Semantic Prefixes（语义前缀）（513）
+					3. Advantages of Standardized Prefixes（标准化前缀的优点）（515）
+				6. Creating Short Names That Are Readable（创建可读的短名称）（516）
+					1. General Abbreviation Guidelines（一般缩写指南）（517）
+					2. Phonetic Abbreviations（音标缩略语）（518）
+					3. Comments on Abbreviations（对缩写的评论）（519）
+				7. Kinds of Names to Avoid（应避免使用的名称类型）（522）
+			3. Fundamental Data Types（基本数据类型）（528）
+				1. Numbers in General（一般数字）（530）
+				2. Integers（整数）（533）
+				3. Floating-Point Numbers（浮点数字）（536）
+				4. Characters and Strings（字符和字符串）（540）
+					1. Strings in C（C  中的字符串）（543）
+				5. Boolean Variables（布尔变量）（546）
+				6. Enumerated Types（枚举类型）（549）
+					1. If Your Language Doesn't Have Enumerated Types（如果您的语言没有枚举类型）（554）
+				7. Named Constants（命名常量）（555）
+				8. Arrays（数组）（559）
+				9. Creating Your Own Types (Type Aliasing)（创建您自己的类型（类型别名））（562）
+					1. Why Are the Examples of Creating Your Own Types in Pascal and Ada?（为什么 Pascal 和 Ada 中有创建您自己的类型的示例？）（566）
+					2. Guidelines for Creating Your Own Types（创建您自己的类型的指南）（567）
+			4. Unusual Data Types（异常数据类型）（572）
+				1. Structures（结构）（573）
+				2. Pointers（指针）（578）
+					1. Paradigm for Understanding Pointers（理解指针的范例）（579）
+					2. General Tips on Pointers（关于指针的一般提示）（581）
+					3. C++-Pointer Pointers（C++-指针 指针）（592）
+					4. C-Pointer Pointers（C 指针 指针）（594）
+				3. Global Data（全球数据）（596）
+					1. Common Problems with Global Data（全局数据的常见问题）（597）
+					2. Reasons to Use Global Data（使用全球数据的原因）（601）
+					3. Use Global Data Only as a Last Resort（仅将全局数据用作最后的手段）（603）
+					4. Using Access Routines Instead of Global Data（使用访问例程而不是全局数据）（604）
+					5. How to Reduce the Risks of Using Global Data（如何降低使用全球数据的风险）（610）
+		4. Statements（声明）（616）
+			1. Organizing Straight-Line Code（组织直线代码）（616）
+				1. Statements That Must Be in a Specific Order（必须按特定顺序的语句）（617）
+				2. Statements Whose Order Doesn't Matter（顺序无关紧要的语句）（622）
+					1. Making Code Read from Top to Bottom（使代码从上到下阅读）（623）
+					2. Grouping Related Statements（对相关语句进行分组）（625）
+			2. Using Conditionals（使用条件）（628）
+				1. if Statements（if语句）（629）
+					1. Plain if-then Statements（简单的if‑then语句）（630）
+					2. Chains of if-then-else Statements（if‑then‑else语句链）（635）
+				2. case Statements（case语句）（638）
+					1. Choosing the Most Effective Ordering of Cases（选择最有效的案例排序）（639）
+					2. Tips for Using case Statements（使用case语句的技巧）（640）
+			3. Controlling Loops（控制循环）（647）
+				1. Selecting the Kind of Loop（选择循环类型）（648）
+					1. When to Use a while Loop（何时使用while循环）（650）
+					2. When to Use a Loop-With-Exit Loop（何时使用带退出的循环）（651）
+					3. When to Use a for Loop（何时使用for循环）（655）
+					4. When to Use a foreach Loop（何时使用foreach循环）（656）
+				2. Controlling the Loop（控制循环）（657）
+					1. Entering the Loop（进入循环）（658）
+					2. Processing the Middle of the Loop（处理循环的中间部分）（661）
+					3. Exiting the Loop（退出循环）（663）
+					4. Checking Endpoints（检查端点）（669）
+					5. Using Loop Variables（使用循环变量）（670）
+					6. How Long Should a Loop Be?（循环应该多长？）（674）
+				3. Creating Loops Easily—From the Inside Out（轻松创建循环——从内到外）（675）
+				4. Correspondence Between Loops and Arrays（循环与数组的对应关系）（678）
+			4. Unusual Control Structures（不寻常的控制结构）（681）
+				1. Multiple Returns from a Routine（例程的多次返回）（682）
+				2. Recursion（递归）（685）
+					1. Example of Recursion（递归示例）（686）
+					2. Tips for Using Recursion（使用递归的技巧）（688）
+				3. goto(691)
+					1. The Argument Against gotos（反对goto  的争论）（691）
+					2. The Argument for gotos（goto的论证）（694）
+					3. The Phony goto Debate（虚假的转到辩论）（696）
+					4. Error Processing and gotos（错误处理和跳转）（698）
+					5. gotos and Sharing Code in an else Clause（goto和在else子句中共享代码）（704）
+					6. Summary of Guidelines for Using gotos（goto使用指南摘要）（706）
+				4. Perspective on Unusual Control Structures（对不寻常控制结构的看法）（708）
+			5. Table-Driven Methods（表驱动方法）（715）
+				1. General Considerations in Using Table-Driven Methods（使用表驱动方法的一般注意事项）（716）
+					1. Two Issues in Using Table-Driven Methods（使用表驱动方法的两个问题）（717）
+				2. Direct Access Tables（直接访问表）（718）
+					1. Days-in-Month Example（一个月中的天数示例）（719）
+					2. Insurance Rates Example（保险费率示例）（721）
+					3. Flexible-Message-Format Example（灵活消息格式示例）（724）
+					4. Logic-Based Approach（基于逻辑的方法）（726）
+					5. Object-Oriented Approach（面向对象的方法）（727）
+					6. Table-Driven Approach（表驱动方法）（729）
+					7. Fudging Lookup Keys（伪造查找键）（734）
+				3. Indexed Access Tables（索引访问表）（736）
+				4. Stair-Step Access Tables（阶梯通道表）（739）
+				5. Other Examples of Table Lookups（表查找的其他示例）（743）
+			6. General Control Issues（一般控制问题）（745）
+				1. Boolean Expressions（布尔表达式）（746）
+					1. Using true and false for Boolean Tests（使用true和false进行布尔测试）（747）
+					2. Making Complicated Expressions Simple（使复杂的表达式变得简单）（750）
+					3. Forming Boolean Expressions Positively（正向构造布尔表达式）（753）
+					4. Using Parentheses to Clarify Boolean Expressions（使用括号来阐明布尔表达式）（756）
+					5. Knowing How Boolean Expressions Are Evaluated（了解如何评估布尔表达式）（758）
+					6. Writing Numeric Expressions in Number-Line Order（按数轴顺序编写数值表达式）（761）
+					7. Guidelines for Comparisons to 0（与0比较的指南）（762）
+					8. Common Problems with Boolean Expressions（布尔表达式的常见问题）（764）
+				2. Compound Statements (Blocks)（复合语句（块））（765）
+				3. Null Statements（空语句）（768）
+				4. Taming Dangerously Deep Nesting（驯服危险的深层嵌套）（770）
+					1. Summary of Techniques for Reducing Deep Nesting（减少深度嵌套的技术总结）（780）
+				5. A Programming Foundation: Structured Programming（编程基础：结构化编程）（781）
+					1. The Three Components of Structured Programming（结构化编程的三个组成部分）（782）
+				6. Control Structures and Complexity（控制结构和复杂性）（785）
+					1. How Important Is Complexity?（复杂性有多重要？）（786）
+					2. General Guidelines for Reducing Complexity（降低复杂性的一般准则）（787）
+					3. Other Kinds of Complexity（其他类型的复杂性）（789）
+		5. Code Improvements（代码改进）（791）
+			1. The Software-Quality Landscape（软件质量格局）（792）
+				1. Characteristics of Software Quality（软件质量的特点）（793）
+				2. Techniques for Improving Software Quality（提高软件质量的技术）（797）
+					1. Development Process（开发流程）（800）
+					2. Setting Objectives（设定目标）（802）
+				3. Relative Effectiveness of Quality Techniques（质量技术的相对有效性）（804）
+					1. Percentage of Defects Detected（检测到的缺陷百分比）（805）
+					2. Cost of Finding Defects（发现缺陷的成本）（809）
+					3. Cost of Fixing Defects（修复缺陷的成本）（810）
+				4. When to Do Quality Assurance（何时进行质量保证）（812）
+				5. The General Principle of Software Quality（软件质量的一般原则）（813）
+			2. Collaborative Construction（协同建设）（820）
+				1. Overview of Collaborative Development Practices（协作开发实践概述）（822）
+					1. Collaborative Construction Complements Other Quality-Assurance Techniques（协同施工补充了其他质量保证技术）（823）
+					2. Collaborative Construction Provides Mentoring in Corporate Culture and Programming Expertise（协作构建提供企业文化和编程专业知识方面的指导）（826）
+					3. Collective Ownership Applies to All Forms of Collaborative Construction（集体所有制适用于各种形式的协同建设）（827）
+					4. Collaboration Applies As Much Before Construction As After（施工前和施工后的协作同样适用）（828）
+				2. Pair Programming（结对编程）（829）
+					1. Keys to Success with Pair Programming（结对编程成功的关键）（830）
+					2. Benefits of Pair Programming（结对编程的好处）（832）
+				3. Formal Inspections（正式检查）（833）
+					1. What Results Can You Expect from Inspections?（您可以从检查中得到什么结果？）（834）
+					2. Roles During an Inspection（检查期间的角色）（835）
+					3. General Procedure for an Inspection（检查的一般程序）（837）
+					4. Egos in Inspections（检查中的自我意识）（841）
+					5. Inspections and Code Complete（检查和代码完成）（842）
+					6. Inspection Summary（检查总结）（843）
+				4. Other Kinds of Collaborative Development Practices（其他类型的协作开发实践）（845）
+					1. Walk-Throughs（演练）（846）
+					2. Code Reading（代码阅读）（849）
+					3. Dog-and-Pony Shows（狗和小马表演）（851）
+				5. Comparison of Collaborative Construction Techniques（协同施工技术比较）（852）
+			3. Developer Testing（开发人员测试）（858）
+				1. Role of Developer Testing in Software Quality（开发人员测试在软件质量中的作用）（861）
+					1. Testing During Construction（施工期间测试）（864）
+				2. Recommended Approach to Developer Testing（推荐的开发人员测试方法）（865）
+					1. Test First or Test Last?（先测试还是最后测试？）（866）
+					2. Limitations of Developer Testing（开发人员测试的局限性）（867）
+				3. Bag of Testing Tricks（测试技巧包）（868）
+					1. Incomplete Testing（测试不完整）（869）
+					2. Structured Basis Testing（结构化基础测试）（870）
+					3. Data-Flow Testing（数据流测试）（875）
+					4. Equivalence Partitioning（等价划分）（880）
+					5. Error Guessing（错误猜测）（881）
+					6. Boundary Analysis（边界分析）（882）
+					7. Classes of Bad Data（不良数据的类别）（884）
+					8. Classes of Good Data（好数据的类别）（885）
+					9. Use Test Cases That Make Hand-Checks Convenient（使用方便手动检查的测试用例）（887）
+				4. Typical Errors（典型错误）（888）
+					1. Which Classes Contain the Most Errors?（哪些类包含最多错误？）（889）
+					2. Errors by Classification（错误分类）（891）
+					3. Proportion of Errors Resulting from Faulty Construction（因施工错误而导致的错误比例）（894）
+					4. How Many Errors Should You Expect to Find?（您应该期望发现多少错误？）（896）
+					5. Errors in Testing Itself（测试本身的错误）（898）
+				5. Test-Support Tools（测试支持工具）（900）
+					1. Building Scaffolding to Test Individual Classes（构建脚手架来测试各个类）（901）
+					2. Diff Tools（差异工具）（904）
+					3. Test-Data Generators（测试数据生成器）（905）
+					4. Coverage Monitors（覆盖范围监视器）（907）
+					5. Data Recorder/Logging（数据记录器/记录）（908）
+					6. Symbolic Debuggers（符号调试器）（909）
+					7. System Perturbers（系统扰动者）（910）
+					8. Error Databases（错误数据库）（911）
+				6. Improving Your Testing（改进您的测试）（912）
+					1. Planning to Test（计划测试）（913）
+					2. Retesting (Regression Testing)（重新测试（回归测试））（914）
+					3. Automated Testing（自动化测试）（915）
+				7. Keeping Test Records（保存测试记录）（917）
+					1. Personal Test Records（个人测试记录）（918）
+					2. Additional Resources（其他资源）（919）
+					3. Testing（测试）（920）
+					4. Test Scaffolding（测试脚手架）（922）
+					5. Test First Development（测试优先开发）（923）
+					6. Relevant Standards（相关标准）（924）
+			4. Debugging（调试）（926）
+				1. Overview of Debugging Issues（调试问题概述）（927）
+					1. Role of Debugging in Software Quality（调试在软件质量中的作用）（929）
+					2. Variations in Debugging Performance（调试性能的变化）（930）
+					3. Defects as Opportunities（缺陷即机遇）（932）
+					4. An Ineffective Approach（无效的方法）（934）
+				2. Finding a Defect（寻找缺陷）（936）
+					1. The Scientific Method of Debugging（科学的调试方法）（937）
+					2. Tips for Finding Defects（查找缺陷的技巧）（942）
+					3. Syntax Errors（语法错误）（950）
+				3. Fixing a Defect（修复缺陷）（952）
+				4. Psychological Considerations in Debugging（调试中的心理考虑）（958）
+					1. How "Psychological Set" Contributes to Debugging Blindness（“心理设定”如何导致调试失明）（959）
+					2. How "Psychological Distance" Can Help（“心理距离”有何帮助）（961）
+				5. Debugging Tools—Obvious and Not-So-Obvious（调试工具——显而易见的和不那么显而易见的）（961）
+					1. Source-Code Comparators（源代码比较器）（963）
+					2. Compiler Warning Messages（编译器警告消息）（964）
+					3. Extended Syntax and Logic Checking（扩展语法和逻辑检查）（966）
+					4. Execution Profilers（执行分析器）（967）
+					5. Test Frameworks/Scaffolding（测试框架/脚手架）（968）
+					6. Debuggers（调试器）（969）
+			5. Refactoring（重构）（975）
+				1. Kinds of Software Evolution（软件演化的种类）（977）
+					1. Philosophy of Software Evolution（软件演化哲学）（978）
+				2. Introduction to Refactoring（重构简介）（979）
+					1. Reasons to Refactor（重构的原因）（980）
+					2. Reasons Not to Refactor（不重构的原因）（987）
+				3. Specific Refactorings（具体重构）（988）
+					1. Data-Level Refactorings（数据级重构）（989）
+					2. Statement-Level Refactorings（语句级重构）（991）
+					3. Routine-Level Refactorings（例程级重构）（993）
+					4. Class Implementation Refactorings（类实现重构）（995）
+					5. Class Interface Refactorings（类接口重构）（996）
+					6. System-Level Refactorings（系统级重构）（998）
+				4. Refactoring Safely（安全重构）（1001）
+					1. Bad Times to Refactor（重构的糟糕时机）（1004）
+				5. Refactoring Strategies（重构策略）（1005）
+			6. Code-Tuning Strategies（代码调整策略）（1010）
+				1. Performance Overview（性能概览）（1012）
+					1. Quality Characteristics and Performance（质量特性及性能）（1013）
+					2. Performance and Code Tuning（性能和代码调优）（1015）
+				2. Introduction to Code Tuning（代码调优简介）（1020）
+					1. The Pareto Principle（帕累托法则）（1021）
+					2. Old Wives' Tales（老妇人的故事）（1023）
+					3. When to Tune（何时调整）（1028）
+					4. Compiler Optimizations（编译器优化）（1029）
+				3. Kinds of Fat and Molasses（脂肪和糖蜜的种类）（1031）
+					1. Common Sources of Inefficiency（低效率的常见根源）（1032）
+					2. Relative Performance Costs of Common Operations（常见操作的相对性能成本）（1037）
+				4. Measurement（测量）（1041）
+					1. Measurements Need to Be Precise（测量需要精确）（1043）
+				5. Iteration（迭代）（1044）
+				6. Summary of the Approach to Code Tuning（代码调优方法总结）（1046）
+			7. Code-Tuning Techniques（代码调整技术）（1052）
+				1. Logic（逻辑）（1054）
+					1. Stop Testing When You Know the Answer（当您知道答案时停止测试）（1055）
+					2. Order Tests by Frequency（按频率排序测试）（1057）
+					3. Compare Performance of Similar Logic Structures（比较类似逻辑结构的性能）（1060）
+					4. Substitute Table Lookups for Complicated Expressions（用表查找替换复杂的表达式）（1061）
+					5. Use Lazy Evaluation（使用惰性求值）（1063）
+				2. Loops（循环）（1064）
+					1. Unswitching（取消切换）（1065）
+					2. Jamming（干扰）（1067）
+					3. Unrolling（展开）（1069）
+					4. Minimizing the Work Inside Loops（最小化循环内的工作）（1072）
+					5. Sentinel Values（哨兵价值观）（1074）
+					6. Putting the Busiest Loop on the Inside（将最繁忙的循环放在内部）（1077）
+					7. Strength Reduction（强度降低）（1078）
+				3. Data Transformations（数据转换）（1080）
+					1. Use Integers Rather Than Floating-Point Numbers（使用整数而不是浮点数）（1081）
+					2. Use the Fewest Array Dimensions Possible（使用尽可能少的数组维度）（1083）
+					3. Minimize Array References（最小化数组引用）（1085）
+					4. Use Supplementary Indexes（使用补充索引）（1086）
+					5. Use Caching（使用缓存）（1087）
+				4. Expressions（表达式）（1089）
+					1. Exploit Algebraic Identities（利用代数恒等式）（1090）
+					2. Use Strength Reduction（使用强度降低）（1091）
+					3. Initialize at Compile Time（编译时初始化）（1094）
+					4. Be Wary of System Routines（警惕系统例程）（1096）
+					5. Use the Correct Type of Constants（使用正确类型的常量）（1098）
+					6. Precompute Results（预先计算结果）（1099）
+					7. Eliminate Common Subexpressions（消除公共子表达式）（1103）
+				5. Routines（例程）（1104）
+					1. Rewrite Routines Inline（内联重写例程）（1105）
+				6. Recoding in a Low-Level Language（用低级语言重新编码）（1106）
+				7. The More Things Change, the More They Stay the Same（事物变化越多，它们就越保持不变）（1110）
+		6. System Considerations（系统注意事项）（1115）
+			1. How Program Size Affects Construction（程序大小如何影响构造）（1116）
+				1. Communication and Size（沟通和规模）（1118）
+				2. Range of Project Sizes（项目规模范围）（1120）
+				3. Effect of Project Size on Errors（项目规模对错误的影响）（1122）
+				4. Effect of Project Size on Productivity（项目规模对生产力的影响）（1125）
+				5. Effect of Project Size on Development Activities（项目规模对开发活动的影响）（1127）
+					1. Activity Proportions and Size（活动比例及规模）（1128）
+					2. Programs, Products, Systems, and System Products（程序、产品、系统和系统产品）（1131）
+					3. Methodology and Size（方法论和规模）（1133）
+			2. Managing Construction（管理施工）（1138）
+				1. Encouraging Good Coding（鼓励良好的编码）（1140）
+					1. Considerations in Setting Standards（制定标准时的考虑因素）（1141）
+					2. Techniques for Encouraging Good Coding（鼓励良好编码的技术）（1142）
+					3. The Role of This Book（本书的作用）（1145）
+				2. Configuration Management（配置管理）（1146）
+					1. What Is Configuration Management?（什么是配置管理？）（1147）
+					2. Requirements and Design Changes（要求和设计变更）（1149）
+					3. Software Code Changes（软件代码变更）（1152）
+					4. Tool Versions（工具版本）（1154）
+					5. Machine Configurations（机器配置）（1155）
+					6. Backup Plan（后备方案）（1156）
+					7. Additional Resources on Configuration Management（有关配置管理的其他资源）（1158）
+				3. Estimating a Construction Schedule（估算施工进度）（1159）
+					1. Estimation Approaches（估计方法）（1160）
+					2. Estimating the Amount of Construction（估算施工量）（1164）
+					3. Influences on Schedule（对日程的影响）（1165）
+					4. Estimation vs. Control（估计与控制）（1168）
+					5. What to Do If You're Behind（如果你落后了怎么办）（1169）
+					6. Additional Resources on Software Estimation（有关软件估算的其他资源）（1171）
+				4. Measurement（测量）（1172）
+					1. Additional Resources on Software Measurement（有关软件测量的其他资源）（1176）
+				5. Treating Programmers as People（把程序员当人对待）（1178）
+					1. How Do Programmers Spend Their Time?（程序员如何度过他们的时间？）（1179）
+					2. Variation in Performance and Quality（性能和质量的变化）（1181）
+					3. Religious Issues（宗教问题）（1184）
+					4. Physical Environment（物理环境）（1186）
+					5. Additional Resources on Programmers as Human Beings（有关程序员作为人类的其他资源）（1188）
+				6. Managing Your Manager（管理你的经理）（1190）
+					1. Additional Resources on Managing Construction（有关管理施工的其他资源）（1191）
+					2. Relevant Standards（相关标准）（1192）
+			3. Integration（整合）（1194）
+				1. Importance of the Integration Approach（整合方法的重要性）（1195）
+				2. Integration Frequency—Phased or Incremental?（积分频率——分阶段还是增量？）（1197）
+					1. Phased Integration（分阶段整合）（1198）
+					2. Incremental Integration（增量集成）（1200）
+					3. Benefits of Incremental Integration（增量集成的好处）（1202）
+				3. Incremental Integration Strategies（增量集成策略）（1204）.
+					1. Top-Down Integration（自上而下的整合）（1205）
+					2. Bottom-Up Integration（自下而上的整合）（1208）
+					3. Sandwich Integration（三明治整合）（1210）
+					4. Risk-Oriented Integration（以风险为导向的整合）（1211）
+					5. Feature-Oriented Integration（面向功能的集成）（1212）
+					6. T-Shaped Integration（T型整合）（1214）
+					7. Summary of Integration Approaches（集成方法总结）（1215）
+				4. Daily Build and Smoke Test（每日构建和冒烟测试）（1216）
+					1. What Kinds of Projects Can Use the Daily Build Process?（哪些类型的项目可以使用日常构建流程？）（1222）
+					2. Continuous Integration（持续集成）（1223）
+			4. Programming Tools（编程工具）（1229）
+				1. Design Tools（设计工具）（1231）
+				2. Source-Code Tools（源代码工具）（1232）
+					1. Editing（编辑）（1233）
+					2. Analyzing Code Quality（分析代码质量）（1238）
+					3. Refactoring Source Code（重构源代码）（1240）
+					4. Version Control（版本控制）（1242）
+					5. Data Dictionaries（数据字典）（1243）
+				3. Executable-Code Tools（可执行代码工具）（1244）
+					1. Code Creation（代码创建）（1245）
+					2. Debugging（调试）（1249）
+					3. Testing（测试）（1250）
+					4. Code Tuning（代码调优）（1251）
+				4. Tool-Oriented Environments（面向工具的环境）（1252）
+				5. Building Your Own Programming Tools（构建您自己的编程工具）（1253）
+					1. Project-Specific Tools（项目特定工具）（1254）
+					2. Scripts（脚本）（1255）
+				6. Tool Fantasyland（工具幻想世界）（1256）
+		7. Software Craftsmanship（软件工艺）（1261）
+			1. Layout and Style（布局和风格）（1262）
+				1. Layout Fundamentals（布局基础知识）（1264）
+					1. Layout Extremes（极端布局）（1265）
+					2. The Fundamental Theorem of Formatting（格式化的基本定理）（1268）
+					3. Human and Computer Interpretations of a Program（程序的人类和计算机解释）（1269）
+					4. How Much Is Good Layout Worth?（好的布局值多少钱？）（1270）
+					5. Layout as Religion（作为宗教的布局）（1273）
+					6. Objectives of Good Layout（良好布局的目标）（1275）
+				2. Layout Techniques（布局技巧）（1277）
+					1. White Space（空白）（1278）
+					2. Parentheses（括号）（1281）
+				3. Layout Styles（布局样式）（1282）
+					1. Pure Blocks（纯块）（1283）
+					2. Emulating Pure Blocks（模拟纯块）（1285）
+					3. Using begin-end Pairs (Braces) to Designate Block Boundaries（使用开始‑结束对（大括号）来指定块边界）（1287）
+					4. Endline Layout（端线布局）（1289）
+					5. Which Style Is Best?（哪种风格最好？）（1292）
+				4. Laying Out Control Structures（布置控制结构）（1293）
+					1. Fine Points of Formatting Control-Structure Blocks（格式化控制结构块的要点）（1294）
+					2. Other Considerations（其他考虑因素）（1297）
+				5. Laying Out Individual Statements（制定个人陈述）（1304）
+					1. Statement Length（语句长度）（1305）
+					2. Using Spaces for Clarity（使用空格来提高清晰度）（1306）
+					3. Formatting Continuation Lines（设置连续行的格式）（1307）
+					4. Using Only One Statement Per Line（每行仅使用一个语句）（1313）
+					5. Laying Out Data Declarations（布置数据声明）（1317）
+				6. Laying Out Comments（发表评论）（1321）
+				7. Laying Out Routines（安排日常事务）（1324）
+				8. Laying Out Classes（布置类）（1327）
+					1. Laying Out Class Interfaces（布局类接口）（1328）
+					2. Laying Out Class Implementations（布局类实现）（1329）
+					3. Laying Out Files and Programs（布置文件和程序）（1333）
+			2. Self-Documenting Code（自记录代码）（1339）
+				1. External Documentation（外部文档）（1340）
+				2. Programming Style as Documentation（作为文档的编程风格）（1342）
+				3. To Comment or Not to Comment（注释或不注释）（1346）
+				4. Keys to Effective Comments（有效注释的关键）（1351）
+					1. Kinds of Comments（注释种类）（1353）
+					2. Commenting Efficiently（高效注释）（1356）
+					3. Optimum Number of Comments（最佳注释数）（1361）
+				5. Commenting Techniques（注释技巧）（1362）
+					1. Commenting Individual Lines（注释单行）（1363）
+					2. Commenting Paragraphs of Code（注释代码段落）（1367）
+					3. Commenting Data Declarations（注释数据声明）（1376）
+					4. Commenting Control Structures（注释控制结构）（1379）
+					5. Commenting Routines（注释例程）（1381）
+					6. Commenting Classes, Files, and Programs（注释类、文件和程序）（1388）
+				6. IEEE Standards（IEEE  标准）（1393）
+					1. Software-Development Standards（软件开发标准）（1394）
+					2. Software Quality-Assurance Standards（软件质量保证标准）（1395）
+					3. Management Standards（管理标准）（1396）
+					4. Overview of Standards（标准概述）（1397）
+			3. Personal Character（个人品格）（1402）
+				1. Isn't Personal Character Off the Topic?（个人性格不是题外话吗？）（1404）
+				2. Intelligence and Humility（智慧与谦逊）（1405）
+				3. Curiosity（好奇心）（1407）
+				4. Intellectual Honesty（知识诚实）（1413）
+				5. Communication and Cooperation（交流合作）（1417）
+				6. Creativity and Discipline（创造力与纪律）（1418）
+				7. Laziness（懒惰）（1420）
+				8. Characteristics That Don't Matter As Much As You Might Think（特征并不像您想象的那么重要）（1422）
+					1. Persistence（坚持）（1423）
+					2. Experience（经验）（1424）
+					3. Gonzo Programming（奇闻趣事编程）（1426）
+				9. Habits（习惯）（1427）
+			4. Themes in Software Craftsmanship（软件工艺的主题）（1432）
+				1. Conquer Complexity（征服复杂性）（1433）
+				2. Pick Your Process（选择您的流程）（1436）
+				3. Write Programs for People First, Computers Second（首先为人编写程序，其次为计算机编写程序）（1439）
+				4. Program into Your Language, Not in It（用你的语言编程，而不是用它）（1442）
+				5. Focus Your Attention with the Help of Conventions（在惯例的帮助下集中你的注意力）（1444）
+				6. Program in Terms of the Problem Domain（根据问题域进行规划）（1446）
+					1. Separating a Program into Levels of Abstraction（将程序分为多个抽象级别）（1447）
+					2. Low-Level Techniques for Working in the Problem Domain（在问题领域工作的低级技术）（1450）
+				7. Watch for Falling Rocks（留意落石）（1451）
+				8. Iterate, Repeatedly, Again and Again（迭代，反复，一次又一次）（1454）
+				9. Thou Shalt Rend Software and Religion Asunder（你应该分裂软件和宗教）（1456）
+					1. Software Oracles（软件预言机）（1457）
+					2. Eclecticism（折衷主义）（1458）
+					3. Experimentation（实验）（1460）
+			5. Where to Find More Information（哪里可以找到更多信息）（1462）
+				1. Information About Software Construction（软件建设信息）（1464）
+				2. Topics Beyond Construction（建筑之外的主题）（1466）
+					1. Overview Material（概述材料）（1467）
+					2. Software-Engineering Overviews（软件工程概述）（1469）
+					3. Other Annotated Bibliographies（其他带注释的参考书目）（1470）
+				3. Periodicals（期刊）（1471）
+					1. Lowbrow Programmer Magazines（低俗程序员杂志）（1472）
+					2. Highbrow Programmer Journals（高雅程序员期刊）（1473）
+					3. Special-Interest Publications（特别兴趣出版物）（1474）
+				4. A Software Developer's Reading Plan（软件开发人员的阅读计划）（1475）
+					1. Introductory Level（入门级）（1476）
+					2. Practitioner Level（从业者级别）（1477）
+					3. Professional Level（专业水平）（1478）
+				5. Joining a Professional Organization（加入专业组织）（1479）
+	6. Working Effectively with Legacy Code（修改代码的艺术）
+		1. The Mechanics of Change（变革的机制）（24）
+			1. Changing Software（改变软件）（26）
+				1. Four Reasons to Change Software（更换软件的四个理由）（26）
+					1. Adding Features and Fixing Bugs（添加功能并修复错误）（26）
+					2. Improving Design（改进设计）（28）
+					3. Optimization（优化）（29）
+					4. Putting It All Together（把它们放在一起）（29）
+				2. Risky Change（危险的改变）（30）
+			2. Working with Feedback（处理反馈）（32）
+				1. What Is Unit Testing?（什么是单元测试？）（35）
+				2. Higher-Level Testing（更高级别的测试）（37）
+				3. Test Coverings（测试覆盖物）（37）
+				4. The Legacy Code Change Algorithm（遗留代码更改算法）（41）
+					1. Identify Change Points（识别变化点）（41）
+					2. Find Test Points（寻找测试点）（42）
+					3. Break Dependencies（打破依赖关系）（42）
+					4. Write Tests（编写测试）（42）
+					5. Make Changes and Refactor（进行更改和重构）（43）
+					6. The Rest of This Book（本书的其余部分）（43）
+			3. Sensing and Separation（传感与分离）（46）
+				1. Faking Collaborators（伪造合作者）（46）
+					1. Fake Objects（假物体）（46）
+					2. The Two Sides of a Fake Object（假物体的两侧）（49）
+					3. Fakes Distilled（假货蒸馏）（50）
+					4. Mock Objects（模拟对象）（50）
+			4. The Seam Model（接缝模型）（52）
+				1. A Huge Sheet of Text（一大页文字）（52）
+				2. Seams（接缝）（53）
+				3. Seam Types（接缝类型）（56）
+					1. Preprocessing Seams（预处理接缝）（56）
+					2. Link Seams（连接缝）（59）
+					3. Object Seams（对象接缝）（63）
+			5. Tools（工具）（68）
+				1. Automated Refactoring Tools（自动重构工具）（68）
+				2. Mock Objects（模拟对象）（70）
+				3. Unit-Testing Harnesses（单元测试工具）（71）
+					1. JUnit（72）
+					2. CppUnitLite（73）
+					3. NUnit（75）
+					4. Other xUnit Frameworks（其他  xUnit  框架）（75）
+				4. General Test Harnesses（通用测试工具）（76）
+					1. Framework for Integrated Tests (FIT)（集成测试框架（FIT））（76）
+					2. Fitnesse（健康）（76）
+		2. 3Changing Software（改变软件）（78）
+			1. I Don’t Have Much Time and I Have to Change It（我没有太多时间，我必须改变它）（80）
+				1. Sprout Method（发芽法）（82）
+					1. Advantages and Disadvantages（优点和缺点）（85）
+				2. Sprout Class（萌芽类）
+					1. Advantages and Disadvantages（优点和缺点）（90）
+				3. Wrap Method（包裹法）（90）
+					1. Advantages and Disadvantages（优点和缺点）（93）
+				4. Wrap Class（包裹类）（94）
+				5. Summary（概括）（99）
+			2. It Takes Forever to Make a Change（改变需要永远）（100）
+				1. Understanding（理解）（100）
+				2. Lag Time（找时间）（101）
+				3. Breaking Dependencies（打破依赖）（102）
+					1. Build Dependencies（构建依赖关系）（103）
+				4. Summary（概括）（108）
+			3. How Do I Add a Feature?（如何添加功能？）（110）
+				1. Test-Driven Development (TDD)（测试驱动开发  (TDD)）（111）
+					1. Write a Failing Test Case（编写失败的测试用例）（111）
+					2. Get It to Compile（让它编译）（111）
+					3. Make It Pass（让它通过）（112）
+					4. Remove Duplication（删除重复项）（112）
+					5. Write a Failing Test Case（编写失败的测试用例）（112）
+					6. Get It to Compile（让它编译）（113）
+					7. Make It Pass（让它通过）（113）
+					8. Remove Duplication（删除重复项）（113）
+					9. Write a Failing Test Case（编写失败的测试用例）（114）
+					10. Get It to Compile（让它编译）（114）
+					11. Make It Pass（让它通过）（115）
+					12. Remove Duplication（删除重复项）（116）
+				2. Programming by Difference（差异编程）（117）
+				3. Summary（概括）（127）
+			4. I Can’t Get This Class into a Test Harness（我无法将此类放入测试工具中）（128）
+				1. The Case of the Irritating Parameter（令人恼火的参数的情况）（129）
+				2. The Case of the Hidden Dependency（隐藏依赖的案例）（136）
+				3. The Case of the Construction Blob（建筑斑点的案例）（139）
+				4. The Case of the Irritating Global Dependency（令人恼火的全球依赖性案例）（141）
+				5. The Case of the Horrible Include Dependencies（可怕的依赖关系案例）（150）
+				6. The Case of the Onion Parameter（洋葱参数的案例）（153）
+				7. The Case of the Aliased Parameter（别名参数的情况）（156）
+			5. I Can’t Run This Method in a Test Harness（我无法在测试工具中运行此方法）（160）
+				1. The Case of the Hidden Method（隐藏方法的案例）（161）
+				2. The Case of the “Helpful” Language Feature（“有用”语言功能的案例）（164）
+				3. The Case of the Undetectable Side Effect（无法检测到的副作用的案例）（167）
+			6. I Need to Make a Change. What Methods Should I Test?（我需要做出改变。 我应该测试什么方法？）（174）
+				1. Reasoning About Effects（关于效果的推理）（174）
+				2. Reasoning Forward（向前推理）（180）
+				3. Effect Propagation（效果传播）（186）
+				4. Tools for Effect Reasoning（效果推理工具）（188）
+				5. Learning from Effect Analysis（从效果分析中学习）（190）
+				6. Simplifying Effect Sketches（简化效果草图）（191）
+			7. I Need to Make Many Changes in One Area. Do I Have to Break Dependencies for All the Classes Involved?（我需要在一个领域做出许多改变。 我是否必须打破所有涉及的类的依赖关系？）（196）
+				1. Interception Points（拦截点）（197）
+					1. The Simple Case（简单的案例）（197）
+					2. Higher-Level Interception Points（更高级别的拦截点）（201）
+				2. Judging Design with Pinch Points（用夹点来判断设计）（205）
+				3. Pinch Point Traps（夹点陷阱）（207）
+			8. I Need to Make a Change, but I Don’t Know What Tests to Write（我需要做出改变，但我不知道要编写什么测试）（208）
+				1. Characterization Tests（特性测试）（209）
+				2. Characterizing Classes（表征类）（212）
+				3. Targeted Testing（有针对性的测试）（213）
+				4. A Heuristic for Writing Characterization Tests（编写表征测试的启发式方法）（218）
+			9. Dependencies on Libraries Are Killing Me（对库的依赖正在杀死我）（220）
+			10. My Application Is All API Calls（我的应用程序都是 API 调用）（222）
+			11. I Don’t Understand the Code Well Enough to Change It（我对代码的理解不够深入，无法更改它）（232）
+				1. Notes/Sketching（笔记/素描）（233）
+				2. Listing Markup（列表标记）（234）
+					1. Separating Responsibilities（职责分离）（234）
+					2. Understanding Method Structure（了解方法结构）（234）
+					3. Extract Methods（提取方法）（235）
+					4. Understand the Effects of a Change（了解变革的影响）（235）
+				3. Scratch Refactoring（从头开始重构）（235）
+				4. Delete Unused Code（删除未使用的代码）（236）
+			12. My Application Has No Structure（我的应用程序没有结构）（238）
+				1. Telling the Story of the System（讲述系统的故事）（239）
+				2. Naked CRC（裸CRC）（243）
+				3. Conversation Scrutiny（对话审查）（247）
+			13. My Test Code Is in the Way（我的测试代码妨碍了）（250）
+				1. Class Naming Conventions（类命名约定）（250）
+				2. Test Location（测试地点）（251）
+			14. My Project Is Not Object Oriented. How Do I Make Safe Changes?（我的项目不是面向对象的。 如何进行安全的更改？）（254）
+				1. An Easy Case（一个简单的案例）（255）
+				2. A Hard Case（硬盒）（255）
+				3. Adding New Behavior（添加新行为）（259）
+				4. Taking Advantage of Object Orientation（利用面向对象）（262）
+				5. It’s All Object Oriented（一切都是面向对象的）（265）
+			15. This Class Is Too Big and I Don’t Want It to Get Any Bigger（这个类太大了，我不想让它变得更大）（268）
+				1. Seeing Responsibilities（看到责任）（272）
+				2. Other Techniques（其他技术）（288）
+				3. Moving Forward（向前进）（288）
+					1. Strategy（战略）（288）
+					2. Tactic（策略）（289）
+				4. After Extract Class（提取类之后）（291）
+			16. I’m Changing the Same Code All Over the Place（我正在到处更改相同的代码）（292）
+				1. First Steps（第一步）（295）
+			17. I Need to Change a Monster Method and I Can’t Write Tests for It（我需要更改一个怪物方法，但无法为其编写测试）（312）
+				1. Varieties of Monsters（各种怪物）（313）
+					1. Bulleted Methods（项目符号方法）（313）
+					2. Snarled Methods（咆哮的方法）（315）
+				2. Tackling Monsters with Automated Refactoring Support（通过自动重构支持应对怪物）（317）
+				3. The Manual Refactoring Challenge（手动重构的挑战）（320）
+					1. Introduce Sensing Variable（引入传感变量）（321）
+					2. Extract What You Know（提取你所知道的）（324）
+					3. Gleaning Dependencies（收集依赖关系）（326）
+					4. Break Out a Method Object（分解方法对象）（327）
+				4. Strategy（战略）（327）
+					1. Skeletonize Methods（骨架化方法）（327）
+					2. Find Sequences（查找序列）（328）
+					3. Extract to the Current Class First（首先提取到当前类）（329）
+					4. Extract Small Pieces（提取小块）（329）
+					5. Be Prepared to Redo Extractions（准备好重新提取）（330）
+			18. How Do I Know That I’m Not Breaking Anything?（我怎么知道我没有破坏任何东西？）（332）
+				1. Hyperaware Editing（超意识编辑）（333）
+				2. Single-Goal Editing（单目标编辑）（334）
+				3. Preserve Signatures（保留签名）（335）
+				4. Lean on the Compiler（依靠编译器）（338）
+					1. Pair Programming（结对编程）（339）
+			19. We Feel Overwhelmed.It Isn’t Going to Get Any Better（我们感到不知所措，情况不会好转）（342）
+		3. Dependency-Breaking Techniques（打破依赖的技术）（346）
+			1. Dependency-Breaking Techniques（打破依赖的技术）（348）
+				1. Adapt Parameter（适配参数）（349）
+				2. Break Out Method Object（突破方法对象）（353）
+				3. Definition Completion（定义完成）（360）
+				4. Encapsulate Global References（封装全局引用）（362）
+				5. Expose Static Method（暴露静态方法）（368）
+				6. Extract and Override Call（提取并覆盖调用）（371）
+				7. Extract and Override Factory Method（提取并覆盖工厂方法）（373）
+				8. Extract and Override Getter（提取并覆盖  Getter）（375）
+				9. Extract Implementer（提取实施者）（379）
+					1. A More Complex Example（一个更复杂的例子）（382）
+				10. Extract Interface（提取接口）（385）
+				11. Introduce Instance Delegator（引入实例委托者）（392）
+				12. Introduce Static Setter（引入静电设置器）（395）
+				13. Link Substitution（链接替换）（400）
+				14. Parameterize Constructor（参数化构造函数）（402）
+				15. Parameterize Method（参数化方法）（406）
+				16. Primitivize Parameter（参数原始化）（408）
+				17. Pull Up Feature（上拉功能）（411）
+				18. Push Down Dependency（下推依赖）（415）
+				19. Replace Function with Function Pointer（用函数指针替换函数）（419）
+				20. Replace Global Reference with Getter（用  Getter  替换全局引用）（422）
+				21. Subclass and Override Method（子类和重写方法）（424）
+				22. Supersede Instance Variable（取代实例变量）（427）
+				23. Template Redefinition（模板重新定义）（431）
+				24. Text Redefinition（文本重新定义）（435）
+	7. Clean Code（编码整洁之道）
 		1. Clean Code（干净的代码）（35）
 			1. There Will Be Code（会有代码）（37）
 			2. Bad Code（错误代码）（39）
@@ -2228,7 +8133,1074 @@
 			10. Tutorial: Full Code Examples（教程：完整代码示例）（601）
 				1. Client/Server Nonthreaded（客户端/服务器非线程）（601）
 				2. Client/Server Using Threads（使用线程的客户端/服务器）（606）
-4. Game Programming（游戏编程）
+	8. Agile Software Development（敏捷软件开发）
+		1. Agile Development（敏捷开发）（8）
+			1. Agile Practices（敏捷实践）（10）
+				1. The Agile Alliance（敏捷联盟）（11）
+				2. Principles（原则）（13）
+			2. Overview of Extreme Programming（极限编程概述）（18）
+				1. The Practices of Extreme Programming（极限编程的实践）（18）
+			3. Planning（规划）（26）
+				1. Initial Exploration（初步探索）（27）
+				2. Release Planning（发布计划）（27）
+				3. Iteration Planning（迭代计划）（28）
+				4. Task Planning（任务规划）（28）
+				5. Iterating（迭代）（29）
+			4. Testing（测试）（30）
+				1. Test Driven Development（测试驱动开发）（30）
+				2. Acceptance Tests（验收测试）（34）
+			5. Refactoring（重构）（38）
+				1. Generating Primes: A Simple Example of Refactoring（生成素数：重构的简单示例）（39）
+			6. A Programming Episode（节目编排）（50）
+				1. The Bowling Game（保龄球游戏）（51）
+		2. Agile Design（敏捷设计）（92）
+			1. What Is Agile Design?（什么是敏捷设计？）（94）
+				1. What Goes Wrong with Software?（软件出了什么问题？）（94）
+				2. Design Smells—The Odors of Rotting Software（设计气味——腐烂软件的气味）（95）
+				3. The “Copy” Program（“复制”计划）（97）
+				4. Keeping the Design As Good As It Can Be（保持设计尽可能好）（101）
+			2. SRP: The Single-Responsibility Principle（SRP：单一职责原则）（102）
+			3. OCP: The Open–Closed Principle（OCP：开闭原则）（106）
+				1. Description（描述）（107）
+				2. Abstraction Is the Key（抽象是关键）（107）
+				3. The Shape Application（形状应用）（108）
+			4. LSP: The Liskov Substitution Principle（LSP：里氏替换原则）（118）
+				1. A Simple Example of a Violation of the LSP（违反 LSP 的简单示例）（119）
+				2. Square and Rectangle, a More Subtle Violation（正方形和长方形，一种更微妙的违反）（120）
+				3. A Real Example（一个真实的例子）（124）
+				4. Factoring instead of Deriving（因式分解而不是推导）（128）
+				5. Heuristics and Conventions（启发式和约定）（131）
+			5. DIP: The Dependency-Inversion Principle（DIP：依赖倒置原则）（134）
+				1. Layering（分层）（135）
+				2. A Simple Example（一个简单的示例）（137）
+				3. The Furnace Example（熔炉示例）（139）
+			6. ISP: The Interface-Segregation Principle（ISP：接口隔离原则）（142）
+				1. Interface Pollution（界面污染）（142）
+				2. Separate Clients Mean Separate Interfaces（单独的客户端意味着单独的接口）（144）
+				3. ISP: The Interface-Segregation Principle（ISP：接口隔离原则）（144）
+				4. Class Interfaces v. Object Interfaces（类接口与对象接口）（145）
+				5. The ATM User Interface Example（ATM 用户界面示例）（146）
+		3. The Payroll Case Study（薪资案例研究）（154）
+			1. COMMAND and ACTIVE OBJECT（命令和活动对象）（158）
+				1. Simple Commands（简单命令）（159）
+				2. Transactions（交易）（160）
+				3. ACTIVE OBJECT（主动对象）（162）
+			2. TEMPLATE METHOD & STRATEGY: Inheritance vs. Delegation（模板方法和策略：继承与委托）（168）
+				1. TEMPLATE METHOD（模板法）（169）
+				2. STRATEGY（战略）（175）
+			3. FACADE and MEDIATOR（外观和中介）（180）
+				1. FACADE（正面）（180）
+				2. MEDIATOR（调解员）（181）
+			4. SINGLETON and MONOSTATE（单例和单态）（184）
+				1. SINGLETON（单例）（185）
+				2. MONOSTATE（单态）（187）
+			5. NULL OBJECT（空对象）（196）
+			6. The Payroll Case Study: Iteration One Begins（薪资案例研究：第一轮迭代开始）（200）
+				1. Introduction（介绍）（200）
+				2. Analysis by Use Cases（按用例分析）（201）
+				3. Reflection: What Have We Learned?（反思：我们学到了什么？）（208）
+				4. Finding the Underlying Abstractions（寻找底层抽象）（208）
+			7. The Payroll Case Study: Implementation（薪资案例研究：实施）（212）
+				1. Adding Employees（添加员工）（213）
+				2. Deleting Employees（删除员工）（219）
+				3. Time Cards, Sales Receipts, and Service Charges（考勤卡、销售收据和服务费）（221）
+				4. Changing Employees（更换员工）（227）
+				5. Paying Employees（支付员工工资）（240）
+				6. Main Program（主程序）（255）
+				7. The Database（数据库）（255）
+				8. Summary of Payroll Design（薪资设计概要）（256）
+		4. Packaging the Payroll System（打包薪资系统）（258）
+			1. Principles of Package Design（包装设计原则）（260）
+				1. Designing with Packages?（使用包进行设计？）（260）
+				2. Granularity: The Principles of Package Cohesion（粒度：包内聚性的原则）（261）
+				3. Stability: The Principles of Package Coupling（稳定性：封装耦合的原理）（263）
+				4. Top-Down Design（自上而下的设计）（267）
+				5. The Stable-Dependencies Principle (SDP)（稳定依赖原则  (SDP)）（268）
+				6. The Stable-Abstractions Principle (SAP)（稳定抽象原则  (SAP)）（271）
+			2. FACTORY（工厂）（276）
+				1. A Dependency Cycle（依赖循环）（278）
+				2. Substitutable Factories（可替代工厂）（279）
+				3. Using Factories for Test Fixtures（使用工厂作为测试夹具）（280）
+				4. How Important Is It to Use Factories?（使用工厂有多重要？）（281）
+			3. The Payroll Case Study (Part 2)（薪资案例研究（第  2  部分））（282）
+				1. Package Structure and Notation（包结构和符号）（283）
+				2. Applying the Common-Closure Principle (CCP)（应用公共闭合原则  (CCP)）（284）
+				3. Applying the Reuse–Release Equivalency Principle (REP)（应用重用‑发布等效原则  (REP)）（285）
+				4. Coupling and Encapsulation（耦合与封装）（286）
+				5. Metrics（指标）（288）
+				6. Applying the Metrics to the Payroll Application（将指标应用于薪资应用程序）（289）
+				7. The Final Package Structure（最终的封装结构）（294）
+		5. The Weather Station Case Study（气象站案例研究）（298）
+			1. COMPOSITE（合成的）（300）
+				1. Example: Composite Commands（示例：复合命令）（301）
+				2. Multiplicity or Not Multiplicity（多重性或非多重性）（302）
+			2. OBSERVER—Backing into a Pattern（观察者——回归模式）（304）
+				1. The Digital Clock（数字时钟）（304）
+				2. Conclusion（结论）（321）
+				3. The OBSERVER Pattern（观察者模式）（322）
+			3. ABSTRACT SERVER, ADAPTER, and BRIDGE（抽象服务器、适配器和网桥）（324）
+				1. ABSTRACT SERVER（抽象服务器）（325）
+				2. Adapter（适配器）（326）
+				3. BRIDGE（桥）（329）
+			4. PROXY and STAIRWAY TO HEAVEN: Managing Third Party APIs（代理和天堂的阶梯：管理第三方 API）（334）
+				1. PROXY（代理人）（334）
+				2. STAIRWAY TO HEAVEN（天堂的阶梯）（354）
+				3. Other Patterns That Can Be Used with Databases（可与数据库一起使用的其他模式）（360）
+			5. Case Study: Weather Station（案例研究：气象站）（362）
+				1. The Cloud Company（云公司）（362）
+				2. Nimbus-LC Software Design（Nimbus-LC 软件设计）（364）
+				3. Nimbus-LC Requirements Overview（Nimbus-LC 要求概述）（386）
+				4. Nimbus-LC Use Cases（Nimbus‑LC  用例）（387）
+				5. Nimbus-LC Release Plan（Nimbus‑LC  发布计划）（388）
+		6. The ETS Case Study（ETS  案例研究）（392）
+			1. VISITOR（游客）（394）
+				1. The VISITOR Family of Design Patterns（VISITOR 设计模式系列）（395）
+				2. VISITOR（访客）（395）
+				3. ACYCLIC VISITOR（非循环访问者）（398）
+				4. DECORATOR（装饰器）（410）
+				5. EXTENSION OBJECT（扩展对象）（415）
+			2. STATE（状态）（426）
+				1. Overview of Finite State Automata（有限状态自动机概述）（426）
+				2. Implementation Techniques（实施技术）（428）
+				3. The STATE Pattern（状态模式）（433）
+				4. Where Should State Machines Be Used?（状态机应该用在哪里？）（439）
+				5. High-Level Application Policies for GUIs（GUI 的高级应用程序策略）（439）
+				6. Conclusion（结论）（441）
+				7. Listings（列表）（441）
+			3. The ETS Framework（ETS框架）（450）
+				1. Introduction（介绍）（450）
+				2. Framework!（框架！）（453）
+				3. Framework Design（框架设计）（455）
+				4. A Case for TEMPLATE METHOD（模板方法案例）（460）
+	9. Design Patterns（设计模式）
+		1. Introduction（简介）（19）
+			1. What Is a Design Pattern?（什么是设计模式？）（20）
+			2. Design Patterns in Smalltalk MVC（Smalltalk  MVC  中的设计模式）（22）
+			3. Describing Design Patterns（描述设计模式）（24）
+				1. Pattern Name and Classification（模式名称及分类）（24）
+				2. Intent（意图）（24）
+				3. Also Known As（也称为）（24）
+				4. Motivation（动机）（25）
+				5. Applicability（适用性）（25）
+				6. Structure（结构）（25）
+				7. Participants（参加者）（25）
+				8. Collaborations（合作）（25）
+				9. Consequences（结果）（25）
+				10. Implementation（执行）（25）
+				11. Sample Code（示例代码）（26）
+				12. Known Uses（已知用途）（26）
+				13. Related Patterns（相关模式）（26）
+			4. The Catalog of Design Patterns（设计模式目录）（26）
+			5. Organizing the Catalog（组织目录）（28）
+			6. How Design Patterns Solve Design Problems（设计模式如何解决设计问题）（30）
+				1. Finding Appropriate Objects（寻找合适的对象）（30）
+				2. Determining Object Granularity（确定对象粒度）（31）
+				3. Specifying Object Interfaces（指定对象接口）（32）
+				4. Specifying Object Implementations（指定对象实现）（33）
+				5. Class versus Interface Inheritance（类继承与接口继承）（35）
+				6. Programming to an Interface, not an Implementation（针对接口而非实现进行编程）（36）
+				7. Putting Reuse Mechanisms to Work（让重用机制发挥作用）（37）
+				8. Inheritance versus Composition（继承与组合）（38）
+				9. Delegation（代表团）（39）
+				10. Inheritance versus Parameterized Types（继承与参数化类型）（41）
+				11. Relating Run-Time and Compile-Time Structures（关联运行时和编译时结构）（42）
+				12. Designing for Change（为变革而设计）（43）
+				13. Application Programs（应用程序）（45）
+				14. Toolkits（工具包）（46）
+				15. Frameworks（构架）（46）
+			7. How to Select a Design Pattern（如何选择设计模式）（48）
+			8. How to Use a Design Pattern（如何使用设计模式）（50）
+		2. A Case Study: Designing a Document Editor（案例研究：设计文档编辑器）（52）
+			1. Design Problems（设计问题）（53）
+			2. Document Structure（文档结构）（54）
+				1. Recursive Composition（递归组合）（55）
+				2. Glyphs（字形）（57）
+				3. Composite Pattern（复合图案）（58）
+			3. Formatting（格式化）（58）
+				1. Encapsulating the Formatting Algorithm（封装格式化算法）（59）
+				2. Compositor and Composition（合成器和合成）（60）
+				3. Strategy Pattern（策略）（61）
+			4. Embellishing the User Interface（美化用户界面）（62）
+				1. Transparent Enclosure（透明外壳）（62）
+				2. Monoglyph（独字形）（63）
+				3. Decorator Pattern（装饰模式）（65）
+			5. Supporting Multiple Look-and-Feel Standards（支持多种外观标准）（65）
+				1. Abstracting Object Creation（抽象对象创建）（66）
+				2. Factories and Product Classes（工厂和产品类别）（66）
+				3. Abstract Factory Pattern（抽象工厂模式）（69）
+			6. Supporting Multiple Window Systems（支持多窗口系统）（69）
+				1. Can We Use an Abstract Factory?（69）
+				2. Encapsulating Implementation Dependencies（封装实现依赖关系）（70）
+				3. Window and WindowImp（窗口和WindowImp）（72）
+				4. WindowImp Subclasses（WindowImp  子类）（73）
+				5. Configuring Windows with WindowImps（使用  WindowImps  配置  Windows）（75）
+				6. Bridge Pattern（桥梁图案）（76）
+			8. User Operations（用户操作）（76）
+				1. Encapsulating a Request（封装请求）（77）
+				2. Command Class and Subclasses（命令类和子类）（78）
+				3. Undoability（可撤销性）（79）
+				4. Command History（命令历史）（80）
+				5. Command Pattern（命令模式）（81）
+			9. Spelling Checking and Hyphenation（拼写检查和连字符）（82）
+				1. Accessing Scattered Information（访问分散的信息）（82）
+				2. Encapsulating Access and Traversal（封装访问和遍历）（82）
+				3. Iterator Class and Subclasses（迭代器类和子类）（84）
+				4. Iterator Pattern（迭代器模式）（87）
+				5. Traversal versus Traversal Actions（遍历与遍历动作）（87）
+				6. Encapsulating the Analysis（封装分析）（88）
+				7. Visitor Class and Subclasses（访客类别和子类别）（91）
+				8. Visitor Pattern（访客模式）（93）
+			10. Summary（总结）（93）
+		3. Creational Patterns（创作模式）（96）
+			1. Object Creational: Abstract Factory（对象创建：抽象工厂）（100）
+			2. Object Creational: Builder（对象创建：生成器）（109）
+			3. Class Creational: Factory Method（类创建：工厂方法）（118）
+			4. Object Creational: Prototype（对象创建：原型）（129）
+			5. Object Creational: Singleton（对象创建：单例）（138）
+			6. Discussion of Creational Patterns（创作模式探讨）（146）
+		4. Structural Patterns（结构模式）（148）
+			1. Class, Object Structural: Adapter（类、对象结构：适配器）（149）
+			2. Object Structural: Bridge（对象结构：桥接）（160）
+			3. Object Structural: Composite（对象结构：组合）（170）
+			4. Object Structural: Decorator（对象结构：装饰器）（182）
+			5. Object Structural: Facade（对象结构：外观）（192）
+			6. Object Structural: Flyweight（对象结构：享元）（201）
+			7. Object Structural: Proxy（对象结构：代理）（212）
+			8. Discussion of Structural Patterns（结构模式的讨论）（223）
+				1. Adapter versus Bridge（适配器与桥接器）（223）
+				2. Composite versus Decorator versus Proxy（组合、装饰器、代理）（224）
+		5. Behavioral Patterns（行为模式）（226）
+			1. Object Behavioral: Chain of Responsibility（对象行为：责任链）（227）
+			2. Object Behavioral: Command（对象行为：命令）（237）
+			3. Class Behavioral: Interpreter（类行为：口译员）（247）
+			4. Object Behavioral: Iterator（对象行为：迭代器）（260）
+			5. Object Behavioral: Mediator（对象行为：中介者）（275）
+			6. Object Behavioral: Memento（对象行为：备忘录）（285）
+			7. Object Behavioral: Observer（对象行为：观察者）（294）
+			8. Object Behavioral: State（对象行为：状态）（305）
+			9. Object Behavioral: Strategy（对象行为：策略）（314）
+			10. Class Behavioral: Template Method（类行为：模板方法）（323）
+			11. Object Behavioral: Visitor（对象行为：访问者）（329）
+			12. Discussion of Behavioral Patterns（行为模式的讨论）（343）
+				1. Encapsulating Variation（封装变化）（343）
+				2. Objects as Arguments（对象作为参数）（344）
+				3. Should Communication be Encapsulated or Distributed?（通信应该封装还是分布式？）（344）
+				4. Decoupling Senders and Receivers（发送者和接收者的解耦）（345）
+				5. Summary（概括）（347）
+		6. Conclusion（结论）（149）
+			1. What to Expect from Design Patterns（对设计模式的期望）（349）
+				1. A Common Design Vocabulary（通用设计词汇）（349）
+				2. A Documentation and Learning Aid（文档和学习辅助工具）（350）
+				3. An Adjunct to Existing Methods（现有方法的补充）（350）
+				4. A Target for Refactoring（重构的目标）（351）
+			2. A Brief History（简史）（353）
+			3. The Pattern Community（模式社区）（354）
+				1. Alexander’s Pattern Languages（亚历山大的模式语言）（354）
+				2. Patterns in Software（软件中的模式）（355）
+			4. An Invitation（邀请）（356）
+			5. A Parting Thought（临别思考）（356）
+4. Mathematics for Game Programming（游戏程序员的数学课）
+	1. Mathematics for 3D Game Programming and Computer Graphics（3D游戏与计算机图形学中的数学方法）
+		1. The Rendering Pipeline（渲染管线）（20）
+			1. Graphics Processors（图形处理器）（20）
+			2. Vertex Transformation（顶点变换）（23）
+			3. Rasterization and Fragment Operations（光栅化和片段操作）（26）
+		2. Vectors（向量）（30）
+			1. Vector Properties（向量属性）（30）
+			2. The Dot Product（点积）（34）
+			3. The Cross Product（叉积）（38）
+			4. Vector Spaces（向量空间）（45）
+			5. Chapter 2 Summary（第二章小结）（48）
+		3. Matrices（矩阵）（50）
+			1. Matrix Properties（矩阵性质）（50）
+			2. Linear Systems（线性系统）（53）
+			3. Matrix Inverses（矩阵逆）（59）
+			4. Determinants（决定因素）（66）
+			5. Eigenvalues and Eigenvectors（特征值和特征向量）（73）
+			6. Diagonalization（对角化）（77）
+			7. Chapter 3 Summary（第三章小结）（81）
+		4. Transforms（变换）（86）
+			1. Linear Transformations（线性变换）（86）
+				1. Orthogonal Matrices（正交矩阵）（87）
+				2. Handedness（惯用手）（89）
+			2. Scaling Transforms（缩放变换）（89）
+			3. Rotation Transforms（旋转变换）（90）
+				1. Rotation About an Arbitrary Axis（绕任意轴旋转）（93）
+			4. Homogeneous Coordinates（齐次坐标）（94）
+				1. Four-Dimensional Transforms（四维变换）（95）
+				2. Points and Directions（点和方向）（97）
+				3. Geometrical Interpretation of the w Coordinate（w坐标）（97）
+			5. Transforming Normal Vectors（变换法向量）（97）
+			6. Quaternions（四元数）（99）
+				1. Quaternion Mathematics（四元数数学）（99）
+				2. Rotations with Quaternions（四元数旋转）（101）
+				3. Spherical Linear Interpolation（球面线性插值）（105）
+			7. Chapter 4 Summary（第四章总结）（108）
+		5. Geometry for 3D Engines（3D  引擎的⼏何结构）（112）
+			1. Lines in 3D Space（3D空间中的线）（112）
+				1. Distance Between a Point and a Line（点与线之间的距离）（112）
+				2. Distance Between Two Lines（两条线之间的距离）（113）
+			2. Planes in 3D Space（3D空间中的平面）（116）
+				1. Intersection of a Line and a Plane（直线与平面的交点）（117）
+				2. Intersection of Three Planes（三个平面的交点）（118）
+				3. Transforming Planes（变换平面）（120）
+			3. The View Frustum（视锥体）（121）
+				1. Field of View（视野）（122）
+				2. Frustum Planes（截锥体平面）（125）
+			4. Perspective-Correct Interpolation（透视校正插值）（126）
+				1. Depth Interpolation（深度插值）（127）
+				2. Vertex Attribute Interpolation（顶点属性插值）（129）
+			5. Projections（预测）（130）
+				1. Perspective Projections（透视投影）（131）
+				2. Orthographic Projections（正交投影）（135）
+				3. Extracting Frustum Planes（提取截锥体平面）（137）
+			6. Reflections and Oblique Clipping（反射和倾斜裁剪）（139）
+			7. Chapter 5 Summary（第五章总结）（145）
+		6. Ray Tracing（光线追踪）（150）
+			1. Root Finding（求根）（150）
+				1. Quadratic Polynomials（二次多项式）（151）
+				2. Cubic Polynomials（三次多项式）（151）
+				3. Quartic Polynomials（四次多项式）（154）
+				4. Newton’s Method（牛顿法）（155）
+				5. Refinement of Reciprocals and Square Roots（倒数和平方根的细化）（158）
+			2. Surface Intersections（曲面相交）（159）
+				1. Intersection of a Ray and a Triangle（射线与三角形的交点）（160）
+				2. Intersection of a Ray and a Box（射线与盒子的交集）（162）
+				3. Intersection of a Ray and a Sphere（射线与球体的交集）（163）
+				4. Intersection of a Ray and a Cylinder（射线与圆柱的交点）（164）
+				5. Intersection of a Ray and a Torus（射线和环面的交点）（166）
+			3. Normal Vector Calculation（法向量计算）（167）
+			4. Reflection and Refraction Vectors（反射和折射矢量）（168）
+				1. Reflection Vector Calculation（反射矢量计算）（169）
+				2. Refraction Vector Calculation（折射矢量计算）（170）
+			5. Chapter 6 Summary（第六章总结）（172）
+		7. Lighting and Shading（照明和阴影）（176）
+			1. RGB Color（RGB颜色）（176）
+			2. Light Sources（光源）（177）
+				1. Ambient Light（环境光）（177）
+				2. Directional Light Sources（定向光源）（178）
+				3. Point Light Sources（点光源）（178）
+				4. Spot Light Sources（聚光光源）（179）
+			3. Diffuse Reflection（漫反射）（180）
+			4. Specular Reflection（镜面反射）（181）
+			5. Texture Mapping（纹理映射）（183）
+				1. Standard Texture Maps（标准纹理贴图）（185）
+				2. Projective Texture Maps（投影纹理贴图）（186）
+				3. Cube Texture Maps（立方体纹理贴图）（188）
+				4. Filtering and Mipmaps（过滤和  Mipmap）（190）
+			6. Emission（排放）（193）
+			7. Shading Models（着色模型）（194）
+				1. Calculating Normal Vectors（计算法向量）（194）
+				2. Gouraud Shading（高洛着色）（195）
+				3. Blinn-Phong Shading（Blinn‑Phong  着色）（196）
+			8. Bump Mapping（凹凸贴图）（197）
+				1. Bump Map Construction（凹凸贴图构建）（197）
+				2. Tangent Space（切线空间）（199）
+				3. Calculating Tangent Vectors（计算切向量）（199）
+				4. Implementation（实施）（204）
+			9. A Physical Reflection Model（物理反射模型）（206）
+				1. Bidirectional Reflectance Distribution Functions（双向反射率分布函数）（206）
+				2. Cook-Torrance Illumination（库克‑托伦斯照明）（210）
+				3. The Fresnel Factor（菲涅耳因子）（211）
+				4. The Microfacet Distribution Function（微面分布函数）（214）
+				5. The Geometrical Attenuation Factor（几何衰减因子）（217）
+				6. Implementation（实施）（219）
+			10. Chapter 7 Summary（第7章总结）（224）
+		8. Visibility Determination（能见度测定）（230）
+			1. Bounding Volume Construction（包围体构造）（230）
+				1. Principal Component Analysis（主成分分析）（231）
+				2. Bounding Box Construction（边界框构造）（234）
+				3. Bounding Sphere Construction（边界球构造）（236）
+				4. Bounding Ellipsoid Construction（边界椭球构造）（237）
+				5. Bounding Cylinder Construction（边界圆柱体构造）（239）
+			2. Bounding Volume Tests（包围体测试）（240）
+				1. Bounding Sphere Test（边界球测试）（240）
+				2. Bounding Ellipsoid Test（边界椭球测试）（241）
+				3. Bounding Cylinder Test（包围圆柱测试）（245）
+				4. Bounding Box Test（边界框测试）（247）
+			3. Spatial Partitioning（空间分区）（249）
+				1. Octrees（八叉树）（249）
+				2. Binary Space Partitioning Trees（二元空间划分树）（251）
+			4. Portal Systems（门户系统）（254）
+				1. Portal Clipping（入口裁剪）（255）
+				2. Reduced View Frustums（缩小视锥体）（257）
+			5. Chapter 8 Summary（第8章总结）（259）
+		9. Polygonal Techniques（多边形技术）（264）
+			1. Depth Value Offset（深度值偏移）（264）
+				1. Projection Matrix Modification（投影矩阵修改）（265）
+				2. Offset Value Selection（偏置值选择）（266）
+				3. Implementation（实施）（267）
+			2. Decal Application（贴花应用）（268）
+				1. Decal Mesh Construction（贴花网格结构）（269）
+				2. Polygon Clipping（多边形裁剪）（271）
+			3. Billboarding（广告牌）（273）
+				1. Unconstrained Quads（无约束四边形）（273）
+				2. Constrained Quads（约束四边形）（276）
+				3. Polyboards（聚板）（277）
+			4. Polygon Reduction（多边形缩减）（279）
+			5. T-Junction Elimination（T形连接消除）（283）
+			6. Triangulation（三角测量）（286）
+			7. Chapter 9 Summary（第9章总结）（293）
+		10. Shadows（阴影）（298）
+			1. Shadow Casting Set（阴影投射设置）（298）
+			2. Shadow Mapping（阴影贴图）（300）
+				1. Rendering the Shadow Map（渲染阴影贴图）（300）
+				2. Rendering the Main Scene（渲染主场景）（303）
+				3. Self-Shadowing（自阴影）（303）
+			3. Stencil Shadows（模板阴影）（305）
+				1. Algorithm Overview（算法概述）（305）
+				2. Infinite View Frustums（无限视锥体）（310）
+				3. Silhouette Determination（轮廓确定）（314）
+				4. Shadow Volume Construction（阴影体构建）（318）
+				5. Determining Cap Necessity（确定上限必要性）（322）
+				6. Rendering Shadow Volumes（渲染阴影体积）（326）
+				7. Scissor Optimization（剪刀优化）（328）
+			4. Chapter 10 Summary（第10章总结）（333）
+		11. Curves and Surfaces（曲线和曲面）（336）
+			1. Cubic Curves（三次曲线）（336）
+			2. Hermite Curves（埃尔米特曲线）（339）
+			3. Bézier Curves（贝塞尔曲线）（341）
+				1. Cubic Bézier Curves（三次贝塞尔曲线）（341）
+				2. Bézier Curve Truncation（贝塞尔曲线截断）（345）
+				3. The de Casteljau Algorithm（de  Casteljau算法）（346）
+			4. Catmull-Rom Splines（Catmull‑Rom  样条线）（348）
+			5. Cubic Splines（三次样条）（350）
+			6. B-Splines（B样条）（353）
+				1. Uniform B-Splines（均匀  B  样条）（354）
+				2. B-Spline Globalization（B样条全球化）（359）
+				3. Nonuniform B-Splines（非均匀  B  样条）（361）
+				4. NURBS（364）
+			7. Bicubic Surfaces（双三次曲面）（367）
+			8. Curvature and Torsion（曲率和扭转）（369）
+			9. Chapter 11 Summary（第11章总结）（374）
+		12. Collision Detection（碰撞检测）（380）
+			1. Plane Collisions（平面碰撞）（380）
+				1. Collision of a Sphere and a Plane（球体与平面的碰撞）（381）
+				2. Collision of a Box and a Plane（盒子与平面的碰撞）（383）
+				3. Spatial Partitioning（空间分区）（385）
+			2. General Sphere Collisions（一般球体碰撞）（385）
+			3. Sliding（滑动）（390）
+			4. Collision of Two Spheres（两个球体的碰撞）（391）
+			5. Chapter 12 Summary（第十二章总结）（395）
+		13. Linear Physics（线性物理）（398）
+			1. Position Functions（位置功能）（398）
+			2. Second-Order Differential Equations（二阶微分方程）（400）
+				1. Homogeneous Equations（齐次方程）（400）
+				2. Nonhomogeneous Equations（非齐次方程）（404）
+				3. Initial Conditions（初始条件）（407）
+			3. Projectile Motion（抛射运动）（409）
+			4. Resisted Motion（阻力运动）（413）
+			5. Friction（摩擦力）（416）
+			6. Chapter 13 Summary（第13章总结）（419）
+		14. Rotational Physics（旋转物理学）（424）
+			1. Rotating Environments（旋转环境）（424）
+				1. Angular Velocity（角速度）（424）
+				2. The Centrifugal Force（离心力）（426）
+				3. The Coriolis Force（科里奥利力）（427）
+			2. Rigid Body Motion（刚体运动）（429）
+				1. Center of Mass（质心）（429）
+				2. Angular Momentum and Torque（角动量和扭矩）（432）
+				3. The Inertia Tensor（惯性张量）（433）
+				4. Principal Axes of Inertia（惯性主轴）（441）
+				5. Transforming the Inertia Tensor（变换惯性张量）（445）
+			3. Oscillatory Motion（振荡运动）（449）
+				1. Spring Motion（弹簧运动）（449）
+				2. Pendulum Motion（摆运动）（453）
+			4. Chapter 14 Summary（第14章总结）（455）
+		15. Fluid and Cloth Simulation（流体和布料模拟）（462）
+			1. Fluid Simulation（流体模拟）（462）
+				1. The Wave Equation（波动方程）（462）
+				2. Approximating Derivatives（近似导数）（466）
+				3. Evaluating Surface Displacemen（评估表面位移）（469）
+				4. Implementation（实施）（472）
+			2. Cloth Simulation（布料模拟）（476）
+				1. The Spring System（弹簧系统）（476）
+				2. External Forces（外力）（478）
+				3. Implementation（实施）（479）
+			3. Chapter 15 Summary（第15章总结）（480）
+		16. Numerical Methods（数值方法）（482）
+			1. Trigonometric Functions（三角函数）（482）
+			2. Linear Systems（线性系统）（484）
+				1. Triangular Systems（三角系统）（484）
+				2. Gaussian Elimination（高斯消去法）（486）
+				3. LU Decomposition（LU分解）（489）
+				4. Error Reduction（误差减少）（496）
+				5. Tridiagonal Systems（三对角系）（498）
+			3. Eigenvalues and Eigenvectors（特征值和特征向量）（502）
+			4. Ordinary Differential Equations（常微分方程）（509）
+				1. Euler’s Method（欧拉方法）（509）
+				2. Taylor Series Method（泰勒级数法）（511）
+				3. Runge-Kutta Method（龙格‑库塔法）（512）
+				4. Higher-Order Differential Equations（高阶微分方程）（514）
+			5. Chapter 16 Summary（第十六章总结）（515）
+	2. Geometric Tools for Computer Graphics（计算机图形学几何工具算法详解）
+		1. Introduction（介绍）（48）
+			1. How to Use This Book（如何使用本书）（48）
+			2. Issues of Numerical Computation（数值计算问题）（49）
+				1. Low-Level Issues（低级问题）（49）
+				2. High-Level Issues（高层问题）（51）
+			3. A Summary of the Chapters（章节总结）（53）
+		2. Matrices and Linear Systems（矩阵和线性系统）（56）
+			1. Introduction（简介）（56）
+				1. Motivation（动机）（56）
+				2. Organization（组织机构）（60）
+				3. Notational Conventions（符号约定）（61）
+			2. Tuples（元组）（61）
+				1. Definition（定义）（62）
+				2. Arithmetic Operations（算术运算）（63）
+			3. Matrices（矩阵）（63）
+				1. Notation and Terminology（符号和术语）（64）
+				2. Transposition（换位）（64）
+				3. Arithmetic Operations（算术运算）（65）
+				4. Matrix Multiplication（矩阵乘法）（67）
+			4. Linear Systems（线性系统）（71）
+				1. Linear Equations（线性方程）（71）
+				2. Linear Systems in Two Unknowns（两个未知数的线性系统）（73）
+				3. General Linear Systems（一般线性系统）（76）
+				4. Row Reductions, Echelon Form, and Rank（行约简、梯队形式和等级）（77）
+			5. Square Matrices（方阵）（79）
+				1. Diagonal Matrices（对角矩阵）（79）
+				2. Triangular Matrices（角矩阵）（81）
+				3. The Determinant（行列式）（81）
+				4. Inverse（逆）（85）
+			6. Linear Spaces（线性空间）（88）
+				1. Fields（字段）（88）
+				2. Definition and Properties（定义和属性）（89）
+				3. Subspaces（子空间）（90）
+				4. Linear Combinations and Span（线性组合和跨度）（90）
+				5. Linear Independence, Dimension, and Basis（线性无关性、维数和基础）（91）
+			7. Linear Mappings（线性映射）（92）
+				1. Mappings in General（一般映射）（92）
+				2. Linear Mappings（线性映射）（94）
+				3. Matrix Representation of Linear Mappings（线性映射的矩阵表示）（96）
+				4. Cramer’s Rule（克莱默法则）（97）
+			8. Eigenvalues and Eigenvectors（特征值和特征向量）（99）
+			9. Euclidean Space（欧几里得空间）（101）
+				1. Inner Product Spaces（内积空间）（101）
+				2. Orthogonality and Orthonormal Sets（正交性和正交集）（102）
+			10. Least Squares（最小二乘法）（103）
+		3. Vector Algebra（向量代数）（110）
+			1. Vector Basics（向量基础知识）（110）
+				1. Vector Equivalence（向量等价）（110）
+				2. Vector Addition（向量加法）（111）
+				3. Vector Subtraction（向量减法）（112）
+				4. Vector Scaling（矢量缩放）（112）
+				5. Properties of Vector Addition and Scalar Multiplication（矢量加法和标量乘法的性质）（113）
+			2. Vector Space（向量空间）（116）
+				1. Span（跨度）（117）
+				2. Linear Independence（线性无关性）（118）
+				3. Basis, Subspaces, and Dimension（基础、子空间和维数）（118）
+				4. Orientation（方向）（120）
+				5. Change of Basis（基础变更）（122）
+				6. Linear Transformations（线性变换）（123）
+			3. Affine Spaces（仿射空间）（127）
+				1. Euclidean Geometry（欧几里得几何）（131）
+				2. Volume, the Determinant, and the Scalar Triple Product（体积、行列式和标量三重积）（141）
+				3. Frames（框架）（143）
+			4. Affine Transformations（仿射变换）（145）
+				1. Types of Affine Maps（仿射图的类型）（150）
+				2. Composition of Affine Maps（仿射图的构成）（150）
+			5. Barycentric Coordinates and Simplexes（重心坐标和单纯形）（151）
+				1. Barycentric Coordinates and Subspaces（重心坐标和子空间）（153）
+				2. Affine Independence（仿射独立性）（153）
+		4. Matrices, Vector Algebra, and Transformations（矩阵、向量代数和变换）（156）
+			1. Introduction（简介）（156）
+			2. Matrix Representation of Points and Vectors（点和向量的矩阵表示）（157）
+			3. Addition, Subtraction, and Multiplication（加法、减法和乘法）（160）
+				1. Vector Addition and Subtraction（向量加法和减法）（160）
+				2. Point and Vector Addition and Subtraction（点与向量加减法）（161）
+				3. Subtraction of Points（积分减法）（162）
+				4. Scalar Multiplication（标量乘法）（162）
+			4. Products of Vectors（向量的乘积）（162）
+				1. Dot Product（点积）（163）
+				2. Cross Product（叉积）（164）
+				3. Tensor Product（张量积）（167）
+				4. The “Perp” Operator and the “Perp” Dot Product（Perp”运算符和“Perp”点积）（168）
+			5. Matrix Representation of Affine Transformations（仿射变换的矩阵表示）（173）
+			6. Change-of-Basis/Frame/Coordinate System（改变基准/框架/坐标系）（175）
+			7. Vector Geometry of Affine Transformations（仿射变换的向量几何）（179）
+				1. Notation（符号）（180）
+				2. Translation（平移）（181）
+				3. Rotation（旋转）（183）
+				4. Scaling（缩放）（189）
+				5. Reflection（反射）（195）
+				6. Shearing（剪切）（200）
+			8. Projections（预测）（205）
+				1. Orthographic（正交）（206）
+				2. Oblique（倾斜）（207）
+				3. Perspective（视角）（210）
+			9. Transforming Normal Vectors（变换法向量）（212）
+		5. Geometric Primitives in 2D（二维几何基元）（218）
+			1. Linear Components（线性元件）（218）
+				1. Implicit Form（隐式形式）（219）
+				2. Parametric Form（参数化形式）（220）
+				3. Converting between Representations（表示形式之间的转换）（221）
+			2. Triangles（三角形）（222）
+			3. Rectangles（矩形）（224）
+			4. Polylines and Polygons（折线和多边形）（224）
+			5. Quadratic Curves（二次曲线）（228）
+				1. Circles（圆圈）（230）
+				2. Ellipses（椭圆）（230）
+			6. Polynomial Curves（多项式曲线）（232）
+				1. B´ezier Curves（贝塞尔曲线）（233）
+				2. B-Spline Curves（B 样条曲线）（233）
+				3. NURBS Curves（NURBS  曲线）（235）
+		6. Distance in 2D（二维距离）（236）
+			1. Point to Linear Component（点到线性分量）（237）
+				1. Point to Line（点到线）（237）
+				2. Point to Ray（点到射线）（238）
+				3. Point to Segment（点到段）（239）
+			2. Point to Polyline（点到折线）（241）
+			3. Point to Polygon（点到多边形）（243）
+				1. Point to Triangle（点到三角形）（243）
+				2. Point to Rectangle（点到矩形）（258）
+				3. Point to Orthogonal Frustum（指向正交平截头体）（260）
+				4. Point to Convex Polygon（点到凸多边形）（263）
+			4. Point to Quadratic Curve（点到二次曲线）（264）
+			5. Point to Polynomial Curve（点到多项式曲线）（266）
+			6. Linear Components（线性元件）（268）
+				1. Line to Line（线对线）（268）
+				2. Line to Ray（线到射线）（269）
+				3. Line to Segment（线到段）（270）
+				4. Ray to Ray（射线到射线）（271）
+				5. Ray to Segment（射线到线段）（273）
+				6. Segment to Segment（段到段）（275）
+			7. Linear Component to Polyline or Polygon（线性分量到折线或多边形）（276）
+			8. Linear Component to Quadratic Curve（线性分量到二次曲线）（277）
+			9. Linear Component to Polynomial Curve（线性分量到多项式曲线）（280）
+			10. GJK Algorithm（GJK算法）（280）
+				1. Set Operations（设置操作）（281）
+				2. Overview of the Algorithm（算法概述）（282）
+				3. Alternatives to GJK（GJK  的替代方案）（285）
+		7. Intersection in 2D（二维交集）（288）
+			1. Linear Components（线性元件）（288）
+			2. Linear Components and Polylines（线性分量和折线）（293）
+			3. Linear Components and Quadratic Curves（线性分量和二次曲线）（293）
+				1. Linear Components and General Quadratic Curves（线性分量和一般二次曲线）（294）
+				2. Linear Components and Circular Components（线性元件和圆形元件）（294）
+			4. Linear Components and Polynomial Curves（线性分量和多项式曲线）（295）
+				1. Algebraic Method（代数法）（295）
+				2. Polyline Approximation（折线近似）（297）
+				3. Hierarchical Bounding（层次边界）（298）
+				4. Monotone Decomposition（单调分解）（299）
+				5. Rasterization（光栅化）（300）
+			5. Quadratic Curves（二次曲线）（302）
+				1. General Quadratic Curves（一般二次曲线）（302）
+				2. Circular Components（圆形元件）（304）
+				3. Ellipses（椭圆）（305）
+			6. Polynomial Curves（多项式曲线）（309）
+				1. Algebraic Method（代数方法）（309）
+				2. Polyline Approximation（折线近似）（309）
+				3. Hierarchical Bounding（层次边界）（310）
+				4. Rasterization（光栅化）（310）
+			7. The Method of Separating Axes（分离轴的方法）（312）
+				1. Separation by Projection onto a Line（通过投影到直线上的分离）（312）
+				2. Separation of Stationary Convex Polygons（静止凸多边形的分离）（313）
+				3. Separation of Moving Convex Polygons（移动凸多边形的分离）（320）
+				4. Intersection Set for Stationary Convex Polygons（静止凸多边形的交集）（324）
+				5. Contact Set for Moving Convex Polygons（移动凸多边形的接触集）（324）
+		8. Miscellaneous 2D Problems（各种二维问题）（332）
+			1. Circle through Three Points（过三点的圆）（332）
+			2. Circle Tangent to Three Lines（与三条线相切的圆）（332）
+			3. Line Tangent to a Circle at a Given Point（与圆在给定点相切的直线）（334）
+			4. Line Tangent to a Circle through a Given Point（通过给定点与圆相切的线）（335）
+			5. Lines Tangent to Two Circles（与两个圆相切的直线）（338）
+			6. Circle through Two Points with a Given Radius（以给定半径绕两点画圆）（344）
+			7. Circle through a Point and Tangent to a Line with a Given Radius（通过点并与给定半径的线相切的圆）（345）
+			8. Circles Tangent to Two Lines with a Given Radius（与给定半径的两条线相切的圆）（349）
+			9. Circles through a Point and Tangent to a Circle with a Given Radius（通过一点并与给定半径的圆相切的圆）（352）
+			10. Circles Tangent to a Line and a Circle with a Given Radius（与直线和给定半径的圆相切的圆）（356）
+			11. Circles Tangent to Two Circles with a Given Radius（与给定半径的两个圆相切的圆）（361）
+			12. Line Perpendicular to a Given Line through a Given Point（与通过给定点的给定线垂直的线）（363）
+			13. Line between and Equidistant to Two Points（两点之间且等距的直线）（364）
+			14. Line Parallel to a Given Line at a Given Distance（与给定距离处的给定线平行的线）（365）
+			15. Line Parallel to a Given Line at a Given Vertical (Horizontal) Distance（在给定垂直（水平）距离处与给定线平行的线）（367）
+			16. Lines Tangent to a Given Circle and Normal to a Given Line（与给定圆相切并垂直于给定线的线）（369）
+		9. Geometric Primitives in 3D（3D 几何基元）（372）
+			1. Linear Components（线性元件）（372）
+			2. Planar Components（平面元件）（373）
+				1. Planes（平面）（373）
+				2. Coordinate System Relative to a Plane（相对于平面的坐标系）（377）
+				3. 2D Objects in a Plane（平面中的二维物体）（378）
+			3. Polymeshes, Polyhedra, and Polytopes（多网格、多面体和多面体）（380）
+				1. Vertex-Edge-Face Tables（点‑边‑面表）（384）
+				2. Connected Meshes（连接网格）（387）
+				3. Manifold Meshes（流形网格）（389）
+				4. Closed Meshes（封闭网格）（389）
+				5. Consistent Ordering（一致的顺序）（390）
+				6. Platonic Solids（柏拉图固体）（393）
+			4. Quadric Surfaces（二次曲面）（398）
+				1. Three Nonzero Eigenvalues（三个非零特征值）（398）
+				2. Two Nonzero Eigenvalues（两个非零特征值）（399）
+				3. One Nonzero Eigenvalue（一个非零特征值）（399）
+			5. Torus（环面）（402）
+			6. Polynomial Curves（多项式曲线）（403）
+				1. B´ezier Curves（贝塞尔曲线）（404）
+				2. B-Spline Curves（B样条曲线）（404）
+				3. NURBS Curves（NURBS  曲线）（405）
+			7. Polynomial Surfaces（多项式曲面）（406）
+				1. B´ezier Surfaces（贝兹曲面）（407）
+				2. B-Spline Surfaces（B 样条曲面）（409）
+				3. NURBS Surfaces（NURBS  曲面）（411）
+		10. Distance in 3D（3D 距离）（412）
+			1. Introduction（简介）（412）
+			2. Point to Linear Component（点到线性分量）（412）
+				1. Point to Ray or Line Segment（点到射线或线段）（414）
+				2. Point to Polyline（点到折线）（416）
+			3. Point to Planar Component（点到平面组件）（421）
+				1. Point to Plane（点到平面）（421）
+				2. Point to Triangle（点到三角形）（423）
+				3. Point to Rectangle（点到矩形）（429）
+				4. Point to Polygon（点到多边形）（432）
+				5. Point to Circle or Disk（指向圆或圆盘）（435）
+			4. Point to Polyhedron（点到多面体）（438）
+				1. General Problem（一般问题）（438）
+				2. Point to Oriented Bounding Box（指向定向边界框）（441）
+				3. Point to Orthogonal Frustum（指向正交平截头体）（444）
+			5. Point to Quadric Surface（点到二次曲面）（448）
+				1. Point to General Quadric Surface（点到一般二次曲面）（448）
+				2. Point to Ellipsoid（指向椭球体）（450）
+			6. Point to Polynomial Curve（点到多项式曲线）（452）
+			7. Point to Polynomial Surface（点到多项式曲面）（454）
+			8. Linear Components（线性元件）（456）
+				1. Lines and Lines（线与线）（456）
+				2. Segment/Segment, Line/Ray, Line/Segment, Ray/Ray, Ray/Segment（线段/线段、线/射线、线/线段、射线/射线、射线/线段）（459）
+				3. Segment to Segment, Alternative Approach（分段到分段，替代方法）（473）
+			9. Linear Component to Triangle, Rectangle, Tetrahedron, Oriented Box（线性分量到三角形、矩形、四面体、定向盒子）（480）
+				1. Linear Component to Triangle（线性分量到三角形）（480）
+				2. Linear Component to Rectangle（线性分量到矩形）（488）
+				3. Linear Component to Tetrahedron（四面体的线性分量）（494）
+				4. Linear Component to Oriented Bounding Box（线性分量到定向边界框）（497）
+			10. Line to Quadric Surface（直线到二次曲面）（512）
+			11. Line to Polynomial Surface（直线到多项式曲面）（514）
+			12. GJK Algorithm（GJK算法）（515）
+			13. Miscellaneous（其他）（516）
+				1. Distance between Line and Planar Curve（直线与平面曲线之间的距离）（516）
+				2. Distance between Line and Planar Solid Object（线与平面实体之间的距离）（518）
+				3. Distance between Planar Curves（平面曲线之间的距离）（519）
+				4. Geodesic Distance on Surfaces（曲面上的测地距离）（524）
+		11. Intersection in 3D（3D 交集）（528）
+			1. Linear Components and Planar Components（线性分量和平面分量）（528）
+				1. Linear Components and Planes（线性分量和平面）（529）
+				2. Linear Components and Triangles（线性分量和三角形）（532）
+				3. Linear Components and Polygons（线性分量和多边形）（535）
+				4. Linear Component and Disk（线性元件和圆盘）（538）
+			2. Linear Components and Polyhedra（线性分量和多面体）（540）
+			3. Linear Components and Quadric Surfaces（线性分量和二次曲面）（545）
+				1. General Quadric Surfaces（一般二次曲面）（546）
+				2. Linear Components and a Sphere（线性分量和球体）（548）
+				3. Linear Components and an Ellipsoid（线性分量和椭球体）（551）
+				4. Linear Components and Cylinders（线性元件和圆柱体）（554）
+				5. Linear Components and a Cone（线性分量和锥体）（560）
+			4. Linear Components and Polynomial Surfaces（线性分量和多项式曲面）（566）
+				1. Algebraic Surfaces（线性分量和多项式）（567）
+				2. Free-Form Surfaces（自由曲面）（568）
+			5. Planar Components（平面组件）（576）
+				1. Two Planes（两个平面）（576）
+				2. Three Planes（三个平面）（579）
+				3. Triangle and Plane（三角形和平面）（581）
+				4. Triangle and Triangle（三角形和三角形）（586）
+			6. Planar Components and Polyhedra（平面组件和多面体）（590）
+				1. Trimeshes（修剪网格）（590）
+				2. General Polyhedra（一般多面体）（591）
+			7. Planar Components and Quadric Surfaces（平面分量和二次曲面）（594）
+				1. Plane and General Quadric Surface（平面和一般二次曲面）（594）
+				2. Plane and Sphere（平面和球面）（595）
+				3. Plane and Cylinder（平面和圆柱）（598）
+				4. Plane and Cone（平面和圆锥）（610）
+				5. Triangle and Cone（三角形和圆锥）（630）
+			8. Planar Components and Polynomial Surfaces（平面组件和多项式曲面）（634）
+				1. Hermite Curves（埃尔米特曲线）（635）
+				2. Geometry Definitions（几何定义）（637）
+				3. Computing the Curves（计算曲线）（638）
+				4. The Algorithm（算法）（639）
+				5. Implementation Notes（实施注意事项）（642）
+			9. Quadric Surfaces（二次曲面）（642）
+				1. General Intersection（一般交叉点）（643）
+				2. Ellipsoids（椭球）（651）
+			10. Polynomial Surfaces（多项式曲面）（655）
+				1. Subdivision Methods（细分方法）（655）
+				2. Lattice Evaluation（点阵评估）（656）
+				3. Analytic Methods（分析方法）（657）
+				4. Marching Methods（行进方法）（657）
+			11. The Method of Separating Axes（分离轴的方法）（658）
+				1. Separation of Stationary Convex Polyhedra（静止凸多面体的分离）（658）
+				2. Separation of Moving Convex Polyhedra（动凸多面体的分离）（662）
+				3. Intersection Set for Stationary Convex Polyhedra（静止凸多面体的交集）（663）
+				4. Contact Set for Moving Convex Polyhedra（动凸多面体的接触集）（663）
+			12. Miscellaneous（其他）（671）
+				1. Oriented Bounding Box and Orthogonal Frustum（定向边界框和正交平截头体）（671）
+				2. Linear Component and Axis-Aligned Bounding Box（线性分量和轴对齐边界框）（673）
+				3. Linear Component and Oriented Bounding Box（线性分量和定向边界框）（677）
+				4. Plane and Axis-Aligned Bounding Box（平面和轴对齐的边界框）（681）
+				5. Plane and Oriented Bounding Box（平面和定向边界框）（682）
+				6. Axis-Aligned Bounding Boxes（轴对齐边界框）（684）
+				7. Oriented Bounding Boxes（定向边界框）（686）
+				8. Sphere and Axis-Aligned Bounding Box（球体和轴对齐边界框）（691）
+				9. Cylinders（气缸）（693）
+				10. Linear Component and Torus（线性分量和环面）（706）
+		12. Miscellaneous 3D Problems（其他 3D 问题）（710）
+			1. Projection of a Point onto a Plane（点在平面上的投影）（710）
+			2. Projection of a Vector onto a Plane（矢量到平面的投影）（712）
+			3. Angle between a Line and a Plane（直线与平面之间的角度）（713）
+			4. Angle between Two Planes（两个平面之间的角度）（714）
+			5. Plane Normal to a Line and through a Given Point（垂直于直线并通过给定点的平面）（714）
+			6. Plane through Three Points（通过三点的平面）（716）
+			7. Angle between Two Lines（两条线之间的角度）（717）
+		13. Computational Geometry Topics（计算几何主题）（720）
+			1. Binary Space-Partitioning Trees in 2D（二维二元空间划分树）（720）
+				1. BSP Tree Representation of a Polygon（多边形的BSP树表示）（721）
+				2. Minimum Splits versus Balanced Trees（最小分裂与平衡树）（727）
+				3. Point in Polygon Using BSP Trees（使用BSP树的多边形中的点）（730）
+				4. Partitioning a Line Segment by a BSP Tree（用BSP树划分线段）（731）
+			2. Binary Space-Partitioning Trees in 3D（3D  中的二元空间划分树）（734）
+				1. BSP Tree Representation of a Polyhedron（多面体的BSP树表示）（735）
+				2. Minimum Splits versus Balanced Trees（最小分裂与平衡树）（737）
+				3. Point in Polyhedron Using BSP Trees（使用BSP树的多面体中的点）（738）
+				4. Partitioning a Line Segment by a BSP Tree（用BSP树划分线段）（739）
+				5. Partitioning a Convex Polygon by a BSP Tree（用BSP树划分凸多边形）（741）
+			3. Point in Polygon（多边形内的点）（742）
+				1. Point in Triangle（三角形中的点）（742）
+				2. Point in Convex Polygon（凸多边形中的点）（744）
+				3. Point in General Polygon（一般多边形中的点）（747）
+				4. Faster Point in General Polygon（一般多边形中的更快点）（753）
+				5. A Grid Method（网格法）（754）
+			4. Point in Polyhedron（多面体中的点）（755）
+				1. Point in Tetrahedron（四面体中的点）（755）
+				2. Point in Convex Polyhedron（凸多面体中的点）（756）
+				3. Point in General Polyhedron（一般多面体中的点）（758）
+			5. Boolean Operations on Polygons（多边形的布尔运算）（761）
+				1. The Abstract Operations（抽象操作）（762）
+				2. The Two Primitive Operations（两个原始操作）（764）
+				3. Boolean Operations Using BSP Trees（使用BSP树的布尔运算）（766）
+				4. Other Algorithms（其他算法）（771）
+			6. Boolean Operations on Polyhedra（多面体的布尔运算）（773）
+				1. Abstract Operations（抽象操作）（773）
+				2. Boolean Operations Using BSP Trees（使用BSP树的布尔运算）（774）
+			7. Convex Hulls（凸包）（776）
+				1. Convex Hulls in 2D（二维凸包）（776）
+				2. Convex Hulls in 3D（凸包）（791）
+				3. Convex Hulls in Higher Dimensions（高维凸包）（797）
+			8. Delaunay Triangulation（德劳内三角剖分）（803）
+				1. Incremental Construction in 2D（二维增量构建）（804）
+				2. Incremental Construction in General Dimensions（一般尺寸增量施工）（808）
+				3. Construction by Convex Hull（凸包构造）（813）
+			9. Polygon Partitioning（多边形划分）（814）
+				1. Visibility Graph of a Simple Polygon（简单多边形的可见性图）（814）
+				2. Triangulation（三角测量）（818）
+				3. Triangulation by Horizontal Decomposition（水平分解三角测量）（822）
+				4. Convex Partitioning（凸划分）（836）
+			10. Circumscribed and Inscribed Balls（外接球和内切球）（845）
+				1. Circumscribed Ball（外接球）（846）
+				2. Inscribed Ball（内接球）（848）
+			11. Minimum Bounds for Point Sets（点集的最小界限）（850）
+				1. Minimum-Area Rectangle（最小面积矩形）（850）
+				2. Minimum-Volume Box（最小容量盒）（853）
+				3. Minimum-Area Circle（最小面积圆）（854）
+				4. Minimum-Volume Sphere（最小体积球体）（858）
+				5. Miscellaneous（其他）（860）
+			12. Area and Volume Measurements（面积和体积测量）（863）
+				1. Area of a 2D Polygon（二维多边形的面积）（863）
+				2. Area of a 3D Polygon（3D多边形的面积）（867）
+				3. Volume of a Polyhedron（多面体的体积）（871）
+		14. Numerical Methods（数值方法）（874）
+			1. Solving Linear Systems（求解线性系统）（874）
+				1. Special Case: Solving a Triangular System（特殊情况：求解三角系统）（875）
+				2. Gaussian Elimination（高斯消去法）（876）
+			2. Systems of Polynomials（多项式系统）（879）
+				1. Linear Equations in One Formal Variable（一个形式变量的线性方程）（880）
+				2. Any-Degree Equations in One Formal Variable（一个形式变量中的任意次方程）（882）
+				3. Any-Degree Equations in Any Formal Variables（任意形式变量中的任意次方程）（884）
+			3. Matrix Decompositions（矩阵分解）（894）
+				1. Euler Angle Factorization（欧拉角分解）（894）
+				2. QR Decomposition（QR  分解）（899）
+				3. Eigendecomposition（特征分解）（900）
+				4. Polar Decomposition（极分解）（901）
+				5. Singular Value Decomposition（奇异值分解）（904）
+			4. Representations of 3D Rotations（3D  旋转的表示）（904）
+				1. Matrix Representation（矩阵表示）（904）
+				2. Axis-Angle Representation（轴角表示）（905）
+				3. Quaternion Representation（四元数表示）（907）
+				4. Performance Issues（性能问题）（908）
+			5. Root Finding（求根）（916）
+				1. Methods in One Dimension（一维方法）（916）
+				2. Methods in Many Dimensions（多维度方法）（921）
+				3. Stable Solution to Quadratic Equations（二次方程的稳定解）（922）
+			6. Minimization（最小化）（923）
+				1. Methods in One Dimension（一维方法）（923）
+				2. Methods in Many Dimensions（多维度方法）（924）
+				3. Minimizing a Quadratic Form（最小化二次形式）（927）
+				4. Minimizing a Restricted Quadratic Form（最小化受限二次形式）（927）
+			7. Least Squares Fitting（最小二乘拟合）（929）
+				1. Linear Fitting of Points (x, f (x))（点(x,  f  (x))的线性拟合）（929）
+				2. Linear Fitting of Points Using Orthogonal Regression（使用正交回归对点进行线性拟合）（929）
+				3. Planar Fitting of Points (x, y, f (x, y))（点(x,  y,  f  (x,  y))的平面拟合）（931）
+				4. Hyperplanar Fitting of Points Using Orthogonal Regression（使用正交回归对点进行超平面拟合）（931）
+				5. Fitting a Circle to 2D Points（将圆拟合到  2D  点）（933）
+				6. Fitting a Sphere to 3D Points（将球体拟合到  3D  点）（934）
+				7. Fitting a Quadratic Curve to 2D Points（将二次曲线拟合到二维点）（935）
+				8. Fitting a Quadric Surface to 3D Points（将二次曲面拟合到  3D  点）（936）
+			8. Subdivision of Curves（曲线细分）（936）
+				1. Subdivision by Uniform Sampling（均匀采样细分）（936）
+				2. Subdivision by Arc Length（按弧长细分）（937）
+				3. Subdivision by Midpoint Distance（按中点距离细分）（938）
+				4. Subdivision by Variation（按变体细分）（939）
+			9. Topics from Calculus（微积分主题）（941）
+				1. Level Sets（水平集）（941）
+				2. Minima and Maxima of Functions（函数的最小值和最大值）（945）
+				3. Lagrange Multipliers（拉格朗日乘子）（957）
+		15. Trigonometry（三角学）（970）
+			1. Introduction（简介）（970）
+				1. Terminology（术语）（970）
+				2. Angles（角度）（970）
+				3. Conversion Examples（转换示例）（972）
+			2. Trigonometric Functions（三角函数）（973）
+				1. Definitions in Terms of Exponentials（指数的定义）（977）
+				2. Domains and Ranges（域和值域）（978）
+				3. Graphs of Trigonometric Functions（三角函数图）（978）
+				4. Derivatives of Trigonometric Functions（三角函数的导数）（978）
+				5. Integration（整合）（981）
+			3. Trigonometric Identities and Laws（三角恒等式和定律）（981）
+				1. Periodicity（周期性）（982）
+				2. Laws（法则）（983）
+				3. Formulas（公式）（987）
+			4. Inverse Trigonometric Functions（反三角函数）（992）
+				1. Defining arcsin and arccos in Terms of arctan（用反正切定义  arcsin  和  arccos）（992）
+				2. Domains and Ranges（域和值域）（992）
+				3. Graphs（图表）（993）
+				4. Derivatives（衍生品）（993）
+				5. Integration（集成）（995）
+			5. Further Reading（进一步阅读）（995）
+		16. Basic Formulas for Geometric Primitives（几何基元的基本公式）（996）
+			1. Introduction（简介）（996）
+			2. Triangles（三角形）（996）
+				1. Symbols（符号）（996）
+				2. Definitions（定义）（997）
+				3. Right Triangles（直角三角形）（999）
+			3. Quadrilaterals（四边形）（1001）
+				1. Square（正方）（1001）
+				2. Rectangle（矩形）（1001）
+				3. Parallelogram（平行四边形）（1001）
+				4. Rhombus（菱形）（1002）
+				5. Trapezoid（梯形）（1002）
+				6. General Quadrilateral（一般四边形）（1002）
+			4. Circles（圆圈）（1003）
+				1. Symbols（符号）（1003）
+				2. Full Circle（全圆）（1003）
+				3. Sector of a Circle（圆的扇区）（1003）
+				4. Segment of a Circle（圆的线段）（1004）
+			5. Polyhedra（多面体）（1004）
+				1. Symbols（符号）（1004）
+				2. Box（盒子）（1004）
+				3. Prism（棱镜）（1005）
+				4. Pyramid（金字塔）（1005）
+			6. Cylinder（圆柱）（1005）
+			7. Cone（锥体）（1006）
+			8. Spheres（球体）（1006）
+				1. Segments（段）（1006）
+				2. Sector（扇区）（1007）
+			9. Torus（环面）（1008）
+	3. Computational Geometry（计算几何）
+		1. Computational Geometry（计算几何）（12）
+			1. An Example: Convex Hulls（例子：凸包）（13）
+			2. Degeneracies and Robustness（简并性和鲁棒性）（19）
+			3. Application Domains（应用领域）（21）
+			4. Notes and Comments（注释和评论）（24）
+		2. Line Segment Intersection（线段交点）（29）
+			1. Line Segment Intersection（线段交点）（30）
+			2. The Doubly-Connected Edge List（双连通边列表）（39）
+			3. Computing the Overlay of Two Subdivisions（计算两个细分的重叠）（43）
+			4. Boolean Operations（布尔运算）（49）
+			5. Notes and Comments（注释和评论）（50）
+		3. Polygon Triangulation（多边形三角剖分）（54）
+			1. Guarding and Triangulations（防护和三角测量）（55）
+			2. Partitioning a Polygon into Monotone Pieces（将多边形分割成单调块）（58）
+			3. Triangulating a Monotone Polygon（对单调多边形进行三角剖分）（64）
+			4. Notes and Comments（注释和评论）（68）
+		4. Linear Programming（线性规划）（71）
+			1. The Geometry of Casting（铸件的几何形状）（72）
+			2. Half-Plane Intersection（半平面交线）（74）
+			3. Incremental Linear Programming（增量线性规划）（79）
+			4. Randomized Linear Programming（随机线性规划）（84）
+			5. Unbounded Linear Programs（无界线性规划）（87）
+			6. Linear Programming in Higher Dimensions（高维线性规划）（90）
+			7. Smallest Enclosing Discs（最小封闭光盘）（94）
+			8. Notes and Comments（注释和评论）（97）
+		5. Orthogonal Range Searching（正交范围搜索）（102）
+			1. 1-Dimensional Range Searching（一维范围搜索）（103）
+			2. Kd-Trees（Kd树）（106）
+			3. Range Trees（范围树）（112）
+			4. Higher-Dimensional Range Trees（高维范围树）（116）
+			5. General Sets of Points（一般点集）（117）
+			6. Fractional Cascading（分数级联）（118）
+			7. Notes and Comments（注释和评论）（122）
+		6. Point Location（点位置）（128）
+			1. Point Location and Trapezoidal Maps（点位置和梯形图）（129）
+			2. A Randomized Incremental Algorithm（随机增量算法）（135）
+			3. Dealing with Degenerate Cases（处理退化案例）（144）
+			4. A Tail Estimate（尾部估计）（147）
+			5. Notes and Comments（注释和评论）（150）
+		7. Voronoi Diagrams（维诺图）（154）
+			1. Definition and Basic Properties（定义和基本属性）（155）
+			2. Computing the Voronoi Diagram（计算  Voronoi  图）（158）
+			3. Voronoi Diagrams of Line Segments（线段Voronoi图）（167）
+			4. Farthest-Point Voronoi Diagrams（最远点  Voronoi  图）（170）
+			5. Notes and Comments（注释和评论）（174）
+		8. Arrangements and Duality（安排和二元性）（179）
+			1. Computing the Discrepancy（计算差异）（181）
+			2. Duality（对偶性）（183）
+			3. Arrangements of Lines（线路布置）（185）
+			4. Levels and Discrepancy（水平和差异）（191）
+			5. Notes and Comments（注释和评论）（192）
+		9. Delaunay Triangulations（德劳内三角剖分）（197）
+			1. Triangulations of Planar Point Sets（平面点集的三角剖分）（199）
+			2. The Delaunay Triangulation（德劳内三角剖分）（202）
+			3. Computing the Delaunay Triangulation（计算Delaunay三角剖分）（205）
+			4. The Analysis（分析）（211）
+			5. A Framework for Randomized Algorithms（随机算法框架）（214）
+			6. Notes and Comments（注释和评论）（220）
+		10. More Geometric Data Structures（更多几何数据结构）（225）
+			1. Interval Trees（区间树）（226）
+			2. Priority Search Trees（优先级搜索树）（232）
+			3. Segment Trees（线段树）（237）
+			4. Notes and Comments（注释和评论）（243）
+		11. Convex Hulls（凸包）（248）
+			1. The Complexity of Convex Hulls in 3-Space（3‑空间中凸包的复杂性）（249）
+			2. Computing Convex Hulls in 3-Space（计算3‑空间中的凸包）（251）
+			3. The Analysis（分析）（255）
+			4. Convex Hulls and Half-Space Intersection（凸包和半空间交集）（258）
+			5. Voronoi Diagrams Revisited（沃罗诺伊图重温）（259）
+			6. Notes and Comments（注释和评论）（261）
+		12. Binary Space Partitions（二进制空间分区）（264）
+			1. The Definition of BSP Trees（BSP树的定义）（266）
+			2. BSP Trees and the Painter’s Algorithm（BSP树和Painter算法）（268）
+			3. Constructing a BSP Tree（构建BSP树）（269）
+			4. The Size of BSP Trees in 3-Space（3 空间中 BSP 树的大小）（273）
+			5. BSP Trees for Low-Density Scenes（低密度场景的BSP树）（276）
+			6. Notes and Comments（注释和评论）（283）
+		13. Robot Motion Planning（机器人运动规划）（287）
+			1. Work Space and Configuration Space（工作空间和配置空间）（288）
+			2. A Point Robot（点机器人）（290）
+			3. Minkowski Sums（闵可夫斯基和）（294）
+			4. Translational Motion Planning（平移运动规划）（301）
+			5. Motion Planning with Rotations（带旋转的运动规划）（303）
+			6. Notes and Comments（注释和评论）（307）
+		14. Quadtrees（四叉树）（311）
+			1. Uniform and Non-Uniform Meshes（均匀和非均匀网格）（313）
+			2. Quadtrees for Point Sets（点集的四叉树）（313）
+			3. From Quadtrees to Meshes（从四叉树到网格）（319）
+			4. Notes and Comments（注释和评论）（322）
+		15. Visibility Graphs（可见性图表）（327）
+			1. Shortest Paths for a Point Robot（点机器人的最短路径）（328）
+			2. Computing the Visibility Graph（计算可见性图）（330）
+			3. Shortest Paths for a Translating Polygonal Robot（多边形平移机器人的最短路径）（334）
+			4. Notes and Comments（注释和评论）（335）
+		16. Simplex Range Searching（单纯形范围搜索）（338）
+			1. Partition Trees（划分树）（339）
+			2. Multi-Level Partition Trees（多级划分树）（346）
+			3. Cutting Trees（砍伐树木）（349）
+			4. Notes and Comments（注释和评论）（355）
+5. Game Programming（游戏编程）
 	1. Game Programming Patterns（游戏编程模式）
 		1. Introduction（介绍）（7）
 			1. What’s in Store（商店里有什么）（10）
@@ -3116,7 +10088,1792 @@
 				2. The Patch Build or the Product Demo（补丁构建或产品演示）（923）
 				3. The Postmortem（事后剖析）（923）
 				4. What to Do with Your Time（怎样利用你的时间）（924）
-5. Game Engine Development（游戏引擎开发）
+	3. Game Programming Algorithms and Techniques（游戏编程算法和技巧）
+		1. GAME PROGRAMMING OVERVIEW（游戏编程概述）（22）
+			1. Evolution of Video Game Programming（视频游戏编程的演变）（23）
+				1. Atari Era (1977–1985)（雅达利时代  (1977–1985)）（23）
+				2. NES and SNES Era (1985–1995)（NES  和  SNES  时代  (1985–1995)）（24）
+				3. Playstation/Playstation 2 Era (1995–2005)（Playstation/Playstation  2  时代（1995–2005））（24）
+				4. Xbox 360, PS3, and Wii Era (2005–2013)（Xbox  360、PS3  和  Wii  时代（2005–2013））（25）
+				5. The Future（未来）（25）
+			2. The Game Loop（游戏循环）（26）
+				1. Traditional Game Loop（传统游戏循环）（26）
+				2. Multithreaded Game Loops（多线程游戏循环）（28）
+			3. Time and Games（时间和游戏）（30）
+				1. Real Time and Game Time（实时和游戏时间）（31）
+				2. Logic as a Function of Delta Time（逻辑作为  Delta  时间的函数）（31）
+			4. Game Objects（游戏对象）（34）
+				1. Types of Game Objects（游戏对象的类型）（34）
+				2. Game Objects in the Game Loop（游戏循环中的游戏对象）（34）
+		2. 2D GRAPHICS（2D  图形）（40）
+			1. 2D Rendering Foundations（2D  渲染基础）（41）
+				1. CRT Monitor Basics（CRT  显示器基础知识）（41）
+				2. Color Buffers and Vertical Sync（颜色缓冲区和垂直同步）（42）
+			2. Sprites（精灵）（43）
+				1. Drawing Sprites（绘制精灵）（44）
+				2. Animating Sprites（动画精灵）（46）
+				3. Sprite Sheets（精灵表）（49）
+			3. Scrolling（滚动）（51）
+				1. Single-Axis Scrolling（单轴滚动）（51）
+				2. Infinite Scrolling（无限滚动）（53）
+				3. Parallax Scrolling（视差滚动）（53）
+				4. Four-Way Scrolling（四向滚动）（55）
+			4. Tile Maps（平铺地图）（56）
+				1. Simple Tile Maps（简单的平铺地图）（57）
+				2. Isometric Tile Maps（等距瓷砖地图）（59）
+		3. LINEAR ALGEBRA OR GAMES（线性代数或游戏）（62）
+			1. Vectors（向量）（63）
+				1. Addition（加法）（64）
+				2. Subtraction（减法）（65）
+				3. Length, Unit Vectors, and Normalization（长度、单位向量和归一化）（66）
+				4. Scalar Multiplication（标量乘法）（68）
+				5. Dot Product（点积）（69）
+				6. Sample Problem: Vector Reflection（示例问题：矢量反射）（71）
+				7. Cross Product（叉积）（72）
+				8. Sample Problem: Rotating a 2D Character（示例问题：旋转  2D  角色）（75）
+				9. Linear Interpolation（线性插值）（76）
+				10. Coordinate Systems（坐标系）（77）
+			2. Matrices（矩阵）（79）
+				1. Addition/Subtraction（加法/减法）（79）
+				2. Scalar Multiplication（标量乘法）（79）
+				3. Multiplication（乘法）（80）
+				4. Inverse（逆）（81）
+				5. Transpose（转置）（81）
+				6. Transforming 3D Vectors by Matrices（通过矩阵转换  3D  矢量）（81）
+		4. 3D GRAPHICS（3D图形）（86）
+			1. Basics（基本）（87）
+				1. Polygons（多边形）（87）
+			2. Coordinate Spaces（坐标空间）（88）
+				1. Model Space（模型空间）（88）
+				2. World Space（世界空间）（89）
+					1. Homogenous Coordinates（齐次坐标）（89）
+					2. Transforming 4D Vectors by Matrices（通过矩阵变换  4D  矢量）（90）
+					3. Transform Matrices（变换矩阵）（90）
+				3. View/Camera Space（视图/相机空间）（93）
+				4. Projection Space（投影空间）（95）
+			3. Lighting and Shading（照明和阴影）（97）
+				1. Color（颜色）（97）
+				2. Vertex Attributes（顶点属性）（98）
+				3. Lights（灯）（100）
+					1. Ambient Light（环境光）（101）
+					2. Directional Light（定向光）（102）
+					3. Point Light（点光源）（102）
+					4. Spotlight（聚光灯）（102）
+				4. Phong Reflection Model（Phong  反射模型）（103）
+				5. Shading（阴影）（104）
+					1. Gouraud Shading（Gouraud  着色）（104）
+					2. Phong Shading（Phong  着色）（105）
+			4. Visibility（能见度）（106）
+				1. Painter’s Algorithm, Revisited（重温画家算法）（106）
+				2. Z-Buffering（107）
+			5. World Transform, Revisited（重温世界变革）（109）
+				1. Quaternions（四元数）（110）
+				2. 3D Game Object Representation（3D  游戏对象表示）（112）
+		5. INPUT（输入）（114）
+			1. Input Devices（输入设备）（115）
+				1. Digital Input（数字输入）（116）
+				2. Analog Input（模拟输入）（118）
+			2. Event-Based Input Systems（基于事件的输入系统）（120）
+				1. A Basic Event System（基本事件系统）（121）
+				2. A More Complex System（更复杂的系统）（123）
+			3. Mobile Input（移动输入）（126）
+				1. Touch Screens and Gestures（触摸屏和手势）（126）
+				2. Accelerometer and Gyroscope（加速度计和陀螺仪）（127）
+				3. Other Mobile Input（其他移动输入）（129）
+		6. SOUND（声音）（132）
+			1. Basic Sound（基本声音）（133）
+				1. Source Data（源数据）（133）
+				2. Sound Cues（声音提示）（133）
+			2. 3D Sound（3D音效）（136）
+				1. Listeners and Emitters（听众和发射者）（137）
+				2. Falloff（衰减）（139）
+				3. Surround Sound（环绕声）（139）
+			3. Digital Signal Processing（数字信号处理）（140）
+				1. Common DSP Effects（常见的  DSP  效果）（141）
+				2. Marking Regions（标记区域）（142）
+			4. Other Sound Topics（其他声音主题）（143）
+				1. Doppler Effect（多普勒效应）（143）
+				2. Sound Occlusion and Obstruction（声音遮挡和阻碍）（144）
+		7. PHYSICS（物理）（148）
+			1. Planes, Rays, and Line Segments（平面、射线和线段）（149）
+				1. Planes（平面）（149）
+				2. Rays and Line Segments（射线和线段）（150）
+			2. Collision Geometry（碰撞几何）（151）
+				1. Bounding Sphere（包围球）（152）
+				2. Axis-Aligned Bounding Box（轴对齐边界框）（153）
+				3. Oriented Bounding Box（定向边界框）（153）
+				4. Capsule（胶囊）（154）
+				5. Convex Polygons（凸多边形）（154）
+				6. List of Collision Geometries（碰撞几何形状列表）（155）
+			3. Collision Detection（碰撞检测）（155）
+				1. Sphere versus Sphere Intersection（球体与球体相交）（155）
+				2. AABB versus AABB Intersection（AABB  与  AABB  交点）（156）
+				3. Line Segment versus Plane Intersection（线段与平面相交）（157）
+				4. Line Segment versus Triangle Intersection（线段与三角形交点）（159）
+				5. Sphere versus Plane Intersection（球体与平面的交点）（161）
+				6. Swept Sphere Intersection（扫掠球体交点）（162）
+				7. Collision Response（碰撞响应）（167）
+				8. Optimizing Collisions（优化碰撞）（168）
+			4. Physics-Based Movement（基于物理的运动）（169）
+				1. Linear Mechanics Overview（线性力学概述）（170）
+				2. Issues with Variable Time Steps（可变时间步长的问题）（171）
+				3. Calculating the Force（计算力）（172）
+				4. Euler and Semi-Implicit Euler Integration（欧拉和半隐式欧拉积分）（172）
+				5. Velocity Verlet Integration（速度  Verlet积分）（173）
+				6. Other Integration Methods（其他积分方法）（174）
+				7. Angular Mechanics（角度力学）（174）
+			5. Physics Middleware（物理中间件）（174）
+		8. CAMERAS（相机）（178）
+			1. Types of Cameras（相机类型）（179）
+				1. Fixed and Non-Player Controlled Cameras（固定和非玩家控制的摄像机）（179）
+				2. First-person Camera（第一人称相机）（180）
+				3. Follow Cameras（跟随摄像机）（181）
+				4. Cutscene Cameras（过场动画摄像机）（182）
+			2. Perspective Projections（透视投影）（182）
+				1. Field of View（视野）（182）
+				2. Aspect Ratio（纵横比）（184）
+			3. Camera Implementations（相机实现）（185）
+				1. Basic Follow Camera（基本跟随相机）（185）
+				2. Spring Follow Camera（弹簧跟随相机）（186）
+				3. Orbit Camera（轨道相机）（189）
+				4. First-person Camera（第一人称相机）（191）
+				5. Spline Camera（样条相机）（193）
+			4. Camera Support Algorithms（相机支持算法）（196）
+				1. Camera Collision（相机碰撞）（196）
+				2. Picking（采摘）（197）
+		9. ARTIFICIAL INTELLIGENCE（人工智能）（200）
+			1. “Real” AI versus Game AI（“真实”人工智能与游戏人工智能）（201）
+			2. Pathfinding（寻找路径）（201）
+				1. Representing the Search Space（表示搜索空间）（202）
+				2. Admissible Heuristics（可接受的启发法）（205）
+				3. Greedy Best-First Algorithm（贪心最佳优先算法）（206）
+				4. A* Pathfinding（A*  寻路）（210）
+				5. Dijkstra’s Algorithm（迪杰斯特拉算法）（213）
+			3. State-Based Behaviors（基于状态的行为）（213）
+				1. State Machines for AI（AI  状态机）（214）
+				2. Basic State Machine Implementation（基本状态机实现）（216）
+				3. State Design Pattern（状态设计模式）（217）
+			4. Strategy and Planning（策略与规划）（219）
+				1. Strategy（战略）（219）
+				2. Planning（规划）（220）
+		10. USER INTERFACES（用户界面）（224）
+			1. Menu Systems（菜单系统）（225）
+				1. Menu Stack（菜单堆栈）（225）
+				2. Buttons（纽扣）（226）
+				3. Typing（打字）（227）
+			2. HUD Elements（平视显示器元素）（228）
+				1. Waypoint Arrow（航点箭头）（229）
+				2. Aiming Reticule（瞄准标线）（232）
+				3. Radar（雷达）（233）
+			3. Other UI Considerations（其他用户界面注意事项）（238）
+				1. Supporting Multiple Resolutions（支持多种分辨率）（239）
+				2. Localization（本土化）（240）
+				3. UI Middleware（用户界面中间件）（242）
+				4. User Experience（用户体验）（242）
+		11. SCRIPTING LANGUAGES AND DATA FORMATS（脚本语言和数据格式）（244）
+			1. Scripting Languages（脚本语言）（245）
+				1. Tradeoffs（权衡）（245）
+				2. Types of Scripting Languages（脚本语言的类型）（246）
+				3. Lua（248）
+				4. UnrealScript（248）
+				5. Visual Scripting Systems（可视化脚本系统）（250）
+			2. Implementing a Scripting Language（实现脚本语言）（250）
+				1. Tokenization（代币化）（251）
+				2. Regular Expressions（正则表达式）（252）
+				3. Syntax Analysis（语法分析）（253）
+				4. Code Execution or Generation（代码执行或生成）（254）
+			3. Data Formats（数据格式）（256）
+				1. Tradeoffs（权衡）（256）
+				2. Binary Formats（二进制格式）（257）
+				3. INI（257）
+				4. XML（258）
+				5. JSON（259）
+			4. Case Study: UI Mods in World of Warcraft（案例研究：《魔兽世界》中的 UI Mod）（260）
+				1. Layout and Events（布局和事件）（260）
+				2. Behavior（行为）（261）
+				3. Issue: Player Automation（问题：玩家自动化）（261）
+				4. Issue: The UI Breaking（问题：UI  破坏）（261）
+				5. Conclusion（结论）（262）
+		12. NETWORKED GAMES（联网游戏）（264）
+			1. Protocols（协议）（265）
+				1. IP（265）
+				2. ICMP（266）
+				3. TCP（267）
+				4. UDP（270）
+			2. Network Topology（网络拓扑结构）（271）
+				1. Server/Client（服务器/客户端）（271）
+				2. Peer-to-Peer（点对点）（274）
+			3. Cheating（作弊）（276）
+				1. Information Cheats（信息秘籍）（276）
+				2. Game State Cheats（游戏状态秘籍）（277）
+				3. Man-in-the-Middle Attack（中间人攻击）（277）
+		13. SAMPLE GAME: SIDE-SCROLLER FOR IOS（示例游戏：适用于 IOS 的横向卷轴游戏）（280）
+			1. Overview（概述）（281）
+				1. Objective-C（282）
+				2. cocos2d（283）
+			2. Code Analysis（代码分析）（283）
+				1. AppDelegate（应用程序代理）（284）
+				2. MainMenuLayer（主菜单层）（284）
+				3. GameplayScene（游戏场景）（284）
+				4. ScrollingLayer（284）
+				5. Ship（船）（286）
+				6. Projectiles（射弹）（286）
+				7. Enemy（敌人）（286）
+				8. ObjectLayer（对象层）（287）
+			3. Exercises（练习）（288）
+		14. SAMPLE GAME: TOWER DEFENSE FOR PC/MAC（示例游戏：PC/MAC 版塔防）（290）
+			1. Overview（概述）（291）
+				1. C#（291）
+				2. XNA（293）
+				3. MonoGame（单机游戏）（294）
+			2. Code Analysis（代码分析）（294）
+				1. Settings（设置）（294）
+				2. Singleton（单例）（295）
+				3. Game Class（游戏类）（295）
+				4. Game State（游戏状态）（296）
+				5. Game Objects（游戏对象）（297）
+				6. Level（等级）（298）
+				7. Timer（定时器）（298）
+				8. Pathfinding（寻路）（299）
+				9. Camera and Projection（摄像头和投影）（300）
+				10. Input（输入）（301）
+				11. Physics（物理）（301）
+				12. Localization（本土化）（301）
+				13. Graphics（图形）（302）
+				14. Sound（声音）（303）
+				15. User Interface（用户界面）（303）
+			3. Exercises（练习）（305）
+	4. CROSS-PLATFORM GAME PROGRAMMING（跨平台游戏编程）
+		1. Introduction（简介）（22）
+			1. BACKGROUND OF CROSS-PLATFORM PROGRAMMING（跨平台编程的背景）（22）
+				1. History（历史）（23）
+				2. The Importance of Cross-Platform Development（跨平台开发的重要性）（25）
+			2. OVERVIEW OF CROSS-PLATFORM COMPONENTS（跨平台组件概述）（28）
+				1. The Lead Platform（领先平台）（30）
+				2. Cross-Generation, Cross-Platform Game Programming（跨世代、跨平台的游戏编程）（30）
+				3. The Theoretical Process（理论过程）（31）
+			3. THE DEVELOPMENT PROCESS（开发过程）（33）
+				1. Code Is Code（代码就是代码）（33）
+				2. Console Limitations（控制台限制）（35）
+				3. Libraries（图书馆）（36）
+			4. ABOUT THE BOOK（关于本书）（38）
+				1. Coding Style（编码风格）（38）
+			5. NON-DISCLOSURE AGREEMENTS（保密协议）（39）
+			6. NOTES TO THE READER（读者须知）（39）
+		2. Top Ten Tips（十大秘诀）（42）
+			1. THE BASIC ISSUES（基本问题）（42）
+			2. ABSTRACTION（抽象）（43）
+			3. COMMONALITY（共性）（45）
+			4. LIMITATIONS（局限性）（45）
+				1. Language Limitations（语言限制）（45）
+				2. Library Limitations（库的限制）（48）
+				3. Compiler Limitations（编译器限制）（48）
+				4. Platform Limitations（平台限制）（52）
+			5. MODULARIZATION（模块化）（54）
+			6. RESOURCE CREATION PATH（资源创建路径）（56）
+				1. Resource Detail（资源详情）（56）
+			7. GRANULARITY（粒度）（59）
+				1. Basic Datatypes（基本数据类型）（60）
+				2. Memory Management（内存管理）（60）
+				3. Audio Code（音频代码）（60）
+			8. SEPARATION AND ISOLATION（分离和隔离）（61）
+				1. Obvious Isolation（明显的隔离）（61）
+				2. Singletons（单例）（62）
+				3. Class Structures（类结构）（64）
+				4. Divorcing Code（离婚法）（65）
+				5. Separation by Purpose（按目的分离）（67）
+				6. Separation by Memory（记忆分离）（70）
+				7. Separation for the Present（目前的分离）（70）
+				8. Separation for the Future（为了未来的分离）（71）
+				9. Succession（演替）（73）
+				10. The pImpl Idiom（pImpl  习语）（74）
+			9. DEBUGGING AND PROFILING（调试和分析）（74）
+				1. Programming-Based Bugs（基于编程的错误）（74）
+				2. Compiler-Based Bugs（基于编译器的错误）（75）
+				3. Execution-Based Bugs（基于执行的错误）（76）
+				4. Profiling（分析）（80）
+			10. PREDICTABILITY（可预测性）（81）
+				1. Randomness（随机性）（81）
+				2. Trigonometry（三角学）（82）
+				3. Input Stimuli（输入刺激）（82）
+			11. TURN-AROUND（回转）（83）
+		3. Memory（内存）（88）
+			1. THE SPECIFICATION（规格）（88）
+			2. SIMPLE MEMORY（简单的内存）（92）
+				1. The Issues—Datatypes（问题——数据类型）（92）
+				2. The Issues—A Safety File（问题——安全文件）（95）
+				3. The Issues—The Report（问题——报告）（97）
+			3. OUR OWN MEMORY MANAGER—DESIGN（我们自己的内存管理器——设计）（102）
+			4. HARDWARE PROPERTIES（硬件特性）（102）
+				1. Endian（字节序）（102）
+				2. Alignment（结盟）（106）
+				3. Access（使用权）（108）
+			5. SOFTWARE PROPERTIES（软件特性）（108）
+				1. Fragmentation（碎片化）（108）
+				2. The Standard Library（标准库）（110）
+			6. OUR OWN MEMORY MANAGER—IMPLEMENTATION（我们自己的内存管理器——实现）（111）
+				1. Conceptual Design（概念设计）（112）
+				2. Allocating Memory（分配内存）（115）
+				3. Garbage Collection（垃圾收集）（118）
+				4. Releasing Memory（释放内存）（119）
+			7. DEBUGGING MEMORY（调试内存）（120）
+				1. Profiling Memory Usage（分析内存使用情况）（123）
+				2. Allocation Wrappers（分配包装器）（123）
+			8. HIGH-LEVEL MEMORY USAGE（高级内存使用）（123）
+				1. Application Memory Usage（应用程序内存使用情况）（125）
+			9. Using Allocation Within Subsystems（在子系统内使用分配）（136）
+				1. Global versus Game（全球与游戏）（138）
+			10. OTHER GUIDELINES（其他指南）（139）
+				1. The Stack（堆栈）（139）
+				2. Local Variables（局部变量）（141）
+				3. Intelligent Buffer Usage（智能缓冲区使用）（142）
+				4. Minimize Dynamic Memory（最小化动态内存）（142）
+		4. The CPU（144）
+			1. THE CPU（144）
+				1. Timer Resolution（定时器分辨率）（145）
+				2. Processor Yield（处理器产量）（147）
+				3. Programming the Clock（时钟编程）（148）
+				4. Programming Timers（定时器编程）（151）
+				5. Programming Profilers（编程分析器）（151）
+			2. TIME SLICING（时间切片）（153）
+			3. CPU SCALABILITY（CPU可扩展性）（159）
+				1. Lowest Common Denominator（最小公分母）（159）
+				2. Scale Back（缩减）（160）
+				3. Level of Detail (LOD)（细节层次  (LOD)）（160）
+				4. Extra Burn（额外燃烧）（161）
+			4. PARALLEL PROCESSING（并行处理）（162）
+				1. Parallel Determination（平行测定）（162）
+				2. Parallel Distribution（并行分布）（164）
+				3. Parallel Implementation（并行实施）（170）
+				4. Task Scheduling（任务调度）（181）
+			5. AVOIDING THE WHOLE PROBLEM（避免整个问题）（183）
+		5. Storage（存储）（186）
+			1. THE FOUR CORNERS OF STORAGE（存储的四个角落）（186）
+			2. THE PROBLEMS（问题）（187）
+			3. THE DATA CONVERSION PROCESS（数据转换过程）（191）
+				1. Serialization（序列化）（194）
+				2. Endian Issues（字节序问题）（199）
+				3. Extensibility and Future-Proofing（可扩展性和面向未来）（205）
+				4. Introducing Platform-Specific Data（引入特定于平台的数据）（209）
+				5. Introducing Platform-Specific Resources（引入特定于平台的资源）（217）
+				6. Serializing Class Hierarchies（序列化类层次结构）（218）
+				7. Object Creation（对象创建）（220）
+				8. Interdependent Objects（相互依赖的对象）（221）
+				9. Patching Pointers（修补指针）（222）
+			4. DESIGNING A FILESYSTEM（设计文件系统）（226）
+				1. Disc Size（光盘尺寸）（229）
+				2. Layout（布局）（230）
+			5. FILESYSTEM IMPLEMENTATION（文件系统实现）（233）
+				1. Filesystem Devices（文件系统设备）（235）
+				2. File Handling（文件处理）（241）
+				3. Filesystem Shortcuts（文件系统快捷方式）（245）
+				4. Filesystem Additions（文件系统添加）（246）
+			6. HANDLING PHYSICAL DEVICES（处理物理设备）（246）
+				1. Asynchronous Loading（异步加载）（247）
+				2. Synchronous Loading（同步加载）（252）
+				3. Block Sizes and Caching（块大小和缓存）（254）
+				4. The General Case（一般情况）（257）
+			7. CREATING BACK DOORS（创建后门）（257）
+				1. Going Around the Problem（解决问题）（258）
+				2. Knowing the Device（了解设备）（258）
+				3. A ZIP Warning（邮政编码警告）（258）
+		6. Debugging（调试）（262）
+			1. BASIC REQUIREMENTS（基本要求）（262）
+			2. DEBUGGING METHODS（调试方法）（263）
+				1. Coding Style（编码风格）（263）
+				2. Debugging Methodologies（调试方法）（269）
+			3. IMPLEMENTING DEBUGGING CODE（实现调试代码）（271）
+				1. Trace Messages（跟踪消息）（272）
+				2. Trace Levels（痕量水平）（273）
+				3. Handling Errors（处理错误）（282）
+				4. Assertions（断言）（283）
+				5. Memory（内存）（286）
+			4. OUTPUT TARGETS（产出目标）（292）
+				1. Time Delay（延时）（293）
+				2. Flushes（冲水）（293）
+				3. Sending to Host（发送至主机）（293）
+				4. Bugs in the Compiler（编译器中的错误）（293）
+				5. Bugs in the Debugging Code（调试代码中的错误）（294）
+				6. Reproduction Bugs（繁殖错误）（294）
+				7. Hardware Problems（硬件问题）（294）
+				8. Screen（屏幕）（294）
+				9. Second Sight（第二次看见）（295）
+				10. File（文件）（295）
+				11. Serial Port（串行端口）（296）
+			5. MAKING DATA READABLE（使数据可读）（296）
+				1. Multithreaded Output（多线程输出）（297）
+			6. MAINTAINING CONSISTENCY（保持一致性）（299）
+				1. Isolating System Calls（隔离系统调用）（299）
+				2. Tabulating Trigonometry（三角学制表）（303）
+				3. Random Numbers（随机数）（308）
+				4. Code Checking（代码检查）（313）
+		7. System I/O（系统输入/输出）（316）
+			1. ABSTRACTING BASICS（抽象基础知识）（316）
+			2. THE NULL DRIVER（空司机）（317）
+				1. Prepared Singleton（准备单例）（317）
+				2. Double Chance Functions（双机会函数）（319）
+			3. INPUT DEVICES（输入设备）（320）
+				1. General Implementation（一般实施）（321）
+				2. Input Logging（输入记录）（332）
+			4. Gameplay Abstractions（游戏玩法抽象）（336）
+				1. The Bottom Line（底线）（339）
+		8. The Audio System（音频系统）（342）
+			1. HIGH-LEVEL PARAMETERS（高级参数）（342）
+			2. PLAYING MUSIC（玩音乐）（343）
+				1. CD Audio（CD音频）（344）
+				2. MP3 and Ogg Vorbis（MP3  和  Ogg  Vorbis）（344）
+				3. MIDI（345）
+				4. Customized Formats（定制格式）（346）
+			3. PLAYING SOUNDS（播放声音）（347）
+				1. Raw Data（原始数据）（347）
+				2. Compressed Data（压缩数据）（347）
+				3. Metadat（元数据）（348）
+				4. Looped Sounds（循环声音）（348）
+			4. RESOURCING DATA（资源数据）（348）
+				1. In Memory（在内存中）（349）
+				2. From a Stream（来自流）（349）
+				3. Asynchronous Loading（异步加载）（351）
+			5. MIXER CONTROL（混音器控制）（351）
+				1. UDE（352）
+				2. The Gameplay Mixer（游戏混合器）（355）
+				3. The Technology Mixer（技术混合器）（359）
+				4. The User Mixer（用户混合器）（360）
+			6. VIDEO PLAYBACK INTERACTION（视频播放互动）（362）
+		9. The Graphics Engine（图形引擎）（364）
+			1. HISTORY（历史）（364）
+				1. Common Code（通用代码）（365）
+			2. TECHNIQUES（技巧）（367）
+				1. Static Texture Changes（静态纹理变化）（367）
+				2. Dynamic Texture Changes（动态纹理变化）（370）
+				3. Translucent Textures（半透明纹理）（373）
+				4. State Changes（状态变化）（374）
+				5. Mode Changes（模式变化）（377）
+				6. Special Cases（特别案例）（379）
+				7. Textures（纹理）（380）
+				8. Meshes（网格）（383）
+			3. ENGINE FEATURES（引擎特点）（384）
+				1. Camera（相机）（384）
+				2. Viewports（视口）（385）
+				3. Lights（灯）（386）
+				4. The Scene（现场）（387）
+				5. Abstracted Features（抽象特征）（388）
+				6. Texture Handling（纹理处理）（389）
+				7. Meshes（网格）（390）
+				8. Sprites（精灵）（393）
+				9. Fonts and 2D Overlays（字体和  2D  叠加）（394）
+			4. ABSTRACTING SPECIAL EFFECTS（抽象特殊效果）（395）
+				1. Engine Effects（引擎效果）（395）
+				2. Game Effects（游戏效果）（395）
+				3. Special Effects（特殊效果）（395）
+			5. GRAPHICS ON TELEVISION（电视图像）（396）
+				1. Text（文本）（396）
+				2. Contrasting Colors（对比色）（397）
+				3. Image Sizes（图像尺寸）（397）
+				4. Balancing Colors（平衡颜色）（398）
+				5. Physical Testing（物理测试）（398）
+		10. Network Programming（网络编程）（400）
+			1. PACKET PROGRAMMING（数据包编程）（400）
+			2. NETWORKING BACKGROUND（网络背景）（401）
+			3. THE PHYSICAL NETWORK（物理网络）（403）
+				1. The Conceptual Network Driver（概念网络驱动程序）（403）
+			4. THE NULL NETWORK（空网络）（412）
+				1. Network Latency（网络延迟）（413）
+				2. Dropped Packets（丢弃的数据包）（414）
+				3. The Two Modes（两种模式）（415）
+			5. CROSS-NETWORK PROGRAMMING（跨网络编程）（416）
+		11. The Bits We Forget About（我们忘记的那些事）（418）
+			1. THE DEVELOPMENT PROCESS（开发过程）（418）
+				1. The Environment（环境）（418）
+				2. Source Code（源代码）（422）
+			2. PRESENTATION ISSUES（演示问题）（424）
+				1. PAL and NTSC（PAL  和  NTSC）（424）
+				2. Frontend Screens（前端屏幕）（426）
+				3. Foreign Language Versions（外语版本）（427）
+			3. OPERATING SYSTEM CONSIDERATIONS（操作系统注意事项）（430）
+				1. The Size of size_t（size_t  的大小）（430）
+				2. Code Overlays（代码叠加）（430）
+				3. Initializing the OS（初始化操作系统）（431）
+				4. Title Screens（标题画面）（434）
+				5. Attract Mode（吸引模式）（435）
+				6. Reset Buttons（重置按钮）（435）
+				7. Memory Cards（存储卡）（436）
+				8. Disc Covers（光盘盖）（440）
+			4. ARTIFACTS OF （代码工件）（441）
+				1. The Consequence of STL（STL的后果）（441）
+				2. Exceptions（例外情况）（443）
+				3. Game Configuration（游戏配置）（445）
+				4. Hacking It（破解它）（445）
+	5. Android NDK Game Development Cookbook（Android NDK 游戏开发指南）
+		1. Establishing a Build Environment（建立构建环境）（24）
+			1. Introduction（介绍）（25）
+			2. Installing Android development tools on Windows（在Windows上安装Android开发工具）（25）
+			3. Installing Android development tools on Linux（在Linux上安装Android开发工具）（29）
+			4. Creating an application template manually（手动创建应用程序模板）（30）
+			5. Adding native C++ code to your application（将本机  C++  代码添加到您的应用程序）（34）
+			6. Switching NDK toolchains（切换  NDK  工具链）（37）
+			7. Supporting multiple CPU architectures（支持多种CPU架构）（38）
+			8. Basic rendering with OpenGL ES（使用  OpenGL  ES  进行基本渲染）（39）
+			9. Going cross platform（跨平台）（42）
+			10. Unifying the cross-platform code（统一跨平台代码）（48）
+			11. Linking and source code organization（链接和源代码组织）（50）
+			12. Signing release Android applications（签署发布Android应用程序）（50）
+		2. Porting Common Libraries（移植通用库）（54）
+			1. Introduction（介绍）（55）
+			2. Compiling the native static libraries for Windows（编译 Windows 的本机静态库）（55）
+			3. Compiling the native static libraries for Android（编译 Android 原生静态库）（57）
+			4. Compiling the libcurl networking library（编译  libcurl  网络库）（59）
+			5. Compiling the OpenAL library（编译  OpenAL  库）（60）
+			6. Compiling libvorbis, libmodplug, and libtheora（编译 libvorbis、libmodplug 和 libtheora）（61）
+			7. Using the FreeImage graphics library（使用  FreeImage  图形库）（62）
+			8. Using the FreeType library for text rendering（使用  FreeType  库进行文本渲染）（65）
+			9. Implementing timing in physics（在物理学中实现计时）（71）
+			10. Rendering graphics in 2D（以  2D  形式渲染图形）（74）
+			11. Setting up Box2D simulations（设置  Box2D  模拟）（76）
+			12. Building the ODE physical library（构建ODE物理库）（78）
+		3. Networking（联网）（80）
+			1. Introduction（介绍）（80）
+			2. Fetching list of photos from Flickr and Picasa（从 Flickr 和 Picasa 获取照片列表）（81）
+			3. Downloading images from Flickr and Picasa（从 Flickr 和 Picasa 下载图像）（85）
+			4. Performing cross-platform multithreading（从  Flickr  和  Picasa  下载图像）（89）
+			5. Synchronizing native cross-platform threads（同步本机跨平台线程）（91）
+			6. Managing memory using reference counting（使用引用计数管理内存）（93）
+			7. Implementing asynchronous task queues（实现异步任务队列）（98）
+			8. Handling asynchronous callbacks invocation（处理异步回调调用）（100）
+			9. Working with the network asynchronously（异步使用网络）（103）
+			10. Detecting a network address（检测网络地址）（106）
+			11. Writing the HTTP server（编写  HTTP  服务器）（108）
+		4. Organizing a Virtual Filesystem（组织虚拟文件系统）（112）
+			1. Introduction（介绍）（113）
+			2. Abstracting file streams（抽象文件流）（113）
+			3. Implementing portable memory-mapped files（实现便携式内存映射文件）（117）
+			4. Implementing file writers（实现文件编写器）（119）
+			5. Working with in-memory files（处理内存中的文件）（124）
+			6. Implementing mount points（实施挂载点）（125）
+			7. Enumerating files in the .zip archives（枚举 .zip  存档中的文件）（129）
+			8. Decompressing files from the .zip archives（从 .zip  存档中解压文件）（134）
+			9. Loading resources asynchronously（异步加载资源）（136）
+			10. Storing application data（存储应用程序数据）（140）
+		5. Cross-platform Audio Streaming（跨平台音频流）（144）
+			1. Introduction（介绍）（144）
+			2. Initializing OpenAL and playing the .wav files（初始化  OpenAL  并播放 .wav  文件）（145）
+			3. Abstracting basic audio components（抽象基本音频组件）（149）
+			4. Streaming sounds（流媒体声音）（161）
+			5. Decoding Ogg Vorbis files（解码Ogg  Vorbis文件）（164）
+			6. Decoding tracker music using ModPlug（使用  ModPlug  解码跟踪器音乐）（170）
+		6. Unifying OpenGL ES 3 and OpenGL 3（统一 OpenGL ES 3 和 OpenGL 3）（172）
+			1. Introduction（介绍）（172）
+			2. Unifying the OpenGL 3 core profile and OpenGL ES 2（统一 OpenGL 3 核心配置文件和 OpenGL ES 2）（173）
+			3. Initializing the OpenGL 3 core profile on Windows（在 Windows 上初始化 OpenGL 3 核心配置文件）（177）
+			4. Initializing OpenGL ES 2 on Android（在  Android  上初始化  OpenGL  ES  2）（182）
+			5. Unifying the GLSL 3 and GLSL ES 2 shaders（统一  GLSL  3  和  GLSL  ES  2  着色器）（187）
+			6. Manipulating geometry（操纵几何图形）（193）
+			7. Unifying vertex arrays（统一顶点数组）（196）
+			8. Creating a wrapper for textures（创建纹理的包装器）（200）
+			9. Creating a canvas for immediate rendering（创建用于立即渲染的画布）（203）
+		7. Cross-platform UI and Input Systems（跨平台 UI 和输入系统）（208）
+			1. Introduction（介绍）（208）
+			2. Processing multi-touch events on Android（Android  上的多点触摸事件处理）（209）
+			3. Setting up multi-touch emulation on Windows（在 Windows 上设置多点触控模拟）（212）
+			4. Handling multi-touch events on Windows（在  Windows  上处理多点触摸事件）（213）
+			5. Recognizing gestures（识别手势）（219）
+			6. Implementing an on-screen joypad（实现屏幕游戏手柄）（227）
+			7. Using FreeType for text rendering（使用  FreeType  进行文本渲染）（233）
+			8. Localization of in-game strings（游戏内字符串的本地化）（244）
+		8. Writing a Match-3 Game（编写三消游戏）（248）
+			1. Introduction（介绍）（248）
+			2. Handling asynchronous multi-touch input（处理异步多点触控输入）（249）
+			3. Improving the audio playback mechanism（改进音频播放机制）（251）
+			4. Shutting down the application（关闭应用程序）（254）
+			5. Implementing the main loop（实现主循环）（256）
+			6. Creating a multiplatform gaming engine（创建多平台游戏引擎）（258）
+			7. Writing the match-3 game（编写三消游戏）（261）
+			8. Managing shapes（管理形状）（271）
+			9. Managing the game field logic（管理游戏字段逻辑）（274）
+			10. Implementing user interaction within a game loop（在游戏循环中实现用户交互）（276）
+		9. Writing a Picture Puzzle Game（编写一个图片益智游戏）（282）
+			1. Introduction（介绍）（282）
+			2. Implementing picture puzzle game logic（实现图片拼图游戏逻辑）（283）
+			3. Implementing the animated 3D image selector（实现动画 3D 图像选择器）（289）
+			4. Page-based user interface（基于页面的用户界面）（298）
+			5. Image gallery with Picasa downloader（带  Picasa  下载器的图片库）（303）
+			6. Implementing the complete picture-puzzle game（实现完整的图片拼图游戏）（307）
+	6. Game Programming Gems 2（游戏编程精粹2）
+		1. 1
+			1. Optimization for C++ Games（C++ 游戏优化）（3）
+				1. Object Construction and Destruction（对象构造和销毁）（3）
+				2. Memory Management（内存管理）（7）
+				3. Virtual Functions（虚函数）（7）
+				4. Code Size（代码大小）（9）
+				5. The Standard Template Library（标准模板库）（10）
+				6. Advanced Features（高级功能）（12）
+			2. Inline Functions Versus Macros（内联函数与宏）（14）
+				1. Advantages of Inline Functions（内联函数的优点）（14）
+				2. When to Use Inline Functions（何时使用内联函数）（16）
+				3. When to Use Macros（何时使用宏）（16）
+				4. Microsoft Specifics（微软细节）（17）
+			3. Programming with Abstract Interfaces（使用抽象接口编程）（18）
+				1. Abstract Interfaces（抽象接口）（18）
+				2. Adding a Factory（添加工厂）（20）
+				3. Abstract Interfaces as Traits（作为特征的抽象接口）（21）
+				4. Everything Has a Cost（一切都有成本）（24）
+				5. Conclusion（结论）（25）
+			4. Exporting C++ Classes from DLLs（从  DLL  导出  C++  类）（26）
+				1. Exporting a Function（导出函数）（26）
+				2. Exporting a Class（导出类）（26）
+				3. Exporting Class Member Functions（导出类成员函数）（28）
+				4. Exporting Virtual Class Member Functions（导出虚拟类成员函数）（29）
+				5. Summary（概括）（30）
+			5. Protect Yourself from DLL Hell and Missing OS Functions（保护自己免受 DLL Hell 和缺失操作系统功能的影响）（31）
+				1. Implicit vs. Explicit Linking（隐式链接与显式链接）（31）
+				2. LoadLibrary and GetProcAddress（LoadLibrary  和  GetProcAddress）（32）
+				3. Guarding Against DirectX（防范  DirectX）（32）
+				4. Using OS-Specific Features（使用特定于操作系统的功能）（34）
+				5. Summary（概括）（35）
+			6. Dynamic Type Information（动态类型信息）（36）
+				1. Introducing the Dynamic Type Information Class（动态类型信息类简介）（36）
+				2. Exposing and Querying the DTI（公开和查询  DTI）（37）
+				3. Inheritance Means "IsA"（继承的意思是“IsA”）（38）
+				4. Handling Generic Objects（处理通用对象）（39）
+				5. Implementing Persistent Type Information（实现持久类型信息）（41）
+				6. Applying Persistent Type Information to a Game Save Database（将持久类型信息应用到游戏保存数据库）（42）
+				7. Conclusion（结论）（43）
+			7. A Property Class for Generic C++ Member Access（用于通用 C++ 成员访问的属性类）（44）
+				1. The Code（代码）（44）
+				2. Additional Uses（额外用途）（47）
+				3. Additional Reading（补充阅读）（48）
+			8. A Game Entity Factory（游戏实体工厂）（49）
+				1. Components（成分）（49）
+				2. Flyweight, Behavior, and Exported Classes（Flyweight、行为和导出类）（50）
+				3. Flyweight Objects（享元对象）（50）
+				4. SAMMy, Where Are You?（萨米，你在哪里？）（50）
+				5. Behavioral Class Hierarchy（行为类层次结构）（52）
+				6. Using the Template Method Pattern for Behavior Assignment（使用模板方法模式进行行为分配）（53）
+				7. Exported Classes（导出类）（53）
+				8. The Entity Factory（实体工厂）（55）
+				9. Selecting Strategies at Runtime（在运行时选择策略）（56）
+				10. Final Notes（最后的注释）（58）
+			9. Adding Deprecation Facilities to C++（向C++添加弃用工具）（60）
+				1. Possible Solutions（可能的解决方案）（60）
+				2. The Ideal Solution（理想的解决方案）（61）
+				3. Using and Assigning Deprecated Functions（使用和分配已弃用的函数）（61）
+				4. Implementing Deprecation in C++（在  C++  中实现弃用）（62）
+				5. What Could Be Improved?（有什么可以改进的地方？）（63）
+			10. A Drop-in Debug Memory Manager（嵌入式调试内存管理器）（64）
+				1. Getting Started（入门）（64）
+				2. Memory Manager Logging（内存管理器日志记录）（66）
+				3. Reporting the Information（报告信息）（68）
+				4. Things to Keep in Mind（要记住的事情）（69）
+				5. Further Enhancements（进一步增强）（71）
+			11. A Built-in Game Profiling Module（内置游戏分析模块）（72）
+				1. Profiling Basics（分析基础知识）（72）
+				2. Commercially Available Tools（市售工具）（73）
+				3. Why Roll Our Own?（为什么要自己推出？）（73）
+				4. Profile Module Requirements（配置文件模块要求）（74）
+				5. Architecture and Implementation（架构与实施）（74）
+				6. Implementation Details（实施细节）（76）
+				7. Data Analysis（数据分析）（76）
+				8. Implementation Notes（实施说明）（76）
+			12. Linear Programming Model for Windows-based Games（基于 Windows 的游戏的线性规划模型）（77）
+				1. Updating the World（更新世界）（78）
+				2. The Solution: Multithreading（解决方案：多线程）（79）
+			13. Stack Winding（叠绕）（83）
+				1. Simple TempRet（简单的TempRet）（83）
+				2. Listing 1.13.1 The TempRet routine（清单  1.13.1  TempRet  例程）（83）
+				3. TempRet Chains（TempRet  链）（84）
+				4. Listing 1.13.2 Winding multiple routines onto the stack（清单1.13.2将多个例程缠绕到堆栈上）（85）
+				5. Thunking（沉思）（86）
+				6. Listing 1.13.3 Visual C++ example using TempRet（清单  1.13.3  使用  TempRet  的  Visual  C++  示例）（86）
+				7. Recursion（递归）（87）
+				8. Listing 1.13.4 The SafeEnter and SafeExit functions that aid recursion（清单  1.13.4  辅助递归的  SafeEnter  和  SafeExit  函数）（87）
+				9. Listing 1.13.5 Recursive example using SafeEnter and SafeExit（清单  1.13.5  使用  SafeEnter  和  SafeExit  的递归示例）（88）
+			14. Self-Modifying Code（自修改代码）（89）
+				1. The Principles of RAM-Code（RAM  代码的原理）（89）
+				2. A Fast Bit Blitter（快速位碎块）（90）
+			15. File Management Using Resource Files（使用资源文件进行文件管理）（98）
+				1. What Is a Resource File?（什么是资源文件？）（98）
+				2. Listing 1.15.1 Resource file structure.（清单  1.15.1  资源文件结构。）（98）
+				3. Listing 1.15.2 File lump structure.（清单  1.15.2  文件块结构。）（99）
+				4. Design（设计）（99）
+				5. Implementation（执行）（100）
+				6. Last Words about the Implementation（关于实施的最后一句话）（102）
+				7. Conclusion（结论）（102）
+			16. Game Input Recording and Playback（游戏输入录制和回放）（103）
+				1. What Exactly Is Input Recording Useful For?（输入记录到底有什么用？）（103）
+				2. What Does ItJTake?（需要什么？）（105）
+				3. Testing Your Input Recording（测试您的输入录音）（108）
+				4. Conclusion（结论）（108）
+			17. A Flexible Text Parsing System（灵活的文本解析系统）（110）
+				1. The Parsing System（解析系统）（110）
+				2. Macros, Headers, and Preprocessing Magic（宏、标头和预处理魔法）（111）
+				3. The Parsing System Explained（解析系统解释）（112）
+				4. Wrapping Up（包起来）（116）
+			18. A Generic Tweaker（通用调整器）（116）
+				1. Requirements Analysis（需求分析）（116）
+				2. Implementation（实现）（116）
+				3. Usage（用法）（121）
+				4. Graphical User Interface（图形用户界面）（122）
+				5. Note（笔记）（123）
+				6. Acknowledgment（致谢）（124）
+			19. Genuine Random Number Generation（真正的随机数生成）（125）
+				1. Pseudo-Randomness（伪随机性）（125）
+				2. Genuine Randomness（真正的随机性）（125）
+				3. Random Input Sources（随机输入源）（126）
+				4. Hardware Sources（硬件资源）（127）
+				5. Mixing Function（混合功能）（127）
+				6. Limitations（局限性）（127）
+				7. Implementation（执行）（128）
+				8. How Random Is GenRand?（GenRand  的随机性如何？）（129）
+			20. Using Bloom Filters to Improve Computational Performance（使用布隆过滤器提高计算性能）（131）
+				1. Bloom's Way（布鲁姆之路）（131）
+				2. Possible Scenarios（可能的情况）（131）
+				3. How It Works（怎么运行的）（132）
+				4. Definitions（定义）（132）
+				5. Example 1（实施例1）（133）
+				6. Example 2（实施例2）（137）
+				7. Final Notes（最后的注释）（137）
+				8. Conclusion（结论）（138）
+			21. 3ds max Skin Exporter and Animation Toolkit（3ds max 皮肤导出器和动画工具包）（139）
+				1. Exporting（出口）（140）
+				2. Listing 1.21.1: Exporting the Mesh to a File（清单1.21.1：将网格导出到文件）（147）
+				3. Listing 1.21.2: Reading Bone Assignments（清单  1.21.2：读取骨骼分配）（148）
+			22. Using Web Cameras in Video Games（在视频游戏中使用网络摄像头）（151）
+				1. Initializing the Web Cam Capture Window（初始化网络摄像头捕获窗口）（151）
+				2. Manipulating Web Cam Data（操作网络摄像头数据）（156）
+				3. Conclusion（结论）（160）
+		2. 2
+			1. Floating-Point Tricks: Improving Performance with IEEE Floating Point（浮点技巧：利用 IEEE 浮点提高性能）（161）
+				1. Overview（概述）（161）
+				2. IEEE Floating-Point Format（IEEE  浮点格式）（162）
+				3. Floating-Point Tricks（浮点技巧）（163）
+				4. Linear Lookup Tables for Sine and Cosine（正弦和余弦线性查找表）（168）
+				5. Logarithmic Optimization of Square Root（平方根的对数优化）（170）
+				6. Optimization of Arbitrary Functions（任意函数的优化）（171）
+				7. Performance Measurement（绩效衡量）（174）
+				8. Conclusions（结论）（175）
+			2. Vector and Plane Tricks（矢量和平面技巧）（176）
+				1. Altitude Relative to the Collision Plane（相对于碰撞平面的高度）（176）
+				2. Pinning Down the Collision Point（确定碰撞点）（177）
+				3. Distance to the Collision Point（到碰撞点的距离）（178）
+				4. Reflecting Off the Collision Plane（从碰撞平面反射）（179）
+				5. Collisions with Damping（与阻尼碰撞）（182）
+			3. Fast, Robust Intersection of 3D Line Segments（3D 线段的快速、稳健的交集）（185）
+				1. What Makes This Algorithm Robust?（是什么让这个算法如此强大？）（185）
+				2. The Problem Statement（问题陈述）（185）
+				3. Derivation of Closed-Form Solution Equations（闭式解方程的推导）（188）
+				4. Dealing with Finite Line Segments（处理有限线段）（194）
+				5. Implementation Description（实施说明）（196）
+				6. Opportunities to Optimize（优化的机会）（197）
+				7. Conclusions（结论）（198）
+			4. Inverse Trajectory Determination（逆轨迹确定）（199）
+				1. A Special Case:Both Points at the Same Elevation（特殊情况：两个点处于同一高程）（201）
+				2. Optimizing Implementation（优化实施）（207）
+				3. Summary（概括）（208）
+			5. The Parallel Transport Frame（并行传输框架）（209）
+				1. The Technique（技术）（209）
+				2. Conclusion（结论）（213）
+			6. Smooth C2 Quaternion-based Flythrough Paths（基于 C2 四元数的平滑飞行路径）（241）
+				1. Introduction（介绍）（214）
+				2. Position Interpolation（位置插补）（214）
+				3. Orientation Interpolation（方向插补）（216）
+				4. Direction of Rotation and Selective Negation（旋转方向和选择性否定）（217）
+				5. Spline Interpolation for Quaternions（四元数的样条插值）（218）
+				6. Singularity in the Rational Mapping（有理映射中的奇异性）（219）
+				7. Camera Cuts（镜头剪辑）（220）
+				8. Code（代码）（220）
+			7. Recursive Dimensional Clustering: A Fast Algorithm for Collision Detection（递归维度聚类：碰撞检测的快速算法）（222）
+				1. Listing 2.7.1 Brute-force comparison algorithm（清单2.7.1 暴力比较算法）（222）
+				2. Other Applications（其他应用）（223）
+				3. Listing 2.7.2 Algorithm for finding groups along one dimension（清单  2.7.2  沿一维查找群的算法）（224）
+				4. A Flaw in the Algorithm（算法中的一个缺陷）（227）
+				5. Finding Pairs in Collision（寻找碰撞对）（228）
+				6. Listing 2.7.3 RDC algorithm (pseudocode)（清单2.7.3  RDC算法（伪代码））（229）
+				7. Time Complexity（时间复杂度）（230）
+				8. Conclusion（结论）（231）
+			8. Programming Fractals（分形编程）（233）
+				1. The Plasma Fractal（等离子体分形）（234）
+				2. The Fault Fractal（断层分形）（234）
+				3. Fractal Brownian Motion（分形布朗运动）（235）
+				4. Implementation（执行）（236）
+				5. Using FBM（使用FBM）（239）
+		3. 3
+			1. Strategies for Optimizing Al（优化人工智能的策略）（241）
+				1. Strategy f 1: Use Event-Driven Behavior Rather than Polling（策略  f  1：使用事件驱动的行为而不是轮询）（241）
+				2. Strategy #2: Reduce Redundant Calculations（策略#2：减少冗余计算）（242）
+				3. Strategy #3: Centralize Cooperation with Managers（策略#3：集中与管理者的合作）（242）
+				4. Strategy #4: Run the Al Less Often（策略#4：减少运行  Al  的频率）（243）
+				5. Strategy #5: Distribute the Processing over Several Frames（策略#5：将处理分布到多个帧上）（243）
+				6. Strategy #6: Employ Level-of-Detail AI（策略#6：采用详细级别的人工智能）（244）
+				7. Strategy #7: Solve Only Part of the Problem（策略#7：只解决部分问题）（244）
+				8. Strategy #8^ Do the Hard Work Offline（策略  #8^  离线完成艰苦工作）（245）
+				9. Strategy #9: Use Emergent Behavior to Avoid Scripting（策略#9：使用紧急行为来避免脚本）（245）
+				10. Strategy #10: Amortize Query Costs with Continuous Bookkeeping（策略#10：通过连续记账来摊销查询成本）（245）
+				11. Strategy #11; Rethink the Problem（策略#11；重新思考问题）（246）
+				12. Conclusion（结论）（247）
+			2. Micro-Threads for Game Object Al（游戏对象 AI 的微线程）（248）
+				1. A Simpler Method（更简单的方法）（249）
+				2. Micro-Threads（微线程）（250）
+				3. Stack Management（堆栈管理）（252）
+				4. Complications（并发症）（253）
+				5. Conclusion（结论）（254）
+			3. Managing Al with Micro-Threads（使用微线程管理人工智能）（255）
+				1. Piece by Piece（一点一点）（255）
+				2. Good Behavior（好的行为）（256）
+				3. It's All in the Mind（一切尽在心中）（257）
+				4. Complications（并发症）（259）
+				5. Conclusion（结论）（261）
+			4. An Architecture for RTS Command Queuing（RTS 命令队列架构）（263）
+				1. RTS Commands（RTS命令）（263）
+				2. Command Queuing（命令排队）（264）
+				3. Cyclic Commands（循环命令）（265）
+				4. Conclusion（结论）（268）
+			5. A High-Performance Tile-based Line-of Sight and Search System（高性能基于平铺的视线和搜索系统）（269）
+				1. Overview（概述）（269）
+				2. Definitions（定义）（270）
+				3. Component #1: Individual Player Visibility Maps（组件#1：单个玩家可见性地图）（270）
+				4. Component #2: LOS Templates（组件#2：LOS  模板）（271）
+				5. Component #3: The Combined Visibility Map（组件#3：组合可见性图）（273）
+				6. Improved Searching（改进的搜索）（274）
+				7. Conclusion（结论）（276）
+			6. Influence Mapping（影响力图）（277）
+				1. Influence Maps（影响力地图）（277）
+				2. A Simple Influence Map（简单的影响力图）（278）
+				3. Influence Map Cell Data（影响图单元格数据）（279）
+				4. Computing Desirability Values（计算意愿值）（280）
+				5. Determining Optimal Cell Size（确定最佳单元尺寸）（282）
+				6. Influence Propagation（影响力传播）（282）
+				7. Accounting for Terrain（考虑地形）（283）
+				8. Special Considerations（特别注意事项）（285）
+				9. Refreshing the Influence Map（刷新影响力地图）（285）
+				10. Influence Maps in 3D Environments（3D  环境中的影响力地图）（286）
+			7. Strategic Assessment Techniques（战略评估技术）（288）
+				1. The Resource Allocation Tree（资源分配树）（288）
+				2. Calculating Desired Allocation（计算所需的分配）（290）
+				3. Determining Current Allocation（确定当前分配）（290）
+				4. Strategic Decision-Making（战略决策）（291）
+				5. Measuring Value（测量值）（292）
+				6. The Dependency Graph（依赖图）（292）
+				7. Dependency Graph Nodes（依赖图节点）（293）
+				8. Economic Planning（经济规划）（294）
+				9. Finding Vulnerable Dependencies（查找易受攻击的依赖项）（294）
+				10. Strategic Inference（策略推理）（295）
+				11. Player Personality（玩家个性）（296）
+				12. Putting It All Together（把它们放在一起）（296）
+			8. Terrain Reasoning for 3D Action Games（3D 动作游戏的地形推理）（297）
+				1. Representing Terrain to Reason About It（代表地形来推理它）（297）
+				2. Waypoints（航点）（298）
+				3. Example Terrain and AI Needs（地形和  AI  需求示例）（298）
+				4. Tactical Analysis（战术分析）（299）
+				5. From Tactical Values to Waypoint Properties（从战术价值到航点属性）（300）
+				6. Computing Way point Properties（计算路点属性）（301）
+				7. Learning from Gameplay Experience（从游戏体验中学习）（304）
+				8. Putting Terrain Reasoning in the Game（将地形推理融⼊游戏中）（304）
+				9. Other Applications（其他应用）（305）
+				10. Conclusion（结论）（305）
+			9. Expanded Geometry for Points-of-Visibility Pathfinding（用于可视点寻路的扩展几何形状）（307）
+				1. Defining a Collision Model（定义碰撞模型）（308）
+				2. Polygonal Pathfinding（多边形寻路）（308）
+				3. Expand and Conquer（扩张和征服）（308）
+				4. Minkowski Sum of Convex Polygons（凸多边形的闵可夫斯基和）（309）
+				5. Expanding Nonconvex Geometry（扩展非凸几何）（311）
+				6. Choosing a Collision Shape（选择碰撞形状）（312）
+				7. Conclusion（结论）（313）
+			10. Optimizing Points-of-Visibility Pathfinding（优化可视点寻路）（314）
+				1. Points-of-Visibility Pathfinding（可视点寻路）（314）
+				2. Storing the Shortest Path to Each Point（存储到每个点的最短路径）（315）
+				3. Connecting the Corners（连接角落）（315）
+				4. Silhouette Zones（剪影区）（317）
+				5. Using Silhouette Zones with Spatial Partitioning（使用轮廓区域进行空间分区）（319）
+				6. Conclusion（结论）（319）
+			11. Flocking with Teeth: Predators and Prey（长满牙齿：掠食者和猎物）（320）
+				1. A Whole New World（一个全新的世界）（321）
+				2. Flocking with Teeth（带齿植绒）（324）
+				3. Limitations and Potential Improvements（局限性和潜在改进）（324）
+			12. A Generic Fuzzy State Machine in C++（C++ 中的通用模糊状态机）（327）
+				1. Why Use a FuSM In a Game?（为什么在游戏中使用  FuSM？）（328）
+				2. How To Use FuSMs in a Game（如何在游戏中使用  FuSM）（329）
+				3. Review of Game Programming Gems' Generic Finite State Machine in C++（游戏编程 Gems 的 C++ 通用有限状态机回顾）（329）
+				4. Adapting the Generic FSM in C++ to FuSM in C++（将  C++  中的通用  FSM  适配为  C++  中的  FuSM）（330）
+				5. Now Fuzzy Up Your Games!（现在模糊你的游戏！）（331）
+			13. Imploding Combinatorial Explosion in a Fuzzy System（模糊系统中的内爆组合爆炸）（332）
+				1. The Problem（问题）（332）
+				2. The Solution（解决方案）（333）
+				3. Concrete Example（具体例子）（335）
+				4. Conclusion（结论）（340）
+			14. Using a Neural Network in a Game: A Concrete Example（在游戏中使用神经网络：具体示例）（341）
+				1. The Game（游戏）（341）
+				2. The Multilayer Perceptron（多层感知器）（341）
+				3. Input Selection（输⼊选择）（343）
+				4. Collecting Data（收集数据）（344）
+				5. Training the MLP（训练  MLP）（345）
+				6. Results（结果）（347）
+				7. Conclusion（结论）（347）
+		4. 4
+			1. Comparison of VIPM Methods（VIPM  方法的比较）（348）
+				1. Considerations（注意事项）（348）
+				2. Vanilla VIPM（350）
+				3. Skip Strips（跳过条）（353）
+				4. Multilevel Skip Strips（多层跳跃带）（354）
+				5. Mixed-Mode VIPM（混合模式  VIPM）（355）
+				6. Mixed-Mode Skip Strips（混合模式跳过条）（357）
+				7. Sliding Window（滑动窗口）（357）
+				8. Summary（概括）（360）
+			2. Simplified Terrain Using Interlocking Tiles（使用互锁瓷砖简化地形）（362）
+				1. Tiles Revisited（重新审视瓷砖）（343）
+				2. Map Making（地图制作）（364）
+				3. Tile Templates（平铺模板）（365）
+				4. Ugly, Ugl* Ugly（365）
+				5. Better, Faster, Stronger（更好、更快、更强）（367）
+				6. Conclusion（结论）（367）
+			3. Sphere Ttees for Fast Visibility Culling, Ray Tracing, and Range Searching（用于快速可见性剔除、光线追踪和范围搜索的球体 T 恤）（369）
+				1. Bounding Spheres（边界球）（369）
+				2. Using Sphere Trees（使用球体树）（370）
+				3. Demonstration Application（示范应用）（370）
+			4. Compressed Axis-Aligned Bounding Box Trees（压缩轴对齐边界框树）（373）
+				1. A Brief Survey of Hierarchical Sorting Methods（层次排序方法简述）（373）
+				2. AABB Trees（AABB  树）（374）
+				3. Building AABB Trees（构建  AABB  树）（375）
+				4. Compressing AABB Trees（压缩  AABB  树）（375）
+				5. Approximating Extents（近似范围）（376）
+				6. Exploiting Redundancy（利用冗余）（377）
+				7. Runtime Efficiency（运行时效率）（378）
+				8. Future Work（未来的工作）（378）
+			5. Direct Access Quadtree Lookup（直接访问四叉树查找）（379）
+				1. Where the Performance Goes（性能走向何方）（379）
+				2. Eliminating the Middlemen（消除中间商）（380）
+				3. Conditions and Requirements（条件和要求）（380）
+				4. Determining the Tree Level（确定树级别）（381）
+				5. Mapping to the Situation（映射到情况）（383）
+				6. Determining the Location（确定位置）（384）
+				7. Traversing the Quadtree（遍历四叉树）（384）
+				8. Tuning the Quadtree（调整四叉树）（384）
+				9. Listing 4.5.1 Simple implementation of quadtree search（清单4.5.1  四叉树搜索的简单实现）（385）
+				10. Listing 4.5.2 Code to determine the level of the target quadnode（清单4.5.2  确定目标四节点级别的代码）（386）
+				11. Listing 4.5.3 Code to determine the level of the target quadnode（清单  4.5.3  确定目标四元节点的级别的代码QuadNode*）（386）
+			6. Approximating Fish Tank Refractions（近似鱼缸折射）（387）
+				1. Fish Tank Observations（鱼缸观察）（387）
+				2. Improving the Reality（改善现实）（390）
+				3. Conclusion（结论）（390）
+			7. Rendering Print Resolution Screenshots（渲染打印分辨率屏幕截图）（391）
+				1. Basic Algorithm（基本算法）（391）
+				2. Caveats and Concerns（注意事项和疑虑）（394）
+				3. Conclusion（结论）（395）
+			8. Applying Decals to Arbitrary Surfaces（将贴花应用于任意表面）（396）
+				1. The Algorithm（算法）（396）
+				2. Triangle Clipping（三角形剪裁）（398）
+				3. Implementation（执行）（399）
+			9. Rendering Distant Scenery with Skyboxes（使用天空盒渲染远处的风景）（401）
+				1. Basic Technique（基本技术）（401）
+				2. Skybox Resolution（天空盒分辨率）（401）
+				3. Skybox Size（天空盒尺寸）（403）
+				4. Rendering the Scene（渲染场景）（403）
+				5. Cube Environment Mapping（立方体环境映射）（404）
+				6. Generating Skybox Textures（生成天空盒纹理）（404）
+				7. Conclusion（结论）（405）
+				8. Source Code（源代码）（405）
+			10. Self-Shadowing Characters（自我阴影角色）（406）
+				1. Previous Work（之前的工作）（406）
+				2. Segmenting Character Geometry（分割角色几何形状）（406）
+				3. Rendering the Texture（渲染纹理）（407）
+				4. Rendering the Character（渲染角色）（408）
+				5. Conclusion（结论）（408）
+			11. Classic Super Mario 64 Third-Person Control and Animation（经典《超级马里奥 64》第三人称控制和动画）（410）
+				1. The Setup（设置）（410）
+				2. Converting the Controller Input（转换控制器输入）（410）
+				3. Rotating the Character（旋转角色）（412）
+				4. Translating the Character（平移角色）（413）
+				5. Animating the Character（动画角色）（414）
+				6. Super Mario 64 Animation Analyzed（《超级马里奥  64》动画分析）（416）
+				7. Conclusion（结论）（417）
+		5. 5
+			1. Cartoon Rendering: Real-time Silhouette Edge Detection and Rendering（卡通渲染：实时轮廓边缘检测与渲染）（418）
+				1. Inker（墨客）（418）
+				2. Important Edges（重要的优势）（419）
+				3. Silhouette Edge Detection Techniques（轮廓边缘检测技术）（420）
+				4. Edge-based Inking（基于边缘的墨迹）（420）
+				5. Listing 5.1.1 Edge-based silhouette edge detection（Listing  5.1.1  基于边缘的轮廓边缘检测）（421）
+				6. Programmable Vertex Shader Inking（可编程顶点着色器墨迹）（422）
+				7. Listing 5.1.2 Silhouette shader for DirectX 8.0 vertex programmable shading（清单 5.1.2 DirectX 8.0 顶点可编程着色的轮廓着色器）（423）
+				8. Inking with Advanced Texture Features（使用高级纹理功能上墨）（424）
+				9. Conclusion（结论）（425）
+			2. Cartoon Rendering Using Texture Mapping and Programmable Vertex Shaders（使用纹理映射和可编程顶点着色器进行卡通渲染）（426）
+				1. Cartoon Shading（卡通底纹）（426）
+				2. Painting（绘画）（426）
+				3. Listing 5.2.1 Function for computing Toon texture coordinates（清单  5.2.1  计算  Toon  纹理坐标的函数）（428）
+				4. Programmable Vertex Shaders（可编程顶点着色器）（430）
+				5. Listing 5.2.2 DirectX 8.0 cartoon programmable vertex shader（清单 5.2.2 DirectX 8.0 卡通可编程顶点着色器）（431）
+				6. Conclusion（结论）（432）
+			3. Dynamic Per-Pixel Lighting Techniques（动态每像素照明技术）（434）
+				1. 3D Textures for Dynamic Lightmapping（用于动态光照贴图的  3D  纹理）（434）
+				2. Listing 5.3.1 Code to generate 3D lightmap with quadratic falloff（清单  5.3.1  生成具有二次衰减的  3D  光照贴图的代码）（435）
+				3. Dot3 Bump Mapping（Dot3  凹凸贴图）（438）
+				4. Cubemap Normalizer（立方体贴图标准化器）（441）
+				5. Per-Pixel Spotlights（每像素聚光灯）（442）
+			4. Generating Procedural Clouds Using 3D Hardware（使用 3D 硬件生成程序云）（445）
+				1. Properties of Clouds（云的属性）（445）
+				2. Random Number Generation（随机数生成）（446）
+				3. Listing 5.4.1 A simple pseudo-random number generator（清单  5.4.1  一个简单的伪随机数生成器）（447）
+				4. Animating an Octave of Noise（制作八度噪声的动画）（448）
+				5. Listing 5.4.2 Noise octave composition（清单  5.4.2  噪声倍频程组成）（449）
+				6. Mapping It to the Sky Geometry（将其映射到天空几何形状）（451）
+				7. Feature Creep（特征蠕变）（452）
+				8. Hardware Limitations（硬件限制）（453）
+				9. Making It Scale（使其规模化）（453）
+				10. Conclusion（结论）（454）
+			5. Texture Masking for Faster Lens Flare（纹理遮罩可实现更快的镜头光晕）（456）
+				1. Lens Flare Occlusion（镜头光晕遮挡）（456）
+				2. Hardware Issues（硬件问题）（457）
+				3. Texture Masking（纹理遮蔽）（459）
+				4. Performance Considerations（性能考虑因素）（461）
+				5. Improvements（改进）（461）
+				6. Sample Code（示例代码）（462）
+				7. Alternative Approaches（替代方法）（462）
+			6. Practical Priority Buffer Shadows（实用的优先级缓冲区阴影）（463）
+				1. Comparing Priority Buffers to Depth Buffers（比较优先级缓冲区与深度缓冲区）（465）
+				2. Resolving Aliasing Problems（解决别名问题）（466）
+				3. Hybrid Approaches（混合方法）（468）
+				4. Summary（概括）（469）
+			7. Impostors: Adding Clutter（冒名顶替者：增加混乱）（470）
+				1. The Whole Process（整个过程）（470）
+				2. Rendering the Impostor（渲染冒名顶替者）（471）
+				3. Update Heuristics（更新启发式）（475）
+				4. Efficiency（效率）（476）
+				5. Prediction（预言）（477）
+				6. Summary（概括）（477）
+			8. Operations for Hardware Accelerated Procedural Texture Animation（硬件加速程序纹理动画的操作）（479）
+				1. Hardware Operations（硬件操作）（479）
+				2. Listing 5.8.1. Code and vertex program for sampling each texel's neighbors（清单 5.8.1。 用于对每个纹素的邻居进行采样的代码和顶点程序）（481）
+				3. Listing 5.8.2 Code for RGB normal map creation in hardware from a grayscale height texture. The grayscale image is selected into all four texture stages, and offsets A from Listing 5.8.1 are used.（清单 5.8.2 在硬件中从灰度高度纹理创建 RGB 法线贴图的代码。 灰度图像被选择到所有四个纹理阶段，并使用清单 5.8.1 中的偏移量 A。）（486）
+				4. Future Work（未来的工作）（490）
+				5. Code Samples（代码示例）（491）
+		6. 6
+			1. Game Audio Design Patterns（游戏音频设计模式）（492）
+				1. Bridge（桥）（492）
+				2. Facade（正面）（493）
+				3. Composite（合成的）（493）
+				4. Proxy（代理人）（494）
+				5. Decorator（装饰者）（495）
+				6. Command（命令）（495）
+				7. Memento（纪念）（496）
+				8. Observer（观察者）（496）
+				9. Big Ball Of Mud (also known as Spaghetti Code)（大泥球（也称为意大利面条代码））（496）
+				10. Conclusion（结论）（498）
+			2. A Technique to Instantaneously Reuse Voices in a Sample-based Synthesizer（在基于样本的合成器中即时重用声音的技术）（499）
+				1. The Problem（问题）（499）
+				2. An Idea for a Solution（解决方案的想法）（500）
+				3. The Solution（解决方案）（501）
+				4. Conclusion（结论）（502）
+			3. Software-based DSP Effects（基于软件的  DSP  效果）（503）
+				1. Filtering（过滤）（503）
+				2. Convolution（卷积）（504）
+				3. Delay（延迟）（505）
+				4. Interpolation（插值法）（506）
+			4. Interactive Processing Pipeline for Digital Audio（数字音频交互式处理管道）（507）
+				1. Discussion（讨论）（509）
+				2. The Code（代码）（512）
+				3. Extra Commentary（额外评论）（515）
+				4. Conclusion（结论）（516）
+			5. A Basic Music Sequencer for Games（游戏的基本音乐音序器）（517）
+				1. Streaming vs. Sequencing（流式传输与排序）（517）
+				2. Core Computer Music Concepts（核心计算机音乐概念）（518）
+				3. Computer Music Sequencer Implementation（计算机音乐音序器的实现）（521）
+				4. Listing 6.5.1 Music sequencer data structures（清单  6.5.1  音乐音序器数据结构）（523）
+				5. Listing 6.5.2 Event type data structures（清单  6.5.2  事件类型数据结构）（524）
+				6. Listing 6.5.3 The audio frame（清单  6.5.3  音频帧）（526）
+				7. Listing 6.5.4 Time step calculation（清单6.5.4  时间步计算）（527）
+				8. Audio Synthesis Control（音频合成控制）（527）
+				9. The Code（代码）（528）
+				10. Conclusions（结论）（528）
+			6. An Interactive Music Sequencer for Games（游戏的交互式音乐音序器）（529）
+				1. Musical Associations（音乐协会）（529）
+				2. Musical Meaning（音乐意义）（530）
+				3. Transitions（过渡）（531）
+				4. Transition Types（过渡类型）（531）
+				5. Control Granularity（控制粒度）（532）
+				6. Target Control（目标控制）（533）
+				7. Listing 6.6.1 Sequencer data structures with target control（清单  6.6.1  具有目标控制的定序器数据结构）（533）
+				8. Design Examples（设计实例）（534）
+				9. The Code（代码）（536）
+				10. Conclusion（结论）（536）
+			7. A Low-Level Sound API（低级声音  API）（537）
+				1. Core Classes（核心课程）（537）
+	7. Game Programming Gems 7（游戏编程精粹7）
+		1. GENERAL PROGRAMMING（一般的编程）（34）
+			1. Efficient Cache Replacement Using the Age and Cost Metrics（使用寿命和成本指标进行高效缓存替换）（38）
+				1. Overview（概述）（38）
+				2. Cache-Replacement Algorithms（缓存替换算法）（39）
+				3. Age and Cost Metrics（年龄和成本指标）（41）
+				4. Conclusion（结论）（46）
+			2. High Performance Heap Allocator（高性能堆分配器）（48）
+				1. Introduction（介绍）（48）
+				2. Related Works（相关作品）（48）
+				3. Our Solution（我们的解决方案）（49）
+				4. On the CD（光盘上）（56）
+			3. Optical Flow for Video Games Played with Webcams（使用网络摄像头玩视频游戏的光流）（58）
+				1. Introduction（介绍）（58）
+				2. OpenCV Code（OpenCV  代码）（59）
+				3. First Method: Image Differences（第一种方法：图像差异）（60）
+				4. Second Method: Motion History（第二种方法：运动历史记录）（61）
+				5. Third Method: Lucas and Kanade Algorithm（第三种方法：Lucas和Kanade算法）（62）
+				6. Optical Flow Game（光流游戏）（63）
+			4. Design and Implementation of a Multi-Platform Threading Engine（多平台线程引擎的设计与实现）（68）
+				1. Threads（线程数）（71）
+				2. Thread Allocation Strategies（线程分配策略）（74）
+				3. Object Threading（对象线程）（75）
+				4. Thread Safety, Reentrancy, Object Synchronicity,  and Data Access（线程安全、重入、对象同步和数据访问）（76）
+				5. Dancing the Line (or Cache Coherency)（跳舞（或缓存一致性））（76）
+				6. How to Use the GLRThreading Library（如何使用  GLRThreading  库）（77）
+				7. Conclusion（结论）（78）
+			5. For Bees and Gamers: How to Handle Hexagonal Tiles（对于蜜蜂和游戏玩家：如何处理六角形瓷砖）（80）
+				1. Introduction（介绍）（80）
+				2. Mastering the Hexagonal Grid（掌握六角形网格）（84）
+				3. Implementation Tips（实施技巧）（87）
+				4. Applications（应用领域）（88）
+				5. Conclusion（结论）（90）
+			6. A Sketch-Based Interface to Real-Time Strategy Games Based on a Cellular Automaton（基于元胞自动机的实时策略游戏的草图界面）（92）
+				1. Focus-Context Control Level（焦点‑上下文控制级别）（94）
+				2. Implementation Details（实施细节）（95）
+				3. Conclusion（结论）（99）
+			7. Foot Navigation Technique for First-Person Shooting Games（第一人称射击游戏的足部导航技术）（102）
+				1. Introduction（介绍）（102）
+				2. Navigating with the Foot（用脚导航）（103）
+				3. A Sample Game（示例游戏）（108）
+				4. Tests with Real Users（与真实用户进行测试）（110）
+				5. Conclusion（结论）（111）
+				6. Future Work（未来的工作）（111）
+			8. Deferred Function Call Invocation System（延迟函数调用调用系统）（114）
+				1. A Matter of Time（时间的问题）（114）
+				2. Case Studies（实例探究）（115）
+				3. Categorizing a Function Call（对函数调用进行分类）（116）
+				4. A Look at the System（系统概览）（117）
+				5. Conclusion（结论）（118）
+			9. Multithread Job and Dependency System（多线程作业和依赖系统）（120）
+				1. Introduction（介绍）（120）
+				2. The Job System（职位系统）（121）
+				3. The Dependency Manager（依赖管理器）（124）
+				4. Future Work（未来的工作）（127）
+				5. Conclusion（结论）（128）
+			10. Advanced Debugging Techniques（先进的调试技术）（130）
+				1. Application Crashes（应用程序崩溃）（130）
+				2. Memory Leaks（内存泄漏）（133）
+				3. Windows Error Reporting (WER)（Windows  错误报告  (WER)）（135）
+				4. The Framework（框架）（136）
+				5. Conclusion（结论）（137）
+		2. MATH AND PHYSICS（数学和物理）（140）
+			1. Random Number Generation（随机数生成）（146）
+				1. Background: Random Number Generation（背景：随机数生成）（146）
+				2. Non-Cryptographic RNG Methods（非加密  RNG  方法）（149）
+				3. Cryptographic RNG Methods（加密  RNG  方法）（154）
+				4. Common Mistakes in Creating Random Number Generators（创建随机数生成器的常见错误）（155）
+				5. Code（代码）（157）
+				6. Conclusion（结论）（157）
+			2. Fast Generic Ray Queries for Games（游戏的快速通用射线查询）（160）
+				1. Introduction to Ray Tracing（光线追踪简介）（160）
+				2. kD-Tree Concepts and Storage Considerations（kD  树概念和存储注意事项）（162）
+				3. Dynamic Objects（动态对象）（172）
+				4. Demo Application（演示应用程序）（172）
+				5. Conclusion（结论）（173）
+			3. Fast Rigid-Body Collision Detection Using Farthest Feature Maps（使用最远特征图进行快速刚体碰撞检测）（176）
+				1. Background（背景）（177）
+				2. Preprocessing（预处理）（177）
+				3. Runtime Queries（运行时查询）（181）
+				4. Performance Analysis and Concluding Remarks（绩效分析及总结）（183）
+			4. Using Projective Space to Improve Precision of Geometric Computations（利用射影空间提高几何计算的精度）（186）
+				1. Projective Space（投影空间）（187）
+				2. Basic Objects in R2（188）
+				3. Points and Directed Lines in RP2（RP2  中的点和有向线）（188）
+				4. Basic Operations in RP2（RP2  中的基本操作）（190）
+				5. Precise Geometrical Computations in RP2 Using Integer Coordinates（使用整数坐标在 RP2 中进行精确几何计算）（191）
+				6. Number Range Limits in Geometrical Computations in RP2（RP2  中几何计算的数值范围限制）（191）
+				7. Example Application of Operations in RP2（RP2  中运算的示例应用）（194）
+				8. Extension into the Third Dimension（延伸至第三维度）（197）
+				9. Conclusion（结论）（197）
+			5. XenoCollide: Complex Collision Made Simple（XenoCollide：复杂碰撞变得简单）（198）
+				1. Introduction（介绍）（198）
+				2. Representing Shapes with Support Mappings（用支撑映射表示形状）（199）
+				3. Simplifying Collision Detection Using Minkowski Differences（使用  Minkowski  差异简化碰撞检测）（203）
+				4. Detecting Collision Using Minkowski Portal Refinement（使用  Minkowski  Portal  细化检测碰撞）（204）
+				5. Using MPR for Contact Information（使用  MPR  获取联系信息）（209）
+				6. Conclusion（结论）（211）
+			6. Efficient Collision Detection Using Transformation Semantics（使用转换语义进行高效碰撞检测）（212）
+				1. Affine Transforms and Games（仿射变换和博弈）（213）
+				2. Extracting Semantics from Matrices（从矩阵中提取语义）（214）
+				3. Using Semantics for Collision Detection Tasks（使用语义进行碰撞检测任务）（217）
+				4. Conclusion（结论）（221）
+			7. Trigonometric Splines（三角样条）（224）
+				1. Background（背景）（225）
+				2. Discussion（讨论）（228）
+				3. Conclusion（结论）（229）
+			8. Using Gaussian Randomness to Realistically Vary Projectile Paths（使用高斯随机性来真实地改变射弹路径）（232）
+				1. Gaussian Distribution（高斯分布）（232）
+				2. Generating Gaussian Randomness（生成高斯随机性）（233）
+				3. Additional Applications（附加应用）（236）
+				4. Gaussian Distributions in Nature（自然界中的高斯分布）（236）
+				5. Conclusion（结论）（237）
+		3. AI（238）
+			1. Creating Interesting Agents with Behavior Cloning（通过行为克隆创建有趣的代理）（242）
+				1. Example: The Demo Game（示例：演示游戏）（243）
+				2. Conclusion（结论）（249）
+			2. Designing a Realistic and Unified Agent-Sensing Model（设计现实且统一的代理感知模型）（250）
+				1. The Basic Vision Model（基本视觉模型）（250）
+				2. The Basic Hearing Model（基本听力模型）（252）
+				3. Augmenting the Vision Model Toolbox with Ellipses（使用椭圆增强视觉模型工具箱）（252）
+				4. Modeling Human Vision with Certainty（准确地模拟人类视觉）（255）
+				5. Modeling Human Hearing with Certainty（准确地模拟人类听力）（257）
+				6. Unified Sensing Model（统一感知模型）（259）
+				7. Adding Memory to the Unified Sensing Model（为统一感知模型添加内存）（260）
+				8. Conclusion（结论）（261）
+			3. Managing AI Algorithmic Complexity: Generic Programming Approach（管理人工智能算法复杂性：通用编程方法）（262）
+				1. Introduction（介绍）（262）
+				2. Action Choosing Workflow（操作选择工作流程）（263）
+				3. Implementation（执行）（271）
+				4. Conclusion（结论）（280）
+			4. All About Attitude:  Building Blocks for Opinion, Reputation, and NPC Personalities（态度决定一切：意见、声誉和 NPC 个性的基石）（282）
+				1. Introduction（介绍）（282）
+				2. Attitude（态度）（283）
+				3. What’s in an Attitude?（态度是什么？）（285）
+				4. Complex Attitude Objects（复杂的态度对象）（289）
+				5. Attitude and Behavior（态度和行为）（291）
+				6. Persuasion and Influence（说服力和影响力）（292）
+				7. Social Exchanges of Attitudes（社会态度交流）（293）
+				8. Another Example（另一个例子）（294）
+				9. Cautions and Conclusion（注意事项和结论）（295）
+			5. Understanding Intelligence in Games Using Player Traces and Interactive Player Graphs（使用玩家轨迹和交互式玩家图了解游戏中的智能）（298）
+				1. Introduction（介绍）（298）
+				2. The Value of Information（信息的价值）（299）
+				3. Interactive Player Graphs（交互式玩家图表）（306）
+				4. A Deeper Understanding of Behavior（对行为的更深入理解）（311）
+				5. Conclusion（结论）（312）
+			6. Goal-Oriented Plan Merging（目标导向的计划合并）（314）
+				1. Review of Goal-Oriented Planning Systems（以目标为导向的规划系统的审查）（314）
+				2. Plan Merging for Goal-Oriented Plans（以目标为导向的计划的计划合并）（316）
+				3. Conclusion（结论）（319）
+			7. Beyond A*: IDA* and Fringe Search（超越 A*：IDA* 和边缘搜索）（322）
+				1. A* and Dijkstra（A*  和迪杰斯特拉）（323）
+				2. The Iterative Deepening A* (IDA*)（迭代深化  A*  (IDA*)）（325）
+				3. The Fringe Search Algorithm（边缘搜索算法）（326）
+				4. Conclusion（结论）（327）
+		4. AUDIO（声音的）（328）
+			1. Audio Signal Processing Using Programmable Graphics Hardware（使用可编程图形硬件进行音频信号处理）（332）
+				1. GPGPU Programming Overview（GPGPU  编程概述）（333）
+				2. Audio Effects（音频效果）（334）
+				3. Room Acoustics（室内声学）（335）
+				4. Conclusion（结论）（336）
+			2. MultiStream—The Art of Writing a Next-Gen Audio Engine（MultiStream——编写下一代音频引擎的艺术）（338）
+				1. How It All Began（一切是如何开始的）（339）
+				2. Understanding “Next-Gen” Audio（了解“下一代”音频）（339）
+				3. Surround Sound（环绕声）（348）
+				4. Routing（路由）（351）
+				5. Conclusion（结论）（352）
+			3. Listen Carefully, You Probably Won’t Hear This Again（仔细听，你可能不会再听到这个）（354）
+				1. How It Works; Thinking Differently（怎么运行的;换个角度思考）（355）
+				2. Going Bang!（爆炸！）（355）
+				3. The Old and the New（新与旧）（357）
+				4. New Tools for a New Approach（新方法新工具）（359）
+				5. Micromanagement（微观管理）（361）
+				6. Why Are We Doing This Again?（我们为什么要再次这样做？）（361）
+				7. Going Further（更进一步）（362）
+				8. Conclusion（结论）（363）
+			4. Real-Time Audio Effects Applied（应用实时音频效果）（364）
+				1. Overview of a Sound System（音响系统概述）（365）
+				2. Sound Buffers（声音缓冲器）（366）
+				3. Rank Buffers（排名缓冲区）（367）
+				4. Effects and Filters（效果和滤镜）（369）
+				5. Compression and Streaming（压缩和流媒体）（370）
+				6. Conclusion（结论）（371）
+			5. Context-Driven, Layered Mixing（上下文驱动的分层混合）（374）
+				1. Overview（概述）（374）
+				2. Implementation（执行）（375）
+				3. Extending the Concept with Live Tuning（通过实时调音扩展概念）（378）
+				4. Performance（表现）（379）
+				5. Sample Program（示例程序）（380）
+				6. Conclusion（结论）（380）
+		5. GRAPHICS（图形）（382）
+			1. Advanced Particle Deposition（先进的粒子沉积）（386）
+				1. Why Particles?（为什么是粒子？）（386）
+				2. Particle Deposition（粒子沉积）（386）
+				3. Conclusion（结论）（397）
+			2. Reducing Cumulative Errors in Skeletal Animations（减少骨骼动画中的累积误差）（398）
+				1. A Quick Tour of Game Animation Systems（游戏动画系统快速浏览）（398）
+				2. Cumulative Error（累计误差）（399）
+				3. Conclusion（结论）（403）
+			3. An Alternative Model for Shading of Diffuse Light for Rough Materials（粗糙材料漫射光着色的替代模型）（406）
+				1. Introduction（介绍）（406）
+				2. The Flattening Effect（扁平化效应）（408）
+				3. Backscattering（后向散射）（410）
+				4. Conclusion（结论）（412）
+			4. High-Performance Subdivision Surfaces（高性能细分曲面）（414）
+				1. Introduction to Subdivision Schemes（细分方案简介）（414）
+				2. Loop Subdivision Features and Options（循环细分功能和选项）（416）
+				3. Subdivision Data Structure（细分数据结构）（423）
+				4. Subdivision Algorithm Details（细分算法详细信息）（425）
+				5. Performance Issues（性能问题）（429）
+				6. Conclusion（结论）（432）
+			5. Animating Relief Impostors Using Radial Basis Functions Textures（使用径向基函数纹理对浮雕冒名顶替者进行动画处理）（434）
+				1. Introduction（介绍）（435）
+				2. Image Warping（图像变形）（436）
+				3. Radial Basis Functions（径向基函数）（437）
+				4. Interpolating the Warping Functions（插值扭曲函数）（437）
+				5. Evaluating the Warping Function Using Shaders（使用着色器评估扭曲函数）（438）
+				6. Animating Relief Maps（地形图动画）（440）
+				7. Animating Relief Impostors（动画救济冒名顶替者）（440）
+				8. Results（结果）（442）
+				9. Conclusion（结论）（443）
+			6. Clipmapping on SM1.1 and Higher（SM1.1 及更高版本上的剪辑贴图）（446）
+				1. Basic Concepts of Clipmaps（剪贴图的基本概念）（446）
+				2. Implementation of Clipmaps（剪贴图的实现）（447）
+				3. If You Want To Save Some Time...（如果您想节省一些时间...）（454）
+			7. An Advanced Decal System Joris Mans（先进的贴花系统 Joris Mans）（456）
+				1. Requirements（要求）（456）
+				2. Normal Decals Method（普通贴花法）（457）
+				3. Advanced Decals Method（高级贴花方法）（457）
+				4. Advantages of This Advanced Decal System（这种先进贴花系统的优点）（461）
+				5. Performance and Experimental Results（性能与实验结果）（463）
+				6. Demo（演示）（466）
+				7. Conclusion（结论）（466）
+			8. Mapping Large Textures for Outdoor Terrain Rendering（映射大型纹理以进行室外地形渲染）（468）
+				1. Introduction（介绍）（468）
+				2. Structure（结构）（470）
+				3. Updating the Contents of the Cache（更新缓存的内容）（473）
+				4. Rendering Issues（渲染问题）（475）
+				5. Results（结果）（477）
+				6. Conclusion（结论）（478）
+			9. Art-Based Rendering with Graftal Imposters（使用移植冒名顶替者进行基于艺术的渲染）（480）
+				1. Assets（资产）（480）
+				2. Runtime（运行）（483）
+				3. Acknowledgements（致谢）（486）
+				4. Conclusion and Future Work（结论和未来的工作）（486）
+			10. Cheap Talk: Dynamic Real-Time Lipsync（廉价谈话：动态实时口型同步）（488）
+				1. Requirements（要求）（488）
+				2. General Procedure（一般程序）（490）
+				3. Conclusion（结论）（494）
+		6. NETWORKING AND MULTIPLAYER（网络和多人游戏）（496）
+			1. High-Level Abstraction of Game World Synchronization（游戏世界同步的高级抽象）（500）
+				1. HLA Usage（HLA用途）（501）
+				2. Anatomy of Game World Synchronization（游戏世界同步剖析）（501）
+				3. HLA Components（HLA  成分）（503）
+				4. Viewports in HLA Runtime（HLA  运行时中的视口）（509）
+				5. Further Issues（进一步的问题）（511）
+				6. Conclusion（结论）（512）
+			2. Authentication for Online Games（网络游戏认证）（514）
+				1. Introduction（介绍）（514）
+				2. Securing Game Logins（保护游戏登录安全）（514）
+				3. Securing Game Sessions（确保游戏会话安全）（518）
+				4. Conclusion（结论）（520）
+			3. Game Network Debugging with Smart Packet Sniffers（使用智能数据包嗅探器进行游戏网络调试）（524）
+				1. The Smart Packet Sniffer Concept（智能数据包嗅探器概念）（524）
+				2. An Example（一个例子）（524）
+				3. Gotchas with Traditional Debugging Techniques（传统调试技术的陷阱）（525）
+				4. Implementation（执行）（526）
+				5. Using the WinPcap Library（使用  WinPcap  库）（527）
+				6. Security Risk Reduction（降低安全风险）（528）
+				7. An Alternative（替代）（529）
+				8. Sample Code（示例代码）（529）
+				9. Conclusion（结论）（530）
+		7. SCRIPTING AND DATA-DRIVEN SYSTEMS（脚本和数据驱动系统）（532）
+			1. Automatic Lua Binding System（自动Lua绑定系统）（536）
+				1. Introduction（介绍）（536）
+				2. Binding of C Functions（C  函数的绑定）（537）
+				3. Object-Oriented in Lua（Lua  中的面向对象）（537）
+				4. Binding C++ Objects in Lua（在  Lua  中绑定  C++  对象）（538）
+				5. Extending the Binding System（扩展绑定系统）（543）
+				6. Summary（概括）（546）
+				7. Future Work（未来的工作）（546）
+				8. Demo（演示）（549）
+				9. Conclusion（结论）（549）
+			2. Serializing C++ Objects into a Database Using Introspection（使用内省将 C++ 对象序列化到数据库中）（550）
+				1. Metadata（元数据）（550）
+				2. Arrays（数组）（551）
+				3. Serializing in Text（在文本中序列化）（551）
+				4. The Database System（数据库系统）（552）
+				5. The Demo（演示）（565）
+				6. Issues and Future Improvements（问题和未来的改进）（565）
+				7. Conclusion（结论）（566）
+			3. Dataports（数据端口）（568）
+				1. Conceptual Overview（概念概述）（568）
+				2. Type Safety（类型安全）（570）
+				3. Reference Counting（引用计数）（570）
+				4. Practical Examples（实际例子）（571）
+				5. Problems（问题）（572）
+				6. Conclusion（结论）（573）
+			4. Support Your Local Artist: Adding Shaders to Your Engine（支持您的本地艺术家：将着色器添加到您的引擎中）（574）
+				1. Shader Terminology（着色器术语）（574）
+				2. Programs and Parameters and Managers, Oh My!（程序、参数和管理器，天哪！）（575）
+				3. Flexibility Is Key（灵活性是关键）（576）
+				4. Prototypes（原型）（577）
+				5. Shader Parameters（着色器参数）（579）
+				6. Use Case—The Blimp Target（用例——飞艇目标）（582）
+				7. Advanced Techniques（先进技术）（584）
+				8. Future Work（未来的工作）（586）
+				9. Conclusion（结论）（586）
+			5. Dance with Python’s AST（与 Python 的 AST 共舞）（588）
+				1. Introduction（介绍）（588）
+				2. Background（背景）（588）
+				3. Solution（解决方案）（589）
+				4. Conclusion（结论）（592）
+	8. Game Programming Gems 8（游戏编程精粹8）
+		1. GRAPHICS（图形）（16）
+			1. Fast Font Rendering with Instancing（通过实例快速渲染字体）（18）
+				1. Text-Rendering Basics（文本渲染基础知识）（18）
+				2. Improving Performance（提高绩效）（20）
+				3. Instancing Quad Geometry（实例化四边形几何体）（22）
+				4. Constant Array Instancing（常量数组实例化）（22）
+				5. Additional Considerations（其他注意事项）（24）
+				6. Future Work（未来的工作）（25）
+				7. Demo（演示）（26）
+				8. Conclusion（结论）（26）
+			2. Principles and Practice of Screen Space Ambient Occlusion（屏幕空间环境光遮挡的原理与实践）（27）
+				1. Screen Space Ambient Occlusion（屏幕空间环境光遮挡）（29）
+				2. Generating the Source Data（生成源数据）（30）
+				3. Sampling Process（取样流程）（32）
+				4. Sampling Randomization（随机抽样）（36）
+				5. Ambient Occlusion Post-Processing（环境光遮挡后处理）（39）
+				6. Handling Edge Cases（处理边缘情况）（41）
+				7. Optimizing Performance（优化性能）（42）
+				8. Fake Global Illumination and Artistic Styling（假全局照明和艺术造型）（42）
+				9. Transparency（透明度）（44）
+				10. Final Results（最终结果）（45）
+				11. Conclusion（结论）（45）
+			3. Multi-Resolution Deferred Shading（多分辨率延迟着色）（47）
+				1. Deferred Shading（延迟着色）（48）
+				2. Multi-Resolution Deferred Shading（多分辨率延迟着色）（49）
+				3. Conclusion and Future Work（结论和未来的工作）（53）
+			4. View Frustum Culling of Catmull-Clark Patches in DirectX 11（查看 DirectX 11 中 Catmull-Clark 补丁的视锥体剔除）（54）
+				1. Background（背景）（54）
+				2. Culling（剔除）（58）
+				3. Pre-Processing Step（预处理步骤）（58）
+				4. Run-Time Step（运行时步骤）（59）
+				5. Performance（表现）（61）
+				6. Conclusion（结论）（64）
+			5. Ambient Occlusion Using DirectX Compute Shader（使用 DirectX 计算着色器的环境光遮挡）（65）
+				1. The Compute Shader（计算着色器）（66）
+				2. Screen Space Ambient Occlusion（屏幕空间环境光遮挡）（70）
+				3. Compute Shader Implementation Details（计算着色器实现细节）（79）
+				4. Results（结果）（85）
+				5. Conclusion and Future Work（结论和未来的工作）（87）
+			6. Eye-View Pixel Anti-Aliasing for Irregular Shadow Mapping（用于不规则阴影映射的眼视像素抗锯齿）（89）
+				1. Background and Problem: Shadow Edge Aliasing（背景和问题：阴影边缘锯齿）（90）
+				2. Solution: Adaptive Multi-Sampling of Irregular Shadows（解决方案：不规则阴影的自适应多重采样）（94）
+				3. Results and Discussion（结果与讨论）（100）
+				4. Conclusion（结论）（103）
+			7. Overlapped Execution on Programmable Graphics Hardware（可编程图形硬件上的重叠执行）（105）
+				1. Introduction to Irregular Z-Buffer Shadows（不规则  Z  缓冲区阴影简介）（105）
+				2. Overview of Programmable Graphics Hardware（可编程图形硬件概述）（108）
+				3. Overview of Task-Based Parallelism（基于任务的并行性概述）（109）
+				4. Combining Render Graphs and Task Graphs（组合渲染图和任务图）（110）
+				5. Combined Dependency Graph（组合依赖图）（112）
+				6. Idle-Free Irregular Z-Buffer Shadows（无空闲不规则  Z  缓冲区阴影）（113）
+				7. Conclusion（结论）（114）
+			8. Techniques for Effective Vertex and Fragment Shading on the SPUs（SPU 上有效顶点和片段着色的技术）（116）
+				1. The CBE as Part of a Real-World System（CBE  作为现实世界系统的一部分）（116）
+				2. The SPEs（117）
+				3. Data Management（数据管理）（120）
+				4. Vertex/Geometry Shading（顶点/几何着色）（123）
+				5. Fragment Shading（片段着色）（127）
+				6. Further Work（进一步的工作）（130）
+				7. Conclusion（结论）（131）
+		2. PHYSICS AND ANIMATION（物理和动画）（134）
+			1. A Versatile and Interactive Anatomical Human Face Model（多功能交互式解剖人脸模型）（136）
+				1. Overview（概述）（137）
+				2. Numerical Simulation（数值模拟）（137）
+				3. Building the Anatomical Model（建立解剖模型）（140）
+				4. Conclusion（结论）（146）
+			2. Curved Paths for Seamless Character Animation（无缝角色动画的曲线路径）（147）
+				1. Related Work（相关工作）（147）
+				2. Finding a Path（寻找路径）（148）
+				3. Smoothing the Path（平滑路径）（150）
+				4. Animation Selection（动画选择）（152）
+				5. Conclusion（结论）（154）
+			3. Non-Iterative, Closed-Form, Inverse Kinematic Chain Solver (NCF IK) （非迭代、闭式、逆运动链求解器 (NCF IK)）（156）
+				1. Context（语境）（157）
+				2. Bone Definition（骨骼定义）（157）
+				3. IK Goal Position（IK  目标位置）（157）
+				4. Handling Extreme Deformation（处理极端变形）（163）
+				5. Additional Details（额外细节）（164）
+				6. Future Work（未来的工作）（165）
+				7. Conclusion（结论）（166）
+			4. Particle Swarm Optimization for Game Programming（游戏编程的粒子群优化）（167）
+				1. A Few Words on Optimization（关于优化的几句话）（167）
+				2. The PSO Paradigm and Its Canonical Formulation（PSO  范式及其规范表述）（168）
+				3. Add-Ons to the Classical Formulation（经典配方的附加成分）（173）
+				4. A Note on Randomness（关于随机性的注释）（176）
+				5. Case Study 1: Typical Benchmarking Functions（案例研究  1：典型的基准测试功能）（177）
+				6. Case Study 2:  Optimization of Physical Parameters  for In-Game Vehicle Simulation（案例研究2：游戏中车辆模拟的物理参数优化）（177）
+				7. Case Study 3: Physics-Based Animation of Mechanical Systems（案例研究  3：基于物理的机械系统动画）（179）
+				8. Conclusion（结论）（181）
+			5. Imp roved Numerical Integration with Analytical Techniques（通过分析技术改进数值积分）（183）
+				1. Classifying Errors（错误分类）（184）
+				2. Kinematics of Constant Acceleration（恒定加速度的运动学）（184）
+				3. The Kinematic Integrator（运动学积分器）（185）
+				4. Integral Contributions Due to a Spring Force（弹簧力的整体贡献）（187）
+				5. Multiple Forces（多重力量）（188）
+				6. Integral Contributions of a Pulse（脉冲的积分贡献）（190）
+				7. Integral Contributions of Collision Forces（碰撞力的积分贡献）（191）
+				8. Integral Contributions of Viscous Forces（粘性力的积分贡献）（193）
+				9. Integral Contributions of Constraint Forces（约束力的积分贡献）（194）
+				10. Summary（概括）（195）
+				11. Conclusion（结论）（197）
+			6. What a Drag: Modeling Realistic Three-Dimensional Air and Fluid Resistance（阻力多大：模拟真实的三维空气和流体阻力）（198）
+				1. Physics（物理）（199）
+				2. Solution of the Three-Dimensional Linear Case（三维线性情况的求解）（203）
+				3. Solution of the Three-Dimensional Quadratic Case（三维二次案例的解）（204）
+				4. Pseudocode（伪代码）（207）
+				5. Comparison of Linear versus Quadratic Solutions（线性解与二次解的比较）（207）
+				6. Conclusion（结论）（208）
+			7. Application of Quasi-Fluid Dynamics for Arbitrary Closed Meshes（准流体动力学在任意封闭网格中的应用）（209）
+				1. Requirements for the Mesh Representing the Object（对表示对象的网格的要求）（209）
+				2. Physical Rudiments（身体基础）（210）
+				3. Pre-Computation Based on a Triangle Mesh（基于三角形网格的预计算）（211）
+				4. Calculation of the Pressure on the Triangle Surface（三角形表面压力的计算）（214）
+				5. Simple Correction of Dynamic Pressure（动压的简单修正）（215）
+				6. Conclusion（结论）（215）
+			8. Approximate Convex Decomposition for Real-Time Collision Detection（用于实时碰撞检测的近似凸分解）（217）
+				1. Approximate Convex Decomposition（近似凸分解）（218）
+				2. Hierarchical Approximate Convex Decomposition（层次近似凸分解）（220）
+				3. Experimental Results（实验结果）（223）
+				4. Conclusion（结论）（225）
+		3. AI（人工智能）（226）
+			1. AI Level of Detail for Really Large Worlds （真正大世界的人工智能细节水平）（228）
+				1. Gradual LOD Example（渐变  LOD  示例）（229）
+				2. Graphical LOD versus LOD AI（图形  LOD  与  LOD  AI）（230）
+				3. Simulation at the Full Detail（全面细节模拟）（231）
+				4. Toward LOD AI: Hierarchical Behavior（迈向  LOD  AI：分层行为）（232）
+				5. Space Representation（空间表示）（238）
+				6. Positions of Objects and NPCs（物体和  NPC  的位置）（240）
+				7. Reshaping the Membrane（重塑膜）（243）
+				8. Creating the Structure of the World（创造世界的结构）（244）
+				9. Source Code Summary（源代码摘要）（245）
+				10. Conclusion（结论）（245）
+			2. A Pattern-Based Approach to Modular AI for Games（基于模式的游戏模块化人工智能方法）（247）
+				1. A Real-World Example: Apartment Shopping（现实世界的例子：公寓购物）（248）
+				2. Boolean Decisions（布尔决策）（249）
+				3. Float-Based Decisions（基于流动资金的决策）（256）
+				4. Conclusion（结论）（258）
+			3. Automated Navigation Mesh Generation Using Advanced Growth-Based Techniques（使用先进的基于增长的技术自动生成导航网格）（259）
+				1. The Algorithms（算法）（260）
+				2. Post-Processing（后期处理）（268）
+				3. Conclusion（结论）（268）
+			4. A Practical Spatial Architecture for Animal  and Agent Navigation（用于动物和代理导航的实用空间架构）（271）
+				1. Fundamental Components of the Spatial Representation System（空间表示系统的基本组成部分）（272）
+				2. Navigation System Architecture（导航系统架构）（274）
+				3. Navrep Continuity and Stitching（Navrep  连续性和缝合）（275）
+				4. Handling Locomotion and Turning（处理运动和转弯）（276）
+				5. Conclusion（结论）（278）
+			5. Applying Control Theory to Game AI and Physics（将控制理论应用于游戏人工智能和物理）（279）
+				1. Conclusion（结论）（293）
+			6. Adaptive Tactic Selection in First-Person Shooter (FPS) Games（第一人称射击 (FPS) 游戏中的自适应策略选择）（294）
+				1. A Dynamic Approach to Adaptive Tactic Selection（自适应策略选择的动态方法）（294）
+				2. Overview of the Adaptive Tactic Selection Architecture（自适应策略选择架构概述）（295）
+				3. Fitness and Weight-Update Functions（健身和体重更新功能）（297）
+				4. Adapting Tactic Selection（调整策略选择）（299）
+				5. Conclusion（结论）（302）
+			7. Embracing Chaos Theory: Generating Apparent Unpredictability through Deterministic Systems（拥抱混沌理论：通过确定性系统产生明显的不可预测性）（303）
+				1. The Need for Predictability（对可预测性的需求）（303）
+				2. Shaking Things Up（改变现状）（304）
+				3. A Brief History of Chaos（混沌简史）（304）
+				4. Exploring Cellular Automata（探索元胞自动机）（307）
+				5. Leveraging Chaos Theory in Games（在游戏中利用混沌理论）（310）
+				6. Conclusion（结论）（316）
+			8. Needs-Based AI（基于需求的人工智能）（317）
+				1. Background（背景）（317）
+				2. Needs-Based AI Overview（基于需求的人工智能概述）（318）
+				3. Advertisements and Action Selection（广告和动作选择）（319）
+				4. Action Performance（动作表现）（323）
+				5. Design Consequences of Needs-Based AI（基于需求的人工智能的设计后果）（325）
+				6. Conclusion（结论）（325）
+			9. A Framework for  Emotional Digital Actors（情感数字演员的框架）（327）
+				1. Models of Emotion, Mood, and Personality（情感、情绪和人格模型）（327）
+				2. The Emotional Framework（情感框架）（329）
+				3. Conclusion（结论）（336）
+			10. Scalable Dialog Authoring（可扩展的对话框创作）（338）
+				1. Conversational Agents Today（当今的会话代理）（338）
+				2. Overview（概述）（342）
+				3. Intention Modeling（意图建模）（343）
+				4. Cultural Wrappers（文化包装）（345）
+				5. Creating Unique Individuals（创造独特的个体）（348）
+				6. Conclusion（结论）（349）
+			11. Graph-Based Data Mining for Player Trace Analysis in MMORPGs（MMORPG 中基于图的数据挖掘玩家轨迹分析）（350）
+				1. Data Logging and Preprocessing（数据记录和预处理）（350）
+				2. Advertisement Placement in MMORPGs（MMORPG  中的广告投放）（353）
+				3. Building Player Profiles with Clustering（通过聚类构建玩家档案）（359）
+				4. Detecting Bots and Gold Farmers with Classification Models（使用分类模型检测机器人和金农）（364）
+				5. Conclusion（结论）（366）
+		4. GENERAL PROGRAMMING（通用编程）（368）
+			1. Fast-IsA（快速IsA）（370）
+				1. Problem Definition（问题定义）（370）
+				2. Balanced Class Hierarchies（平衡的类层次结构）（371）
+				3. Eliminating the Tree Traversal（消除树遍历）（373）
+				4. Building a Balanced Tree（构建平衡树）（375）
+				5. Conclusion（结论）（376）
+			2. Registered Variables（注册变量）（378）
+				1. Getting Started（入门）（378）
+				2. Assumptions（假设）（379）
+				3. The Base Class: RegisteredVar（基类：RegisteredVar）（379）
+				4. Single Variable Values versus Array Variable Values（单变量值与数组变量值）（381）
+				5. Type-Specific Registered Variable（特定类型的注册变量）（383）
+				6. Setting a Registered Variable Directly（直接设置注册变量）（383）
+				7. IsA Functionality（IsA  功能）（384）
+				8. Setting a Registered Variable Indirectly（间接设置注册变量）（385）
+				9. Conclusion（结论）（387）
+			3. Efficient and Scalable Multi-Core Programming（高效且可扩展的多核编程）（388）
+				1. Efficient Multi-Threaded Programming（高效的多线程编程）（388）
+				2. Scalable Multi-Threaded Programming（可扩展的多线程编程）（394）
+				3. Future Work（未来的工作）（397）
+				4. Optimizations（优化）（397）
+				5. Conclusion（结论）（398）
+			4. Game Optimization through the Lens of Memory and Data Access（通过内存和数据访问的视角优化游戏）（400）
+				1. Understand the Cache（了解缓存）（400）
+				2. Pinpoint Problem Areas（查明问题领域）（402）
+				3. Avoid Waste（避免浪费）（402）
+				4. Shrink the Data（缩小数据）（403）
+				5. Organize the Data（整理数据）（405）
+				6. Manipulate the Cache（操纵缓存）（406）
+				7. Conclusion（结论）（407）
+			5. Stack Allocation（堆栈分配）（408）
+				1. Overview（概述）（408）
+				2. Example Implementation（实施示例）（409）
+				3. Index-Based Implementation（基于索引的实施）（410）
+				4. POD Types（吊舱类型）（413）
+				5. Known Issues（已知的问题）（414）
+				6. Advantages and Disadvantages（优点和缺点）（415）
+				7. Conclusion（结论）（416）
+			6. Design and Implementation of an In-Game Memory Profiler（游戏内存分析器的设计与实现）（417）
+				1. Introduction（介绍）（417）
+				2. Memory Profiling Basics（内存分析基础知识）（418）
+				3. Function Hooking（函数挂钩）（419）
+				4. Call-Stack Generation（调用堆栈生成）（420）
+				5. Collecting Statistics（收集统计数据）（421）
+				6. Multi-Thread Issues（多线程问题）（422）
+				7. The Source Code（源代码）（423）
+				8. Conclusion（结论）（423）
+			7. A More Informative Error Log Generator（信息更丰富的错误日志生成器）（424）
+				1. Definition of RTSI（RTSI的定义）（424）
+				2. Potential Uses（潜在用途）（425）
+				3. Setting Up the Code（设置代码）（426）
+				4. Error Logs Redundancy Problem versus Using RTSI（错误日志冗余问题与使用  RTSI）（428）
+				5. Conclusion（结论）（430）
+			8. Code Coverage for QA（质量检查的代码覆盖率）（431）
+				1. Common Approaches（常见方法）（431）
+				2. An Analogy: Breakpoint Testing（类比：断点测试）（432）
+				3. Code Coverage（代码覆盖率）（432）
+				4. Implementation（执行）（433）
+				5. QA Interface and Workflow（QA  界面和工作流程）（436）
+				6. Collecting Results（收集结果）（439）
+				7. Possible Expansions（可能的扩展）（440）
+				8. A Post-Mortem（验尸）（441）
+				9. Conclusion（结论）（442）
+			9. Domain-Specific Languages in Game Engines （游戏引擎中的特定领域语言）（443）
+				1. Domain-Specific Languages in Depth（深入了解特定领域的语言）（443）
+				2. Creating a DSL（创建  DSL）（447）
+				3. Multi-Language Game Engine Development（多语言游戏引擎开发）（452）
+				4. Integrating DSLs into the Pipeline（将  DSL  集成到管道中）（454）
+				5. Conclusion（结论）（456）
+			10. A Flexible User Interface Layout System for Divergent Environments（适用于不同环境的灵活用户界面布局系统）（457）
+				1. The Problem（问题）（457）
+				2. Some Cheap Solutions（一些廉价的解决方案）（458）
+				3. A More Flexible Solution（更灵活的解决方案）（460）
+				4. Concatenate Conditional Modifiers and Conditions（连接条件修饰符和条件）（461）
+				5. Implementation Details of the CM System（CM系统实施细则）（462）
+				6. Conditional Modifier Condition References（条件修饰符条件参考）（463）
+				7. Widget Templates（小部件模板）（464）
+				8. Proxy Assets（代理资产）（465）
+				9. Performance（表现）（466）
+				10. Problems（问题）（467）
+				11. Conclusion（结论）（467）
+			11. Road Creation for Projectable Terrain Meshes（可投影地形网格物体的道路创建）（468）
+				1. Roads as Geodesic Curves（道路作为测地曲线）（468）
+				2. Road Grading Techniques for The Sims 3 Worlds（《The  Sims  3  Worlds》的道路平整技术）（472）
+				3. Conclusion（结论）（476）
+			12. Developing for Digital Drawing Tablets（数字绘图板的开发）（477）
+				1. Background（背景）（477）
+				2. Tablet Theory（平板电脑理论）（479）
+				3. Tablet Programming（平板电脑编程）（483）
+				4. Conclusion（结论）（487）
+			13. Creating a Multi-Threaded Actor-Based Architecture Using Intel® Threading Building Blocks（使用英特尔® 线程构建模块创建基于多线程 Actor 的架构）（488）
+				1. Introduction（介绍）（488）
+				2. Actor-Based Programming（基于角色的编程）（490）
+				3. Implementing an Actor Engine（实现  Actor  引擎）（491）
+				4. Message-Passing Patterns（消息传递模式）（497）
+				5. Conclusion（结论）（498）
+		5. NETWORKING AND MULTIPLAYER（网络和多人游戏）（500）
+			1. Secure Channel Communication（安全通道通信）（502）
+				1. Architecture（建筑学）（502）
+				2. Network Security（网络安全）（504）
+				3. Attacks（攻击）（507）
+				4. Responses（回应）（509）
+				5. Disciplinary Measures（纪律措施）（510）
+				6. Examples（例子）（511）
+				7. Conclusion（结论）（511）
+			2. Social Networks in Games: Playing with Your Facebook Friends（游戏中的社交网络：与 Facebook 好友一起玩）（513）
+				1. RESTful Web Services（RESTful  Web  服务）（513）
+				2. The Facebook API（脸书  API）（516）
+				3. Conclusion（结论）（520）
+			3. Asynchronous I/O for Scalable Game Servers（可扩展游戏服务器的异步 I/O）（521）
+				1. Background（背景）（521）
+				2. Asynchronous I/O APIs（异步  I/O  API）（524）
+				3. Results and Analysis（结果与分析）（526）
+				4. Conclusion（结论）（528）
+			4. Introduction to 3D Streaming Technology in Massively Multiplayer Online Games（大型多人在线游戏中的3D流媒体技术简介）（529）
+				1. The Problem（问题）（530）
+				2. The Solution（解决方案）（530）
+				3. The World（世界）（531）
+				4. The Rendering（渲染图）（536）
+				5. The Transport（交通）（540）
+				6. Predictive Loading（预测加载）（547）
+				7. 3DStreamer: Putting Everything Together（3DStreamer：将一切整合在一起）（552）
+				8. Conclusion（结论）（553）
+		6. AUDIO（声音的）（554）
+			1. A Practical DSP Radio Effect（实用的 DSP 收音机效果器）（557）
+				1. The Effect（效果）（558）
+				2. Automatic Gain Control（自动增益控制）（564）
+				3. Adding Static（添加静态）（565）
+				4. Putting It All Together（把它们放在一起）（566）
+				5. Parameter Animation（参数动画）（567）
+				6. Conclusion（结论）（567）
+			2. Empowering Your Audio Team with a Great Engine（为您的音频团队提供强大的引擎）（568）
+				1. Audio Code Building Blocks（音频代码构建块）（568）
+				2. Sound Parameterization（声音参数化）（570）
+				3. Mixing（混合）（574）
+				4. Post-Production（后期制作）（576）
+				5. Conclusion（结论）（576）
+			3. Real-Time Sound Synthesis for Rigid Bodies（刚体的实时声音合成）（578）
+				1. Modal Analysis and Impulse Responses（模态分析和脉冲响应）（579）
+				2. From Physics Engine to Contact Sounds（从物理引擎到接触声音）（582）
+				3. Putting It Together（把它放在一起）（586）
+				4. Conclusion（结论）（586）
+		7. GENERAL PURPOSE COMPUTING ON GPUS（GPU 上的通用计算）（588）
+			1. Using Heterogeneous Parallel Architectures with OpenCL（将异构并行架构与 OpenCL 结合使用）（590）
+				1. OpenCL Primer（OpenCL  入门）（591）
+				2. Tips for Optimizing OpenCL C Kernels（优化  OpenCL  C  内核的技巧）（593）
+				3. Optimizing Memory-Bound OpenCL Kernels（优化受内存限制的  OpenCL  内核）（597）
+				4. OpenCL Command Profiling（OpenCL  命令分析）（603）
+				5. Conclusion（结论）（604）
+			2. PhysX GPU Rigid Bodies in Batman: Arkham Asylum（《蝙蝠侠：阿卡姆疯人院》中的 PhysX GPU 刚体）（605）
+				1. Requirements（要求）（606）
+				2. Shape Representation（形状表示）（607）
+				3. Dynamics Algorithm（动力学算法）（607）
+				4. Pipeline（管道）（608）
+				5. Transform Spheres into World Space（将球体转换为世界空间）（608）
+				6. Sphere-Sphere Collision Detection（球体碰撞检测）（608）
+				7. Sphere-Mesh Collision Detection（球体‑网格碰撞检测）（609）
+				8. Evaluate Force Fields（评估力场）（609）
+				9. Calculate Unconstrained Velocities（计算无约束速度）（609）
+				10. Generate Constraints（生成约束）（610）
+				11. Solver（求解器）（610）
+				12. Update Positions（更新职位）（612）
+				13. GPU Implementation（GPU实现）（612）
+				14. CUDA Voxelizer（CUDA  体素化器）（613）
+				15. Spatial Data Structures（空间数据结构）（614）
+				16. Solver（求解器）（614）
+				17. Conclusion（结论）（615）
+			3. Fast GPU Fluid Simulation in PhysX（PhysX 中的快速 GPU 流体模拟）（617）
+				1. Particle Systems（粒子系统）（618）
+				2. Fluids（流体）（618）
+				3. Robust Particle Collisions（鲁棒粒子碰撞）（619）
+				4. Fluid Simulation with Smoothed Particle Hydrodynamics（使用平滑粒子流体动力学进行流体模拟）（621）
+				5. Fluid Simulation Algorithm（流体模拟算法）（622）
+				6. Fluid Rendering（流体渲染）（628）
+				7. Performance（表现）（629）
+6. Game Engine Development（游戏引擎开发）
 	1. Game Engine Architecture（游戏引擎架构）
 		1. Foundations（基础）（20）
 			1. Introduction（介绍）（22）
@@ -4324,7 +13081,7 @@
 					2. Cameras（相机）（1182）
 					3. Artificial Intelligence（人工智能）（1183）
 					4. Other Gameplay Systems（其他游戏系统）（1183）
-6. Computer Graphics (CG)（计算机图形学（CG））
+7. Computer Graphics (CG)（计算机图形学（CG））
 	1. Fundamentals of Computer Graphics（计算机图形学基础）
 		1. Introduction（介绍）（19）
 			1. Graphics Areas（图形区域）（20）
@@ -5846,7 +14603,7 @@
 				3. RAY-TRACING HARDWARE（光线追踪硬件）（1053）
 				4. THE FUTURE（未来）（1053）
 			3. CONCLUSION（结论）（1054）
-7. Game Artificial Intelligence（游戏人工智能（AI））
+8. Game Artificial Intelligence（游戏人工智能（AI））
 	1. Artificial Intelligence For Games（游戏人工智能）
 		1. AI and Games（人工智能与游戏）（40）
 			1. INTRODUCTION（介绍）（42）
@@ -7618,7 +16375,7 @@
 					1. General AI（通用人工智能）（1072）
 					2. AI engineering（人工智能工程）（1073）
 					3. The future（未来）（1074）
-8. Multiplayer Game Programming（多人游戏编程）
+9. Multiplayer Game Programming（多人游戏编程）
 	1. Multiplayer Game Programming Architecting Networked Games（多人游戏编程构建网络游戏）
 		1. Overview of Networked Games（网络游戏概述）（21）
 			1. A Brief History of Multiplayer Games（多人游戏简史）（21）
@@ -7831,7 +16588,7 @@
 			6. Iterators（迭代器）（448）
 				1. Range-Based For Loop（基于范围的  For  循环）（449）
 				2. Other Uses of Iterators（迭代器的其他用途）（450）
-9. Unity
+10. Unity
 	1. Unity 2017 Game AI Programming（Unity 2017 游戏AI编程）
 		1. The Basics of AI in Games（游戏中人工智能的基础知识）（16）
 			1. Creating the illusion of life（创造生活的幻象）（17）
@@ -8763,7 +17520,757 @@
 				5. Spawning NPCs and other items（生成  NPC  和其他物品）（441）
 			4. Testing our network-enabled PC and NPC（测试我们的联网  PC  和  NPC）（443）
 			5. What's next?（下一步是什么？）（450）
-10. UnrealEngine
+	6. Introduction to Game Design, Prototyping, and Development From Concept to Playable Game with Unity and C# （使用 Unity 和 C# 介绍从概念到可玩游戏的游戏设计、原型设计和开发）（71）
+		1. Game Design and Paper Prototyping（游戏设计和纸质原型）（71）
+			1. Thinking Like a Designer（像设计师一样思考）（72）
+				1. You Are a Game Designer（你是一名游戏设计师）（72）
+				2. Bartok: A Game Design Exercise（Bartok：游戏设计练习）（73）
+					1. Objective（客观的）（74）
+					2. Getting Started（入门）（74）
+					3. Playtesting（游戏测试）（76）
+					4. Analysis: Asking the Right Questions（分析：提出正确的问题）（77）
+					5. Modifying the Rules（修改规则）（78）
+					6. Analysis: Comparing the Rounds（分析：回合比较）（79）
+					7. Designing for the Game Feel That You Want（为您想要的游戏感觉进行设计）（81）
+				3. The Definition of Game（游戏的定义）（82）
+					1. Bernard Suits’ Definition（伯纳德西装的定义）（83）
+					2. Sid Meier’s Definition（席德·梅尔的定义）（85）
+					3. Tracy Fullerton’s Definition（特雷西·富勒顿的定义）（86）
+					4. Jesse Schell’s Definition（杰西·谢尔的定义）（87）
+					5. Keith Burgun’s Definition（基思·布尔根的定义）（88）
+					6. Why Care About the Definition of Game?（为什么要关心游戏的定义？）（89）
+					7. The Nebulous Nature of Definitions（定义的模糊性）（91）
+			2. Game Analysis Frameworks（游戏分析框架）（95）
+				1. Common Frameworks for Ludology（Ludology  的通用框架）（95）
+				2. MDA: Mechanics, Dynamics, and Aesthetics（MDA：力学、动力学和美学）（96）
+					1. Definitions of Mechanics, Dynamics, and Aesthetics（力学、动力学和美学的定义）（96）
+					2. Designer and Player Views of a Game（游戏的设计师和玩家视图）（97）
+					3. Design from Aesthetics to Dynamics to Mechanics（设计从美学到动力学再到力学）（98）
+				3. Formal, Dramatic, and Dynamic Elements（正式、戏剧性和动态元素）（101）
+					1. Formal Elements（形式要素）（102）
+					2. Dramatic Elements（戏剧元素）（103）
+					3. Dynamic Elements（动态元素）（105）
+				4. The Elemental Tetrad（元素四分体）（106）
+			3. The Layered Tetrad（层状四分体）（110）
+				1. The Inscribed Layer（铭刻层）（111）
+				2. The Dynamic Layer（动态层）（112）
+				3. The Cultural Layer（文化层）（114）
+				4. The Responsibility of the Designer（设计师的责任）（117）
+			4. The Inscribed Layer（铭刻层）（120）
+				1. Inscribed Mechanics（铭刻力学）（120）
+					1. Objectives（目标）（122）
+					2. Player Relationships（玩家关系）（125）
+					3. Rules（规则）（128）
+					4. Boundaries（边界）（129）
+					5. Resources（资源）（130）
+					6. Spaces（空间）（131）
+					7. Tables（表格）（132）
+				2. Inscribed Aesthetics（铭刻美学）（133）
+					1. The Five Aesthetic Senses（五种审美感官）（133）
+					2. Aesthetic Goals（审美目标）（136）
+				3. Inscribed Narrative（铭刻叙事）（137）
+					1. Components of Inscribed Narrative（铭刻叙事的组成部分）（137）
+					2. Traditional Dramatics（传统戏剧）（138）
+					3. Differences Between Interactive and Linear Narrative（互动叙事和线性叙事之间的差异）（144）
+					4. Purposes for Inscribed Dramatics（铭刻戏剧的目的）（150）
+				4. Inscribed Technology（铭刻技术）（152）
+					1. Inscribed Paper Game Technology（刻纸游戏技术）（152）
+					2. Inscribed Digital Game Technology（铭刻数字游戏技术）（153）
+			5. The Dynamic Layer（动态层）（154）
+				1. The Role of the Player（玩家的角色）（154）
+				2. Emergence（紧急情况）（156）
+					1. Unexpected Mechanical Emergence（意外的机械出现）（156）
+				3. Dynamic Mechanics（动态力学）（157）
+					1. Procedures（程序）（157）
+					2. Meaningful Play（有意义的游戏）（158）
+					3. Strategy（战略）（159）
+					4. House Rules（家庭规则）（161）
+					5. Player Intent: Bartle’s Types, Cheaters, Spoilsports（玩家意图：巴图类型、作弊者、破坏运动）（162）
+					6. Outcome（结果）（164）
+				4. Dynamic Aesthetics（动态美学）（166）
+					1. Procedural Aesthetics（程序美学）（166）
+					2. Environmental Aesthetics（环境美学）（173）
+				5. Dynamic Narrative（动态叙事）（176）
+					1. Interactive Narrative Incunabula（互动叙事摇篮）（177）
+					2. Emergent Narrative（涌现叙事）（179）
+				6. Dynamic Technology（动态技术）（180）
+			6. The Cultural Layer（文化层）（182）
+				1. Beyond Play（超越游戏）（182）
+				2. Cultural Mechanics（文化机制）（184）
+				3. Cultural Aesthetics（文化美学）（186）
+				4. Cultural Narrative（文化叙事）（187）
+				5. Cultural Technology（文化科技）（189）
+				6. Authorized Transmedia Are Not Part of the Cultural Layer（授权的跨媒体不属于文化层）（190）
+				7. The Cultural Impact of a Game（游戏的文化影响）（192）
+					1. Manipulative Game Design（操控性游戏设计）（193）
+					2. The Messages that Our Games—and Fans—Send（我们的游戏和粉丝传递的信息）（194）
+			7. Acting Like a Designer（像设计师一样行事）（198）
+				1. Iterative Design（迭代设计）（198）
+					1. Analysis（分析）（200）
+					2. Design（设计）（203）
+					3. Implementation（执行）（206）
+					4. Testing（测试）（208）
+					5. Iterate, Iterate, Iterate, Iterate, Iterate, Iterate, Iterate!（迭代，迭代，迭代，迭代，迭代，迭代，迭代！）（209）
+				2. Innovation（创新）（209）
+				3. Brainstorming and Ideation（头脑风暴和构思）（211）
+					1. Step 1: Expansion Phase（第  1  步：扩张阶段）（211）
+					2. Step 2: Collection Phase（第  2  步：收集阶段）（213）
+					3. Step 3: Collision Phase（第三步：碰撞阶段）（214）
+					4. Step 4: Rating Phase（第四步：评级阶段）（215）
+					5. Step 5: Discussion（第五步：讨论）（215）
+				4. Changing Your Mind（改变你的想法）（216）
+					1. As the Project Progresses, You’re More Locked In（随着项目的进展，你会更加锁定）（217）
+				5. Scoping!（范围界定！）（220）
+					1. Scope Management via Preproduction Deliverables（通过预生产可交付成果进行范围管理）（221）
+			8. Design Goals（设计目标）（229）
+				1. Design Goals: An Incomplete List（设计目标：不完整的列表）（229）
+					1. Designer-Centric Goals（以设计师为中心的目标）（229）
+					2. Player-Centric Goals（以玩家为中心的目标）（230）
+				2. Designer-Centric Goals（以设计师为中心的目标）（231）
+					1. Fortune（财富）（231）
+					2. Fame（名气）（231）
+					3. Community（社区）（233）
+					4. Personal Expression and Communication（个人表达与沟通）（233）
+					5. Greater Good（更大的善）（233）
+					6. Becoming a Better Designer（成为更好的设计师）（234）
+				3. Player-Centric Goals（以玩家为中心的目标）（235）
+					1. Fun（乐趣）（235）
+					2. Lusory Attitude（华丽的态度）（237）
+					3. Flow（流动）（240）
+					4. Structured Conflict（结构性冲突）（243）
+					5. Empowerment（赋权）（245）
+					6. Attention and Involvement（关注和参与）（248）
+					7. Interesting Decisions（有趣的决定）（251）
+					8. Experiential Understanding（体验式理解）（254）
+			9. Paper Prototyping（纸质原型）（257）
+				1. The Benefits of Paper Prototyping（纸质原型的好处）（257）
+				2. Paper Prototyping Tools（纸质原型工具）（259）
+				3. Paper Prototyping for Interfaces（界面纸质原型）（263）
+				4. A Paper Prototype Example（纸质原型示例）（264）
+					1. Game Concept — 2D Adventure Game Level（游戏概念——2D冒险游戏关卡）（264）
+					2. Prototyping New Traversal Mechanics（制作新的遍历机制原型）（267）
+					3. Playtesting（游戏测试）（270）
+				5. Best Uses for Paper Prototyping（纸质原型的最佳用途）（271）
+				6. Poor Uses for Paper Prototyping（纸质原型的不良用途）（273）
+			10. Game Testing（游戏测试）（275）
+				1. Why Playtest?（为什么要进行游戏测试？）（275）
+				2. Being a Great Playtester Yourself（成为一名出色的游戏测试员）（276）
+				3. The Circles of Playtesters（游戏测试者圈子）（277）
+					1. The First Circle: You（第一圈：你）（278）
+					2. The Second Circle: Trusted Friends（第二圈：值得信赖的朋友）（278）
+					3. The Third Circle: Acquaintances and Others（第三圈：熟人及其他）（280）
+					4. The Fourth Circle: The Internet（第四圈：互联网）（281）
+				4. Methods of Playtesting（游戏测试方法）（281）
+					1. Informal Individual Testing（非正式的个人测试）（281）
+					2. Formal Group Testing（正式团体测试）（285）
+					3. Formal Individual Testing（正式个人测试）（287）
+					4. Online Playtesting（在线游戏测试）（292）
+				5. Other Important Types of Testing（其他重要的测试类型）（295）
+					1. Focus Testing（焦点测试）（295）
+					2. Interest Polling（兴趣投票）（296）
+					3. Usability Testing（可用性测试）（296）
+					4. Quality Assurance (QA) Testing（质量保证  (QA)  测试）（296）
+					5. Automated Testing（自动化测试）（297）
+			11. Math and Game Balance（数学和游戏平衡）（299）
+				1. The Meaning of Game Balance（游戏平衡的意义）（299）
+				2. The Importance of Spreadsheets（电子表格的重要性）（300）
+					1. The Choice of Google Sheets for This Book（本书选择的  Google  表格）（301）
+				3. Examining Dice Probability with Sheets（用床单检查骰子概率）（303）
+					1. Getting Started in Google Sheets（Google  表格入门）（303）
+					2. Getting Started with Sheets（开始使用表格）（305）
+					3. Naming the Document（命名文档）（307）
+					4. Creating a Row of Numbers from 1 to 36（创建一行从  1  到  36  的数字）（308）
+					5. Making the Row for Die A（为骰子  A  排好队）（310）
+					6. Making the Row for Die B（为  Die  B  排好队）（312）
+					7. Adding Clarity with Labels（使用标签增加清晰度）（314）
+					8. Color Scale Conditional Formatting（色阶条件格式）（315）
+					9. Summing the Results of the Two Dice（将两个骰子的结果相加）（317）
+					10. Counting the Sums of Die Rolls（计算骰子的总数）（317）
+					11. Counting All Possible Rolls（计算所有可能的卷数）（318）
+					12. Conditional Formatting（条件格式）（320）
+					13. Charting the Results（绘制结果图表）（320）
+					14. Wrapping Up Our Intro to Sheets（总结我们对表格的介绍）（324）
+				4. The Math of Probability（概率数学）（324）
+				5. Randomizer Technologies in Paper Games（纸质游戏中的随机发生器技术）（331）
+					1. Dice（骰子）（331）
+					2. Spinners（纺纱机）（331）
+					3. Decks of Cards（牌组）（333）
+				6. Weighted Distributions（加权分布）（336）
+				7. Weighted Probability in Google Sheets（Google  表格中的加权概率）（337）
+				8. Permutations（排列）（339）
+					1. Permutations with Repeating Elements（重复元素的排列）（340）
+					2. Permutations with No Repeating Elements（没有重复元素的排列）（341）
+				9. Using Sheets to Balance Weapons（使用床单来平衡武器）（341）
+					1. Determining the Percent Chance for Each Shot（确定每次射击的百分比机会）（342）
+					2. Calculating Average Damage（计算平均伤害）（344）
+					3. Charting the Average Damage（绘制平均伤害图表）（346）
+					4. Showing Overall Damage（显示整体损坏）（348）
+					5. Duplicating the Weapon Data（复制武器数据）（349）
+					6. Rebalancing the Weapons（重新平衡武器）（350）
+					7. One Example of Balanced Values（平衡价值观的一个例子）（351）
+				10. Positive and Negative Feedback（正反馈和负反馈）（353）
+			12. Guiding the Player（引导玩家）（355）
+				1. Direct Guidance（直接指导）（355）
+					1. Methods of Direct Guidance（直接指导方法）（357）
+				2. Indirect Guidance（间接指导）（359）
+					1. Constraints（约束条件）（359）
+					2. Goals（目标）（359）
+					3. Physical Interface（物理接口）（360）
+					4. Visual Design（视觉设计）（361）
+					5. Audio Design（音频设计）（366）
+					6. Player Avatar（玩家头像）（367）
+					7. Non-Player Characters（非玩家角色）（367）
+				3. Teaching New Skills and Concepts（教授新技能和概念）（369）
+					1. Sequencing（测序）（370）
+					2. Integration（一体化）（373）
+			13. Puzzle Design（拼图设计）（375）
+				1. Scott Kim on Puzzle Design（斯科特·金  (Scott  Kim)  谈拼图设计）（375）
+					1. Defining Puzzle（定义谜题）（376）
+					2. Genres of Puzzles（谜题类型）（378）
+					3. The Four Major Reasons that People Play Puzzles（人们玩拼图的四个主要原因）（380）
+					4. Modes of Thought Required by Puzzles（谜题所需的思维模式）（381）
+					5. Kim’s Eight Steps of Digital Puzzle Design（Kim  的数字拼图设计八步）（384）
+					6. Seven Goals of Effective Puzzle Design（有效谜题设计的七个目标）（386）
+				2. The Steps of Solving a Puzzle（解决谜题的步骤）（387）
+					1. Understanding the Goal（了解目标）（388）
+					2. Exploration（勘探）（389）
+					3. Insight（洞察力）（389）
+					4. Attempt（试图）（389）
+					5. Mastery（精通）（390）
+				3. Puzzle Examples in Action Games（动作游戏中的谜题示例）（391）
+					1. Sliding Blocks / Position Puzzles（滑块/位置拼图）（391）
+					2. Physics Puzzles（物理谜题）（392）
+					3. Chain Reaction（连锁反应）（392）
+					4. Traversal（遍历）（392）
+					5. Stealth（隐身）（393）
+					6. Boss Fights（Boss战）（393）
+					7. Dexterity and Timing（敏捷性和时机）（394）
+				4. Designing and Developing Puzzle Games（设计和开发益智游戏）（395）
+			14. The Agile Mentality（敏捷心态）（398）
+				1. The Manifesto for Agile Software Development（敏捷软件开发宣言）（398）
+				2. Scrum Methodology（Scrum  方法论）（400）
+					1. The Scrum Team（Scrum  团队）（401）
+					2. Product Backlog / Task List（产品待办事项/任务列表）（402）
+					3. The Burndown Chart（燃尽图）（402）
+					4. Daily Scrum Meetings（每日  Scrum  会议）（403）
+					5. Releases and Sprints（发布和冲刺）（404）
+				3. Burndown Chart Example（燃尽图示例）（405）
+					1. Burndown Chart Example: Worksheets（燃尽图示例：工作表）（406）
+					2. Worksheet—Main（工作表—主要）（408）
+					3. Worksheet—Task Rank Chart（工作表—任务排名图）（417）
+					4. Worksheet—Person Chart（工作表—人员图表）（419）
+					5. Worksheet—Daily Scrum（工作表——每日 Scrum）（420）
+				4. Creating Your Own Burndown Charts（创建您自己的燃尽图）（423）
+			15. The Digital Game Industry（数字游戏产业）（425）
+				1. About the Game Industry（关于游戏产业）（425）
+					1. Entertainment Software Association Essential Facts（娱乐软件协会基本事实）（426）
+					2. Conditions in the Industry（行业状况）（427）
+				2. Game Education（游戏教育）（437）
+					1. Should I Enroll in a Game Education Program?（我应该参加游戏教育计划吗？）（437）
+					2. Which Game Education Program Should I Choose?（我应该选择哪个游戏教育项目？）（438）
+				3. Getting Into the Industry（进入行业）（441）
+					1. Meeting People in the Industry（会见业内人士）（441）
+					2. Following Up（跟进）（444）
+					3. Interviewing（面试）（445）
+				4. Don’t Wait to Start Making Games!（不要等待开始制作游戏！）（449）
+					1. Join a Project（加入项目）（449）
+					2. Start Your Own Project（开始你自己的项目）（449）
+		2. Programming C# in Unity（在  Unity  中进行  C#  编程）（455）
+			1. Thinking in Digital Systems（数字系统思维）（456）
+				1. Systems Thinking in Board Games（棋盘游戏中的系统思维）（456）
+				2. An Exercise in Simple Instructions（简单说明的练习）（458）
+					1. What This Means to Digital Programming（这对数字节目意味着什么）（459）
+				3. Game Analysis: Apple Picker（游戏分析：苹果拾取器）（462）
+					1. Apple Picker Basic Gameplay（苹果选择器基本游戏）（463）
+					2. Apple Picker GameObjects（Apple  Picker游戏对象）（463）
+					3. Apple Picker GameObject Action Lists（Apple  Picker游戏对象操作列表）（465）
+					4. Apple Picker GameObject Flowcharts（Apple  Picker游戏对象流程图）（466）
+			2. Introducing Unity HUB and The Unity Editor（Unity HUB 和 Unity 编辑器简介）（471）
+				1. Downloading Unity（下载Unity）（471）
+					1. Downloading and Installing Unity Hub（下载并安装  Unity  Hub）（472）
+					2. Installing Unity 2020.3 LTS（安装  Unity  2020.3  LTS）（474）
+				2. Introducing Our Development Environment（介绍我们的开发环境）（476）
+					1. Why Choose Unity?（为什么选择Unity？）（478）
+					2. Why Choose C#?（为什么选择  C#？）（480）
+					3. On the Daunting Nature of Learning a Language（论学习语言的艰巨性）（480）
+				3. Creating a Unity Account（创建  Unity  帐户）（485）
+				4. Checking Out a Sample Project（查看示例项目）（485）
+				5. Creating Your First Unity Project（创建您的第一个  Unity  项目）（486）
+				6. Learning Your Way Around Unity（学习  Unity  的方法）（490）
+				7. Setting Up the Unity Window Layout（设置  Unity  窗口布局）（492）
+					1. Downloading the IGDPD Layout from the Website（从网站下载 IGDPD 布局）（492）
+					2. Manually Arranging the IGDPD Layout（手动排列  IGDPD  布局）（493）
+			3. Introducing Our Language: C#（介绍我们的语言：C#）（500）
+				1. Understanding the Features of C#（了解  C#  的特性）（500）
+					1. C# Is a Compiled Language（C#  是一种编译语言）（501）
+					2. C# Is Managed Code（C#  是托管代码）（504）
+					3. C# Is Statically Typed（C#  是静态类型的）（505）
+					4. C# Is Function-Based（C#  是基于函数的）（506）
+					5. C# Is Object-Oriented（C#  是面向对象的）（507）
+					6. C# Can Be Data-Oriented（C#  可以是面向数据的）（509）
+				2. Reading and Understanding C# Syntax（阅读和理解  C#  语法）（509）
+			4. Hello World: Your First Program（你好世界：你的第一个程序）（514）
+				1. Creating a New Project（创建一个新项目）（514）
+				2. Making a New C# Script（制作新的  C#  脚本）（518）
+					1. Start() Versus Update()（Start()  与  Update()）（526）
+				3. Making Things More Interesting（让事情变得更有趣）（529）
+					1. Making a Prefab（制作预制件）（532）
+					2. Creating an Environment for the Cubes（为立方体创建环境）（539）
+					3. Adding a Little Color（添加一点颜色）（543）
+			5. Variables and Components（变量和组件）（546）
+				1. Introducing Variables（引入变量）（546）
+				2. Statically Typed Variables in C#（C# 中的静态类型变量）（547）
+					1. Declaring and Defining Variables in C#（在  C#  中声明和定义变量）（548）
+					2. Declaration Before Definition（先声明后定义）（548）
+				3. Important C# Variable Types（重要的  C#  变量类型）（549）
+					1. bool: A 1-bit True or False Value（bool：  1  位  True  或  False  值）（549）
+					2. int: A 32-bit Integer（int：  32  位整数）（549）
+					3. float: A 32-bit Decimal Number（float：  32  位十进制数）（550）
+					4. char: A 16-bit Single Character（char：  16  位单个字符）（551）
+					5. string: A Series of 16-bit Characters（string：一系列  16  位字符）（551）
+					6. class: The Definition of a New Variable Type（class：新变量类型的定义）（553）
+				4. The Scope of Variables（变量的范围）（553）
+				5. Naming Conventions（命名约定）（553）
+				6. Important Unity Variable Types（重要的  Unity  变量类型）（554）
+					1. Vector3: A Collection of Three Floats（Vector3：三个浮点的集合）（558）
+					2. Color: A Color with Transparency Information（颜色：带有透明度信息的颜色）（559）
+					3. Quaternion: Rotation Information（四元数：旋转信息）（561）
+					4. Mathf: A Library of Mathematical Functions（Mathf：数学函数库）（563）
+					5. Screen: Information about the Display（屏幕：有关显示屏的信息）（564）
+					6. Application: Information about the Unity context（应用程序：有关  Unity  上下文的信息）（564）
+					7. SystemInfo: Information about the Device（SystemInfo：有关设备的信息）（565）
+					8. GameObject: The Type of Any Object in the Scene（GameObject：场景中任何对象的类型）（566）
+				7. Unity GameObjects and Components（Unity  游戏对象和组件）（567）
+					1. Transform: Position, Rotation, and Scale（变换：位置、旋转和缩放）（568）
+					2. MeshFilter: The Model That Is Rendered（MeshFilter：渲染的模型）（569）
+					3. Renderer: Draws the Model on the Screen（渲染器：在屏幕上绘制模型）（569）
+					4. Collider: The Physical Presence of the GameObject（对撞机：游戏对象的物理存在）（569）
+					5. Rigidbody: The Physics Simulation（Rigidbody：物理模拟）（571）
+					6. Script: The C# Scripts That You Write（脚本：您编写的  C#  脚本）（571）
+			6. Boolean Operations and Conditionals（布尔运算和条件）（573）
+				1. Booleans（布尔值）（573）
+					1. Boolean Operations（布尔运算）（574）
+					2. Combination of Boolean Operations（布尔运算的组合）（578）
+					3. Logical Equivalence of Boolean Operations（布尔运算的逻辑等价）（579）
+				2. Comparison Operators（比较运算符）（580）
+					1. == (Is Equal To)（==（等于））（580）
+					2. != (Not Equal To)（!=（不等于））（585）
+					3. > (Greater Than) and < (Less Than)（>（大于）和  <（小于））（585）
+					4. >= (Greater Than or Equal To) and <= (Less Than or Equal To)（>=（大于或等于）和 <=（小于或等于））（586）
+				3. Conditional Statements（条件语句）（587）
+					1. if Statements（if语句）（587）
+					4. switch Statements（switch语句）（592）
+			7. Loops（循环）（596）
+				1. Types of Loops（循环的类型）（596）
+				2. Set Up a Project（建立一个项目）（597）
+				3. while Loops（while  循环）（598）
+					1. The Danger of Infinite Loops（无限循环的危险）（598）
+					2. A More Useful while Loop（更有用的while循环）（601）
+				4. do…while Loops（do...while  循环）（604）
+				5. for Loops（for  循环）（605）
+					1. Using the Decrement Operator in an Iteration Clause（在迭代子句中使用减量运算符）（608）
+					2. Any of the Three for Clauses Can Be Empty（三个  for  子句中的任何一个都可以为空）（609）
+				6. foreach Loops（foreach  循环）（610）
+				7. Jump Statements within Loops（循环内的跳转语句）（611）
+					1. Using break Statements to Exit Any Kind of Loop（使用break语句退出任何类型的循环）（612）
+					2. Skipping the Rest of an Iteration with continue（使用continue跳过剩余的迭代）（617）
+			8. Collections in C#（C#  中的集合）（620）
+				1. C# Collections（C#  集合）（620）
+					1. Commonly Used Collections（常用集合）（621）
+				2. Using Generic Collections（使用通用集合）（626）
+				3. List< T>（列表< T>）（627）
+				4. Dictionary<Tkey, TValue>（字典<Tkey,  TValue>）（632）
+				5. Array（数组）（637）
+					1. Empty Elements in the Middle of an Array（数组中间的空元素）（639）
+					2. Skipping null Array Elements with foreach（使用foreach跳过空数组元素）（640）
+				6. Multidimensional Arrays（多维数组）（643）
+				7. Jagged Arrays（锯⻮状阵列）（649）
+					1. Using for Loops Instead of foreach for Jagged Arrays（使用 for 循环代替 foreach 来处理锯齿状数组）（652）
+				8. Jagged List< T>s（锯⻮状列表< T>）（653）
+				9. Choosing Whether to Use an Array or List（选择使用数组还是列表）（655）
+			9. Functions and parameters（功能及参数）（661）
+				1. Setting Up the Function Examples Project（设置函数示例项目）（661）
+				2. Definition of a Function（函数的定义）（662）
+				3. What Happens When You Call a Function?（调用函数时会发生什么？）（665）
+				4. Function Parameters and Arguments（函数参数和参数）（667）
+				5. Returning Values（返回值）（670）
+				6. Returning void（返回无效）（671）
+				7. Function Naming Conventions（函数命名约定）（672）
+				8. Why Use Functions?（为什么使用函数？）（673）
+				9. Function Overloading（函数重载）（676）
+				10. Optional Parameters（可选参数）（678）
+				11. The params Keyword（参数关键字）（679）
+				12. Recursive Functions（递归函数）（682）
+			10. Debugging（调试）（686）
+				1. Getting Started with Debugging（调试入门）（686）
+					1. Compile-Time Bugs（编译时错误）（688）
+					2. Attaching and Removing Scripts（添加和删除脚本）（695）
+					3. Runtime Errors（运行时错误）（698）
+					4. Unity Errors (That Aren’t Your Fault)（Unity  错误（那不是你的错））（702）
+				2. Stepping Through Code with the Debugger（使用调试器单步执行代码）（702）
+					1. Enabling Debugging in Unity 2020（在  Unity  2020  中启用调试）（707）
+					2. Attaching the Debugger to Unity（将调试器附加到  Unity）（708）
+					3. Using the Debugger to Examine code（使用调试器检查代码）（713）
+			11. Classes（类）（722）
+				1. Understanding Classes（了解类）（722）
+					1. The Anatomy of a Class (and of Most C# Scripts)（类（以及大多数  C#  脚本）的剖析）（723）
+					2. Setting Up the Enemy Class Sample Project（设置敌人类示例项目）（725）
+					3. Creating Properties—Methods That Work Like Fields（创建属性——像字段一样工作的方法）（728）
+					4. MonoBehaviour Subclasses Are GameObject Components（MonoBehaviour 子类是 GameObject 组件）（733）
+				2. Class Inheritance（类继承）（738）
+					1. Implementing the Enemy Class on a GameObject（在游戏对象上实现敌人类）（739）
+					2. Understanding Superclasses and Subclasses（了解超类和子类）（741）
+			12. Object-Oriented Thinking（面向对象的思维）（746）
+				1. The Object-Oriented Metaphor（面向对象的隐喻）（746）
+					1. Simulating a Flock of Birds in a Monolithic Way（以整体方式模拟一群鸟）（746）
+					2. Simulating a Flock of Birds Using OOP and Boids（使用  OOP  和  Boids  模拟鸟群）（748）
+				2. An Object-Oriented Boids Implementation（面向对象的  Boids  实现）（749）
+					1. Making a Simple Boid Model（制作一个简单的身体模型）（750）
+					2. Attractor GameObject（吸引子游戏对象）（756）
+					3. The C# Scripts（C#  脚本）（758）
+			13. Data-Oriented Design（面向数据的设计）（783）
+				1. The Theory of Data-Oriented Design（面向数据的设计理论）（783）
+					1. Realities of Modern Computer Hardware（现代计算机硬件的现实）（784）
+					2. Data Locality and Access Speed（数据局部性和访问速度）（786）
+					3. Cache Lines（缓存线）（787）
+					4. The Issues with Object-Oriented Programming（面向对象编程的问题）（788）
+					5. Unity’s Data-Oriented Tech Stack（Unity  面向数据的技术堆栈）（790）
+				2. DOTS Tutorial and Example（DOTS  教程和示例）（791）
+					1. Setting Up the Unity Project（设置  Unity  项目）（792）
+						1. Setting the Scene（设置场景）（795）
+						2. Object-Oriented Image Creation（面向对象的图像创建）（797）
+						3. Data-Oriented Image Creation（面向数据的图像创建）（807）
+						4. Turning Noise into an Archipelago（将噪音变成群岛）（819）
+						5. Entity Component Systems (ECS)（实体组件系统  (ECS)）（831）
+					2. The Future of Unity DOTS（Unity  DOTS  的未来）（837）
+		3. Game Prototype Tutorials（游戏原型教程）（840）
+			1. Apple Picker（苹果采摘器）（841）
+				1. What You Will Learn（你将学到什么）（841）
+				2. The Apple Picker Prototype（苹果采摘器原型）（841）
+				3. The Purpose of a Digital Prototype（数字原型的目的）（842）
+				4. Preparing（准备中）（843）
+					1. Getting Started: Art Assets（入门：艺术资产）（844）
+					2. Camera Setup（相机设置）（853）
+					3. Game Panel Settings（游戏面板设置）（856）
+				5. Coding the Apple Picker Prototype（编写Apple  Picker原型）（857）
+					1. Applying AppleTree Instance Overrides to the AppleTree Prefab（将 AppleTree 实例覆盖应用于 AppleTree 预制件）（862）
+					2. Basic Movement（基本动作）（863）
+					3. Changing Direction（改变方向）（866）
+					4. Changing Direction Randomly（随机改变方向）（867）
+					5. Dropping Apples（掉落苹果）（869）
+					6. Setting Physics Layers（设置物理层）（871）
+					7. Stopping Apples If They Fall Too Far（如果苹果掉得太远就阻止它们）（874）
+					8. Instantiating the Baskets（实例化篮子）（876）
+					9. Moving the Baskets with the Mouse（用鼠标移动篮子）（877）
+					10. Catching Apples（摘苹果）（879）
+					11. Tuning AppleTree (Script) Variables（调整  AppleTree（脚本）变量）（880）
+				6. GUI and Game Management（GUI  和游戏管理）（882）
+					1. HighScore and ScoreCounter Texts（HighScore  和  ScoreCounter  文本）（882）
+					2. Accumulating Points for Each Caught Apple（每抓到一个苹果即可累积积分）（885）
+					3. Notifying ApplePicker That an Apple Was Missed（通知  ApplePicker  丢失了一个苹果）（889）
+					4. Adding a High Score（添加高分）（893）
+			2. Mission Demolition（任务拆除）（901）
+				1. What You Will Learn（你将学到什么）（901）
+				2. The Mission Demolition Prototype（任务拆除原型）（902）
+				3. Getting Started: Mission Demolition（入门：任务拆除）（902）
+				4. Game Prototype Concept（游戏原型概念）（903）
+				5. Art Assets（艺术资产）（904）
+					1. Ground（地面）（904）
+					2. Directional Light（定向光）（904）
+					3. Camera Settings（相机设置）（904）
+					4. The Slingshot（弹弓）（906）
+					5. Projectile（弹丸）（909）
+				6. Coding the Prototype（编写原型代码）（910）
+					1. Creating the Slingshot Class（创建  Slingshot  类）（910）
+					2. Making a Follow Camera（制作跟随相机）（922）
+					3. Providing Vection and a Sense of Speed（提供矢量和速度感）（930）
+					4. Organizing the Project Pane（组织项目窗格）（935）
+					5. Building the Castle（建造城堡）（936）
+					6. Fixing Rigidbody’s Insomnia（修复  Rigidbody  的失眠问题）（944）
+					7. Adding a ProjectileLine Trail（添加  ProjectileLine  轨迹）（947）
+					8. Hitting the Goal（击中目标）（953）
+				7. From Prototype to First Playable（从原型到首次可玩）（955）
+					1. Adding More Castles（添加更多城堡）（955）
+					2. Adding UI to the Scene（将  UI  添加到场景中）（956）
+					3. Adding More Game Management（添加更多游戏管理）（958）
+					4. Showing Different Views of the Level（显示关卡的不同视图）（965）
+			3. Space SHMUP – Part 1（太空  SHMUP  –  第  1  部分）（973）
+				1. What You Will Learn（你将学到什么）（973）
+				2. Getting Started: Space SHMUP（入门：太空  SHMUP）（973）
+					1. Importing a Unity Asset Package（导入Unity资源包）（975）
+				3. Setting the Scene（设置场景）（976）
+				4. Making the Hero Ship（制作英雄船）（977）
+					1. The Hero Update() Method（Hero  Update()  方法）（979）
+					2. The Hero Shield（英雄之盾）（983）
+					3. Keeping _Hero on Screen（将  _Hero  保留在屏幕上）（985）
+				5. Adding Some Enemies（添加一些敌人）（990）
+					1. The Enemy C# Script（敌人的  C#  脚本）（991）
+				6. Spawning Enemies at Random（随机生成敌人）（1005）
+				7. Setting Tags, Layers, and Physics（设置标签、图层和物理）（1008）
+					1. Assigning the Proper Layers to GameObjects（为游戏对象分配适当的层）（1010）
+				8. Making the Enemies Damage the Player（让敌人伤害玩家）（1011）
+				9. Restarting the Game（重新开始游戏）（1015）
+				10. Shooting (Finally)（射击（最后））（1018）
+					1. ProjectileHero, the Hero’s Bullet（ProjectileHero，英雄的子弹）（1018）
+					2. Giving _Hero the Ability to Shoot（赋予  _Hero  射击能力）（1020）
+					3. Scripting the ProjectileHero（编写  ProjectileHero  脚本）（1021）
+					4. Allowing Projectiles to Destroy Enemies（允许射弹摧毁敌人）（1021）
+			4. Space SHMUP – Part 2（太空  SHMUP  –  第  2  部分）（1023）
+				1. What You Will Learn（你将学到什么）（1023）
+				2. Getting Started: Space SHMUP – Part 2（入门：  Space  SHMUP  –  第  2  部分）（1024）
+				3. Enemy to Enemy_0（敌人对敌人_0）（1025）
+				4. Programming Other Enemies（对其他敌人进行编程）（1027）
+					1. Enemy_1（敌人_1）（1027）
+					2. When Is BoundsCheck bndCheck Being private a Problem?（BoundsCheck bndCheck 私有化何时会出现问题？）（1031）
+					3. Preparing for the Other Enemies（为其他敌人做好准备）（1034）
+					4. Enemy_2（敌人_2）（1034）
+					5. Enemy_3（敌人_3）（1041）
+					6. Saving Enemy_4 for Later（保存  Enemy_4  供以后使用）（1047）
+				5. Shooting Revisited（重温拍摄）（1047）
+					1. The eWeaponType Enum（eWeaponType  枚举）（1048）
+					2. The Serializable WeaponDefinition Class（可序列化的  WeaponDefinition  类）（1049）
+					3. A Generic Dictionary for WeaponDefinitions（武器定义通用词典）（1053）
+					4. Using a Delegate Event to Fire（使用委托事件来触发）（1057）
+					5. Creating a Weapon GameObject to Fire Projectiles（创建武器游戏对象来发射射弹）（1059）
+					6. Revising the Enemy OnCollisionEnter Method（修改  Enemy  OnCollisionEnter  方法）（1066）
+				6. Showing Enemy Damage（显示敌人伤害）（1068）
+					1. Adding GetAllMaterials to the Utils Script（将  GetAllMaterials  添加到  Utils  脚本）（1068）
+					2. Using GetAllMaterials to Make the Enemy Blink Red（使用  GetAllMaterials  让敌人闪烁红光）（1069）
+				7. Adding PowerUps and Boosting Weapons（添加  PowerUps  和增强武器）（1072）
+					1. Artwork for the PowerUp GameObject（PowerUp  游戏对象的艺术作品）（1073）
+					2. PowerUp Code（通电代码）（1075）
+				8. Race Conditions & Script Execution Order（竞争条件和脚本执行顺序）（1084）
+				9. Making Enemies Drop PowerUps（让敌人掉落能量）（1087）
+				10. Enemy_4 — A More Complex Enemy（Enemy_4 — 更复杂的敌人）（1091）
+					1. Enemy_4 Prefab Modifications（Enemy_4  预制件修改）（1091）
+					2. Creating the EnemyShield Script（创建  EnemyShield  脚本）（1093）
+					3. Coding Enemy_4 to Use EnemyShield（对  Enemy_4  进行编码以使用  EnemyShield）（1097）
+					4. Movement of Enemy_4（敌人的移动_4）（1101）
+				11. Tuning Settings for the Game Entities（调整游戏实体的设置）（1103）
+				12. Adding a Scrolling Starfield Background（添加滚动星空背景）（1106）
+			5. Prospector Solitaire – Part 1（探矿者纸牌  –  第  1  部分）（1111）
+				1. What You Will Learn（你将学到什么）（1111）
+				2. The Prospector Game（勘探者游戏）（1111）
+					1. Prospector Initial Layout（探矿者初始布局）（1112）
+					2. Prospector Rules（探矿者规则）（1113）
+					3. Example of Play（游戏示例）（1113）
+				3. Getting Started: Prospector Solitaire（入门：探矿者纸牌）（1114）
+				4. Build Settings（构建设置）（1115）
+					1. Installing the WebGL Module（安装WebGL模块）（1116）
+					2. Switching to the WebGL Build Platform（切换到  WebGL  构建平台）（1117）
+					3. Including __Prospector_Scene_0 in Any Builds（在任何构建中包含 __Prospector_Scene_0）（1119）
+				5. Setting Up the Unity Window Layout（设置  Unity  窗口布局）（1119）
+				6. Setting Up the Camera and Game Pane（设置相机和游戏面板）（1119）
+				7. Importing Images as Sprites（将图像导入为精灵）（1121）
+					1. Slicing the Rank Image into Multiple Sprites（将排名图像分割成多个精灵）（1123）
+				8. Constructing Cards from Sprites（从精灵构建卡片）（1125）
+					1. Making Use of JSON Through Code（通过代码使用  JSON）（1127）
+					2. Gathering References to the Deck Sprites（收集对牌组精灵的引用）（1132）
+					3. Creating Prefab GameObjects for Sprites and Cards（为精灵和卡片创建预制游戏对象）（1134）
+					4. Building the Cards Through Code（通过代码构建卡片）（1136）
+					5. Building the Cards from Sprites（从精灵构建卡片）（1145）
+					6. Shuffling the Cards（洗牌）（1153）
+				9. Implementing Prospector in Code（在代码中实施Prospector）（1154）
+					1. Parsing the Mine Tableau Layout from JSON（从  JSON  解析  Mine  Tableau  布局）（1154）
+					2. The Prospector Class (Finally!)（勘探者级（最后！））（1162）
+				10. Implementing Game Logic（实现游戏逻辑）（1176）
+					1. Making Cards Clickable（使卡片可点击）（1176）
+					2. Matching Cards from the Mine（矿井中的匹配卡）（1178）
+			6. Prospector Solitaire – Part 2（探矿者纸牌–  第  2  部分）（1184）
+				1. What You Will Learn（你将学到什么）（1184）
+				2. Getting Started: Prospector – Part 2（入门：探矿者‑  第  2  部分）（1185）
+				3. Additional Prospector Game Elements（额外的勘探者游戏元素）（1186）
+					1. Managing Prospector Rounds（管理探矿者回合）（1187）
+					2. Adding Scoring to Prospector（为Prospector添加评分）（1190）
+					3. The Prospector Background Image（探矿者背景图片）（1199）
+				4. Adding GUI Elements to Display the Score（添加  GUI  元素来显示分数）（1202）
+					1. The BézierMover Class（BézierMover  类）（1203）
+					2. The FloatingScore Game Object and Canvas（FloatingScore  游戏对象和画布）（1208）
+					3. Creating the ScoreBoard Class and GameObject（创建记分板类和游戏对象）（1218）
+					4. Updating ScoreManager（更新分数管理器）（1220）
+					5. Adding a Pause Between Rounds（在回合之间添加暂停）（1226）
+					6. Giving the Player Feedback on Their Score（向玩家提供分数反馈）（1227）
+				5. Building and Running Your WebGL Build（构建并运行您的  WebGL  构建）（1234）
+			7. Dungeon Delver – Part 1（地牢探索者–  第  1  部分）（1241）
+				1. What You Will Learn（你将学到什么）（1241）
+				2. The Dungeon Delver Game（地牢探索者游戏）（1241）
+					1. Component-Based Design（基于组件的设计）（1242）
+				3. Getting Started: Dungeon Delver（入门：地下城探索者）（1243）
+				4. Setting Up the Cameras（设置相机）（1244）
+					1. Game Pane（游戏面板）（1245）
+					2. Main Camera（主摄像头）（1246）
+					3. GUI Camera（图形化相机）（1246）
+				5. Understanding the Dungeon Data（了解地下城数据）（1247）
+					1. Preparing DelverTiles（准备  DelverTiles）（1247）
+					2. The DelverLevel_Eagle Text File（DelverLevel_Eagle  文本文件）（1249）
+				6. Showing the Map with a Unity Tilemap（使用  Unity  Tilemap  显示地图）（1252）
+					1. Setting Up Tiles and the Tilemap_Visual（设置图块和 Tilemap_Visual）（1252）
+					2. Generating a Tilemap from Data（从数据生成瓦片地图）（1253）
+				7. Adding the Hero（添加英雄）（1263）
+					1. The Dray Sprite Naming Convention（Dray  Sprite  命名约定）（1263）
+					2. Your First Animation（你的第一部动画）（1264）
+					3. Tweaking the Dray_Walk_0 Animation（调整  Dray_Walk_0  动画）（1269）
+					4. Adding Additional Dray Animation（添加额外的拖曳动画）（1269）
+					5. Moving Dray（移动板车）（1270）
+					6. A More Interesting Movement Approach（更有趣的运动方式）（1271）
+					7. A Better Way to Handle Input Keys（处理输入键的更好方法）（1272）
+					8. Animating Dray for Walking（步行动画拖车）（1274）
+				8. Giving Dray an Attack Animation（为德雷提供攻击动画）（1275）
+					1. Generating the Attack Pose Animations（生成攻击姿势动画）（1275）
+					2. Coding the Attack Pose Animations（编写攻击姿势动画）（1275）
+				9. Dray’s Sword（德雷之剑）（1278）
+				10. Programmatic Collision in Unity Tilemap（Unity  Tilemap  中的编程碰撞）（1280）
+					1. Understanding the CollisionTiles Sprites（了解  CollisionTiles  精灵）（1281）
+					2. Setting Up Collision Tiles and the Tilemap_Collision（设置碰撞图块和  Tilemap_Collision）（1282）
+					3. Programmatically Filling the Tilemap_Collision（以编程方式填充  Tilemap_Collision）（1284）
+					4. Adding a Collider to Dray（将碰撞器添加到  Dray）（1288）
+				11. The InRoom Script（室内脚本）（1288）
+				12. Enemy: Skeletos（敌人：骷髅）（1290）
+					1. Skeletos Animation（骷髅动画）（1290）
+					2. The Enemy Base Class（敌人基类）（1291）
+					3. The Skeletos Subclass of Enemy（敌人的骷髅子类）（1292）
+				13. Keeping GameObjects in the Room（将游戏对象保留在房间中）（1293）
+				14. Aligning to the Grid（与网格对齐）（1296）
+					1. The IFacingMover Interface（IFaceingMover  界面）（1297）
+					2. The GridMove Script（网格移动脚本）（1302）
+				15. Moving from Room to Room（从一个房间移动到另一个房间）（1304）
+				16. Making the Camera Follow Dray（让相机跟随拖车）（1308）
+			8. Dungeon Delver – Part 2（地牢探索者–  第  2  部分）（1312）
+				1. What You Will Learn（你将学到什么）（1312）
+				2. Getting Started: Dungeon Delver — Part 2（入门：地下城探索者 — 第 2 部分）（1312）
+				3. Dungeon Delver — Part 2 Overview（地下城探索者 — 第 2 部分概述）（1313）
+				4. Implementing TileSwaps（实施  TileSwaps）（1314）
+					1. The TileSwapManager Script（TileSwapManager  脚本）（1315）
+					2. Setting Up TileSwaps for Doors（为门设置  TileSwaps）（1318）
+				5. Swapping in LockedDoor GameObjects（交换  LockedDoor  游戏对象）（1321）
+					1. The ISwappable Interface（可交换接口）（1323）
+					2. Making Skeletos and LockedDoor Prefabs（制作骨架和  LockedDoor  预制件）（1325）
+					3. Using ISwappable.Init()（使用  ISwappable.Init()）（1325）
+				6. Implementing Keys and Unlocking Doors（使用钥匙和开门）（1327）
+					1. The IKeyMaster（钥匙大师）（1327）
+					2. Locked Doors That Require Keys（锁着的门需要钥匙）（1329）
+				7. Adding GUI to Track Key Count and Health（添加  GUI  来跟踪按键计数和运行状况）（1335）
+					1. Adding Health to Dray（为拖车添加生命值）（1337）
+					2. Connecting the GUI to Dray（将  GUI  连接到  Dray）（1338）
+				8. Enabling Enemies to Damage Dray（使敌人能够损坏战车）（1341）
+					1. Implementing DamageEffect（实施伤害效果）（1341）
+					2. Modifying the Dray Class to Take Damage（修改  Dray  类以承受伤害）（1342）
+				9. Making Dray’s Attack Damage Enemies（让德雷的攻击伤害敌人）（1346）
+				10. Modifying Enemy to Take Damage（修改敌人以承受伤害）（1347）
+				11. Picking Up Items（拾取物品）（1351）
+				12. Enemies Dropping Items on Death（敌人死亡时会掉落物品）（1354）
+					1. Dropping Keys（掉落钥匙）（1354）
+					2. Dropping Randomized Items（丢弃随机物品）（1356）
+				13. Implementing a New Dungeon — The Hat（实施一个新的地下城——帽子）（1359）
+					1. Preparing the Scene（准备场景）（1359）
+					2. Setting Up TileSwaps for Enemies and Items（为敌人和物品设置  TileSwaps）（1359）
+				14. Implementing a Grappler（实施抓斗器）（1363）
+					1. The IGadget Interface（IGadget  界面）（1363）
+					2. Understanding How Dray Works with IGadgets（了解  Dray  如何与  IGadgets  配合使用）（1365）
+					3. Enabling Dray to Use IGadgets（启用  Dray  使用  IGadgets）（1365）
+					4. Building the Grappler（建造抓斗者）（1370）
+					5. Starting with Secondary Grappler Abilities（从次要格斗者能力开始）（1375）
+					6. Adding Tilemap_GrapTiles for Grappler Collisions（为  Grappler  碰撞添加  Tilemap_GrapTiles）（1384）
+					7. Enabling the Grappler to Pull Dray to It（使抓斗能够将拖车拉向它）（1388）
+					8. Testing the Grappler（测试抓斗）（1395）
+					9. Implementing the Grappler PickUp（实施  Grappler  PickUp）（1396）
+		4. Next Steps（下一步）（1401）
+			1. Coding Challenges（编码挑战）（1402）
+				1. What Is a Coding Challenge?（什么是编码挑战？）（1402）
+				2. Getting Started on a Coding Challenge（开始编码挑战）（1404）
+				3. Filling in the Blanks（填空）（1406）
+				4. How to Approach Each Challenge（如何应对每项挑战）（1409）
+			2. Beyond this Book（超越本书）（1412）
+				1. Continue to Learn Unity Development（继续学习Unity开发）（1412）
+				2. Build a Classic Game（打造经典游戏）（1413）
+				3. Start a Small Game Project or Prototype（启动一个小型游戏项目或原型）（1414）
+				4. Make Games for Lifelong Enrichment（制作让终生受益的游戏）（1415）
+				5. Consider Going to School for GameDev（考虑去游戏开发学校）（1415）
+				6. Explore Advanced Game Design（探索高级游戏设计）（1416）
+				7. Finally, Drop Me a Line（最后，给我留言）（1417）
+	7. Building a Game with Unity and Blender（使用 Unity 和 Blender 构建游戏）
+		1. Creating Your Game Concept（创建你的游戏概念）（20）
+			1. Job roles in game development（游戏开发中的工作角色）（20）
+			2. Gameplay design（游戏玩法设计）（21）
+				1. Starting point（初始点）（22）
+				2. Choosing a game genre（选择游戏类型）（22）
+				3. Game mechanics（游戏机制）（23）
+				4. Level design（关卡设计）（25）
+				5. Rapid prototyping（快速原型制作）（26）
+			3. Writing the game's story（编写游戏故事）（26）
+			4. Choosing a visual style（选择视觉风格）（27）
+			5. The characters concept（人物概念）（27）
+			6. The environment concept（环境理念）（31）
+			7. Summary（概括）（32）
+		2. Creating Characters（创建角色）（34）
+			1. Downloading Blender（下载Blender）（34）
+				1. A brief history of Blender（Blender  简史）（35）
+				2. The basic user interface of Blender（Blender  的基本用户界面）（35）
+			2. Creating the monster's 3D model（创建怪物的  3D  模型）（40）
+			3. Unwrapping the monster's UV map（打开怪物的  UV  贴图）（56）
+			4. Creating the monster's texture（创建怪物的纹理）（62）
+			5. Creating the player character's 3D model（创建玩家角色的  3D  模型）（67）
+			6. Unwrapping the player character's UV map（展开玩家角色的  UV  贴图）（80）
+			7. Summary（概括）（83）
+		3. Animating Your Characters（为你的角色制作动画）（84）
+			1. What is character rigging?（什么是角色绑定？）（65）
+			2. Creating a monster's armature（创建怪物的骨架）（85）
+			3. Creating the player character's armature（创建玩家角色的骨架）（90）
+			4. Weight painting（重量画）（96）
+			5. Animating characters（动画角色）（99）
+			6. The 12 basic principles of animation（动画的12条基本原则）（103）
+			7. Summary（概括）（105）
+		4. Creating the Environment（创造环境）（106）
+			1. Building terrain and wall models（构建地形和墙体模型）（106）
+			2. Building rock models（建造岩石模型）（113）
+			3. Creating rock and wall textures（创建岩石和墙壁纹理）（115）
+			4. Building grass models（建立草地模型）（117）
+			5. Creating the grass texture（创建草纹理）（119）
+			6. Summary（概括）（121）
+		5. Integrating Your Assets into the Game（将您的资产整合到游戏中）（122）
+			1. Basic user interface of Unity（Unity的基本用户界面）（123）
+			2. Importing environment assets（导入环境资产）（124）
+				1. Introducing prefabs（预制件简介）（127）
+				2. Setting up the terrain（设置地形）（127）
+				3. Setting up water surfaces（设置水面）（130）
+				4. Setting up foliage（设置树叶）（132）
+				5. Setting up environment lighting（设置环境照明）（134）
+				6. Optimizing the scene with Occlusion Culling（使用遮挡剔除优化场景）（137）
+			3. Importing character assets（导入角色资源）（139）
+			4. Summary（概括）（146）
+		6. Developing the Game Structure（开发游戏结构）（148）
+			1. Introduction to game structure design（游戏结构设计简介）（148）
+			2. Planning the game flow（规划游戏流程）（149）
+			3. Designing the user interface structure（设计用户界面结构）（156）
+			4. Player inputs and character movements（玩家输入和角色动作）（167）
+			5. Creating basic artificial intelligence（创建基础人工智能）（183）
+			6. Summary（概括）（189）
+		7. Creating Levels and Game Progression（创建关卡和游戏进程）（190）
+			1. Creating character attributes（创建角色属性）（190）
+			2. Adding in-game items and power-ups（添加游戏内物品和能量提升）（192）
+			3. Improving enemy AI（改善敌人AI）（197）
+			4. Adding save points（添加保存点）（199）
+			5. Summary（概括）（208）
+		8. Post-Production and Visual FX（后期制作和视觉效果）（210）
+			1. A basic particle system（基本粒子系统）（210）
+			2. Mist particles（雾粒）（217）
+			3. Torch fire（火炬火）（220）
+			4. Image FX（图像特效）（223）
+			5. Quality settings（质量设置）（227）
+			6. Summary（概括）（230）
+		9. Deploying the Game（部署游戏）（232）
+			1. Build settings（构建设置）（232）
+				1. Shared settings（共享设置）（234）
+				2. The webplayer（网络播放器）（234）
+				3. PC, Mac, and Linux standalone（PC、Mac  和  Linux  独立版）（235）
+				4. iOS（235）
+				5. Android（235）
+				6. WebGL（235）
+					1. Optimization level（优化级别）（236）
+			2. Player Settings（播放器设置）（238）
+				1. Cursor hotspot（光标热点）（240）
+			3. Summary（概括）（241）
+11. UnrealEngine
 	1. Learning Unreal Engine Game Development（学习虚幻引擎游戏开发）
 		1. An Overview of Unreal Engine（虚幻引擎概述）（22）
 			1. What goes into a game?（游戏中有什么内容？）（22）
